@@ -1,0 +1,49 @@
+# Decision log
+
+Append-only. Each entry: context → decision → consequences. Reversals get a
+new entry referencing the old one, never an edit.
+
+## D-0001 (2026-07-15) — Repository layout
+
+Docs (program spec, status, experiments, decisions, notebook) under `docs/`;
+exact-arithmetic library under `src/einstein/` (installable package);
+validation in `tests/`; bulk artifacts under `data/` (gitignored when large).
+The program document is the *specification*; it is never edited to match
+reality — discrepancies go to `docs/program/ERRATA.md`.
+
+## D-0002 (2026-07-15) — Python first, compiled kernel later
+
+The program's performance targets (§7.1: tens of millions of tiles/second)
+need compiled code, but correctness and auditability come first: v0 is pure
+Python with exact integer arithmetic, validated against external anchors
+(OEIS, Kaplan's hat coordinates). The compiled port happens only after the
+Python reference implementation exists to test it against. Measured Python
+capacity: A0 to n=12 in 40 s (see STATUS "capacity limits").
+
+## D-0003 (2026-07-15) — Integer hex coordinates; rank-4 module deferred
+
+All polykite-substrate geometry lives on the triangular lattice
+(basis e1=(1,0), e2=(1/2,√3/2), hexagon side 2): every kite vertex is an
+integer pair, squared length is x²+xy+y², and the full grid symmetry group
+acts by integer maps. The program's rank-4 ℤ[ζ₁₂] module (§3.3) is *not
+needed* for polykites (only 6-fold directions occur) and is deferred until
+12-fold rotations actually appear (module polygons, spectre substitution,
+diffraction indexing). Scale matches Kaplan's hatviz `hexPt`, so published
+hat data embeds verbatim — chosen deliberately for external validation.
+
+## D-0004 (2026-07-15) — Kite cell encoding and canonical forms
+
+Cell = (hex-center x, hex-center y, sector d∈0..5); kite quad
+[C, M_{d−1}, V_d, M_d]. Free-polyform canonical form = lex-min over the 12
+point-group images of the translation-normalized sorted cell tuple.
+Enumeration = grow-by-one-neighbor BFS with canonical dedup (every connected
+(n+1)-form contains a connected n-form). Validated: OEIS A057786 exact match
+n=1..12.
+
+## D-0005 (2026-07-15) — External anchors before trust
+
+Standing rule (instance of program §8's gate philosophy): every new component
+must be validated against data we did not produce — OEIS sequences, published
+coordinates, literature values — before its output is used downstream. A
+component with no external anchor available gets exact self-consistency tests
+plus a note in EXPERIMENTS.md "pre-experiment validation log".
