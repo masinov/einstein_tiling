@@ -122,6 +122,28 @@ def cell_neighbors(cell: Cell) -> list[Cell]:
     ]
 
 
+def cells_at_point(p: tuple[int, int]) -> list[Cell]:
+    """All kite cells having p as a corner: 6 at a hex center, 3 at a hex
+    vertex (one per surrounding hexagon), 4 at an edge midpoint (two per
+    adjacent hexagon).  Angle check: 6*60 = 3*120 = 4*90 = 360."""
+    if is_center(p):
+        return [(p[0], p[1], d) for d in range(6)]
+    out = []
+    for k in range(6):
+        c = (p[0] - VDIR[k][0], p[1] - VDIR[k][1])
+        if is_center(c):
+            out.append((c[0], c[1], k))
+    if out:
+        return out  # p is a hex vertex
+    for k in range(6):
+        c = (p[0] - MDIR[k][0], p[1] - MDIR[k][1])
+        if is_center(c):
+            # midpoint m_k is shared by kites k and k+1 of that hexagon
+            out.append((c[0], c[1], k))
+            out.append((c[0], c[1], (k + 1) % 6))
+    return out  # p is an edge midpoint
+
+
 # ---------------------------------------------------------------------------
 # Symmetry group action (point group D6 about the origin, order 12)
 # ---------------------------------------------------------------------------

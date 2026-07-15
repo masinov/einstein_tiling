@@ -31,3 +31,5 @@ Work that doesn't belong to a numbered experiment but gates them
 | 2026-07-16 | A1 torus test: periodic-capable counts n=1..8 | match vs J. Myers' polykite census (independent, 2023; same grid-aligned scope) | exact match (1,1,4,5,1,71,55,39) | `tests/test_a1_vs_myers.py`, [notebook 02](notebook/2026-07-16-session-02.md) |
 | 2026-07-16 | A1 soundness on the hat (proven aperiodic) | no certificate may exist; sweep k≤12 (also k≤8 in fast test) | pass (`no-periodic-at-budget`) | `tests/test_a1_torus.py`, DB shape 635 |
 | 2026-07-16 | Certificate verifier rejects tampering | drop/duplicate placements must fail verification | pass | `tests/test_a1_torus.py` |
+| 2026-07-16 | A2 corona engine: tilers grow, non-tilers halt | single kite + hat reach any cap; unique non-tiling 2-kite H_c=0 exact | pass | `tests/test_a2_heesch.py` |
+| 2026-07-16 | A2 sharp prediction: only the hat grows unboundedly among n≤8 A1 survivors | full batch (1,087 shapes) + escalation to cap 4 | pass — hat unique at depth 4; all others exact H_c ≤ 2 | DB stage `A2-heesch`, [notebook 03](notebook/2026-07-16-session-03.md), `tests/test_a2_census.py` |

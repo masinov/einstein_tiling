@@ -70,3 +70,15 @@ only sub-test that both certifies and covers all periodic cases; the others
 are deferred as optimizations for the n ≥ 16 sweeps. Shape DB v0 is a single
 SQLite file under `data/` (committed while small): zero services, standard
 tooling, resumable batch jobs keyed by canonical form.
+
+## D-0008 (2026-07-16) — A2 corona conventions: Kaplan's H_c
+
+Corona of a patch = congruent copies with disjoint interiors, each touching
+the patch, covering every empty cell that shares at least a vertex with the
+patch; holes (bounded empty edge-connected regions) forbidden at every
+level — this is H_c of Kaplan arXiv:2105.09438, chosen so that a future
+polyiamond substrate can validate directly against his published data.
+Depth claims: "H ≥ k" carries a machine-verified certificate (the corona
+chain); "H = k" is an exhaustion result valid only when no budget was hit,
+like UNSAT — it carries the budget stamp instead. Latest verdict per shape
+in the DB is the operative one (escalations append, never overwrite).

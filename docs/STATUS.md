@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-16 (session 02)
+**Last updated:** 2026-07-16 (session 03)
 
 ## Where we are
 
@@ -14,8 +14,8 @@
 |---|---|---|
 | M0 — kite substrate + A0 enumeration | §7.1 (kernel v0), §4 A0 | ✅ done, validated vs OEIS (session 01) |
 | M1 — A1 periodicity rejection + shape DB | §4 A1, §7.4 | ✅ done v0, validated vs Myers (session 02) |
-| M2 — A2 SAT Heesch engine | §4 A2 | ⬜ next |
-| M3 — A3 large-patch growth | §4 A3 | ⬜ |
+| M2 — A2 corona/Heesch engine | §4 A2 | ✅ done v0, hat = unique n≤8 anomaly (session 03) |
+| M3 — A3 large-patch growth | §4 A3 | ⬜ next |
 | M4 — A4 diffraction fingerprint + E4 calibration | §4 A4, E4 | ⬜ |
 | M5 — A6 hierarchy mining | §4 A6 | ⬜ |
 | **Gate G1 — E1 blind hat rediscovery** | §8 E1 | ⬜ blocked by M2–M5 |
@@ -42,17 +42,20 @@
 
 ## Funnel state (polykites, grid-aligned scope — D-0006)
 
-| n | shapes | A1: periodic | A1 survivors (candidates ∪ non-tilers) |
-|---|---|---|---|
-| 1–3 | 7 | 6 | 1 |
-| 4 | 10 | 5 | 5 |
-| 5 | 27 | 1 | 26 |
-| 6 | 85 | 71 | 14 |
-| 7 | 262 | 55 | 207 |
-| 8 | 873 | 39 | 834 (hat among them) |
+| n | shapes | A1: periodic | A2: H=0 | H=1 | H=2 | grows (anomaly) |
+|---|---|---|---|---|---|---|
+| 1–3 | 7 | 6 | 1 | — | — | — |
+| 4 | 10 | 5 | 4 | 1 | — | — |
+| 5 | 27 | 1 | 12 | 14 | — | — |
+| 6 | 85 | 71 | 13 | 1 | — | — |
+| 7 | 262 | 55 | 165 | 41 | 1 | — |
+| 8 | 873 | 39 | 720 | 108 | 5 | **1 — the hat** |
 
-Separating einstein candidates from plain non-tilers within the survivors is
-A2's job (Heesch depth / corona growth).
+All H values exact by exhaustion (D-0008). **The hat is the unique
+unbounded-corona anomaly among all 1,264 free polykites n ≤ 8** — a
+mini-E1: Heesch depth alone ranks it #1 in its size class. The six H_c=2
+shapes (gallery in notebook 03 assets) are likely novel data — no published
+polykite Heesch census exists (Kaplan's covers other polyforms).
 
 ## Known capacity limits (honest)
 
@@ -65,11 +68,12 @@ A2's job (Heesch depth / corona growth).
 
 ## Next actions (in order)
 
-1. M2 / A2: SAT-driven corona growth (Heesch engine). First decision: SAT
-   dependency (python-sat vs kissat subprocess vs keep exact-cover core for
-   corona-1 and profile). Validation anchors: known Heesch numbers for
-   non-tiling polykites (Myers lists Heesch data), hat coronas must grow
-   indefinitely (test to some depth).
-2. A2 output feeds anomaly stats: corona-1 census + Heesch depth per A1
-   survivor into the DB.
-3. Then A3/A4 per program order.
+1. M3 / A3: large-patch growth for anomalies (SAT seed + frontier extension
+   per §4 A3) — needed to give A4 its 10⁵+-point input. The hat is the
+   pilot anomaly.
+2. M4 / A4: diffraction fingerprint + E4 calibration (reference library:
+   at minimum hat patches + a periodic control + a random control).
+3. A0 scaling (streaming/compiled enumerator) + A2 performance port —
+   prerequisites for the n≤16 E1 blind sweep.
+4. Deferred: corona-1 census feature; polyiamond substrate (would add an
+   external per-shape Heesch anchor from Kaplan's dataset).
