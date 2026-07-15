@@ -13,8 +13,11 @@ Research program to systematically search for new einstein tilings
 ## Code
 
 `src/einstein/` — exact-integer-arithmetic kernel: kite substrate
-(Laves [3.4.6.4]), free-polyform enumeration (funnel stage A0), SVG rendering.
-Validated against OEIS A057786 (n=1..12) and the published hat coordinates.
+(Laves [3.4.6.4]), free-polyform enumeration (funnel stage A0), torus
+periodicity rejection with machine-verified certificates (stage A1), shape
+database (`data/shapes.sqlite`), SVG rendering. Validated against OEIS
+A057786 (n=1..12), Joseph Myers' polykite tiling census (n=1..8), and the
+published hat coordinates.
 
 ```sh
 venv/bin/pip install -e .

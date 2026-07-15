@@ -47,3 +47,26 @@ must be validated against data we did not produce — OEIS sequences, published
 coordinates, literature values — before its output is used downstream. A
 component with no external anchor available gets exact self-consistency tests
 plus a note in EXPERIMENTS.md "pre-experiment validation log".
+
+## D-0006 (2026-07-16) — Funnel v0 scope: grid-aligned tilings only
+
+A1 (and later funnel stages as currently designed) consider only placements
+in the kite grid's symmetry group p6m. Polyform tilings that break grid
+alignment exist in general and are invisible to this machinery. Consequence:
+"periodic" verdicts are sound (a certificate is a real periodic tiling), but
+survival of A1 does not exclude off-grid periodic tilings. This matches the
+scope of Myers' published census (he states the same restriction), which is
+what makes his numbers usable as our external anchor. Lifting this
+restriction is a recorded open problem for the certification track — any
+eventual aperiodicity *proof* must handle off-grid placements (the hat paper
+does).
+
+## D-0007 (2026-07-16) — A1 v0 = torus exact-cover only; SQLite for the DB
+
+The program's A1 battery (Conway criterion, BLD factorization, isohedral-type
+search, torus search) is ordered by cost, but at current scale (n ≤ 12,
+~10⁵ shapes) the torus test alone is fast enough (~30 ms/shape) and is the
+only sub-test that both certifies and covers all periodic cases; the others
+are deferred as optimizations for the n ≥ 16 sweeps. Shape DB v0 is a single
+SQLite file under `data/` (committed while small): zero services, standard
+tooling, resumable batch jobs keyed by canonical form.

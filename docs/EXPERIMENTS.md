@@ -28,3 +28,6 @@ Work that doesn't belong to a numbered experiment but gates them
 | 2026-07-15 | Kite substrate geometry & symmetry action | exact self-consistency tests (14 tests) | pass | `tests/test_kitegrid.py`, [notebook 01](notebook/2026-07-15-session-01.md) |
 | 2026-07-15 | A0 free polykite counts n=1..12 | match vs OEIS A057786 (independent: B. Owen / J. Myers) | exact match | `tests/test_enumeration.py`, [notebook 01](notebook/2026-07-15-session-01.md) |
 | 2026-07-15 | Hat embedding + recovery + membership in enumeration | Kaplan's hatviz outline (verbatim) end-to-end | pass | `tests/test_hat.py`, [assets/hat-recovered.svg](notebook/assets/hat-recovered.svg) |
+| 2026-07-16 | A1 torus test: periodic-capable counts n=1..8 | match vs J. Myers' polykite census (independent, 2023; same grid-aligned scope) | exact match (1,1,4,5,1,71,55,39) | `tests/test_a1_vs_myers.py`, [notebook 02](notebook/2026-07-16-session-02.md) |
+| 2026-07-16 | A1 soundness on the hat (proven aperiodic) | no certificate may exist; sweep k≤12 (also k≤8 in fast test) | pass (`no-periodic-at-budget`) | `tests/test_a1_torus.py`, DB shape 635 |
+| 2026-07-16 | Certificate verifier rejects tampering | drop/duplicate placements must fail verification | pass | `tests/test_a1_torus.py` |
