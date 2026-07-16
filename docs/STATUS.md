@@ -105,12 +105,13 @@
   ownership cover is non-unique (at least 20 solutions), but every sampled
   cover gives the same parent-anchor lattice and SAT forces all 141 safe-core
   anchors across every cover. The cover-invariant three-state alphabet then
-  yields a minimum 15-pattern recursive library (all arity 7), which forces
-  27/27 selectable grandparent groups and 27 distinct anchors in the inner
-  core. Artifact:
+  yields a minimum 15-pattern recursive library (all arity 7): the 430-parent
+  training core has one cover of 71 groups/anchors. At the following scale, a
+  nested 43-anchor core has a minimum eight-pattern library (six arity 7, two
+  arity 8) and one cover of nine groups. Artifact:
   `a6-hat-screen-results.json`; inspection drawings:
   `a6-hat-candidate-{1,2}.svg`; runner: `scripts/run_a6_hat.py`.
-- Test suite: **62 fast passed** (14 deselected, 8.96 s);
+- Test suite: **62 fast passed** (14 deselected, 8.62 s);
   **14 slow passed** (57 deselected, 112.17 s). Vendored Rust: **5 passed**.
 
 ## Funnel state (polykites, grid-aligned scope — D-0006)
@@ -170,15 +171,14 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
 - Hat A6 has a forced first parent-anchor lattice, but the next level is not a
   single Spectre-style full/deletion rule. Nearest 7/8 grouping cannot be made
   a deterministic function of geometry-only collars through radius 4; the
-  recursive solver instead uses the cover-invariant option states. Its current
-  15-pattern library is forced on one inner core but has not yet been
-  contracted and shown to reproduce itself on a larger core.
+  recursive solver instead uses cover-invariant option states. Two successive
+  exact contractions now close `430→71` and `43→9`; the current disk cut lacks
+  sufficient grandparent halo to test the final `9→1` contraction reliably.
 
 ## Next actions (in order)
 
-1. Contract the 27 forced grandparent groups, transfer the 15-pattern library
-   to larger nested cores, and test state/rule closure at the following level.
-   Separately retain physical-hat ownership uniqueness as a forcing check.
+1. Grow or obtain a larger hat disk, rerun the frozen A6 rules, and require
+   stable `430→71→9→1`-style closure plus physical-hat ownership forcing.
 2. Scale A0 to the E1 horizon n≤16 (streaming/compiled enumeration) and port
    the A1/A2 hot paths needed for the full frozen-threshold sweep.
 3. Run the complete n≤16 A0–A4 ranking, verify hat/turtle placement, and send

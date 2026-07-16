@@ -304,7 +304,23 @@ def main() -> int:
             mine_option_state_recursive_library(
                 option_states,
                 training_r2=15_000,
-                forcing_r2=5_000,
+                forcing_r2=15_000,
+            )
+        )
+        first_recursive = rule_family["recursive_probe"]
+        grandparent_states = {
+            (
+                group["base"][0],
+                group["base"][1],
+                tuple(group["base"][2]),
+            ): (group["pattern"],)
+            for group in first_recursive["forced_groups"]
+        }
+        rule_family["next_recursive_probe"] = (
+            mine_option_state_recursive_library(
+                grandparent_states,
+                training_r2=10_000,
+                forcing_r2=10_000,
             )
         )
 
@@ -352,6 +368,12 @@ def main() -> int:
             f"{recursive['minimum_patterns']} typed patterns; "
             f"{recursive['forced_inner_groups']} inner groups forced, "
             f"{recursive['optional_inner_groups']} optional"
+        )
+        next_recursive = rule_family["next_recursive_probe"]
+        print(
+            "  next scale: "
+            f"{next_recursive['minimum_patterns']} typed patterns; "
+            f"{next_recursive['forced_inner_groups']} groups forced"
         )
     print(out.relative_to(ROOT))
     for candidate in candidates:

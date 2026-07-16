@@ -289,7 +289,10 @@ The invariant parent alphabet is the three allowed-type sets `[full]`,
 `[full,A]`, `[full,B]`. Mining exact nearest 7/8 groups colored by those
 states, then minimizing the finite pattern library by MaxSAT, yields 15
 patterns on a 430-parent training core; every selected pattern has arity 7.
-Fixing that library makes all 27 selectable groups touching the 141-parent
-inner core SAT-forced (zero optional alternatives). This is accepted as the
-next A6 hierarchy hypothesis, but not yet full closure: it must reproduce the
-same state/rule language after contraction on larger cores.
+Fixing that library makes the complete 430-parent training cover unique:
+71 groups and 71 distinct anchors are SAT-forced (zero optional alternatives).
+Treating those pattern IDs as the next scale's states gives a second exact
+contraction on a 43-anchor nested core: a minimum eight-pattern library
+(six arity-7, two arity-8) forces nine groups with zero alternatives. This is
+accepted as recursive closure evidence, but the small disk cut does not yet
+contain enough halo to close the final nine anchors to one root.

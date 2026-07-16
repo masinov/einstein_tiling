@@ -116,14 +116,19 @@ def test_hat_candidate_artifact_links_reproducible_svgs():
     recursive = result["rule_family"]["recursive_probe"]
     assert recursive["minimum_patterns"] == 15
     assert recursive["selected_pattern_arities"] == {"7": 15}
-    assert recursive["forced_inner_groups"] == 27
+    assert recursive["forced_inner_groups"] == 71
     assert recursive["optional_inner_groups"] == 0
     assert recursive["inner_grouping_forced"]
-    assert len(recursive["forced_groups"]) == 27
+    assert len(recursive["forced_groups"]) == 71
     assert len({
         tuple(group["base"][:2]) + tuple(group["base"][2])
         for group in recursive["forced_groups"]
-    }) == 27
+    }) == 71
+    next_recursive = result["rule_family"]["next_recursive_probe"]
+    assert next_recursive["minimum_patterns"] == 8
+    assert next_recursive["selected_pattern_arities"] == {"7": 6, "8": 2}
+    assert next_recursive["forced_inner_groups"] == 9
+    assert next_recursive["optional_inner_groups"] == 0
     for candidate in result["candidates"]:
         svg = ROOT / candidate["svg"]
         text = svg.read_text()
