@@ -527,6 +527,10 @@ def mine_option_state_recursive_library(
         pattern_id for pattern_id in range(len(pattern_ids))
         if pool.id(("pattern", pattern_id)) in positive
     }
+    selected_state = {
+        pattern_id: state
+        for state, pattern_id in enumerate(sorted(selected_pattern_ids))
+    }
     allowed = [
         (pattern_id, group)
         for pattern_id, group in items
@@ -562,7 +566,7 @@ def mine_option_state_recursive_library(
                 template = canonical_cluster([poses[i] for i in group])
                 base = occurrence_base(group, template, poses)
                 forced_groups.append({
-                    "pattern": pattern_id,
+                    "pattern": selected_state[pattern_id],
                     "base": [base[0], base[1], list(base[2])],
                     "members": sorted(group),
                 })
@@ -598,6 +602,278 @@ def mine_option_state_recursive_library(
             for pattern_id in selected_pattern_ids
         )),
         "selected_patterns": selected_patterns,
+        "allowed_group_occurrences": len(allowed),
+        "forced_inner_groups": forced,
+        "optional_inner_groups": optional,
+        "impossible_inner_groups": impossible,
+        "inner_grouping_forced": forced > 0 and optional == 0,
+        "forced_groups": sorted(
+            forced_groups, key=lambda group: (
+                group["base"], group["pattern"], group["members"]
+            )
+        ),
+    }
+
+
+def mine_joint_option_state_recursive_library(
+    option_samples: Sequence[
+        tuple[str, dict[Pose, tuple[int, ...]]]
+    ],
+    training_r2: int,
+    forcing_r2: int,
+    group_sizes: Sequence[int] = (7, 8),
+) -> dict:
+    """Mine one minimum typed library satisfying several independent patches.
+
+    Pattern-presence variables are shared across samples, while every sample
+    receives its own exact-cover constraints.  This prevents a minimum library
+    from silently specializing to one finite patch.
+    """
+    from pysat.card import CardEnc, EncType
+    from pysat.examples.rc2 import RC2
+    from pysat.formula import IDPool, WCNF
+
+    all_option_values = sorted({
+        option
+        for _, options in option_samples
+        for option in options.values()
+    })
+    option_states = {
+        option: state for state, option in enumerate(all_option_values)
+    }
+    prepared = []
+    all_patterns = set()
+    for label, options in option_samples:
+        poses = tuple(sorted(options))
+        states = tuple(option_states[options[pose]] for pose in poses)
+        training = {
+            i for i, pose in enumerate(poses)
+            if (
+                pose[2][0] ** 2
+                + pose[2][0] * pose[2][2]
+                + pose[2][2] ** 2
+            ) <= training_r2
+        }
+        typed = [
+            (
+                _canonical_colored_cluster(
+                    [poses[i] for i in group],
+                    [states[i] for i in group],
+                ),
+                group,
+            )
+            for group in _hex_nearest_groups(poses, group_sizes)
+            if group & training
+        ]
+        all_patterns.update(pattern for pattern, _ in typed)
+        prepared.append((label, options, poses, training, typed))
+
+    patterns = sorted(all_patterns)
+    pattern_ids = {
+        pattern: pattern_id
+        for pattern_id, pattern in enumerate(patterns)
+    }
+    items = [
+        (sample, pattern_ids[pattern], group)
+        for sample, (_, _, _, _, typed) in enumerate(prepared)
+        for pattern, group in typed
+    ]
+    formula = WCNF()
+    pool = IDPool(start_from=len(items) + 1)
+    by_item: dict[tuple[int, int], list[int]] = defaultdict(list)
+    for variable, (sample, pattern_id, group) in enumerate(items, 1):
+        for item in group:
+            by_item[(sample, item)].append(variable)
+        formula.append([
+            -variable, pool.id(("pattern", pattern_id))
+        ])
+    for (sample, item), variables in by_item.items():
+        if item in prepared[sample][3]:
+            formula.append(variables)
+        formula.extend(CardEnc.atmost(
+            variables, 1, vpool=pool, encoding=EncType.seqcounter
+        ).clauses)
+    for pattern_id in range(len(patterns)):
+        formula.append(
+            [-pool.id(("pattern", pattern_id))],
+            weight=1,
+        )
+    with RC2(formula) as optimizer:
+        model = optimizer.compute()
+        minimum_patterns = optimizer.cost if model is not None else None
+    if model is None:
+        return {
+            "satisfiable": False,
+            "samples": len(option_samples),
+            "option_states": len(option_states),
+        }
+    positive = {value for value in model if value > 0}
+    selected_pattern_ids = [
+        pattern_id for pattern_id in range(len(patterns))
+        if pool.id(("pattern", pattern_id)) in positive
+    ]
+    selected_patterns = [
+        [
+            {
+                "pose": [s, r, list(t)],
+                "state": state,
+            }
+            for (s, r, t), state in patterns[pattern_id]
+        ]
+        for pattern_id in selected_pattern_ids
+    ]
+    sample_results = []
+    for label, options, _, _, _ in prepared:
+        result = verify_option_state_recursive_library(
+            options,
+            selected_patterns,
+            training_r2=training_r2,
+            forcing_r2=forcing_r2,
+            group_sizes=group_sizes,
+            option_state_values=all_option_values,
+        )
+        result["label"] = label
+        sample_results.append(result)
+    return {
+        "satisfiable": all(
+            sample["satisfiable"] for sample in sample_results
+        ),
+        "samples": len(option_samples),
+        "option_states": len(option_states),
+        "option_state_values": [
+            list(option) for option in all_option_values
+        ],
+        "training_r2": training_r2,
+        "forcing_r2": forcing_r2,
+        "observed_typed_patterns": len(patterns),
+        "minimum_patterns": minimum_patterns,
+        "selected_pattern_arities": dict(Counter(
+            len(patterns[pattern_id])
+            for pattern_id in selected_pattern_ids
+        )),
+        "selected_patterns": selected_patterns,
+        "sample_results": sample_results,
+        "all_samples_forced": all(
+            sample.get("inner_grouping_forced", False)
+            for sample in sample_results
+        ),
+    }
+
+
+def verify_option_state_recursive_library(
+    options: dict[Pose, tuple[int, ...]],
+    selected_patterns: Sequence[Sequence[dict]],
+    training_r2: int,
+    forcing_r2: int,
+    group_sizes: Sequence[int] = (7, 8),
+    option_state_values: Sequence[tuple[int, ...]] | None = None,
+) -> dict:
+    """Apply a frozen typed library and SAT-check cover/forcing on a patch."""
+    from pysat.card import CardEnc, EncType
+    from pysat.formula import IDPool
+    from pysat.solvers import Cadical195
+
+    poses = tuple(sorted(options))
+    values = (
+        sorted(set(options.values()))
+        if option_state_values is None
+        else option_state_values
+    )
+    option_states = {
+        option: state for state, option in enumerate(values)
+    }
+    states = tuple(option_states[options[pose]] for pose in poses)
+    frozen = {
+        tuple(
+            (
+                (
+                    int(item["pose"][0]),
+                    int(item["pose"][1]),
+                    tuple(int(x) for x in item["pose"][2]),
+                ),
+                int(item["state"]),
+            )
+            for item in pattern
+        ): pattern_state
+        for pattern_state, pattern in enumerate(selected_patterns)
+    }
+    training = {
+        i for i, pose in enumerate(poses)
+        if (
+            pose[2][0] ** 2
+            + pose[2][0] * pose[2][2]
+            + pose[2][2] ** 2
+        ) <= training_r2
+    }
+    forcing = {
+        i for i, pose in enumerate(poses)
+        if (
+            pose[2][0] ** 2
+            + pose[2][0] * pose[2][2]
+            + pose[2][2] ** 2
+        ) <= forcing_r2
+    }
+    allowed = []
+    for group in _hex_nearest_groups(poses, group_sizes):
+        if not group & training:
+            continue
+        pattern = _canonical_colored_cluster(
+            [poses[i] for i in group],
+            [states[i] for i in group],
+        )
+        if pattern in frozen:
+            allowed.append((frozen[pattern], group))
+    by_item: dict[int, list[int]] = defaultdict(list)
+    for variable, (_, group) in enumerate(allowed, 1):
+        for item in group:
+            by_item[item].append(variable)
+    if any(not by_item[item] for item in training):
+        return {
+            "satisfiable": False,
+            "training_nodes": len(training),
+            "uncovered_training_nodes": sum(
+                not by_item[item] for item in training
+            ),
+            "allowed_group_occurrences": len(allowed),
+        }
+    clauses: list[list[int]] = []
+    pool = IDPool(start_from=len(allowed) + 1)
+    for item, variables in by_item.items():
+        if item in training:
+            clauses.append(variables)
+        clauses.extend(CardEnc.atmost(
+            variables, 1, vpool=pool, encoding=EncType.seqcounter
+        ).clauses)
+    forced = optional = impossible = 0
+    forced_groups = []
+    with Cadical195(bootstrap_with=clauses) as solver:
+        if not solver.solve():
+            return {
+                "satisfiable": False,
+                "training_nodes": len(training),
+                "uncovered_training_nodes": 0,
+                "allowed_group_occurrences": len(allowed),
+            }
+        for variable, (pattern_state, group) in enumerate(allowed, 1):
+            if not group & forcing:
+                continue
+            if not solver.solve(assumptions=[variable]):
+                impossible += 1
+            elif solver.solve(assumptions=[-variable]):
+                optional += 1
+            else:
+                forced += 1
+                template = canonical_cluster([poses[i] for i in group])
+                base = occurrence_base(group, template, poses)
+                forced_groups.append({
+                    "pattern": pattern_state,
+                    "base": [base[0], base[1], list(base[2])],
+                    "members": sorted(group),
+                })
+    return {
+        "satisfiable": True,
+        "training_nodes": len(training),
+        "forcing_nodes": len(forcing),
         "allowed_group_occurrences": len(allowed),
         "forced_inner_groups": forced,
         "optional_inner_groups": optional,

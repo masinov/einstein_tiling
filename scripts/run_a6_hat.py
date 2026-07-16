@@ -1,9 +1,10 @@
 #!/usr/bin/env python
-"""Blind A6 candidate screen on the stored A3 hat disk patch.
+"""Blind A6 hierarchy screen on the stored A3 hat disk patches.
 
-This is the Gate-G1 adapter/screen, not yet a hierarchy certificate. It mines
-exact nearest-anchor 8-tile scaffolds, expands one-child deletions, and asks
-whether each rule covers an interior core using the surrounding disk as halo.
+This is the Gate-G1 adapter/calibration, not a proof for all infinite tilings.
+It mines exact nearest-anchor 8-tile scaffolds, expands one-child deletions,
+and jointly fits recursive rule libraries to the stored r2=50000 and
+r2=100000 patches using their surrounding disks as halos.
 """
 
 from __future__ import annotations
@@ -24,7 +25,7 @@ from einstein.funnel.a6_polykite import (
     enumerate_typed_core_covers,
     forced_typed_core_options,
     frequent_hex_nearest_templates,
-    mine_option_state_recursive_library,
+    mine_joint_option_state_recursive_library,
     placement_poses,
     polykite_boundary,
     typed_core_backbone,
@@ -160,6 +161,18 @@ def main() -> int:
     ).fetchone()[0]
     shape = deserialize_cells(key)
     certificate = db.latest_verdict(635, "A3-patch")["certificate"]
+    patch_certificates = {}
+    for (raw_certificate,) in db.conn.execute(
+        """
+        SELECT certificate
+        FROM verdicts
+        WHERE shape_id = 635 AND stage = 'A3-patch'
+        ORDER BY created_at
+        """
+    ):
+        stored = json.loads(raw_certificate)
+        if stored.get("r2") in (50_000, 100_000):
+            patch_certificates[stored["r2"]] = stored
     db.close()
 
     poses = placement_poses(certificate["placements"])
@@ -285,40 +298,52 @@ def main() -> int:
                 poses, core, templates, base_r2=core_r2 // 2
             ),
         }
-        recursive_physical_r2 = 30_000
-        recursive_physical_core = [
-            i for i, pose in enumerate(poses)
-            if (
-                pose[2][0] ** 2
-                + pose[2][0] * pose[2][2]
-                + pose[2][2] ** 2
-            ) <= recursive_physical_r2
-        ]
-        option_states = forced_typed_core_options(
-            poses,
-            recursive_physical_core,
-            templates,
-            base_r2=22_000,
-        )
+        recursive_samples = []
+        for r2 in (50_000, 100_000):
+            sample_poses = placement_poses(
+                patch_certificates[r2]["placements"]
+            )
+            recursive_physical_core = [
+                i for i, pose in enumerate(sample_poses)
+                if (
+                    pose[2][0] ** 2
+                    + pose[2][0] * pose[2][2]
+                    + pose[2][2] ** 2
+                ) <= 30_000
+            ]
+            recursive_samples.append((
+                f"hat-r2-{r2}",
+                forced_typed_core_options(
+                    sample_poses,
+                    recursive_physical_core,
+                    templates,
+                    base_r2=22_000,
+                ),
+            ))
         rule_family["recursive_probe"] = (
-            mine_option_state_recursive_library(
-                option_states,
+            mine_joint_option_state_recursive_library(
+                recursive_samples,
                 training_r2=15_000,
                 forcing_r2=15_000,
             )
         )
         first_recursive = rule_family["recursive_probe"]
-        grandparent_states = {
-            (
-                group["base"][0],
-                group["base"][1],
-                tuple(group["base"][2]),
-            ): (group["pattern"],)
-            for group in first_recursive["forced_groups"]
-        }
+        grandparent_samples = []
+        for sample in first_recursive["sample_results"]:
+            grandparent_samples.append((
+                sample["label"],
+                {
+                    (
+                        group["base"][0],
+                        group["base"][1],
+                        tuple(group["base"][2]),
+                    ): (group["pattern"],)
+                    for group in sample["forced_groups"]
+                },
+            ))
         rule_family["next_recursive_probe"] = (
-            mine_option_state_recursive_library(
-                grandparent_states,
+            mine_joint_option_state_recursive_library(
+                grandparent_samples,
                 training_r2=10_000,
                 forcing_r2=10_000,
             )
@@ -328,7 +353,10 @@ def main() -> int:
         "status": "RULE-FAMILY" if rule_family else (
             "CANDIDATES" if candidates else "NO-CANDIDATE"
         ),
-        "scope": "blind local A6 screen; recursive closure not yet checked",
+        "scope": (
+            "blind local A6 screen with recursive rules jointly fitted "
+            "and forced on separately solved r2=50000 and r2=100000 patches"
+        ),
         "shape_id": 635,
         "patch_tiles": len(poses),
         "tile_boundary_vertices": len(boundary),
@@ -364,16 +392,27 @@ def main() -> int:
         )
         recursive = rule_family["recursive_probe"]
         print(
-            "  recursive probe: "
+            "  joint recursive probe: "
             f"{recursive['minimum_patterns']} typed patterns; "
-            f"{recursive['forced_inner_groups']} inner groups forced, "
-            f"{recursive['optional_inner_groups']} optional"
+            + ", ".join(
+                f"{sample['label']}="
+                f"{sample['forced_inner_groups']} forced/"
+                f"{sample['optional_inner_groups']} optional"
+                for sample in recursive["sample_results"]
+            )
         )
         next_recursive = rule_family["next_recursive_probe"]
         print(
-            "  next scale: "
+            "  joint next scale: "
             f"{next_recursive['minimum_patterns']} typed patterns; "
-            f"{next_recursive['forced_inner_groups']} groups forced"
+            + ", ".join(
+                (
+                    f"{sample['label']}="
+                    f"{sample.get('forced_inner_groups', 0)} forced/"
+                    f"{sample.get('optional_inner_groups', 0)} optional"
+                )
+                for sample in next_recursive["sample_results"]
+            )
         )
     print(out.relative_to(ROOT))
     for candidate in candidates:

@@ -15,6 +15,7 @@ from einstein.funnel.a6_polykite import (
     frequent_hex_nearest_templates,
     hex_to_module,
     kite_op_sr,
+    mine_joint_option_state_recursive_library,
     placement_poses,
     polykite_boundary,
     typed_core_backbone,
@@ -101,11 +102,43 @@ def test_exact_hex_acceleration_matches_brute_nearest_mining():
     assert fast == frequent_nearest_templates(poses, size=4, top=5)
 
 
+def test_joint_recursive_library_keeps_one_shared_state_alphabet():
+    poses = placement_poses([
+        (0, 0, 0), (0, 2, 0), (0, 4, 0), (0, 6, 0),
+    ])
+    alternating = {
+        pose: ((0,) if i % 2 == 0 else (1,))
+        for i, pose in enumerate(poses)
+    }
+    only_second_state = {pose: (1,) for pose in poses}
+    result = mine_joint_option_state_recursive_library(
+        [
+            ("alternating", alternating),
+            ("only-second", only_second_state),
+        ],
+        training_r2=100,
+        forcing_r2=100,
+        group_sizes=(2,),
+    )
+    assert result["satisfiable"] and result["all_samples_forced"]
+    assert result["option_state_values"] == [[0], [1]]
+    assert result["minimum_patterns"] == 2
+    assert [
+        sample["forced_inner_groups"]
+        for sample in result["sample_results"]
+    ] == [2, 2]
+    assert {
+        group["pattern"]
+        for group in result["sample_results"][1]["forced_groups"]
+    } == {1}
+
+
 def test_hat_candidate_artifact_links_reproducible_svgs():
     result = json.loads(
         (ROOT / "docs/notebook/assets/a6-hat-screen-results.json").read_text()
     )
     assert result["status"] == "RULE-FAMILY"
+    assert result["patch_tiles"] == 22_940
     assert len(result["candidates"]) == 2
     assert result["rule_family"]["covers_sampled"] == 20
     assert result["rule_family"]["cover_count_is_lower_bound"]
@@ -114,21 +147,61 @@ def test_hat_candidate_artifact_links_reproducible_svgs():
         "all_analyzed_bases_forced"
     ]
     recursive = result["rule_family"]["recursive_probe"]
-    assert recursive["minimum_patterns"] == 15
-    assert recursive["selected_pattern_arities"] == {"7": 15}
-    assert recursive["forced_inner_groups"] == 71
-    assert recursive["optional_inner_groups"] == 0
-    assert recursive["inner_grouping_forced"]
-    assert len(recursive["forced_groups"]) == 71
-    assert len({
-        tuple(group["base"][:2]) + tuple(group["base"][2])
-        for group in recursive["forced_groups"]
-    }) == 71
+    assert recursive["samples"] == 2
+    assert recursive["minimum_patterns"] == 16
+    assert recursive["selected_pattern_arities"] == {"7": 16}
+    assert recursive["all_samples_forced"]
+    first_samples = {
+        sample["label"]: sample
+        for sample in recursive["sample_results"]
+    }
+    assert {
+        label: sample["forced_inner_groups"]
+        for label, sample in first_samples.items()
+    } == {
+        "hat-r2-50000": 71,
+        "hat-r2-100000": 72,
+    }
+    for sample in first_samples.values():
+        assert sample["training_nodes"] == 430
+        assert sample["optional_inner_groups"] == 0
+        assert sample["inner_grouping_forced"]
+        assert len(sample["forced_groups"]) == sample[
+            "forced_inner_groups"
+        ]
+        assert all(
+            0 <= group["pattern"] < recursive["minimum_patterns"]
+            for group in sample["forced_groups"]
+        )
+        assert len({
+            tuple(group["base"][:2]) + tuple(group["base"][2])
+            for group in sample["forced_groups"]
+        }) == sample["forced_inner_groups"]
     next_recursive = result["rule_family"]["next_recursive_probe"]
-    assert next_recursive["minimum_patterns"] == 8
-    assert next_recursive["selected_pattern_arities"] == {"7": 6, "8": 2}
-    assert next_recursive["forced_inner_groups"] == 9
-    assert next_recursive["optional_inner_groups"] == 0
+    assert next_recursive["samples"] == 2
+    assert next_recursive["minimum_patterns"] == 15
+    assert next_recursive["selected_pattern_arities"] == {"7": 6, "8": 9}
+    assert next_recursive["all_samples_forced"]
+    second_samples = {
+        sample["label"]: sample
+        for sample in next_recursive["sample_results"]
+    }
+    assert {
+        label: (
+            sample["training_nodes"],
+            sample["forced_inner_groups"],
+            sample["optional_inner_groups"],
+        )
+        for label, sample in second_samples.items()
+    } == {
+        "hat-r2-50000": (43, 8, 0),
+        "hat-r2-100000": (41, 8, 0),
+    }
+    for sample in second_samples.values():
+        assert all(
+            0 <= group["pattern"] < next_recursive["minimum_patterns"]
+            for group in sample["forced_groups"]
+        )
     for candidate in result["candidates"]:
         svg = ROOT / candidate["svg"]
         text = svg.read_text()

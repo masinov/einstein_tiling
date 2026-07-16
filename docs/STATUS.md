@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-16 (session 10)
+**Last updated:** 2026-07-16 (session 11)
 
 ## Where we are
 
@@ -15,7 +15,7 @@
 | M0 — kite substrate + A0 enumeration | §7.1 (kernel v0), §4 A0 | ✅ done, validated vs OEIS (session 01) |
 | M1 — A1 periodicity rejection + shape DB | §4 A1, §7.4 | ✅ done v0, validated vs Myers (session 02) |
 | M2 — A2 corona/Heesch engine | §4 A2 | ✅ done v0, hat = unique n≤8 anomaly (session 03) |
-| M3 — A3 large-patch growth | §4 A3 | ✅ done v0, SAT backend; 11,514-tile hat patch, φ⁴ chirality anchor hit (session 04) |
+| M3 — A3 large-patch growth | §4 A3 | ✅ done v0, SAT backend; 22,940-tile hat patch, φ⁴ chirality anchor hit (sessions 04, 11) |
 | M4 — A4 diffraction fingerprint | §4 A4 | ✅ done v0; 12-fold core calibration passed (session 05) |
 | E4 — full fingerprint calibration gate | §8 E4 | ✅ passed (sessions 05–06) |
 | M5 — A6 hierarchy mining | §4 A6 | ✅ done v0; recursive, stationary-collar and SAT forcing gate passed |
@@ -45,7 +45,7 @@
 - **A3 large-patch construction** (`src/einstein/funnel/a3_patch.py`):
   disk exact-cover; SAT (CaDiCaL) workhorse + pure-Python greedy for the
   growth-profile feature (D-0009). All certificates re-verified by our own
-  exact code. Hat patches to 11,514 tiles (r2=50000, 220 s); reflected-hat
+  exact code. Hat patches to 22,940 tiles (r2=100000, 551 s); reflected-hat
   density converges to the literature value 1/(1+φ⁴) — an external anchor
   A3 was never told about. Six H_c=2 shapes get pose-free disk-cover
   refutations at r2≤200. Periodic control patch (shape 392) stored for A4.
@@ -53,7 +53,9 @@
   (`src/einstein/funnel/a4_diffraction.py`): per-orientation Hann-windowed
   FFT powers on a shared grid, null-calibrated peak detection, sidelobe
   exclusion, bounded-integer module indexing, rotational-symmetry vote and
-  crystal/quasicrystal-candidate/diffuse prioritization verdicts.
+  crystal/quasicrystal-candidate/diffuse prioritization verdicts. Both stored
+  hat patch sizes (11,514 and 22,940 anchors) recover rank 4 and symmetry 6;
+  patch doubling calibrates the free coefficient bound at 8 (D-0018).
 - **Vendored spectre reference generator** (`vendor/spectre/`) with an exact
   rank-4 anchor dump and independent Python module projection
   (`substrate/module12.py`). Its N=3 Delta output agrees three ways: upstream
@@ -104,15 +106,17 @@
   rules yield one full scaffold with two allowed exception positions. The
   ownership cover is non-unique (at least 20 solutions), but every sampled
   cover gives the same parent-anchor lattice and SAT forces all 141 safe-core
-  anchors across every cover. The cover-invariant three-state alphabet then
-  yields a minimum 15-pattern recursive library (all arity 7): the 430-parent
-  training core has one cover of 71 groups/anchors. At the following scale, a
-  nested 43-anchor core has a minimum eight-pattern library (six arity 7, two
-  arity 8) and one cover of nine groups. Artifact:
+  anchors across every cover. Separate r2=50,000 and r2=100,000 SAT patches
+  initially produced different patch-specific minimum libraries. A shared
+  MaxSAT fit now requires 16 arity-7 patterns and forces both 430-parent cores
+  to 71 and 72 groups respectively, with zero optional groups. The normalized
+  16-state contractions admit one shared 15-pattern next-scale library
+  (six arity 7, nine arity 8), forcing 43→8 and 41→8 with zero alternatives.
+  Artifact:
   `a6-hat-screen-results.json`; inspection drawings:
   `a6-hat-candidate-{1,2}.svg`; runner: `scripts/run_a6_hat.py`.
-- Test suite: **62 fast passed** (14 deselected, 8.62 s);
-  **14 slow passed** (57 deselected, 112.17 s). Vendored Rust: **5 passed**.
+- Test suite: **63 fast passed** (14 deselected, 8.54 s);
+  **14 slow passed** (63 deselected, 111.33 s). Vendored Rust: **5 passed**.
 
 ## Funnel state (polykites, grid-aligned scope — D-0006)
 
@@ -131,7 +135,7 @@ mini-E1: Heesch depth alone ranks it #1 in its size class. The six H_c=2
 shapes (gallery in notebook 03 assets) are likely novel data — no published
 polykite Heesch census exists (Kaplan's covers other polyforms). A3
 sharpens the separation: all six are pose-free refuted on disks of r2≤200
-(19–35 tiles max), while the hat covers r2=50000 (11,514 tiles).
+(19–35 tiles max), while the hat covers r2=100000 (22,940 tiles).
 
 ## Known capacity limits (honest)
 
@@ -139,8 +143,8 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
   compiled enumerator required before those sweeps.
 - A1 torus budget k ≤ 12 proven sufficient for n ≤ 8 only (by Myers
   agreement); larger n may need larger tori — revalidate per horizon.
-- A3 single-shot SAT: ~10⁴ tiles (~10⁵ cells, ~10⁷ clauses, ~4 min);
-  CNF building/solving scale linearly-ish but 10⁵-tile patches need an
+- A3 single-shot SAT: demonstrated at 22,940 tiles in 551 s;
+  CNF building/solving scale roughly linearly but 10⁵-tile patches need an
   incremental encoder (assumption-based ring growth) or compiled encoding.
 - A3 greedy engine (growth profile): useful to ~10² tiles on hard shapes.
 - Funnel v0 sees grid-aligned tilings only (D-0006) — sound positives,
@@ -171,18 +175,22 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
 - Hat A6 has a forced first parent-anchor lattice, but the next level is not a
   single Spectre-style full/deletion rule. Nearest 7/8 grouping cannot be made
   a deterministic function of geometry-only collars through radius 4; the
-  recursive solver instead uses cover-invariant option states. Two successive
-  exact contractions now close `430→71` and `43→9`; the current disk cut lacks
-  sufficient grandparent halo to test the final `9→1` contraction reliably.
+  recursive solver instead uses cover-invariant option states. Patch-specific
+  minimum rulebooks do not transfer: the old 15-pattern library is globally
+  UNSAT on the doubled patch, while its naive 17-pattern union introduces
+  optional compositions. Joint fitting across both patches repairs this with
+  forced shared libraries closing `430→71/72` and `43/41→8`. Eight terminal
+  nodes are still too few to claim another independently replicated scale,
+  and physical-hat ownership remains non-unique.
 
 ## Next actions (in order)
 
-1. Grow or obtain a larger hat disk, rerun the frozen A6 rules, and require
-   stable `430→71→9→1`-style closure plus physical-hat ownership forcing.
-2. Scale A0 to the E1 horizon n≤16 (streaming/compiled enumeration) and port
+1. Scale A0 to the E1 horizon n≤16 (streaming/compiled enumeration) and port
    the A1/A2 hot paths needed for the full frozen-threshold sweep.
-3. Run the complete n≤16 A0–A4 ranking, verify hat/turtle placement, and send
+2. Run the complete n≤16 A0–A4 ranking, verify hat/turtle placement, and send
    the hat to A6 without identity-specific hints.
+3. In parallel, seek a third shifted/independent hat window and stronger halo
+   to challenge the shared 16/15-pattern A6 language and physical ownership.
 4. Deferred: revisit the named Gamma/Mystic fusion if useful for comparison
    with the literature hierarchy; it is not a gate dependency.
 5. Deferred: replace the bounded A4 indexer with LLL/PSLQ if future reference

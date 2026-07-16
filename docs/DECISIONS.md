@@ -296,3 +296,45 @@ contraction on a 43-anchor nested core: a minimum eight-pattern library
 (six arity-7, two arity-8) forces nine groups with zero alternatives. This is
 accepted as recursive closure evidence, but the small disk cut does not yet
 contain enough halo to close the final nine anchors to one root.
+
+## D-0017 (2026-07-16) — Recursive libraries are shared cross-patch objects
+
+A minimum finite pattern set learned on one disk is not itself a substitution
+language. On the first hat disk, 15 arity-7 patterns force a complete
+contraction. A separately solved doubled disk also has a 15-pattern optimum,
+but only 13 patterns coincide; freezing the first optimum makes the second
+exact cover UNSAT. Taking the 17-pattern union is also invalid because it
+admits optional compositions.
+
+A6 therefore fits recursive libraries jointly across calibration patches:
+pattern-presence variables are shared, while each patch has independent
+exact-cover constraints. The accepted first-level optimum is 16 arity-7
+patterns and forces both patches (`430→71` and `430→72`). Applying the same
+rule to their contractions yields a shared 15-pattern library (six arity 7,
+nine arity 8) forcing `43→8` and `41→8`.
+
+Pattern states are the normalized indices of the selected shared patterns,
+ordered canonically. They are not IDs from the larger patch-local catalogue
+of every observed pattern. Verification must also use the shared option-state
+alphabet: locally renumbering a subset changes colored pattern semantics.
+
+This finite two-patch result is stronger than count stability but remains a
+calibration certificate, not a theorem for every infinite hat tiling.
+Physical-hat ownership ambiguity is unchanged, and an eight-node terminal
+layer is not counted as another replicated recursive scale.
+
+## D-0018 (2026-07-16) — A4 free coefficient bound follows patch doubling
+
+Making the r²=100,000 hat certificate the default exposed rank 5 in the
+bounded module indexer, despite the r²=50,000 patch giving the literature
+rank 4. The issue was not the peak floor, tolerance or symmetry vote. Past the
+100 strongest peaks, a true module relation needed a coefficient of magnitude
+7 or 8; the calibrated free-generator enumeration stopped at 6.
+
+The A4 default `coeff_bound` is raised from 6 to 8. The separately solved
+generator pair retains `pair_bound=48`. Both stored hat sizes now give rank 4
+and sixfold symmetry in one slow regression. A larger representation bound
+makes more integer relations available rather than declaring new generators;
+the wider reference and null suite remains green. It is still a bounded
+empirical indexer under D-0011, not a general exact integer-relation
+algorithm.

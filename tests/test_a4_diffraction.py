@@ -8,6 +8,7 @@ the symmetry vote, model-set and limit-periodic references, the random
 square--triangle control, and the hat patch end to end.
 """
 
+import json
 import math
 import random
 
@@ -226,7 +227,7 @@ def test_random_point_set_is_diffuse():
 
 
 @pytest.mark.slow
-def test_hat_patch_is_rank4_sixfold():
+def test_hat_patch_is_rank4_sixfold_after_doubling():
     """E4's core positive: the funnel-grown hat patch fingerprints as a
     rank-4, sixfold quasicrystal candidate (Baake-Gaehler-Sadun give
     pure-point diffraction from a 4:2 cut-and-project scheme)."""
@@ -234,11 +235,24 @@ def test_hat_patch_is_rank4_sixfold():
     from einstein.render.svg import hex_to_xy
 
     db = ShapeDB("data/shapes.sqlite")
-    cert = db.latest_verdict(635, "A3-patch")["certificate"]
+    certificates = [
+        json.loads(row[0])
+        for row in db.conn.execute(
+            """
+            SELECT certificate
+            FROM verdicts
+            WHERE shape_id = 635 AND stage = 'A3-patch'
+            ORDER BY created_at
+            """
+        )
+        if json.loads(row[0]).get("r2") in (50_000, 100_000)
+    ]
     db.close()
-    by_op: dict[int, list] = {}
-    for op, tx, ty in cert["placements"]:
-        by_op.setdefault(op, []).append(hex_to_xy((tx, ty)))
-    res = fingerprint(classes=list(by_op.values()), floor=0.0327)
-    assert res["verdict"] == "quasicrystal-candidate"
-    assert res["rank"] == 4 and res["symmetry"] == 6
+    assert {cert["r2"] for cert in certificates} == {50_000, 100_000}
+    for cert in certificates:
+        by_op: dict[int, list] = {}
+        for op, tx, ty in cert["placements"]:
+            by_op.setdefault(op, []).append(hex_to_xy((tx, ty)))
+        res = fingerprint(classes=list(by_op.values()), floor=0.0327)
+        assert res["verdict"] == "quasicrystal-candidate"
+        assert res["rank"] == 4 and res["symmetry"] == 6
