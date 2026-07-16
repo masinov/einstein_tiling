@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-16 (session 12)
+**Last updated:** 2026-07-16 (session 13)
 
 ## Where we are
 
@@ -34,6 +34,10 @@
   (`src/einstein/funnel/a1_torus.py`): exact cover of quotient tori over all
   center-sublattices (HNF) up to index budget. Verdicts are three-valued:
   `periodic` (certificate), `no-periodic-at-budget`, `unknown-budget-exhausted`.
+  The compiled streaming port reproduces the n=8 Myers split and screens
+  n=9..16 with 60,477 independently re-verified positive certificates.
+  At n=16, 29 are periodic at k≤12 and 19,035,046 survive; zero searches
+  exhaust the node budget.
 - **Shape database** (`src/einstein/db.py`, `data/shapes.sqlite`): 1,264
   shapes (all free polykites n≤8), one A1 verdict each, with budget + code
   version stamps. Batch runner `scripts/run_a1.py` is resumable.
@@ -117,7 +121,7 @@
   Artifact:
   `a6-hat-screen-results.json`; inspection drawings:
   `a6-hat-candidate-{1,2}.svg`; runner: `scripts/run_a6_hat.py`.
-- Test suite: **64 fast passed** (14 deselected, 9.13 s);
+- Test suite: **65 fast passed** (14 deselected, 12.43 s);
   **14 slow passed** (63 deselected, 111.33 s). Vendored Rust: **5 passed**.
 
 ## Funnel state (polykites, grid-aligned scope — D-0006)
@@ -142,8 +146,10 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
 ## Known capacity limits (honest)
 
 - Compiled A0 reaches E1 n=16, but its 19,035,075 records still require
-  compiled streaming A1/A2 filters. The fixed 16-cell key is intentionally
-  scoped to E1; E2 n≈22–24 needs a wider key and likely external partitioning.
+  compiled streaming A2 filters. Compiled A1 is complete, but the k≤12
+  divisibility constraint leaves almost all large shapes alive. The fixed
+  16-cell key is intentionally scoped to E1; E2 n≈22–24 needs a wider key and
+  likely external partitioning.
 - A1 torus budget k ≤ 12 proven sufficient for n ≤ 8 only (by Myers
   agreement); larger n may need larger tori — revalidate per horizon.
 - A3 single-shot SAT: demonstrated at 22,940 tiles in 551 s;
@@ -188,8 +194,8 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
 
 ## Next actions (in order)
 
-1. Port the A1/A2 hot paths to consume the compiled n≤16 stream with frozen
-   thresholds and bounded memory.
+1. Port the A2 corona-existence/depth hot paths to consume the compiled n≤16
+   A1 survivor stream with frozen thresholds.
 2. Run the complete n≤16 A0–A4 ranking, verify hat/turtle placement, and send
    the hat to A6 without identity-specific hints.
 3. In parallel, seek a third shifted/independent hat window and stronger halo

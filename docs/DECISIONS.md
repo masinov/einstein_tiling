@@ -358,3 +358,24 @@ under `data/a0-compiled/` are ignored reproducible artifacts; source code,
 format reader and cross-implementation tests are committed. This closes A0
 capacity only. A1/A2 must gain compiled streaming filters before the complete
 19-million-shape E1 sweep is operational.
+
+## D-0020 (2026-07-16) — A1 compiled torus screen is a sound retirement filter
+
+The Python A1 torus implementation is ported exactly to Rust for `A0PK`
+streams: the same HNF sublattices, quotient placements, exact-cover branching,
+node budget and independently checkable certificates. Shapes are removed only
+when a cover is found. Refuted and budget-exhausted cases both remain in the
+survivor stream, so parallel screening cannot discard an aperiodic candidate
+without positive periodic evidence.
+
+The n=8 Myers anchor is reproduced exactly (39 periodic, 834 survivors, zero
+exhaustions), and Python independently verifies every one of the 60,477
+certificates emitted at n=9..16. Sixteen record-range workers screen the full
+n=16 level in 673.06 s.
+
+This stage is not expected to reduce uniformly. The quotient must contain an
+integer number of n-cell tiles, so the frozen k≤12 budget depends strongly on
+n: n=13 has no admissible index, while n=16 tests only k=8 (three tiles per
+domain). Such shapes remain survivors rather than receiving stronger negative
+claims. A2 still needs a compiled local-corona filter before the E1 sweep is
+practical.
