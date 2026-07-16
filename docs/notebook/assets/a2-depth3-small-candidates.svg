@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 1250">
+<rect width="100%" height="100%" fill="#11151c"/>
+<rect x="8" y="8" width="324" height="234" rx="10" fill="#1c2430" stroke="#394555"/>
+<text x="170.0" y="31" fill="#f8f9fa" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">n=10 candidate 1</text>
+<text x="170.0" y="50" fill="#adb5bd" font-family="monospace" font-size="10" text-anchor="middle">Hc ≥ 3 · 0100010101020103…</text>
+<polygon points="85.47,182.93 131.58,209.55 146.95,182.93 131.58,156.31" fill="#f2c14e" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="85.47,182.93 131.58,156.31 116.21,129.69 85.47,129.69" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="85.47,182.93 85.47,129.69 54.74,129.69 39.37,156.31" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="85.47,182.93 39.37,156.31 24.00,182.93 39.37,209.55" fill="#577590" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="177.68,129.69 131.58,156.31 146.95,182.93 177.68,182.93" fill="#9b5de5" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="177.68,129.69 177.68,182.93 208.42,182.93 223.79,156.31" fill="#43aa8b" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="269.89,76.45 223.79,103.07 239.16,129.69 269.89,129.69" fill="#9b5de5" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="269.89,76.45 269.89,129.69 300.63,129.69 316.00,103.07" fill="#43aa8b" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="269.89,182.93 269.89,129.69 239.16,129.69 223.79,156.31" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="269.89,182.93 223.79,156.31 208.42,182.93 223.79,209.55" fill="#577590" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<rect x="348" y="8" width="324" height="234" rx="10" fill="#1c2430" stroke="#394555"/>
+<text x="510.0" y="31" fill="#f8f9fa" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">n=10 candidate 2</text>
+<text x="510.0" y="50" fill="#adb5bd" font-family="monospace" font-size="10" text-anchor="middle">Hc ≥ 3 · 0100010101040105…</text>
+<polygon points="492.03,122.25 527.97,143.00 539.95,122.25 527.97,101.50" fill="#f2c14e" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="492.03,122.25 527.97,101.50 515.99,80.75 492.03,80.75" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="492.03,122.25 456.09,143.00 468.07,163.75 492.03,163.75" fill="#9b5de5" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="492.03,122.25 492.03,163.75 515.99,163.75 527.97,143.00" fill="#43aa8b" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="492.03,205.25 527.97,226.00 539.95,205.25 527.97,184.50" fill="#f2c14e" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="492.03,205.25 527.97,184.50 515.99,163.75 492.03,163.75" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="563.91,80.75 527.97,60.00 515.99,80.75 527.97,101.50" fill="#577590" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="563.91,80.75 527.97,101.50 539.95,122.25 563.91,122.25" fill="#9b5de5" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="563.91,163.75 563.91,122.25 539.95,122.25 527.97,143.00" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="563.91,163.75 527.97,143.00 515.99,163.75 527.97,184.50" fill="#577590" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<rect x="8" y="258" width="324" height="234" rx="10" fill="#1c2430" stroke="#394555"/>
+<text x="170.0" y="281" fill="#f8f9fa" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">n=12 candidate 1</text>
+<text x="170.0" y="300" fill="#adb5bd" font-family="monospace" font-size="10" text-anchor="middle">Hc ≥ 3 · 0100010101020105…</text>
+<polygon points="108.39,381.14 149.46,404.86 163.15,381.14 149.46,357.43" fill="#f2c14e" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="108.39,381.14 149.46,357.43 135.77,333.71 108.39,333.71" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="108.39,381.14 108.39,333.71 81.01,333.71 67.31,357.43" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="108.39,381.14 108.39,428.57 135.77,428.57 149.46,404.86" fill="#43aa8b" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="108.39,476.00 149.46,452.29 135.77,428.57 108.39,428.57" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="190.54,333.71 231.61,357.43 245.30,333.71 231.61,310.00" fill="#f2c14e" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="190.54,333.71 149.46,310.00 135.77,333.71 149.46,357.43" fill="#577590" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="190.54,333.71 149.46,357.43 163.15,381.14 190.54,381.14" fill="#9b5de5" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="190.54,333.71 190.54,381.14 217.92,381.14 231.61,357.43" fill="#43aa8b" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="190.54,428.57 190.54,381.14 163.15,381.14 149.46,404.86" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="190.54,428.57 149.46,404.86 135.77,428.57 149.46,452.29" fill="#577590" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="272.69,381.14 231.61,357.43 217.92,381.14 231.61,404.86" fill="#577590" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<rect x="348" y="258" width="324" height="234" rx="10" fill="#1c2430" stroke="#394555"/>
+<text x="510.0" y="281" fill="#f8f9fa" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">n=12 candidate 2</text>
+<text x="510.0" y="300" fill="#adb5bd" font-family="monospace" font-size="10" text-anchor="middle">Hc ≥ 3 · 0100010101020103…</text>
+<polygon points="468.93,381.14 510.00,404.86 523.69,381.14 510.00,357.43" fill="#f2c14e" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="468.93,381.14 510.00,357.43 496.31,333.71 468.93,333.71" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="468.93,381.14 468.93,333.71 441.54,333.71 427.85,357.43" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="468.93,381.14 427.85,357.43 414.16,381.14 427.85,404.86" fill="#577590" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="468.93,381.14 468.93,428.57 496.31,428.57 510.00,404.86" fill="#43aa8b" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="468.93,476.00 510.00,452.29 496.31,428.57 468.93,428.57" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="551.07,333.71 510.00,310.00 496.31,333.71 510.00,357.43" fill="#577590" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="551.07,428.57 592.15,452.29 605.84,428.57 592.15,404.86" fill="#f2c14e" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="551.07,428.57 592.15,404.86 578.46,381.14 551.07,381.14" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="551.07,428.57 551.07,381.14 523.69,381.14 510.00,404.86" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="551.07,428.57 510.00,404.86 496.31,428.57 510.00,452.29" fill="#577590" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="551.07,428.57 510.00,452.29 523.69,476.00 551.07,476.00" fill="#9b5de5" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<rect x="8" y="508" width="324" height="234" rx="10" fill="#1c2430" stroke="#394555"/>
+<text x="170.0" y="531" fill="#f8f9fa" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">n=12 candidate 3</text>
+<text x="170.0" y="550" fill="#adb5bd" font-family="monospace" font-size="10" text-anchor="middle">Hc ≥ 3 · 0100010101020103…</text>
+<polygon points="130.07,615.33 177.99,643.00 193.96,615.33 177.99,587.67" fill="#f2c14e" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="130.07,615.33 177.99,587.67 162.01,560.00 130.07,560.00" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="130.07,615.33 130.07,560.00 98.12,560.00 82.15,587.67" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="130.07,615.33 82.15,587.67 66.17,615.33 82.15,643.00" fill="#577590" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="130.07,615.33 130.07,670.67 162.01,670.67 177.99,643.00" fill="#43aa8b" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="130.07,726.00 177.99,698.33 162.01,670.67 130.07,670.67" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="225.91,560.00 225.91,615.33 257.85,615.33 273.83,587.67" fill="#43aa8b" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="225.91,670.67 273.83,643.00 257.85,615.33 225.91,615.33" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="225.91,670.67 225.91,615.33 193.96,615.33 177.99,643.00" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="225.91,670.67 177.99,643.00 162.01,670.67 177.99,698.33" fill="#577590" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="225.91,670.67 177.99,698.33 193.96,726.00 225.91,726.00" fill="#9b5de5" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="225.91,670.67 225.91,726.00 257.85,726.00 273.83,698.33" fill="#43aa8b" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<rect x="348" y="508" width="324" height="234" rx="10" fill="#1c2430" stroke="#394555"/>
+<text x="510.0" y="531" fill="#f8f9fa" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">n=12 candidate 4</text>
+<text x="510.0" y="550" fill="#adb5bd" font-family="monospace" font-size="10" text-anchor="middle">Hc ≥ 3 · 010001010118011d…</text>
+<polygon points="438.12,676.20 466.87,692.80 476.46,676.20 466.87,659.60" fill="#f2c14e" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="438.12,676.20 466.87,659.60 457.29,643.00 438.12,643.00" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="495.62,576.60 524.38,593.20 533.96,576.60 524.38,560.00" fill="#f2c14e" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="495.62,576.60 495.62,609.80 514.79,609.80 524.38,593.20" fill="#43aa8b" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="495.62,643.00 524.38,626.40 514.79,609.80 495.62,609.80" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="495.62,643.00 495.62,609.80 476.46,609.80 466.87,626.40" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="495.62,643.00 466.87,626.40 457.29,643.00 466.87,659.60" fill="#577590" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="495.62,643.00 466.87,659.60 476.46,676.20 495.62,676.20" fill="#9b5de5" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="495.62,709.40 495.62,676.20 476.46,676.20 466.87,692.80" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="495.62,709.40 466.87,692.80 457.29,709.40 466.87,726.00" fill="#577590" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="553.13,609.80 581.88,593.20 572.30,576.60 553.13,576.60" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="553.13,609.80 553.13,576.60 533.96,576.60 524.38,593.20" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<rect x="8" y="758" width="324" height="234" rx="10" fill="#1c2430" stroke="#394555"/>
+<text x="170.0" y="781" fill="#f8f9fa" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">n=12 candidate 5</text>
+<text x="170.0" y="800" fill="#adb5bd" font-family="monospace" font-size="10" text-anchor="middle">Hc ≥ 3 · 0100010101020105…</text>
+<polygon points="132.73,846.89 164.68,865.33 175.32,846.89 164.68,828.44" fill="#f2c14e" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="132.73,846.89 164.68,828.44 154.03,810.00 132.73,810.00" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="132.73,846.89 132.73,810.00 111.43,810.00 100.78,828.44" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="132.73,846.89 132.73,883.78 154.03,883.78 164.68,865.33" fill="#43aa8b" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="196.62,810.00 164.68,828.44 175.32,846.89 196.62,846.89" fill="#9b5de5" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="196.62,810.00 196.62,846.89 217.92,846.89 228.57,828.44" fill="#43aa8b" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="196.62,883.78 196.62,846.89 175.32,846.89 164.68,865.33" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="196.62,883.78 164.68,865.33 154.03,883.78 164.68,902.22" fill="#577590" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="196.62,883.78 164.68,902.22 175.32,920.67 196.62,920.67" fill="#9b5de5" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="196.62,883.78 196.62,920.67 217.92,920.67 228.57,902.22" fill="#43aa8b" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="196.62,957.56 228.57,976.00 239.22,957.56 228.57,939.11" fill="#f2c14e" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="196.62,957.56 228.57,939.11 217.92,920.67 196.62,920.67" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<rect x="348" y="758" width="324" height="234" rx="10" fill="#1c2430" stroke="#394555"/>
+<text x="510.0" y="781" fill="#f8f9fa" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">n=12 candidate 6</text>
+<text x="510.0" y="800" fill="#adb5bd" font-family="monospace" font-size="10" text-anchor="middle">Hc ≥ 3 · 0100010101020103…</text>
+<polygon points="425.47,906.31 471.58,932.93 486.95,906.31 471.58,879.69" fill="#f2c14e" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="425.47,906.31 471.58,879.69 456.21,853.07 425.47,853.07" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="425.47,906.31 425.47,853.07 394.74,853.07 379.37,879.69" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="425.47,906.31 379.37,879.69 364.00,906.31 379.37,932.93" fill="#577590" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="517.68,853.07 471.58,826.45 456.21,853.07 471.58,879.69" fill="#577590" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="517.68,853.07 471.58,879.69 486.95,906.31 517.68,906.31" fill="#9b5de5" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="517.68,959.55 563.79,932.93 548.42,906.31 517.68,906.31" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="517.68,959.55 517.68,906.31 486.95,906.31 471.58,932.93" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="609.89,906.31 656.00,879.69 640.63,853.07 609.89,853.07" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="609.89,906.31 609.89,853.07 579.16,853.07 563.79,879.69" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="609.89,906.31 563.79,879.69 548.42,906.31 563.79,932.93" fill="#577590" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="609.89,906.31 563.79,932.93 579.16,959.55 609.89,959.55" fill="#9b5de5" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<rect x="8" y="1008" width="324" height="234" rx="10" fill="#1c2430" stroke="#394555"/>
+<text x="170.0" y="1031" fill="#f8f9fa" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">n=12 candidate 7</text>
+<text x="170.0" y="1050" fill="#adb5bd" font-family="monospace" font-size="10" text-anchor="middle">Hc ≥ 3 · 0100010101020103…</text>
+<polygon points="85.47,1156.31 131.58,1182.93 146.95,1156.31 131.58,1129.69" fill="#f2c14e" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="85.47,1156.31 131.58,1129.69 116.21,1103.07 85.47,1103.07" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="85.47,1156.31 85.47,1103.07 54.74,1103.07 39.37,1129.69" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="85.47,1156.31 39.37,1129.69 24.00,1156.31 39.37,1182.93" fill="#577590" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="177.68,1103.07 223.79,1129.69 239.16,1103.07 223.79,1076.45" fill="#f2c14e" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="177.68,1103.07 177.68,1156.31 208.42,1156.31 223.79,1129.69" fill="#43aa8b" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="177.68,1209.55 223.79,1182.93 208.42,1156.31 177.68,1156.31" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="177.68,1209.55 177.68,1156.31 146.95,1156.31 131.58,1182.93" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="269.89,1156.31 269.89,1103.07 239.16,1103.07 223.79,1129.69" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="269.89,1156.31 223.79,1129.69 208.42,1156.31 223.79,1182.93" fill="#577590" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="269.89,1156.31 223.79,1182.93 239.16,1209.55 269.89,1209.55" fill="#9b5de5" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="269.89,1156.31 269.89,1209.55 300.63,1209.55 316.00,1182.93" fill="#43aa8b" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<rect x="348" y="1008" width="324" height="234" rx="10" fill="#1c2430" stroke="#394555"/>
+<text x="510.0" y="1031" fill="#f8f9fa" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">n=12 candidate 8</text>
+<text x="510.0" y="1050" fill="#adb5bd" font-family="monospace" font-size="10" text-anchor="middle">Hc ≥ 3 · 0100010101020105…</text>
+<polygon points="474.06,1143.00 510.00,1163.75 521.98,1143.00 510.00,1122.25" fill="#f2c14e" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="474.06,1143.00 510.00,1122.25 498.02,1101.50 474.06,1101.50" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="474.06,1143.00 474.06,1101.50 450.10,1101.50 438.12,1122.25" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="474.06,1143.00 474.06,1184.50 498.02,1184.50 510.00,1163.75" fill="#43aa8b" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="474.06,1226.00 510.00,1205.25 498.02,1184.50 474.06,1184.50" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="474.06,1226.00 474.06,1184.50 450.10,1184.50 438.12,1205.25" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="545.94,1101.50 545.94,1060.00 521.98,1060.00 510.00,1080.75" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="545.94,1101.50 510.00,1080.75 498.02,1101.50 510.00,1122.25" fill="#577590" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="545.94,1184.50 581.88,1163.75 569.90,1143.00 545.94,1143.00" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="545.94,1184.50 545.94,1143.00 521.98,1143.00 510.00,1163.75" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="545.94,1184.50 510.00,1163.75 498.02,1184.50 510.00,1205.25" fill="#577590" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="545.94,1184.50 510.00,1205.25 521.98,1226.00 545.94,1226.00" fill="#9b5de5" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
+</svg>

@@ -425,3 +425,24 @@ requires a separate performance design: positive extension is often cheap,
 while exhaustive H_c=2 refutation can consume the full million-node budget.
 Future runs should try stored-chain extension first, then reserve exhaustive
 fallback for within-size ranking and exact negatives.
+
+## D-0023 (2026-07-16) — Depth-3 survivors are candidates, not einstein claims
+
+The recursive A2 bulk run reaches depth 3 on 9,728 n=9..16 shapes and proves
+105 exact H_c=2 negatives. Eight additional shapes exhaust the million-node
+budget and are conservatively retained. All 9,728 positive chains pass the
+independent Python verifier.
+
+Raw depth is strongly size-dependent: 7,371 of the 7,409 n=16 depth-2
+survivors reach depth 3, whereas no n=9 or n=11 shape does. Therefore
+“candidate” at this point means a within-size local-growth anomaly suitable
+for A3/A4, not evidence of aperiodicity or quasicrystalline order. The eight
+10M-node audit attempts experienced a process/session transport failure and
+produced no result; they remain explicitly unknown rather than being inferred
+from empty output.
+
+Human inspection starts with the complete smallest new witnessed sets: both
+n=10 candidates and all eight n=12 candidates are rendered in one SVG. These
+are genuinely new shapes from the exhaustive blind corpus, unlike the earlier
+hat A6 drawings, which showed two hierarchy exception variants of the same
+known hat.

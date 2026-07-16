@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-16 (session 15)
+**Last updated:** 2026-07-16 (session 16)
 
 ## Where we are
 
@@ -67,6 +67,12 @@
   complete n=8 universe, depth 3 leaves exactly one independently verified
   survivor—and its canonical form is the hat. This is the first direct blind
   rediscovery result.
+- **Genuine new blind candidates:** depth 3 over n=9..16 yields 9,728
+  independently verified chains, 105 exact H_c=2 shapes and eight conservative
+  unknowns. The smallest complete witnessed sets—two n=10 and eight n=12
+  shapes—are rendered in `a2-depth3-small-candidates.svg`. These are local
+  growth candidates only; none is called an einstein or quasicrystal before
+  A3/A4.
 - **A4 diffraction fingerprint v0**
   (`src/einstein/funnel/a4_diffraction.py`): per-orientation Hann-windowed
   FFT powers on a shared grid, null-calibrated peak detection, sidelobe
@@ -158,11 +164,11 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
 ## Known capacity limits (honest)
 
 - Compiled A0 reaches E1 n=16, but its 19,035,075 records still require
-  deeper A3/A4 ranking. Compiled A1 and A2 through depth 2 are complete;
-  9,841 witnessed n=9..16 shapes remain. Raw depth is strongly size-dependent,
-  so deeper positive extension and within-size ranking must be separated from
-  expensive exact negative refutation. The fixed 16-cell key is intentionally
-  scoped to E1; E2 n≈22–24 needs a wider key and likely external partitioning.
+  A3/A4 ranking. Depth 3 still leaves 9,728 witnessed n=9..16 shapes because
+  raw depth is strongly size-dependent, especially at n=13 and n=16.
+  Within-size ranking and large-patch/diffraction evidence are now mandatory.
+  The fixed 16-cell key is intentionally scoped to E1; E2 n≈22–24 needs a
+  wider key and likely external partitioning.
 - A1 torus budget k ≤ 12 proven sufficient for n ≤ 8 only (by Myers
   agreement); larger n may need larger tori — revalidate per horizon.
 - A3 single-shot SAT: demonstrated at 22,940 tiles in 551 s;
@@ -207,8 +213,8 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
 
 ## Next actions (in order)
 
-1. Add witness-first depth-3 extension over the 9,841 two-corona survivors,
-   then use exhaustive fallback only for within-size exact ranking.
+1. Run A3 disk growth on the complete ten-shape n=10/n=12 witnessed gallery,
+   then use those outcomes to set the batch policy for n=13–16.
 2. Run the complete n≤16 A0–A4 ranking, verify hat/turtle placement, and send
    the hat to A6 without identity-specific hints.
 3. In parallel, seek a third shifted/independent hat window and stronger halo
