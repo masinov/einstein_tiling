@@ -101,9 +101,9 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
   structured references hit the 1,000-peak cap; pure-point spectral mass,
   patch-size stability and large periodic false-positive rates are not yet
   measured. These are E4 completion work, not hidden assumptions.
-- The user-supplied Spectre archive contains no license metadata. Keep the
-  vendor local to this research repo until provenance/redistribution terms are
-  confirmed.
+- The Spectre source is user-owned and was explicitly supplied for integration
+  here. It has no separate license declaration; that matters only if explicit
+  third-party reuse terms are wanted later, not for work in this repository.
 
 ## Next actions (in order)
 

@@ -1,13 +1,15 @@
 # Vendored: spectre / Tile(1,1) exact substitution generator
 
-Source: user-provided `spectre.tar.gz` (repo root, 2026-07-16), authored
-outside this project. Vendored **source only** — the upstream tarball's
+Source: user-owned and user-provided `spectre.tar.gz` (repo root,
+2026-07-16), authored outside this project and explicitly supplied for
+integration here. Vendored **source only** — the upstream tarball's
 build artifacts (`rust/target/`), GPU viewer (`spectre-view`), WASM bridge
 and web app are not needed here and were dropped.
 
-The supplied archive contained no license file or package license metadata.
-This does not block local research use, but redistribution/public release of
-the vendored source must wait until its provenance and license are confirmed.
+The supplied archive contains no separate license file. That is not an
+ownership or integration issue: the repository owner owns the source and
+authorized its use here. A license declaration is only needed later if the
+owner wants to grant explicit reuse/redistribution rights to third parties.
 
 Role in the program (see D-0010): E4/A4 reference-patch generator with
 exact rank-4 module ground truth, and (later) the forward substitution
