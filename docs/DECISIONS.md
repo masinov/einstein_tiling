@@ -283,3 +283,13 @@ abstract hierarchy; the latter remains an additional forcing obligation.
 This correction is recorded rather than silently replacing the earlier
 artifact semantics. “Candidate” in this A6 context means a hierarchy
 hypothesis for the already-known hat, never a new monotile.
+
+**Recursive state is the option set, not an arbitrary ownership choice.**
+The invariant parent alphabet is the three allowed-type sets `[full]`,
+`[full,A]`, `[full,B]`. Mining exact nearest 7/8 groups colored by those
+states, then minimizing the finite pattern library by MaxSAT, yields 15
+patterns on a 430-parent training core; every selected pattern has arity 7.
+Fixing that library makes all 27 selectable groups touching the 141-parent
+inner core SAT-forced (zero optional alternatives). This is accepted as the
+next A6 hierarchy hypothesis, but not yet full closure: it must reproduce the
+same state/rule language after contraction on larger cores.

@@ -22,7 +22,9 @@ from einstein.funnel.a6_polykite import (
     contract_typed_core_cover,
     cover_core_with_rule,
     enumerate_typed_core_covers,
+    forced_typed_core_options,
     frequent_hex_nearest_templates,
+    mine_option_state_recursive_library,
     placement_poses,
     polykite_boundary,
     typed_core_backbone,
@@ -283,6 +285,28 @@ def main() -> int:
                 poses, core, templates, base_r2=core_r2 // 2
             ),
         }
+        recursive_physical_r2 = 30_000
+        recursive_physical_core = [
+            i for i, pose in enumerate(poses)
+            if (
+                pose[2][0] ** 2
+                + pose[2][0] * pose[2][2]
+                + pose[2][2] ** 2
+            ) <= recursive_physical_r2
+        ]
+        option_states = forced_typed_core_options(
+            poses,
+            recursive_physical_core,
+            templates,
+            base_r2=22_000,
+        )
+        rule_family["recursive_probe"] = (
+            mine_option_state_recursive_library(
+                option_states,
+                training_r2=15_000,
+                forcing_r2=5_000,
+            )
+        )
 
     result = {
         "status": "RULE-FAMILY" if rule_family else (
@@ -321,6 +345,13 @@ def main() -> int:
             "  consolidated: one 3-type rule family; "
             f"{rule_family['covers_sampled']}+ covers sampled, "
             f"{backbone['forced_bases']} interior anchors forced"
+        )
+        recursive = rule_family["recursive_probe"]
+        print(
+            "  recursive probe: "
+            f"{recursive['minimum_patterns']} typed patterns; "
+            f"{recursive['forced_inner_groups']} inner groups forced, "
+            f"{recursive['optional_inner_groups']} optional"
         )
     print(out.relative_to(ROOT))
     for candidate in candidates:

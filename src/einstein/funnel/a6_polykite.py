@@ -11,6 +11,7 @@ from einstein.funnel.a6_hierarchy import (
     CoverResult,
     HierarchyLevel,
     Occurrence,
+    _canonical_colored_cluster,
     canonical_cluster,
     deletion_variants,
     occurrence_base,
@@ -339,6 +340,274 @@ def typed_core_backbone(
             ",".join(map(str, profile)): count
             for profile, count in sorted(profiles.items())
         },
+    }
+
+
+def forced_typed_core_options(
+    poses: Sequence[Pose],
+    core: Sequence[int],
+    templates: Sequence[tuple[Pose, ...]],
+    base_r2: int,
+) -> dict[Pose, tuple[int, ...]]:
+    """Allowed types at every parent anchor forced to exist in all covers."""
+    from pysat.solvers import Cadical195
+
+    core_set = set(core)
+    candidates = tuple(sorted({
+        (template_type, group, occurrence_base(group, template, poses))
+        for template_type, template in enumerate(templates)
+        for group in template_occurrences(template, poses)
+        if group & core_set
+    }, key=lambda item: (
+        item[2], item[0], tuple(sorted(item[1]))
+    )))
+    by_item: dict[int, list[int]] = defaultdict(list)
+    by_base: dict[Pose, list[int]] = defaultdict(list)
+    for variable, (_, group, base) in enumerate(candidates, 1):
+        for item in group:
+            by_item[item].append(variable)
+        by_base[base].append(variable)
+    if any(not by_item[item] for item in core_set):
+        return {}
+    clauses: list[list[int]] = []
+    for item, variables in by_item.items():
+        if item in core_set:
+            clauses.append(variables)
+        for i, a in enumerate(variables):
+            for b in variables[i + 1:]:
+                clauses.append([-a, -b])
+    options = {}
+    with Cadical195(bootstrap_with=clauses) as solver:
+        if not solver.solve():
+            return {}
+        for base, variables in by_base.items():
+            x, y = base[2][0], base[2][2]
+            if x * x + x * y + y * y > base_r2:
+                continue
+            if solver.solve(assumptions=[
+                -variable for variable in variables
+            ]):
+                continue
+            allowed = tuple(sorted({
+                candidates[variable - 1][0]
+                for variable in variables
+                if solver.solve(assumptions=[variable])
+            }))
+            if allowed:
+                options[base] = allowed
+    return options
+
+
+def _hex_nearest_groups(
+    poses: Sequence[Pose],
+    sizes: Sequence[int],
+) -> set[Occurrence]:
+    """One exact nearest-anchor group of each requested size per root."""
+    if any(t[1] or t[3] for _, _, t in poses):
+        raise ValueError("poses are not on the embedded hex translation lattice")
+    largest = max(sizes)
+    by_xy: dict[tuple[int, int], list[int]] = defaultdict(list)
+    for i, (_, _, t) in enumerate(poses):
+        by_xy[(t[0], t[2])].append(i)
+    groups = set()
+    for root_i, root in enumerate(poses):
+        x, y = root[2][0], root[2][2]
+        radius = 4
+        while True:
+            nearby = [
+                i
+                for xx in range(x - radius, x + radius + 1)
+                for yy in range(y - radius, y + radius + 1)
+                for i in by_xy.get((xx, yy), ())
+                if i != root_i
+            ]
+            nearby.sort(key=lambda i: (
+                (poses[i][2][0] - x) ** 2
+                + (poses[i][2][0] - x) * (poses[i][2][2] - y)
+                + (poses[i][2][2] - y) ** 2,
+                poses[i],
+            ))
+            if len(nearby) >= largest - 1:
+                dx = poses[nearby[largest - 2]][2][0] - x
+                dy = poses[nearby[largest - 2]][2][2] - y
+                if 4 * (dx * dx + dx * dy + dy * dy) < (
+                    3 * (radius + 1) ** 2
+                ):
+                    break
+            radius *= 2
+        for size in sizes:
+            groups.add(frozenset((root_i, *nearby[:size - 1])))
+    return groups
+
+
+def mine_option_state_recursive_library(
+    options: dict[Pose, tuple[int, ...]],
+    training_r2: int,
+    forcing_r2: int,
+    group_sizes: Sequence[int] = (7, 8),
+) -> dict:
+    """Mine a minimum typed next-level library from cover-invariant states."""
+    from pysat.card import CardEnc, EncType
+    from pysat.examples.rc2 import RC2
+    from pysat.formula import IDPool, WCNF
+    from pysat.solvers import Cadical195
+
+    poses = tuple(sorted(options))
+    option_states = {
+        option: state
+        for state, option in enumerate(sorted(set(options.values())))
+    }
+    states = tuple(option_states[options[pose]] for pose in poses)
+    training = {
+        i for i, pose in enumerate(poses)
+        if (
+            pose[2][0] ** 2
+            + pose[2][0] * pose[2][2]
+            + pose[2][2] ** 2
+        ) <= training_r2
+    }
+    forcing = {
+        i for i, pose in enumerate(poses)
+        if (
+            pose[2][0] ** 2
+            + pose[2][0] * pose[2][2]
+            + pose[2][2] ** 2
+        ) <= forcing_r2
+    }
+    groups = [
+        group for group in _hex_nearest_groups(poses, group_sizes)
+        if group & training
+    ]
+    typed = [
+        (
+            _canonical_colored_cluster(
+                [poses[i] for i in group],
+                [states[i] for i in group],
+            ),
+            group,
+        )
+        for group in groups
+    ]
+    pattern_ids = {
+        pattern: i for i, pattern in enumerate(sorted({
+            pattern for pattern, _ in typed
+        }))
+    }
+    items = [(pattern_ids[pattern], group) for pattern, group in typed]
+    by_item: dict[int, list[int]] = defaultdict(list)
+    for variable, (_, group) in enumerate(items, 1):
+        for item in group:
+            by_item[item].append(variable)
+
+    formula = WCNF()
+    pool = IDPool(start_from=len(items) + 1)
+    for item, variables in by_item.items():
+        if item in training:
+            formula.append(variables)
+        formula.extend(CardEnc.atmost(
+            variables, 1, vpool=pool, encoding=EncType.seqcounter
+        ).clauses)
+    for pattern_id in range(len(pattern_ids)):
+        formula.append([-pool.id(("pattern", pattern_id))], weight=1)
+    for variable, (pattern_id, _) in enumerate(items, 1):
+        formula.append([
+            -variable, pool.id(("pattern", pattern_id))
+        ])
+    with RC2(formula) as optimizer:
+        model = optimizer.compute()
+        minimum_patterns = optimizer.cost if model is not None else None
+    if model is None:
+        return {
+            "satisfiable": False,
+            "option_states": len(option_states),
+            "training_nodes": len(training),
+        }
+    positive = {value for value in model if value > 0}
+    selected_pattern_ids = {
+        pattern_id for pattern_id in range(len(pattern_ids))
+        if pool.id(("pattern", pattern_id)) in positive
+    }
+    allowed = [
+        (pattern_id, group)
+        for pattern_id, group in items
+        if pattern_id in selected_pattern_ids
+    ]
+    allowed_by_item: dict[int, list[int]] = defaultdict(list)
+    for variable, (_, group) in enumerate(allowed, 1):
+        for item in group:
+            allowed_by_item[item].append(variable)
+    clauses: list[list[int]] = []
+    pool2 = IDPool(start_from=len(allowed) + 1)
+    for item, variables in allowed_by_item.items():
+        if item in training:
+            clauses.append(variables)
+        clauses.extend(CardEnc.atmost(
+            variables, 1, vpool=pool2, encoding=EncType.seqcounter
+        ).clauses)
+    forced = optional = impossible = 0
+    forced_groups = []
+    with Cadical195(bootstrap_with=clauses) as solver:
+        if not solver.solve():
+            raise ValueError("optimized pattern library lost its own cover")
+        for variable, (_, group) in enumerate(allowed, 1):
+            if not group & forcing:
+                continue
+            if not solver.solve(assumptions=[variable]):
+                impossible += 1
+            elif solver.solve(assumptions=[-variable]):
+                optional += 1
+            else:
+                forced += 1
+                pattern_id, group = allowed[variable - 1]
+                template = canonical_cluster([poses[i] for i in group])
+                base = occurrence_base(group, template, poses)
+                forced_groups.append({
+                    "pattern": pattern_id,
+                    "base": [base[0], base[1], list(base[2])],
+                    "members": sorted(group),
+                })
+    inverse_patterns = {
+        pattern_id: pattern for pattern, pattern_id in pattern_ids.items()
+    }
+    selected_patterns = [
+        [
+            {
+                "pose": [s, r, list(t)],
+                "state": state,
+            }
+            for (s, r, t), state in inverse_patterns[pattern_id]
+        ]
+        for pattern_id in sorted(selected_pattern_ids)
+    ]
+    return {
+        "satisfiable": True,
+        "option_states": len(option_states),
+        "option_state_values": [
+            list(option) for option in sorted(option_states)
+        ],
+        "available_parent_anchors": len(poses),
+        "training_r2": training_r2,
+        "training_nodes": len(training),
+        "forcing_r2": forcing_r2,
+        "forcing_nodes": len(forcing),
+        "candidate_groups": len(groups),
+        "observed_typed_patterns": len(pattern_ids),
+        "minimum_patterns": minimum_patterns,
+        "selected_pattern_arities": dict(Counter(
+            len(inverse_patterns[pattern_id])
+            for pattern_id in selected_pattern_ids
+        )),
+        "selected_patterns": selected_patterns,
+        "allowed_group_occurrences": len(allowed),
+        "forced_inner_groups": forced,
+        "optional_inner_groups": optional,
+        "impossible_inner_groups": impossible,
+        "inner_grouping_forced": forced > 0 and optional == 0,
+        "forced_groups": sorted(
+            forced_groups, key=lambda group: (
+                group["base"], group["pattern"], group["members"]
+            )
+        ),
     }
 
 
