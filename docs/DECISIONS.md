@@ -82,3 +82,21 @@ Depth claims: "H ≥ k" carries a machine-verified certificate (the corona
 chain); "H = k" is an exhaustion result valid only when no budget was hit,
 like UNSAT — it carries the budget stamp instead. Latest verdict per shape
 in the DB is the operative one (escalations append, never overwrite).
+
+## D-0009 (2026-07-16) — A3 = disk exact cover; SAT (CaDiCaL) is the workhorse
+
+A3 patches are posed as exact cover of a disk-shaped cell region (copies
+may overhang; enclosed empty cells are uncovered region cells, so
+hole-freeness needs no separate check). Measured on the hat: greedy
+most-constrained-first filling with backtracking and restarts walls near
+~250 tiles — wrong early commitments hide beyond chronological
+backtracking; the A2 corona engine is worse as a grower. The spec's SAT
+prescription is therefore adopted now rather than later: `python-sat`
+(CaDiCaL 1.9.5) is the project's first external solver dependency. Trust
+boundary: solver models are decoded and re-verified by our own exact
+verifier before storage, and UNSAT results are recorded as exhaustion
+verdicts ("disk-cover-refuted", pose-free when no seed is pinned), so no
+claim ever rests on the solver alone. The pure-Python greedy grower is
+kept for the growth-profile feature and as fallback. Known limit: CNF
+size (~11M clauses at 9×10⁴ cells) caps single-shot patches around 10⁴
+tiles; incremental encoding is the recorded escalation path.
