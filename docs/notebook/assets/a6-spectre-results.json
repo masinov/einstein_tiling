@@ -1,0 +1,421 @@
+{
+  "status": "PASS",
+  "scope": "A6 v0 immediate composition; recognizability not yet proved",
+  "blind_inputs": "exact (s,r,t0..t3) physical poses only; kind ignored",
+  "selected_rule": {
+    "full": [
+      [
+        0,
+        0,
+        [
+          -2,
+          -2,
+          -2,
+          -2
+        ]
+      ],
+      [
+        0,
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        0,
+        1,
+        [
+          1,
+          -3,
+          -2,
+          0
+        ]
+      ],
+      [
+        0,
+        2,
+        [
+          -2,
+          -2,
+          1,
+          1
+        ]
+      ],
+      [
+        0,
+        2,
+        [
+          -1,
+          0,
+          -1,
+          0
+        ]
+      ],
+      [
+        0,
+        4,
+        [
+          -1,
+          -2,
+          -1,
+          1
+        ]
+      ],
+      [
+        0,
+        8,
+        [
+          1,
+          -1,
+          -2,
+          -1
+        ]
+      ],
+      [
+        0,
+        10,
+        [
+          0,
+          -1,
+          0,
+          -1
+        ]
+      ],
+      [
+        0,
+        10,
+        [
+          2,
+          0,
+          -1,
+          0
+        ]
+      ]
+    ],
+    "missing": [
+      [
+        0,
+        0,
+        [
+          -2,
+          -2,
+          -2,
+          -2
+        ]
+      ],
+      [
+        0,
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        0,
+        1,
+        [
+          1,
+          -3,
+          -2,
+          0
+        ]
+      ],
+      [
+        0,
+        2,
+        [
+          -2,
+          -2,
+          1,
+          1
+        ]
+      ],
+      [
+        0,
+        2,
+        [
+          -1,
+          0,
+          -1,
+          0
+        ]
+      ],
+      [
+        0,
+        4,
+        [
+          -1,
+          -2,
+          -1,
+          1
+        ]
+      ],
+      [
+        0,
+        8,
+        [
+          1,
+          -1,
+          -2,
+          -1
+        ]
+      ],
+      [
+        0,
+        10,
+        [
+          0,
+          -1,
+          0,
+          -1
+        ]
+      ]
+    ],
+    "full_adjacency": {
+      "degrees": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4
+      ],
+      "internal_edges": 40,
+      "exposed_edges": 46
+    },
+    "missing_adjacency": {
+      "degrees": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        4,
+        4,
+        4
+      ],
+      "internal_edges": 34,
+      "exposed_edges": 44
+    }
+  },
+  "discovery": {
+    "sizes": {
+      "6": {
+        "top_frequency": 78,
+        "accepted": 0
+      },
+      "7": {
+        "top_frequency": 145,
+        "accepted": 0
+      },
+      "8": {
+        "top_frequency": 209,
+        "accepted": 0
+      },
+      "9": {
+        "top_frequency": 200,
+        "accepted": 2
+      },
+      "10": {
+        "top_frequency": 81,
+        "accepted": 0
+      },
+      "11": {
+        "top_frequency": 97,
+        "accepted": 0
+      },
+      "12": {
+        "top_frequency": 38,
+        "accepted": 0
+      }
+    },
+    "training_candidates": 2,
+    "confirmation_candidates": 2,
+    "candidate_scores": [
+      {
+        "full_size": 9,
+        "proposal_frequency": 200,
+        "missing_internal_edges": 34,
+        "missing_exposed_edges": 44
+      },
+      {
+        "full_size": 9,
+        "proposal_frequency": 200,
+        "missing_internal_edges": 32,
+        "missing_exposed_edges": 48
+      }
+    ],
+    "selected": {
+      "full_size": 9,
+      "proposal_frequency": 200,
+      "n_full": 55,
+      "n_missing": 8,
+      "missing_adjacency": {
+        "degrees": [
+          2,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          4
+        ],
+        "internal_edges": 34,
+        "exposed_edges": 44
+      }
+    }
+  },
+  "delta_levels": {
+    "1": {
+      "physical_tiles": 9,
+      "parents": 1,
+      "full": 1,
+      "missing": 0,
+      "unique_exact_cover": true,
+      "hidden_validation": {
+        "predicted": 1,
+        "hidden": 1,
+        "matched": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "exact": true
+      }
+    },
+    "2": {
+      "physical_tiles": 71,
+      "parents": 8,
+      "full": 7,
+      "missing": 1,
+      "unique_exact_cover": true,
+      "hidden_validation": {
+        "predicted": 8,
+        "hidden": 8,
+        "matched": 8,
+        "precision": 1.0,
+        "recall": 1.0,
+        "exact": true
+      }
+    },
+    "3": {
+      "physical_tiles": 559,
+      "parents": 63,
+      "full": 55,
+      "missing": 8,
+      "unique_exact_cover": true,
+      "hidden_validation": {
+        "predicted": 63,
+        "hidden": 63,
+        "matched": 63,
+        "precision": 1.0,
+        "recall": 1.0,
+        "exact": true
+      }
+    },
+    "4": {
+      "physical_tiles": 4401,
+      "parents": 496,
+      "full": 433,
+      "missing": 63,
+      "unique_exact_cover": true,
+      "hidden_validation": {
+        "predicted": 496,
+        "hidden": 496,
+        "matched": 496,
+        "precision": 1.0,
+        "recall": 1.0,
+        "exact": true
+      }
+    }
+  },
+  "all_root_labels_level3": {
+    "Gamma": {
+      "physical_tiles": 488,
+      "parents": 55,
+      "full": 48,
+      "missing": 7,
+      "unique_exact_cover": true
+    },
+    "Delta": {
+      "physical_tiles": 559,
+      "parents": 63,
+      "full": 55,
+      "missing": 8,
+      "unique_exact_cover": true
+    },
+    "Theta": {
+      "physical_tiles": 559,
+      "parents": 63,
+      "full": 55,
+      "missing": 8,
+      "unique_exact_cover": true
+    },
+    "Lambda": {
+      "physical_tiles": 559,
+      "parents": 63,
+      "full": 55,
+      "missing": 8,
+      "unique_exact_cover": true
+    },
+    "Xi": {
+      "physical_tiles": 559,
+      "parents": 63,
+      "full": 55,
+      "missing": 8,
+      "unique_exact_cover": true
+    },
+    "Pi": {
+      "physical_tiles": 559,
+      "parents": 63,
+      "full": 55,
+      "missing": 8,
+      "unique_exact_cover": true
+    },
+    "Sigma": {
+      "physical_tiles": 559,
+      "parents": 63,
+      "full": 55,
+      "missing": 8,
+      "unique_exact_cover": true
+    },
+    "Phi": {
+      "physical_tiles": 559,
+      "parents": 63,
+      "full": 55,
+      "missing": 8,
+      "unique_exact_cover": true
+    },
+    "Psi": {
+      "physical_tiles": 559,
+      "parents": 63,
+      "full": 55,
+      "missing": 8,
+      "unique_exact_cover": true
+    }
+  },
+  "physical_tile_counts": [
+    9,
+    71,
+    559,
+    4401
+  ],
+  "recurrence": {
+    "a": 8,
+    "b": -1,
+    "characteristic": [
+      1,
+      -8,
+      1
+    ]
+  },
+  "inflation_area": "dominant root 4 + sqrt(15)"
+}

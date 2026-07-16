@@ -107,8 +107,9 @@ Two related decisions for M4.
 
 **Vendored reference generator.** The user-provided exact spectre /
 Tile(1,1) substitution generator is vendored source-only at
-`vendor/spectre/` (Rust crate + `gen_tables.py`; our only addition is an
-anchor-dump binary). Role: E4/A4 calibration source with exact rank-4
+`vendor/spectre/` (Rust crate + `gen_tables.py`; our initial addition is an
+anchor-dump binary; A6 later adds a validation-only ancestry dump). Role:
+E4/A4 calibration source with exact rank-4
 module ground truth, and later the known answer A6 hierarchy mining must
 re-discover (program §4 A6 cites `gen_tables.py`'s loop explicitly). It
 is a *generator* for one known tiling: it never produces evidence about
@@ -153,3 +154,26 @@ adopts mandatory second-resolution confirmation for rank ≥ 4 emitted by a
 reduced-resolution/high-throughput screen, and accepts the bounded indexer
 for prioritization. LLL/PSLQ remains the escalation path if a future
 reference, transform, or control falls outside this empirical envelope.
+
+## D-0012 (2026-07-16) — A6 blind/validation split; exact local mining
+
+**Data separation.** A6 discovery may read only physical tile geometry and
+poses. The vendored `hierarchy` dump is a validation oracle: it is generated
+to a separate file and opened only after a rule and complete partition have
+been fixed. Rows are joined to the ordinary anchor dump by exact pose, never
+by traversal order. Tile kind and child path are ignored by the miner.
+
+**Exactness.** Local neighborhoods are ordered by squared module distance in
+`Q(sqrt(3))`, canonicalized by exact dihedral pose arithmetic, matched by exact
+pose lookup, and accepted only through an exact disjoint cover of the whole
+patch. No floating-point geometry enters discovery or verification; Cartesian
+projection is used only for the SVG artifact.
+
+**Phase ambiguity.** Pose-only exact cover does not by itself make the
+immediate composition recognizable: two one-deletion phases survive on both
+the training and larger confirmation patch. A6 v0 ranks this exact-cover tie
+by adjacency cohesion (maximize shared tile edges, then minimize exposed
+edges), which selects the phase that afterward matches withheld ancestry
+exactly at levels 1–4. This is a calibrated mining heuristic, not a forcing
+proof. M5 remains open until recursive labelled closure and collared
+unique-composition checks remove reliance on that ranking.

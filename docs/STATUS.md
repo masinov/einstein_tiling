@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-16 (session 06)
+**Last updated:** 2026-07-16 (session 07)
 
 ## Where we are
 
@@ -18,8 +18,8 @@
 | M3 — A3 large-patch growth | §4 A3 | ✅ done v0, SAT backend; 11,514-tile hat patch, φ⁴ chirality anchor hit (session 04) |
 | M4 — A4 diffraction fingerprint | §4 A4 | ✅ done v0; 12-fold core calibration passed (session 05) |
 | E4 — full fingerprint calibration gate | §8 E4 | ✅ passed (sessions 05–06) |
-| M5 — A6 hierarchy mining | §4 A6 | ⬜ after E4 |
-| **Gate G1 — E1 blind hat rediscovery** | §8 E1 | ⬜ blocked by E4 + M5 |
+| M5 — A6 hierarchy mining | §4 A6 | 🟨 v0 immediate composition passed; recursive rules + forcing open |
+| **Gate G1 — E1 blind hat rediscovery** | §8 E1 | ⬜ blocked by remaining M5 |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -70,8 +70,17 @@
 - Wider artifacts: `scripts/run_e4_wide.py`,
   `docs/notebook/assets/e4-wide-results.json`, and
   `e4-spectrum-{penrose,ammann-beenker,taylor-socolar,square-triangle-random}.png`.
-- Test suite: **50 fast passed** (12 deselected, 5.65 s);
-  **12 slow passed** (50 deselected, 79.45 s).
+- **A6 hierarchy miner v0** (`src/einstein/funnel/a6_hierarchy.py`) uses
+  exact rank-4 pose arithmetic and exact tile-edge adjacency. On pose-only
+  Spectre patches it discovers a repeated 9-tile scaffold plus an 8-tile
+  one-child exception. The selected rule uniquely covers all nine level-3
+  root patches and recovers every withheld immediate parent in Delta levels
+  1–4: 1/1, 8/8, 63/63 and 496/496. Physical counts
+  9, 71, 559, 4,401 yield `T[n+1] = 8T[n] - T[n-1]` and dominant root
+  `4 + sqrt(15)`. Artifact: `a6-spectre-results.json`; runner:
+  `scripts/run_a6_spectre.py`.
+- Test suite: **55 fast passed** (13 deselected, 8.66 s);
+  **13 slow passed** (55 deselected, 82.27 s).
 
 ## Funnel state (polykites, grid-aligned scope — D-0006)
 
@@ -116,15 +125,26 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
 - The Spectre source is user-owned and was explicitly supplied for integration
   here. It has no separate license declaration; that matters only if explicit
   third-party reuse terms are wanted later, not for work in this repository.
+- A6 v0 recovers only the immediate unlabelled physical composition. Two
+  phase-shifted deletion hypotheses survive pose-only exact-cover checks; an
+  exact adjacency-cohesion criterion selects the hypothesis that then matches
+  withheld ancestry exactly. This is calibrated discovery evidence, not yet a
+  recognizability proof. The 9/8 physical scaffolds and count recurrence do not
+  by themselves identify the hidden two-tile Gamma child, the nine metatile
+  labels, recursive closure, a forcing radius, or unique composition of every
+  legal tiling.
 
 ## Next actions (in order)
 
-1. M5 / A6 hierarchy mining, using the vendored spectre substitution as the
-   known answer the reverse-discovery pipeline must recover.
-2. Gate G1 planning, then A0 scaling (streaming/compiled enumerator) and the
+1. Continue M5/A6: mine the two-tile Gamma child and parent pose/inflation
+   map, then recursively recover the nine metatile classes and composition
+   table from pose/adjacency data alone.
+2. Add collared-patch enumeration and SAT uniqueness checks for a measured
+   recognizability radius; only then call M5 complete.
+3. Gate G1 planning, then A0 scaling (streaming/compiled enumerator) and the
    A2 performance port required for the n≤16 E1 blind sweep.
-3. Deferred: replace the bounded A4 indexer with LLL/PSLQ if future reference
+4. Deferred: replace the bounded A4 indexer with LLL/PSLQ if future reference
    families or transformed controls break the E4 envelope.
-4. Deferred: incremental SAT encoder for 10⁵-tile patches; corona-1 census
+5. Deferred: incremental SAT encoder for 10⁵-tile patches; corona-1 census
    feature; polyiamond substrate (external per-shape Heesch anchor from
    Kaplan's dataset).
