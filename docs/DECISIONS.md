@@ -208,3 +208,40 @@ collars—are enumerated and unique composition is checked by SAT.
 independent overlap components before search. This preserves exact solution
 counting while avoiding recursion depth proportional to thousands of
 independent parents.
+
+## D-0014 (2026-07-16) — A6 stationary state alignment and finite forcing gate
+
+**One alphabet, not two arbitrary colorings.** A6 v1 numbered radius-1 collar
+signatures independently on the child and parent contractions. Both sides had
+17 classes, but their integer IDs denoted different scale-local signatures, so
+the recorded table was not itself a stationary substitution. A6 v2 aligns the
+equal-sized parent contraction with the previous patch's child contraction by
+the exact graph isomorphism from D-0013, and matches same-scale child signatures
+directly. The resulting normalized states `0..16` occur on both sides, every
+state has one rule, the child alphabet is exactly the parent alphabet, and the
+transition graph is strongly connected.
+
+**Recursive closure replaces the phase heuristic.** The immediate physical
+miner honestly returns two exact 9/8 phases on both training and confirmation
+patches. The old edge-cohesion score chose the correct one, but is no longer a
+trust dependency: only one phase admits the recursively unique exceptional-
+child hierarchy `496→63→8→1`; the other leaves two incompatible next-level
+compositions. The score is retained only as a diagnostic and agrees with the
+closure result.
+
+**Finite local forcing certificate.** Radius-1 physical edge neighborhoods
+stabilize at 32 states between the level-4 and level-5 patches. They induce 19
+legal parent patterns for the recursively closing phase. When all 11,715
+geometric occurrences from both phases are offered, exactly the selected
+3,905-parent cover remains legal; the other 7,810 occurrences are rejected.
+CaDiCaL checks all 19 pattern cases and finds no alternative composition.
+At the next scale, the two visible 8/7 metatile types already force grouping
+(310/310 complete contexts); the radius-1 17-state refinement additionally
+rejects every competing fully colored occurrence and is SAT-unique on all 17
+state cases (309 complete finite-patch representatives).
+
+This closes M5's computational calibration gate and unblocks E1. The JSON
+artifact is the verified case table; emitting a Lean wrapper around it belongs
+to E10, not to the runtime funnel. The traditional two-tile Gamma/Mystic fusion
+is not needed by this recovered 9/8 hierarchy certificate and remains optional
+reference-structure archaeology rather than a gate blocker.

@@ -7,7 +7,7 @@ leave an entry here linking to its notebook session and artifacts.
 
 | ID | Name | Kind | Status | Depends on | Evidence |
 |---|---|---|---|---|---|
-| E1 | Blind rediscovery of the hat | validation gate | **not started** | funnel A0–A4+A6 (M1–M5) | — |
+| E1 | Blind rediscovery of the hat | validation gate | **in progress** — funnel complete; n≤16 scaling next | funnel A0–A4+A6 (M1–M5) | sessions 01–09 infrastructure |
 | E2 | Exhaustive 12-fold sweep beyond known horizon | discovery | not started | E1 pass, scaled A0 | — |
 | E3 | First hunts in 5-fold / 8-fold substrates | discovery | not started | E1 pass, new substrates | — |
 | E4 | Diffraction fingerprint calibration | validation gate | **PASSED** (2026-07-16) | A4 (M4), full reference library | `scripts/run_e4.py`, `scripts/run_e4_wide.py`; [notebook 05](notebook/2026-07-16-session-05.md), [notebook 06](notebook/2026-07-16-session-06.md); assets `e4-results.json`, `e4-wide-results.json`, `e4-spectrum-*.png` |
@@ -38,6 +38,7 @@ Work that doesn't belong to a numbered experiment but gates them
 | 2026-07-16 | Vendored spectre generator (user-provided) + our rank-4 module port | three-way agreement: upstream reference float leaves == Rust exact traversal == our module12 projection (N=3 Delta, 559 leaves); tile-count recurrence; single chirality | pass | `tests/test_spectre_vendor.py`, `vendor/spectre/VENDOR.md` |
 | 2026-07-16 | A6 v0 blind immediate-composition recovery on Spectre | pose-only exact local mining on Delta N=3, confirmation on N=4 and all nine N=3 root labels; hidden ancestry opened afterward | pass — repeated 9/8 scaffolds; unique cover per selected rule; withheld parents recovered exactly at N=1..4 (1, 8, 63, 496); recurrence `(8,-1)` | `scripts/run_a6_spectre.py`, `a6-spectre-results.json`, [notebook 07](notebook/2026-07-16-session-07.md) |
 | 2026-07-16 | A6 v1 recursive and collared closure on Spectre | exact contraction of pose-only N=4/5 patches; cross-scale colored adjacency-graph transfer; withheld paths/labels opened afterward | pass — N=4 closes `496→63→8→1`, all depths match ancestry; radius-1 gives 17 pure states covering 9 labels; 17/17 deterministic child rules on 310 interior parents | `scripts/run_a6_spectre.py`, `a6-spectre-results.json`, [notebook 08](notebook/2026-07-16-session-08.md) |
+| 2026-07-16 | A6 v2 stationary language and forcing gate on Spectre | align parent/child collars to one alphabet; test both exact physical phases by recursive closure; enumerate physical and metatile collar languages; SAT-block the known parent in every finite case | pass — 2 local phases → 1 recursive survivor; 32 physical states/19 legal parent patterns reject 7,810 competing occurrences; 17-state substitution closed and strongly connected; all 19 physical and all 17 metatile cases uniquely composable | `scripts/run_a6_spectre.py`, `a6-spectre-results.json`, [notebook 09](notebook/2026-07-16-session-09.md) |
 
 ## E4 phase-1 record (2026-07-16, first numbered experiment run)
 

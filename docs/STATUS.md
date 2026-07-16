@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-16 (session 08)
+**Last updated:** 2026-07-16 (session 09)
 
 ## Where we are
 
@@ -18,8 +18,8 @@
 | M3 — A3 large-patch growth | §4 A3 | ✅ done v0, SAT backend; 11,514-tile hat patch, φ⁴ chirality anchor hit (session 04) |
 | M4 — A4 diffraction fingerprint | §4 A4 | ✅ done v0; 12-fold core calibration passed (session 05) |
 | E4 — full fingerprint calibration gate | §8 E4 | ✅ passed (sessions 05–06) |
-| M5 — A6 hierarchy mining | §4 A6 | 🟨 v1 recursive/collared closure passed; forcing proof open |
-| **Gate G1 — E1 blind hat rediscovery** | §8 E1 | ⬜ blocked by remaining M5 |
+| M5 — A6 hierarchy mining | §4 A6 | ✅ done v0; recursive, stationary-collar and SAT forcing gate passed |
+| **Gate G1 — E1 blind hat rediscovery** | §8 E1 | 🟨 unblocked; n≤16 scaling and hat A6 adapter next |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -88,8 +88,18 @@
   17 interior states that are 100% pure against all nine withheld labels
   (3,109 nodes), and all 17 states have one deterministic ordered child rule
   across 310 fully collared parents.
+- **A6 v2 forcing gate:** the v1 parent and child collar numbers were found to
+  be independently named rather than one stationary alphabet. Exact graph
+  alignment now produces a closed, strongly connected 17-state substitution
+  on normalized states `0..16`. Both locally exact physical phases enter the
+  wider gate; only one closes recursively (`496→63→8→1`). Radius-1 physical
+  collars stabilize at 32 states and 19 legal parent patterns: among 11,715
+  occurrences from both phases, exactly the selected 3,905 groups remain
+  legal. CaDiCaL proves all 19 physical patterns and all 17 metatile-state
+  cases uniquely composable. Hidden ancestry and labels are still opened only
+  after discovery and agree exactly.
 - Test suite: **57 fast passed** (14 deselected, 8.72 s);
-  **14 slow passed** (57 deselected, 123.89 s).
+  **14 slow passed** (57 deselected, 112.17 s). Vendored Rust: **5 passed**.
 
 ## Funnel state (polykites, grid-aligned scope — D-0006)
 
@@ -134,33 +144,29 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
 - The Spectre source is user-owned and was explicitly supplied for integration
   here. It has no separate license declaration; that matters only if explicit
   third-party reuse terms are wanted later, not for work in this repository.
-- A6 v0 recovers only the immediate unlabelled physical composition. Two
-  phase-shifted deletion hypotheses survive pose-only exact-cover checks; an
-  exact adjacency-cohesion criterion selects the hypothesis that then matches
-  withheld ancestry exactly. This is calibrated discovery evidence, not yet a
-  recognizability proof. The 9/8 physical scaffolds and count recurrence do not
-  by themselves identify the hidden two-tile Gamma child, the nine metatile
-  labels, recursive closure, a forcing radius, or unique composition of every
-  legal tiling.
-- A6 v1 closes the observed recursive hierarchy and a finite 17-state collared
-  rule table, but only on generated finite patches. Exact graph refinement
-  happens to become discrete on the calibrated patches; a general isomorphism
-  backtracker is not implemented. Radius-1 collar purity and deterministic
-  child rules are empirical closure checks, not an exhaustion of every legal
-  collar. The bottom two-tile Gamma/Mystic fusion is still not selected
-  uniquely from unlabelled physical geometry.
+- A6's current forcing certificate is verified finite computation over the
+  recovered physical/collared languages, not a Lean theorem about arbitrary
+  infinite tilings. The artifact contains the complete case counts and SAT
+  results; a Lean wrapper is deferred to E10.
+- Exact graph refinement becomes discrete on the calibrated Spectre patches;
+  a general graph-isomorphism backtracker is not implemented. A future
+  candidate whose refinement remains ambiguous must fail honestly or trigger
+  that escalation.
+- The traditional two-tile Gamma/Mystic fusion is not recovered uniquely, but
+  the closed 9/8 hierarchy and its local forcing certificate do not require
+  it. Recovering that named reference motif is optional validation archaeology.
 
 ## Next actions (in order)
 
-1. Continue M5/A6: enumerate every legal radius-1 collared configuration
-   admitted by the recovered 17-state rules, not just those sampled in the
-   level-5 patch.
-2. SAT-check unique parent composition for that finite collar set and measure
-   the smallest forcing radius; only then call M5 complete.
-3. Revisit the bottom two-tile Gamma/Mystic fusion using collared context
-   rather than the ambiguous unlabelled pair motif.
-4. Gate G1 planning, then A0 scaling (streaming/compiled enumerator) and the
-   A2 performance port required for the n≤16 E1 blind sweep.
+1. Start Gate G1: add the exact adapter from A3 polykite placement
+   certificates to A6 module poses/boundaries, then require blind hierarchy
+   recovery on the hat.
+2. Scale A0 to the E1 horizon n≤16 (streaming/compiled enumeration) and port
+   the A1/A2 hot paths needed for the full frozen-threshold sweep.
+3. Run the complete n≤16 A0–A4 ranking, verify hat/turtle placement, and send
+   the hat to A6 without identity-specific hints.
+4. Deferred: revisit the named Gamma/Mystic fusion if useful for comparison
+   with the literature hierarchy; it is not a gate dependency.
 5. Deferred: replace the bounded A4 indexer with LLL/PSLQ if future reference
    families or transformed controls break the E4 envelope.
 6. Deferred: incremental SAT encoder for 10⁵-tile patches; corona-1 census

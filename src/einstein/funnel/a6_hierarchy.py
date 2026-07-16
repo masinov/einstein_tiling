@@ -574,9 +574,20 @@ def oriented_collar_colors(
     radius: int = 1,
 ) -> tuple[int, ...]:
     """Exact rooted collar colors using oriented relative neighbor poses."""
+    signatures = oriented_collar_signatures(level, adjacency, radius)
+    keys = {sig: k for k, sig in enumerate(sorted(set(signatures)))}
+    return tuple(keys[sig] for sig in signatures)
+
+
+def oriented_collar_signatures(
+    level: HierarchyLevel,
+    adjacency: Sequence[Occurrence],
+    radius: int = 1,
+) -> tuple[object, ...]:
+    """Scale-local exact signatures, before arbitrary integer color naming."""
     colors: list[object] = list(level.exceptional)
     for _ in range(radius):
-        signatures = [
+        colors = [
             (
                 colors[i],
                 tuple(sorted(
@@ -586,60 +597,548 @@ def oriented_collar_colors(
             )
             for i in range(len(level.poses))
         ]
-        keys = {sig: k for k, sig in enumerate(sorted(set(signatures)))}
-        colors = [keys[sig] for sig in signatures]
-    return tuple(int(color) for color in colors)
+    return tuple(colors)
+
+
+def _strongly_connected(graph: dict[int, set[int]]) -> bool:
+    """Whether every state reaches every other state."""
+    if not graph:
+        return False
+    states = set(graph)
+    for start in states:
+        seen = {start}
+        frontier = [start]
+        while frontier:
+            node = frontier.pop()
+            for child in graph[node]:
+                if child not in seen:
+                    seen.add(child)
+                    frontier.append(child)
+        if seen != states:
+            return False
+    return True
 
 
 def collared_substitution_rules(
+    reference_child: HierarchyLevel,
     child: HierarchyLevel,
     parent: HierarchyLevel,
     cover: CoverResult,
+    reference_contacts: Sequence[tuple[int, int]],
     contacts: Sequence[tuple[int, int]],
     radius: int = 1,
     interior_degree: int = 6,
 ) -> dict:
-    """Mine exact ordered child rules for fully collared interior parents."""
+    """Align both sides to one stationary finite collar alphabet.
+
+    Integer collar colors computed independently at adjacent scales are not
+    comparable.  The equal-sized ``reference_child`` and ``parent`` graphs
+    are therefore aligned by exact colored graph isomorphism.  Child collar
+    signatures are matched directly to the reference signatures (the two
+    child patches live at the same physical scale).  The returned parent
+    keys and child values consequently inhabit one closed state set.
+    """
+    reference_adjacency = contracted_adjacency(
+        reference_contacts, reference_child
+    )
     child_adjacency = contracted_adjacency(contacts, child)
     parent_adjacency = contracted_adjacency(contacts, parent)
-    child_colors = oriented_collar_colors(child, child_adjacency, radius)
-    parent_colors = oriented_collar_colors(parent, parent_adjacency, radius)
+    mapping, refinement_rounds = refinement_isomorphism(
+        reference_adjacency,
+        reference_child.exceptional,
+        parent_adjacency,
+        parent.exceptional,
+    )
+    parent_to_reference = {parent_i: reference_i
+                           for reference_i, parent_i in mapping.items()}
+    reference_signatures = oriented_collar_signatures(
+        reference_child, reference_adjacency, radius
+    )
+    child_signatures = oriented_collar_signatures(
+        child, child_adjacency, radius
+    )
+    interior_reference = sorted({
+        reference_signatures[i]
+        for i, neighbors in enumerate(reference_adjacency)
+        if len(neighbors) == interior_degree
+    })
+    state_for_signature = {
+        signature: state for state, signature in enumerate(interior_reference)
+    }
+    child_interior_signatures = {
+        child_signatures[i]
+        for i, neighbors in enumerate(child_adjacency)
+        if len(neighbors) == interior_degree
+    }
+    if child_interior_signatures != set(interior_reference):
+        raise ValueError("reference and child collar languages differ")
+
     patterns: dict[int, Counter[tuple]] = defaultdict(Counter)
     for i, group in enumerate(cover.groups):
         if len(parent_adjacency[i]) != interior_degree:
             continue
         if any(len(child_adjacency[j]) != interior_degree for j in group):
             continue
+        reference_i = parent_to_reference[i]
+        if len(reference_adjacency[reference_i]) != interior_degree:
+            raise ValueError("interior parent mapped to boundary reference node")
+        parent_state = state_for_signature[reference_signatures[reference_i]]
         pattern = tuple(sorted(
-            (relative_pose(parent.poses[i], child.poses[j]), child_colors[j])
+            (
+                relative_pose(parent.poses[i], child.poses[j]),
+                state_for_signature[child_signatures[j]],
+            )
             for j in group
         ))
-        patterns[parent_colors[i]][pattern] += 1
+        patterns[parent_state][pattern] += 1
     ambiguous = {
-        color: len(found) for color, found in patterns.items() if len(found) != 1
+        state: len(found) for state, found in patterns.items() if len(found) != 1
     }
     rules = {}
-    for color, found in patterns.items():
+    for state, found in patterns.items():
         if len(found) == 1:
             pattern, occurrences = found.most_common(1)[0]
-            rules[color] = {
+            rules[state] = {
                 "occurrences": occurrences,
                 "children": pattern,
             }
-    child_interior_colors = {
-        child_colors[i] for i, neighbors in enumerate(child_adjacency)
-        if len(neighbors) == interior_degree
+    parent_states = set(patterns)
+    child_states = {
+        state
+        for rule in rules.values()
+        for _, state in rule["children"]
+    }
+    state_domain = set(range(len(interior_reference)))
+    transition_graph = {
+        state: {child_state for _, child_state in rules[state]["children"]}
+        for state in rules
     }
     return {
         "radius": radius,
         "interior_degree": interior_degree,
         "eligible_parents": sum(sum(found.values()) for found in patterns.values()),
-        "child_collar_classes": len(child_interior_colors),
+        "state_count": len(state_domain),
+        "states": sorted(state_domain),
+        "reference_child_collar_classes": len(interior_reference),
+        "child_collar_classes": len(child_interior_signatures),
         "parent_collar_classes": len(patterns),
+        "parent_states": sorted(parent_states),
+        "child_states": sorted(child_states),
+        "closed": parent_states == child_states == state_domain,
+        "strongly_connected": (
+            set(transition_graph) == state_domain
+            and _strongly_connected(transition_graph)
+        ),
+        "alignment_refinement_rounds": refinement_rounds,
         "ambiguous_classes": ambiguous,
-        "deterministic": bool(patterns) and not ambiguous,
+        "deterministic": (
+            bool(patterns)
+            and not ambiguous
+            and parent_states == state_domain
+        ),
         "rules": rules,
     }
+
+
+def _canonical_colored_cluster(
+    poses: Sequence[Pose], states: Sequence[int]
+) -> tuple:
+    """Root-independent exact colored cluster signature."""
+    return min(
+        tuple(sorted(
+            (relative_pose(root, pose), state)
+            for pose, state in zip(poses, states)
+        ))
+        for root in poses
+    )
+
+
+def collared_composition_sat_certificate(
+    reference_child: HierarchyLevel,
+    child: HierarchyLevel,
+    parent: HierarchyLevel,
+    cover: CoverResult,
+    reference_contacts: Sequence[tuple[int, int]],
+    contacts: Sequence[tuple[int, int]],
+    collared_rules: dict,
+    radius: int = 1,
+    interior_degree: int = 6,
+) -> dict:
+    """SAT-check unique parent grouping for every recovered legal collar.
+
+    Every geometric 8/7 occurrence touching a central parent is offered to
+    the solver.  Occurrences whose colored child pattern is not one of the
+    stationary rules are forbidden.  Exact-one clauses cover the central
+    children, overlap clauses keep selected parents disjoint, and a second
+    solve forbids the known parent.  UNSAT on that second solve proves that
+    the collared local configuration has no alternative composition.
+    """
+    from pysat.solvers import Cadical195
+
+    reference_adjacency = contracted_adjacency(
+        reference_contacts, reference_child
+    )
+    child_adjacency = contracted_adjacency(contacts, child)
+    parent_adjacency = contracted_adjacency(contacts, parent)
+    mapping, _ = refinement_isomorphism(
+        reference_adjacency,
+        reference_child.exceptional,
+        parent_adjacency,
+        parent.exceptional,
+    )
+    parent_to_reference = {parent_i: reference_i
+                           for reference_i, parent_i in mapping.items()}
+    reference_signatures = oriented_collar_signatures(
+        reference_child, reference_adjacency, radius
+    )
+    child_signatures = oriented_collar_signatures(
+        child, child_adjacency, radius
+    )
+    interior_reference = sorted({
+        reference_signatures[i]
+        for i, neighbors in enumerate(reference_adjacency)
+        if len(neighbors) == interior_degree
+    })
+    state_for_signature = {
+        signature: state for state, signature in enumerate(interior_reference)
+    }
+    child_states = [
+        state_for_signature.get(signature) for signature in child_signatures
+    ]
+
+    legal_patterns = {
+        _canonical_colored_cluster(
+            [pose for pose, _ in rule["children"]],
+            [state for _, state in rule["children"]],
+        )
+        for rule in collared_rules["rules"].values()
+    }
+    templates = {
+        canonical_cluster([pose for pose, _ in rule["children"]])
+        for rule in collared_rules["rules"].values()
+    }
+    occurrences = sorted({
+        occurrence
+        for template in templates
+        for occurrence in template_occurrences(template, child.poses)
+    }, key=lambda occurrence: tuple(sorted(occurrence)))
+    occurrence_index = {
+        occurrence: i for i, occurrence in enumerate(occurrences)
+    }
+    legal = []
+    fully_colored = []
+    for occurrence in occurrences:
+        states = [child_states[i] for i in occurrence]
+        complete = all(state is not None for state in states)
+        fully_colored.append(complete)
+        legal.append(
+            complete
+            and _canonical_colored_cluster(
+                [child.poses[i] for i in occurrence],
+                states,
+            ) in legal_patterns
+        )
+
+    by_state: dict[int, dict[str, int | bool]] = {
+        state: {
+            "instances": 0,
+            "complete_contexts": 0,
+            "unique": 0,
+            "ambiguous": 0,
+        }
+        for state in collared_rules["states"]
+    }
+    eligible = complete_contexts = unique = ambiguous = 0
+    known_groups = set(cover.groups)
+    for parent_i, group in enumerate(cover.groups):
+        if len(parent_adjacency[parent_i]) != interior_degree:
+            continue
+        if any(len(child_adjacency[i]) != interior_degree for i in group):
+            continue
+        reference_i = parent_to_reference[parent_i]
+        state = state_for_signature[reference_signatures[reference_i]]
+        eligible += 1
+        by_state[state]["instances"] += 1
+        local = [
+            i for i, occurrence in enumerate(occurrences)
+            if occurrence & group
+        ]
+        if any(not fully_colored[i] for i in local):
+            continue
+        complete_contexts += 1
+        by_state[state]["complete_contexts"] += 1
+        known = occurrence_index[group]
+        variables = {candidate: j + 1 for j, candidate in enumerate(local)}
+        clauses: list[list[int]] = []
+        for child_i in group:
+            covering = [
+                variables[candidate]
+                for candidate in local
+                if child_i in occurrences[candidate]
+            ]
+            clauses.append(covering)
+            for a_pos, a in enumerate(covering):
+                for b in covering[a_pos + 1:]:
+                    clauses.append([-a, -b])
+        touching: dict[int, list[int]] = defaultdict(list)
+        for candidate in local:
+            for child_i in occurrences[candidate]:
+                touching[child_i].append(variables[candidate])
+            if not legal[candidate]:
+                clauses.append([-variables[candidate]])
+        for candidates in touching.values():
+            for a_pos, a in enumerate(candidates):
+                for b in candidates[a_pos + 1:]:
+                    clauses.append([-a, -b])
+        known_var = variables[known]
+        with Cadical195(bootstrap_with=clauses) as solver:
+            known_valid = solver.solve(assumptions=[known_var])
+            alternative = solver.solve(assumptions=[-known_var])
+        if not known_valid:
+            raise ValueError("known parent is not admitted by collar rules")
+        if alternative:
+            ambiguous += 1
+            by_state[state]["ambiguous"] += 1
+        else:
+            unique += 1
+            by_state[state]["unique"] += 1
+
+    legal_occurrences = {
+        occurrences[i] for i, admitted in enumerate(legal) if admitted
+    }
+    return {
+        "radius": radius,
+        "solver": "CaDiCaL 1.9.5",
+        "state_count": collared_rules["state_count"],
+        "geometric_candidates": len(occurrences),
+        "fully_colored_candidates": sum(fully_colored),
+        "legal_candidates": sum(legal),
+        "rejected_candidates": sum(
+            complete and not admitted
+            for complete, admitted in zip(fully_colored, legal)
+        ),
+        "legal_candidates_outside_known_cover": len(
+            legal_occurrences - known_groups
+        ),
+        "eligible_parent_instances": eligible,
+        "complete_context_instances": complete_contexts,
+        "unique_instances": unique,
+        "ambiguous_instances": ambiguous,
+        "states_checked": sum(
+            bool(record["complete_contexts"]) for record in by_state.values()
+        ),
+        "all_states_checked": all(
+            record["complete_contexts"] for record in by_state.values()
+        ),
+        "unique_composition": (
+            complete_contexts > 0
+            and unique == complete_contexts
+            and ambiguous == 0
+            and all(
+                record["complete_contexts"] for record in by_state.values()
+            )
+        ),
+        "by_state": by_state,
+    }
+
+
+def physical_composition_sat_certificate(
+    reference_poses: Sequence[Pose],
+    poses: Sequence[Pose],
+    selected_rule: CompositionRule,
+    candidate_rules: Sequence[CompositionRule],
+    tile_boundary: Sequence[Vec4],
+    radius: int = 1,
+) -> dict:
+    """Use physical-tile collars to eliminate competing composition phases.
+
+    The recursively closing rule supplies the legal parent patterns, but the
+    colors used here are derived only from radius-``radius`` physical edge
+    neighborhoods.  Every occurrence from every locally exact phase is then
+    offered to SAT.  Thus recursive closure chooses the language once, while
+    a finite local rule recognizes it without hidden ancestry.
+    """
+    from pysat.solvers import Cadical195
+
+    reference = raw_hierarchy_level(reference_poses)
+    upper = raw_hierarchy_level(poses)
+    reference_adjacency = contracted_adjacency(
+        physical_edge_contacts(reference_poses, tile_boundary), reference
+    )
+    adjacency = contracted_adjacency(
+        physical_edge_contacts(poses, tile_boundary), upper
+    )
+    reference_signatures = oriented_collar_signatures(
+        reference, reference_adjacency, radius
+    )
+    signatures = oriented_collar_signatures(upper, adjacency, radius)
+    language = sorted(set(reference_signatures))
+    if set(signatures) != set(language):
+        raise ValueError("physical collar language changed between patch sizes")
+    state_for_signature = {
+        signature: state for state, signature in enumerate(language)
+    }
+    reference_states = [
+        state_for_signature[signature] for signature in reference_signatures
+    ]
+    states = [state_for_signature[signature] for signature in signatures]
+
+    reference_cover = cover_with_rule(
+        reference_poses, selected_rule.full, selected_rule.missing
+    )
+    selected_cover = cover_with_rule(
+        poses, selected_rule.full, selected_rule.missing
+    )
+    if reference_cover.n_solutions != 1 or selected_cover.n_solutions != 1:
+        raise ValueError("selected physical rule does not uniquely cover patches")
+
+    def patterns_for(
+        patch: Sequence[Pose],
+        patch_states: Sequence[int],
+        cover: CoverResult,
+    ) -> set[tuple]:
+        return {
+            _canonical_colored_cluster(
+                [patch[i] for i in group],
+                [patch_states[i] for i in group],
+            )
+            for group in cover.groups
+        }
+
+    reference_patterns = patterns_for(
+        reference_poses, reference_states, reference_cover
+    )
+    legal_patterns = patterns_for(poses, states, selected_cover)
+    if reference_patterns != legal_patterns:
+        raise ValueError("physical collared parent language did not stabilize")
+
+    occurrences = sorted({
+        occurrence
+        for rule in candidate_rules
+        for template in (rule.full, rule.missing)
+        for occurrence in template_occurrences(template, poses)
+    }, key=lambda occurrence: tuple(sorted(occurrence)))
+    occurrence_index = {
+        occurrence: i for i, occurrence in enumerate(occurrences)
+    }
+    occurrence_patterns = [
+        _canonical_colored_cluster(
+            [poses[i] for i in occurrence],
+            [states[i] for i in occurrence],
+        )
+        for occurrence in occurrences
+    ]
+    legal = [
+        pattern in legal_patterns for pattern in occurrence_patterns
+    ]
+    legal_occurrences = {
+        occurrences[i] for i, admitted in enumerate(legal) if admitted
+    }
+
+    representative: dict[tuple, Occurrence] = {}
+    for group in selected_cover.groups:
+        representative.setdefault(
+            occurrence_patterns[occurrence_index[group]], group
+        )
+    unique = ambiguous = 0
+    for group in representative.values():
+        local = [
+            i for i, occurrence in enumerate(occurrences)
+            if occurrence & group
+        ]
+        variables = {candidate: j + 1 for j, candidate in enumerate(local)}
+        clauses: list[list[int]] = []
+        for tile_i in group:
+            covering = [
+                variables[candidate]
+                for candidate in local
+                if tile_i in occurrences[candidate]
+            ]
+            clauses.append(covering)
+            for a_pos, a in enumerate(covering):
+                for b in covering[a_pos + 1:]:
+                    clauses.append([-a, -b])
+        touching: dict[int, list[int]] = defaultdict(list)
+        for candidate in local:
+            for tile_i in occurrences[candidate]:
+                touching[tile_i].append(variables[candidate])
+            if not legal[candidate]:
+                clauses.append([-variables[candidate]])
+        for candidates in touching.values():
+            for a_pos, a in enumerate(candidates):
+                for b in candidates[a_pos + 1:]:
+                    clauses.append([-a, -b])
+        known_var = variables[occurrence_index[group]]
+        with Cadical195(bootstrap_with=clauses) as solver:
+            known_valid = solver.solve(assumptions=[known_var])
+            alternative = solver.solve(assumptions=[-known_var])
+        if not known_valid:
+            raise ValueError("known physical parent is not locally admitted")
+        if alternative:
+            ambiguous += 1
+        else:
+            unique += 1
+
+    return {
+        "radius": radius,
+        "solver": "CaDiCaL 1.9.5",
+        "physical_collar_states": len(language),
+        "legal_parent_patterns": len(legal_patterns),
+        "candidate_phases": len(candidate_rules),
+        "geometric_candidates": len(occurrences),
+        "legal_candidates": sum(legal),
+        "rejected_candidates": len(legal) - sum(legal),
+        "selected_cover_groups": len(selected_cover.groups),
+        "legal_candidates_outside_selected_cover": len(
+            legal_occurrences - set(selected_cover.groups)
+        ),
+        "patterns_sat_checked": len(representative),
+        "unique_patterns": unique,
+        "ambiguous_patterns": ambiguous,
+        "stable_between_patch_sizes": True,
+        "unique_composition": (
+            legal_occurrences == set(selected_cover.groups)
+            and unique == len(representative)
+            and ambiguous == 0
+        ),
+    }
+
+
+def enumerate_composition_candidates(
+    poses: Sequence[Pose],
+    confirmation_poses: Sequence[Pose] | None = None,
+    min_size: int = 6,
+    max_size: int = 12,
+    top: int = 3,
+) -> tuple[tuple[CompositionRule, CoverResult], ...]:
+    """Return every exact-cover hypothesis before heuristic ranking.
+
+    This is the appropriate input to a wider closure gate: a later recursive
+    check may reject a locally valid phase without consulting hidden ancestry.
+    """
+    accepted: dict[
+        tuple[Template, Template], tuple[CompositionRule, CoverResult]
+    ] = {}
+    final_size = min(max_size, len(poses))
+    histograms = _frequent_templates_by_size(poses, min_size, final_size)
+    for size in range(min_size, final_size + 1):
+        for full, frequency in histograms[size].most_common(top):
+            for missing in deletion_variants(full):
+                cover = cover_with_rule(poses, full, missing)
+                if cover.n_solutions == 1:
+                    rule = CompositionRule(full, missing, size, frequency)
+                    accepted[(full, missing)] = (rule, cover)
+    if confirmation_poses is not None:
+        accepted = {
+            key: pair
+            for key, pair in accepted.items()
+            if cover_with_rule(
+                confirmation_poses, pair[0].full, pair[0].missing
+            ).n_solutions == 1
+        }
+    return tuple(
+        accepted[key] for key in sorted(accepted)
+    )
 
 
 def discover_composition(

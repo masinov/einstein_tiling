@@ -9,14 +9,17 @@ from einstein.funnel.a6_hierarchy import (
     SPECTRE_TILE_BOUNDARY,
     _exact_cover_solutions,
     collar_label_validation,
+    collared_composition_sat_certificate,
     collared_substitution_rules,
     canonical_cluster,
     contracted_adjacency,
     contract_level,
     cover_with_rule,
     discover_composition,
+    enumerate_composition_candidates,
     oriented_collar_colors,
     physical_edge_contacts,
+    physical_composition_sat_certificate,
     read_anchor_poses,
     read_hidden_node_labels,
     read_hidden_parent_groups,
@@ -178,9 +181,49 @@ def test_recursive_hierarchy_and_collar_labels(tmp_path):
     physical_rule, _, _ = discover_composition(
         training, tile_boundary=SPECTRE_TILE_BOUNDARY
     )
-    hierarchy = recover_recursive_hierarchy(
-        p4, p5, physical_rule, SPECTRE_TILE_BOUNDARY
+    candidates = enumerate_composition_candidates(
+        training, confirmation_poses=p4
     )
+    assert len(candidates) == 2
+    closures = []
+    failures = []
+    for candidate, _ in candidates:
+        try:
+            recovered = recover_recursive_hierarchy(
+                p4, p5, candidate, SPECTRE_TILE_BOUNDARY
+            )
+        except ValueError as exc:
+            failures.append(str(exc))
+        else:
+            closures.append((candidate, recovered))
+    assert len(closures) == 1
+    assert closures[0][0] == physical_rule
+    assert failures == ["expected one exceptional-child composition, found 2"]
+    hierarchy = closures[0][1]
+    physical_certificate = physical_composition_sat_certificate(
+        p4,
+        p5,
+        physical_rule,
+        [candidate for candidate, _ in candidates],
+        SPECTRE_TILE_BOUNDARY,
+    )
+    assert physical_certificate == {
+        "radius": 1,
+        "solver": "CaDiCaL 1.9.5",
+        "physical_collar_states": 32,
+        "legal_parent_patterns": 19,
+        "candidate_phases": 2,
+        "geometric_candidates": 11715,
+        "legal_candidates": 3905,
+        "rejected_candidates": 7810,
+        "selected_cover_groups": 3905,
+        "legal_candidates_outside_selected_cover": 0,
+        "patterns_sat_checked": 19,
+        "unique_patterns": 19,
+        "ambiguous_patterns": 0,
+        "stable_between_patch_sizes": True,
+        "unique_composition": True,
+    }
     assert [len(level.poses) for level in hierarchy.levels] == [496, 63, 8, 1]
     assert [
         (cover.n_full, cover.n_missing) for cover in hierarchy.covers
@@ -216,14 +259,60 @@ def test_recursive_hierarchy_and_collar_labels(tmp_path):
         immediate.poses, first_rule.full, first_rule.missing
     )
     parent = contract_level(immediate, first_rule, first_cover)
-    rules = collared_substitution_rules(
+    contacts4 = physical_edge_contacts(p4, SPECTRE_TILE_BOUNDARY)
+    contacts5 = physical_edge_contacts(p5, SPECTRE_TILE_BOUNDARY)
+    rules0 = collared_substitution_rules(
+        hierarchy.levels[0],
         immediate,
         parent,
         first_cover,
-        physical_edge_contacts(p5, SPECTRE_TILE_BOUNDARY),
+        contacts4,
+        contacts5,
+        radius=0,
+    )
+    certificate0 = collared_composition_sat_certificate(
+        hierarchy.levels[0],
+        immediate,
+        parent,
+        first_cover,
+        contacts4,
+        contacts5,
+        rules0,
+        radius=0,
+    )
+    rules = collared_substitution_rules(
+        hierarchy.levels[0],
+        immediate,
+        parent,
+        first_cover,
+        contacts4,
+        contacts5,
+    )
+    certificate = collared_composition_sat_certificate(
+        hierarchy.levels[0],
+        immediate,
+        parent,
+        first_cover,
+        contacts4,
+        contacts5,
+        rules,
     )
     assert rules["eligible_parents"] == 310
+    assert rules["state_count"] == 17
     assert rules["child_collar_classes"] == 17
     assert rules["parent_collar_classes"] == 17
+    assert rules["parent_states"] == list(range(17))
+    assert rules["child_states"] == list(range(17))
+    assert rules["closed"]
     assert rules["ambiguous_classes"] == {}
     assert rules["deterministic"]
+    assert certificate["states_checked"] == 17
+    assert certificate["eligible_parent_instances"] == 310
+    assert certificate["complete_context_instances"] == 309
+    assert certificate["unique_instances"] == 309
+    assert certificate["ambiguous_instances"] == 0
+    assert certificate["legal_candidates_outside_known_cover"] == 0
+    assert certificate["unique_composition"]
+    assert certificate0["unique_instances"] == 310
+    assert certificate0["legal_candidates_outside_known_cover"] == 433
+    assert certificate0["unique_composition"]

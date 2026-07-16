@@ -15,14 +15,17 @@ from pathlib import Path
 from einstein.funnel.a6_hierarchy import (
     SPECTRE_TILE_BOUNDARY,
     collar_label_validation,
+    collared_composition_sat_certificate,
     collared_substitution_rules,
     cluster_adjacency,
     contracted_adjacency,
     contract_level,
     cover_with_rule,
     discover_composition,
+    enumerate_composition_candidates,
     oriented_collar_colors,
     physical_edge_contacts,
+    physical_composition_sat_certificate,
     read_anchor_poses,
     read_hidden_node_labels,
     read_hidden_parent_groups,
@@ -130,15 +133,77 @@ def main() -> int:
 
         # Training and confirmation are both pose-only. The ancestry files
         # above remain unopened until the rule and partitions are fixed.
-        rule, _, diagnostics = discover_composition(
+        ranked_rule, _, diagnostics = discover_composition(
             anchors[3],
             confirmation_poses=anchors[4],
             tile_boundary=SPECTRE_TILE_BOUNDARY,
         )
+        phase_candidates = enumerate_composition_candidates(
+            anchors[3], confirmation_poses=anchors[4]
+        )
+        phase_results = []
+        recursive_survivors = []
+        for candidate, _ in phase_candidates:
+            try:
+                candidate_recursive = recover_recursive_hierarchy(
+                    anchors[4],
+                    anchors[5],
+                    candidate,
+                    SPECTRE_TILE_BOUNDARY,
+                )
+            except ValueError as exc:
+                phase_results.append({
+                    "rule": _rule_json(candidate),
+                    "missing_adjacency": {
+                        "internal_edges": cluster_adjacency(
+                            candidate.missing, SPECTRE_TILE_BOUNDARY
+                        )[1],
+                        "exposed_edges": cluster_adjacency(
+                            candidate.missing, SPECTRE_TILE_BOUNDARY
+                        )[2],
+                    },
+                    "recursive_closure": False,
+                    "failure": str(exc),
+                })
+            else:
+                recursive_survivors.append((candidate, candidate_recursive))
+                phase_results.append({
+                    "rule": _rule_json(candidate),
+                    "missing_adjacency": {
+                        "internal_edges": cluster_adjacency(
+                            candidate.missing, SPECTRE_TILE_BOUNDARY
+                        )[1],
+                        "exposed_edges": cluster_adjacency(
+                            candidate.missing, SPECTRE_TILE_BOUNDARY
+                        )[2],
+                    },
+                    "recursive_closure": True,
+                    "level_counts": [
+                        len(level.poses)
+                        for level in candidate_recursive.levels
+                    ],
+                })
+        if len(recursive_survivors) != 1:
+            raise ValueError(
+                "expected one recursively closing physical phase, found "
+                f"{len(recursive_survivors)}"
+            )
+        rule, recursive = recursive_survivors[0]
+        physical_forcing = physical_composition_sat_certificate(
+            anchors[4],
+            anchors[5],
+            rule,
+            [candidate for candidate, _ in phase_candidates],
+            SPECTRE_TILE_BOUNDARY,
+            radius=1,
+        )
 
         levels = {}
         physical_counts = []
-        all_exact = True
+        all_exact = (
+            rule == ranked_rule
+            and physical_forcing["unique_composition"]
+        )
         for level in range(1, 6):
             cover = cover_with_rule(anchors[level], rule.full, rule.missing)
             hidden = read_hidden_parent_groups(
@@ -173,12 +238,6 @@ def main() -> int:
             }
             all_exact &= cover.n_solutions == 1
 
-        recursive = recover_recursive_hierarchy(
-            anchors[4],
-            anchors[5],
-            rule,
-            SPECTRE_TILE_BOUNDARY,
-        )
         recursive_validation = {}
         for depth, level in enumerate(recursive.levels, 1):
             hidden = read_hidden_parent_groups(
@@ -189,6 +248,10 @@ def main() -> int:
             all_exact &= validation["exact"]
 
         upper_immediate = contract_level(raw_hierarchy_level(anchors[5]), rule)
+        lower_immediate = recursive.levels[0]
+        lower_contacts = physical_edge_contacts(
+            anchors[4], SPECTRE_TILE_BOUNDARY
+        )
         upper_contacts = physical_edge_contacts(
             anchors[5], SPECTRE_TILE_BOUNDARY
         )
@@ -222,17 +285,50 @@ def main() -> int:
         upper_parent = contract_level(
             upper_immediate, first_recursive_rule, first_recursive_cover
         )
-        collared_rules = collared_substitution_rules(
+        uncollared_rules = collared_substitution_rules(
+            lower_immediate,
             upper_immediate,
             upper_parent,
             first_recursive_cover,
+            lower_contacts,
             upper_contacts,
+            radius=0,
+        )
+        uncollared_composition = collared_composition_sat_certificate(
+            lower_immediate,
+            upper_immediate,
+            upper_parent,
+            first_recursive_cover,
+            lower_contacts,
+            upper_contacts,
+            uncollared_rules,
+            radius=0,
+        )
+        collared_rules = collared_substitution_rules(
+            lower_immediate,
+            upper_immediate,
+            upper_parent,
+            first_recursive_cover,
+            lower_contacts,
+            upper_contacts,
+            radius=1,
+        )
+        collared_composition = collared_composition_sat_certificate(
+            lower_immediate,
+            upper_immediate,
+            upper_parent,
+            first_recursive_cover,
+            lower_contacts,
+            upper_contacts,
+            collared_rules,
             radius=1,
         )
         all_exact &= (
             collared_rules["deterministic"]
-            and collared_rules["child_collar_classes"] == 17
-            and collared_rules["parent_collar_classes"] == 17
+            and collared_rules["closed"]
+            and collared_rules["state_count"] == 17
+            and collared_composition["all_states_checked"]
+            and collared_composition["unique_composition"]
         )
 
         recurrence = recover_order2_recurrence(physical_counts)
@@ -241,8 +337,8 @@ def main() -> int:
         result = {
             "status": "PASS" if all_exact else "FAIL",
             "scope": (
-                "A6 v1 recursive composition and radius-1 collar recovery; "
-                "recognizability not yet proved"
+                "A6 v2 recursive phase selection, physical radius-1 forcing, "
+                "closed collared substitution, and SAT-checked composition"
             ),
             "blind_inputs": "exact (s,r,t0..t3) physical poses only; kind ignored",
             "selected_rule": {
@@ -260,6 +356,13 @@ def main() -> int:
                 },
             },
             "discovery": diagnostics,
+            "physical_phase_closure": {
+                "candidates": len(phase_candidates),
+                "recursive_survivors": len(recursive_survivors),
+                "heuristic_selection_agrees": rule == ranked_rule,
+                "results": phase_results,
+            },
+            "physical_radius1_composition_sat": physical_forcing,
             "delta_levels": levels,
             "all_root_labels_level3": roots,
             "recursive_hierarchy": {
@@ -279,7 +382,13 @@ def main() -> int:
                 "hidden_validation": recursive_validation,
             },
             "radius1_collar_validation": collar_validation,
+            "radius0_collared_substitution": uncollared_rules,
+            "radius0_composition_sat": uncollared_composition,
             "radius1_collared_substitution": collared_rules,
+            "radius1_composition_sat": collared_composition,
+            "physical_composition_forcing_radius": 1,
+            "composition_forcing_radius_in_metatile_language": 0,
+            "substitution_collar_state_radius": 1,
             "physical_tile_counts": physical_counts,
             "recurrence": recurrence,
             "inflation_area": "dominant root 4 + sqrt(15)",
@@ -290,9 +399,14 @@ def main() -> int:
         _render_metatiles(rule.full, rule.missing, out_svg)
 
     print(
-        f"A6 v1: {result['status']} — recursive "
+        f"A6 v2: {result['status']} — recursive "
         f"{' -> '.join(map(str, result['recursive_hierarchy']['level_counts']))}; "
-        f"radius-1 collars pure; recurrence "
+        f"{physical_forcing['unique_patterns']} physical collar patterns forced; "
+        f"{collared_rules['state_count']} closed radius-1 states, "
+        f"{collared_composition['unique_instances']}/"
+        f"{collared_composition['complete_context_instances']} complete "
+        f"contexts SAT-unique; "
+        f"recurrence "
         f"T[n+1]={recurrence['a']}T[n] - T[n-1]"
     )
     print(out_json.relative_to(ROOT))
