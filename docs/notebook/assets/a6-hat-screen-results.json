@@ -1,5 +1,5 @@
 {
-  "status": "CANDIDATES",
+  "status": "RULE-FAMILY",
   "scope": "blind local A6 screen; recursive closure not yet checked",
   "shape_id": 635,
   "patch_tiles": 11514,
@@ -366,5 +366,134 @@
     }
   ],
   "unique_candidates": 0,
-  "ambiguous_candidates": 2
+  "ambiguous_candidates": 2,
+  "rule_family": {
+    "interpretation": "one full scaffold with two allowed one-child exception variants",
+    "template_types": [
+      "full-8",
+      "missing-child-2",
+      "missing-child-1"
+    ],
+    "covers_sampled": 20,
+    "cover_count_is_lower_bound": true,
+    "sampled_type_counts": [
+      {
+        "0": 272,
+        "1": 24,
+        "2": 19
+      },
+      {
+        "0": 270,
+        "1": 24,
+        "2": 21
+      },
+      {
+        "0": 271,
+        "1": 24,
+        "2": 20
+      },
+      {
+        "0": 270,
+        "1": 25,
+        "2": 20
+      },
+      {
+        "0": 271,
+        "1": 25,
+        "2": 19
+      },
+      {
+        "0": 271,
+        "1": 25,
+        "2": 19
+      },
+      {
+        "0": 270,
+        "1": 26,
+        "2": 19
+      },
+      {
+        "0": 271,
+        "1": 24,
+        "2": 20
+      },
+      {
+        "0": 270,
+        "1": 25,
+        "2": 20
+      },
+      {
+        "0": 270,
+        "1": 25,
+        "2": 20
+      },
+      {
+        "0": 269,
+        "1": 26,
+        "2": 20
+      },
+      {
+        "0": 271,
+        "1": 25,
+        "2": 19
+      },
+      {
+        "0": 270,
+        "1": 26,
+        "2": 19
+      },
+      {
+        "0": 270,
+        "1": 26,
+        "2": 19
+      },
+      {
+        "0": 269,
+        "1": 27,
+        "2": 19
+      },
+      {
+        "0": 270,
+        "1": 25,
+        "2": 20
+      },
+      {
+        "0": 269,
+        "1": 26,
+        "2": 20
+      },
+      {
+        "0": 269,
+        "1": 26,
+        "2": 20
+      },
+      {
+        "0": 269,
+        "1": 25,
+        "2": 21
+      },
+      {
+        "0": 268,
+        "1": 27,
+        "2": 20
+      }
+    ],
+    "sampled_parent_anchor_sets_agree": true,
+    "sampled_parent_anchors": 315,
+    "interior_anchor_backbone": {
+      "satisfiable": true,
+      "candidate_occurrences": 943,
+      "candidate_bases": 316,
+      "analyzed_bases": 141,
+      "forced_bases": 141,
+      "optional_bases": 0,
+      "impossible_bases": 0,
+      "all_analyzed_bases_forced": true,
+      "allowed_type_profiles": {
+        "0": 97,
+        "0,1": 22,
+        "0,2": 22
+      }
+    }
+  }
 }

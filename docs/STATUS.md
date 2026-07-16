@@ -19,7 +19,7 @@
 | M4 — A4 diffraction fingerprint | §4 A4 | ✅ done v0; 12-fold core calibration passed (session 05) |
 | E4 — full fingerprint calibration gate | §8 E4 | ✅ passed (sessions 05–06) |
 | M5 — A6 hierarchy mining | §4 A6 | ✅ done v0; recursive, stationary-collar and SAT forcing gate passed |
-| **Gate G1 — E1 blind hat rediscovery** | §8 E1 | 🟨 in progress; hat A6 has 2 stable local candidates |
+| **Gate G1 — E1 blind hat rediscovery** | §8 E1 | 🟨 in progress; hat A6 has one 3-type local rule family |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -101,11 +101,13 @@
 - **E1 hat A6 screen:** A3 kite-grid placements now map exactly into module12,
   with candidate boundaries derived from their polykite cells. Disk cuts use
   an exact core-plus-halo SAT cover. On the 11,514-hat patch, 160 blind 8/7
-  rules yield exactly two candidates; both have two compositions, stable when
-  the core grows from 2,277 to 4,531 and 6,797 hats. Artifact:
+  rules yield one full scaffold with two allowed exception positions. The
+  ownership cover is non-unique (at least 20 solutions), but every sampled
+  cover gives the same parent-anchor lattice and SAT forces all 141 safe-core
+  anchors across every cover. Artifact:
   `a6-hat-screen-results.json`; inspection drawings:
   `a6-hat-candidate-{1,2}.svg`; runner: `scripts/run_a6_hat.py`.
-- Test suite: **62 fast passed** (14 deselected, 8.72 s);
+- Test suite: **62 fast passed** (14 deselected, 8.66 s);
   **14 slow passed** (57 deselected, 112.17 s). Vendored Rust: **5 passed**.
 
 ## Funnel state (polykites, grid-aligned scope — D-0006)
@@ -162,12 +164,17 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
 - The traditional two-tile Gamma/Mystic fusion is not recovered uniquely, but
   the closed 9/8 hierarchy and its local forcing certificate do not require
   it. Recovering that named reference motif is optional validation archaeology.
+- Hat A6 has a forced first parent-anchor lattice, but the next level is not a
+  single Spectre-style full/deletion rule. Nearest 7/8 grouping cannot be made
+  a deterministic function of geometry-only collars through radius 4; the
+  recursive solver must carry the unresolved three-type assignment jointly
+  instead of freezing an arbitrary ownership cover.
 
 ## Next actions (in order)
 
-1. Continue the two hat A6 candidates independently: enumerate both core-cover
-   solutions, contract a safely interior parent patch, and use recursive and
-   collared closure to select or refine the rule.
+1. Continue the unique hat parent-anchor lattice: mine a finite multi-type
+   recursive rule library and test whether the grandparent anchors are locally
+   recognizable. Separately retain ownership uniqueness as a forcing check.
 2. Scale A0 to the E1 horizon n≤16 (streaming/compiled enumeration) and port
    the A1/A2 hot paths needed for the full frozen-threshold sweep.
 3. Run the complete n≤16 A0–A4 ranking, verify hat/turtle placement, and send

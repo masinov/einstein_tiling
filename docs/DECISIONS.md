@@ -262,3 +262,24 @@ hex `(x,y) → (x,0,y,0)`; rotations advance by two module steps; the reflected
 D6 operations use the matching module reflection/rotation pair. Exact nearest
 anchor mining is accelerated by expanding hex-lattice boxes whose omitted
 points have a proved quadratic-distance lower bound.
+
+## D-0016 (2026-07-16) — Hat A6 composes to unique anchors before unique ownership
+
+The first hat screen initially described two candidate rules and “two
+compositions.” Both phrasings were too coarse. The solver count was capped at
+two (there are at least twenty covers), and the two rules share the same
+eight-hat scaffold: they are two allowed one-child exception positions in one
+three-type family (`full-8`, exception A, exception B).
+
+Different exact covers reassign a small number of physical hats between
+neighboring parents, but the contracted parent poses are invariant. On the
+current disk, twenty sampled covers give the same 315 parent anchors. A
+separate SAT backbone query—not sampling—proves all 141 anchors in the safer
+inner core occur in every cover: 97 allow only `full-8`, 22 allow full/A and
+22 allow full/B. Thus A6 should distinguish **anchor recognizability** from
+**ownership recognizability**. The former is enough to continue mining the
+abstract hierarchy; the latter remains an additional forcing obligation.
+
+This correction is recorded rather than silently replacing the earlier
+artifact semantics. “Candidate” in this A6 context means a hierarchy
+hypothesis for the already-known hat, never a new monotile.

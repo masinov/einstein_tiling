@@ -9,17 +9,22 @@ from einstein.funnel.a6_hierarchy import (
 )
 from einstein.funnel.a6_polykite import (
     cover_core_with_rule,
+    contract_typed_core_cover,
+    enumerate_core_covers,
+    enumerate_typed_core_covers,
     frequent_hex_nearest_templates,
     hex_to_module,
     kite_op_sr,
     placement_poses,
     polykite_boundary,
+    typed_core_backbone,
 )
 from einstein.substrate.kitegrid import (
     cell_vertices,
     transform_point,
 )
 from einstein.substrate.module12 import apply_sr
+from einstein.funnel.a6_hierarchy import raw_hierarchy_level
 
 ROOT = Path(__file__).parent.parent
 
@@ -55,6 +60,35 @@ def test_core_cover_can_use_halo_but_requires_unique_core_composition():
 
     ambiguous = cover_core_with_rule(poses, (1, 2), pair, pair)
     assert ambiguous.n_solutions == 2
+    phases = enumerate_core_covers(poses, (1, 2), pair, pair)
+    assert len(phases) == 2
+    assert {phase.groups for phase in phases} == {
+        (frozenset((0, 1)), frozenset((2, 3))),
+        (frozenset((1, 2)),),
+    }
+
+    typed = enumerate_typed_core_covers(
+        poses, range(4), (pair,), limit=2
+    )
+    assert len(typed) == 1
+    contracted = contract_typed_core_cover(
+        raw_hierarchy_level(poses), (pair,), typed[0]
+    )
+    assert contracted.types == (0, 0)
+    assert len(contracted.level.poses) == 2
+    assert typed_core_backbone(
+        poses, range(4), (pair,), base_r2=100
+    ) == {
+        "satisfiable": True,
+        "candidate_occurrences": 3,
+        "candidate_bases": 3,
+        "analyzed_bases": 3,
+        "forced_bases": 2,
+        "optional_bases": 0,
+        "impossible_bases": 1,
+        "all_analyzed_bases_forced": True,
+        "allowed_type_profiles": {"": 1, "0": 2},
+    }
 
 
 def test_exact_hex_acceleration_matches_brute_nearest_mining():
@@ -71,7 +105,14 @@ def test_hat_candidate_artifact_links_reproducible_svgs():
     result = json.loads(
         (ROOT / "docs/notebook/assets/a6-hat-screen-results.json").read_text()
     )
+    assert result["status"] == "RULE-FAMILY"
     assert len(result["candidates"]) == 2
+    assert result["rule_family"]["covers_sampled"] == 20
+    assert result["rule_family"]["cover_count_is_lower_bound"]
+    assert result["rule_family"]["sampled_parent_anchor_sets_agree"]
+    assert result["rule_family"]["interior_anchor_backbone"][
+        "all_analyzed_bases_forced"
+    ]
     for candidate in result["candidates"]:
         svg = ROOT / candidate["svg"]
         text = svg.read_text()

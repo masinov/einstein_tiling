@@ -9,18 +9,23 @@ whether each rule covers an interior core using the surrounding disk as halo.
 from __future__ import annotations
 
 import json
+from collections import Counter
 from pathlib import Path
 
 from einstein.db import ShapeDB, deserialize_cells
 from einstein.funnel.a6_hierarchy import (
     deletion_variants,
+    raw_hierarchy_level,
     template_occurrences,
 )
 from einstein.funnel.a6_polykite import (
+    contract_typed_core_cover,
     cover_core_with_rule,
+    enumerate_typed_core_covers,
     frequent_hex_nearest_templates,
     placement_poses,
     polykite_boundary,
+    typed_core_backbone,
 )
 from einstein.substrate.module12 import apply_sr, madd, to_xy
 
@@ -88,14 +93,15 @@ def _render_candidate(
         (
             f'<text x="{width / 2:.1f}" y="25" fill="#f8f9fa" '
             'font-family="sans-serif" font-size="18" font-weight="700" '
-            f'text-anchor="middle">Hat A6 candidate {candidate_number}</text>'
+            f'text-anchor="middle">Hat A6 exception variant '
+            f'{candidate_number}</text>'
         ),
         (
             f'<text x="{width / 2:.1f}" y="47" fill="#adb5bd" '
             'font-family="sans-serif" font-size="12" text-anchor="middle">'
             f'proposal rank {candidate["proposal_rank"]}, deletion '
             f'{candidate["deletion"]}, frequency '
-            f'{candidate["proposal_frequency"]}; two core covers</text>'
+            f'{candidate["proposal_frequency"]}; at least two core covers</text>'
         ),
     ]
     titles = ["full scaffold (8 hats)", "one-child exception (7 hats)"]
@@ -209,8 +215,79 @@ def main() -> int:
                     svg,
                 )
 
+    rule_family = None
+    if (
+        len(candidates) == 2
+        and candidates[0]["full"] == candidates[1]["full"]
+    ):
+        templates = (
+            tuple(
+                (s, r, tuple(t))
+                for s, r, t in candidates[0]["full"]
+            ),
+            tuple(
+                (s, r, tuple(t))
+                for s, r, t in candidates[0]["missing"]
+            ),
+            tuple(
+                (s, r, tuple(t))
+                for s, r, t in candidates[1]["missing"]
+            ),
+        )
+        sampled_covers = enumerate_typed_core_covers(
+            poses, core, templates, limit=20
+        )
+        contractions = [
+            contract_typed_core_cover(
+                raw_hierarchy_level(poses), templates, cover
+            )
+            for cover in sampled_covers
+        ]
+        anchor_sets_agree = (
+            bool(contractions)
+            and all(
+                set(contraction.level.poses)
+                == set(contractions[0].level.poses)
+                for contraction in contractions[1:]
+            )
+        )
+        rule_family = {
+            "interpretation": (
+                "one full scaffold with two allowed one-child "
+                "exception variants"
+            ),
+            "template_types": [
+                "full-8",
+                "missing-child-2",
+                "missing-child-1",
+            ],
+            "covers_sampled": len(sampled_covers),
+            "cover_count_is_lower_bound": (
+                len(sampled_covers) == 20
+            ),
+            "sampled_type_counts": [
+                {
+                    str(template_type): count
+                    for template_type, count in sorted(
+                        Counter(contraction.types).items()
+                    )
+                }
+                for contraction in contractions
+            ],
+            "sampled_parent_anchor_sets_agree": anchor_sets_agree,
+            "sampled_parent_anchors": (
+                len(contractions[0].level.poses)
+                if contractions else 0
+            ),
+            "interior_anchor_backbone": typed_core_backbone(
+                poses, core, templates, base_r2=core_r2 // 2
+            ),
+        }
+
     result = {
-        "status": "CANDIDATES" if candidates else "NO-CANDIDATE",
+        "status": "RULE-FAMILY" if rule_family else (
+            "CANDIDATES" if candidates else "NO-CANDIDATE"
+        ),
         "scope": "blind local A6 screen; recursive closure not yet checked",
         "shape_id": 635,
         "patch_tiles": len(poses),
@@ -228,15 +305,23 @@ def main() -> int:
             candidate["core_cover"]["solutions_capped_at_2"] == 2
             for candidate in candidates
         ),
+        "rule_family": rule_family,
     }
     out = ASSETS / "a6-hat-screen-results.json"
     out.write_text(json.dumps(result, indent=2) + "\n")
     print(
-        f"A6 hat screen: {len(candidates)} candidates "
+        f"A6 hat screen: {len(candidates)} exception variants "
         f"({result['unique_candidates']} unique, "
         f"{result['ambiguous_candidates']} ambiguous) from "
         f"{screened} rules on {len(core)} core tiles"
     )
+    if rule_family:
+        backbone = rule_family["interior_anchor_backbone"]
+        print(
+            "  consolidated: one 3-type rule family; "
+            f"{rule_family['covers_sampled']}+ covers sampled, "
+            f"{backbone['forced_bases']} interior anchors forced"
+        )
     print(out.relative_to(ROOT))
     for candidate in candidates:
         print(candidate["svg"])

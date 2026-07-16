@@ -3,18 +3,36 @@
 from __future__ import annotations
 
 from collections import Counter, defaultdict
+from dataclasses import dataclass
 from typing import Sequence
 
 from einstein.funnel.a6_hierarchy import (
     CompositionRule,
     CoverResult,
+    HierarchyLevel,
     Occurrence,
     canonical_cluster,
     deletion_variants,
+    occurrence_base,
     template_occurrences,
 )
 from einstein.substrate.kitegrid import boundary_cycle
 from einstein.substrate.module12 import Pose, Vec4
+
+
+@dataclass(frozen=True)
+class TypedCoreCover:
+    """One core composition with the selected template type per parent."""
+
+    groups: tuple[tuple[int, Occurrence], ...]
+
+
+@dataclass(frozen=True)
+class TypedContraction:
+    """Contracted parent patch plus its finite parent-type alphabet."""
+
+    level: HierarchyLevel
+    types: tuple[int, ...]
 
 
 def hex_to_module(point: tuple[int, int]) -> Vec4:
@@ -101,9 +119,33 @@ def cover_core_with_rule(
     full: tuple[Pose, ...],
     missing: tuple[Pose, ...],
 ) -> CoverResult:
-    """Exact-cover an interior core; halo tiles may be used but need not cover."""
+    """Return the first core cover and multiplicity capped at two."""
+    solutions = enumerate_core_covers(
+        poses, core, full, missing, limit=2
+    )
+    if not solutions:
+        return CoverResult((), 0, 0, 0)
+    first = solutions[0]
+    return CoverResult(
+        first.groups,
+        first.n_full,
+        first.n_missing,
+        len(solutions),
+    )
+
+
+def enumerate_core_covers(
+    poses: Sequence[Pose],
+    core: Sequence[int],
+    full: tuple[Pose, ...],
+    missing: tuple[Pose, ...],
+    limit: int = 2,
+) -> tuple[CoverResult, ...]:
+    """Enumerate exact core covers, using surrounding tiles as optional halo."""
     from pysat.solvers import Cadical195
 
+    if limit < 1:
+        return ()
     core_set = set(core)
     occurrences = tuple(sorted({
         group
@@ -116,7 +158,7 @@ def cover_core_with_rule(
         for item in group:
             by_item[item].append(variable)
     if any(not by_item[item] for item in core_set):
-        return CoverResult((), 0, 0, 0)
+        return ()
     clauses: list[list[int]] = []
     for item, variables in by_item.items():
         if item in core_set:
@@ -126,7 +168,7 @@ def cover_core_with_rule(
                 clauses.append([-a, -b])
     solutions = []
     with Cadical195(bootstrap_with=clauses) as solver:
-        while len(solutions) < 2 and solver.solve():
+        while len(solutions) < limit and solver.solve():
             model = {value for value in solver.get_model() if value > 0}
             chosen_variables = [
                 variable for variable in range(1, len(occurrences) + 1)
@@ -137,17 +179,167 @@ def cover_core_with_rule(
             )
             solutions.append(chosen)
             solver.add_clause([-variable for variable in chosen_variables])
-    if not solutions:
-        return CoverResult((), 0, 0, 0)
-    chosen = tuple(sorted(
-        solutions[0], key=lambda group: tuple(sorted(group))
-    ))
-    return CoverResult(
-        chosen,
-        sum(len(group) == len(full) for group in chosen),
-        sum(len(group) == len(missing) for group in chosen),
-        len(solutions),
+    return tuple(
+        CoverResult(
+            tuple(sorted(chosen, key=lambda group: tuple(sorted(group)))),
+            sum(len(group) == len(full) for group in chosen),
+            sum(len(group) == len(missing) for group in chosen),
+            1,
+        )
+        for chosen in solutions
     )
+
+
+def enumerate_typed_core_covers(
+    poses: Sequence[Pose],
+    core: Sequence[int],
+    templates: Sequence[tuple[Pose, ...]],
+    limit: int = 2,
+) -> tuple[TypedCoreCover, ...]:
+    """Enumerate core covers from an arbitrary finite template library."""
+    from pysat.solvers import Cadical195
+
+    if limit < 1:
+        return ()
+    core_set = set(core)
+    candidates = tuple(sorted({
+        (template_type, group)
+        for template_type, template in enumerate(templates)
+        for group in template_occurrences(template, poses)
+        if group & core_set
+    }, key=lambda item: (item[0], tuple(sorted(item[1])))))
+    by_item: dict[int, list[int]] = defaultdict(list)
+    for variable, (_, group) in enumerate(candidates, 1):
+        for item in group:
+            by_item[item].append(variable)
+    if any(not by_item[item] for item in core_set):
+        return ()
+    clauses: list[list[int]] = []
+    for item, variables in by_item.items():
+        if item in core_set:
+            clauses.append(variables)
+        for i, a in enumerate(variables):
+            for b in variables[i + 1:]:
+                clauses.append([-a, -b])
+    solutions = []
+    with Cadical195(bootstrap_with=clauses) as solver:
+        while len(solutions) < limit and solver.solve():
+            model = {value for value in solver.get_model() if value > 0}
+            selected = tuple(
+                candidates[variable - 1]
+                for variable in range(1, len(candidates) + 1)
+                if variable in model
+            )
+            solutions.append(TypedCoreCover(selected))
+            solver.add_clause([
+                -variable
+                for variable in range(1, len(candidates) + 1)
+                if variable in model
+            ])
+    return tuple(solutions)
+
+
+def contract_typed_core_cover(
+    level: HierarchyLevel,
+    templates: Sequence[tuple[Pose, ...]],
+    cover: TypedCoreCover,
+) -> TypedContraction:
+    """Contract a typed partial cover, preserving physical-leaf provenance."""
+    records = []
+    for template_type, group in cover.groups:
+        base = occurrence_base(group, templates[template_type], level.poses)
+        leaves = frozenset().union(*(level.leaves[i] for i in group))
+        records.append((base, template_type, leaves))
+    records.sort(key=lambda record: record[0])
+    return TypedContraction(
+        HierarchyLevel(
+            tuple(record[0] for record in records),
+            tuple(record[1] != 0 for record in records),
+            tuple(record[2] for record in records),
+        ),
+        tuple(record[1] for record in records),
+    )
+
+
+def typed_core_backbone(
+    poses: Sequence[Pose],
+    core: Sequence[int],
+    templates: Sequence[tuple[Pose, ...]],
+    base_r2: int,
+) -> dict:
+    """Classify which interior parent anchors/types are forced by all covers."""
+    from pysat.solvers import Cadical195
+
+    core_set = set(core)
+    candidates = tuple(sorted({
+        (template_type, group, occurrence_base(group, template, poses))
+        for template_type, template in enumerate(templates)
+        for group in template_occurrences(template, poses)
+        if group & core_set
+    }, key=lambda item: (
+        item[2], item[0], tuple(sorted(item[1]))
+    )))
+    by_item: dict[int, list[int]] = defaultdict(list)
+    by_base: dict[Pose, list[int]] = defaultdict(list)
+    for variable, (_, group, base) in enumerate(candidates, 1):
+        for item in group:
+            by_item[item].append(variable)
+        by_base[base].append(variable)
+    if any(not by_item[item] for item in core_set):
+        return {
+            "satisfiable": False,
+            "candidate_occurrences": len(candidates),
+            "candidate_bases": len(by_base),
+        }
+    clauses: list[list[int]] = []
+    for item, variables in by_item.items():
+        if item in core_set:
+            clauses.append(variables)
+        for i, a in enumerate(variables):
+            for b in variables[i + 1:]:
+                clauses.append([-a, -b])
+    profiles: Counter[tuple[int, ...]] = Counter()
+    forced = optional = impossible = 0
+    with Cadical195(bootstrap_with=clauses) as solver:
+        if not solver.solve():
+            return {
+                "satisfiable": False,
+                "candidate_occurrences": len(candidates),
+                "candidate_bases": len(by_base),
+            }
+        for base, variables in by_base.items():
+            x, y = base[2][0], base[2][2]
+            if x * x + x * y + y * y > base_r2:
+                continue
+            is_forced = not solver.solve(
+                assumptions=[-variable for variable in variables]
+            )
+            allowed = tuple(sorted({
+                candidates[variable - 1][0]
+                for variable in variables
+                if solver.solve(assumptions=[variable])
+            }))
+            profiles[allowed] += 1
+            if not allowed:
+                impossible += 1
+            elif is_forced:
+                forced += 1
+            else:
+                optional += 1
+    return {
+        "satisfiable": True,
+        "candidate_occurrences": len(candidates),
+        "candidate_bases": len(by_base),
+        "analyzed_bases": forced + optional + impossible,
+        "forced_bases": forced,
+        "optional_bases": optional,
+        "impossible_bases": impossible,
+        "all_analyzed_bases_forced": optional == 0,
+        "allowed_type_profiles": {
+            ",".join(map(str, profile)): count
+            for profile, count in sorted(profiles.items())
+        },
+    }
 
 
 def candidate_rules_from_histogram(
