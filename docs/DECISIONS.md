@@ -177,3 +177,34 @@ edges), which selects the phase that afterward matches withheld ancestry
 exactly at levels 1–4. This is a calibrated mining heuristic, not a forcing
 proof. M5 remains open until recursive labelled closure and collared
 unique-composition checks remove reliance on that ranking.
+
+## D-0013 (2026-07-16) — A6 recursive graph transfer and collared states
+
+**Scale-specific rules.** Spectre's exact child translations are constructed
+from the previous supertile boundary and vary by level; A6 must not pretend
+there is one stationary integer-module inflation map. Instead, recover one
+exact 8/7 pose rule per scale. A locally mined rule on the smaller patch is
+applied to the next larger patch; equal-sized abstract contractions are then
+aligned by exact colored adjacency-graph isomorphism, and the known partition
+is transferred to expose the next scale's rule.
+
+The current isomorphism engine is joint one-dimensional color refinement over
+exceptional/nonexceptional node colors and physical-boundary adjacency. It is
+accepted only when refinement is discrete and the resulting bijection exactly
+preserves every edge. Ambiguous refinement is an honest failure; no arbitrary
+node matching is allowed.
+
+**Collared states, not forced names.** Unlabelled Spectre supertile interiors
+form only two congruence classes, so the supplied nine labels cannot be
+recovered from interior shape alone. A6 therefore retains exact oriented
+radius-1 collar states. On the calibration patch these give 17 interior states;
+withheld labels are opened afterward and every state is label-pure. Each state
+also has one exact ordered child-collar pattern on all fully collared samples.
+This 17-state table is the operative blind substitution candidate. It is not a
+recognizability certificate until all legal collars—not only observed
+collars—are enumerated and unique composition is checked by SAT.
+
+**Scaling exact cover.** Candidate occurrence hypergraphs are decomposed into
+independent overlap components before search. This preserves exact solution
+counting while avoiding recursion depth proportional to thousands of
+independent parents.

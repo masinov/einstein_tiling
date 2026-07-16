@@ -1,4 +1,4 @@
-"""Blind exact hierarchy mining on rank-4 module tile anchors (A6 v0).
+"""Blind exact hierarchy mining on rank-4 module tile anchors (A6 v1).
 
 The discovery channel sees only unoracular tile poses.  It proposes repeated
 local clusters by exact nearest-anchor distance, canonicalizes them under the
@@ -24,6 +24,7 @@ from einstein.substrate.module12 import (
     apply_sr,
     compare_quadratic,
     compose_pose,
+    inverse_pose,
     madd,
     norm2_pair,
     relative_pose,
@@ -65,6 +66,25 @@ class CoverResult:
     n_full: int
     n_missing: int
     n_solutions: int
+
+
+@dataclass(frozen=True)
+class HierarchyLevel:
+    """A contracted patch with exact anchors and physical-leaf provenance."""
+
+    poses: tuple[Pose, ...]
+    exceptional: tuple[bool, ...]
+    leaves: tuple[Occurrence, ...]
+
+
+@dataclass(frozen=True)
+class RecursiveHierarchy:
+    """Scale-specific rules and contractions recovered from two patch sizes."""
+
+    levels: tuple[HierarchyLevel, ...]
+    rules: tuple[CompositionRule, ...]
+    covers: tuple[CoverResult, ...]
+    refinement_rounds: tuple[int, ...]
 
 
 def read_anchor_poses(path: str | Path) -> list[Pose]:
@@ -208,25 +228,69 @@ def _exact_cover_solutions(
     if any(not choices for choices in by_item):
         return []
 
-    solutions: list[tuple[Occurrence, ...]] = []
+    # Split the candidate hypergraph into independent overlap components.
+    # Large substitution patches contain thousands of tiny components; solving
+    # them separately avoids recursion depth proportional to the whole patch.
+    components: list[tuple[set[int], set[Occurrence]]] = []
+    unseen = set(range(n_items))
+    while unseen:
+        seed = unseen.pop()
+        items = {seed}
+        groups: set[Occurrence] = set()
+        frontier = [seed]
+        while frontier:
+            item = frontier.pop()
+            for group in by_item[item]:
+                if group in groups:
+                    continue
+                groups.add(group)
+                for other in group:
+                    if other not in items:
+                        items.add(other)
+                        unseen.discard(other)
+                        frontier.append(other)
+        components.append((items, groups))
 
-    def search(covered: set[int], chosen: list[Occurrence]) -> None:
-        if len(solutions) >= limit:
-            return
-        if len(covered) == n_items:
-            solutions.append(tuple(chosen))
-            return
-        remaining = [i for i in range(n_items) if i not in covered]
-        item = min(
-            remaining,
-            key=lambda i: sum(group.isdisjoint(covered) for group in by_item[i]),
-        )
-        for group in by_item[item]:
-            if group.isdisjoint(covered):
-                search(covered | set(group), [*chosen, group])
+    def solve_component(
+        items: set[int], groups: set[Occurrence]
+    ) -> list[tuple[Occurrence, ...]]:
+        solutions: list[tuple[Occurrence, ...]] = []
 
-    search(set(), [])
-    return solutions
+        def search(covered: set[int], chosen: list[Occurrence]) -> None:
+            if len(solutions) >= limit:
+                return
+            if covered == items:
+                solutions.append(tuple(chosen))
+                return
+            remaining = items - covered
+            item = min(
+                remaining,
+                key=lambda i: sum(group.isdisjoint(covered) for group in by_item[i]),
+            )
+            for group in by_item[item]:
+                if group in groups and group.isdisjoint(covered):
+                    search(covered | set(group), [*chosen, group])
+
+        search(set(), [])
+        return solutions
+
+    combined: list[tuple[Occurrence, ...]] = [()]
+    for items, groups in components:
+        local = solve_component(items, groups)
+        if not local:
+            return []
+        next_combined = []
+        for prefix in combined:
+            for suffix in local:
+                next_combined.append((*prefix, *suffix))
+                if len(next_combined) >= limit:
+                    break
+            if len(next_combined) >= limit:
+                break
+        combined = next_combined
+        if not combined:
+            return []
+    return combined
 
 
 def cover_with_rule(
@@ -249,6 +313,333 @@ def cover_with_rule(
         n_missing,
         len(solutions),
     )
+
+
+def raw_hierarchy_level(poses: Sequence[Pose]) -> HierarchyLevel:
+    """Wrap physical poses as a level with one leaf per node."""
+    return HierarchyLevel(
+        tuple(poses),
+        tuple(False for _ in poses),
+        tuple(frozenset((i,)) for i in range(len(poses))),
+    )
+
+
+def occurrence_base(
+    group: Occurrence, template: Template, poses: Sequence[Pose]
+) -> Pose:
+    """Recover the unique exact transform carrying a template onto a group."""
+    index = {pose: i for i, pose in enumerate(poses)}
+    return _occurrence_base(group, template, poses, index)
+
+
+def _occurrence_base(
+    group: Occurrence,
+    template: Template,
+    poses: Sequence[Pose],
+    index: dict[Pose, int],
+) -> Pose:
+    found: set[Pose] = set()
+    for item in group:
+        for rel in template:
+            base = compose_pose(poses[item], inverse_pose(rel))
+            ids = frozenset(index.get(compose_pose(base, q), -1) for q in template)
+            if ids == group:
+                found.add(base)
+    if len(found) != 1:
+        raise ValueError(f"expected one occurrence base, found {len(found)}")
+    return found.pop()
+
+
+def contract_level(
+    level: HierarchyLevel,
+    rule: CompositionRule,
+    cover: CoverResult | None = None,
+) -> HierarchyLevel:
+    """Contract an exact cover into parent anchors, retaining leaf provenance."""
+    if cover is None:
+        cover = cover_with_rule(level.poses, rule.full, rule.missing)
+    if cover.n_solutions != 1:
+        raise ValueError("contraction requires a unique exact cover")
+    poses = []
+    exceptional = []
+    leaves = []
+    index = {pose: i for i, pose in enumerate(level.poses)}
+    for group in cover.groups:
+        template = rule.full if len(group) == len(rule.full) else rule.missing
+        poses.append(_occurrence_base(group, template, level.poses, index))
+        exceptional.append(len(group) == len(rule.missing))
+        leaves.append(frozenset().union(*(level.leaves[i] for i in group)))
+    return HierarchyLevel(tuple(poses), tuple(exceptional), tuple(leaves))
+
+
+def discover_exceptional_composition(
+    level: HierarchyLevel, full_size: int = 8
+) -> tuple[CompositionRule, CoverResult, dict]:
+    """Find the recursive rule requiring one exceptional child per parent."""
+    accepted = []
+    proposals = frequent_nearest_templates(
+        level.poses, full_size, top=len(level.poses)
+    )
+    for rank, (full, frequency) in enumerate(proposals, 1):
+        for missing in deletion_variants(full):
+            cover = cover_with_rule(level.poses, full, missing)
+            if cover.n_solutions != 1:
+                continue
+            if all(sum(level.exceptional[i] for i in group) == 1
+                   for group in cover.groups):
+                accepted.append((
+                    rank,
+                    CompositionRule(full, missing, full_size, frequency),
+                    cover,
+                ))
+    if len(accepted) != 1:
+        raise ValueError(
+            f"expected one exceptional-child composition, found {len(accepted)}"
+        )
+    rank, rule, cover = accepted[0]
+    return rule, cover, {
+        "proposal_rank": rank,
+        "proposal_frequency": rule.proposal_frequency,
+        "n_full": cover.n_full,
+        "n_missing": cover.n_missing,
+    }
+
+
+def physical_edge_contacts(
+    poses: Sequence[Pose], tile_boundary: Sequence[Vec4]
+) -> tuple[tuple[int, int], ...]:
+    """Physical-tile pairs sharing one or more complete boundary edges."""
+    edge_tiles: dict[tuple[Vec4, Vec4], list[int]] = defaultdict(list)
+    for i, (s, r, t) in enumerate(poses):
+        vertices = [madd(t, apply_sr(s, r, v)) for v in tile_boundary]
+        for j, a in enumerate(vertices):
+            b = vertices[(j + 1) % len(vertices)]
+            edge_tiles[tuple(sorted((a, b)))].append(i)
+    contacts = set()
+    for tiles in edge_tiles.values():
+        if len(tiles) == 2:
+            contacts.add(tuple(sorted(tiles)))
+        elif len(tiles) > 2:
+            raise ValueError("more than two physical tiles share an edge")
+    return tuple(sorted(contacts))
+
+
+def contracted_adjacency(
+    contacts: Sequence[tuple[int, int]], level: HierarchyLevel
+) -> tuple[frozenset[int], ...]:
+    """Adjacency graph induced by physical edge contacts between clusters."""
+    owner = {leaf: i for i, leaves in enumerate(level.leaves) for leaf in leaves}
+    adjacent = [set() for _ in level.poses]
+    for x, y in contacts:
+        a, b = owner[x], owner[y]
+        if a != b:
+            adjacent[a].add(b)
+            adjacent[b].add(a)
+    return tuple(frozenset(neighbors) for neighbors in adjacent)
+
+
+def refinement_isomorphism(
+    left: Sequence[Occurrence],
+    left_colors: Sequence[object],
+    right: Sequence[Occurrence],
+    right_colors: Sequence[object],
+) -> tuple[dict[int, int], int]:
+    """Exact joint color refinement; require a discrete graph isomorphism."""
+    if len(left) != len(right):
+        raise ValueError("graph sizes differ")
+    lc = [(left_colors[i], len(left[i])) for i in range(len(left))]
+    rc = [(right_colors[i], len(right[i])) for i in range(len(right))]
+    rounds = 0
+    for rounds in range(len(left) + 1):
+        ls = [(lc[i], tuple(sorted(lc[j] for j in left[i])))
+              for i in range(len(left))]
+        rs = [(rc[i], tuple(sorted(rc[j] for j in right[i])))
+              for i in range(len(right))]
+        keys = {sig: k for k, sig in enumerate(sorted(set(ls + rs)))}
+        nl = [keys[sig] for sig in ls]
+        nr = [keys[sig] for sig in rs]
+        if Counter(nl) != Counter(nr):
+            raise ValueError("colored adjacency graphs are not isomorphic")
+        if nl == lc and nr == rc:
+            break
+        lc, rc = nl, nr
+    if len(set(lc)) != len(left):
+        raise ValueError("color refinement did not produce a unique bijection")
+    inverse = {color: i for i, color in enumerate(rc)}
+    mapping = {i: inverse[color] for i, color in enumerate(lc)}
+    if not all(
+        {mapping[j] for j in left[i]} == set(right[mapping[i]])
+        for i in mapping
+    ):
+        raise ValueError("refinement bijection does not preserve edges")
+    return mapping, rounds
+
+
+def rule_from_partition(
+    level: HierarchyLevel, groups: Sequence[Occurrence]
+) -> tuple[CompositionRule, CoverResult]:
+    """Extract one 8/7 congruence rule from a known exact partition."""
+    templates: dict[int, Counter[Template]] = defaultdict(Counter)
+    for group in groups:
+        templates[len(group)][
+            canonical_cluster([level.poses[i] for i in group])
+        ] += 1
+    if set(templates) != {7, 8}:
+        raise ValueError(f"expected group sizes 7 and 8, got {set(templates)}")
+    if len(templates[7]) != 1 or len(templates[8]) != 1:
+        raise ValueError("partition does not form one congruence class per size")
+    full, n_full = templates[8].most_common(1)[0]
+    missing, n_missing = templates[7].most_common(1)[0]
+    if missing not in deletion_variants(full):
+        raise ValueError("seven-child template is not a deletion of the full rule")
+    ordered = tuple(sorted(groups, key=lambda group: tuple(sorted(group))))
+    rule = CompositionRule(full, missing, 8, n_full)
+    return rule, CoverResult(ordered, n_full, n_missing, 1)
+
+
+def recover_recursive_hierarchy(
+    lower_physical: Sequence[Pose],
+    upper_physical: Sequence[Pose],
+    physical_rule: CompositionRule,
+    tile_boundary: Sequence[Vec4],
+) -> RecursiveHierarchy:
+    """Recover all scale-specific 8/7 rules using adjacent-size graph transfer.
+
+    ``lower_physical`` and ``upper_physical`` must be consecutive substitution
+    patches with the same root. No labels or hidden paths are consumed.
+    """
+    low_raw = raw_hierarchy_level(lower_physical)
+    high_raw = raw_hierarchy_level(upper_physical)
+    low = contract_level(low_raw, physical_rule)
+    high_base = contract_level(high_raw, physical_rule)
+    current_rule, low_cover, _ = discover_exceptional_composition(low)
+    high_cover = cover_with_rule(
+        high_base.poses, current_rule.full, current_rule.missing
+    )
+    if high_cover.n_solutions != 1 or not all(
+        sum(high_base.exceptional[i] for i in group) == 1
+        for group in high_cover.groups
+    ):
+        raise ValueError("first recursive rule does not close on upper patch")
+    high = contract_level(high_base, current_rule, high_cover)
+    if len(low.poses) != len(high.poses):
+        raise ValueError("consecutive patches did not align after contraction")
+
+    low_contacts = physical_edge_contacts(lower_physical, tile_boundary)
+    high_contacts = physical_edge_contacts(upper_physical, tile_boundary)
+    levels = [low]
+    rules = []
+    covers = []
+    refinement_rounds = []
+
+    while True:
+        rules.append(current_rule)
+        covers.append(low_cover)
+        low_next = contract_level(low, current_rule, low_cover)
+        levels.append(low_next)
+        if len(low_next.poses) == 1:
+            break
+
+        mapping, rounds = refinement_isomorphism(
+            contracted_adjacency(low_contacts, low),
+            low.exceptional,
+            contracted_adjacency(high_contacts, high),
+            high.exceptional,
+        )
+        refinement_rounds.append(rounds)
+        transferred = tuple(
+            frozenset(mapping[i] for i in group) for group in low_cover.groups
+        )
+        next_rule, transferred_cover = rule_from_partition(high, transferred)
+        high_next = contract_level(high, next_rule, transferred_cover)
+        next_cover = cover_with_rule(
+            low_next.poses, next_rule.full, next_rule.missing
+        )
+        if next_cover.n_solutions != 1 or not all(
+            sum(low_next.exceptional[i] for i in group) == 1
+            for group in next_cover.groups
+        ):
+            raise ValueError("transferred recursive rule does not close")
+        low, high = low_next, high_next
+        current_rule, low_cover = next_rule, next_cover
+
+    return RecursiveHierarchy(
+        tuple(levels), tuple(rules), tuple(covers), tuple(refinement_rounds)
+    )
+
+
+def oriented_collar_colors(
+    level: HierarchyLevel,
+    adjacency: Sequence[Occurrence],
+    radius: int = 1,
+) -> tuple[int, ...]:
+    """Exact rooted collar colors using oriented relative neighbor poses."""
+    colors: list[object] = list(level.exceptional)
+    for _ in range(radius):
+        signatures = [
+            (
+                colors[i],
+                tuple(sorted(
+                    (relative_pose(level.poses[i], level.poses[j]), colors[j])
+                    for j in adjacency[i]
+                )),
+            )
+            for i in range(len(level.poses))
+        ]
+        keys = {sig: k for k, sig in enumerate(sorted(set(signatures)))}
+        colors = [keys[sig] for sig in signatures]
+    return tuple(int(color) for color in colors)
+
+
+def collared_substitution_rules(
+    child: HierarchyLevel,
+    parent: HierarchyLevel,
+    cover: CoverResult,
+    contacts: Sequence[tuple[int, int]],
+    radius: int = 1,
+    interior_degree: int = 6,
+) -> dict:
+    """Mine exact ordered child rules for fully collared interior parents."""
+    child_adjacency = contracted_adjacency(contacts, child)
+    parent_adjacency = contracted_adjacency(contacts, parent)
+    child_colors = oriented_collar_colors(child, child_adjacency, radius)
+    parent_colors = oriented_collar_colors(parent, parent_adjacency, radius)
+    patterns: dict[int, Counter[tuple]] = defaultdict(Counter)
+    for i, group in enumerate(cover.groups):
+        if len(parent_adjacency[i]) != interior_degree:
+            continue
+        if any(len(child_adjacency[j]) != interior_degree for j in group):
+            continue
+        pattern = tuple(sorted(
+            (relative_pose(parent.poses[i], child.poses[j]), child_colors[j])
+            for j in group
+        ))
+        patterns[parent_colors[i]][pattern] += 1
+    ambiguous = {
+        color: len(found) for color, found in patterns.items() if len(found) != 1
+    }
+    rules = {}
+    for color, found in patterns.items():
+        if len(found) == 1:
+            pattern, occurrences = found.most_common(1)[0]
+            rules[color] = {
+                "occurrences": occurrences,
+                "children": pattern,
+            }
+    child_interior_colors = {
+        child_colors[i] for i, neighbors in enumerate(child_adjacency)
+        if len(neighbors) == interior_degree
+    }
+    return {
+        "radius": radius,
+        "interior_degree": interior_degree,
+        "eligible_parents": sum(sum(found.values()) for found in patterns.values()),
+        "child_collar_classes": len(child_interior_colors),
+        "parent_collar_classes": len(patterns),
+        "ambiguous_classes": ambiguous,
+        "deterministic": bool(patterns) and not ambiguous,
+        "rules": rules,
+    }
 
 
 def discover_composition(
@@ -351,9 +742,11 @@ def discover_composition(
 
 
 def read_hidden_parent_groups(
-    path: str | Path, poses: Sequence[Pose]
+    path: str | Path, poses: Sequence[Pose], levels_up: int = 1
 ) -> tuple[Occurrence, ...]:
-    """Read validation-only ancestry and group leaves by immediate parent."""
+    """Read validation-only ancestry and group leaves by an ancestor depth."""
+    if levels_up < 1:
+        raise ValueError("levels_up must be positive")
     pose_index = {pose: i for i, pose in enumerate(poses)}
     grouped: dict[tuple[int, ...], set[int]] = defaultdict(set)
     with open(path, newline="") as f:
@@ -373,11 +766,67 @@ def read_hidden_parent_groups(
             if raw.endswith(("a", "b")):
                 raw = raw[:-1]
             slots = tuple(int(part) for part in raw.split(".") if part)
-            grouped[slots[:-1]].add(i)
+            grouped[slots[:-levels_up]].add(i)
     return tuple(sorted(
         (frozenset(group) for group in grouped.values()),
         key=lambda group: tuple(sorted(group)),
     ))
+
+
+def read_hidden_node_labels(
+    path: str | Path,
+    poses: Sequence[Pose],
+    level: HierarchyLevel,
+    levels_up: int = 1,
+) -> tuple[int, ...]:
+    """Read withheld ancestor labels for already recovered physical clusters."""
+    pose_index = {pose: i for i, pose in enumerate(poses)}
+    leaf_labels: dict[int, tuple[int, ...]] = {}
+    with open(path, newline="") as f:
+        for row in csv.DictReader(f):
+            if "labels" not in row:
+                raise ValueError("hierarchy dump lacks validation label ancestry")
+            pose = (
+                int(row["s"]),
+                int(row["r"]),
+                (
+                    int(row["t0"]),
+                    int(row["t1"]),
+                    int(row["t2"]),
+                    int(row["t3"]),
+                ),
+            )
+            leaf_labels[pose_index[pose]] = tuple(
+                int(label) for label in row["labels"].split(".")
+            )
+    result = []
+    for leaves in level.leaves:
+        labels = {leaf_labels[leaf][-(levels_up + 1)] for leaf in leaves}
+        if len(labels) != 1:
+            raise ValueError("recovered cluster crosses hidden label ancestors")
+        result.append(labels.pop())
+    return tuple(result)
+
+
+def collar_label_validation(
+    colors: Sequence[int],
+    labels: Sequence[int],
+    indices: Iterable[int] | None = None,
+) -> dict:
+    """Post-hoc purity of blind collar colors against withheld labels."""
+    selected = range(len(colors)) if indices is None else tuple(indices)
+    by_color: dict[int, set[int]] = defaultdict(set)
+    for i in selected:
+        by_color[colors[i]].add(labels[i])
+    mixed = {color: sorted(values) for color, values in by_color.items()
+             if len(values) > 1}
+    return {
+        "nodes": sum(1 for _ in selected),
+        "collar_classes": len(by_color),
+        "labels": len({labels[i] for i in selected}),
+        "mixed_classes": mixed,
+        "pure": not mixed,
+    }
 
 
 def validate_against_hidden(

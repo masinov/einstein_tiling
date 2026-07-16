@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Blind A6 v0 calibration against the user-owned Spectre generator.
+"""Blind A6 v1 calibration against the user-owned Spectre generator.
 
 Discovery reads exact physical tile poses only. Hidden substitution paths are
 generated to separate files and opened strictly after the rule is fixed.
@@ -14,12 +14,21 @@ from pathlib import Path
 
 from einstein.funnel.a6_hierarchy import (
     SPECTRE_TILE_BOUNDARY,
+    collar_label_validation,
+    collared_substitution_rules,
     cluster_adjacency,
+    contracted_adjacency,
+    contract_level,
     cover_with_rule,
     discover_composition,
+    oriented_collar_colors,
+    physical_edge_contacts,
     read_anchor_poses,
+    read_hidden_node_labels,
     read_hidden_parent_groups,
+    raw_hierarchy_level,
     recover_order2_recurrence,
+    recover_recursive_hierarchy,
     validate_against_hidden,
 )
 from einstein.substrate.module12 import apply_sr, madd, to_xy
@@ -39,6 +48,15 @@ def _run(binary: str, label: str, level: int, out: Path) -> None:
 
 def _template_json(template):
     return [[s, r, list(t)] for s, r, t in template]
+
+
+def _rule_json(rule):
+    return {
+        "full": _template_json(rule.full),
+        "missing": _template_json(rule.missing),
+        "full_size": rule.full_size,
+        "proposal_frequency": rule.proposal_frequency,
+    }
 
 
 def _render_metatiles(full, missing, out: Path) -> None:
@@ -102,7 +120,7 @@ def main() -> int:
         tmp = Path(raw_tmp)
         anchors = {}
         hidden_paths = {}
-        for level in range(1, 5):
+        for level in range(1, 6):
             ap = tmp / f"Delta-n{level}-anchors.csv"
             hp = tmp / f"Delta-n{level}-hierarchy.csv"
             _run("anchors", "Delta", level, ap)
@@ -121,9 +139,11 @@ def main() -> int:
         levels = {}
         physical_counts = []
         all_exact = True
-        for level in range(1, 5):
+        for level in range(1, 6):
             cover = cover_with_rule(anchors[level], rule.full, rule.missing)
-            hidden = read_hidden_parent_groups(hidden_paths[level], anchors[level])
+            hidden = read_hidden_parent_groups(
+                hidden_paths[level], anchors[level]
+            )
             validation = validate_against_hidden(cover.groups, hidden)
             all_exact &= cover.n_solutions == 1 and validation["exact"]
             physical_counts.append(len(anchors[level]))
@@ -153,12 +173,77 @@ def main() -> int:
             }
             all_exact &= cover.n_solutions == 1
 
+        recursive = recover_recursive_hierarchy(
+            anchors[4],
+            anchors[5],
+            rule,
+            SPECTRE_TILE_BOUNDARY,
+        )
+        recursive_validation = {}
+        for depth, level in enumerate(recursive.levels, 1):
+            hidden = read_hidden_parent_groups(
+                hidden_paths[4], anchors[4], levels_up=depth
+            )
+            validation = validate_against_hidden(level.leaves, hidden)
+            recursive_validation[str(depth)] = validation
+            all_exact &= validation["exact"]
+
+        upper_immediate = contract_level(raw_hierarchy_level(anchors[5]), rule)
+        upper_contacts = physical_edge_contacts(
+            anchors[5], SPECTRE_TILE_BOUNDARY
+        )
+        upper_adjacency = contracted_adjacency(
+            upper_contacts, upper_immediate
+        )
+        collar_colors = oriented_collar_colors(
+            upper_immediate, upper_adjacency, radius=1
+        )
+        hidden_labels = read_hidden_node_labels(
+            hidden_paths[5], anchors[5], upper_immediate, levels_up=1
+        )
+        interior = [
+            i for i, neighbors in enumerate(upper_adjacency)
+            if len(neighbors) == 6
+        ]
+        collar_validation = collar_label_validation(
+            collar_colors, hidden_labels, interior
+        )
+        all_exact &= (
+            collar_validation["pure"]
+            and collar_validation["collar_classes"] == 17
+            and collar_validation["labels"] == 9
+        )
+        first_recursive_rule = recursive.rules[0]
+        first_recursive_cover = cover_with_rule(
+            upper_immediate.poses,
+            first_recursive_rule.full,
+            first_recursive_rule.missing,
+        )
+        upper_parent = contract_level(
+            upper_immediate, first_recursive_rule, first_recursive_cover
+        )
+        collared_rules = collared_substitution_rules(
+            upper_immediate,
+            upper_parent,
+            first_recursive_cover,
+            upper_contacts,
+            radius=1,
+        )
+        all_exact &= (
+            collared_rules["deterministic"]
+            and collared_rules["child_collar_classes"] == 17
+            and collared_rules["parent_collar_classes"] == 17
+        )
+
         recurrence = recover_order2_recurrence(physical_counts)
         full_adj = cluster_adjacency(rule.full, SPECTRE_TILE_BOUNDARY)
         missing_adj = cluster_adjacency(rule.missing, SPECTRE_TILE_BOUNDARY)
         result = {
             "status": "PASS" if all_exact else "FAIL",
-            "scope": "A6 v0 immediate composition; recognizability not yet proved",
+            "scope": (
+                "A6 v1 recursive composition and radius-1 collar recovery; "
+                "recognizability not yet proved"
+            ),
             "blind_inputs": "exact (s,r,t0..t3) physical poses only; kind ignored",
             "selected_rule": {
                 "full": _template_json(rule.full),
@@ -177,6 +262,24 @@ def main() -> int:
             "discovery": diagnostics,
             "delta_levels": levels,
             "all_root_labels_level3": roots,
+            "recursive_hierarchy": {
+                "level_counts": [
+                    len(level.poses) for level in recursive.levels
+                ],
+                "covers": [
+                    {
+                        "full": cover.n_full,
+                        "missing": cover.n_missing,
+                        "unique": cover.n_solutions == 1,
+                    }
+                    for cover in recursive.covers
+                ],
+                "rules": [_rule_json(found) for found in recursive.rules],
+                "refinement_rounds": list(recursive.refinement_rounds),
+                "hidden_validation": recursive_validation,
+            },
+            "radius1_collar_validation": collar_validation,
+            "radius1_collared_substitution": collared_rules,
             "physical_tile_counts": physical_counts,
             "recurrence": recurrence,
             "inflation_area": "dominant root 4 + sqrt(15)",
@@ -187,8 +290,9 @@ def main() -> int:
         _render_metatiles(rule.full, rule.missing, out_svg)
 
     print(
-        f"A6 v0: {result['status']} — size {rule.full_size}; "
-        f"levels 1–4 hidden recovery exact; recurrence "
+        f"A6 v1: {result['status']} — recursive "
+        f"{' -> '.join(map(str, result['recursive_hierarchy']['level_counts']))}; "
+        f"radius-1 collars pure; recurrence "
         f"T[n+1]={recurrence['a']}T[n] - T[n-1]"
     )
     print(out_json.relative_to(ROOT))

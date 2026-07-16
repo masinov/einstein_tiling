@@ -19,6 +19,7 @@ struct Frame {
     r: u8,
     t: [i64; 4],
     path: Vec<u8>,
+    labels: Vec<u8>,
 }
 
 fn rot30(v: [i64; 4]) -> [i64; 4] {
@@ -55,6 +56,14 @@ fn path_string(path: &[u8], gamma: Option<char>) -> String {
     text
 }
 
+fn label_string(labels: &[u8]) -> String {
+    labels
+        .iter()
+        .map(|label| label.to_string())
+        .collect::<Vec<_>>()
+        .join(".")
+}
+
 fn emit(
     out: &mut BufWriter<std::fs::File>,
     kind: u8,
@@ -65,7 +74,7 @@ fn emit(
 ) {
     writeln!(
         out,
-        "{},{},{},{},{},{},{},{}",
+        "{},{},{},{},{},{},{},{},{}",
         kind,
         frame.s,
         r,
@@ -74,6 +83,7 @@ fn emit(
         t[2],
         t[3],
         path_string(&frame.path, gamma),
+        label_string(&frame.labels),
     )
     .unwrap();
 }
@@ -94,7 +104,7 @@ fn main() {
     let level: usize = args[2].parse().expect("level must be an integer");
     let file = std::fs::File::create(&args[3]).expect("cannot create output");
     let mut out = BufWriter::new(file);
-    writeln!(out, "kind,s,r,t0,t1,t2,t3,path").unwrap();
+    writeln!(out, "kind,s,r,t0,t1,t2,t3,path,labels").unwrap();
 
     let mut stack = vec![Frame {
         label,
@@ -103,6 +113,7 @@ fn main() {
         r: 0,
         t: [0; 4],
         path: Vec::new(),
+        labels: vec![label],
     }];
     let mut count = 0usize;
     while let Some(frame) = stack.pop() {
@@ -132,6 +143,8 @@ fn main() {
             }
             let mut path = frame.path.clone();
             path.push(slot as u8);
+            let mut labels = frame.labels.clone();
+            labels.push(rule[slot]);
             let d = apply_sr(frame.s, frame.r, translations[slot]);
             let r = if frame.s == 1 {
                 (frame.r + 12 - rotations[slot]) % 12
@@ -145,6 +158,7 @@ fn main() {
                 r,
                 t: add(frame.t, d),
                 path,
+                labels,
             });
         }
     }

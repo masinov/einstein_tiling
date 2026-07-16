@@ -21,8 +21,9 @@ Local modifications:
   identities `(kind, s, r, t0..t3)` for a viewport — the A4 feed. No
   upstream file is modified.
 - `spectre-core/src/bin/hierarchy.rs` (new): validation-only dump of the same
-  exact leaves with hidden child-slot ancestry. A6 consumes `anchors` alone;
-  the hierarchy dump is opened only after blind discovery to score recovery.
+  exact leaves with hidden child-slot and label ancestry. A6 consumes
+  `anchors` alone; the hierarchy dump is opened only after blind discovery to
+  score recovery and collar purity.
 - `gen_tables.py` writes to hardcoded upstream paths; we do not run it
   (tables.rs is committed). Regenerate only if MAX_LEVEL/rules change.
 

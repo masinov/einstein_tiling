@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-16 (session 07)
+**Last updated:** 2026-07-16 (session 08)
 
 ## Where we are
 
@@ -18,7 +18,7 @@
 | M3 — A3 large-patch growth | §4 A3 | ✅ done v0, SAT backend; 11,514-tile hat patch, φ⁴ chirality anchor hit (session 04) |
 | M4 — A4 diffraction fingerprint | §4 A4 | ✅ done v0; 12-fold core calibration passed (session 05) |
 | E4 — full fingerprint calibration gate | §8 E4 | ✅ passed (sessions 05–06) |
-| M5 — A6 hierarchy mining | §4 A6 | 🟨 v0 immediate composition passed; recursive rules + forcing open |
+| M5 — A6 hierarchy mining | §4 A6 | 🟨 v1 recursive/collared closure passed; forcing proof open |
 | **Gate G1 — E1 blind hat rediscovery** | §8 E1 | ⬜ blocked by remaining M5 |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
@@ -79,8 +79,17 @@
   9, 71, 559, 4,401 yield `T[n+1] = 8T[n] - T[n-1]` and dominant root
   `4 + sqrt(15)`. Artifact: `a6-spectre-results.json`; runner:
   `scripts/run_a6_spectre.py`.
-- Test suite: **55 fast passed** (13 deselected, 8.66 s);
-  **13 slow passed** (55 deselected, 82.27 s).
+- **A6 v1 recursive closure:** consecutive level-4/5 pose-only patches are
+  contracted by exact scale-specific 8/7 rules. Colored physical-boundary
+  adjacency graphs at equal abstract size become discrete after exact joint
+  refinement, allowing partitions to transfer across scales. The level-4
+  hierarchy closes `496 → 63 → 8 → 1`; every recovered cluster matches
+  withheld ancestry at every depth. One exact oriented adjacency collar gives
+  17 interior states that are 100% pure against all nine withheld labels
+  (3,109 nodes), and all 17 states have one deterministic ordered child rule
+  across 310 fully collared parents.
+- Test suite: **57 fast passed** (14 deselected, 8.72 s);
+  **14 slow passed** (57 deselected, 123.89 s).
 
 ## Funnel state (polykites, grid-aligned scope — D-0006)
 
@@ -133,18 +142,27 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
   by themselves identify the hidden two-tile Gamma child, the nine metatile
   labels, recursive closure, a forcing radius, or unique composition of every
   legal tiling.
+- A6 v1 closes the observed recursive hierarchy and a finite 17-state collared
+  rule table, but only on generated finite patches. Exact graph refinement
+  happens to become discrete on the calibrated patches; a general isomorphism
+  backtracker is not implemented. Radius-1 collar purity and deterministic
+  child rules are empirical closure checks, not an exhaustion of every legal
+  collar. The bottom two-tile Gamma/Mystic fusion is still not selected
+  uniquely from unlabelled physical geometry.
 
 ## Next actions (in order)
 
-1. Continue M5/A6: mine the two-tile Gamma child and parent pose/inflation
-   map, then recursively recover the nine metatile classes and composition
-   table from pose/adjacency data alone.
-2. Add collared-patch enumeration and SAT uniqueness checks for a measured
-   recognizability radius; only then call M5 complete.
-3. Gate G1 planning, then A0 scaling (streaming/compiled enumerator) and the
+1. Continue M5/A6: enumerate every legal radius-1 collared configuration
+   admitted by the recovered 17-state rules, not just those sampled in the
+   level-5 patch.
+2. SAT-check unique parent composition for that finite collar set and measure
+   the smallest forcing radius; only then call M5 complete.
+3. Revisit the bottom two-tile Gamma/Mystic fusion using collared context
+   rather than the ambiguous unlabelled pair motif.
+4. Gate G1 planning, then A0 scaling (streaming/compiled enumerator) and the
    A2 performance port required for the n≤16 E1 blind sweep.
-4. Deferred: replace the bounded A4 indexer with LLL/PSLQ if future reference
+5. Deferred: replace the bounded A4 indexer with LLL/PSLQ if future reference
    families or transformed controls break the E4 envelope.
-5. Deferred: incremental SAT encoder for 10⁵-tile patches; corona-1 census
+6. Deferred: incremental SAT encoder for 10⁵-tile patches; corona-1 census
    feature; polyiamond substrate (external per-shape Heesch anchor from
    Kaplan's dataset).
