@@ -245,3 +245,20 @@ artifact is the verified case table; emitting a Lean wrapper around it belongs
 to E10, not to the runtime funnel. The traditional two-tile Gamma/Mystic fusion
 is not needed by this recovered 9/8 hierarchy certificate and remains optional
 reference-structure archaeology rather than a gate blocker.
+
+## D-0015 (2026-07-16) — Disk patches use exact core-plus-halo A6 covers
+
+Generated reference supertiles can be covered completely by parent clusters;
+A3 candidate patches are disk cuts and generally cannot. For E1, A6 therefore
+requires every tile in a fixed interior core to belong to exactly one parent,
+permits a parent to use tiles from the surrounding halo, enforces at-most-one
+use of every halo tile, and does not require the outer halo itself to compose.
+CaDiCaL enumerates composition multiplicity up to two. This is an exact
+finite-region statement and avoids either discarding boundary-crossing parents
+or pretending the disk boundary follows a substitution boundary.
+
+Kite-grid placements embed without approximation in the existing module:
+hex `(x,y) → (x,0,y,0)`; rotations advance by two module steps; the reflected
+D6 operations use the matching module reflection/rotation pair. Exact nearest
+anchor mining is accelerated by expanding hex-lattice boxes whose omitted
+points have a proved quadratic-distance lower bound.

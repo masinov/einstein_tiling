@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-16 (session 09)
+**Last updated:** 2026-07-16 (session 10)
 
 ## Where we are
 
@@ -19,7 +19,7 @@
 | M4 — A4 diffraction fingerprint | §4 A4 | ✅ done v0; 12-fold core calibration passed (session 05) |
 | E4 — full fingerprint calibration gate | §8 E4 | ✅ passed (sessions 05–06) |
 | M5 — A6 hierarchy mining | §4 A6 | ✅ done v0; recursive, stationary-collar and SAT forcing gate passed |
-| **Gate G1 — E1 blind hat rediscovery** | §8 E1 | 🟨 unblocked; n≤16 scaling and hat A6 adapter next |
+| **Gate G1 — E1 blind hat rediscovery** | §8 E1 | 🟨 in progress; hat A6 has 2 stable local candidates |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -98,7 +98,13 @@
   legal. CaDiCaL proves all 19 physical patterns and all 17 metatile-state
   cases uniquely composable. Hidden ancestry and labels are still opened only
   after discovery and agree exactly.
-- Test suite: **57 fast passed** (14 deselected, 8.72 s);
+- **E1 hat A6 screen:** A3 kite-grid placements now map exactly into module12,
+  with candidate boundaries derived from their polykite cells. Disk cuts use
+  an exact core-plus-halo SAT cover. On the 11,514-hat patch, 160 blind 8/7
+  rules yield exactly two candidates; both have two compositions, stable when
+  the core grows from 2,277 to 4,531 and 6,797 hats. Artifact:
+  `a6-hat-screen-results.json`; runner: `scripts/run_a6_hat.py`.
+- Test suite: **61 fast passed** (14 deselected, 8.69 s);
   **14 slow passed** (57 deselected, 112.17 s). Vendored Rust: **5 passed**.
 
 ## Funnel state (polykites, grid-aligned scope — D-0006)
@@ -158,9 +164,9 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
 
 ## Next actions (in order)
 
-1. Start Gate G1: add the exact adapter from A3 polykite placement
-   certificates to A6 module poses/boundaries, then require blind hierarchy
-   recovery on the hat.
+1. Continue the two hat A6 candidates independently: enumerate both core-cover
+   solutions, contract a safely interior parent patch, and use recursive and
+   collared closure to select or refine the rule.
 2. Scale A0 to the E1 horizon n≤16 (streaming/compiled enumeration) and port
    the A1/A2 hot paths needed for the full frozen-threshold sweep.
 3. Run the complete n≤16 A0–A4 ranking, verify hat/turtle placement, and send
