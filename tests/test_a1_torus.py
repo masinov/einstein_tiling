@@ -10,6 +10,7 @@ import pytest
 from einstein.funnel.a1_torus import (
     cell_to_lattice,
     find_periodic_tiling,
+    find_periodic_tiling_sat,
     lattice_to_cell,
     sublattices,
     verify_certificate,
@@ -32,6 +33,15 @@ def test_sublattice_count():
     sigma = {1: 1, 2: 3, 3: 4, 4: 7, 5: 6, 6: 12, 12: 28}
     for k, s in sigma.items():
         assert len(sublattices(k)) == s
+
+
+def test_sat_escalation_matches_small_periodic_certificate():
+    shape = ((0, 0, 0),)
+    certificate, exhausted = find_periodic_tiling_sat(shape, k_max=1)
+    assert certificate is not None
+    assert certificate["index"] == 1
+    assert not exhausted
+    assert verify_certificate(shape, certificate)
 
 
 def test_single_kite_tiles_periodically():

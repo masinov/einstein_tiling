@@ -7,31 +7,14 @@ Writes:
 
 from __future__ import annotations
 
-import json
 from pathlib import Path
 
+from einstein.e1_candidates import smallest_depth3_candidates
 from einstein.render.svg import hex_to_xy
 from einstein.substrate.kitegrid import cell_vertices
 
 ROOT = Path(__file__).resolve().parent.parent
 ASSETS = ROOT / "docs" / "notebook" / "assets"
-
-
-def decode(key):
-    cells = []
-    for offset in range(0, len(key), 4):
-        code = int(key[offset:offset + 4], 16)
-        cells.append((
-            2 * ((code >> 9) & 63),
-            2 * (((code >> 3) & 63) - 32),
-            code & 7,
-        ))
-    return tuple(cells)
-
-
-def load(n):
-    path = ROOT / f"data/a2-compiled/depth3-witnesses-{n:02}.jsonl"
-    return [json.loads(line) for line in path.read_text().splitlines()]
 
 
 def render(rows):
@@ -49,10 +32,9 @@ def render(rows):
         f'viewBox="0 0 {width} {height}">',
         '<rect width="100%" height="100%" fill="#11151c"/>',
     ]
-    for index, (n, local_index, row) in enumerate(rows):
+    for index, (n, local_index, key, cells) in enumerate(rows):
         column, line = index % columns, index // columns
         ox, oy = column * panel_w, line * panel_h
-        cells = decode(row["shape"])
         polygons = [
             [hex_to_xy(vertex) for vertex in cell_vertices(cell)]
             for cell in cells
@@ -87,7 +69,7 @@ def render(rows):
             (
                 f'<text x="{ox + panel_w / 2}" y="{oy + 50}" '
                 'fill="#adb5bd" font-family="monospace" font-size="10" '
-                f'text-anchor="middle">Hc ≥ 3 · {row["shape"][:16]}…</text>'
+                f'text-anchor="middle">Hc ≥ 3 · {key[:16]}…</text>'
             ),
         ])
         for cell, polygon in zip(cells, polygons):
@@ -105,10 +87,7 @@ def render(rows):
 
 
 def main():
-    rows = (
-        [(10, i, row) for i, row in enumerate(load(10), 1)]
-        + [(12, i, row) for i, row in enumerate(load(12), 1)]
-    )
+    rows = list(smallest_depth3_candidates())
     assert len(rows) == 10
     ASSETS.mkdir(parents=True, exist_ok=True)
     output = ASSETS / "a2-depth3-small-candidates.svg"

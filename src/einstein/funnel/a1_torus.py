@@ -185,6 +185,78 @@ def find_periodic_tiling(shape, k_max: int = 12, node_budget: int = 200_000):
     return None, exhausted
 
 
+def find_periodic_tiling_sat(
+    shape,
+    k_max: int = 100,
+    conflict_budget: int | None = None,
+    k_min: int = 1,
+):
+    """Exact torus sweep using CaDiCaL instead of recursive backtracking.
+
+    This is the escalation engine for a small number of A3/A4 survivors.
+    It supports arbitrary quotient sizes (Python integer masks), whereas the
+    compiled bulk engine deliberately uses one u128 and stops at k=21.
+
+    Returns ``(certificate, exhausted)`` with the same semantics as
+    :func:`find_periodic_tiling`.
+    """
+    from pysat.solvers import Cadical195
+
+    n = len(shape)
+    exhausted = False
+    if not (1 <= k_min <= k_max):
+        raise ValueError("require 1 <= k_min <= k_max")
+    for k in range(k_min, k_max + 1):
+        if (6 * k) % n:
+            continue
+        for hnf in sublattices(k):
+            instance = TorusInstance(tuple(shape), hnf)
+            covering = [[] for _ in range(instance.n_cells)]
+            for variable, (_, mask) in enumerate(instance.placements, 1):
+                remaining = mask
+                while remaining:
+                    bit = remaining & -remaining
+                    covering[bit.bit_length() - 1].append(variable)
+                    remaining ^= bit
+
+            solver = Cadical195()
+            for variables in covering:
+                solver.add_clause(variables)
+                for a in range(len(variables)):
+                    for b in range(a + 1, len(variables)):
+                        solver.add_clause([-variables[a], -variables[b]])
+            if conflict_budget is None:
+                sat = solver.solve()
+            else:
+                solver.conf_budget(conflict_budget)
+                sat = solver.solve_limited()
+            if sat is None:
+                exhausted = True
+                solver.delete()
+                continue
+            if sat:
+                model = {value for value in solver.get_model() if value > 0}
+                solution = [
+                    list(placement)
+                    for variable, (placement, _) in enumerate(
+                        instance.placements, 1
+                    )
+                    if variable in model
+                ]
+                certificate = {
+                    "kind": "torus-exact-cover",
+                    "hnf": list(hnf),
+                    "index": k,
+                    "tiles_per_domain": (6 * k) // n,
+                    "placements": solution,
+                }
+                solver.delete()
+                assert verify_certificate(shape, certificate)
+                return certificate, exhausted
+            solver.delete()
+    return None, exhausted
+
+
 def verify_certificate(shape, cert) -> bool:
     """Independent re-check: the claimed placements exactly cover the torus."""
     a, b, d = cert["hnf"]

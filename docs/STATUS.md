@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-16 (session 16)
+**Last updated:** 2026-07-16 (session 17)
 
 ## Where we are
 
@@ -73,6 +73,14 @@
   shapes—are rendered in `a2-depth3-small-candidates.svg`. These are local
   growth candidates only; none is called an einstein or quasicrystal before
   A3/A4.
+- **First high-priority new-shape finalist:** the complete smallest-candidate
+  batch has now passed A3/A4 and an extended exact A1 audit. One n=10 shape
+  is disk-refuted; all eight n=12 shapes are exact periodic tilers at torus
+  index 16. The remaining n=10 candidate 2 has no torus certificate through
+  index 100, covers an independently verified r²=50,000 disk with 9,239
+  tiles, and retains a rank-4, sixfold diffraction signature after patch
+  enlargement. This is strong empirical prioritization, not proof of an
+  infinite tiling or aperiodicity (D-0024).
 - **A4 diffraction fingerprint v0**
   (`src/einstein/funnel/a4_diffraction.py`): per-orientation Hann-windowed
   FFT powers on a shared grid, null-calibrated peak detection, sidelobe
@@ -165,8 +173,10 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
 
 - Compiled A0 reaches E1 n=16, but its 19,035,075 records still require
   A3/A4 ranking. Depth 3 still leaves 9,728 witnessed n=9..16 shapes because
-  raw depth is strongly size-dependent, especially at n=13 and n=16.
-  Within-size ranking and large-patch/diffraction evidence are now mandatory.
+  raw depth is strongly size-dependent, especially at n=13 and n=16. The
+  first complete ten-shape promotion found one high-priority finalist, but
+  9,718 witnessed shapes plus eight unknowns remain outside A3. Within-size
+  ranking and batched large-patch/diffraction evidence are now mandatory.
   The fixed 16-cell key is intentionally scoped to E1; E2 n≈22–24 needs a
   wider key and likely external partitioning.
 - A1 torus budget k ≤ 12 proven sufficient for n ≤ 8 only (by Myers

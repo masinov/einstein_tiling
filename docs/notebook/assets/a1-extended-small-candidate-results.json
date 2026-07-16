@@ -1,0 +1,495 @@
+{
+ "kind": "extended-exact-torus-screen",
+ "k_max": 21,
+ "node_budget_per_torus": 5000000,
+ "periodic": 8,
+ "survivors": 2,
+ "results": [
+  {
+   "n": 10,
+   "index": 1,
+   "shape": "0100010101020103030c030d0514051507020703",
+   "verdict": "no-periodic-at-budget",
+   "certificate": null
+  },
+  {
+   "n": 10,
+   "index": 2,
+   "shape": "010001010104010502f002f1030b030c04fa04fb",
+   "verdict": "no-periodic-at-budget",
+   "certificate": null
+  },
+  {
+   "n": 12,
+   "index": 1,
+   "shape": "010001010102010502f10308030b030c030d04fa04fb0703",
+   "verdict": "periodic",
+   "certificate": {
+    "shape": "010001010102010502f10308030b030c030d04fa04fb0703",
+    "hnf": [
+     2,
+     0,
+     8
+    ],
+    "placements": [
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      2,
+      0,
+      7
+     ],
+     [
+      6,
+      0,
+      2
+     ],
+     [
+      11,
+      1,
+      3
+     ],
+     [
+      8,
+      0,
+      3
+     ],
+     [
+      9,
+      1,
+      4
+     ],
+     [
+      4,
+      1,
+      6
+     ],
+     [
+      5,
+      1,
+      7
+     ]
+    ],
+    "kind": "torus-exact-cover",
+    "index": 16,
+    "tiles_per_domain": 8
+   }
+  },
+  {
+   "n": 12,
+   "index": 2,
+   "shape": "0100010101020103010502f1030b04f804f904fa04fb04fc",
+   "verdict": "periodic",
+   "certificate": {
+    "shape": "0100010101020103010502f1030b04f804f904fa04fb04fc",
+    "hnf": [
+     2,
+     0,
+     8
+    ],
+    "placements": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      7,
+      1,
+      0
+     ],
+     [
+      11,
+      1,
+      2
+     ],
+     [
+      8,
+      0,
+      2
+     ],
+     [
+      10,
+      0,
+      4
+     ],
+     [
+      3,
+      1,
+      4
+     ],
+     [
+      5,
+      1,
+      6
+     ],
+     [
+      2,
+      0,
+      6
+     ]
+    ],
+    "kind": "torus-exact-cover",
+    "index": 16,
+    "tiles_per_domain": 8
+   }
+  },
+  {
+   "n": 12,
+   "index": 3,
+   "shape": "0100010101020103010502f1030d04f904fa04fb04fc04fd",
+   "verdict": "periodic",
+   "certificate": {
+    "shape": "0100010101020103010502f1030d04f904fa04fb04fc04fd",
+    "hnf": [
+     2,
+     0,
+     8
+    ],
+    "placements": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      5,
+      1,
+      1
+     ],
+     [
+      2,
+      0,
+      1
+     ],
+     [
+      7,
+      0,
+      6
+     ],
+     [
+      8,
+      0,
+      5
+     ],
+     [
+      3,
+      1,
+      2
+     ],
+     [
+      10,
+      1,
+      4
+     ],
+     [
+      11,
+      1,
+      5
+     ]
+    ],
+    "kind": "torus-exact-cover",
+    "index": 16,
+    "tiles_per_domain": 8
+   }
+  },
+  {
+   "n": 12,
+   "index": 4,
+   "shape": "010001010118011d0309030a030b030c04fa04fb05110512",
+   "verdict": "periodic",
+   "certificate": {
+    "shape": "010001010118011d0309030a030b030c04fa04fb05110512",
+    "hnf": [
+     8,
+     7,
+     2
+    ],
+    "placements": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      3,
+      1,
+      1
+     ],
+     [
+      2,
+      3,
+      0
+     ],
+     [
+      8,
+      2,
+      1
+     ],
+     [
+      10,
+      5,
+      1
+     ],
+     [
+      7,
+      4,
+      0
+     ],
+     [
+      11,
+      7,
+      0
+     ],
+     [
+      5,
+      6,
+      1
+     ]
+    ],
+    "kind": "torus-exact-cover",
+    "index": 16,
+    "tiles_per_domain": 8
+   }
+  },
+  {
+   "n": 12,
+   "index": 5,
+   "shape": "0100010101020105030c030d04fa04fb04fc04fd06e806e9",
+   "verdict": "periodic",
+   "certificate": {
+    "shape": "0100010101020105030c030d04fa04fb04fc04fd06e806e9",
+    "hnf": [
+     4,
+     2,
+     4
+    ],
+    "placements": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      2,
+      0,
+      2
+     ],
+     [
+      4,
+      2,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      8,
+      3,
+      0
+     ],
+     [
+      6,
+      1,
+      2
+     ],
+     [
+      10,
+      3,
+      2
+     ],
+     [
+      9,
+      2,
+      3
+     ]
+    ],
+    "kind": "torus-exact-cover",
+    "index": 16,
+    "tiles_per_domain": 8
+   }
+  },
+  {
+   "n": 12,
+   "index": 6,
+   "shape": "0100010101020103030b030c04f904fa0701070207030704",
+   "verdict": "periodic",
+   "certificate": {
+    "shape": "0100010101020103030b030c04f904fa0701070207030704",
+    "hnf": [
+     8,
+     7,
+     2
+    ],
+    "placements": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      3,
+      0,
+      1
+     ],
+     [
+      4,
+      2,
+      1
+     ],
+     [
+      6,
+      2,
+      0
+     ],
+     [
+      10,
+      4,
+      1
+     ],
+     [
+      7,
+      4,
+      0
+     ],
+     [
+      9,
+      6,
+      1
+     ],
+     [
+      1,
+      6,
+      0
+     ]
+    ],
+    "kind": "torus-exact-cover",
+    "index": 16,
+    "tiles_per_domain": 8
+   }
+  },
+  {
+   "n": 12,
+   "index": 7,
+   "shape": "01000101010201030308030d04f904fa0702070307040705",
+   "verdict": "periodic",
+   "certificate": {
+    "shape": "01000101010201030308030d04f904fa0702070307040705",
+    "hnf": [
+     8,
+     7,
+     2
+    ],
+    "placements": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      3,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ],
+     [
+      9,
+      3,
+      1
+     ],
+     [
+      10,
+      4,
+      1
+     ],
+     [
+      7,
+      4,
+      0
+     ],
+     [
+      6,
+      5,
+      0
+     ],
+     [
+      4,
+      7,
+      1
+     ]
+    ],
+    "kind": "torus-exact-cover",
+    "index": 16,
+    "tiles_per_domain": 8
+   }
+  },
+  {
+   "n": 12,
+   "index": 8,
+   "shape": "010001010102010502f102f2030a030b04f904fa04fb04fc",
+   "verdict": "periodic",
+   "certificate": {
+    "shape": "010001010102010502f102f2030a030b04f904fa04fb04fc",
+    "hnf": [
+     8,
+     7,
+     2
+    ],
+    "placements": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      2,
+      7,
+      0
+     ],
+     [
+      3,
+      1,
+      1
+     ],
+     [
+      5,
+      2,
+      1
+     ],
+     [
+      11,
+      3,
+      0
+     ],
+     [
+      7,
+      4,
+      0
+     ],
+     [
+      10,
+      5,
+      1
+     ],
+     [
+      8,
+      6,
+      1
+     ]
+    ],
+    "kind": "torus-exact-cover",
+    "index": 16,
+    "tiles_per_domain": 8
+   }
+  }
+ ]
+}

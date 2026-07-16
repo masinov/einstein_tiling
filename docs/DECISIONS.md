@@ -446,3 +446,27 @@ n=10 candidates and all eight n=12 candidates are rendered in one SVG. These
 are genuinely new shapes from the exhaustive blind corpus, unlike the earlier
 hat A6 drawings, which showed two hierarchy exception variants of the same
 known hat.
+
+## D-0024 (2026-07-16) — One smallest-corpus shape earns finalist status
+
+The ten smallest witnessed depth-3 shapes were promoted together, without
+visual preselection, through pose-free A3. One n=10 shape is exactly refuted
+at r²=800. The other nine initially grow through r²=12,800, but an exact A1
+audit beyond the production k≤12 budget finds torus certificates for all
+eight n=12 shapes at index 16. Those are periodic budget escapes and are
+retired regardless of their finite-patch A4 estimates.
+
+The remaining shape is n=10 candidate 2, canonical compiled key
+`010001010104010502f002f1030b030c04fa04fb`. It has:
+
+- no exact torus certificate through index 100, with no SAT budget
+  exhaustions over the 20 arithmetically admissible quotient indices;
+- a pose-free, independently verified r²=50,000 disk patch of 9,239 tiles;
+- rank-4 diffraction at both 2,404 and 9,239 anchors, with sixfold symmetry
+  recovered on the larger patch.
+
+This earns **high-priority E1 finalist** status, not an einstein verdict.
+Finite disk growth does not prove an infinite tiling; a bounded torus search
+does not prove aperiodicity; and A4 is a prioritization signal. The next
+obligations are independent large-patch solutions, a deeper/structurally
+different periodicity attack, and blind A6 hierarchy/forcing analysis.
