@@ -338,3 +338,23 @@ makes more integer relations available rather than declaring new generators;
 the wider reference and null suite remains green. It is still a bounded
 empirical indexer under D-0011, not a general exact integer-relation
 algorithm.
+
+## D-0019 (2026-07-16) — A0 compiled fixed-key stream for E1 scale
+
+The Python breadth-first enumerator remains the readable reference, but its
+tuple/set representation reaches n=12 in 53.48 s and becomes impractical near
+the E1 horizon. A0's production path is therefore a standalone exact Rust
+tool using the identical cell adjacency and twelve-operation canonical form.
+
+For n≤16, canonical shapes are fixed 32-byte keys. Coordinates are packed only
+after translating the lexicographically first transformed cell to the origin;
+range and parity invariants are asserted. Counts match OEIS A057786 through
+n=16, including 19,035,075 shapes at the required horizon in 364.48 s and
+1.35 GiB peak RSS.
+
+Downstream stages consume a versioned fixed-width binary stream (`A0PK`).
+Stream order is unspecified because it comes from a hash set. Generated files
+under `data/a0-compiled/` are ignored reproducible artifacts; source code,
+format reader and cross-implementation tests are committed. This closes A0
+capacity only. A1/A2 must gain compiled streaming filters before the complete
+19-million-shape E1 sweep is operational.

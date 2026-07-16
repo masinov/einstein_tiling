@@ -6,13 +6,13 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-16 (session 11)
+**Last updated:** 2026-07-16 (session 12)
 
 ## Where we are
 
 | Milestone | Scope (program §) | Status |
 |---|---|---|
-| M0 — kite substrate + A0 enumeration | §7.1 (kernel v0), §4 A0 | ✅ done, validated vs OEIS (session 01) |
+| M0 — kite substrate + A0 enumeration | §7.1 (kernel v0), §4 A0 | ✅ done through E1 n≤16 horizon, validated vs OEIS (sessions 01, 12) |
 | M1 — A1 periodicity rejection + shape DB | §4 A1, §7.4 | ✅ done v0, validated vs Myers (session 02) |
 | M2 — A2 corona/Heesch engine | §4 A2 | ✅ done v0, hat = unique n≤8 anomaly (session 03) |
 | M3 — A3 large-patch growth | §4 A3 | ✅ done v0, SAT backend; 22,940-tile hat patch, φ⁴ chirality anchor hit (sessions 04, 11) |
@@ -27,7 +27,9 @@
 ## What exists and is verified
 
 - Exact integer-arithmetic kite substrate (Laves [3.4.6.4]); A0 enumeration
-  matches OEIS A057786 exactly n=1..12. (Session 01.)
+  matches OEIS A057786 exactly n=1..16. The Rust production enumerator reaches
+  19,035,075 free n=16 polykites in 364.48 s / 1.35 GiB and emits a compact
+  fixed-width stream; Python remains the reference implementation.
 - **A1 torus periodicity test** with machine-verified certificates
   (`src/einstein/funnel/a1_torus.py`): exact cover of quotient tori over all
   center-sublattices (HNF) up to index budget. Verdicts are three-valued:
@@ -115,7 +117,7 @@
   Artifact:
   `a6-hat-screen-results.json`; inspection drawings:
   `a6-hat-candidate-{1,2}.svg`; runner: `scripts/run_a6_hat.py`.
-- Test suite: **63 fast passed** (14 deselected, 8.54 s);
+- Test suite: **64 fast passed** (14 deselected, 9.13 s);
   **14 slow passed** (63 deselected, 111.33 s). Vendored Rust: **5 passed**.
 
 ## Funnel state (polykites, grid-aligned scope — D-0006)
@@ -139,8 +141,9 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
 
 ## Known capacity limits (honest)
 
-- Pure-Python A0: wall at n≈14–15 (E1 needs 16, E2 needs 22–24) — streaming/
-  compiled enumerator required before those sweeps.
+- Compiled A0 reaches E1 n=16, but its 19,035,075 records still require
+  compiled streaming A1/A2 filters. The fixed 16-cell key is intentionally
+  scoped to E1; E2 n≈22–24 needs a wider key and likely external partitioning.
 - A1 torus budget k ≤ 12 proven sufficient for n ≤ 8 only (by Myers
   agreement); larger n may need larger tori — revalidate per horizon.
 - A3 single-shot SAT: demonstrated at 22,940 tiles in 551 s;
@@ -185,8 +188,8 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
 
 ## Next actions (in order)
 
-1. Scale A0 to the E1 horizon n≤16 (streaming/compiled enumeration) and port
-   the A1/A2 hot paths needed for the full frozen-threshold sweep.
+1. Port the A1/A2 hot paths to consume the compiled n≤16 stream with frozen
+   thresholds and bounded memory.
 2. Run the complete n≤16 A0–A4 ranking, verify hat/turtle placement, and send
    the hat to A6 without identity-specific hints.
 3. In parallel, seek a third shifted/independent hat window and stronger halo

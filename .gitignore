@@ -219,3 +219,6 @@ __marimo__/
 
 # user-provided upstream tarball (vendored under vendor/spectre/)
 spectre.tar.gz
+
+# Reproducible compiled A0 streams (up to ~0.9 GB through n=16).
+data/a0-compiled/
