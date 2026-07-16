@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-16 (session 13)
+**Last updated:** 2026-07-16 (session 14)
 
 ## Where we are
 
@@ -55,6 +55,12 @@
   density converges to the literature value 1/(1+φ⁴) — an external anchor
   A3 was never told about. Six H_c=2 shapes get pose-free disk-cover
   refutations at r2≤200. Periodic control patch (shape 392) stored for A4.
+- **Compiled A2 first-corona filter:** exact vertex-ring cover plus hole-free
+  exhaustion reproduces n=8 (720 H_c=0, 114 witnessed) and screens the actual
+  n=9..16 corpus. At n=16 it proves 19,012,171 shapes H_c=0 and retains 22,875
+  witnessed shapes. Across n=9..16 only 40,216 survive, every one with an
+  independently verified corona; five initial budget cases all resolve under
+  targeted escalation.
 - **A4 diffraction fingerprint v0**
   (`src/einstein/funnel/a4_diffraction.py`): per-orientation Hann-windowed
   FFT powers on a shared grid, null-calibrated peak detection, sidelobe
@@ -121,7 +127,7 @@
   Artifact:
   `a6-hat-screen-results.json`; inspection drawings:
   `a6-hat-candidate-{1,2}.svg`; runner: `scripts/run_a6_hat.py`.
-- Test suite: **65 fast passed** (14 deselected, 12.43 s);
+- Test suite: **66 fast passed** (14 deselected, 17.12 s);
   **14 slow passed** (63 deselected, 111.33 s). Vendored Rust: **5 passed**.
 
 ## Funnel state (polykites, grid-aligned scope — D-0006)
@@ -146,10 +152,10 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
 ## Known capacity limits (honest)
 
 - Compiled A0 reaches E1 n=16, but its 19,035,075 records still require
-  compiled streaming A2 filters. Compiled A1 is complete, but the k≤12
-  divisibility constraint leaves almost all large shapes alive. The fixed
-  16-cell key is intentionally scoped to E1; E2 n≈22–24 needs a wider key and
-  likely external partitioning.
+  deeper compiled A2/A3 filtering. Compiled A1 and first-corona A2 are
+  complete; 40,216 witnessed n=9..16 shapes remain. The fixed 16-cell key is
+  intentionally scoped to E1; E2 n≈22–24 needs a wider key and likely
+  external partitioning.
 - A1 torus budget k ≤ 12 proven sufficient for n ≤ 8 only (by Myers
   agreement); larger n may need larger tori — revalidate per horizon.
 - A3 single-shot SAT: demonstrated at 22,940 tiles in 551 s;
@@ -194,8 +200,8 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
 
 ## Next actions (in order)
 
-1. Port the A2 corona-existence/depth hot paths to consume the compiled n≤16
-   A1 survivor stream with frozen thresholds.
+1. Extend compiled A2 to second and later coronas over the 40,216 witnessed
+   survivors, retaining certificates and exact finite-depth refutations.
 2. Run the complete n≤16 A0–A4 ranking, verify hat/turtle placement, and send
    the hat to A6 without identity-specific hints.
 3. In parallel, seek a third shifted/independent hat window and stronger halo

@@ -223,3 +223,4 @@ spectre.tar.gz
 # Reproducible compiled A0 streams (up to ~0.9 GB through n=16).
 data/a0-compiled/
 data/a1-compiled/
+data/a2-compiled/

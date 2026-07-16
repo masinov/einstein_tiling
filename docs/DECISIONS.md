@@ -379,3 +379,26 @@ n: n=13 has no admissible index, while n=16 tests only k=8 (three tiles per
 domain). Such shapes remain survivors rather than receiving stronger negative
 claims. A2 still needs a compiled local-corona filter before the E1 sweep is
 practical.
+
+## D-0021 (2026-07-16) — A2 first-corona exhaustion is the compiled bulk filter
+
+The first A2 production filter asks only whether one hole-free corona exists.
+It ports the Python definitions exactly: every empty kite sharing a vertex
+with the seed must be covered; congruent placements may extend outward but
+must not overlap; the completed patch must have no bounded edge-connected
+empty component.
+
+A shape is rejected as H_c=0 only after exhausting every exact-cover branch.
+A witnessed corona survives with a compact `(op, tx, ty)` certificate, and a
+node-budget exhaustion also survives in a separate stream. The n=8 result is
+exactly the established census: 720 H_c=0 and 114 survivors. All 40,216
+final witnesses at n=9..16 independently pass the Python verifier.
+
+Sixteen workers consume many 25,000-record ranges dynamically. At the
+100,000-node budget, five shapes initially exhaust; rerunning only those at
+10,000,000 nodes resolves three as H_c=0 and two as witnessed. Thus the final
+n=9..16 first-corona corpus has no unknowns. In particular n=16 contracts
+from 19,035,046 A1 survivors to 22,875 witnessed A2 survivors in 889.09 s.
+
+This is an exact local refutation and witness stage, not a tiling verdict.
+Deeper corona levels are run only on the resulting 40,216-shape stream.
