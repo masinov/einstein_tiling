@@ -100,3 +100,31 @@ claim ever rests on the solver alone. The pure-Python greedy grower is
 kept for the growth-profile feature and as fallback. Known limit: CNF
 size (~11M clauses at 9×10⁴ cells) caps single-shot patches around 10⁴
 tiles; incremental encoding is the recorded escalation path.
+
+## D-0010 (2026-07-16) — Vendored spectre generator; float scope for A4
+
+Two related decisions for M4.
+
+**Vendored reference generator.** The user-provided exact spectre /
+Tile(1,1) substitution generator is vendored source-only at
+`vendor/spectre/` (Rust crate + `gen_tables.py`; our only addition is an
+anchor-dump binary). Role: E4/A4 calibration source with exact rank-4
+module ground truth, and later the known answer A6 hierarchy mining must
+re-discover (program §4 A6 cites `gen_tables.py`'s loop explicitly). It
+is a *generator* for one known tiling: it never produces evidence about
+candidate shapes, so D-0005 requires only that its output be
+cross-validated (done three ways: upstream's own suite, our Python
+module12 port reproducing the reference float leaves, tile-count
+recurrence + single-chirality checks in `tests/test_spectre_vendor.py`).
+The rank-4 module math (deferred in D-0003) enters the codebase now as
+`substrate/module12.py`, validated against the same reference.
+
+**Floats in A4.** The "exact arithmetic in the search path" rule
+(D-0003) is scoped: A4's spectral analysis (FFT power spectra, peak
+detection, module-rank indexing; numpy) is numerical by nature and runs
+on floats. This is acceptable because A4 emits *prioritization signals*,
+never certificates or exactness claims, and its trustworthiness is
+established empirically by the E4 gate (reference patches must reproduce
+literature signatures) rather than by arithmetic exactness. All geometry
+feeding A4 (patch certificates, module coordinates) remains exact; the
+float boundary is the projection to Cartesian points at analysis time.

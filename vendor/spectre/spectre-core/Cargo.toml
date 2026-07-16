@@ -1,0 +1,8 @@
+[package]
+name = "spectre-core"
+version = "0.1.0"
+edition = "2021"
+description = "Exact, allocation-free Spectre / Tile(1,1) einstein tiling generator"
+
+[dependencies]
+# none - std only

@@ -20,10 +20,12 @@ it live in `docs/program/ERRATA.md` — the spec itself is never edited.
 
 ## Hard rules
 
-- **Exact arithmetic only** in the search path. Floats are allowed solely at
-  render/output time (`src/einstein/render/`). On the kite substrate all
-  geometry is integer pairs (basis e1=(1,0), e2=(1/2,√3/2); |v|² = x²+xy+y²;
-  hexagon side 2 — matches Kaplan's hatviz `hexPt`).
+- **Exact arithmetic only** in the search/certificate path. Floats are allowed
+  at render/output time and inside A4's numerical spectral analysis only
+  (D-0010); A4 emits prioritization signals, never exact certificates. On the
+  kite substrate all geometry is integer pairs (basis e1=(1,0),
+  e2=(1/2,√3/2); |v|² = x²+xy+y²; hexagon side 2 — matches Kaplan's hatviz
+  `hexPt`).
 - **External anchors before trust** (D-0005): validate every new component
   against independent data (OEIS, published coordinates) before its output
   feeds anything downstream. Gate experiments E1/E4 must pass before any

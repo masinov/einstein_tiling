@@ -10,7 +10,7 @@ leave an entry here linking to its notebook session and artifacts.
 | E1 | Blind rediscovery of the hat | validation gate | **not started** | funnel A0–A4+A6 (M1–M5) | — |
 | E2 | Exhaustive 12-fold sweep beyond known horizon | discovery | not started | E1 pass, scaled A0 | — |
 | E3 | First hunts in 5-fold / 8-fold substrates | discovery | not started | E1 pass, new substrates | — |
-| E4 | Diffraction fingerprint calibration | validation gate | not started | A4 (M4), reference library | — |
+| E4 | Diffraction fingerprint calibration | validation gate | **in progress** — 12-fold core passed (2026-07-16) | A4 (M4), full reference library | `scripts/run_e4.py`; [notebook 05](notebook/2026-07-16-session-05.md); assets `e4-results.json`, `e4-spectrum-*.png` |
 | E5 | ML allocation A/B | methodology | not started | funnel verdicts corpus | — |
 | E6 | Inverse-design season (Pipeline B) | discovery | not started | B1–B3 build | — |
 | E7 | Moduli prospecting season (Pipeline C) | discovery | not started | C1–C2 build | — |
@@ -35,3 +35,33 @@ Work that doesn't belong to a numbered experiment but gates them
 | 2026-07-16 | A2 sharp prediction: only the hat grows unboundedly among n≤8 A1 survivors | full batch (1,087 shapes) + escalation to cap 4 | pass — hat unique at depth 4; all others exact H_c ≤ 2 | DB stage `A2-heesch`, [notebook 03](notebook/2026-07-16-session-03.md), `tests/test_a2_census.py` |
 | 2026-07-16 | A3 hat-patch chirality vs literature: reflected density must approach 1/(1+φ⁴) ≈ 0.12732 (from the H7/H8 substitution of arXiv 2303.10798, an input A3 never sees) | SAT-grown disks, 130 → 11,514 tiles | pass — 13.85% → 12.81%, monotone | DB stage `A3-patch` (shape 635), [notebook 04](notebook/2026-07-16-session-04.md), `tests/test_a3_patch.py` |
 | 2026-07-16 | A3 internal consistency: engines agree (greedy vs SAT) and A2 finite-H_c shapes must hit disk-cover ceilings | 2-kite refuted by both engines; six H_c=2 shapes pose-free UNSAT at r2≤200 while the hat covers r2=50000 | pass | DB stage `A3-patch`, [notebook 04](notebook/2026-07-16-session-04.md) |
+| 2026-07-16 | Vendored spectre generator (user-provided) + our rank-4 module port | three-way agreement: upstream reference float leaves == Rust exact traversal == our module12 projection (N=3 Delta, 559 leaves); tile-count recurrence; single chirality | pass | `tests/test_spectre_vendor.py`, `vendor/spectre/VENDOR.md` |
+
+## E4 phase-1 record (2026-07-16, first numbered experiment run)
+
+Pipeline: per-orientation-class anchor sets → Hann-windowed FFT power
+spectra, incoherently averaged → peak detection (floor = 5× the strongest
+local max of the random null, exclusion zones against window sidelobes)
+→ greedy bounded-integer module indexing → verdict.
+
+| reference | points | classes | rank | sym | verdict | literature target |
+|---|---|---|---|---|---|---|
+| random null | 11,514 | 12 | 0 | — | diffuse | diffuse ✓ |
+| periodic (A1 cert of shape 392, unfolded) | 11,341 | 3 | 2 | 6 | crystal | rank 2 ✓ |
+| hat (A3 SAT patch, shape 635) | 11,514 | 12 | 4 | 6 | quasicrystal-candidate | rank 4, sixfold (Baake–Gähler–Sadun arXiv 2502.03268) ✓ |
+| spectre (vendored generator, level-6 Delta disk) | 106,905 | 60 | 4 | 6 | quasicrystal-candidate | rank 4, chiral sixfold (ibid.) ✓ |
+
+Calibration iterations (recorded honestly): (1) mixed anchor sets are
+dominated by substrate-lattice peaks → per-orientation classes per the
+spec; (2) window sidelobes poisoned indexing → exclusion zones;
+(3) coefficient bound too small for lattice peaks → split pair/free
+bounds; (4) my initial 12-fold expectation for the spectre was wrong —
+the literature value is chiral sixfold, which is what we measure.
+
+**Gate status: still open.** This run establishes the detector's 12-fold
+core behavior, but the full E4 criteria in program §8 also require Penrose,
+Ammann–Beenker, Taylor–Socolar and square-triangle random-tiling references;
+exact module-rank recovery across that library; a false-positive measurement
+over 10⁴ random periodic tilers; patch-size-doubling stability; and deliberately
+rotated/sheared indexer controls. Those are carried forward rather than
+silently treating this narrower calibration as the complete gate.

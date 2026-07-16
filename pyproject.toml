@@ -3,7 +3,10 @@ name = "einstein"
 version = "0.0.1"
 description = "Systematic search for aperiodic monotiles (see docs/program/)"
 requires-python = ">=3.12"
-dependencies = ["python-sat"]  # CaDiCaL backend for A3 (D-0009)
+dependencies = [
+    "python-sat",  # CaDiCaL backend for A3 (D-0009)
+    "numpy",       # A4 spectral analysis only (D-0010)
+]
 
 [build-system]
 requires = ["setuptools>=68"]
