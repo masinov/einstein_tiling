@@ -96,6 +96,13 @@ def test_hat_grows_disk_sat():
     assert any(op >= 6 for op in ops) and any(op < 6 for op in ops)
 
 
+def test_sat_phase_seed_still_produces_verified_patch():
+    res = sat_grow_patch(HEXAGON, 30, phase_seed=7)
+    assert res["completed"]
+    assert res["stats"]["phase_seed"] == 7
+    assert verify_patch_certificate(HEXAGON, res["certificate"])
+
+
 def test_certificate_tamper_rejected():
     res = sat_grow_patch(HEXAGON, 30)
     cert = res["certificate"]

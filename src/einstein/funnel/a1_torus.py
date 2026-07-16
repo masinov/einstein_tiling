@@ -200,8 +200,6 @@ def find_periodic_tiling_sat(
     Returns ``(certificate, exhausted)`` with the same semantics as
     :func:`find_periodic_tiling`.
     """
-    from pysat.solvers import Cadical195
-
     n = len(shape)
     exhausted = False
     if not (1 <= k_min <= k_max):
@@ -210,51 +208,68 @@ def find_periodic_tiling_sat(
         if (6 * k) % n:
             continue
         for hnf in sublattices(k):
-            instance = TorusInstance(tuple(shape), hnf)
-            covering = [[] for _ in range(instance.n_cells)]
-            for variable, (_, mask) in enumerate(instance.placements, 1):
-                remaining = mask
-                while remaining:
-                    bit = remaining & -remaining
-                    covering[bit.bit_length() - 1].append(variable)
-                    remaining ^= bit
-
-            solver = Cadical195()
-            for variables in covering:
-                solver.add_clause(variables)
-                for a in range(len(variables)):
-                    for b in range(a + 1, len(variables)):
-                        solver.add_clause([-variables[a], -variables[b]])
-            if conflict_budget is None:
-                sat = solver.solve()
-            else:
-                solver.conf_budget(conflict_budget)
-                sat = solver.solve_limited()
-            if sat is None:
+            certificate, instance_exhausted = solve_torus_sat(
+                shape, hnf, conflict_budget=conflict_budget
+            )
+            if instance_exhausted:
                 exhausted = True
-                solver.delete()
                 continue
-            if sat:
-                model = {value for value in solver.get_model() if value > 0}
-                solution = [
-                    list(placement)
-                    for variable, (placement, _) in enumerate(
-                        instance.placements, 1
-                    )
-                    if variable in model
-                ]
-                certificate = {
-                    "kind": "torus-exact-cover",
-                    "hnf": list(hnf),
-                    "index": k,
-                    "tiles_per_domain": (6 * k) // n,
-                    "placements": solution,
-                }
-                solver.delete()
-                assert verify_certificate(shape, certificate)
+            if certificate is not None:
                 return certificate, exhausted
-            solver.delete()
     return None, exhausted
+
+
+def solve_torus_sat(shape, hnf, conflict_budget: int | None = None):
+    """Solve one exact torus quotient with CaDiCaL.
+
+    Returns ``(certificate, exhausted)``. A ``None, False`` result is an exact
+    UNSAT proof for this quotient; ``None, True`` means the conflict budget
+    was reached.
+    """
+    from pysat.solvers import Cadical195
+
+    instance = TorusInstance(tuple(shape), hnf)
+    covering = [[] for _ in range(instance.n_cells)]
+    for variable, (_, mask) in enumerate(instance.placements, 1):
+        remaining = mask
+        while remaining:
+            bit = remaining & -remaining
+            covering[bit.bit_length() - 1].append(variable)
+            remaining ^= bit
+
+    solver = Cadical195()
+    for variables in covering:
+        solver.add_clause(variables)
+        for a in range(len(variables)):
+            for b in range(a + 1, len(variables)):
+                solver.add_clause([-variables[a], -variables[b]])
+    if conflict_budget is None:
+        sat = solver.solve()
+    else:
+        solver.conf_budget(conflict_budget)
+        sat = solver.solve_limited()
+    if sat is None:
+        solver.delete()
+        return None, True
+    if not sat:
+        solver.delete()
+        return None, False
+    model = {value for value in solver.get_model() if value > 0}
+    solution = [
+        list(placement)
+        for variable, (placement, _) in enumerate(instance.placements, 1)
+        if variable in model
+    ]
+    certificate = {
+        "kind": "torus-exact-cover",
+        "hnf": list(hnf),
+        "index": hnf[0] * hnf[2],
+        "tiles_per_domain": len(solution),
+        "placements": solution,
+    }
+    solver.delete()
+    assert verify_certificate(shape, certificate)
+    return certificate, False
 
 
 def verify_certificate(shape, cert) -> bool:

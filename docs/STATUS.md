@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-16 (session 17)
+**Last updated:** 2026-07-16 (session 18)
 
 ## Where we are
 
@@ -77,10 +77,18 @@
   batch has now passed A3/A4 and an extended exact A1 audit. One n=10 shape
   is disk-refuted; all eight n=12 shapes are exact periodic tilers at torus
   index 16. The remaining n=10 candidate 2 has no torus certificate through
-  index 100, covers an independently verified r²=50,000 disk with 9,239
+  index 215 (plus several larger spot refutations), covers an independently
+  verified r²=50,000 disk with 9,239
   tiles, and retains a rank-4, sixfold diffraction signature after patch
   enlargement. This is strong empirical prioritization, not proof of an
   infinite tiling or aperiodicity (D-0024).
+- **Finalist robustness audit:** the apparent crown gaps are outside A3's
+  certified disk (zero missing cells inside). Four independently phase-biased
+  r²=12,800 patches share at most 6.7% exact placements but all retain
+  estimated rank≥4 at 1024² and 2048². The first large patch contains one
+  exact period-47 stripe domain; it does not recur as an exact period across
+  the independent patches. Symmetry votes vary at small size/resolution, so
+  the robust signal is rank≥4, not universally sixfold symmetry (D-0025).
 - **A4 diffraction fingerprint v0**
   (`src/einstein/funnel/a4_diffraction.py`): per-orientation Hann-windowed
   FFT powers on a shared grid, null-calibrated peak detection, sidelobe
@@ -177,6 +185,8 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
   first complete ten-shape promotion found one high-priority finalist, but
   9,718 witnessed shapes plus eight unknowns remain outside A3. Within-size
   ranking and batched large-patch/diffraction evidence are now mandatory.
+  The next complete promotion batch is all 29 n=14/n=15 depth-3 witnesses;
+  the much larger n=13 and n=16 sets follow after its measured yield.
   The fixed 16-cell key is intentionally scoped to E1; E2 n≈22–24 needs a
   wider key and likely external partitioning.
 - A1 torus budget k ≤ 12 proven sufficient for n ≤ 8 only (by Myers

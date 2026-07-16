@@ -1,0 +1,23 @@
+{
+ "kind": "exact-finalist-periodicity-escalation",
+ "candidate": {
+  "n": 10,
+  "index": 2,
+  "shape": "010001010104010502f002f1030b030c04fa04fb"
+ },
+ "prior_completed_range": [1, 100],
+ "completed_contiguous_extension": [105, 215],
+ "area_compatible_step": 5,
+ "conflict_budget_per_hnf": 1000000,
+ "extension_status": "all-refuted-no-exhaustions",
+ "additional_refuted_indices": [225, 230, 235, 245, 265],
+ "interrupted_requested_range": [105, 300],
+ "interruption_reason": "index-level parallel long tail; unreturned indices are not classified",
+ "period_47_cylinders": [
+  {"hnf": [5, 0, 47], "index": 235, "status": "refuted"},
+  {"hnf": [10, 0, 47], "index": 470, "status": "refuted"},
+  {"hnf": [15, 0, 47], "index": 705, "status": "refuted"},
+  {"hnf": [20, 0, 47], "index": 940, "status": "refuted"},
+  {"hnf": [25, 0, 47], "index": 1175, "status": "refuted"}
+ ]
+}

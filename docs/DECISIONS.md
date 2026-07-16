@@ -470,3 +470,46 @@ Finite disk growth does not prove an infinite tiling; a bounded torus search
 does not prove aperiodicity; and A4 is a prioritization signal. The next
 obligations are independent large-patch solutions, a deeper/structurally
 different periodicity attack, and blind A6 hierarchy/forcing analysis.
+
+The exact SAT torus audit subsequently extends the contiguous no-certificate
+range through index 215 with no budget exhaustions. Additional completed
+indices 225, 230, 235, 245 and 265 are also UNSAT, but the requested 105–300
+parallel run was interrupted because unreturned HNF-heavy indices formed an
+hour-scale tail. They remain unclassified; no contiguous claim beyond 215 is
+made. All targeted period-47 cylinders through transverse width 25 (quotient
+indices 235–1,175) are UNSAT.
+
+## D-0025 (2026-07-16) — A4 promotion requires independent patch robustness
+
+The first finalist's deterministic r²=50,000 patch contains an exact
+period-47 translation across a central 706-tile comparison region, and its
+rendered exterior crown appears gapped. The two observations require separate
+treatment:
+
+- the A3 certificate has zero missing kite cells among all 90,714 required
+  disk cells; the visible gaps lie outside the certified disk, where tile
+  overhang is allowed but coverage is not required;
+- a single SAT model may contain periodic approximant domains, so a global
+  rank-4 FFT is not sufficient promotion evidence.
+
+A4 promotion now requires independently biased A3 solutions. Four phase-seed
+patches at r²=12,800 have pairwise placement Jaccard overlap below 0.067, yet
+all retain estimated Fourier-module rank at least 4 at both 1024² and 2048²
+resolution. The exact period-47 stripe does not persist across them; their
+strong approximate translations instead recur at 18- and 29-step scales.
+Symmetry votes are less stable at 2048² (2, 3 or 6), so “sixfold” remains a
+large-patch observation rather than a patch-independent invariant.
+
+The finalist remains prioritized because rank≥4 survives independent
+solutions, not because one visually regular patch was labeled
+“quasicrystal-candidate.” A4's rank and symmetry remain numerical ranking
+features, never proof.
+
+A coefficient-bound and peak-depth stress test further separates the
+candidate from the periodic control. Raising the solved-pair coefficient
+bound from 48 to 384 does not reduce its rank. Both the calibrated hat and
+the candidate are rank 2 on the strongest 20–40 substrate peaks and rank 4
+when the satellite set reaches 60–400 peaks; the periodic control remains
+rank 2 throughout 20–400. The candidate therefore reproduces the calibrated
+quasicrystal control's rank-transition profile, while still requiring exact
+periodicity and hierarchy follow-up.

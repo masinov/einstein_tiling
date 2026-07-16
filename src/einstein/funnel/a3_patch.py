@@ -283,7 +283,8 @@ def enumerate_placements(shape, region) -> list:
 
 
 def sat_grow_patch(shape, r2: int, fix_seed: bool = True,
-                   conflict_budget: int | None = None):
+                   conflict_budget: int | None = None,
+                   phase_seed: int | None = None):
     """Cover the disk of squared radius r2 with copies of `shape` via SAT
     (CaDiCaL).  fix_seed pins the identity-pose copy at the origin
     (symmetry breaking; speeds up SAT runs but weakens UNSAT to
@@ -321,6 +322,12 @@ def sat_grow_patch(shape, r2: int, fix_seed: bool = True,
         n_clauses += 1
 
     t0 = time.monotonic()
+    if phase_seed is not None:
+        rng = random.Random(phase_seed)
+        solver.set_phases([
+            variable if rng.getrandbits(1) else -variable
+            for variable in range(1, len(placements) + 1)
+        ])
     if conflict_budget is not None:
         solver.conf_budget(conflict_budget)
         sat = solver.solve_limited()
@@ -329,6 +336,8 @@ def sat_grow_patch(shape, r2: int, fix_seed: bool = True,
     dt = time.monotonic() - t0
     stats = {"vars": len(placements), "clauses": n_clauses,
              "region_cells": len(region), "solve_seconds": round(dt, 2)}
+    if phase_seed is not None:
+        stats["phase_seed"] = phase_seed
 
     result = {"completed": False, "refuted": False, "exhausted": False,
               "certificate": None, "tiles": 0, "stats": stats}

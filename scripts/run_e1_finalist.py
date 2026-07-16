@@ -173,8 +173,14 @@ def render_patch(certificate):
     radius = math.sqrt(certificate["r2"]) * scale
     parts.append(
         f'<circle cx="{x_shift:.2f}" cy="{y_shift:.2f}" r="{radius:.2f}" '
-        'fill="none" stroke="#ffffff" stroke-opacity="0.20" '
-        'stroke-width="1.0" stroke-dasharray="4 4"/>'
+        'fill="none" stroke="#ffec99" stroke-opacity="0.90" '
+        'stroke-width="2.2" stroke-dasharray="7 4"/>'
+    )
+    parts.append(
+        '<text x="500" y="1042" fill="#ffec99" '
+        'font-family="sans-serif" font-size="12" text-anchor="middle">'
+        'exact coverage is certified inside the dashed circle; '
+        'the exterior crown is unconstrained</text>'
     )
     for op, outline in outlines:
         points = " ".join(
