@@ -4,23 +4,38 @@ The E4 12-fold/core calibration (four reference patches,
 literature-anchored criteria) runs via scripts/run_e4.py; results live in
 docs/notebook/assets/e4-results.json.  These tests pin the pieces cheaply
 so regressions surface: the indexer on synthetic peak lists (known rank),
-the symmetry vote, and (slow) the hat patch's rank-4/sixfold signature end
-to end.  The wider reference/stability suite required by full E4 remains
-tracked in docs/STATUS.md.
+the symmetry vote, model-set and limit-periodic references, the random
+square--triangle control, and the hat patch end to end.
 """
 
 import math
 import random
 
+import numpy as np
 import pytest
 
 from einstein.funnel.a4_diffraction import (
+    class_power_sum,
     detect_peaks,
+    dyadic_scale_depth,
     fingerprint,
     index_peaks,
     power_spectrum,
     rotational_symmetry,
+    sharp_peak_mass_fraction,
 )
+from einstein.reference.limit_periodic import (
+    TRIANGULAR_RECIPROCAL_RADIUS,
+    taylor_socolar_hierarchy_classes,
+)
+from einstein.reference.model_sets import (
+    ammann_beenker_points,
+    model_set_metadata,
+    penrose_points,
+    random_periodic_points,
+    transform_points,
+)
+from einstein.reference.square_triangle import random_square_triangle_patch
 
 PHI = (1 + math.sqrt(5)) / 2
 
@@ -66,6 +81,125 @@ def test_symmetry_vote():
         star.append((math.cos(a), math.sin(a), 1.0))
     assert rotational_symmetry(star, tol=0.01) == 6
     assert rotational_symmetry(star[:5], tol=0.01) in (1, 2)
+
+
+def test_extended_symmetry_vote():
+    for order in (8, 10):
+        star = []
+        for k in range(order):
+            a = 2 * math.pi / order * k + 0.17
+            star.append((math.cos(a), math.sin(a), 1.0))
+        assert rotational_symmetry(star, tol=0.01) == order
+
+
+def test_sharp_peak_mass_rejects_broad_maximum():
+    grid = 64
+    k0 = grid // 2
+    yy, xx = np.mgrid[:grid, :grid]
+    sharp = np.zeros((grid, grid))
+    sharp[k0, k0] = 1.0
+    sharp[k0, k0 + 10] = 1.0
+    broad = np.zeros((grid, grid))
+    broad[k0, k0] = 1.0
+    broad += np.exp(
+        -((xx - (k0 + 10)) ** 2 + (yy - k0) ** 2) / (2.0 * 3.0 ** 2)
+    )
+    peaks = [(10.0, 0.0, 1.0)]
+    assert sharp_peak_mass_fraction(
+        sharp, peaks, 1.0, k0,
+    ) > 5.0 * sharp_peak_mass_fraction(broad, peaks, 1.0, k0)
+
+
+def test_model_set_construction_invariants():
+    penrose = model_set_metadata("penrose")
+    ab = model_set_metadata("ammann-beenker")
+    assert penrose["ambient_rank"] == 5
+    assert penrose["internal_dimension"] == 3
+    assert penrose["window_facets"] == 20
+    assert ab["ambient_rank"] == 4
+    assert ab["internal_dimension"] == 2
+    assert ab["window_facets"] == 8
+
+
+@pytest.mark.slow
+@pytest.mark.parametrize(
+    ("builder", "symmetry"),
+    [(penrose_points, 10), (ammann_beenker_points, 8)],
+)
+def test_rank4_model_set_references(builder, symmetry):
+    points = builder()
+    res = fingerprint(points=points, floor=0.03)
+    assert res["verdict"] == "quasicrystal-candidate"
+    assert res["rank"] == 4 and res["symmetry"] == symmetry
+
+
+@pytest.mark.slow
+def test_rank_is_stable_under_rotation_and_shear():
+    points = ammann_beenker_points()
+    for angle, shear in ((0.37, 0.0), (0.0, 0.18), (0.61, -0.13)):
+        moved = transform_points(points, angle=angle, shear=shear)
+        res = fingerprint(points=moved, floor=0.03)
+        assert res["rank"] == 4
+
+
+@pytest.mark.slow
+def test_random_periodic_controls_do_not_look_quasicrystalline():
+    for seed in range(100):
+        points = random_periodic_points(seed)
+        res = fingerprint(
+            points=points, grid=192, floor=0.04, k_min=0.3, top=60,
+        )
+        assert res["verdict"] != "quasicrystal-candidate"
+
+
+@pytest.mark.slow
+def test_taylor_socolar_hierarchy_has_dyadic_reciprocal_scales():
+    classes = taylor_socolar_hierarchy_classes()
+    power, dk, k0 = class_power_sum(classes)
+    peaks = detect_peaks(power, dk, k0, floor=0.02)
+    depth = dyadic_scale_depth(
+        peaks, TRIANGULAR_RECIPROCAL_RADIUS, tol=2.0 * dk,
+    )
+    assert depth >= 5
+
+    # Erasing the hierarchy leaves the ordinary triangular center lattice.
+    power, dk, k0 = class_power_sum([[p for group in classes for p in group]])
+    peaks = detect_peaks(power, dk, k0, floor=0.02)
+    assert dyadic_scale_depth(
+        peaks, TRIANGULAR_RECIPROCAL_RADIUS, tol=2.0 * dk,
+    ) == 1
+
+
+@pytest.mark.slow
+def test_random_square_triangle_growth_is_valid_and_mixed():
+    patch = random_square_triangle_patch(7, target_tiles=500)
+    assert len(patch.polygons) == 500
+    assert len(patch.points) >= 20
+    assert set(patch.tile_types) == {3, 4}
+    assert patch.rejected_moves == 0
+    edge_counts = {}
+    for polygon in patch.polygons:
+        assert len(polygon) in (3, 4)
+        for a, b in zip(polygon, polygon[1:] + polygon[:1]):
+            edge = (a, b) if a < b else (b, a)
+            edge_counts[edge] = edge_counts.get(edge, 0) + 1
+    assert max(edge_counts.values()) == 2
+
+
+@pytest.mark.slow
+def test_random_square_triangle_ensemble_is_diffuse_ordered():
+    classes = [
+        random_square_triangle_patch(
+            10_000 + seed, target_tiles=1_000,
+        ).points
+        for seed in range(2)
+    ]
+    power, dk, k0 = class_power_sum(classes, grid=1024)
+    peaks = detect_peaks(power, dk, k0, floor=0.005)
+    rank, _, _ = index_peaks(peaks, 2.0 * dk, top=150)
+    assert rank == 4
+    assert rotational_symmetry(peaks, 2.0 * dk) == 12
+    assert sharp_peak_mass_fraction(power, peaks, dk, k0) < 0.025
 
 
 def test_periodic_point_set_is_crystal():

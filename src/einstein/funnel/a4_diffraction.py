@@ -241,7 +241,7 @@ def index_peaks(peaks, tol: float, max_rank: int = 6, coeff_bound: int = 6,
 
 
 def rotational_symmetry(peaks, tol: float, top: int = 30):
-    """Largest m in {12, 6, 4, 3, 2} such that rotating each of the `top`
+    """Largest m in {12, 10, 8, 6, 5, 4, 3, 2} such that rotating the `top`
     strongest peaks by 2*pi/m lands on SOME detected peak (within tol);
     1 if none.  Matching against the full detected set (not the top
     slice) keeps intensity noise from breaking the vote."""
@@ -249,7 +249,7 @@ def rotational_symmetry(peaks, tol: float, top: int = 30):
     allp = [(kx, ky) for kx, ky, _ in peaks]
     if not cand:
         return 1
-    for m in (12, 6, 4, 3, 2):
+    for m in (12, 10, 8, 6, 5, 4, 3, 2):
         a = 2.0 * math.pi / m
         c, s = math.cos(a), math.sin(a)
         ok = all(
@@ -260,6 +260,107 @@ def rotational_symmetry(peaks, tol: float, top: int = 30):
         if ok:
             return m
     return 1
+
+
+def peak_mass_fraction(p, peaks, dk, k0, radius_pixels: int = 2,
+                       dc_pixels: int = 4):
+    """Fraction of non-DC spectral power concentrated near detected peaks.
+
+    This is a finite-patch proxy for the pure-point fraction requested by
+    A4/E4, not a mathematical Lebesgue-decomposition claim.  We integrate
+    disks of `radius_pixels` around the detected maxima and divide by all
+    power outside a small DC disk.  The E4 reference/null suite calibrates
+    its interpretation.
+    """
+    grid = p.shape[0]
+    yy, xx = np.ogrid[:grid, :grid]
+    dc = (xx - k0) ** 2 + (yy - k0) ** 2 <= dc_pixels * dc_pixels
+    total = float(p[~dc].sum())
+    if total <= 0.0 or not peaks:
+        return 0.0
+    mask = np.zeros_like(p, dtype=bool)
+    r2 = radius_pixels * radius_pixels
+    for kx, ky, _ in peaks:
+        j = int(round(kx / dk + k0))
+        i = int(round(ky / dk + k0))
+        i0, i1 = max(0, i - radius_pixels), min(grid, i + radius_pixels + 1)
+        j0, j1 = max(0, j - radius_pixels), min(grid, j + radius_pixels + 1)
+        sy, sx = np.ogrid[i0:i1, j0:j1]
+        mask[i0:i1, j0:j1] |= (sx - j) ** 2 + (sy - i) ** 2 <= r2
+    mask &= ~dc
+    return float(p[mask].sum()) / total
+
+
+def sharp_peak_mass_fraction(p, peaks, dk, k0, top: int = 100,
+                             radius_pixels: int = 2,
+                             background_inner: int = 5,
+                             background_outer: int = 8,
+                             dc_pixels: int = 4):
+    """Background-subtracted mass in the strongest narrow peaks.
+
+    This is the E4 random-tiling discriminator.  A finite-window Bragg peak
+    concentrates power in a small core above its local annular background;
+    broad diffuse maxima do not.  The value is a calibration statistic and
+    must only be compared at a shared FFT grid and rendering extent.
+    """
+    p = np.asarray(p)
+    grid = p.shape[0]
+    yy, xx = np.ogrid[
+        -background_outer:background_outer + 1,
+        -background_outer:background_outer + 1,
+    ]
+    rr = xx * xx + yy * yy
+    core = rr <= radius_pixels * radius_pixels
+    annulus = (
+        (rr >= background_inner * background_inner)
+        & (rr <= background_outer * background_outer)
+    )
+    used = np.zeros_like(p, dtype=bool)
+    excess = 0.0
+    for kx, ky, _ in peaks[:top]:
+        j = int(round(kx / dk + k0))
+        i = int(round(ky / dk + k0))
+        r = background_outer
+        if i < r or j < r or i >= grid - r or j >= grid - r:
+            continue
+        window = p[i - r:i + r + 1, j - r:j + r + 1]
+        background = float(np.median(window[annulus]))
+        fresh = core & ~used[i - r:i + r + 1, j - r:j + r + 1]
+        excess += float(np.maximum(window[fresh] - background, 0.0).sum())
+        used[i - r:i + r + 1, j - r:j + r + 1][core] = True
+    total_mask = np.ones_like(p, dtype=bool)
+    total_mask[
+        k0 - dc_pixels:k0 + dc_pixels + 1,
+        k0 - dc_pixels:k0 + dc_pixels + 1,
+    ] = False
+    total = float(p[total_mask].sum())
+    return excess / total if total else 0.0
+
+
+def dyadic_scale_depth(peaks, base_radius: float, tol: float,
+                       max_depth: int = 12):
+    """Number of consecutively halved reciprocal scales in a peak set.
+
+    Taylor--Socolar order is limit-periodic: its level-n triangular pattern
+    has real-space lattice constant 2^n a0 and reciprocal scale 2^-n b0.
+    Starting on the known base reciprocal shell, count how many vectors
+    k, k/2, k/4, ... are detected.  A plain triangular lattice stops at one.
+    """
+    vectors = [(kx, ky) for kx, ky, _ in peaks]
+    best = 0
+    for kx, ky in vectors:
+        if abs(math.hypot(kx, ky) - base_radius) > 3.0 * tol:
+            continue
+        depth = 0
+        for level in range(max_depth):
+            tx, ty = kx / (2 ** level), ky / (2 ** level)
+            if any(math.hypot(tx - qx, ty - qy) <= tol
+                   for qx, qy in vectors):
+                depth += 1
+            else:
+                break
+        best = max(best, depth)
+    return best
 
 
 def fingerprint(points=None, classes=None, grid: int = 2048,
@@ -273,6 +374,7 @@ def fingerprint(points=None, classes=None, grid: int = 2048,
     Returns a dict (power spectrum left out; recompute for rendering):
 
       n_points, n_peaks, rank, generators, unindexed, symmetry,
+      peak_mass_fraction, sharp_peak_mass_fraction,
       strongest (top-10 peaks), verdict
     """
     if classes is not None:
@@ -286,7 +388,9 @@ def fingerprint(points=None, classes=None, grid: int = 2048,
     if not peaks:
         return {"n_points": n_points, "n_peaks": 0, "rank": 0,
                 "generators": [], "unindexed": 0, "symmetry": 1,
-                "strongest": [], "verdict": "diffuse"}
+                "peak_mass_fraction": 0.0,
+                "sharp_peak_mass_fraction": 0.0, "strongest": [],
+                "verdict": "diffuse"}
     rank, gens, unindexed = index_peaks(
         peaks, tol, max_rank=max_rank, coeff_bound=coeff_bound, top=top)
     sym = rotational_symmetry(peaks, tol)
@@ -303,6 +407,10 @@ def fingerprint(points=None, classes=None, grid: int = 2048,
         "generators": [[g[0], g[1]] for g in gens],
         "unindexed": unindexed,
         "symmetry": sym,
+        "peak_mass_fraction": peak_mass_fraction(p, peaks, dk, k0),
+        "sharp_peak_mass_fraction": sharp_peak_mass_fraction(
+            p, peaks, dk, k0,
+        ),
         "strongest": [[kx, ky, v] for kx, ky, v in peaks[:10]],
         "verdict": verdict,
     }

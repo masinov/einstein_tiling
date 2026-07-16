@@ -10,7 +10,7 @@ leave an entry here linking to its notebook session and artifacts.
 | E1 | Blind rediscovery of the hat | validation gate | **not started** | funnel A0–A4+A6 (M1–M5) | — |
 | E2 | Exhaustive 12-fold sweep beyond known horizon | discovery | not started | E1 pass, scaled A0 | — |
 | E3 | First hunts in 5-fold / 8-fold substrates | discovery | not started | E1 pass, new substrates | — |
-| E4 | Diffraction fingerprint calibration | validation gate | **in progress** — 12-fold core passed (2026-07-16) | A4 (M4), full reference library | `scripts/run_e4.py`; [notebook 05](notebook/2026-07-16-session-05.md); assets `e4-results.json`, `e4-spectrum-*.png` |
+| E4 | Diffraction fingerprint calibration | validation gate | **PASSED** (2026-07-16) | A4 (M4), full reference library | `scripts/run_e4.py`, `scripts/run_e4_wide.py`; [notebook 05](notebook/2026-07-16-session-05.md), [notebook 06](notebook/2026-07-16-session-06.md); assets `e4-results.json`, `e4-wide-results.json`, `e4-spectrum-*.png` |
 | E5 | ML allocation A/B | methodology | not started | funnel verdicts corpus | — |
 | E6 | Inverse-design season (Pipeline B) | discovery | not started | B1–B3 build | — |
 | E7 | Moduli prospecting season (Pipeline C) | discovery | not started | C1–C2 build | — |
@@ -65,3 +65,28 @@ exact module-rank recovery across that library; a false-positive measurement
 over 10⁴ random periodic tilers; patch-size-doubling stability; and deliberately
 rotated/sheared indexer controls. Those are carried forward rather than
 silently treating this narrower calibration as the complete gate.
+
+## E4 wider/final record (2026-07-16)
+
+The second run closes every remaining criterion from program §8. Canonical
+projection references use a projected centered-hypercube window; the
+Taylor–Socolar case uses its published dyadic reciprocal hierarchy because
+its limit-periodic Fourier module is not finitely generated. The random
+square–triangle control implements the published boundary-gap growth rule
+and averages independent interior crops before measuring narrow-peak mass.
+
+| check | result | target |
+|---|---|---|
+| Penrose, 561 → 1,307 vertices | rank 4, symmetry 10 at both sizes | exact rank; size stability ✓ |
+| Ammann–Beenker, 869 → 2,617 vertices | rank 4, symmetry 8 at both sizes | exact rank; size stability ✓ |
+| rotated references | rank 4; symmetry retained | covariance ✓ |
+| sheared references | rank 4; rotational vote drops to 2 | module rank affine-stable ✓ |
+| Taylor–Socolar, 59,407 sites | five dyadic reciprocal levels; hierarchy-erased control has one | limit-periodic hierarchy ✓ |
+| random square–triangle ensemble | rank-4 substrate, twelvefold broad order, narrow-peak mass below calibrated 0.025 cutoff | diffuse/random order distinguished from pure point ✓ |
+| randomized periodic tilers | 10,000 screened; 9 coarse candidates; 0 confirmed at the second resolution | confirmed false-positive rate 0 < 10⁻³ ✓ |
+
+The coarse periodic screen also returned 149 rank-3 ambiguous cases. They are
+not false quasicrystal positives, but are retained in the JSON rather than
+hidden. D-0011 accepts the bounded indexer for A4 v0 inside this measured
+envelope and makes second-resolution confirmation mandatory when the
+high-throughput coarse screen reports rank ≥ 4.

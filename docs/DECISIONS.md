@@ -128,3 +128,28 @@ established empirically by the E4 gate (reference patches must reproduce
 literature signatures) rather than by arithmetic exactness. All geometry
 feeding A4 (patch certificates, module coordinates) remains exact; the
 float boundary is the projection to Cartesian points at analysis time.
+
+## D-0011 (2026-07-16) — E4 reference semantics; bounded indexer accepted for A4 v0
+
+**Reference semantics.** Penrose and Ammann–Beenker calibration patches are
+canonical cut-and-project vertex sets from Z⁵ and Z⁴ with projected-cube
+windows. Taylor–Socolar is limit-periodic, so forcing a finite module-rank
+answer would be wrong; E4 instead requires consecutive reciprocal scales
+`b_n = 2^-n b_0` and verifies that erasing level labels collapses the signal
+to the ordinary triangular lattice. Random square–triangle tilings use the
+published stochastic boundary-growth rule, collision-checked before
+insertion, followed by interior-disk cropping and incoherent ensemble power.
+Their twelvefold short-range peaks are expected; the negative control is the
+small background-subtracted mass in *narrow* peaks, measured only on a shared
+grid/extent. None of these numerical diagnostics is a certificate.
+
+**Indexer decision.** Do not add fpylll/PSLQ yet. The existing bounded
+integer indexer recovers the exact known finite ranks across the complete E4
+library, survives patch doubling and deliberately rotated/sheared inputs,
+and yields zero confirmed quasicrystal false positives over 10,000 randomized
+periodic tilers. Nine coarse-grid periodic cases initially reached rank 4;
+all fell back below rank 4 at the fixed confirmation grid. Therefore A4 v0
+adopts mandatory second-resolution confirmation for rank ≥ 4 emitted by a
+reduced-resolution/high-throughput screen, and accepts the bounded indexer
+for prioritization. LLL/PSLQ remains the escalation path if a future
+reference, transform, or control falls outside this empirical envelope.
