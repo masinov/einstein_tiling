@@ -1,5 +1,8 @@
 """Exact kite-grid adapter and disk-core cover support for A6."""
 
+import json
+from pathlib import Path
+
 from einstein.funnel.a6_hierarchy import (
     canonical_cluster,
     frequent_nearest_templates,
@@ -17,6 +20,8 @@ from einstein.substrate.kitegrid import (
     transform_point,
 )
 from einstein.substrate.module12 import apply_sr
+
+ROOT = Path(__file__).parent.parent
 
 
 def test_kite_operations_embed_exactly_in_module12():
@@ -60,3 +65,15 @@ def test_exact_hex_acceleration_matches_brute_nearest_mining():
         poses, min_size=4, max_size=4, top=5
     )[4]
     assert fast == frequent_nearest_templates(poses, size=4, top=5)
+
+
+def test_hat_candidate_artifact_links_reproducible_svgs():
+    result = json.loads(
+        (ROOT / "docs/notebook/assets/a6-hat-screen-results.json").read_text()
+    )
+    assert len(result["candidates"]) == 2
+    for candidate in result["candidates"]:
+        svg = ROOT / candidate["svg"]
+        text = svg.read_text()
+        assert text.count("<polygon ") == 16
+        assert text.count('stroke-dasharray="7 5"') == 1

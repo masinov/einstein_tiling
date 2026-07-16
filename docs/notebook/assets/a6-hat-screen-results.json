@@ -194,7 +194,8 @@
             0
           ]
         ]
-      ]
+      ],
+      "svg": "docs/notebook/assets/a6-hat-candidate-1.svg"
     },
     {
       "proposal_rank": 6,
@@ -360,7 +361,8 @@
             0
           ]
         ]
-      ]
+      ],
+      "svg": "docs/notebook/assets/a6-hat-candidate-2.svg"
     }
   ],
   "unique_candidates": 0,

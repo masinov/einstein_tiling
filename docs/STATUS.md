@@ -103,8 +103,9 @@
   an exact core-plus-halo SAT cover. On the 11,514-hat patch, 160 blind 8/7
   rules yield exactly two candidates; both have two compositions, stable when
   the core grows from 2,277 to 4,531 and 6,797 hats. Artifact:
-  `a6-hat-screen-results.json`; runner: `scripts/run_a6_hat.py`.
-- Test suite: **61 fast passed** (14 deselected, 8.69 s);
+  `a6-hat-screen-results.json`; inspection drawings:
+  `a6-hat-candidate-{1,2}.svg`; runner: `scripts/run_a6_hat.py`.
+- Test suite: **62 fast passed** (14 deselected, 8.72 s);
   **14 slow passed** (57 deselected, 112.17 s). Vendored Rust: **5 passed**.
 
 ## Funnel state (polykites, grid-aligned scope — D-0006)
