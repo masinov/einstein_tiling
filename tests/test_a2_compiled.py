@@ -8,7 +8,12 @@ from pathlib import Path
 import pytest
 
 from einstein.funnel.a2_heesch import verify_heesch_certificate
-from einstein.substrate.kitegrid import transform_cell
+from einstein.substrate.kitegrid import (
+    canonical_form,
+    cells_in_polygon,
+    transform_cell,
+)
+from tests.test_hat import HAT_OUTLINE
 
 ROOT = Path(__file__).parent.parent
 
@@ -74,17 +79,104 @@ def test_compiled_a2_matches_n8_h0_split_and_certifies_survivors(tmp_path):
         capture_output=True,
         text=True,
     ).stdout
-    assert "h0=720 witnessed=114 exhausted=0 survivors=114" in output
+    assert (
+        "depth_cap=1 below_cap=720 witnessed=114 "
+        "exhausted=0 survivors=114"
+    ) in output
     rows = [json.loads(line) for line in witnesses.read_text().splitlines()]
     assert len(rows) == 114
     for row in rows:
         shape = _unpack_shape(row["shape"])
         corona = []
-        for op, tx, ty in row["placements"]:
+        for encoded_corona in row["coronas"]:
             corona.append([
+                [
+                    (cell[0] + tx, cell[1] + ty, cell[2])
+                    for cell in (
+                        transform_cell(original, op) for original in shape
+                    )
+                ]
+                for op, tx, ty in encoded_corona
+            ])
+        assert verify_heesch_certificate(shape, corona)
+
+    depth2_survivors = tmp_path / "depth2-survivors.bin"
+    depth2_witnesses = tmp_path / "depth2-witnesses.jsonl"
+    depth2_exhausted = tmp_path / "depth2-exhausted.bin"
+    output = subprocess.run(
+        [
+            str(a2),
+            str(a2_survivors),
+            str(depth2_survivors),
+            str(depth2_witnesses),
+            str(depth2_exhausted),
+            "2",
+            "100000",
+        ],
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout
+    assert (
+        "depth_cap=2 below_cap=107 witnessed=6 "
+        "exhausted=1 survivors=7"
+    ) in output
+    rows = [
+        json.loads(line)
+        for line in depth2_witnesses.read_text().splitlines()
+    ]
+    assert len(rows) == 6
+    for row in rows:
+        shape = _unpack_shape(row["shape"])
+        chain = []
+        for encoded_corona in row["coronas"]:
+            chain.append([
+                [
+                    (cell[0] + tx, cell[1] + ty, cell[2])
+                    for cell in (
+                        transform_cell(original, op) for original in shape
+                    )
+                ]
+                for op, tx, ty in encoded_corona
+            ])
+        assert len(chain) == 2
+        assert verify_heesch_certificate(shape, chain)
+
+    depth3_survivors = tmp_path / "depth3-survivors.bin"
+    depth3_witnesses = tmp_path / "depth3-witnesses.jsonl"
+    output = subprocess.run(
+        [
+            str(a2),
+            str(depth2_survivors),
+            str(depth3_survivors),
+            str(depth3_witnesses),
+            "-",
+            "3",
+            "1000000",
+        ],
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout
+    assert (
+        "depth_cap=3 below_cap=6 witnessed=1 "
+        "exhausted=0 survivors=1"
+    ) in output
+    row = json.loads(depth3_witnesses.read_text())
+    shape = _unpack_shape(row["shape"])
+    assert canonical_form(shape) == canonical_form(
+        cells_in_polygon(HAT_OUTLINE)
+    )
+    chain = []
+    for encoded_corona in row["coronas"]:
+        chain.append([
+            [
                 (cell[0] + tx, cell[1] + ty, cell[2])
                 for cell in (
                     transform_cell(original, op) for original in shape
                 )
-            ])
-        assert verify_heesch_certificate(shape, [corona])
+            ]
+            for op, tx, ty in encoded_corona
+        ])
+    assert len(chain) == 3
+    assert verify_heesch_certificate(shape, chain)

@@ -21,7 +21,7 @@ SOURCE = ROOT / "tools" / "a2_corona.rs"
 BINARY = ROOT / "target" / "a2_corona"
 HEADER = struct.Struct("<4sBBHQ")
 STATS = re.compile(
-    r"h0=(?P<h0>\d+) witnessed=(?P<witnessed>\d+) "
+    r"below_cap=(?P<below_cap>\d+) witnessed=(?P<witnessed>\d+) "
     r"exhausted=(?P<exhausted>\d+) survivors=(?P<survivors>\d+)"
 )
 
@@ -59,6 +59,7 @@ def main() -> int:
     parser.add_argument("witnesses", nargs="?", type=Path)
     parser.add_argument("--exhausted", type=Path)
     parser.add_argument("--node-budget", type=int, default=100_000)
+    parser.add_argument("--depth-cap", type=int, default=1)
     parser.add_argument("--jobs", type=int, default=1)
     parser.add_argument("--chunk-size", type=int, default=25_000)
     args = parser.parse_args()
@@ -89,6 +90,7 @@ def main() -> int:
             str(args.survivors) if args.survivors else "-",
             str(args.witnesses) if args.witnesses else "-",
             str(args.exhausted) if args.exhausted else "-",
+            str(args.depth_cap),
             str(args.node_budget),
         ]
         return subprocess.run(command).returncode
@@ -114,6 +116,7 @@ def main() -> int:
                     str(survivor) if args.survivors else "-",
                     str(witness) if args.witnesses else "-",
                     str(exhausted) if args.exhausted else "-",
+                    str(args.depth_cap),
                     str(args.node_budget),
                     str(start),
                     str(size),
@@ -130,10 +133,17 @@ def main() -> int:
                 )
             return chunk, {
                 key: int(match.group(key))
-                for key in ("h0", "witnessed", "exhausted", "survivors")
+                for key in (
+                    "below_cap", "witnessed", "exhausted", "survivors"
+                )
             }
 
-        totals = {"h0": 0, "witnessed": 0, "exhausted": 0, "survivors": 0}
+        totals = {
+            "below_cap": 0,
+            "witnessed": 0,
+            "exhausted": 0,
+            "survivors": 0,
+        }
         with concurrent.futures.ThreadPoolExecutor(
             max_workers=args.jobs
         ) as executor:
@@ -159,7 +169,8 @@ def main() -> int:
                 totals["exhausted"],
             )
         print(
-            f"n={n} total={count} h0={totals['h0']} "
+            f"n={n} total={count} depth_cap={args.depth_cap} "
+            f"below_cap={totals['below_cap']} "
             f"witnessed={totals['witnessed']} "
             f"exhausted={totals['exhausted']} "
             f"survivors={totals['survivors']} jobs={args.jobs} "

@@ -6,9 +6,7 @@
 use std::collections::{HashMap, HashSet, VecDeque};
 use std::env;
 use std::fs::{File, OpenOptions};
-use std::io::{
-    BufReader, BufWriter, Read, Seek, SeekFrom, Write,
-};
+use std::io::{BufReader, BufWriter, Read, Seek, SeekFrom, Write};
 use std::path::Path;
 use std::time::Instant;
 
@@ -28,7 +26,7 @@ struct Placement {
     ty: i16,
     cells: Vec<Cell>,
     ids: Vec<usize>,
-    required: u128,
+    required: Vec<usize>,
 }
 
 fn read_u16(input: &mut impl Read) -> u16 {
@@ -89,16 +87,10 @@ fn directions(first: (i16, i16)) -> [(i16, i16); 6] {
 }
 
 fn is_center(point: (i16, i16)) -> bool {
-    point.0 % 2 == 0
-        && point.1 % 2 == 0
-        && (point.1 - point.0) % 6 == 0
+    point.0 % 2 == 0 && point.1 % 2 == 0 && (point.1 - point.0) % 6 == 0
 }
 
-fn cell_vertices(
-    cell: Cell,
-    vdir: &[(i16, i16); 6],
-    mdir: &[(i16, i16); 6],
-) -> [(i16, i16); 4] {
+fn cell_vertices(cell: Cell, vdir: &[(i16, i16); 6], mdir: &[(i16, i16); 6]) -> [(i16, i16); 4] {
     let d = cell.d as usize;
     let m0 = mdir[(d + 5) % 6];
     let vertex = vdir[d];
@@ -111,11 +103,7 @@ fn cell_vertices(
     ]
 }
 
-fn cells_at_point(
-    point: (i16, i16),
-    vdir: &[(i16, i16); 6],
-    mdir: &[(i16, i16); 6],
-) -> Vec<Cell> {
+fn cells_at_point(point: (i16, i16), vdir: &[(i16, i16); 6], mdir: &[(i16, i16); 6]) -> Vec<Cell> {
     if is_center(point) {
         return (0..6)
             .map(|d| Cell {
@@ -157,12 +145,11 @@ fn cells_at_point(
     result
 }
 
-fn ring(shape: &[Cell]) -> Vec<Cell> {
-    let occupied: HashSet<_> = shape.iter().copied().collect();
+fn ring(occupied: &HashSet<Cell>) -> Vec<Cell> {
     let vdir = directions((2, 0));
     let mdir = directions((1, 1));
     let mut result = HashSet::new();
-    for &cell in shape {
+    for &cell in occupied {
         for point in cell_vertices(cell, &vdir, &mdir) {
             for neighbor in cells_at_point(point, &vdir, &mdir) {
                 if !occupied.contains(&neighbor) {
@@ -176,9 +163,11 @@ fn ring(shape: &[Cell]) -> Vec<Cell> {
     result
 }
 
-fn candidate_placements(shape: &[Cell], required: &[Cell]) -> Vec<Placement> {
-    assert!(required.len() <= 128);
-    let seed: HashSet<_> = shape.iter().copied().collect();
+fn candidate_placements(
+    shape: &[Cell],
+    patch: &HashSet<Cell>,
+    required: &[Cell],
+) -> Vec<Placement> {
     let required_index: HashMap<_, _> = required
         .iter()
         .copied()
@@ -209,24 +198,20 @@ fn candidate_placements(shape: &[Cell], required: &[Cell]) -> Vec<Placement> {
                     })
                     .collect();
                 cells.sort_unstable();
-                if cells.iter().any(|cell| seed.contains(cell))
-                    || !seen.insert(cells.clone())
-                {
+                if cells.iter().any(|cell| patch.contains(cell)) || !seen.insert(cells.clone()) {
                     continue;
                 }
-                let mut required_mask = 0_u128;
-                for cell in &cells {
-                    if let Some(&index) = required_index.get(cell) {
-                        required_mask |= 1_u128 << index;
-                    }
-                }
+                let required_cells = cells
+                    .iter()
+                    .filter_map(|cell| required_index.get(cell).copied())
+                    .collect();
                 result.push(Placement {
                     op,
                     tx,
                     ty,
                     cells,
                     ids: Vec::new(),
-                    required: required_mask,
+                    required: required_cells,
                 });
             }
         }
@@ -329,156 +314,217 @@ fn has_hole(patch: &HashSet<Cell>) -> bool {
     reached.len() != empty.len()
 }
 
-fn first_corona(
+fn corona_chain(
     shape: &[Cell],
+    depth_cap: usize,
     node_budget: u64,
-) -> Result<Option<Vec<Placement>>, ()> {
-    let required = ring(shape);
-    let placements = candidate_placements(shape, &required);
-    let mut by_required = vec![Vec::<usize>::new(); required.len()];
-    let mut cell_count = 0;
-    for (index, placement) in placements.iter().enumerate() {
-        cell_count = cell_count.max(
-            placement.ids.iter().copied().max().unwrap_or(0) + 1,
-        );
-        let mut mask = placement.required;
-        while mask != 0 {
-            let bit = mask.trailing_zeros() as usize;
-            by_required[bit].push(index);
-            mask &= mask - 1;
-        }
-    }
-    if by_required.iter().any(Vec::is_empty) {
-        return Ok(None);
-    }
-    let full = if required.len() == 128 {
-        u128::MAX
-    } else {
-        (1_u128 << required.len()) - 1
-    };
+) -> Result<Option<Vec<Vec<Placement>>>, ()> {
     let seed: HashSet<_> = shape.iter().copied().collect();
-    let mut used = vec![false; cell_count];
-    let mut chosen = Vec::<usize>::new();
     let mut nodes = 0_u64;
+    let mut chain = Vec::<Vec<Placement>>::new();
 
-    fn search(
-        covered: u128,
-        full: u128,
-        seed: &HashSet<Cell>,
-        placements: &[Placement],
-        by_required: &[Vec<usize>],
-        used: &mut [bool],
-        chosen: &mut Vec<usize>,
+    fn extend(
+        shape: &[Cell],
+        patch: &HashSet<Cell>,
+        level: usize,
+        depth_cap: usize,
         nodes: &mut u64,
         node_budget: u64,
+        chain: &mut Vec<Vec<Placement>>,
     ) -> Result<bool, ()> {
-        *nodes += 1;
-        if *nodes > node_budget {
-            return Err(());
-        }
-        if covered == full {
-            let mut patch = seed.clone();
-            for &index in chosen.iter() {
-                patch.extend(placements[index].cells.iter().copied());
+        let required = ring(patch);
+        let placements = candidate_placements(shape, patch, &required);
+        let mut by_required = vec![Vec::<usize>::new(); required.len()];
+        let mut cell_count = 0;
+        for (index, placement) in placements.iter().enumerate() {
+            cell_count = cell_count.max(placement.ids.iter().copied().max().unwrap_or(0) + 1);
+            for &item in &placement.required {
+                by_required[item].push(index);
             }
-            return Ok(!has_hole(&patch));
         }
-        let mut uncovered = full & !covered;
-        let mut best = Vec::<usize>::new();
-        let mut first = true;
-        while uncovered != 0 {
-            let item = uncovered.trailing_zeros() as usize;
-            uncovered &= uncovered - 1;
-            let options: Vec<_> = by_required[item]
-                .iter()
-                .copied()
-                .filter(|&index| {
-                    placements[index].ids.iter().all(|&id| !used[id])
-                })
-                .collect();
-            if options.is_empty() {
-                return Ok(false);
+        if by_required.iter().any(Vec::is_empty) {
+            return Ok(false);
+        }
+        let mut covered = vec![false; required.len()];
+        let mut used = vec![false; cell_count];
+        let mut chosen = Vec::<usize>::new();
+
+        fn search(
+            covered: &mut [bool],
+            remaining: usize,
+            shape: &[Cell],
+            patch: &HashSet<Cell>,
+            level: usize,
+            depth_cap: usize,
+            placements: &[Placement],
+            by_required: &[Vec<usize>],
+            used: &mut [bool],
+            chosen: &mut Vec<usize>,
+            nodes: &mut u64,
+            node_budget: u64,
+            chain: &mut Vec<Vec<Placement>>,
+        ) -> Result<bool, ()> {
+            *nodes += 1;
+            if *nodes > node_budget {
+                return Err(());
             }
-            if first || options.len() < best.len() {
-                first = false;
-                best = options;
-                if best.len() == 1 {
-                    break;
+            if remaining == 0 {
+                let mut next_patch = patch.clone();
+                for &index in chosen.iter() {
+                    next_patch.extend(placements[index].cells.iter().copied());
+                }
+                if has_hole(&next_patch) {
+                    return Ok(false);
+                }
+                chain.push(
+                    chosen
+                        .iter()
+                        .map(|&index| placements[index].clone())
+                        .collect(),
+                );
+                let reached = if level == depth_cap {
+                    true
+                } else {
+                    extend(
+                        shape,
+                        &next_patch,
+                        level + 1,
+                        depth_cap,
+                        nodes,
+                        node_budget,
+                        chain,
+                    )?
+                };
+                if !reached {
+                    chain.pop();
+                }
+                return Ok(reached);
+            }
+            let mut best = Vec::<usize>::new();
+            let mut first = true;
+            for item in 0..covered.len() {
+                if covered[item] {
+                    continue;
+                }
+                let options: Vec<_> = by_required[item]
+                    .iter()
+                    .copied()
+                    .filter(|&index| placements[index].ids.iter().all(|&id| !used[id]))
+                    .collect();
+                if options.is_empty() {
+                    return Ok(false);
+                }
+                if first || options.len() < best.len() {
+                    first = false;
+                    best = options;
+                    if best.len() == 1 {
+                        break;
+                    }
                 }
             }
+            for index in best {
+                for &id in &placements[index].ids {
+                    used[id] = true;
+                }
+                for &item in &placements[index].required {
+                    assert!(!covered[item]);
+                    covered[item] = true;
+                }
+                chosen.push(index);
+                if search(
+                    covered,
+                    remaining - placements[index].required.len(),
+                    shape,
+                    patch,
+                    level,
+                    depth_cap,
+                    placements,
+                    by_required,
+                    used,
+                    chosen,
+                    nodes,
+                    node_budget,
+                    chain,
+                )? {
+                    return Ok(true);
+                }
+                chosen.pop();
+                for &item in &placements[index].required {
+                    covered[item] = false;
+                }
+                for &id in &placements[index].ids {
+                    used[id] = false;
+                }
+            }
+            Ok(false)
         }
-        for index in best {
-            for &id in &placements[index].ids {
-                used[id] = true;
-            }
-            chosen.push(index);
-            if search(
-                covered | placements[index].required,
-                full,
-                seed,
-                placements,
-                by_required,
-                used,
-                chosen,
-                nodes,
-                node_budget,
-            )? {
-                return Ok(true);
-            }
-            chosen.pop();
-            for &id in &placements[index].ids {
-                used[id] = false;
-            }
-        }
-        Ok(false)
+
+        search(
+            &mut covered,
+            required.len(),
+            shape,
+            patch,
+            level,
+            depth_cap,
+            &placements,
+            &by_required,
+            &mut used,
+            &mut chosen,
+            nodes,
+            node_budget,
+            chain,
+        )
     }
 
-    match search(
-        0,
-        full,
+    if extend(
+        shape,
         &seed,
-        &placements,
-        &by_required,
-        &mut used,
-        &mut chosen,
+        1,
+        depth_cap,
         &mut nodes,
         node_budget,
-    ) {
-        Ok(true) => Ok(Some(
-            chosen.into_iter().map(|index| placements[index].clone()).collect(),
-        )),
-        Ok(false) => Ok(None),
-        Err(()) => Err(()),
+        &mut chain,
+    )? {
+        Ok(Some(chain))
+    } else {
+        Ok(None)
     }
 }
 
 fn write_header(output: &mut impl Write, n: u8, count: u64) {
     output.write_all(MAGIC).expect("write magic");
     output.write_all(&[1, n]).expect("write version/size");
-    output.write_all(&0_u16.to_le_bytes()).expect("write reserved");
+    output
+        .write_all(&0_u16.to_le_bytes())
+        .expect("write reserved");
     output.write_all(&count.to_le_bytes()).expect("write count");
 }
 
-fn write_witness(
-    output: &mut impl Write,
-    codes: &[u16],
-    placements: &[Placement],
-) {
+fn write_witness(output: &mut impl Write, codes: &[u16], chain: &[Vec<Placement>]) {
     write!(output, "{{\"shape\":\"").expect("write witness");
     for code in codes {
         write!(output, "{code:04x}").expect("write shape key");
     }
-    output.write_all(b"\",\"placements\":[").expect("write placements");
-    for (index, placement) in placements.iter().enumerate() {
-        if index != 0 {
-            output.write_all(b",").expect("write separator");
+    output
+        .write_all(b"\",\"coronas\":[")
+        .expect("write coronas");
+    for (level, placements) in chain.iter().enumerate() {
+        if level != 0 {
+            output.write_all(b",").expect("write level separator");
         }
-        write!(
-            output,
-            "[{},{},{}]",
-            placement.op, placement.tx, placement.ty,
-        )
-        .expect("write placement");
+        output.write_all(b"[").expect("write corona");
+        for (index, placement) in placements.iter().enumerate() {
+            if index != 0 {
+                output.write_all(b",").expect("write separator");
+            }
+            write!(
+                output,
+                "[{},{},{}]",
+                placement.op, placement.tx, placement.ty,
+            )
+            .expect("write placement");
+        }
+        output.write_all(b"]").expect("finish corona");
     }
     output.write_all(b"]}\n").expect("finish witness");
 }
@@ -488,6 +534,7 @@ fn screen(
     survivor_path: Option<&Path>,
     witness_path: Option<&Path>,
     exhausted_path: Option<&Path>,
+    depth_cap: usize,
     node_budget: u64,
     start: u64,
     requested_count: Option<u64>,
@@ -515,16 +562,15 @@ fn screen(
         write_header(&mut output, n as u8, 0);
         output
     });
-    let mut witnesses = witness_path.map(|path| {
-        BufWriter::new(File::create(path).expect("create witnesses"))
-    });
+    let mut witnesses =
+        witness_path.map(|path| BufWriter::new(File::create(path).expect("create witnesses")));
     let mut exhausted_shapes = exhausted_path.map(|path| {
         let mut output = BufWriter::new(File::create(path).expect("create exhausted"));
         write_header(&mut output, n as u8, 0);
         output
     });
     let started = Instant::now();
-    let mut h0 = 0_u64;
+    let mut below_cap = 0_u64;
     let mut witnessed = 0_u64;
     let mut exhausted = 0_u64;
     let mut codes = vec![0_u16; n];
@@ -533,12 +579,12 @@ fn screen(
             *code = read_u16(&mut input);
         }
         let shape: Vec<_> = codes.iter().copied().map(unpack).collect();
-        match first_corona(&shape, node_budget) {
-            Ok(None) => h0 += 1,
-            Ok(Some(corona)) => {
+        match corona_chain(&shape, depth_cap, node_budget) {
+            Ok(None) => below_cap += 1,
+            Ok(Some(chain)) => {
                 witnessed += 1;
                 if let Some(output) = witnesses.as_mut() {
-                    write_witness(output, &codes, &corona);
+                    write_witness(output, &codes, &chain);
                 }
                 if let Some(output) = survivors.as_mut() {
                     for code in &codes {
@@ -597,14 +643,17 @@ fn screen(
             .write(true)
             .open(path)
             .expect("patch exhausted header");
-        output.seek(SeekFrom::Start(8)).expect("seek exhausted count");
+        output
+            .seek(SeekFrom::Start(8))
+            .expect("seek exhausted count");
         output
             .write_all(&exhausted.to_le_bytes())
             .expect("patch exhausted count");
     }
     println!(
-        "n={n} start={start} total={count} h0={h0} witnessed={witnessed} \
-         exhausted={exhausted} survivors={survivor_count} seconds={:.3}",
+        "n={n} start={start} total={count} depth_cap={depth_cap} \
+         below_cap={below_cap} witnessed={witnessed} exhausted={exhausted} \
+         survivors={survivor_count} seconds={:.3}",
         started.elapsed().as_secs_f64(),
     );
 }
@@ -618,6 +667,11 @@ fn main() {
     let survivors = args.next().unwrap_or_else(|| "-".to_string());
     let witnesses = args.next().unwrap_or_else(|| "-".to_string());
     let exhausted = args.next().unwrap_or_else(|| "-".to_string());
+    let depth_cap = args
+        .next()
+        .unwrap_or_else(|| "1".to_string())
+        .parse()
+        .expect("invalid depth_cap");
     let node_budget = args
         .next()
         .unwrap_or_else(|| "100000".to_string())
@@ -637,6 +691,7 @@ fn main() {
         (survivors != "-").then(|| Path::new(&survivors)),
         (witnesses != "-").then(|| Path::new(&witnesses)),
         (exhausted != "-").then(|| Path::new(&exhausted)),
+        depth_cap,
         node_budget,
         start,
         count,

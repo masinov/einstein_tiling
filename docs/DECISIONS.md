@@ -402,3 +402,26 @@ from 19,035,046 A1 survivors to 22,875 witnessed A2 survivors in 889.09 s.
 
 This is an exact local refutation and witness stage, not a tiling verdict.
 Deeper corona levels are run only on the resulting 40,216-shape stream.
+
+## D-0022 (2026-07-16) — Recursive corona search preserves exact finite depth
+
+Deeper A2 cannot extend only one stored first-corona witness when making a
+negative claim: a different first corona might admit another layer. The
+compiled solver therefore recursively enumerates every valid corona cover at
+each level. A shape is classified below depth d only after all chains fail;
+positive chains and budget exhaustions survive.
+
+Coverage uses dynamic state rather than the first-level `u128` shortcut,
+because second-corona rings exceed 128 cells on larger shapes. At n=8 the
+compiled depth-2 result reproduces the established census: six shapes reach
+two coronas, 827 stop below, and one hard H_c=1 case exhausts at 100,000
+nodes; 10,000,000 nodes resolves it negatively. At depth 3, exactly one of
+the seven conservative inputs survives. Its three-corona chain independently
+verifies and its canonical shape is the hat.
+
+Across n=9..16, targeted escalation resolves every depth-2 budget case. The
+final 9,841 two-corona survivors all carry Python-verified chains. Depth 3
+requires a separate performance design: positive extension is often cheap,
+while exhaustive H_c=2 refutation can consume the full million-node budget.
+Future runs should try stored-chain extension first, then reserve exhaustive
+fallback for within-size ranking and exact negatives.

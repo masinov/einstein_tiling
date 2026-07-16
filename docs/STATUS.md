@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-16 (session 14)
+**Last updated:** 2026-07-16 (session 15)
 
 ## Where we are
 
@@ -61,6 +61,12 @@
   witnessed shapes. Across n=9..16 only 40,216 survive, every one with an
   independently verified corona; five initial budget cases all resolve under
   targeted escalation.
+- **Compiled A2 recursive depth:** exact search enumerates all corona choices,
+  not only one stored witness. The 40,216 first-corona survivors reduce to
+  9,841 witnessed depth-2 shapes with no unknowns after escalation. On the
+  complete n=8 universe, depth 3 leaves exactly one independently verified
+  survivor—and its canonical form is the hat. This is the first direct blind
+  rediscovery result.
 - **A4 diffraction fingerprint v0**
   (`src/einstein/funnel/a4_diffraction.py`): per-orientation Hann-windowed
   FFT powers on a shared grid, null-calibrated peak detection, sidelobe
@@ -127,7 +133,7 @@
   Artifact:
   `a6-hat-screen-results.json`; inspection drawings:
   `a6-hat-candidate-{1,2}.svg`; runner: `scripts/run_a6_hat.py`.
-- Test suite: **66 fast passed** (14 deselected, 17.12 s);
+- Test suite: **66 fast passed** (14 deselected, 49.81 s);
   **14 slow passed** (63 deselected, 111.33 s). Vendored Rust: **5 passed**.
 
 ## Funnel state (polykites, grid-aligned scope — D-0006)
@@ -152,10 +158,11 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
 ## Known capacity limits (honest)
 
 - Compiled A0 reaches E1 n=16, but its 19,035,075 records still require
-  deeper compiled A2/A3 filtering. Compiled A1 and first-corona A2 are
-  complete; 40,216 witnessed n=9..16 shapes remain. The fixed 16-cell key is
-  intentionally scoped to E1; E2 n≈22–24 needs a wider key and likely
-  external partitioning.
+  deeper A3/A4 ranking. Compiled A1 and A2 through depth 2 are complete;
+  9,841 witnessed n=9..16 shapes remain. Raw depth is strongly size-dependent,
+  so deeper positive extension and within-size ranking must be separated from
+  expensive exact negative refutation. The fixed 16-cell key is intentionally
+  scoped to E1; E2 n≈22–24 needs a wider key and likely external partitioning.
 - A1 torus budget k ≤ 12 proven sufficient for n ≤ 8 only (by Myers
   agreement); larger n may need larger tori — revalidate per horizon.
 - A3 single-shot SAT: demonstrated at 22,940 tiles in 551 s;
@@ -200,8 +207,8 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
 
 ## Next actions (in order)
 
-1. Extend compiled A2 to second and later coronas over the 40,216 witnessed
-   survivors, retaining certificates and exact finite-depth refutations.
+1. Add witness-first depth-3 extension over the 9,841 two-corona survivors,
+   then use exhaustive fallback only for within-size exact ranking.
 2. Run the complete n≤16 A0–A4 ranking, verify hat/turtle placement, and send
    the hat to A6 without identity-specific hints.
 3. In parallel, seek a third shifted/independent hat window and stronger halo
