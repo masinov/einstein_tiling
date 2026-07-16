@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-16 (session 18)
+**Last updated:** 2026-07-17 (session 19)
 
 ## Where we are
 
@@ -15,7 +15,7 @@
 | M0 — kite substrate + A0 enumeration | §7.1 (kernel v0), §4 A0 | ✅ done through E1 n≤16 horizon, validated vs OEIS (sessions 01, 12) |
 | M1 — A1 periodicity rejection + shape DB | §4 A1, §7.4 | ✅ done v0, validated vs Myers (session 02) |
 | M2 — A2 corona/Heesch engine | §4 A2 | ✅ done v0, hat = unique n≤8 anomaly (session 03) |
-| M3 — A3 large-patch growth | §4 A3 | ✅ done v0, SAT backend; 22,940-tile hat patch, φ⁴ chirality anchor hit (sessions 04, 11) |
+| M3 — A3 large-patch growth | §4 A3 | ✅ done v1; exact disk SAT plus required-placement nested-core extension (sessions 04, 11, 19) |
 | M4 — A4 diffraction fingerprint | §4 A4 | ✅ done v0; 12-fold core calibration passed (session 05) |
 | E4 — full fingerprint calibration gate | §8 E4 | ✅ passed (sessions 05–06) |
 | M5 — A6 hierarchy mining | §4 A6 | ✅ done v0; recursive, stationary-collar and SAT forcing gate passed |
@@ -89,6 +89,13 @@
   exact period-47 stripe domain; it does not recur as an exact period across
   the independent patches. Symmetry votes vary at small size/resolution, so
   the robust signal is rank≥4, not universally sixfold symmetry (D-0025).
+- **A3 crown correction:** the preceding gap audit addressed coverage, not
+  continuability. All five complete r²=12,800 crowns are exact dead ends.
+  After measured collar rewrites, however, a literal nested chain preserves
+  growing cores r²=9,000 then r²=30,000 inside outer patches r²=50,000 and
+  r²=100,000 (18,386 tiles). Candidate status now rests on nested core growth,
+  with collar depth reported explicitly; independent disk covers alone no
+  longer count as growth evidence (ERR-002, D-0026).
 - **A4 diffraction fingerprint v0**
   (`src/einstein/funnel/a4_diffraction.py`): per-orientation Hann-windowed
   FFT powers on a shared grid, null-calibrated peak detection, sidelobe
@@ -191,9 +198,11 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
   wider key and likely external partitioning.
 - A1 torus budget k ≤ 12 proven sufficient for n ≤ 8 only (by Myers
   agreement); larger n may need larger tori — revalidate per horizon.
-- A3 single-shot SAT: demonstrated at 22,940 tiles in 551 s;
-  CNF building/solving scale roughly linearly but 10⁵-tile patches need an
-  incremental encoder (assumption-based ring growth) or compiled encoding.
+- A3 single-shot SAT: demonstrated at 22,940 tiles in 551 s, but an
+  independently covered disk is not continuation evidence. Required-placement
+  nested cores now provide the sound growth feature; optimizing retained-core
+  radius across many scales still needs an incremental encoder
+  (assumption-based collar growth) or compiled encoding.
 - A3 greedy engine (growth profile): useful to ~10² tiles on hard shapes.
 - Funnel v0 sees grid-aligned tilings only (D-0006) — sound positives,
   incomplete negatives; matches the external census scope.

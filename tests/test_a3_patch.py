@@ -103,6 +103,23 @@ def test_sat_phase_seed_still_produces_verified_patch():
     assert verify_patch_certificate(HEXAGON, res["certificate"])
 
 
+def test_sat_patch_can_be_required_inside_larger_disk():
+    inner = sat_grow_patch(HEXAGON, 30, fix_seed=False)
+    outer = sat_grow_patch(
+        HEXAGON,
+        50,
+        fix_seed=False,
+        required_placements=inner["certificate"]["placements"],
+    )
+    assert outer["completed"]
+    assert outer["stats"]["required_placements"] == inner["tiles"]
+    assert {
+        tuple(placement) for placement in inner["certificate"]["placements"]
+    } <= {
+        tuple(placement) for placement in outer["certificate"]["placements"]
+    }
+
+
 def test_certificate_tamper_rejected():
     res = sat_grow_patch(HEXAGON, 30)
     cert = res["certificate"]

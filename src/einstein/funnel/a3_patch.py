@@ -1,12 +1,17 @@
 """A3 -- large-patch construction (program section 4 A3, milestone M3).
 
-Anomalies that survive A2 (coronas keep growing) are grown into large
-patches here; A4 (diffraction) consumes the result.  The task is posed as
-exact cover: cover every kite cell of a disk-shaped region with congruent
-copies of the shape (copies may overhang the disk boundary).  Posing it as
-region cover makes hole-freeness automatic: an enclosed empty cell is
-itself an uncovered region cell, so it fails the cover instead of needing
-a separate flood-fill check.
+Anomalies that survive A2 (coronas keep growing) are tested on large patches
+here; A4 (diffraction) consumes the result.  The finite task is posed as exact
+cover: cover every kite cell of a disk-shaped region with congruent copies of
+the shape (copies may overhang the disk boundary).  Posing it as region cover
+makes hole-freeness automatic: an enclosed empty cell is itself an uncovered
+region cell, so it fails the cover instead of needing a separate flood-fill
+check.
+
+An independently solved larger disk is not evidence that a smaller patch can
+continue: its outer crown may be a dead end.  Continuation tests must pass the
+smaller patch's protected core through `required_placements` and measure how
+much boundary collar had to be discarded (D-0026).
 
 Two engines (D-0009):
 
@@ -26,10 +31,11 @@ Two engines (D-0009):
   (options-per-decision histogram; near-deterministic profiles signal
   forced, substitution-like structure) and as the no-dependency fallback.
 
-Verdict semantics: constructive only, except SAT-UNSAT.  "grown" carries
-a machine-verified certificate (placements as (op, tx, ty) acting on the
-shape); "stalled" carries the budget stamp and profile and never claims a
-larger patch is impossible.
+Verdict semantics: constructive only, except SAT-UNSAT.  "grown" carries a
+machine-verified finite disk-cover certificate (placements as (op, tx, ty)
+acting on the shape); it does not by itself claim crown continuability.
+"stalled" carries the budget stamp and profile and never claims a larger
+patch is impossible.
 
 Scope: grid-aligned placements only (D-0006).
 """
@@ -284,7 +290,8 @@ def enumerate_placements(shape, region) -> list:
 
 def sat_grow_patch(shape, r2: int, fix_seed: bool = True,
                    conflict_budget: int | None = None,
-                   phase_seed: int | None = None):
+                   phase_seed: int | None = None,
+                   required_placements=None):
     """Cover the disk of squared radius r2 with copies of `shape` via SAT
     (CaDiCaL).  fix_seed pins the identity-pose copy at the origin
     (symmetry breaking; speeds up SAT runs but weakens UNSAT to
@@ -294,6 +301,11 @@ def sat_grow_patch(shape, r2: int, fix_seed: bool = True,
       refuted      UNSAT; pose-free iff fix_seed was False
       exhausted    conflict budget hit before an answer
       stats        vars / clauses / region_cells / solve seconds
+
+    `required_placements` pins exact `(op, tx, ty)` copies from a smaller
+    certificate. This is the nested-extension test: unlike two independent
+    disk covers, a successful result proves that the frozen inner fragment is
+    literally contained in the larger patch.
     """
     from pysat.solvers import Cadical195
 
@@ -320,6 +332,20 @@ def sat_grow_patch(shape, r2: int, fix_seed: bool = True,
             i + 1 for i, pl in enumerate(placements) if pl[3] == seed_cells)
         solver.add_clause([seed_var])
         n_clauses += 1
+    if required_placements:
+        by_key = {
+            tuple(placement[:3]): variable
+            for variable, placement in enumerate(placements, 1)
+        }
+        for raw_key in required_placements:
+            key = tuple(raw_key)
+            variable = by_key.get(key)
+            if variable is None:
+                raise ValueError(
+                    f"required placement {key} is absent from outer region"
+                )
+            solver.add_clause([variable])
+            n_clauses += 1
 
     t0 = time.monotonic()
     if phase_seed is not None:
@@ -338,6 +364,7 @@ def sat_grow_patch(shape, r2: int, fix_seed: bool = True,
              "region_cells": len(region), "solve_seconds": round(dt, 2)}
     if phase_seed is not None:
         stats["phase_seed"] = phase_seed
+    stats["required_placements"] = len(required_placements or ())
 
     result = {"completed": False, "refuted": False, "exhausted": False,
               "certificate": None, "tiles": 0, "stats": stats}

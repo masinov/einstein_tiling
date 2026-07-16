@@ -513,3 +513,34 @@ when the satellite set reaches 60–400 peaks; the periodic control remains
 rank 2 throughout 20–400. The candidate therefore reproduces the calibrated
 quasicrystal control's rank-transition profile, while still requiring exact
 periodicity and hierarchy follow-up.
+
+## D-0026 (2026-07-17) — A3 promotion is based on nested cores, not disk covers
+
+The user's "crown gaps" observation concerned continuability, not uncovered
+cells. Re-testing with exact required-placement clauses confirms the issue:
+all five r²=12,800 finalist patches are UNSAT when frozen in full and enlarged
+even to r²=16,000. Their final crowns are dead ends. The earlier response that
+only checked zero missing cells inside the disk answered the wrong question.
+
+Progressively thawing the boundary finds extendable cores, but with substantial
+solution dependence. For enlargement to r²=16,000, two patches preserve cores
+through r²=9,000, one through 10,000, and two require retreat to r²=5,000.
+Thus roughly 36–73% of placements survive, with collars about 2–6 tile
+diameters deep.
+
+The candidate nevertheless has a machine-verified nested chain:
+
+1. 1,576 placements of a phase-seed-1 r²=12,800 patch, wholly inside the
+   r²=9,000 core, remain literal placements in an r²=50,000 patch;
+2. 5,317 placements of that r²=50,000 patch, wholly inside r²=30,000, remain
+   literal placements in an r²=100,000 patch of 18,386 tiles.
+
+Full crowns at both scales remain non-extendable. Consequently independent
+disk size and tile count are demoted to diagnostics. A3 promotion requires a
+growing sequence of frozen cores and reports retained-core radius, placement
+fraction and collar depth. Two nested steps are stronger evidence but still
+not an infinite-tiling proof.
+
+The genuinely nested r²=100,000 outer patch retains the A4 rank-4/sixfold
+signature at 18,386 anchors. Spectral prioritization therefore survives the
+nested-growth correction, although the collar instability lowers confidence.
