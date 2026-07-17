@@ -544,3 +544,197 @@ not an infinite-tiling proof.
 The genuinely nested r²=100,000 outer patch retains the A4 rank-4/sixfold
 signature at 18,386 anchors. Spectral prioritization therefore survives the
 nested-growth correction, although the collar instability lowers confidence.
+
+## D-0027 (2026-07-17) — Adopt theory program v0.2 and claim governance
+
+The theorem-producing track in
+`docs/program/theory_research_plan.md` v0.2 is adopted. It runs alongside the
+computational funnel through four coordinated workstreams: W1 exact transfer
+automata, W2 algebraic obstructions, W3 substitution certificates and W4 grid
+rigidity. Finite-patch, numerical and budget-limited results remain evidence
+for prioritization; none is promoted to a theorem without satisfying the
+explicit proof obligations.
+
+Within the grid-aligned scope, the periodic-completion theorem T0.1 collapses
+weak and strong aperiodicity: if any tiling has a nonzero translation period,
+the associated one-dimensional finite-type quotient has a periodic point and
+therefore yields a rank-2 periodic plane tiling. Accordingly O1, O2 and O4 are
+one obligation, while existence O3 and geometric scope O5 remain separate.
+T0.1 is initially recorded as a proof draft pending independent audit and a
+literature check.
+
+Claim status is governed by `docs/theory/PROOF_LEDGER.md`. Stable theorem and
+obligation IDs link the roadmap, proof text, implementations, tests,
+experiments and final exposition. Chronological notebooks and raw artifacts
+remain append-only evidence; they do not override the ledger.
+
+W1 starts with a pure-Python higher-block reference engine. It must cover every
+nonzero period vector, including nonprimitive vectors and their quotient
+torsion, reconstruct positive A1-compatible certificates, and attach a finite
+completeness/exhaustion witness to every negative result. Empty-frontier-only
+reachability is explicitly insufficient because it can miss a closed recurrent
+component. Budgeted cylinder SAT sweeps remain useful controls but cease to be
+the intended proof mechanism once W1 passes its validation anchors.
+
+The W3 hat gate extends G1 to theory claims: no new finalist substitution or
+forcing certificate is trusted before the same blind pipeline closes on the
+hat. The dossier organization and paper extraction map live in `docs/theory/`.
+
+## D-0028 (2026-07-17) — W1 negatives require complete independently verified graphs
+
+A W1 `cycle-free` claim is accepted only with a complete finite manifest:
+geometry-derived placement patterns, all crossing contributions, every state
+and transition, transition witnesses, and a topological ordering of all states.
+A graph hash alone is a reproducibility fingerprint, not a certificate.
+
+The verifier must recompile geometry and independently re-enumerate the state
+and transition relations without calling the producer's graph routines. It
+must reject missing states, missing edges, invalid topological orders and
+cyclic instances. This gate now passes on the Myers-validated two-kite
+non-tiler and four hat vectors.
+
+Under that standard, the finalist's 11 exact D6 orbit representatives cover
+all 90 nonzero center-lattice vectors with Q(v)=x²+xy+y²≤25, including
+nonprimitive vectors. Every complete graph is independently verified acyclic,
+with no resource exhaustion. We therefore accept the scoped theorem T1.2-25:
+no grid-aligned finalist tiling has a translation period in that norm ball.
+This does not close O1 outside the finite bound or O5 outside grid alignment.
+
+## D-0029 (2026-07-17) — W1 norm proofs use incremental shell archives
+
+Complete negative manifests grow much faster than their graph summaries. The
+four certificates for 25<Q≤36 occupy 51 MB even though graph production remains
+easy. Bounded-norm theorems will therefore be archived as independently
+verified shells, each listing its exact D6 orbit coverage and source hashes,
+rather than repeatedly embedding every lower-norm certificate.
+
+The new shell covers 36 vectors in four orbits with zero cycles/exhaustions.
+Together with T1.2-25 it establishes T1.2-36 for the grid-aligned finalist.
+
+## D-0030 (2026-07-17) — Retire isolated-character Layer B; proceed to integral SNF
+
+W2 Layer A is accepted after zero false exclusions on all 60,477 materialized
+periodic certificates. For the finalist its prime sector coloring reproduces
+the area class k≡0 mod 5 and adds no further kills.
+
+The roadmap's proposed nontrivial single-character infeasibility test is
+retired. The Fourier transform of the constant torus target vanishes at every
+nontrivial character, making each isolated projected system homogeneous and
+always solvable by zero amplitudes (T2.B0). Characters remain computational
+decomposition tools, but the next obstruction experiment is the full integer
+incidence module via Smith normal form, where cross-character integrality is
+retained.
+
+## D-0031 (2026-07-17) — Layer C starts with modular cokernels; full SNF stays separate
+
+No exact Smith-normal-form library is installed (SymPy, FLINT/python-flint,
+Sage and PARI interfaces are absent). Layer C therefore starts with compact
+finite-field cokernel witnesses rather than adding an unreviewed dependency.
+A positive witness wᵀM=0, wᵀ1≠0 mod p is exact quotient UNSAT; failure to find
+one is unknown and never reported as feasibility.
+
+The GF(2) slice passes zero-false-exclusion validation on all 60,477 compiled
+periodic certificates. For the finalist it kills 36 of 742 area-admissible HNFs
+through index 60. A uniform support formula proves, subject to proof review,
+that HNF (1,0,k) is impossible for every k≥4, giving the first W2 infinite
+quotient family. Full integer SNF remains a distinct unfinished milestone and
+requires either an audited local algorithm or an explicitly adopted exact
+dependency.
+
+## D-0032 (2026-07-17) — Adopt exact normal-form dependencies; HNF at scale
+
+The user authorized project-local dependency installation. We pin SymPy 1.14.0
+and python-flint 0.9.0 for W2 Layer C. SymPy and FLINT independently agree on
+Smith rank, top determinantal divisor and membership for rank, torsion-index
+and compatible controls. FLINT is the production backend.
+
+Full Smith diagonalization suffers severe coefficient swell on some larger
+finalist incidence matrices. The census therefore uses the mathematically
+equivalent canonical row-Hermite test: transpose the placement matrix and ask
+whether adjoining the all-ones row changes its canonical integer row lattice.
+Smith remains the reference derivation and control implementation. This is an
+exact backend choice, not a relaxation.
+
+Across all 742 area-admissible finalist HNFs through index 60, integral normal
+forms kill exactly the 36 quotients already killed modulo two and find no
+same-rank torsion-index obstruction. The other 706 admit unrestricted integer
+solutions, not 0/1 covers. W2 therefore moves to positivity/integrality-aware
+family certificates or nonabelian holonomy rather than extending the same bare
+integer-cokernel calculation.
+
+## D-0033 (2026-07-17) — Retire ordinary LP positivity via translation averaging
+
+Before adopting a numerical LP dependency, we proved that nonnegative rational
+incidence feasibility on a torus is exactly a six-dimensional sector-profile
+cone problem. Translation averaging makes a feasible cover constant on
+placement orbits, and conic Carathéodory bounds a witness by six profiles. The
+producer solves these systems over exact rationals; the verifier expands each
+compact result and checks every full incidence row with `Fraction` arithmetic.
+
+Across the 742 finalist HNFs through index 60, the cone test obstructs exactly
+the same 36 rank/GF(2) cases and gives verified fractional covers for all 706
+others. Ordinary nonnegative LP therefore contributes no additional finalist
+discrimination at this horizon. We will not add SciPy/HiGHS for this layer.
+Further W2 work must retain binary exact-cover combinatorics or use nonabelian
+holonomy; a fractional cover is never reported as a tiling.
+
+## D-0034 (2026-07-17) — Binary family certificates compose W1 with HNF membership
+
+The first binary family layer reuses W1's complete cycle-free transfer
+certificates instead of inventing a second SAT proof format. If an HNF lattice
+contains a certified-impossible vector, any quotient exact cover would lift to
+a tiling having that vector as a period. Exact membership is the two-congruence
+test `d|y` and `a|(x-(y/d)b)`.
+
+The 126 vectors through Q=36 therefore define 126 infinite quotient families.
+They cover every HNF through index 36 and 2,941 of the 8,864 area-admissible
+HNFs through index 215. Separately, exact D6 lattice maps extend T2.C1 from
+`(1,0,k)` to all three thin families for every k≥4. Missing certificates retain
+unknown polarity.
+
+## D-0035 (2026-07-17) — Layer D requires binary boundary-network coupling
+
+We audited Conway--Lagarias (1990) directly and reproduced their p3 Cayley
+winding proof control with exact Eisenstein-affine arithmetic. This primary
+anchor is mandatory before finalist use.
+
+The finalist boundary presentation has 2,556 surjections to S3, so nonabelian
+targets exist. Nevertheless exhaustive displacement-kernel analysis finds zero
+commutator obstruction: most maps lose all zero-displacement information and
+the rest retain only A3 parity, for which every pair of cosets has commuting
+representatives. A canonical displacement word may also cross tile interiors,
+so treating it as a boundary holonomy would be unsound.
+
+Layer D will therefore use the connected boundary skeleton of the selected
+binary exact cover. Its certificate/CSP must jointly encode placement choices,
+active tile-boundary edges, finite-group potentials and commuting twisted torus
+conditions. The uncoupled displacement-commutator shortcut is retired, and no
+Layer-D finalist exclusion is currently claimed.
+
+## D-0036 (2026-07-17) — Accept coupled S3 cores; index 40 is closed
+
+Layer D now uses an at-least-cover relaxation coupled to finite-group boundary
+potentials. Overlap is permitted deliberately: every genuine exact cover is a
+model of the placement clauses, so UNSAT for all commuting twists is a sound
+torus exclusion while SAT remains unknown. One-kite tori and the independent
+three-tile shape-392 torus pass in both relaxed and exact modes.
+
+The finalist's 234 order-3-kernel S3 surjections reduce to 39 classes under
+simultaneous inner conjugacy. The first fixed map adds no exclusions among the
+96 W1-family survivors at admissible indices 40--60, but exhaustive class
+search at index 40 finds six killing classes for each of its three survivors:
+`(10,3,4)`, `(40,11,1)`, and `(40,28,1)`. Their placement-only relaxations are
+SAT. Thus the separation is genuinely nonabelian rather than ordinary cover
+UNSAT.
+
+Solver UNSAT is accepted only after proof replay. PySAT's CaDiCaL-1.9.5 proof
+stream failed `drat-trim` because it omitted a checkable terminal conflict, so
+it is retained only as the search solver. Glucose 4 produced the certificate
+traces. For one killing map per HNF, all 18 twists (54 instances) have stored
+compressed core CNFs and DRAT proofs independently verified by `drat-trim`;
+the standalone verifier regenerates the canonical CNF and checks each core is
+a clause subset before proof replay.
+
+Together with area and T2.C4-36 this proves the finite grid-aligned quotient
+prefix through index 40. It does not prove O1 or aperiodicity: larger period
+lattices remain open.

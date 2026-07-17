@@ -1,0 +1,321 @@
+{
+ "kind": "exact-period-47-cylinder-escalation",
+ "candidate": {
+  "n": 10,
+  "index": 2,
+  "shape": "010001010104010502f002f1030b030c04fa04fb"
+ },
+ "translation": [
+  0,
+  47
+ ],
+ "width_range": [
+  30,
+  150
+ ],
+ "conflict_budget_per_width": 100000,
+ "wall_seconds": 120.43,
+ "results": [
+  {
+   "a": 30,
+   "hnf": [
+    30,
+    0,
+    47
+   ],
+   "index": 1410,
+   "status": "unknown",
+   "wall_seconds": 29.726,
+   "certificate": null
+  },
+  {
+   "a": 35,
+   "hnf": [
+    35,
+    0,
+    47
+   ],
+   "index": 1645,
+   "status": "unknown",
+   "wall_seconds": 33.286,
+   "certificate": null
+  },
+  {
+   "a": 40,
+   "hnf": [
+    40,
+    0,
+    47
+   ],
+   "index": 1880,
+   "status": "unknown",
+   "wall_seconds": 38.848,
+   "certificate": null
+  },
+  {
+   "a": 45,
+   "hnf": [
+    45,
+    0,
+    47
+   ],
+   "index": 2115,
+   "status": "unknown",
+   "wall_seconds": 39.756,
+   "certificate": null
+  },
+  {
+   "a": 50,
+   "hnf": [
+    50,
+    0,
+    47
+   ],
+   "index": 2350,
+   "status": "unknown",
+   "wall_seconds": 42.005,
+   "certificate": null
+  },
+  {
+   "a": 55,
+   "hnf": [
+    55,
+    0,
+    47
+   ],
+   "index": 2585,
+   "status": "unknown",
+   "wall_seconds": 44.628,
+   "certificate": null
+  },
+  {
+   "a": 60,
+   "hnf": [
+    60,
+    0,
+    47
+   ],
+   "index": 2820,
+   "status": "unknown",
+   "wall_seconds": 49.369,
+   "certificate": null
+  },
+  {
+   "a": 65,
+   "hnf": [
+    65,
+    0,
+    47
+   ],
+   "index": 3055,
+   "status": "unknown",
+   "wall_seconds": 55.042,
+   "certificate": null
+  },
+  {
+   "a": 70,
+   "hnf": [
+    70,
+    0,
+    47
+   ],
+   "index": 3290,
+   "status": "unknown",
+   "wall_seconds": 53.897,
+   "certificate": null
+  },
+  {
+   "a": 75,
+   "hnf": [
+    75,
+    0,
+    47
+   ],
+   "index": 3525,
+   "status": "unknown",
+   "wall_seconds": 58.848,
+   "certificate": null
+  },
+  {
+   "a": 80,
+   "hnf": [
+    80,
+    0,
+    47
+   ],
+   "index": 3760,
+   "status": "unknown",
+   "wall_seconds": 62.06,
+   "certificate": null
+  },
+  {
+   "a": 85,
+   "hnf": [
+    85,
+    0,
+    47
+   ],
+   "index": 3995,
+   "status": "unknown",
+   "wall_seconds": 62.595,
+   "certificate": null
+  },
+  {
+   "a": 90,
+   "hnf": [
+    90,
+    0,
+    47
+   ],
+   "index": 4230,
+   "status": "unknown",
+   "wall_seconds": 67.861,
+   "certificate": null
+  },
+  {
+   "a": 95,
+   "hnf": [
+    95,
+    0,
+    47
+   ],
+   "index": 4465,
+   "status": "unknown",
+   "wall_seconds": 68.321,
+   "certificate": null
+  },
+  {
+   "a": 100,
+   "hnf": [
+    100,
+    0,
+    47
+   ],
+   "index": 4700,
+   "status": "unknown",
+   "wall_seconds": 70.664,
+   "certificate": null
+  },
+  {
+   "a": 105,
+   "hnf": [
+    105,
+    0,
+    47
+   ],
+   "index": 4935,
+   "status": "unknown",
+   "wall_seconds": 75.004,
+   "certificate": null
+  },
+  {
+   "a": 110,
+   "hnf": [
+    110,
+    0,
+    47
+   ],
+   "index": 5170,
+   "status": "unknown",
+   "wall_seconds": 64.615,
+   "certificate": null
+  },
+  {
+   "a": 115,
+   "hnf": [
+    115,
+    0,
+    47
+   ],
+   "index": 5405,
+   "status": "unknown",
+   "wall_seconds": 65.453,
+   "certificate": null
+  },
+  {
+   "a": 120,
+   "hnf": [
+    120,
+    0,
+    47
+   ],
+   "index": 5640,
+   "status": "unknown",
+   "wall_seconds": 71.442,
+   "certificate": null
+  },
+  {
+   "a": 125,
+   "hnf": [
+    125,
+    0,
+    47
+   ],
+   "index": 5875,
+   "status": "unknown",
+   "wall_seconds": 65.557,
+   "certificate": null
+  },
+  {
+   "a": 130,
+   "hnf": [
+    130,
+    0,
+    47
+   ],
+   "index": 6110,
+   "status": "unknown",
+   "wall_seconds": 66.371,
+   "certificate": null
+  },
+  {
+   "a": 135,
+   "hnf": [
+    135,
+    0,
+    47
+   ],
+   "index": 6345,
+   "status": "unknown",
+   "wall_seconds": 72.382,
+   "certificate": null
+  },
+  {
+   "a": 140,
+   "hnf": [
+    140,
+    0,
+    47
+   ],
+   "index": 6580,
+   "status": "unknown",
+   "wall_seconds": 65.518,
+   "certificate": null
+  },
+  {
+   "a": 145,
+   "hnf": [
+    145,
+    0,
+    47
+   ],
+   "index": 6815,
+   "status": "unknown",
+   "wall_seconds": 66.316,
+   "certificate": null
+  },
+  {
+   "a": 150,
+   "hnf": [
+    150,
+    0,
+    47
+   ],
+   "index": 7050,
+   "status": "unknown",
+   "wall_seconds": 65.285,
+   "certificate": null
+  }
+ ],
+ "periodic_certificate": null
+}

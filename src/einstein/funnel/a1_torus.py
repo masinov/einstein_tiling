@@ -219,13 +219,20 @@ def find_periodic_tiling_sat(
     return None, exhausted
 
 
-def solve_torus_sat(shape, hnf, conflict_budget: int | None = None):
+def solve_torus_sat(
+    shape,
+    hnf,
+    conflict_budget: int | None = None,
+    preferred_placements=None,
+):
     """Solve one exact torus quotient with CaDiCaL.
 
     Returns ``(certificate, exhausted)``. A ``None, False`` result is an exact
     UNSAT proof for this quotient; ``None, True`` means the conflict budget
     was reached.
     """
+    from pysat.card import CardEnc, EncType
+    from pysat.formula import IDPool
     from pysat.solvers import Cadical195
 
     instance = TorusInstance(tuple(shape), hnf)
@@ -238,11 +245,25 @@ def solve_torus_sat(shape, hnf, conflict_budget: int | None = None):
             remaining ^= bit
 
     solver = Cadical195()
+    pool = IDPool(start_from=len(instance.placements) + 1)
     for variables in covering:
         solver.add_clause(variables)
-        for a in range(len(variables)):
-            for b in range(a + 1, len(variables)):
-                solver.add_clause([-variables[a], -variables[b]])
+        solver.append_formula(CardEnc.atmost(
+            variables,
+            1,
+            vpool=pool,
+            encoding=EncType.seqcounter,
+        ).clauses)
+    if preferred_placements:
+        by_placement = {
+            placement: variable
+            for variable, (placement, _) in enumerate(instance.placements, 1)
+        }
+        solver.set_phases([
+            variable
+            for placement in preferred_placements
+            if (variable := by_placement.get(tuple(placement))) is not None
+        ])
     if conflict_budget is None:
         sat = solver.solve()
     else:

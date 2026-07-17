@@ -1,0 +1,491 @@
+{
+ "kind": "interrupted-campaign-recovery",
+ "date": "2026-07-17",
+ "candidate": {
+  "n": 10,
+  "index": 2,
+  "shape": "010001010104010502f002f1030b030c04fa04fb"
+ },
+ "provenance": {
+  "cause": "host power loss terminated all screen sessions",
+  "policy": "Only explicit completed/refuted log lines are counted. Started or planned jobs without such a line remain unknown.",
+  "sources": {
+   "generic_tori": {
+    "path": "logs/overnight-2026-07-17/generic_tori.log",
+    "sha256": "4bb38cd475206f6a987dca7df135e315eb5fcc38cadcd437ac2087faa64f3215"
+   },
+   "period47": {
+    "path": "logs/overnight-2026-07-17/period47.log",
+    "sha256": "511c9712cd3529ae42dada9ad0c4ad697eda2f5f49ac38dd1a5823055999457a"
+   },
+   "return_lattices": {
+    "path": "logs/overnight-2026-07-17/return_lattices.log",
+    "sha256": "84cc62cbcf46af0b7bed84fb1d56e29c63261a0c3008c3bb60840e4ddf898320"
+   },
+   "hierarchy": {
+    "path": "logs/overnight-2026-07-17/hierarchy.log",
+    "sha256": "dd218c83ed552388fd4a971da2b4898c656ef6631a2e4747af140f3f82f24132"
+   },
+   "hierarchy_artifact": {
+    "path": "docs/notebook/assets/e1-finalist-hierarchy-screen.json",
+    "sha256": "be0f112ae2f19b8a6713c93b5be54b4db4065adc87a2a96ee8515fa93fb107b9"
+   }
+  }
+ },
+ "periodicity": {
+  "generic_indices": [
+   {
+    "index": 235,
+    "hnf_quotients": 288,
+    "elapsed_seconds": 3611.6,
+    "verdict": "refuted"
+   },
+   {
+    "index": 225,
+    "hnf_quotients": 403,
+    "elapsed_seconds": 4908.8,
+    "verdict": "refuted"
+   },
+   {
+    "index": 230,
+    "hnf_quotients": 432,
+    "elapsed_seconds": 5178.9,
+    "verdict": "refuted"
+   },
+   {
+    "index": 245,
+    "hnf_quotients": 342,
+    "elapsed_seconds": 5354.6,
+    "verdict": "refuted"
+   },
+   {
+    "index": 220,
+    "hnf_quotients": 504,
+    "elapsed_seconds": 7219.3,
+    "verdict": "refuted"
+   },
+   {
+    "index": 250,
+    "hnf_quotients": 468,
+    "elapsed_seconds": 6609.4,
+    "verdict": "refuted"
+   },
+   {
+    "index": 240,
+    "hnf_quotients": 744,
+    "elapsed_seconds": 10371.8,
+    "verdict": "refuted"
+   },
+   {
+    "index": 265,
+    "hnf_quotients": 324,
+    "elapsed_seconds": 5117.9,
+    "verdict": "refuted"
+   },
+   {
+    "index": 255,
+    "hnf_quotients": 432,
+    "elapsed_seconds": 6954.2,
+    "verdict": "refuted"
+   },
+   {
+    "index": 260,
+    "hnf_quotients": 588,
+    "elapsed_seconds": 9145.0,
+    "verdict": "refuted"
+   },
+   {
+    "index": 270,
+    "hnf_quotients": 720,
+    "elapsed_seconds": 13169.1,
+    "verdict": "refuted"
+   },
+   {
+    "index": 285,
+    "hnf_quotients": 480,
+    "elapsed_seconds": 9917.2,
+    "verdict": "refuted"
+   },
+   {
+    "index": 275,
+    "hnf_quotients": 372,
+    "elapsed_seconds": 10603.5,
+    "verdict": "refuted"
+   },
+   {
+    "index": 295,
+    "hnf_quotients": 360,
+    "elapsed_seconds": 6960.2,
+    "verdict": "refuted"
+   },
+   {
+    "index": 290,
+    "hnf_quotients": 540,
+    "elapsed_seconds": 10355.9,
+    "verdict": "refuted"
+   },
+   {
+    "index": 280,
+    "hnf_quotients": 720,
+    "elapsed_seconds": 15127.6,
+    "verdict": "refuted"
+   },
+   {
+    "index": 305,
+    "hnf_quotients": 372,
+    "elapsed_seconds": 7833.6,
+    "verdict": "refuted"
+   },
+   {
+    "index": 310,
+    "hnf_quotients": 576,
+    "elapsed_seconds": 12490.3,
+    "verdict": "refuted"
+   },
+   {
+    "index": 325,
+    "hnf_quotients": 434,
+    "elapsed_seconds": 10131.4,
+    "verdict": "refuted"
+   }
+  ],
+  "generic_indices_completed": 19,
+  "generic_hnf_quotients_refuted": 9099,
+  "period47_targeted_quotients": [
+   {
+    "transverse_width": 30,
+    "index": 1410,
+    "elapsed_seconds": 460.58,
+    "verdict": "refuted"
+   },
+   {
+    "transverse_width": 45,
+    "index": 2115,
+    "elapsed_seconds": 1571.62,
+    "verdict": "refuted"
+   },
+   {
+    "transverse_width": 35,
+    "index": 1645,
+    "elapsed_seconds": 1947.51,
+    "verdict": "refuted"
+   },
+   {
+    "transverse_width": 55,
+    "index": 2585,
+    "elapsed_seconds": 3685.25,
+    "verdict": "refuted"
+   },
+   {
+    "transverse_width": 40,
+    "index": 1880,
+    "elapsed_seconds": 4887.11,
+    "verdict": "refuted"
+   },
+   {
+    "transverse_width": 60,
+    "index": 2820,
+    "elapsed_seconds": 5001.55,
+    "verdict": "refuted"
+   },
+   {
+    "transverse_width": 50,
+    "index": 2350,
+    "elapsed_seconds": 6498.89,
+    "verdict": "refuted"
+   },
+   {
+    "transverse_width": 70,
+    "index": 3290,
+    "elapsed_seconds": 8769.45,
+    "verdict": "refuted"
+   },
+   {
+    "transverse_width": 75,
+    "index": 3525,
+    "elapsed_seconds": 15422.96,
+    "verdict": "refuted"
+   },
+   {
+    "transverse_width": 80,
+    "index": 3760,
+    "elapsed_seconds": 26963.34,
+    "verdict": "refuted"
+   },
+   {
+    "transverse_width": 85,
+    "index": 3995,
+    "elapsed_seconds": 29584.79,
+    "verdict": "refuted"
+   }
+  ],
+  "return_scale_targeted_quotients": [
+   {
+    "hnf": [
+     715,
+     259,
+     1
+    ],
+    "index": 715,
+    "elapsed_seconds": 142.6,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     18,
+     7,
+     65
+    ],
+    "index": 1170,
+    "elapsed_seconds": 1553.3,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     720,
+     520,
+     1
+    ],
+    "index": 720,
+    "elapsed_seconds": 1631.1,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     1170,
+     845,
+     1
+    ],
+    "index": 1170,
+    "elapsed_seconds": 1654.9,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     1165,
+     321,
+     1
+    ],
+    "index": 1165,
+    "elapsed_seconds": 1665.7,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     65,
+     18,
+     18
+    ],
+    "index": 1170,
+    "elapsed_seconds": 1735.1,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     1170,
+     324,
+     1
+    ],
+    "index": 1170,
+    "elapsed_seconds": 1759.4,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     715,
+     196,
+     1
+    ],
+    "index": 715,
+    "elapsed_seconds": 215.3,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     40,
+     11,
+     18
+    ],
+    "index": 720,
+    "elapsed_seconds": 1719.6,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     1880,
+     1360,
+     1
+    ],
+    "index": 1880,
+    "elapsed_seconds": 3942.2,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     720,
+     521,
+     1
+    ],
+    "index": 720,
+    "elapsed_seconds": 1725.7,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     1880,
+     680,
+     1
+    ],
+    "index": 1880,
+    "elapsed_seconds": 3947.0,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     18,
+     0,
+     65
+    ],
+    "index": 1170,
+    "elapsed_seconds": 1559.3,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     715,
+     649,
+     1
+    ],
+    "index": 715,
+    "elapsed_seconds": 132.2,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     720,
+     198,
+     1
+    ],
+    "index": 720,
+    "elapsed_seconds": 1624.7,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     47,
+     36,
+     40
+    ],
+    "index": 1880,
+    "elapsed_seconds": 4054.0,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     715,
+     616,
+     1
+    ],
+    "index": 715,
+    "elapsed_seconds": 909.7,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     1170,
+     161,
+     1
+    ],
+    "index": 1170,
+    "elapsed_seconds": 1706.3,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     1885,
+     521,
+     1
+    ],
+    "index": 1885,
+    "elapsed_seconds": 21094.9,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     3055,
+     846,
+     1
+    ],
+    "index": 3055,
+    "elapsed_seconds": 22319.3,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     18,
+     7,
+     40
+    ],
+    "index": 720,
+    "elapsed_seconds": 1514.1,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     25,
+     14,
+     29
+    ],
+    "index": 725,
+    "elapsed_seconds": 1012.2,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     29,
+     11,
+     65
+    ],
+    "index": 1885,
+    "elapsed_seconds": 25439.1,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     1885,
+     1364,
+     1
+    ],
+    "index": 1885,
+    "elapsed_seconds": 25086.6,
+    "verdict": "refuted"
+   },
+   {
+    "hnf": [
+     40,
+     0,
+     29
+    ],
+    "index": 1160,
+    "elapsed_seconds": 4319.1,
+    "verdict": "refuted"
+   }
+  ],
+  "targeted_quotients_refuted": 36,
+  "completed_quotient_instances_refuted": 9135,
+  "periodic_certificates_found": 0,
+  "campaign_complete": false,
+  "claim": "All explicitly completed quotient instances are exact UNSAT; this finite evidence neither proves aperiodicity nor classifies unreturned jobs."
+ },
+ "hierarchy": {
+  "campaign_complete": true,
+  "rules_screened": 22094,
+  "coverage_rejects": 22066,
+  "sat_rejects": 26,
+  "first_composition_rules_accepted": 2,
+  "accepted_rules_all_unique": false,
+  "general_physical_library_closed": false,
+  "recursive_probe": null,
+  "claim": "finite hierarchy evidence only; no stationary substitution closure or all-collars recognizability theorem"
+ }
+}

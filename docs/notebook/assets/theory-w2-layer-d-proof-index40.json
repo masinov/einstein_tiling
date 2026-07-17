@@ -1,0 +1,3355 @@
+{
+ "kind": "theory-w2-layer-d-index40-independent-drat-certificates",
+ "schema_version": 1,
+ "date": "2026-07-17",
+ "scope": {
+  "hnfs": [
+   [
+    10,
+    3,
+    4
+   ],
+   [
+    40,
+    11,
+    1
+   ],
+   [
+    40,
+    28,
+    1
+   ]
+  ],
+  "selected_mapping_rule": "lowest killing conjugacy-class index per HNF",
+  "twists_per_hnf": 18,
+  "certificate_logic": "each stored core CNF is a multiplicity-respecting subset of the canonical generated CNF; drat-trim independently verifies the stored DRAT core; all 18 commuting twists are covered"
+ },
+ "provenance": {
+  "code_version": "ae44fa3-dirty",
+  "phase2": {
+   "path": "docs/notebook/assets/theory-w2-layer-d-s3-classes.json",
+   "sha256": "b088fe9ec4b9b36a80ef2afabc9cb29dbe0b90d7bcca5d7d60146ef63dc2b302"
+  },
+  "producer": "Glucose 4 via python-sat",
+  "checker": {
+   "name": "drat-trim",
+   "git_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+   "source": "https://github.com/marijnheule/drat-trim"
+  },
+  "sources": [
+   {
+    "path": "src/einstein/theory/holonomy.py",
+    "sha256": "e7219bd5f6e959f13de3f38a1a94f226fcf9567d66927bade803bc196ad1da46"
+   },
+   {
+    "path": "src/einstein/theory/holonomy_csp.py",
+    "sha256": "f51c3002c37e4983e0232e152a4c492a0157a80645835463d740d5616b427386"
+   },
+   {
+    "path": "scripts/run_theory_w2_layer_d_proofs.py",
+    "sha256": "87fb35fa63617ddb9609226e6eaa185e667b2d7a8314e267479b4aae89e4d0cc"
+   }
+  ]
+ },
+ "summary": {
+  "certificates": 54,
+  "independently_verified": 54,
+  "compressed_certificate_bytes": 91143478
+ },
+ "results": [
+  {
+   "hnf": [
+    10,
+    3,
+    4
+   ],
+   "mapping_index": 21,
+   "twist_index": 0,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "358b99d55eb239cff15de8ddd5914b153c561f717c152d13860ae857a413ccb0",
+   "canonical_cnf_clause_hash": "867fa73edc6a17d51e312425cc9a3625cf8cc494dcf6fc9dfb8dedadefccbe37",
+   "canonical_metadata": {
+    "hnf": [
+     10,
+     3,
+     4
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40509,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1194,
+    "conflicts": 306473,
+    "decisions": 1102709,
+    "propagations": 24743840
+   },
+   "raw_proof_bytes": 69183577,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-00.cnf.gz",
+    "cnf_gz_sha256": "4169ec8b66cf9fcb6921a77dc6458f1c4a039b6dd91964d5315481465b027cbd",
+    "cnf_uncompressed_sha256": "b52258baaf5bf1471f51016ab915b20a424e6373ff25e8453a94e4466e091786",
+    "cnf_gz_bytes": 191112,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-00.drat.gz",
+    "drat_gz_sha256": "27df3b54f52deb1d2a1ac18c6292c07707e9a07c55abc94c46263ed8c359b6b4",
+    "drat_uncompressed_sha256": "0d8c48cc84783eefabbbfae477aad421b0775cfd703d380f122a0ddf8653476f",
+    "drat_gz_bytes": 2961514
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 45.85999146700124
+  },
+  {
+   "hnf": [
+    10,
+    3,
+    4
+   ],
+   "mapping_index": 21,
+   "twist_index": 1,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     2,
+     1
+    ]
+   ],
+   "canonical_cnf_sha256": "6a5720df54afb191277dc55569b1eaeebca74c374c8dd7885be9be88b04de3f9",
+   "canonical_cnf_clause_hash": "7fdc306625f97d07f0269a9d9dc06102d2029dd132eeeee4ad750057d9a4b02a",
+   "canonical_metadata": {
+    "hnf": [
+     10,
+     3,
+     4
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 8945,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 67,
+    "conflicts": 19894,
+    "decisions": 75624,
+    "propagations": 949197
+   },
+   "raw_proof_bytes": 2454186,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-01.cnf.gz",
+    "cnf_gz_sha256": "0aaeaa3bb7f8ef9ec78931e7a1f74176d6775539523fef362d85f182af2b5b32",
+    "cnf_uncompressed_sha256": "d9c7cb02e18771e91d4094a2364a2b5c2c170bc1fd1012bde4c49084fa2e9bf6",
+    "cnf_gz_bytes": 39890,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-01.drat.gz",
+    "drat_gz_sha256": "b6445f68b6254d12148de96201524643e93189f374c43f956cf666d36cdb0e40",
+    "drat_uncompressed_sha256": "3749b960d415982c67a229fb6c63cb0f5d8ed02b871d8b15d255cd6e08fbc162",
+    "drat_gz_bytes": 169047
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 1.3526262500017765
+  },
+  {
+   "hnf": [
+    10,
+    3,
+    4
+   ],
+   "mapping_index": 21,
+   "twist_index": 2,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     1,
+     0,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "aae0982f61ae9c48b585548987e7142675e544c1f0d4c651276b37c38dc476be",
+   "canonical_cnf_clause_hash": "afb77d83eb518844647125936050a90c87b041ac76ff603f65cb8a511a5079f5",
+   "canonical_metadata": {
+    "hnf": [
+     10,
+     3,
+     4
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 7508,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 82,
+    "conflicts": 17824,
+    "decisions": 72432,
+    "propagations": 883451
+   },
+   "raw_proof_bytes": 2244800,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-02.cnf.gz",
+    "cnf_gz_sha256": "90c4cee73702da70d84e36a2c67c3d43cc7f8379f30d34f1f0eaf610a9828ec9",
+    "cnf_uncompressed_sha256": "5825137dcb8a70db2424a6a49696a4a90c1046cc6ab699ec3b3fd186ca89bce0",
+    "cnf_gz_bytes": 33313,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-02.drat.gz",
+    "drat_gz_sha256": "8491007345961d8f724a4cf4085ffa8942e5f77bf94dcd499a6c55243f63189d",
+    "drat_uncompressed_sha256": "192857a3b332437135a06fc59710901747f4d77b90fc3f20fe31aae3fb2209c9",
+    "drat_gz_bytes": 122650
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 1.2636165680014528
+  },
+  {
+   "hnf": [
+    10,
+    3,
+    4
+   ],
+   "mapping_index": 21,
+   "twist_index": 3,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     1,
+     2,
+     0
+    ]
+   ],
+   "canonical_cnf_sha256": "40aef50f899dfeb1d633a0e7ac1cc81e896f4fbd18dd2168b5c42a60a5f0bf74",
+   "canonical_cnf_clause_hash": "5dd4a76c4763c9eda412c0c4ba9e9d9b3553f1e4c560dcbb30a2c4c97c5c542b",
+   "canonical_metadata": {
+    "hnf": [
+     10,
+     3,
+     4
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40379,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 779,
+    "conflicts": 224590,
+    "decisions": 809445,
+    "propagations": 19582166
+   },
+   "raw_proof_bytes": 49045522,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-03.cnf.gz",
+    "cnf_gz_sha256": "c4248acd2a4e17adcdcf74e56fca94798b65bc3173c57e19656fb1b5302e7a44",
+    "cnf_uncompressed_sha256": "1720e53f8cf1a38f94b2c71acadf241de6159ae4acc22cc983099b784cdc39ab",
+    "cnf_gz_bytes": 191525,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-03.drat.gz",
+    "drat_gz_sha256": "fd0d98b10fa7a21504a93921990099bcb57ef7d973e9aaf00a19708fe648a23b",
+    "drat_uncompressed_sha256": "0827f82269527cac6cba5f4b8114d763b52f74e9a99ee4abace3208212a85cc2",
+    "drat_gz_bytes": 2750699
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 39.942929630000435
+  },
+  {
+   "hnf": [
+    10,
+    3,
+    4
+   ],
+   "mapping_index": 21,
+   "twist_index": 4,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     2,
+     0,
+     1
+    ]
+   ],
+   "canonical_cnf_sha256": "7fccda146a83c23f2c26a55281cf99ad7b622855cc9c96b27428876753fcb1bc",
+   "canonical_cnf_clause_hash": "29f61df4cc6bf26a355f4818be121456107a49b37f2f30466e6f94a035179fda",
+   "canonical_metadata": {
+    "hnf": [
+     10,
+     3,
+     4
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40646,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 923,
+    "conflicts": 263594,
+    "decisions": 922096,
+    "propagations": 22760767
+   },
+   "raw_proof_bytes": 59660145,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-04.cnf.gz",
+    "cnf_gz_sha256": "336fb3660b702aff085032ab4880e60f39f2ce8c3a4a76582181f362e6abf09e",
+    "cnf_uncompressed_sha256": "7a47a3b4d99df07a4df6bc5e95476c53e4f09b41c97f9db956854305c22f64f5",
+    "cnf_gz_bytes": 191968,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-04.drat.gz",
+    "drat_gz_sha256": "e195d1a0d1fb562c3bf94809cfa083414605c9e25ee0d79a2d4ff3adf14e78fd",
+    "drat_uncompressed_sha256": "379eebf24bbb4fc6e5a151ecceb027279ad3f35ce6ec5b3417bcd55e4398cc5f",
+    "drat_gz_bytes": 3065926
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 45.03863291199741
+  },
+  {
+   "hnf": [
+    10,
+    3,
+    4
+   ],
+   "mapping_index": 21,
+   "twist_index": 5,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     2,
+     1,
+     0
+    ]
+   ],
+   "canonical_cnf_sha256": "28fac8dc3a054d2b90bf8b437d2ea9891e97b79c93e98b0cc23e5ca18b297f15",
+   "canonical_cnf_clause_hash": "c2ee2d059668ef8b91253c0e09a34ecb9c2d8b84905bf64813ac5a584100c803",
+   "canonical_metadata": {
+    "hnf": [
+     10,
+     3,
+     4
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 7701,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 111,
+    "conflicts": 22187,
+    "decisions": 94035,
+    "propagations": 1124438
+   },
+   "raw_proof_bytes": 2717381,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-05.cnf.gz",
+    "cnf_gz_sha256": "e24d08cbc32a04250d932dc8fc1e672cffbcebfad4c089d973f16a95acf1f869",
+    "cnf_uncompressed_sha256": "c88952d21801f166d53edcd94e3e31b0151c4c70e0e823bf7f30b77d52be0e19",
+    "cnf_gz_bytes": 34107,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-05.drat.gz",
+    "drat_gz_sha256": "7055dc3794b7b3d5d73e8070cf8f7052f99a0108ce09a37331c6c8703a25ce4f",
+    "drat_uncompressed_sha256": "1dd7ece1f7130313b5ad9dbc695ce4b22fa08ed7688e75f853194f2f16008da1",
+    "drat_gz_bytes": 141666
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 1.1396838159998879
+  },
+  {
+   "hnf": [
+    10,
+    3,
+    4
+   ],
+   "mapping_index": 21,
+   "twist_index": 6,
+   "twists": [
+    [
+     0,
+     2,
+     1
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "b9b7a92aee4fb7a4303bc78233b2cf8b404712eaa1098b3a285aea88026f0abd",
+   "canonical_cnf_clause_hash": "5285680febb0899ebbbc29e350bdb6c0a0c823409bb233314ece884d14383426",
+   "canonical_metadata": {
+    "hnf": [
+     10,
+     3,
+     4
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 7620,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 114,
+    "conflicts": 22262,
+    "decisions": 91593,
+    "propagations": 1082144
+   },
+   "raw_proof_bytes": 2587822,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-06.cnf.gz",
+    "cnf_gz_sha256": "93621b94dbb5263de6d6389c75ad5edc65a0f1958e1622f0316df324d7a3aaf2",
+    "cnf_uncompressed_sha256": "d59403d7629b0a78e2341d91e8c38c3487d987df73bc840b6a58435ad2839ca0",
+    "cnf_gz_bytes": 33707,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-06.drat.gz",
+    "drat_gz_sha256": "0879f3f7a51cf7987132b5a5b124f7d5f385f25529c8fbebafd1fb75645a155e",
+    "drat_uncompressed_sha256": "daba0064199a1b25e4e411c05b3ca4422d5a40b9a3007b8d60f702d7c609f286",
+    "drat_gz_bytes": 157142
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 1.1276499410014367
+  },
+  {
+   "hnf": [
+    10,
+    3,
+    4
+   ],
+   "mapping_index": 21,
+   "twist_index": 7,
+   "twists": [
+    [
+     0,
+     2,
+     1
+    ],
+    [
+     0,
+     2,
+     1
+    ]
+   ],
+   "canonical_cnf_sha256": "fff4581a0553fb46e35ae30033d0bbad36d3fef5b1070efde7faae53c70778be",
+   "canonical_cnf_clause_hash": "fa43a0ac8da42b213da6f8aaa6023e2c942dd1a6af822b6bcc19051ae1bc362e",
+   "canonical_metadata": {
+    "hnf": [
+     10,
+     3,
+     4
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 9725,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 184,
+    "conflicts": 36425,
+    "decisions": 140104,
+    "propagations": 1671257
+   },
+   "raw_proof_bytes": 6132662,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-07.cnf.gz",
+    "cnf_gz_sha256": "69337c980ac0eed02b06bac4c441e25f9a1190f65b4b4b9757146922196aadb4",
+    "cnf_uncompressed_sha256": "58c71c4c64c901247386159694427c223a16bd4e0fa5ae86ed8b66e0b0098ab7",
+    "cnf_gz_bytes": 43407,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-07.drat.gz",
+    "drat_gz_sha256": "f976bc4337f3dd72fc319daa450887acfac602dd423aa0112f55f82f01a2d7d5",
+    "drat_uncompressed_sha256": "24cd2c7733128eaf15250ad20a6f148013428ccaa7b310e922a0e9c3503dbe7b",
+    "drat_gz_bytes": 274719
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 1.8535791969989077
+  },
+  {
+   "hnf": [
+    10,
+    3,
+    4
+   ],
+   "mapping_index": 21,
+   "twist_index": 8,
+   "twists": [
+    [
+     1,
+     0,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "afede792a857d93b0c512fca449ae7230fcdf07f2576a36c77b3a00a2ab7e7d9",
+   "canonical_cnf_clause_hash": "46bb69d04599ddadf807cf8931f539e4c136a9c0e0f1604da90f1812e0378e85",
+   "canonical_metadata": {
+    "hnf": [
+     10,
+     3,
+     4
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 7207,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 95,
+    "conflicts": 21090,
+    "decisions": 85986,
+    "propagations": 1038888
+   },
+   "raw_proof_bytes": 2650039,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-08.cnf.gz",
+    "cnf_gz_sha256": "30443ec061df61034d4ad36f039a6be59b2cfd39e64614c524f78f5d0fa00057",
+    "cnf_uncompressed_sha256": "05c5d07945661610f96befa2365a51c7e8dd65a642a09ba77cb53ffa5241c4f3",
+    "cnf_gz_bytes": 31966,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-08.drat.gz",
+    "drat_gz_sha256": "f1e338f9a0d4ba90c1d51488c12cc47e42201884feb23c2399d2fd967dd817aa",
+    "drat_uncompressed_sha256": "236b4493002ffa539e89562e2d6a3806f0f37f8a098ca9a7ad86890ca2dd1653",
+    "drat_gz_bytes": 120440
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 1.3673992889998772
+  },
+  {
+   "hnf": [
+    10,
+    3,
+    4
+   ],
+   "mapping_index": 21,
+   "twist_index": 9,
+   "twists": [
+    [
+     1,
+     0,
+     2
+    ],
+    [
+     1,
+     0,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "210b517216cb9a56405db6710f15eff93c52389e342208e76073a6129091ebdd",
+   "canonical_cnf_clause_hash": "68eed0c6972b3c7362a3dabe1c3894422faf01e8ef0c271b2b53fcf37ec61e26",
+   "canonical_metadata": {
+    "hnf": [
+     10,
+     3,
+     4
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 8791,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 187,
+    "conflicts": 38452,
+    "decisions": 151871,
+    "propagations": 1809884
+   },
+   "raw_proof_bytes": 6282061,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-09.cnf.gz",
+    "cnf_gz_sha256": "803ebf1c83c6d54dcbb60f106a4a8e1c77124301a151950d0341c5190d593cc5",
+    "cnf_uncompressed_sha256": "2caf933436ca5431ab3cd4edf69e8726cc578a8b1b8d05c04354276f53a9a8cf",
+    "cnf_gz_bytes": 38888,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-09.drat.gz",
+    "drat_gz_sha256": "abe4aff27f1d30a008d0fa012391a4737e4603e8372ed0aecef2a33848ebe00b",
+    "drat_uncompressed_sha256": "ab003bc6677232fec8f95cc40d22fcdc75e1faabb12b62b8200f75edbd9bf65e",
+    "drat_gz_bytes": 244002
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 2.4782007100002375
+  },
+  {
+   "hnf": [
+    10,
+    3,
+    4
+   ],
+   "mapping_index": 21,
+   "twist_index": 10,
+   "twists": [
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "bb3b0782f214c5f0bc9474746254cd90d210ec48ea7b07beeb10bc9269d881a3",
+   "canonical_cnf_clause_hash": "a564a2954c1acab86cc8bec4f10578891a8ee2c8a7115e1c586c9d5c42b40613",
+   "canonical_metadata": {
+    "hnf": [
+     10,
+     3,
+     4
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40554,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 819,
+    "conflicts": 250192,
+    "decisions": 848522,
+    "propagations": 21800111
+   },
+   "raw_proof_bytes": 58152741,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-10.cnf.gz",
+    "cnf_gz_sha256": "cad0001783f76fca7fefbe2b7f7fbad323a8bf1e9d9e451cc052d5b1a0aabcc4",
+    "cnf_uncompressed_sha256": "e8006f68175575dc9330560f9f3184c511fed6910fa2d5f9a396d39dc5b9e311",
+    "cnf_gz_bytes": 191238,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-10.drat.gz",
+    "drat_gz_sha256": "274d20219cb9d63b9693a99cefb6e16ea2614c19b0e1bf5c5aaaf054ef533abf",
+    "drat_uncompressed_sha256": "9afec99b249f3ba5c02c6bff122a05dedb001fb4afa86799610d77c572cd716f",
+    "drat_gz_bytes": 2842450
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 39.567886528999225
+  },
+  {
+   "hnf": [
+    10,
+    3,
+    4
+   ],
+   "mapping_index": 21,
+   "twist_index": 11,
+   "twists": [
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     1,
+     2,
+     0
+    ]
+   ],
+   "canonical_cnf_sha256": "16d50e49ad18aa7970c5a8ef6aa25e01b92546b1446bad1c13566a6f8d87b99c",
+   "canonical_cnf_clause_hash": "183f468e4430864d3069e3faf37037398cf8bdea12b57816e22509556b273c00",
+   "canonical_metadata": {
+    "hnf": [
+     10,
+     3,
+     4
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40155,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1169,
+    "conflicts": 314284,
+    "decisions": 1125644,
+    "propagations": 24549130
+   },
+   "raw_proof_bytes": 74139859,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-11.cnf.gz",
+    "cnf_gz_sha256": "92710c52390bc7ecfce4cc00f95d63ce9e39da71ecf8c6e8c3889df9713f226a",
+    "cnf_uncompressed_sha256": "2237785444cc1fced1a1c827054646dc7a2b201c6a35ea77789ab160f02eb571",
+    "cnf_gz_bytes": 190331,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-11.drat.gz",
+    "drat_gz_sha256": "474dae592280ad9655b0f89dc8284f4427a1f5890dd2b0ebadaa4385ad81c034",
+    "drat_uncompressed_sha256": "8a0eff6e331c97a7dc5718e85c1874afbc3c237677f0d6660527c3338ed356c2",
+    "drat_gz_bytes": 2738008
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 42.46417366799869
+  },
+  {
+   "hnf": [
+    10,
+    3,
+    4
+   ],
+   "mapping_index": 21,
+   "twist_index": 12,
+   "twists": [
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     2,
+     0,
+     1
+    ]
+   ],
+   "canonical_cnf_sha256": "5186bccd549081b121e4ec2debb960d38306bc11dbe5381fd277fd146a9dd69e",
+   "canonical_cnf_clause_hash": "62c381739c85c1589f2dd6893817a3e54adaae0ca074055207bd5483587738a9",
+   "canonical_metadata": {
+    "hnf": [
+     10,
+     3,
+     4
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40566,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 845,
+    "conflicts": 242251,
+    "decisions": 847793,
+    "propagations": 20625993
+   },
+   "raw_proof_bytes": 56999010,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-12.cnf.gz",
+    "cnf_gz_sha256": "a0e73487e0faaa110f8fc997e298f74bac6913bc7eb4a055c1b39cca38b5cd92",
+    "cnf_uncompressed_sha256": "442af84bb1551da30c22a9fbb8d796038b5b83ed49adf956930ade1ed93201d0",
+    "cnf_gz_bytes": 191908,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-12.drat.gz",
+    "drat_gz_sha256": "d4ce236a156e075459966f92e1b915f89773564f1ce4ee2670a04f50fe1cd278",
+    "drat_uncompressed_sha256": "d974e50cb0f28cabf45cd82aa96c0bfa44d7ea4d32f53cde7aed11095b4c2df2",
+    "drat_gz_bytes": 2834072
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 34.143105584000295
+  },
+  {
+   "hnf": [
+    10,
+    3,
+    4
+   ],
+   "mapping_index": 21,
+   "twist_index": 13,
+   "twists": [
+    [
+     2,
+     0,
+     1
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "1aaee706b5d5a5d0e0cae1ef7d9b7809f42410d1adb51684b372903f32e2404c",
+   "canonical_cnf_clause_hash": "d39db90e378fdbdfb91f480bae46d8090192ac19b5b682a2960242b36cf1e3b1",
+   "canonical_metadata": {
+    "hnf": [
+     10,
+     3,
+     4
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40346,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 818,
+    "conflicts": 230038,
+    "decisions": 802480,
+    "propagations": 20064140
+   },
+   "raw_proof_bytes": 49235572,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-13.cnf.gz",
+    "cnf_gz_sha256": "f5b2027dd7e35c0cc7f856e0dd2745b0d223ff0405e9c8df78bd04e5761da707",
+    "cnf_uncompressed_sha256": "caded54c314a395af90c2a3fa46cbed38a4ae51255c6d2acb190c5922116c1b1",
+    "cnf_gz_bytes": 190074,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-13.drat.gz",
+    "drat_gz_sha256": "2c996ce3bf1cf298cf79a5fadb3bfcb79824a392591b060af01257edf9a3b088",
+    "drat_uncompressed_sha256": "87c92b29c96c8dd46889cef3a7bc9137361a79c571ef8f2354a49f2581ca4f58",
+    "drat_gz_bytes": 2862290
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 43.02622406599767
+  },
+  {
+   "hnf": [
+    10,
+    3,
+    4
+   ],
+   "mapping_index": 21,
+   "twist_index": 14,
+   "twists": [
+    [
+     2,
+     0,
+     1
+    ],
+    [
+     1,
+     2,
+     0
+    ]
+   ],
+   "canonical_cnf_sha256": "12e66eaea4f5a198c96787551b4e87c447616fd1e0ded8916af47333d05b7f75",
+   "canonical_cnf_clause_hash": "2f45c983a42377027794f490f83c00151eaa670eb41678d6bd9bcd191735fb65",
+   "canonical_metadata": {
+    "hnf": [
+     10,
+     3,
+     4
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40676,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 928,
+    "conflicts": 246444,
+    "decisions": 867073,
+    "propagations": 21248069
+   },
+   "raw_proof_bytes": 59698411,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-14.cnf.gz",
+    "cnf_gz_sha256": "e7ee1f768bccba9f34002c00cdf8111b534b72a211a24979fdc2a18e280d61aa",
+    "cnf_uncompressed_sha256": "5b7eeea47bc41fb133cb496b4d981fb4c26f6c824a33c0c759f568ae297a5db0",
+    "cnf_gz_bytes": 192654,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-14.drat.gz",
+    "drat_gz_sha256": "798ecbf3c8fc644a4f6b08622010f2af37e24923eca861847e9f5c08db61071f",
+    "drat_uncompressed_sha256": "e6a2a174801666f7a170b2d732494f01129f99436dbeb3ce3ecf8bd06d7fc721",
+    "drat_gz_bytes": 2949589
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 39.15671384799862
+  },
+  {
+   "hnf": [
+    10,
+    3,
+    4
+   ],
+   "mapping_index": 21,
+   "twist_index": 15,
+   "twists": [
+    [
+     2,
+     0,
+     1
+    ],
+    [
+     2,
+     0,
+     1
+    ]
+   ],
+   "canonical_cnf_sha256": "1b0ce47697f2b7daefc1f6a1b188c3bfc5d6d433cc3bed7eafd6a30f6ea88ae9",
+   "canonical_cnf_clause_hash": "bec155f57affbb01dbaf6cf4289edd65fc353665d953de037592883fa068a261",
+   "canonical_metadata": {
+    "hnf": [
+     10,
+     3,
+     4
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40399,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1302,
+    "conflicts": 343426,
+    "decisions": 1214167,
+    "propagations": 26445878
+   },
+   "raw_proof_bytes": 80133664,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-15.cnf.gz",
+    "cnf_gz_sha256": "445988cdc28f44728da612c64028c9a020cc46ce85e8f3a95ebb0035bb30db82",
+    "cnf_uncompressed_sha256": "36835c4c872ce92e540f43b3203a1c655c2a79864a47a82d12e8c0a094c2a5cc",
+    "cnf_gz_bytes": 191145,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-15.drat.gz",
+    "drat_gz_sha256": "ac3c4fde98442acb533c3fb4a163c36ac2c5ac62822ad47790ad5486abb092e6",
+    "drat_uncompressed_sha256": "a32c43880295f2a190d310bda91005d6687608633570e057fd7222bee7f15491",
+    "drat_gz_bytes": 2832154
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 43.87198262700258
+  },
+  {
+   "hnf": [
+    10,
+    3,
+    4
+   ],
+   "mapping_index": 21,
+   "twist_index": 16,
+   "twists": [
+    [
+     2,
+     1,
+     0
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "4b35c48e82c06c654fb1606fa964b59a45ba59d8abd5674aaea8484a58709fb5",
+   "canonical_cnf_clause_hash": "9c97d759d337e16ba21b1eb80e4da1dea5413692f24d3fbe95c095c6ff29a352",
+   "canonical_metadata": {
+    "hnf": [
+     10,
+     3,
+     4
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 7822,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 86,
+    "conflicts": 20990,
+    "decisions": 87071,
+    "propagations": 1044625
+   },
+   "raw_proof_bytes": 2630524,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-16.cnf.gz",
+    "cnf_gz_sha256": "1efdf6ae1c7ee5f59c7cd5d7a707405d82e46869cdde348c3aa7a08c22a6465b",
+    "cnf_uncompressed_sha256": "dfa42dee26663a39734da3e2588b31b8b9eb9fbefd3436fa8feef90ddda2f567",
+    "cnf_gz_bytes": 34318,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-16.drat.gz",
+    "drat_gz_sha256": "06939382908e9fb60dbfcad81d396b57c6253914b2684c4c3e9a8c89bf04bd5e",
+    "drat_uncompressed_sha256": "5c99b47e09b0fd11334aefd1321de51f776df7db23b3bac6b5dbf2db39262393",
+    "drat_gz_bytes": 151401
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 1.4921764550017542
+  },
+  {
+   "hnf": [
+    10,
+    3,
+    4
+   ],
+   "mapping_index": 21,
+   "twist_index": 17,
+   "twists": [
+    [
+     2,
+     1,
+     0
+    ],
+    [
+     2,
+     1,
+     0
+    ]
+   ],
+   "canonical_cnf_sha256": "b8427e1da99825dab6de5ee6c37abb803a0865981c58912f20737b79e1fef93f",
+   "canonical_cnf_clause_hash": "7331cb446b9126e657630c96cae06f0cf060e6bff6a91b97c3009b1a20c74249",
+   "canonical_metadata": {
+    "hnf": [
+     10,
+     3,
+     4
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 8113,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 152,
+    "conflicts": 31251,
+    "decisions": 133241,
+    "propagations": 1516942
+   },
+   "raw_proof_bytes": 4657945,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-17.cnf.gz",
+    "cnf_gz_sha256": "977dd032d8626610792496fa2e99820cfe487539838f75e786ec1f5452b797b9",
+    "cnf_uncompressed_sha256": "a96db18f9ebe4778a4ff912404478c10b2393f36eec8e677e9513309b8db18aa",
+    "cnf_gz_bytes": 35386,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-17.drat.gz",
+    "drat_gz_sha256": "13ef58e9f868f3552421a680a5448f13050d3c7468bd11cde4dcafcfe80745ce",
+    "drat_uncompressed_sha256": "8ca93fde7c0f1c492d50901c477444c1418599982444fcb6e6e7175b92b37e15",
+    "drat_gz_bytes": 197137
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 1.4528902180027217
+  },
+  {
+   "hnf": [
+    40,
+    11,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 0,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "6ac72db497a322f8ba07c9f8b46e5312eb151f9026165d93e369c2aa14d6901a",
+   "canonical_cnf_clause_hash": "cae6eccbd05931b564c053525bbe2f45d2cf706c9bcdada759bb11653bf427cb",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     11,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40894,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1404,
+    "conflicts": 353454,
+    "decisions": 1219162,
+    "propagations": 28857245
+   },
+   "raw_proof_bytes": 82351715,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-00.cnf.gz",
+    "cnf_gz_sha256": "5bf77e6a4364a27886b738eabcb9b5b496d9894a0af156b5687c93ba95568c69",
+    "cnf_uncompressed_sha256": "9e37e6c515815287d39c4582a8f6a9ba3a9293d562e73343b3eb186586036fd4",
+    "cnf_gz_bytes": 192229,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-00.drat.gz",
+    "drat_gz_sha256": "5b4feb03822fe0f796bc18fbfd3bc71d19527e2f58ce96dbd63120badc1be71d",
+    "drat_uncompressed_sha256": "2762b216a2c53bc9e8ac231a6b86a0f08ea6c70f40809b3b8d1757929f60a727",
+    "drat_gz_bytes": 3418117
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 61.64230087800024
+  },
+  {
+   "hnf": [
+    40,
+    11,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 1,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     2,
+     1
+    ]
+   ],
+   "canonical_cnf_sha256": "94e2fbf66d29d51552f744b4a00f7d9db353a5314495894351ea19215d038ab7",
+   "canonical_cnf_clause_hash": "cb08b05a73f4120f6c871570983913d462b5a9ca9385b675acb9cbfcdfc5d4f2",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     11,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 10129,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 169,
+    "conflicts": 35838,
+    "decisions": 151424,
+    "propagations": 1813049
+   },
+   "raw_proof_bytes": 4868102,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-01.cnf.gz",
+    "cnf_gz_sha256": "374f8ae74f683ed6a1ba53b227ed0004bd3a05df834a988feb53df9402c6ad9e",
+    "cnf_uncompressed_sha256": "a4d1649c98f2408650ee0fe67124c40ac5badb19ff08f45d1057b49802a6dcc3",
+    "cnf_gz_bytes": 45582,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-01.drat.gz",
+    "drat_gz_sha256": "e63b3350118ba38bf4f2b0558371935aa4f681da3ab5cdd74652a982dc1ef7c9",
+    "drat_uncompressed_sha256": "acc9c218a5111ba7b7a97e88ebefff480aac6c5187abcc39f498864229296afd",
+    "drat_gz_bytes": 209631
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 2.422392858999956
+  },
+  {
+   "hnf": [
+    40,
+    11,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 2,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     1,
+     0,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "7d85acfe2d6b7d7c2926bd0952b36b128b0f15c4ec588eeefb57a8e9ab297480",
+   "canonical_cnf_clause_hash": "29c6341f726307e8f93e0becc2469bb0758ccfd5b2ed785c7b984ca379109880",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     11,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 8583,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 147,
+    "conflicts": 30300,
+    "decisions": 127368,
+    "propagations": 1502358
+   },
+   "raw_proof_bytes": 4297699,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-02.cnf.gz",
+    "cnf_gz_sha256": "94df33c630762058d04520ab29ef97c061c643c0587149a3152ffeb0e1397a79",
+    "cnf_uncompressed_sha256": "8b37d6e4b94230aac1c9582cf7452681a7ac219785681ad213af83006e9646d2",
+    "cnf_gz_bytes": 37886,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-02.drat.gz",
+    "drat_gz_sha256": "5c3aab7ffee207e09c0c257c6a8a080149e46008a55a6c916ea5cf08845ccd75",
+    "drat_uncompressed_sha256": "f8907b04128b5eefbcd6c7dcc4c2e183ed0d45d9af3c4c9f030249cd3c630c3b",
+    "drat_gz_bytes": 176623
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 1.4994028370019805
+  },
+  {
+   "hnf": [
+    40,
+    11,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 3,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     1,
+     2,
+     0
+    ]
+   ],
+   "canonical_cnf_sha256": "08d6876192a5e16baa8c88cebbd08cd300918655a0da1efc046c311d78def9d4",
+   "canonical_cnf_clause_hash": "8ebdcebc6963c85a57a49321dfdaa9d9b3cef91cbba51f077b3d849e537616da",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     11,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40894,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1100,
+    "conflicts": 292006,
+    "decisions": 999638,
+    "propagations": 24564569
+   },
+   "raw_proof_bytes": 66680702,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-03.cnf.gz",
+    "cnf_gz_sha256": "a059820c410ebc3c93b1fc298b08ba60dafe4b108b262047de162629e5aee3b7",
+    "cnf_uncompressed_sha256": "646638ed5719b2112e18018127a0926789bda16b015b92dd56e634922584a2bd",
+    "cnf_gz_bytes": 192350,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-03.drat.gz",
+    "drat_gz_sha256": "51758a0d6e255c5d8d9c0905b1e9edc38fddff4cf72024bbc87deab1b5ee5ab6",
+    "drat_uncompressed_sha256": "be90094ecb2f936a8fbb9f214c513ef772a54c78683357dba50bc8ce258a8bae",
+    "drat_gz_bytes": 3145665
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 41.940322344999004
+  },
+  {
+   "hnf": [
+    40,
+    11,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 4,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     2,
+     0,
+     1
+    ]
+   ],
+   "canonical_cnf_sha256": "e51cc29450c6cdc1f69d9b708ea70c70e987f27853f36caf2be1783bae2779d9",
+   "canonical_cnf_clause_hash": "a4188724a20a5c560932be1f8931e25c40c6e74b817624715c91fcce5bbdb1fd",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     11,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40798,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 926,
+    "conflicts": 242364,
+    "decisions": 845889,
+    "propagations": 21275276
+   },
+   "raw_proof_bytes": 57370820,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-04.cnf.gz",
+    "cnf_gz_sha256": "d58d1a8ee5c539e5a8b8e2f49980f165cdf5515a0f89b4c87da021bb871c9816",
+    "cnf_uncompressed_sha256": "5bc03d5a4204902811b393e43c2a12c7c5ebf903b7cf4eb195466d3f35df4e90",
+    "cnf_gz_bytes": 192137,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-04.drat.gz",
+    "drat_gz_sha256": "5543a9dc22b209fd3d8bf81b32dd346b575db13de7349a7cc038263c9e2453fb",
+    "drat_uncompressed_sha256": "99894484ae460cf24fce72c1fbe635cef5c5186159326c0eb39f4aa6ce8d4390",
+    "drat_gz_bytes": 3031993
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 46.01668500099913
+  },
+  {
+   "hnf": [
+    40,
+    11,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 5,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     2,
+     1,
+     0
+    ]
+   ],
+   "canonical_cnf_sha256": "0bf3091fa6001539a49babffd5aa9b0776e4e7a6ad01560434924c305c213920",
+   "canonical_cnf_clause_hash": "f8dc735d03e3d1928c6df78ad07d2f1a774f1b596ae7bccf588593d8681cdeb5",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     11,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 8259,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 150,
+    "conflicts": 37558,
+    "decisions": 156087,
+    "propagations": 1875247
+   },
+   "raw_proof_bytes": 5204868,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-05.cnf.gz",
+    "cnf_gz_sha256": "d1fbb2317ddfa5e7aa9a4054c719b3448f0ad145a61af072c28f18375a73ec7a",
+    "cnf_uncompressed_sha256": "215846c2577f1e71149b5299ed20a7f0baaaef575fee396ac368ab1aa84b3d10",
+    "cnf_gz_bytes": 36575,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-05.drat.gz",
+    "drat_gz_sha256": "203cf4f48e55a1a6559784dccd444e961fa8672e306e73deaccec94e0cf9247d",
+    "drat_uncompressed_sha256": "d7d07465f13bc76b8202593b020fc4254100a35a7fa6d0253f7d2f56560aa430",
+    "drat_gz_bytes": 178840
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 1.7240149980025308
+  },
+  {
+   "hnf": [
+    40,
+    11,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 6,
+   "twists": [
+    [
+     0,
+     2,
+     1
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "0caee3dc05f1a16817e774b8481c6f3be60d2a0f5ced080d46b0a06d62a58f55",
+   "canonical_cnf_clause_hash": "1e539abd4f429675d52f6a70d6d09613692e7999d2c9f74c85beb8937275895f",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     11,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 6995,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 107,
+    "conflicts": 20808,
+    "decisions": 83586,
+    "propagations": 997673
+   },
+   "raw_proof_bytes": 2593061,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-06.cnf.gz",
+    "cnf_gz_sha256": "8527c99d79cef76d226be470a1ede718fba8d3b4e81879b035718a4542f5a7cf",
+    "cnf_uncompressed_sha256": "87c5860b99e82d135ad98f5b3780d82dff9790d9ff4e280548307a3ae4db74df",
+    "cnf_gz_bytes": 30906,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-06.drat.gz",
+    "drat_gz_sha256": "ba710e0bf70aef3ecdc6f2a843fd27a21e76b64d3c19c6caf32f476cb93044ec",
+    "drat_uncompressed_sha256": "08750e71b9dadb5bc871689de34cb957823d80f50abf9372bbf8eb755116301b",
+    "drat_gz_bytes": 129663
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 1.0982679910011939
+  },
+  {
+   "hnf": [
+    40,
+    11,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 7,
+   "twists": [
+    [
+     0,
+     2,
+     1
+    ],
+    [
+     0,
+     2,
+     1
+    ]
+   ],
+   "canonical_cnf_sha256": "da231c70003996ea4434598be35a1fa605126674fb2e5e636f4b4c1922e9ac93",
+   "canonical_cnf_clause_hash": "fca603dc7a4257011ec5481f1b057004e4e0c304ad89743fe433383ad91838d5",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     11,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 8052,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 126,
+    "conflicts": 25869,
+    "decisions": 103488,
+    "propagations": 1250300
+   },
+   "raw_proof_bytes": 3774503,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-07.cnf.gz",
+    "cnf_gz_sha256": "6becede008645b7044511d7b97bb1d3a2055a48e941ef74f64e556062ffb4bb3",
+    "cnf_uncompressed_sha256": "c238ea265c814dc8d061aff9f641bae710775b338e274f278dc5911cee2e7606",
+    "cnf_gz_bytes": 35980,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-07.drat.gz",
+    "drat_gz_sha256": "8e2a8f927de52c513e09d71279780ebaeefb1e9f74daff926db1261bb1734962",
+    "drat_uncompressed_sha256": "d193287e7ace003c006be50b6a300ddf1fac8bdde205699ce1dd1e36db109f2f",
+    "drat_gz_bytes": 179551
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 1.6468742569995811
+  },
+  {
+   "hnf": [
+    40,
+    11,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 8,
+   "twists": [
+    [
+     1,
+     0,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "028fcb84db1b313fa1fe7d65f08ce9d151c3bfe05cda3cbe734ea3222e03ce87",
+   "canonical_cnf_clause_hash": "1bb0b6fcc713111ab0a57766fa6d33e38e25f1c9d0cf6328e3cd4401dde4dbdd",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     11,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 7113,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 132,
+    "conflicts": 25215,
+    "decisions": 102798,
+    "propagations": 1234160
+   },
+   "raw_proof_bytes": 3775535,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-08.cnf.gz",
+    "cnf_gz_sha256": "3b68179084300b3e2621745fc73b21dca6cbf028a07642f8749d9364e943e856",
+    "cnf_uncompressed_sha256": "90a03879347b2fa3e0f565ff57fffb0971264779dd32b633913bc5e33fdade68",
+    "cnf_gz_bytes": 31832,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-08.drat.gz",
+    "drat_gz_sha256": "5ea7d9bec726883acbb6f7221cfd86755bd928ca1b0027f4a815574488ea83a5",
+    "drat_uncompressed_sha256": "eb9018ac8add2aef841061088c87ec7d85aabeb9919d6893d797d27e2a6a3d0e",
+    "drat_gz_bytes": 131296
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 1.7640655290015275
+  },
+  {
+   "hnf": [
+    40,
+    11,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 9,
+   "twists": [
+    [
+     1,
+     0,
+     2
+    ],
+    [
+     1,
+     0,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "cb3828ff9c7953e04e170308d5f4c79e0063e42e517b1f25f1d0e4d9b28d0e8d",
+   "canonical_cnf_clause_hash": "eb106083427f45554c7ceebc41616474026df24edcb5b8df049f593157e674ca",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     11,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 7871,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 138,
+    "conflicts": 26703,
+    "decisions": 107620,
+    "propagations": 1326435
+   },
+   "raw_proof_bytes": 4021287,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-09.cnf.gz",
+    "cnf_gz_sha256": "80f8271d6be4900f9f3eb6171097ff03bc5949a96c9141b75620af7e35a37bcf",
+    "cnf_uncompressed_sha256": "14d43246168f3bd983d7aee8c022dcc051cfa87747cbced2cac92f26aaf2776a",
+    "cnf_gz_bytes": 34808,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-09.drat.gz",
+    "drat_gz_sha256": "c44201b6cfdf8e6a70ba5a0a8a9b099e09f118d847e2eeca32f4669f35567c2e",
+    "drat_uncompressed_sha256": "64a865613cbacafa368ffb3d84824e707964d30f8d6ac9885dc19e6a72748eb7",
+    "drat_gz_bytes": 160250
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 1.805403328002285
+  },
+  {
+   "hnf": [
+    40,
+    11,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 10,
+   "twists": [
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "5c5b834e477c9ee749b4543ac3cdb3ecb16283ec309eabdf61f24dff6a9b1376",
+   "canonical_cnf_clause_hash": "cb8824c3412c514da4efa05920d9b1e08a0ea1f8150f28da2b1776bc1192a0b8",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     11,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40720,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1095,
+    "conflicts": 281452,
+    "decisions": 985564,
+    "propagations": 24320414
+   },
+   "raw_proof_bytes": 65656257,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-10.cnf.gz",
+    "cnf_gz_sha256": "3885f66fc65727a9f76f6db63594f83b792440dbb2589ba0f9f0447ec60289c0",
+    "cnf_uncompressed_sha256": "958033b222d674679e7c7564bc955907aed4ed6a91c68c91cecc31b1debe2184",
+    "cnf_gz_bytes": 192812,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-10.drat.gz",
+    "drat_gz_sha256": "2a7ec28816c12c60b0f3aba3e2994d452bc63967d2770d156828a5f0e8b08e43",
+    "drat_uncompressed_sha256": "a904a62f8b4bd7c72539e51af90a9ef2ddc8643bf91971f4ffa1edbf354ea97b",
+    "drat_gz_bytes": 3315872
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 46.86867658799747
+  },
+  {
+   "hnf": [
+    40,
+    11,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 11,
+   "twists": [
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     1,
+     2,
+     0
+    ]
+   ],
+   "canonical_cnf_sha256": "46128cd0e8459591b81c4133083b408642a10d8517231575790d92671220526a",
+   "canonical_cnf_clause_hash": "5f6b635a907bd919b349011bf55a573c3eaf7e56b8826ccba447822df028b28c",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     11,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40663,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1031,
+    "conflicts": 263283,
+    "decisions": 913690,
+    "propagations": 22511915
+   },
+   "raw_proof_bytes": 61562918,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-11.cnf.gz",
+    "cnf_gz_sha256": "46decf411151b12b937c5d4bc7c3c847cbd5fcaab7ed39e1b270713b33231c61",
+    "cnf_uncompressed_sha256": "217b894af88c55293f3c54d92a4adc1e61884cb388d09142c2dd7e1fc4d88323",
+    "cnf_gz_bytes": 191762,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-11.drat.gz",
+    "drat_gz_sha256": "01347c1528778bc6a682811630c6e0caf60a13e71cf81d4231b6722efaa84359",
+    "drat_uncompressed_sha256": "3907184173c9a7a194a32a3cd5828e9ece38a0eab168e7dc9064259a4bfd07a6",
+    "drat_gz_bytes": 2882907
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 44.642383878002875
+  },
+  {
+   "hnf": [
+    40,
+    11,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 12,
+   "twists": [
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     2,
+     0,
+     1
+    ]
+   ],
+   "canonical_cnf_sha256": "fa9f3b4bb2307b953f9414f6278a5fa951bd6e3951b8af418f87ab44cfce7ac3",
+   "canonical_cnf_clause_hash": "9806ad9f5c0871f2f1c2afb722015cdfec046d6bd9c63e1da928167392f85cae",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     11,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40855,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1413,
+    "conflicts": 368015,
+    "decisions": 1297649,
+    "propagations": 28437588
+   },
+   "raw_proof_bytes": 85125317,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-12.cnf.gz",
+    "cnf_gz_sha256": "afe6b8c4822177813713d5fc135be1c4c03dee8f021559a7b117063a547a032e",
+    "cnf_uncompressed_sha256": "366e4c883432b6fbc0a2cbb9745d8abfc2173a7961c302f6cf989feb52cf39ed",
+    "cnf_gz_bytes": 192195,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-12.drat.gz",
+    "drat_gz_sha256": "99e9b957b476b920a485903634bcea44e67eaba9478d229014a16e699bb50951",
+    "drat_uncompressed_sha256": "1c64d890f98f84a6bad686749d900dd7f82ca8367ef2c28efa3c182264a4ed2d",
+    "drat_gz_bytes": 3258866
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 52.01343916100086
+  },
+  {
+   "hnf": [
+    40,
+    11,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 13,
+   "twists": [
+    [
+     2,
+     0,
+     1
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "9d9ca843681083551136d48a45f9cf4807f50061d72e1592e458bfdef62414b0",
+   "canonical_cnf_clause_hash": "ab2aa855c2cbc59ef6b16d29d374a958adc5bea9f818f9ee2b821ae89bd447e8",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     11,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40814,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1027,
+    "conflicts": 272218,
+    "decisions": 938541,
+    "propagations": 24205260
+   },
+   "raw_proof_bytes": 64068981,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-13.cnf.gz",
+    "cnf_gz_sha256": "b5300ae890e620a1aed0046bd87b39aca22f2c83d5b0e82491d5628e52a351e5",
+    "cnf_uncompressed_sha256": "73b1026a6137e7c9c881e165aa9efdf4ab012e1b27802f84f7030a5a594aa484",
+    "cnf_gz_bytes": 191679,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-13.drat.gz",
+    "drat_gz_sha256": "ea050ba5af15a4e4c06236f51b831a9ddd13fe40b93f55c7913f89d279b2e79c",
+    "drat_uncompressed_sha256": "5b30ec2a4f3d16b8a74d5e97ab1e155a8cf8f427e6bc165936a1ac94c9d29be2",
+    "drat_gz_bytes": 3302735
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 48.91318246499941
+  },
+  {
+   "hnf": [
+    40,
+    11,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 14,
+   "twists": [
+    [
+     2,
+     0,
+     1
+    ],
+    [
+     1,
+     2,
+     0
+    ]
+   ],
+   "canonical_cnf_sha256": "52c836fe30feb8ed0455c6579a6a69b46f526a79962407ac29000e1f40da2c32",
+   "canonical_cnf_clause_hash": "20265dbcb49a3674a662d540ce288c1b86007a51f8ef87f8c4cd67e400945a60",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     11,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40791,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1245,
+    "conflicts": 315167,
+    "decisions": 1150624,
+    "propagations": 24654958
+   },
+   "raw_proof_bytes": 69970836,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-14.cnf.gz",
+    "cnf_gz_sha256": "18c01b5d75539208f1f74f74fefc259f6a7761e748fa4c3dc6b3464c3ad93f57",
+    "cnf_uncompressed_sha256": "746c4bc03568ddb6f4ce075d4a935a056dfd5f3440ef717b4bc6b434cb96e307",
+    "cnf_gz_bytes": 192063,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-14.drat.gz",
+    "drat_gz_sha256": "018fc9f795e83683248a3b09762bf28c638ba73c930347985bec2866cf2580b5",
+    "drat_uncompressed_sha256": "504a3610e8c44bffd292c1d115d218f76778e8125fc0e4624dcff77398fbe428",
+    "drat_gz_bytes": 2903037
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 48.49820062899744
+  },
+  {
+   "hnf": [
+    40,
+    11,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 15,
+   "twists": [
+    [
+     2,
+     0,
+     1
+    ],
+    [
+     2,
+     0,
+     1
+    ]
+   ],
+   "canonical_cnf_sha256": "84cd080b6a978d7e46e06c1a2dd8fd8c2dc9078ae544b446908065bc81a7cfbe",
+   "canonical_cnf_clause_hash": "80e03e69f616237a9fd63add49233b81f38a7002bde9f75ad76465e39b487a78",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     11,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40722,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 916,
+    "conflicts": 243450,
+    "decisions": 858798,
+    "propagations": 21187939
+   },
+   "raw_proof_bytes": 57986805,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-15.cnf.gz",
+    "cnf_gz_sha256": "7f78bec8d78115466ef477d71e224a60044ad97dcc928421e5ed5abd709ddd41",
+    "cnf_uncompressed_sha256": "b059d0692a4ad8ea9384327da11a5dccc8438966ccd855029b66ce85d33532fd",
+    "cnf_gz_bytes": 191331,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-15.drat.gz",
+    "drat_gz_sha256": "6ccb4a04579c9396d332df5ab5d1d4216d992ea8494f2982990fc537fe064529",
+    "drat_uncompressed_sha256": "b01fc18f605bf432efa06c16d2859a54be9814c3c8d4af97414fbf5d41fc0862",
+    "drat_gz_bytes": 2866119
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 38.57008496100025
+  },
+  {
+   "hnf": [
+    40,
+    11,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 16,
+   "twists": [
+    [
+     2,
+     1,
+     0
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "aac9c0de18aee42c05d065d180aa4b6e570fb7cfe7946c8b9749d7288a63ef0f",
+   "canonical_cnf_clause_hash": "dbc0059d18b93d03b52d301cf9ce68808f2f8783390b772f1b57b2f723d2a93a",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     11,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 7209,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 101,
+    "conflicts": 22159,
+    "decisions": 92037,
+    "propagations": 1093720
+   },
+   "raw_proof_bytes": 2853426,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-16.cnf.gz",
+    "cnf_gz_sha256": "438dda43706caa9b800ed3e544da177725f2244ce3e96553811ce28de1ff1ae0",
+    "cnf_uncompressed_sha256": "1dac3693247d73881b505d96ef43384f700a9f9a097e2be5d0d324a1df173e85",
+    "cnf_gz_bytes": 31891,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-16.drat.gz",
+    "drat_gz_sha256": "40de38026d12f5b3ac3e35ee489eac2fa2d28a53c88844657631d430beaf0481",
+    "drat_uncompressed_sha256": "057288a4dffa206c6bfcfd89fc21a5f642c759a3d676f666996e5aba07d74a4e",
+    "drat_gz_bytes": 135645
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 1.1441611549998925
+  },
+  {
+   "hnf": [
+    40,
+    11,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 17,
+   "twists": [
+    [
+     2,
+     1,
+     0
+    ],
+    [
+     2,
+     1,
+     0
+    ]
+   ],
+   "canonical_cnf_sha256": "349ec49517b23985beded522ff9add742e3c8318b8de8225334911c81f5989ef",
+   "canonical_cnf_clause_hash": "7cd553592adb8ebac4888b49d1e17546aa763014eb0c6e79ad8f9309493efeff",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     11,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 8426,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 116,
+    "conflicts": 26256,
+    "decisions": 107590,
+    "propagations": 1267886
+   },
+   "raw_proof_bytes": 3646045,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-17.cnf.gz",
+    "cnf_gz_sha256": "83275d424c035b29d6f9a6865d976ab49a6b9e0b8ab72caa1cf10a519b29615d",
+    "cnf_uncompressed_sha256": "5e8d23cdf4360df8c68943042165e7442128f0a9f5547cbe96f2f7d8221123c3",
+    "cnf_gz_bytes": 37732,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-17.drat.gz",
+    "drat_gz_sha256": "2a3e9ed9c7643e2ef7a7891b3df7930c52b7fbe216926c487cd0c2574c17f89f",
+    "drat_uncompressed_sha256": "f5811024641014aaf157873e62f91145ddc469a0622b2de8fe3e8003664d30c9",
+    "drat_gz_bytes": 209492
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 1.6094325080011913
+  },
+  {
+   "hnf": [
+    40,
+    28,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 0,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "51b49717f91bf58baadb6311a8d4bf69c20e8860fdd27cff686ac3b6b7d7c89c",
+   "canonical_cnf_clause_hash": "8985506492523ccac74f77db3d8f43b21af85f1d49f81e7f6c49280c21dc0d40",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     28,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 41004,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1181,
+    "conflicts": 324325,
+    "decisions": 1125655,
+    "propagations": 26492910
+   },
+   "raw_proof_bytes": 79332752,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-00.cnf.gz",
+    "cnf_gz_sha256": "63bd3fec718f52d3d9def0d8110db6b74d3637b8c31cbf1ad97af59851f28348",
+    "cnf_uncompressed_sha256": "44f84d6740d2f5d70d04883a70ef827f2a519417ff251d3066c89e94575245fb",
+    "cnf_gz_bytes": 194131,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-00.drat.gz",
+    "drat_gz_sha256": "5ee782247cbc8849fb1d951e4da9c20b0fb432e48d6c05cfe46fcb4fa8b014f1",
+    "drat_uncompressed_sha256": "b7e7d183845239a3a0d54558ea595b639b9f51da72a7e017c71303af9f5b461a",
+    "drat_gz_bytes": 3299110
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 48.168419937999715
+  },
+  {
+   "hnf": [
+    40,
+    28,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 1,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     2,
+     1
+    ]
+   ],
+   "canonical_cnf_sha256": "9c7aefd1262af2c05ea29c12227df3bebd07a699823d9e297f1e82438eff1911",
+   "canonical_cnf_clause_hash": "49401f6b363f17d0c7b75b411615bfbeefb5631435dacb03391f67300986317d",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     28,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 7952,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 123,
+    "conflicts": 26454,
+    "decisions": 105973,
+    "propagations": 1286276
+   },
+   "raw_proof_bytes": 3823669,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-01.cnf.gz",
+    "cnf_gz_sha256": "853f28b92b430fa3dbe3131690a109626d29d37ae5deadb69f8b952db1e342f5",
+    "cnf_uncompressed_sha256": "7554995f03cbd60fd0ae962a9c3b0f235be3a28d4e17381b9ef1188672b613cb",
+    "cnf_gz_bytes": 35177,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-01.drat.gz",
+    "drat_gz_sha256": "f8cfe34f0792cffefbb37593597f7c1631c79e12663ffa204d0c2e013e424ba2",
+    "drat_uncompressed_sha256": "5b55e829f31ec711a9dc131ccec36f141832c3ea02deb2a9f3c92f1e9a0be190",
+    "drat_gz_bytes": 157974
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 1.4206975710003462
+  },
+  {
+   "hnf": [
+    40,
+    28,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 2,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     1,
+     0,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "f46feb9b308794b76f53dcf8342cd91a63e04a0018956e9df285eea7f5b88778",
+   "canonical_cnf_clause_hash": "c97ccfa56e9ce735fd027e494bd1f4e2c40416f95797a8f975c8fb14042719c2",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     28,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 7793,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 126,
+    "conflicts": 23589,
+    "decisions": 104445,
+    "propagations": 1212469
+   },
+   "raw_proof_bytes": 2933580,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-02.cnf.gz",
+    "cnf_gz_sha256": "1c8e70161acbce99a5d2936284058b48d9bf6cd050d394d24e88dfc2b681f3a5",
+    "cnf_uncompressed_sha256": "93ed0d6216b40c8d570b7c82b019ad9ed52809b9578f758cd7297fc0f0f8b184",
+    "cnf_gz_bytes": 34546,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-02.drat.gz",
+    "drat_gz_sha256": "765d1cb98ec6ac08ab25f0dbc7ad949611b23a40a42e5a9d6d722695d6db6436",
+    "drat_uncompressed_sha256": "df53f91417ba5b80474edfe999a6009b791e17fc25c58d287b72d8d7505241a7",
+    "drat_gz_bytes": 151856
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 1.8205941740015987
+  },
+  {
+   "hnf": [
+    40,
+    28,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 3,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     1,
+     2,
+     0
+    ]
+   ],
+   "canonical_cnf_sha256": "945bea49ce25e6f5263d981997182138d6fea2e775c9b8e7227b337d36fe5d1a",
+   "canonical_cnf_clause_hash": "2884eee4cd3e2f3c1a666787cf0479a04ecd391a45672b0b42cdcd8dc4abb67b",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     28,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40582,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 863,
+    "conflicts": 233859,
+    "decisions": 815839,
+    "propagations": 20632512
+   },
+   "raw_proof_bytes": 51518306,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-03.cnf.gz",
+    "cnf_gz_sha256": "92a0bf584a735b4bb7d2f8b3a34f30be9a7d43709fc6b0cb5501b1f03d3d4447",
+    "cnf_uncompressed_sha256": "9d4c9c74d11deda94bc6c03c0eb8bb52d59ca056c458009cee5cf00401e6a816",
+    "cnf_gz_bytes": 193257,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-03.drat.gz",
+    "drat_gz_sha256": "5c874eba41d877db6aba7b0cf0adb2e40395ab63e80e6d42b75014285a51b83b",
+    "drat_uncompressed_sha256": "6dea757a44e3ee9788f8778b1211207b902d427c09f4bd0ef7d5c1f7d6aed6c7",
+    "drat_gz_bytes": 2744235
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 34.456699504000426
+  },
+  {
+   "hnf": [
+    40,
+    28,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 4,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     2,
+     0,
+     1
+    ]
+   ],
+   "canonical_cnf_sha256": "6f14de9351561171f532b19000c84185bc92d5e317ba217e64f42a64b48f88d4",
+   "canonical_cnf_clause_hash": "8bc8daee26b270b116c6f622626f1c20301753c06c3fd2943cbb803b52368f46",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     28,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40684,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1033,
+    "conflicts": 273440,
+    "decisions": 935047,
+    "propagations": 23970334
+   },
+   "raw_proof_bytes": 61723312,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-04.cnf.gz",
+    "cnf_gz_sha256": "0d290be246b70324b6aa16f430831e76c576c27396282894e5e40ebf81704061",
+    "cnf_uncompressed_sha256": "42d0c7bad74cb77b4ec46ff13829bdb157b4df1c29535e884c137fb82af2a579",
+    "cnf_gz_bytes": 192563,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-04.drat.gz",
+    "drat_gz_sha256": "a3a1d2fcd25995bb0a4675c9cac4b95ca678100fa86265d3cbc11fee17721a14",
+    "drat_uncompressed_sha256": "0a694a7824c6207aef884462d2255d041a7f15ea84f1159d9e13492d198b6cd5",
+    "drat_gz_bytes": 3036958
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 47.44331391700325
+  },
+  {
+   "hnf": [
+    40,
+    28,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 5,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     2,
+     1,
+     0
+    ]
+   ],
+   "canonical_cnf_sha256": "1ceee54d08e60347321f6a5433e0acd89f8d7246174d64e6031037307e489e87",
+   "canonical_cnf_clause_hash": "714dfd11d9333b46e746f22167fdd3a69059f90bd0aba385157fff1e1363531e",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     28,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 8056,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 181,
+    "conflicts": 35840,
+    "decisions": 145822,
+    "propagations": 1730770
+   },
+   "raw_proof_bytes": 5220337,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-05.cnf.gz",
+    "cnf_gz_sha256": "d5c23288586c80b08b19326992268a84e04ff6442eb8a14da4c70a21e1ea9535",
+    "cnf_uncompressed_sha256": "23d21feebfd05f34f1751f2f23fad5e261a7a844d098d9733e85385f744eb9fc",
+    "cnf_gz_bytes": 35812,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-05.drat.gz",
+    "drat_gz_sha256": "45a48c7151d8411e5848bcd98ebd94b14ab201c73295e0e769fd73ab23abb473",
+    "drat_uncompressed_sha256": "983086697cc0a9a131ea1a58d0f5e3e48b49d4d16ec374594e9d09a44977fc80",
+    "drat_gz_bytes": 197405
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 2.593977748998441
+  },
+  {
+   "hnf": [
+    40,
+    28,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 6,
+   "twists": [
+    [
+     0,
+     2,
+     1
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "d75163584d3fea58e10c389182f418dae6fc6d25b64e86cd7d4ea6761a44b397",
+   "canonical_cnf_clause_hash": "fe6b0ccf37e3fe064c472e303be66eeadab68533da0156d822000861d29bda78",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     28,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 7593,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 99,
+    "conflicts": 22842,
+    "decisions": 91613,
+    "propagations": 1135258
+   },
+   "raw_proof_bytes": 2739570,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-06.cnf.gz",
+    "cnf_gz_sha256": "87409a94ff8e6b389b6b106d5c86948be548e0d8d3b0803c6c1b7d02b4756f6f",
+    "cnf_uncompressed_sha256": "566ab228b304fd932f6d81c47ea68331e59a15f22b6af9d933730c272aabda42",
+    "cnf_gz_bytes": 33811,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-06.drat.gz",
+    "drat_gz_sha256": "02751fc1de7560d76edfdc2db482c75f5f1d0ba6b1008ca7f44fa4ee15e108fb",
+    "drat_uncompressed_sha256": "e93e3724f2ec7fc746fd8c7b9654cd0bb24f88bac2eb213558b811d312a69881",
+    "drat_gz_bytes": 139416
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 1.844887141000072
+  },
+  {
+   "hnf": [
+    40,
+    28,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 7,
+   "twists": [
+    [
+     0,
+     2,
+     1
+    ],
+    [
+     0,
+     2,
+     1
+    ]
+   ],
+   "canonical_cnf_sha256": "318803218d55898e45b4e6d33c1c7f9e4a642930d94313f23de89e7763952bf1",
+   "canonical_cnf_clause_hash": "3781be8de85439db8ee18d78671dad6cfa745c933ed2f5bdc8abeb19642245b6",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     28,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 8780,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 150,
+    "conflicts": 34285,
+    "decisions": 132083,
+    "propagations": 1614392
+   },
+   "raw_proof_bytes": 4802294,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-07.cnf.gz",
+    "cnf_gz_sha256": "e68786fa9afe62c2a4e49450d07aa6eab4b449877bbd7f012bf234ad84c29e70",
+    "cnf_uncompressed_sha256": "d0ddb9ddd905e2426a35d31f19d34c25920c6e587fd22b2dd93898e868b127cc",
+    "cnf_gz_bytes": 38845,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-07.drat.gz",
+    "drat_gz_sha256": "9f1870d3af222394ae89ceff0af4b19eb0e97b8cc71381d989f0c3eafc146101",
+    "drat_uncompressed_sha256": "d28d7037306b4d12cfe352d5150bfd75f9a6d1d2b847f53fc9139d6da4f71ff3",
+    "drat_gz_bytes": 229544
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 2.647751505999622
+  },
+  {
+   "hnf": [
+    40,
+    28,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 8,
+   "twists": [
+    [
+     1,
+     0,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "af290a59bb5b69bf6009f448e17d687726c4dff1b0d1fb2c50b671e37421d54d",
+   "canonical_cnf_clause_hash": "b798a58c5a44d8110e2e1e387ce8ea10f35ac7c2bb486cb63afbea5366db53a3",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     28,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 7990,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 90,
+    "conflicts": 20949,
+    "decisions": 84373,
+    "propagations": 1035934
+   },
+   "raw_proof_bytes": 2641727,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-08.cnf.gz",
+    "cnf_gz_sha256": "7e3ce30d658bdf30e577c1bf408f791cf0a608747bf4a34a9dda8c3bf59643e8",
+    "cnf_uncompressed_sha256": "1cf0a73235ced2a620b4512f31256c8d341787720b68480f213c9701d4bcb0ee",
+    "cnf_gz_bytes": 35486,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-08.drat.gz",
+    "drat_gz_sha256": "bc703b8dc6fd8fe498de45ea4ddf1e7736540343de9e13e2741438f7a241fc8e",
+    "drat_uncompressed_sha256": "674d52c9c90de21eb4c873bfc786858326b2ac01f1e325ad06206d2d5522ca36",
+    "drat_gz_bytes": 156196
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 1.724332144996879
+  },
+  {
+   "hnf": [
+    40,
+    28,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 9,
+   "twists": [
+    [
+     1,
+     0,
+     2
+    ],
+    [
+     1,
+     0,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "90004746f4868e70aec647847f3ff85a3274817e99d9fb7e2bc022d4c78b422f",
+   "canonical_cnf_clause_hash": "39cf9dc25dfbeb30fb9ad19cac6aa23f22e0f16eb55851113fa8001f7acb0bf8",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     28,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 8476,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 245,
+    "conflicts": 44921,
+    "decisions": 190465,
+    "propagations": 2256293
+   },
+   "raw_proof_bytes": 7137797,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-09.cnf.gz",
+    "cnf_gz_sha256": "e545b11c8982aa2a9e99e497f2c1389dbfbdd5945396bd2a6ff153f5437eec6c",
+    "cnf_uncompressed_sha256": "4a60e1989f9ad6d8c26847675621daa33299f276e9d0306a7680c35234014669",
+    "cnf_gz_bytes": 37444,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-09.drat.gz",
+    "drat_gz_sha256": "4814ff8c4bbb853cd0a437cd1620d8042f2f45a9daf4a876b2480be11c73fab6",
+    "drat_uncompressed_sha256": "4072d1cf246f631994c57cc3898a7e9e0883e8b08d792fd5afe36e72ab37295b",
+    "drat_gz_bytes": 215551
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 3.4840100149995124
+  },
+  {
+   "hnf": [
+    40,
+    28,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 10,
+   "twists": [
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "629e714d12c5e5924f8ed988e75f96d0b1f5ec79c90555e03610d531aeccc690",
+   "canonical_cnf_clause_hash": "856c500322dceec03e8f9604183bd6ef149f27e58597a87726827165e619a416",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     28,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40596,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 845,
+    "conflicts": 229637,
+    "decisions": 804620,
+    "propagations": 20382261
+   },
+   "raw_proof_bytes": 50970247,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-10.cnf.gz",
+    "cnf_gz_sha256": "9e30acf2a32bed52afe5dc46e67d126515c3de382bc4bcb9b728fb9d6987c0e7",
+    "cnf_uncompressed_sha256": "cc4b0ef514602960371910837aeaaa4ddb92a3bfa751ac1bbef2327f4d1addaf",
+    "cnf_gz_bytes": 192301,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-10.drat.gz",
+    "drat_gz_sha256": "1fa305764ddea75099382ae0f197ac524530383e7110baf02476984f919e848f",
+    "drat_uncompressed_sha256": "3927754799cfc630242eba3cca7a71ba6084d07d6c17b03527e2873cbca936dd",
+    "drat_gz_bytes": 2827387
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 39.830328031002864
+  },
+  {
+   "hnf": [
+    40,
+    28,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 11,
+   "twists": [
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     1,
+     2,
+     0
+    ]
+   ],
+   "canonical_cnf_sha256": "ecb8203d3171c0d86291edd04597a5ed5635f61d3e9785f00395752b1e1db397",
+   "canonical_cnf_clause_hash": "6ed6a43ca8e543427d9302bcbcf55e82198b60f159bd2e8fdd846016bee79f6e",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     28,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40758,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 891,
+    "conflicts": 256169,
+    "decisions": 889315,
+    "propagations": 22598812
+   },
+   "raw_proof_bytes": 60139701,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-11.cnf.gz",
+    "cnf_gz_sha256": "d27c7e3c50a96fe2f89b52521c9be9dc58e12db60f47e3afc8eccb64fbdbd79a",
+    "cnf_uncompressed_sha256": "57323896fe0c9e31f15223cfdaf430f598cdf415d7bdbc1be4a00895fd2c42ac",
+    "cnf_gz_bytes": 193844,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-11.drat.gz",
+    "drat_gz_sha256": "11e2a36d8cd5898bcf64d5b5519e9c03fb437cd07061bacf1a09ef3013f61b27",
+    "drat_uncompressed_sha256": "6606bed2900f15c8bf8445752ec27d7cda7995808e1c1c1428e4c04500a35f40",
+    "drat_gz_bytes": 3125370
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 41.174245286998485
+  },
+  {
+   "hnf": [
+    40,
+    28,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 12,
+   "twists": [
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     2,
+     0,
+     1
+    ]
+   ],
+   "canonical_cnf_sha256": "a97339ec2ac88749b7ae1b3f66363de82d9fe2feee14280be93b6bc6ff4b5557",
+   "canonical_cnf_clause_hash": "8ca72af330cf14bac14621ea867bc68ec051e648686da105926018070a7083ab",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     28,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40579,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1198,
+    "conflicts": 312500,
+    "decisions": 1126821,
+    "propagations": 24559434
+   },
+   "raw_proof_bytes": 73919771,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-12.cnf.gz",
+    "cnf_gz_sha256": "d6c16852fda36f3a5e10bcd92fa46e82d3d07689582e47dcc969773a660831d2",
+    "cnf_uncompressed_sha256": "8a902544f57b27b17ff16bac328d4e833615601e6c97bd372859a579133d012f",
+    "cnf_gz_bytes": 192141,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-12.drat.gz",
+    "drat_gz_sha256": "143622839a07f1dcfc453ccc5d1323efadc80b2b9133f9e59c89424372347028",
+    "drat_uncompressed_sha256": "742c757008e9e56c4c5cb5d08504c49db5871478d33950e5ef78010a099efd20",
+    "drat_gz_bytes": 2720302
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 36.545480309003324
+  },
+  {
+   "hnf": [
+    40,
+    28,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 13,
+   "twists": [
+    [
+     2,
+     0,
+     1
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "fe51439262f97dc14a4f894887ee353f373e43eac5de1e284c334fe22a3623c7",
+   "canonical_cnf_clause_hash": "89a5d56fab47ae48e950f66e05c6c0987708345f589f0101e7bf0e87772e3c42",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     28,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40632,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 868,
+    "conflicts": 252028,
+    "decisions": 865480,
+    "propagations": 21763372
+   },
+   "raw_proof_bytes": 58280804,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-13.cnf.gz",
+    "cnf_gz_sha256": "a3e4aa64201e1b484b997456f4a91e11c896e881b93a9365c77b1217e944cfc7",
+    "cnf_uncompressed_sha256": "0df5bf3a63c5fcaec16b34012327e2fb46b164cdf0500ed659cf6cccf5ebb430",
+    "cnf_gz_bytes": 192806,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-13.drat.gz",
+    "drat_gz_sha256": "153dfe323d488ee612f1e857cc5614379f32a2fa3570bbc0a0e73c4cd23c16ba",
+    "drat_uncompressed_sha256": "0a2dd7db09e9496b7ef0e29929c432b0501625288538ff3d44eb957cd8905be7",
+    "drat_gz_bytes": 2935081
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 25.69297916400319
+  },
+  {
+   "hnf": [
+    40,
+    28,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 14,
+   "twists": [
+    [
+     2,
+     0,
+     1
+    ],
+    [
+     1,
+     2,
+     0
+    ]
+   ],
+   "canonical_cnf_sha256": "f01ac6b66bbd7eb35a76a8af4ca97dcb640e76ea7de536fdb42b3056307b88dd",
+   "canonical_cnf_clause_hash": "300c363947283386fa9b8d3745a8e0457ca0e0dc1b2b11b745c7634b6cd6fccf",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     28,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40618,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1027,
+    "conflicts": 274395,
+    "decisions": 1024745,
+    "propagations": 22144304
+   },
+   "raw_proof_bytes": 60632714,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-14.cnf.gz",
+    "cnf_gz_sha256": "38dc9e333216ac9f0bda20aad5f6d4d78b6a5770dca22943ebcda310acb62bb2",
+    "cnf_uncompressed_sha256": "9b4812801b51a36c79fc96ca990c0868d03d7d8ef5e712343f1669d5d352b95c",
+    "cnf_gz_bytes": 191854,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-14.drat.gz",
+    "drat_gz_sha256": "46581b5f2b58274024e1cdb8d16b76fb62c0ef06e552dc90414abb3544f778de",
+    "drat_uncompressed_sha256": "1e49e7dd0a705637a3493e7192dcbd2562e343fd9ced4ca9d7e01580f2472898",
+    "drat_gz_bytes": 2758142
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 24.73653148000085
+  },
+  {
+   "hnf": [
+    40,
+    28,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 15,
+   "twists": [
+    [
+     2,
+     0,
+     1
+    ],
+    [
+     2,
+     0,
+     1
+    ]
+   ],
+   "canonical_cnf_sha256": "f92042a30665ebe3c228139c6e842f23fddd19248c5074fa3a124c5d449e4886",
+   "canonical_cnf_clause_hash": "d637b3b8b9bb07a04f28145a066407e6da869eb7b37ef5a0d2972a1893dc6d27",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     28,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 40670,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 898,
+    "conflicts": 250611,
+    "decisions": 898493,
+    "propagations": 21831792
+   },
+   "raw_proof_bytes": 59338338,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-15.cnf.gz",
+    "cnf_gz_sha256": "d469486101a216e42d02b27f81336b6e625a7909c4059bc6790c1d30697f4588",
+    "cnf_uncompressed_sha256": "88cf788e4dada1318a5b4b7405adf7c2ae47a693a3ac73a381da176977e808c0",
+    "cnf_gz_bytes": 193692,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-15.drat.gz",
+    "drat_gz_sha256": "ebfcbab19c3c36bb6b5fa92af421c5e2f88376f283684afc8f0e359d1a8ecf8b",
+    "drat_uncompressed_sha256": "2c372bd3484fa493fc4337d89b7e58be6b5e0e58133726458aa3783c42f19f26",
+    "drat_gz_bytes": 2875393
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 23.51536941700033
+  },
+  {
+   "hnf": [
+    40,
+    28,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 16,
+   "twists": [
+    [
+     2,
+     1,
+     0
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "canonical_cnf_sha256": "0809b3cc23dae9951c9e939da40347c18cf4615fffdf0290dc2fba4ffaebcfec",
+   "canonical_cnf_clause_hash": "6485dfa2eb5a8f3a274dbd1e3e1c1642b19579bc78d294e796cc6c264a675675",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     28,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 8230,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 144,
+    "conflicts": 27308,
+    "decisions": 120659,
+    "propagations": 1409343
+   },
+   "raw_proof_bytes": 3248031,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-16.cnf.gz",
+    "cnf_gz_sha256": "1c4f06590d7eb5875d4ca531374a41940694e36e76297a660897b2d8604f4598",
+    "cnf_uncompressed_sha256": "bb715f4b2627ca937a2502d4a48c4af683b8a30a34cd650e25286b1354432d65",
+    "cnf_gz_bytes": 36636,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-16.drat.gz",
+    "drat_gz_sha256": "d70ccb7d40b719be8f98dba04a41b8ea2871157ea4fce7d6504db4baecfdf622",
+    "drat_uncompressed_sha256": "96ad5854c21e8d978990d791c7dcededc92bf1da494b2f9330971fa68629b426",
+    "drat_gz_bytes": 164834
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 1.3960349970002426
+  },
+  {
+   "hnf": [
+    40,
+    28,
+    1
+   ],
+   "mapping_index": 9,
+   "twist_index": 17,
+   "twists": [
+    [
+     2,
+     1,
+     0
+    ],
+    [
+     2,
+     1,
+     0
+    ]
+   ],
+   "canonical_cnf_sha256": "18aa08f259ccc3a47b2d49109489dbcfebb5d1695ac6efe9b201fa814bcc8ed2",
+   "canonical_cnf_clause_hash": "61aa122300bb02a13283636be82547ee246ab67698d7bf663d851c2746ccae11",
+   "canonical_metadata": {
+    "hnf": [
+     40,
+     28,
+     1
+    ],
+    "cover_mode": "at-least",
+    "cells": 240,
+    "placements": 480,
+    "vertices": 240,
+    "variables": 1920,
+    "clauses": 44400,
+    "common_clauses": 4080
+   },
+   "core_clauses": 8180,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 183,
+    "conflicts": 34594,
+    "decisions": 137497,
+    "propagations": 1614139
+   },
+   "raw_proof_bytes": 5039766,
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-17.cnf.gz",
+    "cnf_gz_sha256": "ee30eba507cdc44294aa29655337bd77b214e5d817c9196a1c403013880cff99",
+    "cnf_uncompressed_sha256": "881c6dc36ff9d4326402e274ba0421a075e5a1e9401349190dd663ac3b788ddc",
+    "cnf_gz_bytes": 36300,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-17.drat.gz",
+    "drat_gz_sha256": "20c4004321ba7a0b0f1b2267b7c784a938637771a078679e17a6bef73f5eac75",
+    "drat_uncompressed_sha256": "9f91a8ccc1a842fca605e383d3bfa89645ac6067087108278c2f6a5e6a66ba61",
+    "drat_gz_bytes": 198183
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 1.581860416001291
+  }
+ ]
+}

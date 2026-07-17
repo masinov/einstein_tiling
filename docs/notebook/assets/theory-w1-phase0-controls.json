@@ -1,0 +1,2710 @@
+{
+ "kind": "theory-w1-phase0-controls",
+ "schema_version": 1,
+ "date": "2026-07-17",
+ "scope": {
+  "small_census": "all free polykites n<=3",
+  "vectors": [
+   [
+    1,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    2,
+    0
+   ]
+  ],
+  "bounded_torus_transverse_widths": [
+   1,
+   2,
+   3
+  ],
+  "hat_vectors": [
+   [
+    1,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    2,
+    0
+   ]
+  ],
+  "claim": "reference validation only; bounded torus comparisons and four hat vectors do not establish a universal period exclusion"
+ },
+ "provenance": {
+  "code_version": "ae44fa3-dirty",
+  "transfer_source": "src/einstein/theory/transfer.py",
+  "transfer_source_sha256": "3f3be03e59a57f0eba993196f002b7723a3f40039c82243e4fed2dddcdac4476",
+  "hat_source": "data/shapes.sqlite shape id 635"
+ },
+ "small_census": [
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    1,
+    0
+   ],
+   "primitive": [
+    1,
+    0
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    0,
+    1
+   ],
+   "state_count": 1,
+   "edge_count": 1,
+   "interaction_span": 0,
+   "graph_sha256": "04700f1e665064c892d401b92ebd1d1c6a720165d9c8e61212f30eabf7e6da34",
+   "cycle_length": 1,
+   "limit": null,
+   "shape": "0,0,0",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      1,
+      0,
+      2
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      1,
+      0,
+      3
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     1,
+     0,
+     1
+    ],
+    "index": 1,
+    "tiles_per_domain": 6,
+    "placements": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      2,
+      0,
+      0
+     ],
+     [
+      3,
+      0,
+      0
+     ],
+     [
+      4,
+      0,
+      0
+     ],
+     [
+      5,
+      0,
+      0
+     ]
+    ]
+   },
+   "n": 1,
+   "shape_index": 0
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    0,
+    1
+   ],
+   "primitive": [
+    0,
+    1
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    -1,
+    0
+   ],
+   "state_count": 1,
+   "edge_count": 1,
+   "interaction_span": 0,
+   "graph_sha256": "04700f1e665064c892d401b92ebd1d1c6a720165d9c8e61212f30eabf7e6da34",
+   "cycle_length": 1,
+   "limit": null,
+   "shape": "0,0,0",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      3,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     1,
+     0,
+     1
+    ],
+    "index": 1,
+    "tiles_per_domain": 6,
+    "placements": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      2,
+      0,
+      0
+     ],
+     [
+      3,
+      0,
+      0
+     ],
+     [
+      4,
+      0,
+      0
+     ],
+     [
+      5,
+      0,
+      0
+     ]
+    ]
+   },
+   "n": 1,
+   "shape_index": 0
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    1,
+    1
+   ],
+   "primitive": [
+    1,
+    1
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    -1,
+    0
+   ],
+   "state_count": 1,
+   "edge_count": 1,
+   "interaction_span": 0,
+   "graph_sha256": "04700f1e665064c892d401b92ebd1d1c6a720165d9c8e61212f30eabf7e6da34",
+   "cycle_length": 1,
+   "limit": null,
+   "shape": "0,0,0",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      1,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      3,
+      1,
+      1
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     1,
+     0,
+     1
+    ],
+    "index": 1,
+    "tiles_per_domain": 6,
+    "placements": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      2,
+      0,
+      0
+     ],
+     [
+      3,
+      0,
+      0
+     ],
+     [
+      4,
+      0,
+      0
+     ],
+     [
+      5,
+      0,
+      0
+     ]
+    ]
+   },
+   "n": 1,
+   "shape_index": 0
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    2,
+    0
+   ],
+   "primitive": [
+    1,
+    0
+   ],
+   "multiplicity": 2,
+   "transverse": [
+    0,
+    1
+   ],
+   "state_count": 1,
+   "edge_count": 1,
+   "interaction_span": 0,
+   "graph_sha256": "42b3382df68188c6a8c14af9707ed08bdc2d359c183c24d45883b96476eea116",
+   "cycle_length": 1,
+   "limit": null,
+   "shape": "0,0,0",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      2,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      0,
+      2
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      2,
+      0,
+      3
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     2,
+     0,
+     1
+    ],
+    "index": 2,
+    "tiles_per_domain": 12,
+    "placements": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      2,
+      0,
+      0
+     ],
+     [
+      3,
+      0,
+      0
+     ],
+     [
+      4,
+      0,
+      0
+     ],
+     [
+      5,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      1,
+      0
+     ],
+     [
+      2,
+      1,
+      0
+     ],
+     [
+      3,
+      1,
+      0
+     ],
+     [
+      4,
+      1,
+      0
+     ],
+     [
+      5,
+      1,
+      0
+     ]
+    ]
+   },
+   "n": 1,
+   "shape_index": 0
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    1,
+    0
+   ],
+   "primitive": [
+    1,
+    0
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    0,
+    1
+   ],
+   "state_count": 1,
+   "edge_count": 1,
+   "interaction_span": 0,
+   "graph_sha256": "a435bbcf207d6631ee9a7c63ab7fe44cbccdaceda706e8f9d8ff543eda2c969a",
+   "cycle_length": 1,
+   "limit": null,
+   "shape": "0,0,0;0,0,1",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      1,
+      0,
+      2
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      1,
+      0,
+      3
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     1,
+     0,
+     1
+    ],
+    "index": 1,
+    "tiles_per_domain": 3,
+    "placements": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      2,
+      0,
+      0
+     ],
+     [
+      4,
+      0,
+      0
+     ]
+    ]
+   },
+   "n": 2,
+   "shape_index": 0
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    0,
+    1
+   ],
+   "primitive": [
+    0,
+    1
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    -1,
+    0
+   ],
+   "state_count": 1,
+   "edge_count": 1,
+   "interaction_span": 0,
+   "graph_sha256": "a435bbcf207d6631ee9a7c63ab7fe44cbccdaceda706e8f9d8ff543eda2c969a",
+   "cycle_length": 1,
+   "limit": null,
+   "shape": "0,0,0;0,0,1",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      3,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     1,
+     0,
+     1
+    ],
+    "index": 1,
+    "tiles_per_domain": 3,
+    "placements": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      2,
+      0,
+      0
+     ],
+     [
+      4,
+      0,
+      0
+     ]
+    ]
+   },
+   "n": 2,
+   "shape_index": 0
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    1,
+    1
+   ],
+   "primitive": [
+    1,
+    1
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    -1,
+    0
+   ],
+   "state_count": 1,
+   "edge_count": 1,
+   "interaction_span": 0,
+   "graph_sha256": "a435bbcf207d6631ee9a7c63ab7fe44cbccdaceda706e8f9d8ff543eda2c969a",
+   "cycle_length": 1,
+   "limit": null,
+   "shape": "0,0,0;0,0,1",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      1,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      3,
+      1,
+      1
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     1,
+     0,
+     1
+    ],
+    "index": 1,
+    "tiles_per_domain": 3,
+    "placements": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      2,
+      0,
+      0
+     ],
+     [
+      4,
+      0,
+      0
+     ]
+    ]
+   },
+   "n": 2,
+   "shape_index": 0
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    2,
+    0
+   ],
+   "primitive": [
+    1,
+    0
+   ],
+   "multiplicity": 2,
+   "transverse": [
+    0,
+    1
+   ],
+   "state_count": 1,
+   "edge_count": 1,
+   "interaction_span": 0,
+   "graph_sha256": "e63591768a09327b4a13da38b24c7175870618b66bb08252403749f76a860020",
+   "cycle_length": 1,
+   "limit": null,
+   "shape": "0,0,0;0,0,1",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      2,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      0,
+      2
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      2,
+      0,
+      3
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     2,
+     0,
+     1
+    ],
+    "index": 2,
+    "tiles_per_domain": 6,
+    "placements": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      2,
+      0,
+      0
+     ],
+     [
+      4,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      2,
+      1,
+      0
+     ],
+     [
+      4,
+      1,
+      0
+     ]
+    ]
+   },
+   "n": 2,
+   "shape_index": 0
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle-free",
+   "vector": [
+    1,
+    0
+   ],
+   "primitive": [
+    1,
+    0
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    0,
+    1
+   ],
+   "state_count": 8,
+   "edge_count": 4,
+   "interaction_span": 1,
+   "graph_sha256": "6d0732d18e0ef3cb251f5c5e8dee30eb1de9ec48351057d6201025b51b0351db",
+   "cycle_length": null,
+   "limit": null,
+   "shape": "0,0,0;2,2,4",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "unsat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      1,
+      0,
+      2
+     ],
+     "verdict": "unsat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      1,
+      0,
+      3
+     ],
+     "verdict": "unsat"
+    }
+   ],
+   "n": 2,
+   "shape_index": 1
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle-free",
+   "vector": [
+    0,
+    1
+   ],
+   "primitive": [
+    0,
+    1
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    -1,
+    0
+   ],
+   "state_count": 8,
+   "edge_count": 4,
+   "interaction_span": 1,
+   "graph_sha256": "a333b8e47fa06640baee76cfe9d66b2374709ee912158cc10369ae8355aba858",
+   "cycle_length": null,
+   "limit": null,
+   "shape": "0,0,0;2,2,4",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "unsat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      0,
+      1
+     ],
+     "verdict": "unsat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      3,
+      0,
+      1
+     ],
+     "verdict": "unsat"
+    }
+   ],
+   "n": 2,
+   "shape_index": 1
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle-free",
+   "vector": [
+    1,
+    1
+   ],
+   "primitive": [
+    1,
+    1
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    -1,
+    0
+   ],
+   "state_count": 64,
+   "edge_count": 36,
+   "interaction_span": 2,
+   "graph_sha256": "3701320e59bb73259c4d12460f4d8b9c70b2417cc732e4b8bbcc9bb46b79d839",
+   "cycle_length": null,
+   "limit": null,
+   "shape": "0,0,0;2,2,4",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "unsat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      1,
+      1
+     ],
+     "verdict": "unsat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      3,
+      1,
+      1
+     ],
+     "verdict": "unsat"
+    }
+   ],
+   "n": 2,
+   "shape_index": 1
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle-free",
+   "vector": [
+    2,
+    0
+   ],
+   "primitive": [
+    1,
+    0
+   ],
+   "multiplicity": 2,
+   "transverse": [
+    0,
+    1
+   ],
+   "state_count": 64,
+   "edge_count": 16,
+   "interaction_span": 1,
+   "graph_sha256": "924b44f01e53957584759edcc488a29c604f3b87717aa1c86503425dce1e1a38",
+   "cycle_length": null,
+   "limit": null,
+   "shape": "0,0,0;2,2,4",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      2,
+      0,
+      1
+     ],
+     "verdict": "unsat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      0,
+      2
+     ],
+     "verdict": "unsat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      2,
+      0,
+      3
+     ],
+     "verdict": "unsat"
+    }
+   ],
+   "n": 2,
+   "shape_index": 1
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    1,
+    0
+   ],
+   "primitive": [
+    1,
+    0
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    0,
+    1
+   ],
+   "state_count": 1,
+   "edge_count": 1,
+   "interaction_span": 0,
+   "graph_sha256": "4239ac35081718679d3eb4a95e0b4e1030ff580668c8b62c296b8a1bfdf9d109",
+   "cycle_length": 1,
+   "limit": null,
+   "shape": "0,0,0;0,0,1;0,0,2",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      1,
+      0,
+      2
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      1,
+      0,
+      3
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     1,
+     0,
+     1
+    ],
+    "index": 1,
+    "tiles_per_domain": 2,
+    "placements": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      3,
+      0,
+      0
+     ]
+    ]
+   },
+   "n": 3,
+   "shape_index": 0
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    0,
+    1
+   ],
+   "primitive": [
+    0,
+    1
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    -1,
+    0
+   ],
+   "state_count": 1,
+   "edge_count": 1,
+   "interaction_span": 0,
+   "graph_sha256": "4239ac35081718679d3eb4a95e0b4e1030ff580668c8b62c296b8a1bfdf9d109",
+   "cycle_length": 1,
+   "limit": null,
+   "shape": "0,0,0;0,0,1;0,0,2",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      3,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     1,
+     0,
+     1
+    ],
+    "index": 1,
+    "tiles_per_domain": 2,
+    "placements": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      3,
+      0,
+      0
+     ]
+    ]
+   },
+   "n": 3,
+   "shape_index": 0
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    1,
+    1
+   ],
+   "primitive": [
+    1,
+    1
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    -1,
+    0
+   ],
+   "state_count": 1,
+   "edge_count": 1,
+   "interaction_span": 0,
+   "graph_sha256": "4239ac35081718679d3eb4a95e0b4e1030ff580668c8b62c296b8a1bfdf9d109",
+   "cycle_length": 1,
+   "limit": null,
+   "shape": "0,0,0;0,0,1;0,0,2",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      1,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      3,
+      1,
+      1
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     1,
+     0,
+     1
+    ],
+    "index": 1,
+    "tiles_per_domain": 2,
+    "placements": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      3,
+      0,
+      0
+     ]
+    ]
+   },
+   "n": 3,
+   "shape_index": 0
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    2,
+    0
+   ],
+   "primitive": [
+    1,
+    0
+   ],
+   "multiplicity": 2,
+   "transverse": [
+    0,
+    1
+   ],
+   "state_count": 1,
+   "edge_count": 1,
+   "interaction_span": 0,
+   "graph_sha256": "ee20703bf6c1082eb22666b22efd5f79a67d21d3cc51a74345a380ed97ce2569",
+   "cycle_length": 1,
+   "limit": null,
+   "shape": "0,0,0;0,0,1;0,0,2",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      2,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      0,
+      2
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      2,
+      0,
+      3
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     2,
+     0,
+     1
+    ],
+    "index": 2,
+    "tiles_per_domain": 4,
+    "placements": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      3,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      3,
+      1,
+      0
+     ]
+    ]
+   },
+   "n": 3,
+   "shape_index": 0
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    1,
+    0
+   ],
+   "primitive": [
+    1,
+    0
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    0,
+    1
+   ],
+   "state_count": 4,
+   "edge_count": 1,
+   "interaction_span": 1,
+   "graph_sha256": "d0c2ca4b0bdbf1095c712505f8be5b454cfc03c3e51e5b8597a245e15bea6fea",
+   "cycle_length": 1,
+   "limit": null,
+   "shape": "0,0,0;2,2,4;4,-2,2",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      1,
+      0,
+      2
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      1,
+      0,
+      3
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     1,
+     0,
+     1
+    ],
+    "index": 1,
+    "tiles_per_domain": 2,
+    "placements": [
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      1
+     ]
+    ]
+   },
+   "n": 3,
+   "shape_index": 1
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    0,
+    1
+   ],
+   "primitive": [
+    0,
+    1
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    -1,
+    0
+   ],
+   "state_count": 4,
+   "edge_count": 1,
+   "interaction_span": 1,
+   "graph_sha256": "b9c88227e357e1295ce3107f64e52a63b41575d888d8ea3e2554076e1776e900",
+   "cycle_length": 1,
+   "limit": null,
+   "shape": "0,0,0;2,2,4;4,-2,2",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      3,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     1,
+     0,
+     1
+    ],
+    "index": 1,
+    "tiles_per_domain": 2,
+    "placements": [
+     [
+      0,
+      -1,
+      0
+     ],
+     [
+      1,
+      -1,
+      0
+     ]
+    ]
+   },
+   "n": 3,
+   "shape_index": 1
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    1,
+    1
+   ],
+   "primitive": [
+    1,
+    1
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    -1,
+    0
+   ],
+   "state_count": 16,
+   "edge_count": 1,
+   "interaction_span": 2,
+   "graph_sha256": "8c599e8b422edfb9f6bcf2c348703420b63653bb52be292e8f8996808628309d",
+   "cycle_length": 1,
+   "limit": null,
+   "shape": "0,0,0;2,2,4;4,-2,2",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      1,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      3,
+      1,
+      1
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     1,
+     0,
+     1
+    ],
+    "index": 1,
+    "tiles_per_domain": 2,
+    "placements": [
+     [
+      0,
+      -2,
+      0
+     ],
+     [
+      1,
+      -1,
+      0
+     ]
+    ]
+   },
+   "n": 3,
+   "shape_index": 1
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    2,
+    0
+   ],
+   "primitive": [
+    1,
+    0
+   ],
+   "multiplicity": 2,
+   "transverse": [
+    0,
+    1
+   ],
+   "state_count": 16,
+   "edge_count": 1,
+   "interaction_span": 1,
+   "graph_sha256": "d5a4b18a161cc5616c7a33e3fc729ce40f20b242b1d16ba7f7fec0ce21dc52ac",
+   "cycle_length": 1,
+   "limit": null,
+   "shape": "0,0,0;2,2,4;4,-2,2",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      2,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      0,
+      2
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      2,
+      0,
+      3
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     2,
+     0,
+     1
+    ],
+    "index": 2,
+    "tiles_per_domain": 4,
+    "placements": [
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ],
+     [
+      0,
+      0,
+      1
+     ]
+    ]
+   },
+   "n": 3,
+   "shape_index": 1
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    1,
+    0
+   ],
+   "primitive": [
+    1,
+    0
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    0,
+    1
+   ],
+   "state_count": 8,
+   "edge_count": 8,
+   "interaction_span": 1,
+   "graph_sha256": "08cfeecbfa6a1d5bd187aca3c9917788faeb6392a88488409e055f1a0af96e00",
+   "cycle_length": 1,
+   "limit": null,
+   "shape": "0,0,0;0,0,1;2,2,3",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      1,
+      0,
+      2
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      1,
+      0,
+      3
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     1,
+     0,
+     1
+    ],
+    "index": 1,
+    "tiles_per_domain": 2,
+    "placements": [
+     [
+      7,
+      0,
+      0
+     ],
+     [
+      2,
+      0,
+      0
+     ]
+    ]
+   },
+   "n": 3,
+   "shape_index": 2
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    0,
+    1
+   ],
+   "primitive": [
+    0,
+    1
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    -1,
+    0
+   ],
+   "state_count": 8,
+   "edge_count": 8,
+   "interaction_span": 1,
+   "graph_sha256": "8a379e7b7d68338c877c4c29c178ab90b2c96309287ed8a63d4b98f860b752aa",
+   "cycle_length": 1,
+   "limit": null,
+   "shape": "0,0,0;0,0,1;2,2,3",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      3,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     1,
+     0,
+     1
+    ],
+    "index": 1,
+    "tiles_per_domain": 2,
+    "placements": [
+     [
+      8,
+      0,
+      0
+     ],
+     [
+      3,
+      0,
+      0
+     ]
+    ]
+   },
+   "n": 3,
+   "shape_index": 2
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    1,
+    1
+   ],
+   "primitive": [
+    1,
+    1
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    -1,
+    0
+   ],
+   "state_count": 64,
+   "edge_count": 58,
+   "interaction_span": 2,
+   "graph_sha256": "80b4b84fad01d89a286acd12e21d16aba8edaab5b4ff3b88c69b7c972d0ed94b",
+   "cycle_length": 1,
+   "limit": null,
+   "shape": "0,0,0;0,0,1;2,2,3",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      1,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      3,
+      1,
+      1
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     1,
+     0,
+     1
+    ],
+    "index": 1,
+    "tiles_per_domain": 2,
+    "placements": [
+     [
+      8,
+      0,
+      0
+     ],
+     [
+      3,
+      0,
+      0
+     ]
+    ]
+   },
+   "n": 3,
+   "shape_index": 2
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    2,
+    0
+   ],
+   "primitive": [
+    1,
+    0
+   ],
+   "multiplicity": 2,
+   "transverse": [
+    0,
+    1
+   ],
+   "state_count": 64,
+   "edge_count": 78,
+   "interaction_span": 1,
+   "graph_sha256": "7fd2eb2c18307dc8e66ecced0137c8f4d8f8ad8810f3fb0581808e1b8a974871",
+   "cycle_length": 1,
+   "limit": null,
+   "shape": "0,0,0;0,0,1;2,2,3",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      2,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      0,
+      2
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      2,
+      0,
+      3
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     2,
+     0,
+     1
+    ],
+    "index": 2,
+    "tiles_per_domain": 4,
+    "placements": [
+     [
+      7,
+      0,
+      0
+     ],
+     [
+      2,
+      0,
+      0
+     ],
+     [
+      7,
+      1,
+      0
+     ],
+     [
+      2,
+      1,
+      0
+     ]
+    ]
+   },
+   "n": 3,
+   "shape_index": 2
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    1,
+    0
+   ],
+   "primitive": [
+    1,
+    0
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    0,
+    1
+   ],
+   "state_count": 18,
+   "edge_count": 16,
+   "interaction_span": 1,
+   "graph_sha256": "95b11ffb57a5480d99fcbfb6dd644a037568e15a6e718a8a312bbf067dfd8261",
+   "cycle_length": 1,
+   "limit": null,
+   "shape": "0,0,0;0,0,1;4,-2,2",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      1,
+      0,
+      2
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      1,
+      0,
+      3
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     1,
+     0,
+     1
+    ],
+    "index": 1,
+    "tiles_per_domain": 2,
+    "placements": [
+     [
+      4,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ]
+   },
+   "n": 3,
+   "shape_index": 3
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    0,
+    1
+   ],
+   "primitive": [
+    0,
+    1
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    -1,
+    0
+   ],
+   "state_count": 18,
+   "edge_count": 16,
+   "interaction_span": 1,
+   "graph_sha256": "8bc9a1ee506efd18ffdcd8e47b785f1cfe00e36ccd4108199c605ae59af6cf6e",
+   "cycle_length": 1,
+   "limit": null,
+   "shape": "0,0,0;0,0,1;4,-2,2",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      3,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     1,
+     0,
+     1
+    ],
+    "index": 1,
+    "tiles_per_domain": 2,
+    "placements": [
+     [
+      5,
+      0,
+      0
+     ],
+     [
+      2,
+      0,
+      0
+     ]
+    ]
+   },
+   "n": 3,
+   "shape_index": 3
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    1,
+    1
+   ],
+   "primitive": [
+    1,
+    1
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    -1,
+    0
+   ],
+   "state_count": 324,
+   "edge_count": 213,
+   "interaction_span": 2,
+   "graph_sha256": "27b126bf349326bb9b7e38564de55c5d837bbdcf74a9838e786a423d47e06c81",
+   "cycle_length": 2,
+   "limit": null,
+   "shape": "0,0,0;0,0,1;4,-2,2",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      1,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      3,
+      1,
+      1
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     2,
+     1,
+     1
+    ],
+    "index": 2,
+    "tiles_per_domain": 4,
+    "placements": [
+     [
+      8,
+      0,
+      0
+     ],
+     [
+      3,
+      0,
+      0
+     ],
+     [
+      0,
+      -3,
+      0
+     ],
+     [
+      11,
+      -3,
+      0
+     ]
+    ]
+   },
+   "n": 3,
+   "shape_index": 3
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    2,
+    0
+   ],
+   "primitive": [
+    1,
+    0
+   ],
+   "multiplicity": 2,
+   "transverse": [
+    0,
+    1
+   ],
+   "state_count": 324,
+   "edge_count": 420,
+   "interaction_span": 1,
+   "graph_sha256": "7540e6e0b4834623056d636e17fad38b7e7b23609a659f0eaf7aea9839150ed8",
+   "cycle_length": 1,
+   "limit": null,
+   "shape": "0,0,0;0,0,1;4,-2,2",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      2,
+      0,
+      1
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      0,
+      2
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      2,
+      0,
+      3
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     2,
+     0,
+     1
+    ],
+    "index": 2,
+    "tiles_per_domain": 4,
+    "placements": [
+     [
+      6,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      0
+     ],
+     [
+      6,
+      1,
+      0
+     ]
+    ]
+   },
+   "n": 3,
+   "shape_index": 3
+  }
+ ],
+ "torsion_control": {
+  "shape": "0,0,0;0,0,1;0,0,2;2,2,3",
+  "primitive": {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle-free",
+   "vector": [
+    1,
+    0
+   ],
+   "primitive": [
+    1,
+    0
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    0,
+    1
+   ],
+   "state_count": 12,
+   "edge_count": 6,
+   "interaction_span": 1,
+   "graph_sha256": "da6269332c0d2380b741151453a0e1e0d40d4c3a46cc0961a9aaffd024a03c19",
+   "cycle_length": null,
+   "limit": null,
+   "shape": "0,0,0;0,0,1;0,0,2;2,2,3",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "unsat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      1,
+      0,
+      2
+     ],
+     "verdict": "unsat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      1,
+      0,
+      3
+     ],
+     "verdict": "unsat"
+    }
+   ]
+  },
+  "nonprimitive": {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle",
+   "vector": [
+    2,
+    0
+   ],
+   "primitive": [
+    1,
+    0
+   ],
+   "multiplicity": 2,
+   "transverse": [
+    0,
+    1
+   ],
+   "state_count": 144,
+   "edge_count": 64,
+   "interaction_span": 1,
+   "graph_sha256": "fcb674d41fdf75e673538ee21c7988277ca7810906e6cc5f3744da058e788fee",
+   "cycle_length": 3,
+   "limit": null,
+   "shape": "0,0,0;0,0,1;0,0,2;2,2,3",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      2,
+      0,
+      1
+     ],
+     "verdict": "unsat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      0,
+      2
+     ],
+     "verdict": "sat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      2,
+      0,
+      3
+     ],
+     "verdict": "sat"
+    }
+   ],
+   "a1_certificate": {
+    "kind": "torus-exact-cover",
+    "hnf": [
+     2,
+     0,
+     3
+    ],
+    "index": 6,
+    "tiles_per_domain": 9,
+    "placements": [
+     [
+      3,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      8,
+      1,
+      0
+     ],
+     [
+      7,
+      0,
+      1
+     ],
+     [
+      5,
+      1,
+      2
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      6,
+      0,
+      2
+     ],
+     [
+      1,
+      0,
+      2
+     ],
+     [
+      2,
+      1,
+      2
+     ]
+    ]
+   }
+  },
+  "expected": "(1,0) cycle-free; (2,0) cycle"
+ },
+ "hat": [
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle-free",
+   "vector": [
+    1,
+    0
+   ],
+   "primitive": [
+    1,
+    0
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    0,
+    1
+   ],
+   "state_count": 3,
+   "edge_count": 0,
+   "interaction_span": 1,
+   "graph_sha256": "e022825a7650cded118f2f2ef590330a9dc3650eca6b47168ccd82c7737a48b7",
+   "cycle_length": null,
+   "limit": null,
+   "shape": "0,0,0;0,0,1;0,0,2;0,0,5;2,2,4;2,2,5;4,-2,2;4,-2,3",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "unsat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      1,
+      0,
+      2
+     ],
+     "verdict": "unsat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      1,
+      0,
+      3
+     ],
+     "verdict": "unsat"
+    }
+   ]
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle-free",
+   "vector": [
+    0,
+    1
+   ],
+   "primitive": [
+    0,
+    1
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    -1,
+    0
+   ],
+   "state_count": 3,
+   "edge_count": 0,
+   "interaction_span": 1,
+   "graph_sha256": "80fd598ba04ac13a5df15a9b9858cd03c78d30872ad70a4bc238d1abcc194558",
+   "cycle_length": null,
+   "limit": null,
+   "shape": "0,0,0;0,0,1;0,0,2;0,0,5;2,2,4;2,2,5;4,-2,2;4,-2,3",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "unsat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      0,
+      1
+     ],
+     "verdict": "unsat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      3,
+      0,
+      1
+     ],
+     "verdict": "unsat"
+    }
+   ]
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle-free",
+   "vector": [
+    1,
+    1
+   ],
+   "primitive": [
+    1,
+    1
+   ],
+   "multiplicity": 1,
+   "transverse": [
+    -1,
+    0
+   ],
+   "state_count": 34,
+   "edge_count": 26,
+   "interaction_span": 2,
+   "graph_sha256": "19aab204406a6b1738c8c15e66180511ef579b62131c8b253f003feef8d00fea",
+   "cycle_length": null,
+   "limit": null,
+   "shape": "0,0,0;0,0,1;0,0,2;0,0,5;2,2,4;2,2,5;4,-2,2;4,-2,3",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      1,
+      0,
+      1
+     ],
+     "verdict": "unsat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      1,
+      1
+     ],
+     "verdict": "unsat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      3,
+      1,
+      1
+     ],
+     "verdict": "unsat"
+    }
+   ]
+  },
+  {
+   "kind": "cylinder-transfer",
+   "verdict": "cycle-free",
+   "vector": [
+    2,
+    0
+   ],
+   "primitive": [
+    1,
+    0
+   ],
+   "multiplicity": 2,
+   "transverse": [
+    0,
+    1
+   ],
+   "state_count": 37,
+   "edge_count": 10,
+   "interaction_span": 1,
+   "graph_sha256": "fc06cf8c6b0b468155e72d7e9aedc8abd73f68bb00d63f0e51e70ff69c201604",
+   "cycle_length": null,
+   "limit": null,
+   "shape": "0,0,0;0,0,1;0,0,2;0,0,5;2,2,4;2,2,5;4,-2,2;4,-2,3",
+   "bounded_torus_crosscheck": [
+    {
+     "width": 1,
+     "hnf": [
+      2,
+      0,
+      1
+     ],
+     "verdict": "unsat"
+    },
+    {
+     "width": 2,
+     "hnf": [
+      2,
+      0,
+      2
+     ],
+     "verdict": "unsat"
+    },
+    {
+     "width": 3,
+     "hnf": [
+      2,
+      0,
+      3
+     ],
+     "verdict": "unsat"
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "small_census_cases": 28,
+  "small_census_resource_exhaustions": 0,
+  "bounded_torus_checks": 102,
+  "verified_transfer_cycles": 25,
+  "hat_cycle_free_vectors": 4,
+  "disagreements": 0
+ }
+}

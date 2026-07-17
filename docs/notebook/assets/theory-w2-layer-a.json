@@ -1,0 +1,431 @@
+{
+ "kind": "theory-w2-layer-a",
+ "schema_version": 1,
+ "date": "2026-07-17",
+ "provenance": {
+  "code_version": "ae44fa3-dirty",
+  "source": "src/einstein/theory/invariants.py",
+  "source_sha256": "33674b8c9723dfcf1682308f51bf5c08e1d71d7abdf9a281f9ddda6fd8ec3399",
+  "periodic_corpus": [
+   {
+    "path": "data/a1-compiled/periodic-09.jsonl",
+    "sha256": "c1795af83f53101ccb0aef91fae06d55c2ba529566268c3a302f7c8a7c009f9a",
+    "certificates": 755
+   },
+   {
+    "path": "data/a1-compiled/periodic-10.jsonl",
+    "sha256": "ab7634217a3b4cfbfe8261538f711c05b693984a24ee78c11d5357cfe094d2d9",
+    "certificates": 14
+   },
+   {
+    "path": "data/a1-compiled/periodic-11.jsonl",
+    "sha256": "27a584eab32884296cf188188f09ef5542c96f8a037780b90d9773a735eb1bcd",
+    "certificates": 2
+   },
+   {
+    "path": "data/a1-compiled/periodic-12.jsonl",
+    "sha256": "59c8d4edcdeba1e4013b0cb3b150e0c8928403590af5ba454bb668d31dbcf400",
+    "certificates": 11019
+   },
+   {
+    "path": "data/a1-compiled/periodic-13.jsonl",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "certificates": 0
+   },
+   {
+    "path": "data/a1-compiled/periodic-14.jsonl",
+    "sha256": "f383a7b97eaddad42016340e21c8629676b135e5d5905395229fa541951e6a64",
+    "certificates": 2603
+   },
+   {
+    "path": "data/a1-compiled/periodic-15.jsonl",
+    "sha256": "5388e5f623d8aba9f9c22d10f59c0282ee1d846e7552fba55feb905390d0065a",
+    "certificates": 46055
+   },
+   {
+    "path": "data/a1-compiled/periodic-16.jsonl",
+    "sha256": "dc8f0f5f636cd523ee4bc1f35e51f57ab6688429fc41f1f7c527fbdc9a9aa1d6",
+    "certificates": 29
+   }
+  ]
+ },
+ "validation": {
+  "verified_periodic_certificates": 60477,
+  "false_area_exclusions": 0,
+  "false_sector_exclusions": 0
+ },
+ "finalist": {
+  "shape": "010001010104010502f002f1030b030c04fa04fb",
+  "indices_tested": [
+   1,
+   60
+  ],
+  "area_required_index_modulus": 5,
+  "kill_table": [
+   {
+    "index": 1,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 2,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 3,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 4,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 5,
+    "area": "admissible",
+    "sector": "admissible",
+    "sector_modulus": null
+   },
+   {
+    "index": 6,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 7,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 8,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 9,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 10,
+    "area": "admissible",
+    "sector": "admissible",
+    "sector_modulus": null
+   },
+   {
+    "index": 11,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 12,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 13,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 14,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 15,
+    "area": "admissible",
+    "sector": "admissible",
+    "sector_modulus": null
+   },
+   {
+    "index": 16,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 17,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 18,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 19,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 20,
+    "area": "admissible",
+    "sector": "admissible",
+    "sector_modulus": null
+   },
+   {
+    "index": 21,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 22,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 23,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 24,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 25,
+    "area": "admissible",
+    "sector": "admissible",
+    "sector_modulus": null
+   },
+   {
+    "index": 26,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 27,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 28,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 29,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 30,
+    "area": "admissible",
+    "sector": "admissible",
+    "sector_modulus": null
+   },
+   {
+    "index": 31,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 32,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 33,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 34,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 35,
+    "area": "admissible",
+    "sector": "admissible",
+    "sector_modulus": null
+   },
+   {
+    "index": 36,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 37,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 38,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 39,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 40,
+    "area": "admissible",
+    "sector": "admissible",
+    "sector_modulus": null
+   },
+   {
+    "index": 41,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 42,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 43,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 44,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 45,
+    "area": "admissible",
+    "sector": "admissible",
+    "sector_modulus": null
+   },
+   {
+    "index": 46,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 47,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 48,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 49,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 50,
+    "area": "admissible",
+    "sector": "admissible",
+    "sector_modulus": null
+   },
+   {
+    "index": 51,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 52,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 53,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 54,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 55,
+    "area": "admissible",
+    "sector": "admissible",
+    "sector_modulus": null
+   },
+   {
+    "index": 56,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 57,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 58,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 59,
+    "area": "killed",
+    "sector": "killed",
+    "sector_modulus": 5
+   },
+   {
+    "index": 60,
+    "area": "admissible",
+    "sector": "admissible",
+    "sector_modulus": null
+   }
+  ],
+  "area_killed": 48,
+  "sector_killed": 48,
+  "additional_sector_kills": 0,
+  "conclusion": "The prime sector-coloring witness reproduces k=0 mod 5 and adds no exclusions beyond area for the finalist."
+ }
+}

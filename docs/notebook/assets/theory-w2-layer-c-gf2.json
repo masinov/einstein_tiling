@@ -1,0 +1,8565 @@
+{
+ "kind": "theory-w2-layer-c-gf2",
+ "schema_version": 1,
+ "date": "2026-07-17",
+ "scope": {
+  "modulus": 2,
+  "integer_snf_complete": false,
+  "positive_polarity": "a verified witness proves the quotient has no integer or 0/1 exact-cover solution",
+  "negative_polarity": "not-killed-mod2 is unknown, not evidence of a tiling"
+ },
+ "provenance": {
+  "code_version": "ae44fa3-dirty",
+  "source": "src/einstein/theory/invariants.py",
+  "source_sha256": "33674b8c9723dfcf1682308f51bf5c08e1d71d7abdf9a281f9ddda6fd8ec3399",
+  "periodic_corpus": [
+   {
+    "path": "data/a1-compiled/periodic-09.jsonl",
+    "sha256": "c1795af83f53101ccb0aef91fae06d55c2ba529566268c3a302f7c8a7c009f9a",
+    "certificates": 755
+   },
+   {
+    "path": "data/a1-compiled/periodic-10.jsonl",
+    "sha256": "ab7634217a3b4cfbfe8261538f711c05b693984a24ee78c11d5357cfe094d2d9",
+    "certificates": 14
+   },
+   {
+    "path": "data/a1-compiled/periodic-11.jsonl",
+    "sha256": "27a584eab32884296cf188188f09ef5542c96f8a037780b90d9773a735eb1bcd",
+    "certificates": 2
+   },
+   {
+    "path": "data/a1-compiled/periodic-12.jsonl",
+    "sha256": "59c8d4edcdeba1e4013b0cb3b150e0c8928403590af5ba454bb668d31dbcf400",
+    "certificates": 11019
+   },
+   {
+    "path": "data/a1-compiled/periodic-13.jsonl",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "certificates": 0
+   },
+   {
+    "path": "data/a1-compiled/periodic-14.jsonl",
+    "sha256": "f383a7b97eaddad42016340e21c8629676b135e5d5905395229fa541951e6a64",
+    "certificates": 2603
+   },
+   {
+    "path": "data/a1-compiled/periodic-15.jsonl",
+    "sha256": "5388e5f623d8aba9f9c22d10f59c0282ee1d846e7552fba55feb905390d0065a",
+    "certificates": 46055
+   },
+   {
+    "path": "data/a1-compiled/periodic-16.jsonl",
+    "sha256": "dc8f0f5f636cd523ee4bc1f35e51f57ab6688429fc41f1f7c527fbdc9a9aa1d6",
+    "certificates": 29
+   }
+  ]
+ },
+ "validation": {
+  "verified_periodic_certificates": 60477,
+  "false_exclusions": 0
+ },
+ "finalist": {
+  "shape": "010001010104010502f002f1030b030c04fa04fb",
+  "area_admissible_indices": [
+   5,
+   60,
+   5
+  ],
+  "quotients_tested": 742,
+  "quotients_killed_mod2": 36,
+  "by_index": {
+   "5": {
+    "hnfs": 6,
+    "killed_mod2": 3
+   },
+   "10": {
+    "hnfs": 18,
+    "killed_mod2": 3
+   },
+   "15": {
+    "hnfs": 24,
+    "killed_mod2": 3
+   },
+   "20": {
+    "hnfs": 42,
+    "killed_mod2": 3
+   },
+   "25": {
+    "hnfs": 31,
+    "killed_mod2": 3
+   },
+   "30": {
+    "hnfs": 72,
+    "killed_mod2": 3
+   },
+   "35": {
+    "hnfs": 48,
+    "killed_mod2": 3
+   },
+   "40": {
+    "hnfs": 90,
+    "killed_mod2": 3
+   },
+   "45": {
+    "hnfs": 78,
+    "killed_mod2": 3
+   },
+   "50": {
+    "hnfs": 93,
+    "killed_mod2": 3
+   },
+   "55": {
+    "hnfs": 72,
+    "killed_mod2": 3
+   },
+   "60": {
+    "hnfs": 168,
+    "killed_mod2": 3
+   }
+  },
+  "results": [
+   {
+    "index": 5,
+    "hnf": [
+     1,
+     0,
+     5
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      1,
+      0,
+      5
+     ],
+     "quotient_index": 5,
+     "n_cells": 30,
+     "n_placements": 10,
+     "incidence_rank_mod2": 10,
+     "weight_support": [
+      1,
+      16,
+      23,
+      26,
+      29
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 5,
+    "hnf": [
+     5,
+     0,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      5,
+      0,
+      1
+     ],
+     "quotient_index": 5,
+     "n_cells": 30,
+     "n_placements": 10,
+     "incidence_rank_mod2": 10,
+     "weight_support": [
+      0,
+      15,
+      21,
+      25,
+      26,
+      28,
+      29
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 5,
+    "hnf": [
+     5,
+     1,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 5,
+    "hnf": [
+     5,
+     2,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 5,
+    "hnf": [
+     5,
+     3,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 5,
+    "hnf": [
+     5,
+     4,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      5,
+      4,
+      1
+     ],
+     "quotient_index": 5,
+     "n_cells": 30,
+     "n_placements": 10,
+     "incidence_rank_mod2": 10,
+     "weight_support": [
+      0,
+      16,
+      17,
+      25,
+      27,
+      28,
+      29
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 10,
+    "hnf": [
+     1,
+     0,
+     10
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      1,
+      0,
+      10
+     ],
+     "quotient_index": 10,
+     "n_cells": 60,
+     "n_placements": 20,
+     "incidence_rank_mod2": 20,
+     "weight_support": [
+      3,
+      16,
+      17,
+      55,
+      57
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 10,
+    "hnf": [
+     2,
+     0,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 10,
+    "hnf": [
+     2,
+     1,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 10,
+    "hnf": [
+     5,
+     0,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 10,
+    "hnf": [
+     5,
+     1,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 10,
+    "hnf": [
+     5,
+     2,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 10,
+    "hnf": [
+     5,
+     3,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 10,
+    "hnf": [
+     5,
+     4,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 10,
+    "hnf": [
+     10,
+     0,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      10,
+      0,
+      1
+     ],
+     "quotient_index": 10,
+     "n_cells": 60,
+     "n_placements": 20,
+     "incidence_rank_mod2": 20,
+     "weight_support": [
+      4,
+      53,
+      55,
+      57,
+      59
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 10,
+    "hnf": [
+     10,
+     1,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 10,
+    "hnf": [
+     10,
+     2,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 10,
+    "hnf": [
+     10,
+     3,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 10,
+    "hnf": [
+     10,
+     4,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 10,
+    "hnf": [
+     10,
+     5,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 10,
+    "hnf": [
+     10,
+     6,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 10,
+    "hnf": [
+     10,
+     7,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 10,
+    "hnf": [
+     10,
+     8,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 10,
+    "hnf": [
+     10,
+     9,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      10,
+      9,
+      1
+     ],
+     "quotient_index": 10,
+     "n_cells": 60,
+     "n_placements": 20,
+     "incidence_rank_mod2": 20,
+     "weight_support": [
+      0,
+      16,
+      17,
+      55,
+      57,
+      58,
+      59
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 15,
+    "hnf": [
+     1,
+     0,
+     15
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      1,
+      0,
+      15
+     ],
+     "quotient_index": 15,
+     "n_cells": 90,
+     "n_placements": 30,
+     "incidence_rank_mod2": 30,
+     "weight_support": [
+      1,
+      16,
+      23,
+      29,
+      35,
+      41,
+      47,
+      53,
+      59,
+      65,
+      71,
+      77,
+      83,
+      86,
+      89
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 15,
+    "hnf": [
+     3,
+     0,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 15,
+    "hnf": [
+     3,
+     1,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 15,
+    "hnf": [
+     3,
+     2,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 15,
+    "hnf": [
+     5,
+     0,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 15,
+    "hnf": [
+     5,
+     1,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 15,
+    "hnf": [
+     5,
+     2,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 15,
+    "hnf": [
+     5,
+     3,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 15,
+    "hnf": [
+     5,
+     4,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 15,
+    "hnf": [
+     15,
+     0,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      15,
+      0,
+      1
+     ],
+     "quotient_index": 15,
+     "n_cells": 90,
+     "n_placements": 30,
+     "incidence_rank_mod2": 30,
+     "weight_support": [
+      0,
+      15,
+      21,
+      27,
+      33,
+      39,
+      45,
+      51,
+      57,
+      63,
+      69,
+      75,
+      81,
+      85,
+      86,
+      88,
+      89
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 15,
+    "hnf": [
+     15,
+     1,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 15,
+    "hnf": [
+     15,
+     2,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 15,
+    "hnf": [
+     15,
+     3,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 15,
+    "hnf": [
+     15,
+     4,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 15,
+    "hnf": [
+     15,
+     5,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 15,
+    "hnf": [
+     15,
+     6,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 15,
+    "hnf": [
+     15,
+     7,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 15,
+    "hnf": [
+     15,
+     8,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 15,
+    "hnf": [
+     15,
+     9,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 15,
+    "hnf": [
+     15,
+     10,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 15,
+    "hnf": [
+     15,
+     11,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 15,
+    "hnf": [
+     15,
+     12,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 15,
+    "hnf": [
+     15,
+     13,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 15,
+    "hnf": [
+     15,
+     14,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      15,
+      14,
+      1
+     ],
+     "quotient_index": 15,
+     "n_cells": 90,
+     "n_placements": 30,
+     "incidence_rank_mod2": 30,
+     "weight_support": [
+      0,
+      16,
+      17,
+      85,
+      87,
+      88,
+      89
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 20,
+    "hnf": [
+     1,
+     0,
+     20
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      1,
+      0,
+      20
+     ],
+     "quotient_index": 20,
+     "n_cells": 120,
+     "n_placements": 40,
+     "incidence_rank_mod2": 40,
+     "weight_support": [
+      3,
+      16,
+      17,
+      115,
+      117
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 20,
+    "hnf": [
+     2,
+     0,
+     10
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     2,
+     1,
+     10
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     4,
+     0,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     4,
+     1,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     4,
+     2,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     4,
+     3,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     5,
+     0,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     5,
+     1,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     5,
+     2,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     5,
+     3,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     5,
+     4,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     10,
+     0,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     10,
+     1,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     10,
+     2,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     10,
+     3,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     10,
+     4,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     10,
+     5,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     10,
+     6,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     10,
+     7,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     10,
+     8,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     10,
+     9,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     20,
+     0,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      20,
+      0,
+      1
+     ],
+     "quotient_index": 20,
+     "n_cells": 120,
+     "n_placements": 40,
+     "incidence_rank_mod2": 40,
+     "weight_support": [
+      4,
+      113,
+      115,
+      117,
+      119
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 20,
+    "hnf": [
+     20,
+     1,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     20,
+     2,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     20,
+     3,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     20,
+     4,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     20,
+     5,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     20,
+     6,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     20,
+     7,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     20,
+     8,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     20,
+     9,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     20,
+     10,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     20,
+     11,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     20,
+     12,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     20,
+     13,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     20,
+     14,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     20,
+     15,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     20,
+     16,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     20,
+     17,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     20,
+     18,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 20,
+    "hnf": [
+     20,
+     19,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      20,
+      19,
+      1
+     ],
+     "quotient_index": 20,
+     "n_cells": 120,
+     "n_placements": 40,
+     "incidence_rank_mod2": 40,
+     "weight_support": [
+      0,
+      16,
+      17,
+      115,
+      117,
+      118,
+      119
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 25,
+    "hnf": [
+     1,
+     0,
+     25
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      1,
+      0,
+      25
+     ],
+     "quotient_index": 25,
+     "n_cells": 150,
+     "n_placements": 50,
+     "incidence_rank_mod2": 50,
+     "weight_support": [
+      1,
+      16,
+      23,
+      29,
+      35,
+      41,
+      47,
+      53,
+      59,
+      65,
+      71,
+      77,
+      83,
+      89,
+      95,
+      101,
+      107,
+      113,
+      119,
+      125,
+      131,
+      137,
+      143,
+      146,
+      149
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 25,
+    "hnf": [
+     5,
+     0,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     5,
+     1,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     5,
+     2,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     5,
+     3,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     5,
+     4,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     0,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      25,
+      0,
+      1
+     ],
+     "quotient_index": 25,
+     "n_cells": 150,
+     "n_placements": 50,
+     "incidence_rank_mod2": 50,
+     "weight_support": [
+      0,
+      15,
+      21,
+      27,
+      33,
+      39,
+      45,
+      51,
+      57,
+      63,
+      69,
+      75,
+      81,
+      87,
+      93,
+      99,
+      105,
+      111,
+      117,
+      123,
+      129,
+      135,
+      141,
+      145,
+      146,
+      148,
+      149
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     1,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     2,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     3,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     4,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     5,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     6,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     7,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     8,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     9,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     10,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     11,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     12,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     13,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     14,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     15,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     16,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     17,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     18,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     19,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     20,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     21,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     22,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     23,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 25,
+    "hnf": [
+     25,
+     24,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      25,
+      24,
+      1
+     ],
+     "quotient_index": 25,
+     "n_cells": 150,
+     "n_placements": 50,
+     "incidence_rank_mod2": 50,
+     "weight_support": [
+      0,
+      16,
+      17,
+      145,
+      147,
+      148,
+      149
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 30,
+    "hnf": [
+     1,
+     0,
+     30
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      1,
+      0,
+      30
+     ],
+     "quotient_index": 30,
+     "n_cells": 180,
+     "n_placements": 60,
+     "incidence_rank_mod2": 60,
+     "weight_support": [
+      3,
+      16,
+      17,
+      175,
+      177
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 30,
+    "hnf": [
+     2,
+     0,
+     15
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     2,
+     1,
+     15
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     3,
+     0,
+     10
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     3,
+     1,
+     10
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     3,
+     2,
+     10
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     5,
+     0,
+     6
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     5,
+     1,
+     6
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     5,
+     2,
+     6
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     5,
+     3,
+     6
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     5,
+     4,
+     6
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     6,
+     0,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     6,
+     1,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     6,
+     2,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     6,
+     3,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     6,
+     4,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     6,
+     5,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     10,
+     0,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     10,
+     1,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     10,
+     2,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     10,
+     3,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     10,
+     4,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     10,
+     5,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     10,
+     6,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     10,
+     7,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     10,
+     8,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     10,
+     9,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     15,
+     0,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     15,
+     1,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     15,
+     2,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     15,
+     3,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     15,
+     4,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     15,
+     5,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     15,
+     6,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     15,
+     7,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     15,
+     8,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     15,
+     9,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     15,
+     10,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     15,
+     11,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     15,
+     12,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     15,
+     13,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     15,
+     14,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     0,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      30,
+      0,
+      1
+     ],
+     "quotient_index": 30,
+     "n_cells": 180,
+     "n_placements": 60,
+     "incidence_rank_mod2": 60,
+     "weight_support": [
+      4,
+      173,
+      175,
+      177,
+      179
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     1,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     2,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     3,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     4,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     5,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     6,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     7,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     8,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     9,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     10,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     11,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     12,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     13,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     14,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     15,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     16,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     17,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     18,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     19,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     20,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     21,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     22,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     23,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     24,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     25,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     26,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     27,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     28,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 30,
+    "hnf": [
+     30,
+     29,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      30,
+      29,
+      1
+     ],
+     "quotient_index": 30,
+     "n_cells": 180,
+     "n_placements": 60,
+     "incidence_rank_mod2": 60,
+     "weight_support": [
+      0,
+      16,
+      17,
+      175,
+      177,
+      178,
+      179
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 35,
+    "hnf": [
+     1,
+     0,
+     35
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      1,
+      0,
+      35
+     ],
+     "quotient_index": 35,
+     "n_cells": 210,
+     "n_placements": 70,
+     "incidence_rank_mod2": 70,
+     "weight_support": [
+      1,
+      16,
+      23,
+      29,
+      35,
+      41,
+      47,
+      53,
+      59,
+      65,
+      71,
+      77,
+      83,
+      89,
+      95,
+      101,
+      107,
+      113,
+      119,
+      125,
+      131,
+      137,
+      143,
+      149,
+      155,
+      161,
+      167,
+      173,
+      179,
+      185,
+      191,
+      197,
+      203,
+      206,
+      209
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 35,
+    "hnf": [
+     5,
+     0,
+     7
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     5,
+     1,
+     7
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     5,
+     2,
+     7
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     5,
+     3,
+     7
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     5,
+     4,
+     7
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     7,
+     0,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     7,
+     1,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     7,
+     2,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     7,
+     3,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     7,
+     4,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     7,
+     5,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     7,
+     6,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     0,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      35,
+      0,
+      1
+     ],
+     "quotient_index": 35,
+     "n_cells": 210,
+     "n_placements": 70,
+     "incidence_rank_mod2": 70,
+     "weight_support": [
+      0,
+      15,
+      21,
+      27,
+      33,
+      39,
+      45,
+      51,
+      57,
+      63,
+      69,
+      75,
+      81,
+      87,
+      93,
+      99,
+      105,
+      111,
+      117,
+      123,
+      129,
+      135,
+      141,
+      147,
+      153,
+      159,
+      165,
+      171,
+      177,
+      183,
+      189,
+      195,
+      201,
+      205,
+      206,
+      208,
+      209
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     1,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     2,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     3,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     4,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     5,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     6,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     7,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     8,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     9,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     10,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     11,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     12,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     13,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     14,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     15,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     16,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     17,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     18,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     19,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     20,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     21,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     22,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     23,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     24,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     25,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     26,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     27,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     28,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     29,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     30,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     31,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     32,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     33,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 35,
+    "hnf": [
+     35,
+     34,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      35,
+      34,
+      1
+     ],
+     "quotient_index": 35,
+     "n_cells": 210,
+     "n_placements": 70,
+     "incidence_rank_mod2": 70,
+     "weight_support": [
+      0,
+      16,
+      17,
+      205,
+      207,
+      208,
+      209
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 40,
+    "hnf": [
+     1,
+     0,
+     40
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      1,
+      0,
+      40
+     ],
+     "quotient_index": 40,
+     "n_cells": 240,
+     "n_placements": 80,
+     "incidence_rank_mod2": 80,
+     "weight_support": [
+      3,
+      16,
+      17,
+      235,
+      237
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 40,
+    "hnf": [
+     2,
+     0,
+     20
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     2,
+     1,
+     20
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     4,
+     0,
+     10
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     4,
+     1,
+     10
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     4,
+     2,
+     10
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     4,
+     3,
+     10
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     5,
+     0,
+     8
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     5,
+     1,
+     8
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     5,
+     2,
+     8
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     5,
+     3,
+     8
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     5,
+     4,
+     8
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     8,
+     0,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     8,
+     1,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     8,
+     2,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     8,
+     3,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     8,
+     4,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     8,
+     5,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     8,
+     6,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     8,
+     7,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     10,
+     0,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     10,
+     1,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     10,
+     2,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     10,
+     3,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     10,
+     4,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     10,
+     5,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     10,
+     6,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     10,
+     7,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     10,
+     8,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     10,
+     9,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     20,
+     0,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     20,
+     1,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     20,
+     2,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     20,
+     3,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     20,
+     4,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     20,
+     5,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     20,
+     6,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     20,
+     7,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     20,
+     8,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     20,
+     9,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     20,
+     10,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     20,
+     11,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     20,
+     12,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     20,
+     13,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     20,
+     14,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     20,
+     15,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     20,
+     16,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     20,
+     17,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     20,
+     18,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     20,
+     19,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     0,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      40,
+      0,
+      1
+     ],
+     "quotient_index": 40,
+     "n_cells": 240,
+     "n_placements": 80,
+     "incidence_rank_mod2": 80,
+     "weight_support": [
+      4,
+      233,
+      235,
+      237,
+      239
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     1,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     2,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     3,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     4,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     5,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     6,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     7,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     8,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     9,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     10,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     11,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     12,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     13,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     14,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     15,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     16,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     17,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     18,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     19,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     20,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     21,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     22,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     23,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     24,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     25,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     26,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     27,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     28,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     29,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     30,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     31,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     32,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     33,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     34,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     35,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     36,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     37,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     38,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 40,
+    "hnf": [
+     40,
+     39,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      40,
+      39,
+      1
+     ],
+     "quotient_index": 40,
+     "n_cells": 240,
+     "n_placements": 80,
+     "incidence_rank_mod2": 80,
+     "weight_support": [
+      0,
+      16,
+      17,
+      235,
+      237,
+      238,
+      239
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 45,
+    "hnf": [
+     1,
+     0,
+     45
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      1,
+      0,
+      45
+     ],
+     "quotient_index": 45,
+     "n_cells": 270,
+     "n_placements": 90,
+     "incidence_rank_mod2": 90,
+     "weight_support": [
+      1,
+      16,
+      23,
+      29,
+      35,
+      41,
+      47,
+      53,
+      59,
+      65,
+      71,
+      77,
+      83,
+      89,
+      95,
+      101,
+      107,
+      113,
+      119,
+      125,
+      131,
+      137,
+      143,
+      149,
+      155,
+      161,
+      167,
+      173,
+      179,
+      185,
+      191,
+      197,
+      203,
+      209,
+      215,
+      221,
+      227,
+      233,
+      239,
+      245,
+      251,
+      257,
+      263,
+      266,
+      269
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 45,
+    "hnf": [
+     3,
+     0,
+     15
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     3,
+     1,
+     15
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     3,
+     2,
+     15
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     5,
+     0,
+     9
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     5,
+     1,
+     9
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     5,
+     2,
+     9
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     5,
+     3,
+     9
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     5,
+     4,
+     9
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     9,
+     0,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     9,
+     1,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     9,
+     2,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     9,
+     3,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     9,
+     4,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     9,
+     5,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     9,
+     6,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     9,
+     7,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     9,
+     8,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     15,
+     0,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     15,
+     1,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     15,
+     2,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     15,
+     3,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     15,
+     4,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     15,
+     5,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     15,
+     6,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     15,
+     7,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     15,
+     8,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     15,
+     9,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     15,
+     10,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     15,
+     11,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     15,
+     12,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     15,
+     13,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     15,
+     14,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     0,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      45,
+      0,
+      1
+     ],
+     "quotient_index": 45,
+     "n_cells": 270,
+     "n_placements": 90,
+     "incidence_rank_mod2": 90,
+     "weight_support": [
+      0,
+      15,
+      21,
+      27,
+      33,
+      39,
+      45,
+      51,
+      57,
+      63,
+      69,
+      75,
+      81,
+      87,
+      93,
+      99,
+      105,
+      111,
+      117,
+      123,
+      129,
+      135,
+      141,
+      147,
+      153,
+      159,
+      165,
+      171,
+      177,
+      183,
+      189,
+      195,
+      201,
+      207,
+      213,
+      219,
+      225,
+      231,
+      237,
+      243,
+      249,
+      255,
+      261,
+      265,
+      266,
+      268,
+      269
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     1,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     2,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     3,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     4,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     5,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     6,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     7,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     8,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     9,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     10,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     11,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     12,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     13,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     14,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     15,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     16,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     17,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     18,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     19,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     20,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     21,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     22,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     23,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     24,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     25,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     26,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     27,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     28,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     29,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     30,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     31,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     32,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     33,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     34,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     35,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     36,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     37,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     38,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     39,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     40,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     41,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     42,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     43,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 45,
+    "hnf": [
+     45,
+     44,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      45,
+      44,
+      1
+     ],
+     "quotient_index": 45,
+     "n_cells": 270,
+     "n_placements": 90,
+     "incidence_rank_mod2": 90,
+     "weight_support": [
+      0,
+      16,
+      17,
+      265,
+      267,
+      268,
+      269
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 50,
+    "hnf": [
+     1,
+     0,
+     50
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      1,
+      0,
+      50
+     ],
+     "quotient_index": 50,
+     "n_cells": 300,
+     "n_placements": 100,
+     "incidence_rank_mod2": 100,
+     "weight_support": [
+      3,
+      16,
+      17,
+      295,
+      297
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 50,
+    "hnf": [
+     2,
+     0,
+     25
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     2,
+     1,
+     25
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     5,
+     0,
+     10
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     5,
+     1,
+     10
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     5,
+     2,
+     10
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     5,
+     3,
+     10
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     5,
+     4,
+     10
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     10,
+     0,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     10,
+     1,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     10,
+     2,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     10,
+     3,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     10,
+     4,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     10,
+     5,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     10,
+     6,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     10,
+     7,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     10,
+     8,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     10,
+     9,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     0,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     1,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     2,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     3,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     4,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     5,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     6,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     7,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     8,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     9,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     10,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     11,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     12,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     13,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     14,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     15,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     16,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     17,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     18,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     19,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     20,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     21,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     22,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     23,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     25,
+     24,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     0,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      50,
+      0,
+      1
+     ],
+     "quotient_index": 50,
+     "n_cells": 300,
+     "n_placements": 100,
+     "incidence_rank_mod2": 100,
+     "weight_support": [
+      4,
+      293,
+      295,
+      297,
+      299
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     1,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     2,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     3,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     4,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     5,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     6,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     7,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     8,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     9,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     10,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     11,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     12,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     13,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     14,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     15,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     16,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     17,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     18,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     19,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     20,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     21,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     22,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     23,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     24,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     25,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     26,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     27,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     28,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     29,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     30,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     31,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     32,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     33,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     34,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     35,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     36,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     37,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     38,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     39,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     40,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     41,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     42,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     43,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     44,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     45,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     46,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     47,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     48,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 50,
+    "hnf": [
+     50,
+     49,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      50,
+      49,
+      1
+     ],
+     "quotient_index": 50,
+     "n_cells": 300,
+     "n_placements": 100,
+     "incidence_rank_mod2": 100,
+     "weight_support": [
+      0,
+      16,
+      17,
+      295,
+      297,
+      298,
+      299
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 55,
+    "hnf": [
+     1,
+     0,
+     55
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      1,
+      0,
+      55
+     ],
+     "quotient_index": 55,
+     "n_cells": 330,
+     "n_placements": 110,
+     "incidence_rank_mod2": 110,
+     "weight_support": [
+      1,
+      16,
+      23,
+      29,
+      35,
+      41,
+      47,
+      53,
+      59,
+      65,
+      71,
+      77,
+      83,
+      89,
+      95,
+      101,
+      107,
+      113,
+      119,
+      125,
+      131,
+      137,
+      143,
+      149,
+      155,
+      161,
+      167,
+      173,
+      179,
+      185,
+      191,
+      197,
+      203,
+      209,
+      215,
+      221,
+      227,
+      233,
+      239,
+      245,
+      251,
+      257,
+      263,
+      269,
+      275,
+      281,
+      287,
+      293,
+      299,
+      305,
+      311,
+      317,
+      323,
+      326,
+      329
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 55,
+    "hnf": [
+     5,
+     0,
+     11
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     5,
+     1,
+     11
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     5,
+     2,
+     11
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     5,
+     3,
+     11
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     5,
+     4,
+     11
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     11,
+     0,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     11,
+     1,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     11,
+     2,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     11,
+     3,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     11,
+     4,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     11,
+     5,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     11,
+     6,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     11,
+     7,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     11,
+     8,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     11,
+     9,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     11,
+     10,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     0,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      55,
+      0,
+      1
+     ],
+     "quotient_index": 55,
+     "n_cells": 330,
+     "n_placements": 110,
+     "incidence_rank_mod2": 110,
+     "weight_support": [
+      0,
+      15,
+      21,
+      27,
+      33,
+      39,
+      45,
+      51,
+      57,
+      63,
+      69,
+      75,
+      81,
+      87,
+      93,
+      99,
+      105,
+      111,
+      117,
+      123,
+      129,
+      135,
+      141,
+      147,
+      153,
+      159,
+      165,
+      171,
+      177,
+      183,
+      189,
+      195,
+      201,
+      207,
+      213,
+      219,
+      225,
+      231,
+      237,
+      243,
+      249,
+      255,
+      261,
+      267,
+      273,
+      279,
+      285,
+      291,
+      297,
+      303,
+      309,
+      315,
+      321,
+      325,
+      326,
+      328,
+      329
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     1,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     2,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     3,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     4,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     5,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     6,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     7,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     8,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     9,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     10,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     11,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     12,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     13,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     14,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     15,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     16,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     17,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     18,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     19,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     20,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     21,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     22,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     23,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     24,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     25,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     26,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     27,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     28,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     29,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     30,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     31,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     32,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     33,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     34,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     35,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     36,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     37,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     38,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     39,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     40,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     41,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     42,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     43,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     44,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     45,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     46,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     47,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     48,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     49,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     50,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     51,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     52,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     53,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 55,
+    "hnf": [
+     55,
+     54,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      55,
+      54,
+      1
+     ],
+     "quotient_index": 55,
+     "n_cells": 330,
+     "n_placements": 110,
+     "incidence_rank_mod2": 110,
+     "weight_support": [
+      0,
+      16,
+      17,
+      325,
+      327,
+      328,
+      329
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 60,
+    "hnf": [
+     1,
+     0,
+     60
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      1,
+      0,
+      60
+     ],
+     "quotient_index": 60,
+     "n_cells": 360,
+     "n_placements": 120,
+     "incidence_rank_mod2": 120,
+     "weight_support": [
+      3,
+      16,
+      17,
+      355,
+      357
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 60,
+    "hnf": [
+     2,
+     0,
+     30
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     2,
+     1,
+     30
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     3,
+     0,
+     20
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     3,
+     1,
+     20
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     3,
+     2,
+     20
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     4,
+     0,
+     15
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     4,
+     1,
+     15
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     4,
+     2,
+     15
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     4,
+     3,
+     15
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     5,
+     0,
+     12
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     5,
+     1,
+     12
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     5,
+     2,
+     12
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     5,
+     3,
+     12
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     5,
+     4,
+     12
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     6,
+     0,
+     10
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     6,
+     1,
+     10
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     6,
+     2,
+     10
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     6,
+     3,
+     10
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     6,
+     4,
+     10
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     6,
+     5,
+     10
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     10,
+     0,
+     6
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     10,
+     1,
+     6
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     10,
+     2,
+     6
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     10,
+     3,
+     6
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     10,
+     4,
+     6
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     10,
+     5,
+     6
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     10,
+     6,
+     6
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     10,
+     7,
+     6
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     10,
+     8,
+     6
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     10,
+     9,
+     6
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     12,
+     0,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     12,
+     1,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     12,
+     2,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     12,
+     3,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     12,
+     4,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     12,
+     5,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     12,
+     6,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     12,
+     7,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     12,
+     8,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     12,
+     9,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     12,
+     10,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     12,
+     11,
+     5
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     15,
+     0,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     15,
+     1,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     15,
+     2,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     15,
+     3,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     15,
+     4,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     15,
+     5,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     15,
+     6,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     15,
+     7,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     15,
+     8,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     15,
+     9,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     15,
+     10,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     15,
+     11,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     15,
+     12,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     15,
+     13,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     15,
+     14,
+     4
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     20,
+     0,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     20,
+     1,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     20,
+     2,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     20,
+     3,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     20,
+     4,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     20,
+     5,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     20,
+     6,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     20,
+     7,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     20,
+     8,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     20,
+     9,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     20,
+     10,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     20,
+     11,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     20,
+     12,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     20,
+     13,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     20,
+     14,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     20,
+     15,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     20,
+     16,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     20,
+     17,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     20,
+     18,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     20,
+     19,
+     3
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     0,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     1,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     2,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     3,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     4,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     5,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     6,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     7,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     8,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     9,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     10,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     11,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     12,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     13,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     14,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     15,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     16,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     17,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     18,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     19,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     20,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     21,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     22,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     23,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     24,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     25,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     26,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     27,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     28,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     30,
+     29,
+     2
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     0,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      60,
+      0,
+      1
+     ],
+     "quotient_index": 60,
+     "n_cells": 360,
+     "n_placements": 120,
+     "incidence_rank_mod2": 120,
+     "weight_support": [
+      4,
+      353,
+      355,
+      357,
+      359
+     ],
+     "target_residue": 1
+    }
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     1,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     2,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     3,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     4,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     5,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     6,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     7,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     8,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     9,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     10,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     11,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     12,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     13,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     14,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     15,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     16,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     17,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     18,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     19,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     20,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     21,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     22,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     23,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     24,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     25,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     26,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     27,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     28,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     29,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     30,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     31,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     32,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     33,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     34,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     35,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     36,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     37,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     38,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     39,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     40,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     41,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     42,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     43,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     44,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     45,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     46,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     47,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     48,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     49,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     50,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     51,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     52,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     53,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     54,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     55,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     56,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     57,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     58,
+     1
+    ],
+    "verdict": "not-killed-mod2",
+    "certificate": null
+   },
+   {
+    "index": 60,
+    "hnf": [
+     60,
+     59,
+     1
+    ],
+    "verdict": "killed-mod2",
+    "certificate": {
+     "kind": "gf2-incidence-cokernel-obstruction",
+     "hnf": [
+      60,
+      59,
+      1
+     ],
+     "quotient_index": 60,
+     "n_cells": 360,
+     "n_placements": 120,
+     "incidence_rank_mod2": 120,
+     "weight_support": [
+      0,
+      16,
+      17,
+      355,
+      357,
+      358,
+      359
+     ],
+     "target_residue": 1
+    }
+   }
+  ],
+  "conclusion": "GF(2) gives exact quotient-specific kills beyond area, but does not decide the surviving HNFs and is not full SNF."
+ }
+}

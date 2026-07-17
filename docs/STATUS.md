@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-17 (session 19)
+**Last updated:** 2026-07-17 (session 28)
 
 ## Where we are
 
@@ -19,6 +19,7 @@
 | M4 — A4 diffraction fingerprint | §4 A4 | ✅ done v0; 12-fold core calibration passed (session 05) |
 | E4 — full fingerprint calibration gate | §8 E4 | ✅ passed (sessions 05–06) |
 | M5 — A6 hierarchy mining | §4 A6 | ✅ done v0; recursive, stationary-collar and SAT forcing gate passed |
+| T0/W1/W2 — exact theory foundations | theory program v0.2 | 🟨 in progress; finalist T1.2-36 composes into 126 infinite HNF families; binary-coupled S3 holonomy and independently checked DRAT cores close the complete quotient prefix through index 40 (sessions 20–28) |
 | **Gate G1 — E1 blind hat rediscovery** | §8 E1 | 🟨 in progress; hat A6 has one 3-type local rule family |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
@@ -162,8 +163,82 @@
   Artifact:
   `a6-hat-screen-results.json`; inspection drawings:
   `a6-hat-candidate-{1,2}.svg`; runner: `scripts/run_a6_hat.py`.
-- Test suite: **66 fast passed** (14 deselected, 49.81 s);
-  **14 slow passed** (63 deselected, 111.33 s). Vendored Rust: **5 passed**.
+- **Theory dossier v0.2 adopted:** `docs/theory/` now separates roadmap,
+  theorem text, stable-ID proof status, experiment evidence and monograph
+  structure. T0.1 gives a proof draft that singly periodic grid-aligned
+  tilability implies doubly periodic tilability; W1's auditable transfer
+  certificate contract is specified. No universal finalist verdict is claimed.
+- **W1.a exact reference implementation:** the new cylinder engine enumerates
+  all whole-tile crossing-state unions, searches the entire graph, and converts
+  cycles to independently verified A1 certificates. Eight unit controls pass,
+  including a four-kite example that has period (2,0) but not (1,0), preventing
+  primitive-only vector collapse. The archived phase-0 matrix adds 28 n≤3
+  census/vector cases and 102 independent bounded-torus checks: 25 verified
+  cycles, four cycle-free hat vectors, zero disagreements/exhaustions. Those
+  phase-0 graph hashes motivated the complete certificate gate below.
+- **W1 negative gate and first finalist theorem:** cycle-free results now carry
+  complete graph manifests checked by a separate geometry/state/transition
+  verifier. Five negative controls pass tamper-resistant verification. For the
+  finalist, 11 D6 representatives cover every one of the 90 nonzero vectors
+  with Q(v)≤25, including nonprimitive vectors; all are independently verified
+  cycle-free with zero exhaustions. Thus T1.2-25 exactly excludes every such
+  grid-aligned period. Larger vectors and unconditional geometry remain open.
+- **W1 exact extension through Q=36:** four incremental shell certificates
+  cover 36 more vectors, with complete graphs up to 159,860 states. Combined
+  with T1.2-25, all 126 nonzero vectors in 15 D6 orbits through Q=36 are
+  independently verified cycle-free. The 51 MB shell artifact makes proof-size
+  scaling explicit; it contains zero resource exhaustions.
+- **W2 Layer A and B audit:** exact area and prime-sector coloring witnesses
+  have zero false exclusions on all 60,477 materialized periodic certificates.
+  For the finalist, sector coloring adds nothing beyond k≡0 mod 5. The proposed
+  isolated nontrivial-character Layer B is mathematically vacuous because its
+  projected target is zero; T2.B0 retires it and redirects W2 to integer SNF.
+- **W2.C modular cokernel:** quotient-wide GF(2) witnesses pass all 60,477
+  periodic controls with zero false exclusions and kill 36/742 area-admissible
+  finalist HNFs through index 60. A closed odd-weight support annihilates both
+  thin placement profiles for HNF (1,0,k), producing proof draft T2.C1 for all
+  k≥4—W2's first infinite quotient-family exclusion.
+- **W2.C exact integer normal forms:** pinned FLINT 0.9.0 and SymPy 1.14.0
+  independently agree on Smith controls; canonical FLINT row-HNF completes all
+  742 finalist quotients through index 60. It finds exactly the same 36 rank
+  obstructions as GF(2), 706 unrestricted integer solutions, and zero
+  torsion-index obstructions. Thus the bare integer relaxation is exhausted at
+  this horizon; integer compatibility is not a 0/1 cover.
+- **W2.C nonnegative rational no-go:** translation averaging reduces the full
+  incidence LP exactly to a six-sector cone. Exact compact witnesses verify
+  that all 706 integer-compatible finalist quotients through index 60 are also
+  nonnegative-rational compatible; the same 36 rank cases are obstructed.
+  Ordinary positivity therefore adds zero kills. Binary exact-cover structure
+  or nonabelian holonomy is the remaining algebraic target.
+- **W2.C binary quotient families:** T1.2-36 composes with exact HNF vector
+  membership into 126 infinite congruence families. They exclude every HNF
+  through index 36 and 2,941/8,864 finalist area-admissible HNFs through index
+  215. Exact D6 maps promote the thin proof to all three families `(1,0,k)`,
+  `(k,0,1)`, `(k,k-1,1)` for every k≥4. Missing family membership is unknown.
+- **W2.D phase 0:** an exact p3 Cayley model reproduces Conway--Lagarias'
+  three-in-line boundary invariant. The finalist has 2,556 S3 boundary-group
+  surjections, but exhaustive zero-displacement analysis yields no commuting-
+  coset obstruction: 2,322 kernels have order 6 and 234 have order 3. A sound
+  torus certificate must couple group potentials to the selected binary tile-
+  boundary network; no Layer-D finalist quotient is yet excluded.
+- **W2.D binary-coupled result:** the at-least-cover/S3-potential CSP passes
+  one-kite and nontrivial shape-392 periodic controls. The 234 strong finalist
+  surjections reduce to 39 inner-conjugacy classes. Exhaustive class search
+  kills all three W1-family survivors at index 40—`(10,3,4)`, `(40,11,1)`,
+  `(40,28,1)`—with six killing classes each, while their placement-only
+  relaxations are SAT. All 54 selected map/twist core CNFs and DRAT proofs
+  replay under independent `drat-trim`; together with area and T2.C4-36 this
+  excludes every HNF through index 40. Larger indices and O1 remain open.
+- **Interrupted overnight finalist campaign recovered:** checksummed parsing of
+  the append-only logs records 9,099 completed generic HNF quotient executions
+  plus 36 targeted executions, all reporting exact UNSAT, with zero periodic
+  certificates. The count includes deliberate reruns; jobs lacking completion
+  lines remain unknown. The completed blind hierarchy
+  screen retained two non-unique first-composition rules out of 22,094 but no
+  stationary recognizable recursion. Artifact: `e1-overnight-recovered.json`.
+- Test suite: **111 fast passed** (14 deselected, 75.93 s);
+  **14 slow passed** (last full slow run; 63 deselected, 111.33 s).
+  Vendored Rust: **5 passed**.
 
 ## Funnel state (polykites, grid-aligned scope — D-0006)
 
@@ -242,16 +317,28 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
 
 ## Next actions (in order)
 
-1. Run A3 disk growth on the complete ten-shape n=10/n=12 witnessed gallery,
-   then use those outcomes to set the batch policy for n=13–16.
-2. Run the complete n≤16 A0–A4 ranking, verify hat/turtle placement, and send
-   the hat to A6 without identity-specific hints.
-3. In parallel, seek a third shifted/independent hat window and stronger halo
-   to challenge the shared 16/15-pattern A6 language and physical ownership.
-4. Deferred: revisit the named Gamma/Mystic fusion if useful for comparison
+1. Independently audit T0.1 and check its relation to published periodic-point
+   results for one-dimensional shifts of finite type; only then promote it
+   from proof-draft to theorem-ready.
+2. Profile the next W1 shells beyond Q=36 before emitting certificates; target
+   observed return vectors 18, 29 and 47 only if state growth permits, always
+   preserving explicit resource-exhausted polarity.
+3. Extend W2.D beyond the independently certified index-40 shell: apply the
+   39 S3 conjugacy classes to the index-45 frontier, then test whether the
+   killing maps exhibit HNF-family structure. Preserve proof cores for new
+   exclusions; do not equate a longer finite prefix with O1.
+4. Run the W4 grid-rigidity spike and record an explicit countermodel if the
+   grid-aligned scope cannot be proved.
+5. Resume W3 hierarchy mining only under the certificate schema: global parent
+   consistency, contact-connected metatiles, finite local recognizability,
+   primitive expansion and an exact plane-coverage argument. The hat must
+   close blind first.
+6. After W1/W2/W4 mature, re-evaluate the finalist and then resume the complete
+   n≤16 funnel ranking with stronger exact tools.
+7. Deferred: revisit the named Gamma/Mystic fusion if useful for comparison
    with the literature hierarchy; it is not a gate dependency.
-5. Deferred: replace the bounded A4 indexer with LLL/PSLQ if future reference
+8. Deferred: replace the bounded A4 indexer with LLL/PSLQ if future reference
    families or transformed controls break the E4 envelope.
-6. Deferred: incremental SAT encoder for 10⁵-tile patches; corona-1 census
+9. Deferred: incremental SAT encoder for 10⁵-tile patches; corona-1 census
    feature; polyiamond substrate (external per-shape Heesch anchor from
    Kaplan's dataset).
