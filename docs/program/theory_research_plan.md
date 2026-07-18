@@ -464,6 +464,26 @@ A1 sweep; record which indices are SNF-killed vs need SAT.
 > canonical-CNF subset checker. With area and T2.C4-36, every finalist HNF
 > through index 40 is now excluded. This finite prefix is not O1.
 
+> **Phase-3 result (session 29, D-0037).** All 39 strong S3 classes were
+> exhausted on the nine W1-surviving index-45 HNFs. Nine maps, partitioned
+> into three identical-signature triples, collectively kill every HNF. One
+> deterministic killing map per HNF yields 162/162 independently replayed
+> DRAT cores. The complete grid-aligned quotient prefix is now closed through
+> index 45. The triple signature is finite data pending a symbolic congruence
+> theorem; index 50 brute-force scaling is secondary to explaining it.
+
+> **Phase-4 result (session 31, D-0041).** An exact small-group census selected
+> A4 as the first complementary target: its strong maps have normal
+> displacement kernel V4 and residual quotient C3, compared with the C2
+> information retained by strong S3. Exact D6 reduction turns the 12×48
+> index-50 survivor matrix into 48 pair orbits. Sixteen are UNSAT over all 48
+> twists and cover every HNF; 32 explicit relaxed models verify clausewise.
+> Fixing the lowest killer gives 576/576 independently cold-replayed DRAT
+> cores. The full shell splits 75 W1 + 6 S3 + 12 A4, so the certified quotient
+> prefix is closed through 50. The 16 killers are exactly the maps with three
+> distinct V4 values on the final three generators, a finite pattern now
+> targeted for a symbolic HNF-family theorem. O1 remains open.
+
 The abelian layers are known to be blunt in general: many non-tilers pass
 all of them. The tools with historical teeth are nonabelian: the
 Conway–Lagarias tiling group (1990) and Kenyon's boundary-word invariants,
@@ -921,8 +941,9 @@ Kill-switches / reprioritization triggers:
 2. Does any single computable invariant settle O1 for the finalist
    (aspirational T2.3)?
 3. Extend the binary-coupled Conway–Lagarias torus obstruction beyond the
-   certified index-40 shell; seek finite-group or HNF families rather than
-   treating a larger finite prefix as O1.
+   certified index-45 shell. Exact diagonal D6 covariance now reduces each
+   finite HNF/map matrix to pair-orbit representatives; seek finite-group or
+   HNF families rather than treating a larger finite prefix as O1.
 4. Is the tiling problem decidable for the grid-aligned polykite family
    with bounded n? (Our W1+W2+W3 machinery is a partial decision
    procedure; characterizing where it must fail is itself interesting.)

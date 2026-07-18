@@ -738,3 +738,98 @@ a clause subset before proof replay.
 Together with area and T2.C4-36 this proves the finite grid-aligned quotient
 prefix through index 40. It does not prove O1 or aperiodicity: larger period
 lattices remain open.
+
+## D-0037 (2026-07-17) — Promote the index-45 shell after 162 proof replays
+
+The nine index-45 HNFs surviving the W1 period families were tested against
+all 39 order-3-kernel S3 conjugacy classes. Every HNF has at least six killing
+maps. Only nine maps kill anything, and they split into three triples with
+identical within-triple HNF signatures. This is recorded as a finite exact
+pattern, not extrapolated into an infinite HNF-family theorem.
+
+One killing map per HNF was selected by the deterministic lowest-index rule.
+All 18 twists for all nine HNFs have stored Glucose/core-DRAT certificates:
+162/162 independently verify through `drat-trim`, canonical-CNF regeneration,
+core-subset checking and hash replay. The 377,474,096-byte compressed payload
+is accepted despite its size because it upgrades the shell from solver output
+to an independently replayable finite theorem.
+
+At index 45 the certificate split is 69 period-family kills plus nine Layer-D
+kills, exhausting all 78 HNFs. With area and the prior shells, the complete
+grid-aligned quotient prefix is therefore closed through index 45. O1 remains
+open. The next research priority is to explain the three map signatures
+symbolically before scaling the same brute-force matrix to index 50.
+
+## D-0038 (2026-07-17) — Quotient Layer D by exact diagonal D6 symmetry
+
+The index-45 signature pattern is the visible projection of an exact diagonal
+point-group action. A geometric operation moves the HNF lattice covariantly
+and pulls the six-generator S3 boundary map back by its inverse. Model
+transport gives a bijection of placements, potentials and commuting twists,
+so Layer-D satisfiability is constant on these pair orbits (T2.D3).
+
+The machine certificate checks all 351 matrix entries under all 12 operations
+(4,212 comparisons). The nine HNFs form orbits of sizes three and six; the 39
+maps form seven orbits; and the nine effective maps are exactly two entire map
+orbits. The raw matrix reduces to 43 diagonal pair orbits.
+
+Future finite Layer-D shells will scan one representative per diagonal orbit
+and record the complete orbit expansion. This is an exact logical reduction,
+not a heuristic pruning rule. Positive exclusions still require independently
+replayed UNSAT proofs; symmetry does not change certificate polarity.
+
+## D-0039 (2026-07-17) — Record S3 saturation at index 50; keep prefix at 45
+
+The exact D6 reduction turns the index-50 18x39 matrix into 81 representative
+scans. Four are UNSAT over all twists and 77 are SAT. After orbit expansion,
+one six-HNF orbit is excluded and two six-HNF orbits survive every strong S3
+boundary map.
+
+The positive side is accepted: one lowest killing map per excluded HNF gives
+108 Glucose/core-DRAT pairs, all independently replayed from regenerated
+canonical CNFs. The negative/saturation side is also made auditable: all 77
+SAT pair-orbit representatives have explicit truth assignments checked clause
+by clause against regenerated CNFs. These assignments witness only the relaxed
+at-least-cover holonomy systems, never tilings.
+
+Therefore the six exclusions are promoted as finite theorems, but index 50 is
+not closed and the complete quotient prefix remains 45. Re-running the same
+39 S3 classes at larger indices is no longer the main path. Next inspect the
+surviving model structure and then enlarge or refine the nonabelian target.
+
+## D-0040 (2026-07-17) — Retire connectivity and overlap-two as S3 repairs
+
+All 77 verified relaxed survivor models have connected active tile-boundary
+networks, so adding connectivity would not separate them. Every original model
+overlaps, but the complete experiment with cell multiplicity capped at two
+reproduces exactly the same 77 SAT / four UNSAT pair-orbit matrix and the same
+six-HNF exclusion orbit. Explicit assignments for all 77 bounded-overlap SAT
+instances verify clause by clause.
+
+We therefore reject both easy repairs as explanations of index-50 saturation.
+The at-most-two encoding remains available as a diagnostic and proof-strength
+ladder, but it adds no finite exclusion here. Layer D should next seek a richer
+finite quotient of the boundary presentation, or a different invariant that
+couples selected placements beyond local coverage multiplicity.
+
+## D-0041 (2026-07-18) — Select A4 as the complementary target; close index 50
+
+The exact small-nonabelian-target census selects A4 over D4 and Q8 for the
+first controlled escalation. A4 has only 48 proper-kernel inner classes,
+versus 1,824 for each order-eight target, and its normal displacement kernel
+is V4. The residual C3 quotient is complementary to the C2 information in the
+strong S3 maps rather than merely making the same target larger.
+
+This choice closes the finite shell. Sixteen of 48 symmetry-reduced HNF/map
+pairs are UNSAT for all 48 commuting twists, and their D6 expansions cover all
+12 HNFs that survived S3. The complementary 32 pairs have explicit models
+checked against every regenerated clause. For promotion, map 7 was fixed on
+all 12 HNFs and all 576 direct twist instances received independently checked
+DRAT cores; a separate cold process rebuilt and replayed 576/576.
+
+We therefore promote T2.D2-50 and the complete grid-aligned quotient prefix
+through index 50. This is not O1 and is not evidence of tiling existence. The
+shared killing-map signature—three distinct V4 values on the final three
+generators—should be attacked symbolically before an indiscriminate larger
+finite-shell census; index 55 is the next finite control for any proposed
+family theorem.

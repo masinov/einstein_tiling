@@ -224,3 +224,9 @@ spectre.tar.gz
 data/a0-compiled/
 data/a1-compiled/
 data/a2-compiled/
+
+# Reproducible Layer-D CNF/DRAT payloads.  Keep the small JSON manifests in
+# git; these directories contain hundreds of MiB to GiB of generated proofs
+# and remain local.  See docs/notebook/assets/PROOF_PAYLOADS.md.
+docs/notebook/assets/theory-w2-layer-d-proof-index*/
+docs/notebook/assets/theory-w2-layer-d-a4-proof-index*/

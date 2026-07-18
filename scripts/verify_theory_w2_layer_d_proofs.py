@@ -54,13 +54,15 @@ def _dimacs_clauses(value):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--drat-trim", default="/tmp/drat-trim/drat-trim")
+    parser.add_argument("--manifest", default=str(MANIFEST))
     parser.add_argument("--limit", type=int)
     args = parser.parse_args()
     checker = str(Path(args.drat_trim).resolve())
     if not Path(checker).is_file():
         raise SystemExit(f"missing proof checker: {checker}")
 
-    payload = json.loads(MANIFEST.read_text())
+    manifest = Path(args.manifest).resolve()
+    payload = json.loads(manifest.read_text())
     results = payload["results"]
     if args.limit is not None:
         results = results[:args.limit]

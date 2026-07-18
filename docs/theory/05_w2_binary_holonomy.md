@@ -213,3 +213,169 @@ Artifacts: `theory-w2-layer-d-coupled.json`,
 `theory-w2-layer-d-s3-classes.json`, and
 `theory-w2-layer-d-proof-index40.json` plus its 54 compressed certificate
 pairs. Replay: `scripts/verify_theory_w2_layer_d_proofs.py`.
+
+## D-W2-D2 — index 45 and the three quotient-map signatures
+
+The next admissible shell has 78 HNFs. T1.2-36 period families exclude 69;
+the remaining nine were crossed with all 39 strong S3 conjugacy classes. All
+nine are holonomy-obstructed. Only nine quotient classes ever kill, arranged
+in three triples with identical within-triple HNF signatures:
+
+| map triple | HNFs killed | HNFs missed |
+|---|---:|---|
+| `{9,15,18}` | 7/9 | `(45,12,1)`, `(45,32,1)` |
+| `{21,24,27}` | 7/9 | `(15,4,3)`, `(45,38,1)` |
+| `{30,33,36}` | 7/9 | `(15,8,3)`, `(45,6,1)` |
+
+The HNFs `(9,2,5)`, `(45,19,1)`, and `(45,25,1)` are killed by all nine
+maps. The raw triple pattern is explained structurally by T2.D3 below; it is
+still a finite-shell observation, not an infinite HNF-family theorem.
+
+For each HNF, the lowest killing map was selected and all 18 twists were
+proved UNSAT. The 162 stored Glucose/core-DRAT pairs pass the same independent
+pipeline as index 40: raw verification, core extraction, core re-verification,
+canonical-CNF regeneration, multiplicity-respecting subset check, hash check,
+and standalone proof replay. The compressed certificate payload is
+377,474,096 bytes.
+
+> **D-W2-D2 (machine-verified finite theorem).** No grid-aligned finalist
+> exact cover exists on any HNF torus of index at most 45.
+
+The proof combines the area equation, T2.C4-36, the 87+3 split at index 40,
+and the 69+9 split at index 45. As before, this is a finite period-lattice
+prefix and does not settle O1.
+
+Artifacts: `theory-w2-layer-d-s3-index45.json`,
+`theory-w2-layer-d-proof-index45.json`, and its 162 compressed certificate
+pairs. The generic standalone verifier accepts either the index-40 or
+index-45 manifest through `--manifest`.
+
+## T2.D3 — exact D6 covariance and symmetry reduction
+
+Every point-group operation permutes the six signed kite-edge generators.
+If `g` is in `D6`, it sends a period lattice `L` covariantly to `gL` and a
+boundary quotient map `rho` contravariantly to `rho o g^-1`. The latter is
+then reduced modulo simultaneous inner conjugacy in `S3`.
+
+> **T2.D3 (D6 covariance; proof draft, exact implementation).** The Layer-D
+> CSP for `(L,rho)` and any commuting twist pair is isomorphic, after the
+> corresponding relabeling of twists, to the CSP for
+> `(gL,rho o g^-1)`. Consequently SAT/UNSAT over all commuting twists is
+> constant on diagonal `D6` orbits of HNF/map pairs.
+
+*Proof.* A kite-grid symmetry bijects quotient cells, legal placements,
+boundary edges and quotient vertices. Its exact signed permutation of the six
+edge directions carries every selected-placement implication to the
+corresponding transformed implication. Transport the developing potential
+along the vertex bijection and express the two deck transformations in the
+transformed HNF basis; this bijects commuting twist pairs because an integral
+change of period generators preserves commutation. All clauses are therefore
+carried bijectively, and the inverse point-group operation supplies the inverse
+model map. Inner conjugation merely relabels all `S3` values. ∎
+
+At index 45, the nine frontier HNFs are exactly two `D6` orbits, of sizes
+three and six. The 39 strong quotient classes form seven orbits of sizes
+`3,3,6,3,6,6,12`; the nine effective maps are exactly two complete orbits,
+`{9,21,30}` and `{15,18,24,27,33,36}`. The diagonal action partitions the
+351 matrix entries into 43 orbits (three of size 3, 23 of size 6, and 17 of
+size 12). All 4,212 entry/operation comparisons agree exactly. This accounts
+for the three repeated column signatures without asserting that the displayed
+same-signature triples are themselves group orbits.
+
+Implementation and certificate:
+`src/einstein/theory/holonomy_symmetry.py` and
+`theory-w2-layer-d-symmetry.json`.
+
+## D-W2-D4 — index-50 saturation of the strong S3 target
+
+The 18 index-50 HNFs surviving T1.2-36 form three six-element `D6` orbits.
+Crossing them with all 39 strong maps would require 702 scans; T2.D3 reduces
+the complete logical matrix to 81 diagonal-orbit representatives. Exactly
+four representatives are holonomy-obstructed. Their expansions give 36
+killing HNF/map pairs and exclude precisely one HNF orbit:
+
+`(25,9,2)`, `(25,14,2)`, `(50,18,1)`, `(50,21,1)`, `(50,28,1)`,
+`(50,31,1)`.
+
+The other two HNF orbits—12 HNFs—survive every strong S3 map. Therefore this
+finite-group target does not close the index-50 shell, and at this S3-only
+stage the complete machine-verified prefix remained 45. This negative result is useful: extending
+Layer D now requires strengthening the quotient target or extracting a new
+constraint from the surviving relaxed models, not merely evaluating more S3
+maps of the same boundary presentation.
+
+All six positive exclusions have now passed the independent proof pipeline:
+108/108 selected map/twist cores verify both during production and in a cold
+standalone replay. The compressed certificate payload is 283,140,121 bytes.
+Conversely, all 77 non-obstructed pair-orbit representatives have explicit
+canonical-CNF truth assignments; a separate verifier regenerates each CNF and
+checks every clause. These are witnesses only for the relaxed Layer-D CSP,
+not exact covers.
+
+Artifacts: `theory-w2-layer-d-s3-index50.json`,
+`theory-w2-layer-d-proof-index50.json`, and
+`theory-w2-layer-d-sat-index50.json`.
+
+Decoding the 77 relaxed assignments shows that all active boundary networks
+are connected. The missing condition is overlap: every model uses more than
+the exact-cover count of 30 placements, with coverage surplus at least 80.
+Twenty-four witnesses have maximum cell multiplicity two. Thus connectivity
+constraints would add nothing on these witnesses; the next controlled
+relaxation caps multiplicity at two while still containing every exact cover.
+
+That complete bounded-overlap scan has the identical polarity matrix: four
+UNSAT and 77 SAT diagonal pair orbits, hence the same six excluded and twelve
+surviving HNFs. All 77 SAT results have clause-level witnesses independently
+checked against regenerated CNFs. Coverage multiplicity above two is therefore
+not the source of saturation. Artifacts:
+`theory-w2-layer-d-overlap2-index50.json` and
+`theory-w2-layer-d-overlap2-sat-index50.json`.
+
+## D-W2-D6 — complementary A4 closure of index 50
+
+An exact small-target census was used to choose the next quotient rather than
+guessing one. Besides reproducing the S3 control, it found 1,824 proper-kernel
+inner classes for each of D4 and Q8, but only 48 for A4. Every strong A4 class
+has zero-displacement kernel `V4`, so its residual quotient is
+`A4/V4 = C3`, complementary to the `S3/A3 = C2` information retained by the
+strong S3 classes.
+
+Crossing the 12 S3-surviving HNFs with the 48 strong A4 classes gives 576
+logical pairs. Exact T2.D3 covariance reduces this to 48 diagonal D6 pair
+orbits. Sixteen representatives are UNSAT for every one of the 48 commuting
+A4 twist pairs; their orbit expansions obstruct all 12 HNFs. The other 32
+representatives have explicit truth assignments which pass a cold
+clause-by-clause check. As always, those assignments witness only the relaxed
+at-least-cover CSP, not tilings.
+
+The 16 killing columns are identical for all 12 HNFs and admit an exact finite
+description: the last three boundary-generator images are three distinct
+elements of `V4`. Equivalently their induced C3 signatures are the inverse
+pair `(1,2,1,0,0,0)` and `(2,1,2,0,0,0)`. They form two complete D6 map orbits,
+of sizes 12 and four. This signature is a finite classification and a target
+for a future symbolic HNF-family theorem; it is not itself such a theorem.
+
+For proof promotion, the deterministic lowest killing class, map 7, was fixed
+on each HNF. All 12 × 48 direct twist CNFs produced Glucose 4 DRAT proofs.
+`drat-trim` independently verified every raw proof, extracted and reverified a
+core, and the standalone cold audit then regenerated every canonical CNF,
+checked manifest completeness and all dependency/compressed/uncompressed
+hashes, verified every core as a multiplicity-respecting clause subset, and
+replayed all 576 stored proofs. The compressed certificate payload is
+2,166,298,658 bytes.
+
+> **T2.D2-50 (machine-verified finite theorem).** No grid-aligned finalist
+> exact cover exists on any HNF torus of index at most 50.
+
+The new shell has 93 HNFs: 75 fall to W1 period families, six to the preceding
+S3 certificates, and 12 to the A4 certificates above. Indices 46--49 are
+excluded by the area equation. Together with T2.D2-45, this exhausts the full
+prefix. It still does not settle O1: a larger fully periodic tiling remains
+logically possible.
+
+Artifacts: `theory-w2-layer-d-small-groups.json`,
+`theory-w2-layer-d-a4-index50.json`,
+`theory-w2-layer-d-a4-signature.json`,
+`theory-w2-layer-d-a4-sat-index50.json`, and
+`theory-w2-layer-d-a4-proof-index50.json` plus its 576 compressed certificate
+pairs. Replay: `scripts/verify_theory_w2_layer_d_a4_proofs.py`.

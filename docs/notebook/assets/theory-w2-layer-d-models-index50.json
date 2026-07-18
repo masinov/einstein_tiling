@@ -1,0 +1,2983 @@
+{
+ "kind": "theory-w2-layer-d-index50-relaxed-model-analysis",
+ "schema_version": 1,
+ "date": "2026-07-17",
+ "scope": {
+  "verified_models": 77,
+  "interpretation": "diagnostic structure of relaxed at-least-cover models; no row is an exact cover or tiling certificate"
+ },
+ "provenance": {
+  "dependencies": [
+   {
+    "path": "docs/notebook/assets/theory-w2-layer-d-sat-index50.json",
+    "sha256": "55493aac9f83f141199479b1442b50efb8615657d49fbb4a74918d38dff70577"
+   },
+   {
+    "path": "docs/notebook/assets/theory-w2-layer-d-s3-index50.json",
+    "sha256": "59488a1ef7ee4ea3ad84efc787285db9988b75a2fe16cb5f1e43cde9c95d98ac"
+   }
+  ],
+  "sources": [
+   {
+    "path": "scripts/run_theory_w2_layer_d_index50_model_analysis.py",
+    "sha256": "73242ee23e980bcd242c690b3c1a49b3d153519798fbb7a103c580039c1c4dfc"
+   }
+  ]
+ },
+ "summary": {
+  "selected_placement_distribution": {
+   "38": 1,
+   "39": 1,
+   "40": 6,
+   "41": 8,
+   "42": 6,
+   "43": 9,
+   "44": 7,
+   "45": 1,
+   "46": 4,
+   "47": 1,
+   "48": 1,
+   "50": 22,
+   "51": 1,
+   "600": 9
+  },
+  "coverage_surplus_distribution": {
+   "80": 1,
+   "90": 1,
+   "100": 6,
+   "110": 8,
+   "120": 6,
+   "130": 9,
+   "140": 7,
+   "150": 1,
+   "160": 4,
+   "170": 1,
+   "180": 1,
+   "200": 22,
+   "210": 1,
+   "5700": 9
+  },
+  "maximum_coverage_distribution": {
+   "2": 24,
+   "3": 24,
+   "4": 16,
+   "5": 4,
+   "20": 9
+  },
+  "boundary_component_count_distribution": {
+   "1": 77
+  },
+  "models_with_connected_boundary_network": 77,
+  "models_at_exact_tile_count": 0
+ },
+ "models": [
+  {
+   "pair_orbit": 0,
+   "hnf": [
+    10,
+    2,
+    5
+   ],
+   "mapping_index": 0,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     1,
+     2,
+     0
+    ]
+   ],
+   "selected_placements": 43,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 191,
+    "2": 88,
+    "3": 21
+   },
+   "coverage_surplus": 130,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 251,
+   "active_boundary_edges": 334,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    251
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 343
+  },
+  {
+   "pair_orbit": 1,
+   "hnf": [
+    10,
+    2,
+    5
+   ],
+   "mapping_index": 1,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 600,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "20": 300
+   },
+   "coverage_surplus": 5700,
+   "maximum_coverage": 20,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 600,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 900
+  },
+  {
+   "pair_orbit": 2,
+   "hnf": [
+    10,
+    2,
+    5
+   ],
+   "mapping_index": 2,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     1,
+     2,
+     0
+    ]
+   ],
+   "selected_placements": 40,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 204,
+    "2": 92,
+    "3": 4
+   },
+   "coverage_surplus": 100,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 240,
+   "active_boundary_edges": 312,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    240
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 340
+  },
+  {
+   "pair_orbit": 3,
+   "hnf": [
+    10,
+    3,
+    5
+   ],
+   "mapping_index": 0,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 41,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 204,
+    "2": 82,
+    "3": 14
+   },
+   "coverage_surplus": 110,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 243,
+   "active_boundary_edges": 318,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    243
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 341
+  },
+  {
+   "pair_orbit": 4,
+   "hnf": [
+    10,
+    3,
+    5
+   ],
+   "mapping_index": 1,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 600,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "20": 300
+   },
+   "coverage_surplus": 5700,
+   "maximum_coverage": 20,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 600,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 900
+  },
+  {
+   "pair_orbit": 5,
+   "hnf": [
+    10,
+    3,
+    5
+   ],
+   "mapping_index": 2,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 41,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 198,
+    "2": 94,
+    "3": 8
+   },
+   "coverage_surplus": 110,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 244,
+   "active_boundary_edges": 318,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    244
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 341
+  },
+  {
+   "pair_orbit": 6,
+   "hnf": [
+    25,
+    18,
+    2
+   ],
+   "mapping_index": 0,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 44,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 185,
+    "2": 92,
+    "3": 21,
+    "4": 2
+   },
+   "coverage_surplus": 140,
+   "maximum_coverage": 4,
+   "active_boundary_vertices": 253,
+   "active_boundary_edges": 340,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    253
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 344
+  },
+  {
+   "pair_orbit": 7,
+   "hnf": [
+    10,
+    2,
+    5
+   ],
+   "mapping_index": 9,
+   "twists": [
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     1,
+     2,
+     0
+    ]
+   ],
+   "selected_placements": 43,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 185,
+    "2": 100,
+    "3": 15
+   },
+   "coverage_surplus": 130,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 245,
+   "active_boundary_edges": 336,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    245
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 343
+  },
+  {
+   "pair_orbit": 8,
+   "hnf": [
+    10,
+    2,
+    5
+   ],
+   "mapping_index": 10,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 46,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 158,
+    "2": 124,
+    "3": 18
+   },
+   "coverage_surplus": 160,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 260,
+   "active_boundary_edges": 392,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    260
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 346
+  },
+  {
+   "pair_orbit": 9,
+   "hnf": [
+    10,
+    3,
+    5
+   ],
+   "mapping_index": 10,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 50,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 100,
+    "2": 200
+   },
+   "coverage_surplus": 200,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 500,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 350
+  },
+  {
+   "pair_orbit": 10,
+   "hnf": [
+    25,
+    18,
+    2
+   ],
+   "mapping_index": 1,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 600,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "20": 300
+   },
+   "coverage_surplus": 5700,
+   "maximum_coverage": 20,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 600,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 900
+  },
+  {
+   "pair_orbit": 11,
+   "hnf": [
+    25,
+    18,
+    2
+   ],
+   "mapping_index": 2,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 43,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 198,
+    "2": 75,
+    "3": 26,
+    "4": 1
+   },
+   "coverage_surplus": 130,
+   "maximum_coverage": 4,
+   "active_boundary_vertices": 250,
+   "active_boundary_edges": 332,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    250
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 343
+  },
+  {
+   "pair_orbit": 12,
+   "hnf": [
+    10,
+    2,
+    5
+   ],
+   "mapping_index": 15,
+   "twists": [
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     1,
+     2,
+     0
+    ]
+   ],
+   "selected_placements": 44,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 171,
+    "2": 118,
+    "3": 11
+   },
+   "coverage_surplus": 140,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 241,
+   "active_boundary_edges": 330,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    241
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 344
+  },
+  {
+   "pair_orbit": 13,
+   "hnf": [
+    10,
+    2,
+    5
+   ],
+   "mapping_index": 16,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 46,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 162,
+    "2": 116,
+    "3": 22
+   },
+   "coverage_surplus": 160,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 259,
+   "active_boundary_edges": 390,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    259
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 346
+  },
+  {
+   "pair_orbit": 14,
+   "hnf": [
+    10,
+    3,
+    5
+   ],
+   "mapping_index": 16,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 50,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 100,
+    "2": 200
+   },
+   "coverage_surplus": 200,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 500,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 350
+  },
+  {
+   "pair_orbit": 15,
+   "hnf": [
+    25,
+    5,
+    2
+   ],
+   "mapping_index": 9,
+   "twists": [
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 43,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 181,
+    "2": 108,
+    "3": 11
+   },
+   "coverage_surplus": 130,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 259,
+   "active_boundary_edges": 353,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    259
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 343
+  },
+  {
+   "pair_orbit": 16,
+   "hnf": [
+    25,
+    5,
+    2
+   ],
+   "mapping_index": 10,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 46,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 167,
+    "2": 109,
+    "3": 21,
+    "4": 3
+   },
+   "coverage_surplus": 160,
+   "maximum_coverage": 4,
+   "active_boundary_vertices": 241,
+   "active_boundary_edges": 349,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    241
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 346
+  },
+  {
+   "pair_orbit": 17,
+   "hnf": [
+    25,
+    18,
+    2
+   ],
+   "mapping_index": 10,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 50,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 100,
+    "2": 200
+   },
+   "coverage_surplus": 200,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 500,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 350
+  },
+  {
+   "pair_orbit": 18,
+   "hnf": [
+    25,
+    5,
+    2
+   ],
+   "mapping_index": 15,
+   "twists": [
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 44,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 176,
+    "2": 108,
+    "3": 16
+   },
+   "coverage_surplus": 140,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 261,
+   "active_boundary_edges": 362,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    261
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 344
+  },
+  {
+   "pair_orbit": 19,
+   "hnf": [
+    25,
+    5,
+    2
+   ],
+   "mapping_index": 16,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 41,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 201,
+    "2": 89,
+    "3": 9,
+    "4": 1
+   },
+   "coverage_surplus": 110,
+   "maximum_coverage": 4,
+   "active_boundary_vertices": 230,
+   "active_boundary_edges": 319,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    230
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 341
+  },
+  {
+   "pair_orbit": 20,
+   "hnf": [
+    25,
+    18,
+    2
+   ],
+   "mapping_index": 16,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 47,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 177,
+    "2": 78,
+    "3": 43,
+    "4": 2
+   },
+   "coverage_surplus": 170,
+   "maximum_coverage": 4,
+   "active_boundary_vertices": 252,
+   "active_boundary_edges": 374,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    252
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 347
+  },
+  {
+   "pair_orbit": 21,
+   "hnf": [
+    50,
+    14,
+    1
+   ],
+   "mapping_index": 9,
+   "twists": [
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     1,
+     2,
+     0
+    ]
+   ],
+   "selected_placements": 43,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 203,
+    "2": 66,
+    "3": 29,
+    "4": 2
+   },
+   "coverage_surplus": 130,
+   "maximum_coverage": 4,
+   "active_boundary_vertices": 230,
+   "active_boundary_edges": 307,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    230
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 343
+  },
+  {
+   "pair_orbit": 22,
+   "hnf": [
+    50,
+    14,
+    1
+   ],
+   "mapping_index": 10,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 50,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 100,
+    "2": 200
+   },
+   "coverage_surplus": 200,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 500,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 350
+  },
+  {
+   "pair_orbit": 23,
+   "hnf": [
+    50,
+    35,
+    1
+   ],
+   "mapping_index": 10,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 42,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 184,
+    "2": 112,
+    "3": 4
+   },
+   "coverage_surplus": 120,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 248,
+   "active_boundary_edges": 348,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    248
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 342
+  },
+  {
+   "pair_orbit": 24,
+   "hnf": [
+    50,
+    14,
+    1
+   ],
+   "mapping_index": 15,
+   "twists": [
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     1,
+     2,
+     0
+    ]
+   ],
+   "selected_placements": 42,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 208,
+    "2": 64,
+    "3": 28
+   },
+   "coverage_surplus": 120,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 230,
+   "active_boundary_edges": 299,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    230
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 342
+  },
+  {
+   "pair_orbit": 25,
+   "hnf": [
+    50,
+    14,
+    1
+   ],
+   "mapping_index": 16,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 50,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 100,
+    "2": 200
+   },
+   "coverage_surplus": 200,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 500,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 350
+  },
+  {
+   "pair_orbit": 26,
+   "hnf": [
+    50,
+    35,
+    1
+   ],
+   "mapping_index": 16,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 46,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 170,
+    "2": 106,
+    "3": 18,
+    "4": 6
+   },
+   "coverage_surplus": 160,
+   "maximum_coverage": 4,
+   "active_boundary_vertices": 246,
+   "active_boundary_edges": 347,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    246
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 346
+  },
+  {
+   "pair_orbit": 27,
+   "hnf": [
+    25,
+    6,
+    2
+   ],
+   "mapping_index": 0,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 41,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 202,
+    "2": 86,
+    "3": 12
+   },
+   "coverage_surplus": 110,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 241,
+   "active_boundary_edges": 319,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    241
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 341
+  },
+  {
+   "pair_orbit": 28,
+   "hnf": [
+    25,
+    6,
+    2
+   ],
+   "mapping_index": 1,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 600,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "20": 300
+   },
+   "coverage_surplus": 5700,
+   "maximum_coverage": 20,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 600,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 900
+  },
+  {
+   "pair_orbit": 29,
+   "hnf": [
+    25,
+    6,
+    2
+   ],
+   "mapping_index": 2,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 42,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 197,
+    "2": 86,
+    "3": 17
+   },
+   "coverage_surplus": 120,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 245,
+   "active_boundary_edges": 325,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    245
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 342
+  },
+  {
+   "pair_orbit": 30,
+   "hnf": [
+    25,
+    17,
+    2
+   ],
+   "mapping_index": 0,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 42,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 205,
+    "2": 74,
+    "3": 18,
+    "4": 2,
+    "5": 1
+   },
+   "coverage_surplus": 120,
+   "maximum_coverage": 5,
+   "active_boundary_vertices": 248,
+   "active_boundary_edges": 328,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    248
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 342
+  },
+  {
+   "pair_orbit": 31,
+   "hnf": [
+    25,
+    17,
+    2
+   ],
+   "mapping_index": 1,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 600,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "20": 300
+   },
+   "coverage_surplus": 5700,
+   "maximum_coverage": 20,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 600,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 900
+  },
+  {
+   "pair_orbit": 32,
+   "hnf": [
+    25,
+    17,
+    2
+   ],
+   "mapping_index": 2,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 39,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 216,
+    "2": 80,
+    "3": 2,
+    "4": 2
+   },
+   "coverage_surplus": 90,
+   "maximum_coverage": 4,
+   "active_boundary_vertices": 246,
+   "active_boundary_edges": 321,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    246
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 339
+  },
+  {
+   "pair_orbit": 33,
+   "hnf": [
+    50,
+    7,
+    1
+   ],
+   "mapping_index": 0,
+   "twists": [
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 41,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 208,
+    "2": 75,
+    "3": 16,
+    "4": 1
+   },
+   "coverage_surplus": 110,
+   "maximum_coverage": 4,
+   "active_boundary_vertices": 247,
+   "active_boundary_edges": 324,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    247
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 341
+  },
+  {
+   "pair_orbit": 34,
+   "hnf": [
+    25,
+    6,
+    2
+   ],
+   "mapping_index": 9,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 41,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 190,
+    "2": 110
+   },
+   "coverage_surplus": 110,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 258,
+   "active_boundary_edges": 345,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    258
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 341
+  },
+  {
+   "pair_orbit": 35,
+   "hnf": [
+    25,
+    6,
+    2
+   ],
+   "mapping_index": 10,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 42,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 199,
+    "2": 82,
+    "3": 19
+   },
+   "coverage_surplus": 120,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 236,
+   "active_boundary_edges": 338,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    236
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 342
+  },
+  {
+   "pair_orbit": 36,
+   "hnf": [
+    25,
+    17,
+    2
+   ],
+   "mapping_index": 10,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 50,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 100,
+    "2": 200
+   },
+   "coverage_surplus": 200,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 500,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 350
+  },
+  {
+   "pair_orbit": 37,
+   "hnf": [
+    50,
+    7,
+    1
+   ],
+   "mapping_index": 1,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 600,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "20": 300
+   },
+   "coverage_surplus": 5700,
+   "maximum_coverage": 20,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 600,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 900
+  },
+  {
+   "pair_orbit": 38,
+   "hnf": [
+    50,
+    7,
+    1
+   ],
+   "mapping_index": 2,
+   "twists": [
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 40,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 210,
+    "2": 80,
+    "3": 10
+   },
+   "coverage_surplus": 100,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 254,
+   "active_boundary_edges": 332,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    254
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 340
+  },
+  {
+   "pair_orbit": 39,
+   "hnf": [
+    25,
+    6,
+    2
+   ],
+   "mapping_index": 15,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 41,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 195,
+    "2": 100,
+    "3": 5
+   },
+   "coverage_surplus": 110,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 252,
+   "active_boundary_edges": 337,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    252
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 341
+  },
+  {
+   "pair_orbit": 40,
+   "hnf": [
+    25,
+    6,
+    2
+   ],
+   "mapping_index": 16,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 50,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 100,
+    "2": 200
+   },
+   "coverage_surplus": 200,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 500,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 350
+  },
+  {
+   "pair_orbit": 41,
+   "hnf": [
+    25,
+    17,
+    2
+   ],
+   "mapping_index": 16,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 50,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 100,
+    "2": 200
+   },
+   "coverage_surplus": 200,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 500,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 350
+  },
+  {
+   "pair_orbit": 42,
+   "hnf": [
+    50,
+    7,
+    1
+   ],
+   "mapping_index": 9,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     1,
+     2,
+     0
+    ]
+   ],
+   "selected_placements": 40,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 200,
+    "2": 100
+   },
+   "coverage_surplus": 100,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 243,
+   "active_boundary_edges": 334,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    243
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 340
+  },
+  {
+   "pair_orbit": 43,
+   "hnf": [
+    50,
+    42,
+    1
+   ],
+   "mapping_index": 10,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 50,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 100,
+    "2": 200
+   },
+   "coverage_surplus": 200,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 500,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 350
+  },
+  {
+   "pair_orbit": 44,
+   "hnf": [
+    50,
+    7,
+    1
+   ],
+   "mapping_index": 10,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 50,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 100,
+    "2": 200
+   },
+   "coverage_surplus": 200,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 500,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 350
+  },
+  {
+   "pair_orbit": 45,
+   "hnf": [
+    50,
+    7,
+    1
+   ],
+   "mapping_index": 15,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     1,
+     2,
+     0
+    ]
+   ],
+   "selected_placements": 40,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 200,
+    "2": 100
+   },
+   "coverage_surplus": 100,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 243,
+   "active_boundary_edges": 334,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    243
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 340
+  },
+  {
+   "pair_orbit": 46,
+   "hnf": [
+    50,
+    42,
+    1
+   ],
+   "mapping_index": 16,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 44,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 173,
+    "2": 114,
+    "3": 13
+   },
+   "coverage_surplus": 140,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 262,
+   "active_boundary_edges": 381,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    262
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 344
+  },
+  {
+   "pair_orbit": 47,
+   "hnf": [
+    50,
+    7,
+    1
+   ],
+   "mapping_index": 16,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 50,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 100,
+    "2": 200
+   },
+   "coverage_surplus": 200,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 500,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 350
+  },
+  {
+   "pair_orbit": 48,
+   "hnf": [
+    50,
+    6,
+    1
+   ],
+   "mapping_index": 9,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     1,
+     2,
+     0
+    ]
+   ],
+   "selected_placements": 40,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 207,
+    "2": 86,
+    "3": 7
+   },
+   "coverage_surplus": 100,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 227,
+   "active_boundary_edges": 299,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    227
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 340
+  },
+  {
+   "pair_orbit": 49,
+   "hnf": [
+    50,
+    43,
+    1
+   ],
+   "mapping_index": 10,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 43,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 191,
+    "2": 90,
+    "3": 17,
+    "4": 2
+   },
+   "coverage_surplus": 130,
+   "maximum_coverage": 4,
+   "active_boundary_vertices": 232,
+   "active_boundary_edges": 334,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    232
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 343
+  },
+  {
+   "pair_orbit": 50,
+   "hnf": [
+    50,
+    6,
+    1
+   ],
+   "mapping_index": 10,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 42,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 193,
+    "2": 94,
+    "3": 13
+   },
+   "coverage_surplus": 120,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 237,
+   "active_boundary_edges": 346,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    237
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 342
+  },
+  {
+   "pair_orbit": 51,
+   "hnf": [
+    50,
+    6,
+    1
+   ],
+   "mapping_index": 15,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     1,
+     2,
+     0
+    ]
+   ],
+   "selected_placements": 38,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 233,
+    "2": 54,
+    "3": 13
+   },
+   "coverage_surplus": 80,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 229,
+   "active_boundary_edges": 299,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    229
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 338
+  },
+  {
+   "pair_orbit": 52,
+   "hnf": [
+    50,
+    43,
+    1
+   ],
+   "mapping_index": 16,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 44,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 193,
+    "2": 79,
+    "3": 23,
+    "4": 5
+   },
+   "coverage_surplus": 140,
+   "maximum_coverage": 4,
+   "active_boundary_vertices": 238,
+   "active_boundary_edges": 346,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    238
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 344
+  },
+  {
+   "pair_orbit": 53,
+   "hnf": [
+    50,
+    6,
+    1
+   ],
+   "mapping_index": 16,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 50,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 100,
+    "2": 200
+   },
+   "coverage_surplus": 200,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 500,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 350
+  },
+  {
+   "pair_orbit": 54,
+   "hnf": [
+    25,
+    9,
+    2
+   ],
+   "mapping_index": 0,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 43,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 189,
+    "2": 92,
+    "3": 19
+   },
+   "coverage_surplus": 130,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 241,
+   "active_boundary_edges": 317,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    241
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 343
+  },
+  {
+   "pair_orbit": 55,
+   "hnf": [
+    25,
+    9,
+    2
+   ],
+   "mapping_index": 1,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 600,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "20": 300
+   },
+   "coverage_surplus": 5700,
+   "maximum_coverage": 20,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 600,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 900
+  },
+  {
+   "pair_orbit": 56,
+   "hnf": [
+    25,
+    9,
+    2
+   ],
+   "mapping_index": 2,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 41,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 194,
+    "2": 102,
+    "3": 4
+   },
+   "coverage_surplus": 110,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 239,
+   "active_boundary_edges": 313,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    239
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 341
+  },
+  {
+   "pair_orbit": 57,
+   "hnf": [
+    25,
+    14,
+    2
+   ],
+   "mapping_index": 0,
+   "twists": [
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 43,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 191,
+    "2": 91,
+    "3": 15,
+    "4": 3
+   },
+   "coverage_surplus": 130,
+   "maximum_coverage": 4,
+   "active_boundary_vertices": 247,
+   "active_boundary_edges": 326,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    247
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 343
+  },
+  {
+   "pair_orbit": 58,
+   "hnf": [
+    25,
+    14,
+    2
+   ],
+   "mapping_index": 1,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 600,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "20": 300
+   },
+   "coverage_surplus": 5700,
+   "maximum_coverage": 20,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 600,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 900
+  },
+  {
+   "pair_orbit": 59,
+   "hnf": [
+    25,
+    14,
+    2
+   ],
+   "mapping_index": 2,
+   "twists": [
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 44,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 177,
+    "2": 109,
+    "3": 11,
+    "4": 3
+   },
+   "coverage_surplus": 140,
+   "maximum_coverage": 4,
+   "active_boundary_vertices": 248,
+   "active_boundary_edges": 326,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    248
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 344
+  },
+  {
+   "pair_orbit": 60,
+   "hnf": [
+    50,
+    21,
+    1
+   ],
+   "mapping_index": 0,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 44,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 194,
+    "2": 78,
+    "3": 24,
+    "4": 2,
+    "5": 2
+   },
+   "coverage_surplus": 140,
+   "maximum_coverage": 5,
+   "active_boundary_vertices": 241,
+   "active_boundary_edges": 321,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    241
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 344
+  },
+  {
+   "pair_orbit": 62,
+   "hnf": [
+    25,
+    9,
+    2
+   ],
+   "mapping_index": 10,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 48,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 151,
+    "2": 119,
+    "3": 29,
+    "4": 1
+   },
+   "coverage_surplus": 180,
+   "maximum_coverage": 4,
+   "active_boundary_vertices": 266,
+   "active_boundary_edges": 405,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    266
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 348
+  },
+  {
+   "pair_orbit": 63,
+   "hnf": [
+    25,
+    14,
+    2
+   ],
+   "mapping_index": 10,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 50,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 100,
+    "2": 200
+   },
+   "coverage_surplus": 200,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 500,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 350
+  },
+  {
+   "pair_orbit": 64,
+   "hnf": [
+    50,
+    21,
+    1
+   ],
+   "mapping_index": 1,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 600,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "20": 300
+   },
+   "coverage_surplus": 5700,
+   "maximum_coverage": 20,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 600,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 900
+  },
+  {
+   "pair_orbit": 65,
+   "hnf": [
+    50,
+    21,
+    1
+   ],
+   "mapping_index": 2,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 45,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 184,
+    "2": 82,
+    "3": 34
+   },
+   "coverage_surplus": 150,
+   "maximum_coverage": 3,
+   "active_boundary_vertices": 251,
+   "active_boundary_edges": 335,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    251
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 345
+  },
+  {
+   "pair_orbit": 67,
+   "hnf": [
+    25,
+    9,
+    2
+   ],
+   "mapping_index": 16,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 50,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 100,
+    "2": 200
+   },
+   "coverage_surplus": 200,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 500,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 350
+  },
+  {
+   "pair_orbit": 68,
+   "hnf": [
+    25,
+    14,
+    2
+   ],
+   "mapping_index": 16,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 50,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 100,
+    "2": 200
+   },
+   "coverage_surplus": 200,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 500,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 350
+  },
+  {
+   "pair_orbit": 70,
+   "hnf": [
+    50,
+    28,
+    1
+   ],
+   "mapping_index": 10,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 50,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 100,
+    "2": 200
+   },
+   "coverage_surplus": 200,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 500,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 350
+  },
+  {
+   "pair_orbit": 71,
+   "hnf": [
+    50,
+    21,
+    1
+   ],
+   "mapping_index": 10,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 50,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 100,
+    "2": 200
+   },
+   "coverage_surplus": 200,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 500,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 350
+  },
+  {
+   "pair_orbit": 73,
+   "hnf": [
+    50,
+    28,
+    1
+   ],
+   "mapping_index": 16,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 43,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 200,
+    "2": 73,
+    "3": 24,
+    "4": 3
+   },
+   "coverage_surplus": 130,
+   "maximum_coverage": 4,
+   "active_boundary_vertices": 235,
+   "active_boundary_edges": 338,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    235
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 343
+  },
+  {
+   "pair_orbit": 74,
+   "hnf": [
+    50,
+    21,
+    1
+   ],
+   "mapping_index": 16,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 50,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 100,
+    "2": 200
+   },
+   "coverage_surplus": 200,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 500,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 350
+  },
+  {
+   "pair_orbit": 75,
+   "hnf": [
+    50,
+    18,
+    1
+   ],
+   "mapping_index": 9,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 40,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 212,
+    "2": 77,
+    "3": 10,
+    "4": 1
+   },
+   "coverage_surplus": 100,
+   "maximum_coverage": 4,
+   "active_boundary_vertices": 221,
+   "active_boundary_edges": 293,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    221
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 340
+  },
+  {
+   "pair_orbit": 76,
+   "hnf": [
+    50,
+    31,
+    1
+   ],
+   "mapping_index": 10,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 50,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 100,
+    "2": 200
+   },
+   "coverage_surplus": 200,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 500,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 350
+  },
+  {
+   "pair_orbit": 77,
+   "hnf": [
+    50,
+    18,
+    1
+   ],
+   "mapping_index": 10,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 51,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 148,
+    "2": 113,
+    "3": 23,
+    "4": 13,
+    "5": 3
+   },
+   "coverage_surplus": 210,
+   "maximum_coverage": 5,
+   "active_boundary_vertices": 277,
+   "active_boundary_edges": 419,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    277
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 351
+  },
+  {
+   "pair_orbit": 78,
+   "hnf": [
+    50,
+    18,
+    1
+   ],
+   "mapping_index": 15,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 50,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 162,
+    "2": 83,
+    "3": 49,
+    "4": 5,
+    "5": 1
+   },
+   "coverage_surplus": 200,
+   "maximum_coverage": 5,
+   "active_boundary_vertices": 246,
+   "active_boundary_edges": 340,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    246
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 350
+  },
+  {
+   "pair_orbit": 79,
+   "hnf": [
+    50,
+    31,
+    1
+   ],
+   "mapping_index": 16,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 50,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 100,
+    "2": 200
+   },
+   "coverage_surplus": 200,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 500,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 350
+  },
+  {
+   "pair_orbit": 80,
+   "hnf": [
+    50,
+    18,
+    1
+   ],
+   "mapping_index": 16,
+   "twists": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "selected_placements": 50,
+   "exact_cover_tile_count": 30,
+   "coverage_histogram": {
+    "1": 100,
+    "2": 200
+   },
+   "coverage_surplus": 200,
+   "maximum_coverage": 2,
+   "active_boundary_vertices": 300,
+   "active_boundary_edges": 500,
+   "active_boundary_components": 1,
+   "active_boundary_component_sizes": [
+    300
+   ],
+   "canonical_variables": 2400,
+   "true_variables": 350
+  }
+ ]
+}

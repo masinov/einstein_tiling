@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-17 (session 28)
+**Last updated:** 2026-07-18 (session 31)
 
 ## Where we are
 
@@ -19,7 +19,7 @@
 | M4 — A4 diffraction fingerprint | §4 A4 | ✅ done v0; 12-fold core calibration passed (session 05) |
 | E4 — full fingerprint calibration gate | §8 E4 | ✅ passed (sessions 05–06) |
 | M5 — A6 hierarchy mining | §4 A6 | ✅ done v0; recursive, stationary-collar and SAT forcing gate passed |
-| T0/W1/W2 — exact theory foundations | theory program v0.2 | 🟨 in progress; finalist T1.2-36 composes into 126 infinite HNF families; binary-coupled S3 holonomy and independently checked DRAT cores close the complete quotient prefix through index 40 (sessions 20–28) |
+| T0/W1/W2 — exact theory foundations | theory program v0.2 | 🟨 in progress; finalist T1.2-36 composes into 126 infinite HNF families; complementary S3/A4 holonomy and independently checked DRAT cores close the complete quotient prefix through index 50; exact diagonal D6 covariance reduces later finite shells (sessions 20–31) |
 | **Gate G1 — E1 blind hat rediscovery** | §8 E1 | 🟨 in progress; hat A6 has one 3-type local rule family |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
@@ -228,7 +228,27 @@
   `(40,28,1)`—with six killing classes each, while their placement-only
   relaxations are SAT. All 54 selected map/twist core CNFs and DRAT proofs
   replay under independent `drat-trim`; together with area and T2.C4-36 this
-  excludes every HNF through index 40. Larger indices and O1 remain open.
+  excludes every HNF through index 40. The later bullets extend this finite
+  prefix; O1 remains open.
+- **W2.D index-45 extension:** all 39 strong S3 quotient classes are classified
+  on the nine W1-surviving HNFs. Nine effective maps form three exact
+  same-signature triples; every HNF is killed by at least six maps. One
+  deterministic map per HNF supplies 162/162 independently replayed DRAT
+  cores (377,474,096 compressed bytes). The shell splits 69 W1-family plus 9
+  Layer-D exclusions, closing every grid-aligned quotient through index 45.
+  Exact diagonal D6 covariance explains the triple pattern: 4,212/4,212
+  transformed matrix entries agree. It is not an infinite-family theorem and
+  O1 stays open.
+- **W2.D index-50 complementary closure:** S3 excludes one six-HNF orbit, then
+  an exact small-group census selects A4 with V4 displacement kernel and
+  residual C3 information. On the 12 S3 survivors, 48 strong A4 classes reduce
+  to 48 diagonal pair orbits: 16 are obstructed and cover every HNF, while
+  32/32 relaxed SAT witnesses verify clausewise. Fixing map 7 yields 576/576
+  cold-replayed DRAT cores (2,166,298,658 compressed bytes). The complete shell
+  splits 75 W1 + 6 S3 + 12 A4, closing the certified quotient prefix through
+  50. The shared killer signature is three distinct V4 values on the final
+  three generators; this is finite evidence for a symbolic family theorem,
+  not O1.
 - **Interrupted overnight finalist campaign recovered:** checksummed parsing of
   the append-only logs records 9,099 completed generic HNF quotient executions
   plus 36 targeted executions, all reporting exact UNSAT, with zero periodic
@@ -236,7 +256,7 @@
   lines remain unknown. The completed blind hierarchy
   screen retained two non-unique first-composition rules out of 22,094 but no
   stationary recognizable recursion. Artifact: `e1-overnight-recovered.json`.
-- Test suite: **111 fast passed** (14 deselected, 75.93 s);
+- Test suite: **121 fast passed** (14 deselected, 78.09 s);
   **14 slow passed** (last full slow run; 63 deselected, 111.33 s).
   Vendored Rust: **5 passed**.
 
@@ -323,10 +343,11 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
 2. Profile the next W1 shells beyond Q=36 before emitting certificates; target
    observed return vectors 18, 29 and 47 only if state growth permits, always
    preserving explicit resource-exhausted polarity.
-3. Extend W2.D beyond the independently certified index-40 shell: apply the
-   39 S3 conjugacy classes to the index-45 frontier, then test whether the
-   killing maps exhibit HNF-family structure. Preserve proof cores for new
-   exclusions; do not equate a longer finite prefix with O1.
+3. Turn W2.D's A4 column signature into a symbolic theorem. The 16 effective
+   classes are exactly those with three distinct V4 tail values and they close
+   both former S3-surviving HNF orbits at index 50. Derive the dependence on
+   HNF congruence directly, then use index 55 as the first finite falsification
+   control. The complete certified prefix is 50; this still is not O1.
 4. Run the W4 grid-rigidity spike and record an explicit countermodel if the
    grid-aligned scope cannot be proved.
 5. Resume W3 hierarchy mining only under the certificate schema: global parent
