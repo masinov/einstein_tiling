@@ -1,6 +1,6 @@
 # Literature-to-code methods matrix
 
-**Snapshot:** 2026-07-20
+**Snapshot:** 2026-07-21
 
 Status meanings: **implemented** means tested repository code exists;
 **partial** means a useful component exists but does not meet the cited
@@ -10,7 +10,7 @@ method's complete logical role; **planned** means no claim of implementation.
 |---|---|---|---|---|
 | Canonical polyform identity | `smkgs-hat-2024` | `substrate/`, `src/einstein/e1_candidates.py`, `tests/test_hat.py`, `tests/test_turtle.py` | implemented for Hat/Turtle anchors | Implement full `Tile(a,b)` membership and provenance-bearing family records. |
 | Finite census and known horizon | `smkgs-hat-2024`, `kaplan-path-review-2025` | A0 enumeration, `POLYKITE_BASELINE.md` | implemented as fail-closed policy through `n<=24` | Do not treat the reported 500-billion search as a reproducible theorem without its corpus/certificates. |
-| Heesch/corona SAT | `kaplan-heesch-2022` | `src/einstein/funnel/a2_heesch.py`, compiled A2 runners | implemented independently | Reproduce a published benchmark suite and document semantic differences in corona definitions. |
+| Heesch/corona search | `kaplan-heesch-2022`, `kaplan-heesch-sat-code`, `kaplan-8kites-2023` | `src/einstein/funnel/a2_heesch.py`, compiled A2 runners | independent implementation; externally reproduced through `n=8` | Our `n=8` counts exactly match Kaplan's public artifact: 108 with `H_c=1`, five with `H_c=2`, and the same three cases left after finite-Heesch classification. Treat A2 as a benchmark/filter, not novel census data; complete a per-shape coordinate crosswalk before claiming full corpus identity. |
 | Isohedral SAT | `kaplan-isohedral-sat-2024` | `src/einstein/funnel/a1_isohedral.py` | implemented | Complete n<=8 counts match Myers; retain as an early portable filter while A1 handles periodic tilings with multiple transitivity classes. |
 | General aligned periodic quotient search | `smkgs-hat-2024` Appendix A supplies alignment bridge | `src/einstein/funnel/a1_torus.py` | implemented for bounded quotients | Preserve three-valued bounded verdicts; no finite negative is a general aperiodicity proof. |
 | Large exact patches | proof caveats in `cheritat-spectre-clusters-2024` | `src/einstein/funnel/a3_patch.py` | implemented as finite evidence | Add continuability certificates or explicitly label dead-end boundary conditions. |

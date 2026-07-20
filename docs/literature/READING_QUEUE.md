@@ -1,6 +1,6 @@
 # Reading and reproduction queue
 
-**Updated:** 2026-07-20
+**Updated:** 2026-07-21
 
 Review status is recorded per source in `SOURCES.json`. Promotion to
 `full-text-audited` requires notes with theorem/definition locations,
@@ -25,6 +25,11 @@ assumptions, exact claims used here, and a repository impact decision.
    completed 2026-07-20. Theorems 30--31 and 51, Proposition 52,
    Corollaries 63 and 65, scope, and the unreproduced local-case burden are
    recorded in `reviews/CHERITAT_SPECTRE_CLUSTERS.md`.
+5. `kaplan-heesch-2022`, `kaplan-heesch-sat-code`, and
+   `kaplan-8kites-2023` — paper, current public implementation, project-page
+   claims, and the 116-page 8-kite artifact audited 2026-07-21. Our aggregate
+   `n=8` results reproduce the public artifact exactly; the earlier novelty
+   claim is withdrawn. See `reviews/KAPLAN_HEESCH_POLYKITES.md`.
 
 ## Immediate: proof and discovery controls
 
@@ -38,28 +43,27 @@ stays in the same domain.
 
 ## Next: machine representations
 
-5. `labbe-selinger-markov-2026` — reproduce the Hat SFT/toral coding and
+6. `labbe-selinger-markov-2026` — reproduce the Hat SFT/toral coding and
    record its explicit Turtle and Spectre/CASPr open questions.
-6. `tatham-transducers-2026` — reproduce one Hat address/neighbor transducer
+7. `tatham-transducers-2026` — reproduce one Hat address/neighbor transducer
    and test exact random access against our generator.
-7. `james-smith-rhombic-2024` — compare the rhombille coloring game and
+8. `james-smith-rhombic-2024` — compare the rhombille coloring game and
    Fibonacci/Sturmian structure with the Akiyama--Araki route.
-8. `akiyama-hamada-ito-sturmian-2026` — reproduce one small quadratic-slope
+9. `akiyama-hamada-ito-sturmian-2026` — reproduce one small quadratic-slope
    tile-set construction; treat the July announcement only as a pointer.
-9. `coulbois-et-al-groups-2026` — formalize the poly-`K` correspondence for
+10. `coulbois-et-al-groups-2026` — formalize the poly-`K` correspondence for
    our Laves substrate before using group subsets as candidates.
 
 ## Characterization controls
 
-10. `baake-gaehler-sadun-hat-2025` — record the exact deformation,
+11. `baake-gaehler-sadun-hat-2025` — record the exact deformation,
     conjugacy, MLD, cohomology, and model-set statements.
-11. `baake-et-al-spectre-order-2025` — do the analogous CASPr audit.
-12. `baake-et-al-diffraction-2025` — compare explicit Fourier modules and
+12. `baake-et-al-spectre-order-2025` — do the analogous CASPr audit.
+13. `baake-et-al-diffraction-2025` — compare explicit Fourier modules and
     coefficients with the limited outputs of A4.
 
 ## Supporting audits
 
-13. `kaplan-heesch-2022` — align definitions and benchmark corpora with A2.
 14. `kaplan-path-review-2025` — retain as author-review evidence only; locate
     primary artifacts before promoting quantitative search claims.
 15. `jungck-biswas-five-polykites-2025` — use as a secondary pointer only and

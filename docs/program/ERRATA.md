@@ -95,3 +95,25 @@ Consequences:
 
 The controlling claim matrix and source tiers are recorded in
 `docs/literature/POLYKITE_BASELINE.md`.
+
+## ERR-005 (2026-07-21) — The A2 `n<=8` Heesch census is a reproduction
+
+Session 03 stated that polykite Heesch numbers appeared uncharted and called
+the six `H_c=2` cases through eight kites possibly novel. That prior-art claim
+is withdrawn.
+
+Kaplan's public `heesch-sat` implementation explicitly supports the polykite
+grid. In an August 2023 comment on his official project page, he stated that
+he had computed Heesch numbers of non-tiling polykites through roughly 16 or
+17 cells. He also published a 116-page eight-kite artifact containing every
+non-tiling 8-kite with positive Heesch number and three inconclusive cases.
+Its aggregate counts are 108 with `H_c=1`, five with `H_c=2`, and three
+inconclusive. Kaplan identifies the latter as two periodic anisohedral shapes
+and the Hat. These numbers exactly match our A1+A2 partition.
+
+The A2 implementation remains independent: it uses recursive exact-cover DFS
+and cold-verifiable nested-corona certificates rather than Kaplan's monolithic
+SAT encoding. Its result is therefore a useful exact reproduction and
+pipeline benchmark, but not new census data. The source/algorithm crosswalk
+and evidence tiers are recorded in
+`docs/literature/reviews/KAPLAN_HEESCH_POLYKITES.md`.

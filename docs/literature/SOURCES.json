@@ -1,12 +1,14 @@
 {
   "schema_version": 1,
-  "snapshot_date": "2026-07-20",
+  "snapshot_date": "2026-07-21",
   "evidence_classes": [
     "peer-reviewed theorem",
     "peer-reviewed computational method",
     "preprint",
     "author review",
-    "secondary source"
+    "secondary source",
+    "software artifact",
+    "author project artifact"
   ],
   "sources": [
     {
@@ -219,7 +221,43 @@
       "local_filename": "2105.09438-heesch-unmarked-polyforms.pdf",
       "themes": ["SAT", "Heesch number", "polyform census", "candidate filtering"],
       "workstreams": ["B"],
-      "review_status": "queued-deep-read"
+      "review_status": "full-text-and-code-audited",
+      "review_note": "docs/literature/reviews/KAPLAN_HEESCH_POLYKITES.md"
+    },
+    {
+      "id": "kaplan-heesch-sat-code",
+      "title": "heesch-sat",
+      "authors": ["Craig S. Kaplan"],
+      "year": 2026,
+      "evidence_class": "software artifact",
+      "venue": "GitHub repository, audited at commit 1adb37204013b96b62b954a616265e49d7cf21ad",
+      "arxiv": null,
+      "doi": null,
+      "record_url": "https://github.com/isohedral/heesch-sat",
+      "download_url": null,
+      "local_filename": null,
+      "themes": ["SAT", "Heesch number", "polykites", "isohedral tilings", "reference implementation"],
+      "workstreams": ["B"],
+      "review_status": "source-audited",
+      "review_note": "docs/literature/reviews/KAPLAN_HEESCH_POLYKITES.md"
+    },
+    {
+      "id": "kaplan-8kites-2023",
+      "title": "Non-tiling 8-kites with positive Heesch number",
+      "authors": ["Craig S. Kaplan"],
+      "year": 2023,
+      "evidence_class": "author project artifact",
+      "venue": "Official Isohedral project-page artifact and author comments",
+      "arxiv": null,
+      "doi": null,
+      "record_url": "https://isohedral.ca/heesch-numbers-of-unmarked-polyforms/#comment-182606",
+      "download_url": "https://cs.uwaterloo.ca/~csk/tmp/8kites.pdf",
+      "local_filename": "8kites.pdf",
+      "sha256": "8e710b8d9418ca5ab6d4510fb6dba36080eac980166e1b355ed491e6304e8f12",
+      "themes": ["polykites", "8-kite census", "Heesch number", "benchmark corpus"],
+      "workstreams": ["B"],
+      "review_status": "artifact-audited",
+      "review_note": "docs/literature/reviews/KAPLAN_HEESCH_POLYKITES.md"
     },
     {
       "id": "kaplan-path-review-2025",

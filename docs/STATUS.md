@@ -379,11 +379,16 @@
 
 All H values exact by exhaustion (D-0008). **The hat is the unique
 unbounded-corona anomaly among all 1,264 free polykites n ≤ 8** — a
-mini-E1: Heesch depth alone ranks it #1 in its size class. The six H_c=2
-shapes (gallery in notebook 03 assets) are likely novel data — no published
-polykite Heesch census exists (Kaplan's covers other polyforms). A3
-sharpens the separation: all six are pose-free refuted on disks of r2≤200
-(19–35 tiles max), while the hat covers r2=100000 (22,940 tiles).
+mini-E1 positive-control result: Heesch depth alone ranks it #1 in its size
+class. This is not a new census. Kaplan's public 2023 eight-kite artifact has
+exactly the same 108 `H_c=1` and five `H_c=2` counts; its three inconclusive
+cases are the two periodic anisohedral shapes removed by A1 and the Hat.
+Our structurally independent A2 engine therefore supplies an exact aggregate
+reproduction and cold-verifiable benchmark. See ERR-005 and
+`docs/literature/reviews/KAPLAN_HEESCH_POLYKITES.md`. A3 sharpens the
+internal ranking: all six `H_c=2` shapes are pose-free refuted on disks of
+`r2<=200` (19–35 tiles max), while the Hat covers `r2=100000` (22,940 tiles);
+that separation is finite benchmark evidence, not a novelty claim.
 
 ## Known capacity limits (honest)
 
@@ -444,59 +449,20 @@ sharpens the separation: all six are pose-free refuted on disks of r2≤200
 
 ## Next actions (in order)
 
-1. Remove the conditional premise from the Spectre grouping result. Starting
-   from the 18 surviving physical corona cases, derive parent/component
-   existence without offering recovered parents as an assumption; then prove
-   overlap choices form a unique exact partition and contraction stays in the
-   same domain. Align the finite cases with Chéritat's components/interfaces.
-2. Complete the `Tile(a,b)` **family** recognizer for `n>24`; exact Hat/Turtle
-   anchors alone are insufficient because the known continuum contains
-   infinitely many polykites. Keep novelty promotion disabled until this and
-   a dated current-literature check both pass.
-3. Redesign E2 around a genuinely distinct, justified search space. Do not
-   mechanically continue at `n=25`: the 2025 author review reports a later
-   500-billion-polykite search with no other unusual behavior. Candidate
-   directions are theory-guided non-`Tile(a,b)` families or the planned 5-/8-
-   fold substrates.
-4. Independently audit T0.1 and check its relation to published periodic-point
-   results for one-dimensional shifts of finite type; only then promote it
-   from proof-draft to theorem-ready.
-5. Treat the T2.D7 planar Hall branch as retired. A literal 63-tile,
-   125-center, fully nonoverlapping and V4-compatible finite set cold-verifies
-   that `(2,0)` sparsity is false. The radius-two taper continuation may finish
-   as a diagnostic/no-go artifact but no longer blocks the program. Return the
-   main theorem effort to W3's certificate schema and Spectre gate; retain the
-   minimal Hall-core curvature lemma as reusable combinatorics only. The old
-   radius-two taper later died without an output artifact and is not restarted.
-6. Continue W3 under the certificate schema. The Spectre control now has a
-   cold-verified 17-state primitive kernel, an exact unimodular 16-coordinate
-   geometry recurrence agreeing with 32 vendor levels, and exact level-0/1
-   polygon legality. The two geometric types and their four-side endpoint
-   grammar now hold at every level; next prove recurrent boundary simplicity
-   and child noncrossing, then an inball-growth recurrence. On the physical
-   branch, the ten-case maximal-segment bridge reduces unrestricted contacts
-   to primitive unit edges; ancestry-free radius-five exhaustion then forces
-   L18, its unique parent partition, and contraction to 17 generated states.
-   D1/D2/D3/D5/D6 are therefore verified for the full fixed-chirality hull.
-   D4's finite maps and three exact scale round trips now verify, but the bare
-   17-state overlap language is too broad: refine and exhaust its 80 surviving
-   radius-two context seeds against the physical-derived language. Only then
-   promote D4 and proceed to D7 period descent. In parallel, finish C1
-   macro-boundary noncrossing and C3
-   inball growth.
-   This is a general certificate gate, not a prerequisite for recognizing the
-   already-known Turtle.
-7. Resume the n≤16 ranking only if useful as E1 validation or as a labeled
-   methods corpus. It is not a discovery task. The next bounded batch is the
-   29 n=14/n=15 depth-3 survivors. Further W1 shells for Turtle are likewise
-   optional method validation.
-8. Optional W4: study the stronger all-tilings alignment property or extend
-   the published Appendix-A periodic-alignment theorem to other substrates.
-   It is no longer a prerequisite for polykite periodicity.
-9. Deferred: revisit the named Gamma/Mystic fusion if useful for comparison
-   with the literature hierarchy; it is not a gate dependency.
-10. Deferred: replace the bounded A4 indexer with LLL/PSLQ if future reference
-   families or transformed controls break the E4 envelope.
-11. Deferred: incremental SAT encoder for 10⁵-tile patches; corona-1 census
-   feature; polyiamond substrate (external per-shape Heesch anchor from
-   Kaplan's dataset).
+Research is under the 2026-07-21 reset recorded in
+`docs/literature/RESEARCH_RETURN_AUDIT.md`.
+
+1. Perform a primary-source novelty audit of the uniform T2.C1/T2.C5 parity
+   obstruction. Do not run it at more values of `k`; the question is whether
+   its proof or certificate form adds anything to the literature.
+2. Depending on that audit, either package T2.C1/T2.C5 as a self-contained
+   small theorem with a tiny verifier, or demote it to a control and close W2.
+3. Assess the blind Hat/Turtle funnel as a reproducible classified-corpus
+   benchmark. Define comparison methods and ablations before authorizing any
+   missing measurements.
+4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
+   escalation, and all Spectre radius escalation frozen.
+5. Only after closing one of the preceding packages, choose a genuinely
+   outside-horizon candidate family from a literature-backed theorem. The
+   `Tile(a,b)` recognizer remains required infrastructure before any future
+   polykite novelty promotion, but is not itself the next research result.

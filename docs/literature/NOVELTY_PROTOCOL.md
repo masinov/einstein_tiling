@@ -1,6 +1,6 @@
 # Candidate and novelty protocol
 
-**Version:** 1.0, 2026-07-20  
+**Version:** 1.1, 2026-07-21
 **Policy:** fail closed.
 
 This protocol prevents four distinct claims from being conflated:
@@ -11,6 +11,25 @@ This protocol prevents four distinct claims from being conflated:
 - **aperiodicity:** it tiles the plane and none of its tilings is periodic;
 - **method novelty:** an algorithm or certificate is new even when its control
   tile is known.
+
+## 0. Experiment-admission gate
+
+No nontrivial computation begins until its notebook pre-registration answers
+all four questions below.
+
+1. **Claim:** Which exact mathematical or methodological proposition can the
+   run prove, refute, or measure?
+2. **Prior art:** Which primary sources and public code/data artifacts were
+   checked, and why is the output not already known?
+3. **Decision:** What distinct next action follows from each possible output?
+4. **Stop rule:** What fixed resource/radius/index limit ends the experiment,
+   and why is that limit logically informative?
+
+“One larger radius/index” is not a claim. A run whose negative and positive
+outcomes both lead to another larger run fails the decision test. User-supplied
+prior-art information is a blocking research constraint: it must be resolved
+against primary sources before computation resumes, not merely acknowledged.
+No existing benchmark is escalated just because unused compute is available.
 
 ## 1. Required machine-readable dossier
 
@@ -151,6 +170,10 @@ from the final evaluator.
 
 It is not legitimate to call the Turtle a new tile, or to infer aperiodicity
 from its finite repository experiments when the proof being cited is external.
+
+The historical blind run can be analyzed retrospectively. It must not be
+rerun or enlarged unless a separately pre-registered benchmark question
+requires it.
 
 ## 4. Claim language
 

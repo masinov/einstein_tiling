@@ -16,7 +16,7 @@ def load_catalog():
 def test_catalog_schema_and_identifiers_are_unambiguous():
     catalog = load_catalog()
     assert catalog["schema_version"] == 1
-    assert catalog["snapshot_date"] == "2026-07-20"
+    assert catalog["snapshot_date"] == "2026-07-21"
     assert len(catalog["sources"]) >= 18
 
     ids = [source["id"] for source in catalog["sources"]]
@@ -67,6 +67,8 @@ def test_required_prior_art_controls_are_catalogued():
         "smkgs-chiral-2024",
         "akiyama-araki-turtle-2025",
         "kaplan-isohedral-sat-2024",
+        "kaplan-heesch-sat-code",
+        "kaplan-8kites-2023",
         "baake-gaehler-sadun-hat-2025",
         "baake-et-al-spectre-order-2025",
         "labbe-selinger-markov-2026",

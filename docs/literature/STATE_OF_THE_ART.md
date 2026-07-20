@@ -125,11 +125,16 @@ relative to known tiling systems remain separate checks.
 
 ## 3. Computational filtering
 
-Kaplan's Heesch SAT method measures finite surround depth; his isohedral SAT
-method gives an exact test for extendable isohedral surrounds in its stated
-polyform setting (`kaplan-heesch-2022`, `kaplan-isohedral-sat-2024`). These are
-valuable early rejection filters. Neither failure to find an isohedral tiling
-nor arbitrarily deep finite patch growth proves aperiodicity.
+Kaplan's Heesch SAT method measures finite surround depth; his public
+implementation later generalized the method to polykites, and its public
+eight-kite artifact exactly matches our A1+A2 aggregate (`108` at `H_c=1`,
+five at `H_c=2`, plus two periodic anisohedral cases and the Hat left
+inconclusive). His isohedral SAT method gives an exact test for extendable
+isohedral surrounds in its stated polyform setting (`kaplan-heesch-2022`,
+`kaplan-heesch-sat-code`, `kaplan-8kites-2023`,
+`kaplan-isohedral-sat-2024`). These are valuable early rejection filters and
+external controls. Neither failure to find an isohedral tiling nor arbitrarily
+deep finite patch growth proves aperiodicity.
 
 The isohedral criterion is now implemented as a compact control. Its complete
 counts over all 1,264 free polykites through `n=8` match Myers exactly:
