@@ -1,0 +1,6909 @@
+{
+ "kind": "theory-w2-layer-d-index60-map7-v4-twist-union-certificates",
+ "schema_version": 1,
+ "date": "2026-07-18",
+ "scope": {
+  "index": 60,
+  "hnfs": [
+   [
+    10,
+    1,
+    6
+   ],
+   [
+    10,
+    3,
+    6
+   ],
+   [
+    12,
+    2,
+    5
+   ],
+   [
+    12,
+    3,
+    5
+   ],
+   [
+    12,
+    4,
+    5
+   ],
+   [
+    12,
+    5,
+    5
+   ],
+   [
+    15,
+    3,
+    4
+   ],
+   [
+    15,
+    4,
+    4
+   ],
+   [
+    15,
+    5,
+    4
+   ],
+   [
+    15,
+    6,
+    4
+   ],
+   [
+    15,
+    7,
+    4
+   ],
+   [
+    15,
+    8,
+    4
+   ],
+   [
+    20,
+    4,
+    3
+   ],
+   [
+    20,
+    5,
+    3
+   ],
+   [
+    20,
+    6,
+    3
+   ],
+   [
+    20,
+    11,
+    3
+   ],
+   [
+    20,
+    12,
+    3
+   ],
+   [
+    20,
+    13,
+    3
+   ],
+   [
+    30,
+    5,
+    2
+   ],
+   [
+    30,
+    7,
+    2
+   ],
+   [
+    30,
+    11,
+    2
+   ],
+   [
+    30,
+    17,
+    2
+   ],
+   [
+    30,
+    21,
+    2
+   ],
+   [
+    30,
+    23,
+    2
+   ],
+   [
+    60,
+    6,
+    1
+   ],
+   [
+    60,
+    7,
+    1
+   ],
+   [
+    60,
+    8,
+    1
+   ],
+   [
+    60,
+    13,
+    1
+   ],
+   [
+    60,
+    16,
+    1
+   ],
+   [
+    60,
+    17,
+    1
+   ],
+   [
+    60,
+    22,
+    1
+   ],
+   [
+    60,
+    25,
+    1
+   ],
+   [
+    60,
+    26,
+    1
+   ],
+   [
+    60,
+    33,
+    1
+   ],
+   [
+    60,
+    34,
+    1
+   ],
+   [
+    60,
+    37,
+    1
+   ],
+   [
+    60,
+    42,
+    1
+   ],
+   [
+    60,
+    43,
+    1
+   ],
+   [
+    60,
+    46,
+    1
+   ],
+   [
+    60,
+    51,
+    1
+   ],
+   [
+    60,
+    52,
+    1
+   ],
+   [
+    60,
+    53,
+    1
+   ]
+  ],
+  "hnfs_certified": 42,
+  "map": 7,
+  "v4_twists_per_union": 16,
+  "direct_logical_cases": 672,
+  "union_equivalence": "shared cover/potential variables; selector activates each twist suffix; at least one selector is true"
+ },
+ "provenance": {
+  "dependencies": [
+   {
+    "path": "docs/notebook/assets/theory-w2-layer-d-v4-sft-index60.json",
+    "sha256": "fccd728e580d6d77b831334342b7b3cdd3b0541298f65de15a6d136393b48292"
+   },
+   {
+    "path": "docs/notebook/assets/theory-w2-layer-d-a4-factor.json",
+    "sha256": "81c2e1720f9874536c194968a62c7437b839042b29ca258e3f705ab0e78f6b4b"
+   },
+   {
+    "path": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-packing.json",
+    "sha256": "7dcb9adef0c7607b36929a35becf359ce2da862ed6e512c3aa79af41e56ed355"
+   }
+  ],
+  "producer": "Glucose 4 via python-sat",
+  "checker": {
+   "name": "drat-trim",
+   "git_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985"
+  },
+  "sources": [
+   {
+    "path": "src/einstein/theory/a4_v4_sft.py",
+    "sha256": "655431ad81c5d0f9f07351c6a8b8f06563394cbf1272f641f54124e76013cb74"
+   },
+   {
+    "path": "src/einstein/theory/a4_v4_twist_union.py",
+    "sha256": "9e87ea3110436a55e630974845d9aab1ff680a267cdb221eb139dbf981571985"
+   },
+   {
+    "path": "scripts/run_theory_w2_layer_d_v4_proofs_index60.py",
+    "sha256": "a13e3ba962f9cc6bf9a21ae0eb25a7d3e73b5640cc378cf129ae84583b1e9dba"
+   }
+  ]
+ },
+ "conclusion": {
+  "all_42_map7_frontier_hnfs_unsat": true,
+  "three_residual_hnfs_closed_by_companion_packing_manifest": true,
+  "complete_index60_shell_closed": true,
+  "not_a_general_aperiodicity_proof": true
+ },
+ "summary": {
+  "certificates": 42,
+  "independently_verified": 42,
+  "compressed_certificate_bytes": 694971396
+ },
+ "results": [
+  {
+   "hnf": [
+    10,
+    1,
+    6
+   ],
+   "canonical_cnf_clause_hash": "9f7d4ae2d2686089f4b85bb559d629dbcbba41fe8dbed0d74d2ec1a97ea44405",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     10,
+     1,
+     6
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 146534,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1032,
+    "conflicts": 358754,
+    "decisions": 954192,
+    "propagations": 17148419
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-10-1-6-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "9684938e74b59e1088f4b50407c6d67a43ef43600b78acdd7fe398d755231a99",
+    "cnf_uncompressed_sha256": "f58f048837434c6265288b657ca778eba56588cfdf23240edcb176f79fb0055f",
+    "cnf_gz_bytes": 695271,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-10-1-6-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "e38ce3254e59abcfaa8360e5ae1b8cd3561139f52523a401e5a84d29cb00d119",
+    "drat_uncompressed_sha256": "bef4305387d43f14e99453118075abbdec8c43454976afc903db0644c1e8d5e8",
+    "drat_gz_bytes": 7703265
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 100.58310823900683
+  },
+  {
+   "hnf": [
+    10,
+    3,
+    6
+   ],
+   "canonical_cnf_clause_hash": "37bc381a35bbd10a068c2bff0fe31ca01975bd64afa32d84e5a5d57f6302740d",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     10,
+     3,
+     6
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 145143,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1101,
+    "conflicts": 357638,
+    "decisions": 957672,
+    "propagations": 17083343
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-10-3-6-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "d2b8b0aa68f185c535e1d3b8041ff422bfe96780f8de774345273f5b922b6950",
+    "cnf_uncompressed_sha256": "e6ac07498e469388706736093826f89fb9e8f3bb3d98417186a46527e99ad58f",
+    "cnf_gz_bytes": 680599,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-10-3-6-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "38c3ce045b8ad87986996b55ea60978c260a72c6443a66b00b3717d29928374a",
+    "drat_uncompressed_sha256": "79379981c757ac40453719c4a74d7e657d57d5a7cb90a5731614bf411c17264c",
+    "drat_gz_bytes": 7556804
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 98.61857855098788
+  },
+  {
+   "hnf": [
+    12,
+    2,
+    5
+   ],
+   "canonical_cnf_clause_hash": "ca8a2bb1e66a24ee14a1ce81f79cc933de867b30bb1b7bcaea3ec8167d0c3c4b",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     12,
+     2,
+     5
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 266927,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1688,
+    "conflicts": 814076,
+    "decisions": 2407251,
+    "propagations": 43409391
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-12-2-5-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "e01c448411b1c0c2e500f0885f9e263be4e5b30312bc28c860915b1b72774c07",
+    "cnf_uncompressed_sha256": "be4a60c5043404f720fe5367ef2ae6a339e733a02be23c874b9520725813eb3e",
+    "cnf_gz_bytes": 1281796,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-12-2-5-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "6dd79011d97f34e242c6a43b26a51c40bf2834a5a1278f8f128c29cdb176597f",
+    "drat_uncompressed_sha256": "ab5eaed244bb1de9cd7790d74f6d3f0d0f319ca7ea196779441ceb631a0f521e",
+    "drat_gz_bytes": 15304283
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 178.15565376798622
+  },
+  {
+   "hnf": [
+    12,
+    3,
+    5
+   ],
+   "canonical_cnf_clause_hash": "30a9fb61863e7c1c4faed16cbd8c77f7fea1e8819b44b311d68175d445d35ec1",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     12,
+     3,
+     5
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 311068,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1943,
+    "conflicts": 896480,
+    "decisions": 2773573,
+    "propagations": 49715273
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-12-3-5-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "83a096cd017383e1ddd185a644d96f66dbff5011d6b634097857215adce57cb4",
+    "cnf_uncompressed_sha256": "3f64bf83c30ed5026207d7362b72c5a408f13491c0cc353088b0dcfda21c9716",
+    "cnf_gz_bytes": 1522158,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-12-3-5-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "d1140c4c48c9f8eb99d5c2f75060a0463ee6c494bacdcf476382a84a786a1d0e",
+    "drat_uncompressed_sha256": "b68dbdf27e889a4546b8df89b0f2d3f802c6575c8f6c69a029313a8ebc753bd8",
+    "drat_gz_bytes": 19046374
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 211.26955814099347
+  },
+  {
+   "hnf": [
+    12,
+    4,
+    5
+   ],
+   "canonical_cnf_clause_hash": "b87b6498079aa9c620617d0cc246dc579dcdbf1070b246ea0f8a18a3403f37a5",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     12,
+     4,
+     5
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 319495,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 2038,
+    "conflicts": 947066,
+    "decisions": 2893476,
+    "propagations": 52578968
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-12-4-5-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "cef4d692463c05d714b0807987cde2375efb6bde87de973cc57c55efa88d400c",
+    "cnf_uncompressed_sha256": "54d8b586cf5a7d69154453cf2cdec1fd885f9bec92232c0ca97ad79281e79bbd",
+    "cnf_gz_bytes": 1566496,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-12-4-5-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "0a39d3f61088ddcc4c5cd1929b1af99a02bafbc52ef51ecb1692aa466ccf75d8",
+    "drat_uncompressed_sha256": "114d2cd83b6ab376c2a392229f5e1f344b4cc9e2daf9474f60e62e8bd40a1c15",
+    "drat_gz_bytes": 20033771
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 218.43724839000788
+  },
+  {
+   "hnf": [
+    12,
+    5,
+    5
+   ],
+   "canonical_cnf_clause_hash": "40e0306c744fc8e5892687208945401e4ef21f1cfa5f66ba79cd20ad428432f8",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     12,
+     5,
+     5
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 260435,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1899,
+    "conflicts": 831604,
+    "decisions": 2437662,
+    "propagations": 43856789
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-12-5-5-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "322a078cb3f1f7285964940a028ab002c6e70f63ca4130865c0ed270c1de1de4",
+    "cnf_uncompressed_sha256": "011b4c7e7e5e7982fd195df92926a6dbc56b76f0d559519452800df87d3f08fa",
+    "cnf_gz_bytes": 1292743,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-12-5-5-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "c3e503c9555b868137ced6ebef9921531ffbc81b02d908793e4c787e998a486a",
+    "drat_uncompressed_sha256": "501152fee43a41d68550f6ccb8c2784287f6a59f9d5c6e6625cb2d4b1cf80558",
+    "drat_gz_bytes": 15437986
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 182.0459008100006
+  },
+  {
+   "hnf": [
+    15,
+    3,
+    4
+   ],
+   "canonical_cnf_clause_hash": "60c2250bdb17df4fa4458ee42cea4879825d96631355e95283b05e0b662fec63",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     15,
+     3,
+     4
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 259172,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 2140,
+    "conflicts": 737280,
+    "decisions": 2316785,
+    "propagations": 37563813
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-15-3-4-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "65081fc9a408dccb3afd2fbaaab1171475dd37da1a177b5bf9f418c2c22ac41f",
+    "cnf_uncompressed_sha256": "f112b8559ca0fb82bc94968c5babec70ed98a1395509e015e0a3f7b39c38c524",
+    "cnf_gz_bytes": 1260877,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-15-3-4-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "2b5cbe657a2cb041a2c953a8a5fe6ec93fb80dde1c9fab32da1e6caa589a1edc",
+    "drat_uncompressed_sha256": "9b03e581394e1fa963eec64c6db1b8b4fd1de10067371da7ce1aec47330d5308",
+    "drat_gz_bytes": 13998685
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 148.80538621499727
+  },
+  {
+   "hnf": [
+    15,
+    4,
+    4
+   ],
+   "canonical_cnf_clause_hash": "ff1f2df7bf427a76043e47ae3cdd2e215e7574a6bda8144691460a22a4f17261",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     15,
+     4,
+     4
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 183176,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1203,
+    "conflicts": 521751,
+    "decisions": 1388239,
+    "propagations": 26378505
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-15-4-4-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "dbad58028d193ca1e0951f89680b418b55cf25167e8cdd60f7f5ef5c506380fa",
+    "cnf_uncompressed_sha256": "5d02046b286f28edfa430c1b400f77da899caa66b79ea526142a051449aca656",
+    "cnf_gz_bytes": 867610,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-15-4-4-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "9324e51ffe917aa73e316d23827c1f8fb282bf141f27b2b16d50741152deb74e",
+    "drat_uncompressed_sha256": "405f67ade25b90f9a832fb8e520e866322fa16ccf7a338d1a15ab122f646ea29",
+    "drat_gz_bytes": 11117935
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 117.11592553601076
+  },
+  {
+   "hnf": [
+    15,
+    5,
+    4
+   ],
+   "canonical_cnf_clause_hash": "76dc9ec973fbce2a26060be8a8b1f207046061b20fa0cdb62e4f5da9d0349446",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     15,
+     5,
+     4
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 325551,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 2296,
+    "conflicts": 1098073,
+    "decisions": 3140930,
+    "propagations": 61113351
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-15-5-4-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "a99531c74bf6a703200d801b39474fb9aff9b5fd452652e81c9fa1a08f9ae8d1",
+    "cnf_uncompressed_sha256": "91faa369605a16ed44c421e4192d238c2b60476a990d60e47650aae70594d78a",
+    "cnf_gz_bytes": 1644165,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-15-5-4-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "ed5e7293bdf6865be8a064d1815447723a86cb0301cc8672b4799685872f6887",
+    "drat_uncompressed_sha256": "9eb7db206088a849a1002fdd8e34f448a8ce6fefc7c20d5746594f80236a3bfb",
+    "drat_gz_bytes": 23274248
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 254.55627131299116
+  },
+  {
+   "hnf": [
+    15,
+    6,
+    4
+   ],
+   "canonical_cnf_clause_hash": "96d947174b10174c0635f0c5797de66b13b4b24a57a5346afbc8f3566152448b",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     15,
+     6,
+     4
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 315975,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 2264,
+    "conflicts": 1075499,
+    "decisions": 3136579,
+    "propagations": 60003060
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-15-6-4-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "4bca544f5457204e0d0ecc672b3b0419c965bc647e20443801da4443441e0f16",
+    "cnf_uncompressed_sha256": "eaec52f7ad8cad07690b3c3c0b17d255bd7bdc2a3364b0cda340f4a06cb2df75",
+    "cnf_gz_bytes": 1552649,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-15-6-4-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "9feef3863ec19aa9a82069e5fa932b04efd76ac6c1c852a569164a00ab93ebec",
+    "drat_uncompressed_sha256": "964e14039c0c2bec0d73f9ceaed37d2ec11a2fd0f4842d844ca1dd977b4b2ce2",
+    "drat_gz_bytes": 22689596
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 251.78013280799496
+  },
+  {
+   "hnf": [
+    15,
+    7,
+    4
+   ],
+   "canonical_cnf_clause_hash": "1b919dc4b951cf4c76d87ae62e1dfbe34c3199f4163a18b04f1f2b9f5272bc64",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     15,
+     7,
+     4
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 180377,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1513,
+    "conflicts": 500772,
+    "decisions": 1367143,
+    "propagations": 25028806
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-15-7-4-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "7d6431d03eea47e821d76ec969850c51f5c4357890c226ac4c6259a9d60763de",
+    "cnf_uncompressed_sha256": "187ff545e0b4fd83ac255ce3972725b738f65470186736cced784bbd3c989389",
+    "cnf_gz_bytes": 859003,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-15-7-4-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "83f844c4bb8987db4fb95b5c17b837598950637a2f8d63567e539b4305ac8ffb",
+    "drat_uncompressed_sha256": "47fc6a23a87c16bb08966eea7ed8d67edb8b184d5c795045f8c9aa0768ba5d83",
+    "drat_gz_bytes": 10476178
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 112.41683845900116
+  },
+  {
+   "hnf": [
+    15,
+    8,
+    4
+   ],
+   "canonical_cnf_clause_hash": "adff80c77bba48a39a37c266d13b52b24bb33ad795b1be18282c0281b691fcfd",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     15,
+     8,
+     4
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 254143,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1807,
+    "conflicts": 716245,
+    "decisions": 2194924,
+    "propagations": 36741785
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-15-8-4-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "661e672152a9db34addf74ce1c66f632523f0e3a76a1234c5d33510538078026",
+    "cnf_uncompressed_sha256": "93db6793c5c1a4056927b351041853f4a00ed960e2a9b52ef4a7dd666de855c1",
+    "cnf_gz_bytes": 1212982,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-15-8-4-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "39bc8a86d4b9f8d94684c464148c31457936ea47a8da706f1b57cf7a4aa018ec",
+    "drat_uncompressed_sha256": "713418f8c3d1b128186797d6cb3497fc403cf059da831a63ab6d60c8130a4295",
+    "drat_gz_bytes": 13963027
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 147.55033389398886
+  },
+  {
+   "hnf": [
+    20,
+    4,
+    3
+   ],
+   "canonical_cnf_clause_hash": "41f3d035e236c10f0478039b734003a1bc6e2fcd40aa4795f10eb2a89fb9d6da",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     20,
+     4,
+     3
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 239179,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1925,
+    "conflicts": 654806,
+    "decisions": 2032232,
+    "propagations": 32751357
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-20-4-3-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "cee451836c7fc14d4f64421f122006799f2f8c3d506dc2afe58d6b978650cf4e",
+    "cnf_uncompressed_sha256": "d23f258e85aaa5cf5d79d80a3bcfb82cdb62115226b0062ab0d3d36b0daab0b1",
+    "cnf_gz_bytes": 1140878,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-20-4-3-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "44e1b98ab65b86c39492b21f6fe5c8b42fcda9fa6217cc16234daf156bac1e62",
+    "drat_uncompressed_sha256": "a3094372d173f325f128ef4c2f914387ce94b291923d0b015605fce9abdd13e8",
+    "drat_gz_bytes": 12634242
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 129.13403032800124
+  },
+  {
+   "hnf": [
+    20,
+    5,
+    3
+   ],
+   "canonical_cnf_clause_hash": "aec0b81e7f5c021b33040ac4682fd055151b2a1fd430fe20ef6eb9492bbd2268",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     20,
+     5,
+     3
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 308227,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 2054,
+    "conflicts": 967952,
+    "decisions": 2837700,
+    "propagations": 53867459
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-20-5-3-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "363c8923557bceda96a11cc6057e813c55eee053679448f0d78ba90c84311909",
+    "cnf_uncompressed_sha256": "d1de7505f0a6a8bb31e55a51c9036a6b6a5ae4c3ed18a1e04ffbfa26bc6138b7",
+    "cnf_gz_bytes": 1502297,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-20-5-3-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "b53515cbf8e234a1314f1a6ab88c6ac7b1261a3fa9a9fd8a980a5496b8362285",
+    "drat_uncompressed_sha256": "4d0e075d391bb43ffddbdabacf6e17bb4eab1075c4caad65f7ce43531b6345e9",
+    "drat_gz_bytes": 20266314
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 209.85532557900297
+  },
+  {
+   "hnf": [
+    20,
+    6,
+    3
+   ],
+   "canonical_cnf_clause_hash": "0560947f1d8f46bfbbda801741d7eb3be72dfb844d282c8bad49c759371f7206",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     20,
+     6,
+     3
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 256257,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 2474,
+    "conflicts": 918845,
+    "decisions": 2549281,
+    "propagations": 49032606
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-20-6-3-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "df039beee0aeebb9220f98863f625b424f789fc2583d7259ecc9557f084d51c6",
+    "cnf_uncompressed_sha256": "3c9630583bf845f90b6e14c01cd1df53a3a17c96c7a736cbb1ef9f09bdf2d4ea",
+    "cnf_gz_bytes": 1250072,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-20-6-3-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "7edb48d3ec2c88aa85ba09008af6ba8cf84505a62b44e06834c6d5e2db77a7a4",
+    "drat_uncompressed_sha256": "d28b5918b483e1e9ea8aae27375dcd362adb5e6bc31adcb25ebf6834f0f4a0ca",
+    "drat_gz_bytes": 18550610
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 197.45589625100547
+  },
+  {
+   "hnf": [
+    20,
+    11,
+    3
+   ],
+   "canonical_cnf_clause_hash": "f1c28b22f82e7cb54b0b6f3351329434e4e7bb50334fce8841c5d7399576f026",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     20,
+     11,
+     3
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 236209,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 2001,
+    "conflicts": 734379,
+    "decisions": 2015154,
+    "propagations": 39060138
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-20-11-3-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "cd8cbbc799aeccd9df128f9dbfb7a908933ef9d15ef251aae583b3a8244fe478",
+    "cnf_uncompressed_sha256": "b4a1f59db1f66afe08e5773d35bf7c23064bb7fb1ac4891aa5b0d93a152fb8f2",
+    "cnf_gz_bytes": 1139822,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-20-11-3-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "69acbb47636ad71d5b4fec47e29c9155fd7f78f22174d5d9eee2d338ec6e4a4e",
+    "drat_uncompressed_sha256": "2222013a79d5726c9088b46c12d2657a0df2fd8bd4d78a72c83838542d130f77",
+    "drat_gz_bytes": 15900294
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 162.90690821700264
+  },
+  {
+   "hnf": [
+    20,
+    12,
+    3
+   ],
+   "canonical_cnf_clause_hash": "0b30cc18690fcfc15cb7184a036f702893feab91d107dd7cd1f1ce31c34414ee",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     20,
+     12,
+     3
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 311141,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 2201,
+    "conflicts": 991315,
+    "decisions": 2944210,
+    "propagations": 54946959
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-20-12-3-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "b07786693a879e2081666f992ebad6a0d4dd1cbd508eac69d062e8bef5627116",
+    "cnf_uncompressed_sha256": "b37a6756b18508383adfae2c723053d96cc78f0ef7e6e0312f46ffa03cb17bd9",
+    "cnf_gz_bytes": 1546280,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-20-12-3-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "e2278a4429821ee9ae430778e915e59d66c186d34996c139a5f5ce0e919f5da3",
+    "drat_uncompressed_sha256": "fe3a066f5c84dbf3bc634a269b8425421ae9213334d868c6c006aec20dd8ccc4",
+    "drat_gz_bytes": 20842836
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 227.90962714899797
+  },
+  {
+   "hnf": [
+    20,
+    13,
+    3
+   ],
+   "canonical_cnf_clause_hash": "d6063df7fb74850a3ca61391cb871b1b1a3c9710a09293586ce12dc6254236e7",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     20,
+     13,
+     3
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 240786,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 2049,
+    "conflicts": 708230,
+    "decisions": 2145008,
+    "propagations": 35773598
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-20-13-3-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "49e58d0b4701f5e939da8c2e4fc3502bc78c13c2254fa90cd5f9e97a9c4ae7f0",
+    "cnf_uncompressed_sha256": "a1cfe36f43974fcef7a22584eca871d6431dd3ed6669d4428a56d7a9e5266d6d",
+    "cnf_gz_bytes": 1176636,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-20-13-3-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "cb8d7f4d28382466cec714d0b5434e241e6be291cd110db5d0cb18d542c2dcf2",
+    "drat_uncompressed_sha256": "24b11a68c9e18bfa1535f5931825e0f92e9ae6c058b369250719f9010a29ffe9",
+    "drat_gz_bytes": 13535506
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 131.96983642900886
+  },
+  {
+   "hnf": [
+    30,
+    5,
+    2
+   ],
+   "canonical_cnf_clause_hash": "542ebb2e8c8bf39b86590f98ea34b8152808e8a4670af999253e16e5c08130b3",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     30,
+     5,
+     2
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 262462,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 2006,
+    "conflicts": 839075,
+    "decisions": 2584851,
+    "propagations": 43666503
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-30-5-2-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "566eb44a57e257d92a0b6117c7be012ee7c0b63d2c80635ec40df60fbbcc253a",
+    "cnf_uncompressed_sha256": "c3bff6036591eade2386b2e56562f5ae2a35d26702d06ecd6cd790ebcd30bebb",
+    "cnf_gz_bytes": 1266762,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-30-5-2-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "50f689d892295c7f98ec09c359ca3276a2e45403056018d4781864207353e02e",
+    "drat_uncompressed_sha256": "f7cc552d07e42a9e489f2ba9c071dc6eeabd44fd203f19a936b7ec59bbaae116",
+    "drat_gz_bytes": 15959384
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 163.70439616600925
+  },
+  {
+   "hnf": [
+    30,
+    7,
+    2
+   ],
+   "canonical_cnf_clause_hash": "6a8f43ebd5ee38aff6d360555a2b803a2c21c4b6a35c0368f0ba34a37c7e1511",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     30,
+     7,
+     2
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 259723,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 2541,
+    "conflicts": 879735,
+    "decisions": 2365106,
+    "propagations": 46866994
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-30-7-2-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "250206dfc94e6e1c21609ab02cc67b388dfcb66775e20adfc4828f3bb519f801",
+    "cnf_uncompressed_sha256": "5bed3c97c61affe9f99fb5f0481bb738dc862c51c384f734b02e624a4986fac6",
+    "cnf_gz_bytes": 1270340,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-30-7-2-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "303aed90fd87f5c81125f49686578d485d27a08c413435489f04ef7effeec53f",
+    "drat_uncompressed_sha256": "faa0baff1c48be0bcbdf78f6e526db4bd08711c721debdf34b60eaf5d53b5613",
+    "drat_gz_bytes": 19859310
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 194.92620397800056
+  },
+  {
+   "hnf": [
+    30,
+    11,
+    2
+   ],
+   "canonical_cnf_clause_hash": "340372077ea1f3add1c013463e92580ddd6736101a4ba645e5abcb6741c361b4",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     30,
+     11,
+     2
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 264018,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1758,
+    "conflicts": 795287,
+    "decisions": 2333015,
+    "propagations": 43232699
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-30-11-2-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "b6f600dc61b7c60201dac11f865c435a2749b2644275b31f080243bd7105869b",
+    "cnf_uncompressed_sha256": "e0bc0964597ff2450f2a58042e32c4aa8ca690bf43ea93a34dc3fbd209baae2d",
+    "cnf_gz_bytes": 1284382,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-30-11-2-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "70d06c37168200cb9dcd28d9107273ae525aa3748090ff7ede20c8ab685ed681",
+    "drat_uncompressed_sha256": "0a16591870e72277d46a47f2e7e043449c7d312b1f551e051b0e2850597536be",
+    "drat_gz_bytes": 17380719
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 169.82087792499806
+  },
+  {
+   "hnf": [
+    30,
+    17,
+    2
+   ],
+   "canonical_cnf_clause_hash": "bdba84073255abbe4e5d4f5cc37487e2d5189befb33f21a87d6a5915060f27df",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     30,
+     17,
+     2
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 280086,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 2131,
+    "conflicts": 1007484,
+    "decisions": 3013937,
+    "propagations": 55383095
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-30-17-2-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "b4cdff4ce9ba0f8cd8209de863a6b25703760f73d0c7dd5c54536861af029d2f",
+    "cnf_uncompressed_sha256": "c299b879a62ece39c0ab2f44d99fe2212ad96aa53e18484a0fdecba7e4da4563",
+    "cnf_gz_bytes": 1348120,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-30-17-2-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "783040d30b02be9fa05c7a7608558f5164b641662ce39521cb85d6e6a50c9a49",
+    "drat_uncompressed_sha256": "2fd9a9510fe50c10998510d07095ae9d3495aeda4c88a959c390619fd8ba3ab3",
+    "drat_gz_bytes": 18407481
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 193.23704286800057
+  },
+  {
+   "hnf": [
+    30,
+    21,
+    2
+   ],
+   "canonical_cnf_clause_hash": "cd78eac5d892de92b5d6aef36a0f7bfbb9ad1aacd9cf83a13a983753bd2a361d",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     30,
+     21,
+     2
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 243351,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 2490,
+    "conflicts": 873801,
+    "decisions": 2410228,
+    "propagations": 46410001
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-30-21-2-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "e9f7276480044ed00bf6351d0c92f92651b5c95e52a025a402386e3a9addb31f",
+    "cnf_uncompressed_sha256": "dd5456af6ec215f54cfd2d5510fa9f88466505b705cfdfdcac843f1a2c1e81fa",
+    "cnf_gz_bytes": 1184812,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-30-21-2-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "2390baff00f50d2669fa9388a3b0d1f3bd6c24f26a52211f3c9d7abcbd319fec",
+    "drat_uncompressed_sha256": "3ab7bf6990e7afb68bc0d98de3c4e641f7ba83e6fe12d73d8f69d58955087af8",
+    "drat_gz_bytes": 18237237
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 179.86247831900255
+  },
+  {
+   "hnf": [
+    30,
+    23,
+    2
+   ],
+   "canonical_cnf_clause_hash": "d4644645d1082d3ffe482e6a2c5291280a37cf4dbd15bf39cec86406e35ba29a",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     30,
+     23,
+     2
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 264046,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 2123,
+    "conflicts": 870963,
+    "decisions": 2589564,
+    "propagations": 46129607
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-30-23-2-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "c3b4cce48a97fb597ab76cf2e16059c0c465c24b575ec71354ec5b17091b3594",
+    "cnf_uncompressed_sha256": "6ef9a977a3c6ad8c3e21ac9b49a533967378b0122e7cab9ed1d7d7abfd7fe7ec",
+    "cnf_gz_bytes": 1264555,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-30-23-2-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "0d244e53a851c8d36594b4070768ef4f805a88c67c8fe5597c8c0d544cbef661",
+    "drat_uncompressed_sha256": "6083f47d5b362dd617596918a61174fe89663a3e19886827c199e3757888f99e",
+    "drat_gz_bytes": 16365242
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 178.21504475599795
+  },
+  {
+   "hnf": [
+    60,
+    6,
+    1
+   ],
+   "canonical_cnf_clause_hash": "bf30950a07511a34d30b0d5c2fc4486ba8fd302e6734506126fc696003308cf2",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     60,
+     6,
+     1
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 151023,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1200,
+    "conflicts": 394146,
+    "decisions": 998573,
+    "propagations": 18606493
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-6-1-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "b178f93532a66091549490bee5f84228363e003b4d1984699924719ff5f7ae63",
+    "cnf_uncompressed_sha256": "78534e0bf923a06833639055bc4aa7fa393add70930778ffaeba092fc757d578",
+    "cnf_gz_bytes": 711912,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-6-1-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "fe3f88aac61c070c74408d080e76c81ea5535f46207a030e07dae2c627064a00",
+    "drat_uncompressed_sha256": "a178949788fd0ed00bbde2f2815a70f8b582df2f3a3879593a882041c42de1fd",
+    "drat_gz_bytes": 8765693
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 89.75597589000245
+  },
+  {
+   "hnf": [
+    60,
+    7,
+    1
+   ],
+   "canonical_cnf_clause_hash": "7190e9f85a9b6d86c2c3e0d8b3518d8099b5657b950c9eda12f778c1e81db30f",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     60,
+     7,
+     1
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 194737,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1232,
+    "conflicts": 553165,
+    "decisions": 1442796,
+    "propagations": 27627860
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-7-1-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "44ef94d3a912f01f42881eaf8962199931060716585955ba19219301f50fc5f8",
+    "cnf_uncompressed_sha256": "c69e66b638d08f87f0a54c4e0ec5661048e91370de431aed90641496998fcbb4",
+    "cnf_gz_bytes": 928739,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-7-1-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "a3a18d0818121af8ff332ecf5e0688f85bf18c5e1f2361c50d7f0734448c6ac2",
+    "drat_uncompressed_sha256": "51f0a0ea40025975954283ba09d8b286facb79acb1b83a7c24f7d4829d9880b9",
+    "drat_gz_bytes": 12775341
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 117.78548454699921
+  },
+  {
+   "hnf": [
+    60,
+    8,
+    1
+   ],
+   "canonical_cnf_clause_hash": "c3fece3fb3e75dac80b6e741a657d42f42609579d025b2f10d4c7403ce468b48",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     60,
+     8,
+     1
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 247232,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 2386,
+    "conflicts": 771652,
+    "decisions": 2219032,
+    "propagations": 39248573
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-8-1-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "a4888a44953e3aa591122ec5e665270e62b070215a77c839f5a2dccc3b320746",
+    "cnf_uncompressed_sha256": "a89b6b93cbf976aadfee2ec0ebeba292d257c0b4f5ebca0531063c6b90251eb9",
+    "cnf_gz_bytes": 1213723,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-8-1-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "fc1cc7c158f89a80e16b60ce2b8f9fdaddaa91afaec920ceb3eee6e85f5e9e7b",
+    "drat_uncompressed_sha256": "d704317525c332690a5193a9c271e49369375846c88e54aa18610237b6cff7ba",
+    "drat_gz_bytes": 15661779
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 144.79447016800987
+  },
+  {
+   "hnf": [
+    60,
+    13,
+    1
+   ],
+   "canonical_cnf_clause_hash": "3342443b7ffa4a9e1ee6ed807b5ec29f064c792cd265be3aa6a3e929ec7586c1",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     60,
+     13,
+     1
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 268605,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 2011,
+    "conflicts": 899936,
+    "decisions": 2569418,
+    "propagations": 49323802
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-13-1-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "3980ce7df04a3012e4432b11feab8e838b1dfaeaffb13146fe9dda152feccb05",
+    "cnf_uncompressed_sha256": "694ef33ca178c7903adffed98ecdcde838f7e9755f29a84e49385871cf2e7325",
+    "cnf_gz_bytes": 1303223,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-13-1-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "65d30d0f08dbe2b1d8045281ffc5285bab6067f20b42d34a49b5b3ebbf8f68ac",
+    "drat_uncompressed_sha256": "deb2df42cad7ca04d5042163ce71fdc8308f50bc5be2cf6d8afa7d85d0fdfae7",
+    "drat_gz_bytes": 18566782
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 183.37608535800246
+  },
+  {
+   "hnf": [
+    60,
+    16,
+    1
+   ],
+   "canonical_cnf_clause_hash": "ffb7f3808ad5840b0aa130ee75c4934400a6aa0ad8fd37f195da0ebde8e80bbb",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     60,
+     16,
+     1
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 187685,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1196,
+    "conflicts": 507773,
+    "decisions": 1339489,
+    "propagations": 25619535
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-16-1-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "8bd3ddfb63423de0c8a5a5dd3f728a22b5aee7ddaf740e569a89f734645374d7",
+    "cnf_uncompressed_sha256": "e8aed1fb78bd7114ccec1df2c28f1f808e7053b26a3efad05c228e6ea7f245a2",
+    "cnf_gz_bytes": 900794,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-16-1-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "4b3881c38e2885b0a9d5394be9cc1669d5aea13589a25221b62cf9b71162a881",
+    "drat_uncompressed_sha256": "b920b3e5ec01d6f6ee81dfc28ba1f6a8211606c3470989972c1136aac26a66cb",
+    "drat_gz_bytes": 11978754
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 106.49694160799845
+  },
+  {
+   "hnf": [
+    60,
+    17,
+    1
+   ],
+   "canonical_cnf_clause_hash": "ff63ff9af3e2f8ea17b176c468b12701be885198b6a1510862c29ac04085fe6e",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     60,
+     17,
+     1
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 148463,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1048,
+    "conflicts": 365715,
+    "decisions": 945083,
+    "propagations": 17368428
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-17-1-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "2f5c0cc7f4cf65ad594ec6fecfde93a791b6d14e34a6a7f65adc2473f0b7305f",
+    "cnf_uncompressed_sha256": "642cb6765b42b9809c2b4ee3bf3fb747972eab91ecd53e5fa5613ff12896ce3a",
+    "cnf_gz_bytes": 709735,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-17-1-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "1f8a2b90b047a6d914ef50209f791233f81ef9ccb90e86f2a855af3663d04fc5",
+    "drat_uncompressed_sha256": "52e9af4863a5d6a5ec49c84d1cc800fb72e6eb9a209115c581cb0067a7132181",
+    "drat_gz_bytes": 8023411
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 77.34761014700052
+  },
+  {
+   "hnf": [
+    60,
+    22,
+    1
+   ],
+   "canonical_cnf_clause_hash": "b5192891672ec6591ec83e38a7402f02cfed5f55be1abcbf430591019069b59d",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     60,
+     22,
+     1
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 271680,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 2054,
+    "conflicts": 891439,
+    "decisions": 2574073,
+    "propagations": 48421315
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-22-1-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "c858154f75fb6d2bd0af7f95879a53a16104af428b764d1020d8f4aaf098ce86",
+    "cnf_uncompressed_sha256": "dc06d4720d96743d286011e1239105e59faf059a0e7d24bc0dcc97a2cef98728",
+    "cnf_gz_bytes": 1319663,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-22-1-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "1f7554ec8d7a8d4bdd29ac48dcb2c5d581443d44023628814d637133db697841",
+    "drat_uncompressed_sha256": "3479e21bb676c5f14ac670abb79238f74c30111af23308943b56b2f695fcd17d",
+    "drat_gz_bytes": 19003822
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 176.37187682000513
+  },
+  {
+   "hnf": [
+    60,
+    25,
+    1
+   ],
+   "canonical_cnf_clause_hash": "74adedf98c409b530cbc50f6fdb221053831443feec9b030b9b4d69c528d2472",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     60,
+     25,
+     1
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 264778,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 2101,
+    "conflicts": 874225,
+    "decisions": 2621251,
+    "propagations": 46642099
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-25-1-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "8699e5ca89b142becb4f2204f2a4f14c7e0e642a2eb7bc2d31be2b5910463f2d",
+    "cnf_uncompressed_sha256": "5a5107c626297d870105149efd6c28f33c1e30d5e8df11f2578da808a750c958",
+    "cnf_gz_bytes": 1260955,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-25-1-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "f1e242a4a38026f6551a24699e6ac005a7e067cd47d45812e9f31fd321ab7e36",
+    "drat_uncompressed_sha256": "9047bcbdbccbf45f76d3bf5b8bcfe231d75006a10f5d48f5d7d8a91250106418",
+    "drat_gz_bytes": 16650605
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 166.65063776100578
+  },
+  {
+   "hnf": [
+    60,
+    26,
+    1
+   ],
+   "canonical_cnf_clause_hash": "3a5d02de776bf44772ac49e0193dc601a09fbd865e2dd1d2121cb53b68319e39",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     60,
+     26,
+     1
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 248975,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 2117,
+    "conflicts": 756677,
+    "decisions": 2067160,
+    "propagations": 40227081
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-26-1-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "104a8a5bec268ffb3b9367bcf483c8e62ea021b8e6844e66bf5b2c1f3847eedf",
+    "cnf_uncompressed_sha256": "9c2ad1faa1a2342a19bba2fe9aefc23d906751b7a924f49b2f57f7e5f4f299e3",
+    "cnf_gz_bytes": 1204159,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-26-1-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "6be62ae6dcd26947b083e6c39b3a985942275ad14ad258d950314220a426c7d6",
+    "drat_uncompressed_sha256": "8085bcdc2700401263541f14e81d3d8a4a7c51401df77e4457cef99d70dfcb52",
+    "drat_gz_bytes": 17130458
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 159.5474533289962
+  },
+  {
+   "hnf": [
+    60,
+    33,
+    1
+   ],
+   "canonical_cnf_clause_hash": "cf29cf259a6cfa820647178500ebd315efdb21860c3e3ba8352cbf04df2c2b6b",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     60,
+     33,
+     1
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 264953,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 2700,
+    "conflicts": 924030,
+    "decisions": 2681577,
+    "propagations": 48907303
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-33-1-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "5df35370001d9c43e945c3f3b86b10d9a4f51e5ec71019f738bd8269e4bcb951",
+    "cnf_uncompressed_sha256": "0d164938cbfed644ebd03cb849f9a17dc744387646481f58610c4a85d0d93182",
+    "cnf_gz_bytes": 1333341,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-33-1-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "d748f0dbb11238794b279e07d7e2899804164a2052240a7110144e39e5a2067d",
+    "drat_uncompressed_sha256": "3f43aa1ac58a282cbd3633b6890f31b8a425eb0e220da0e70a489461ac85187e",
+    "drat_gz_bytes": 18871379
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 178.23782376800955
+  },
+  {
+   "hnf": [
+    60,
+    34,
+    1
+   ],
+   "canonical_cnf_clause_hash": "21a6a81003003bf9493065119b6c18435b838147ac4f7c752ec82effe796bc3f",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     60,
+     34,
+     1
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 259910,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 2057,
+    "conflicts": 880513,
+    "decisions": 2587837,
+    "propagations": 46834858
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-34-1-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "2b477c242420fe47b4eba5564b2a257ac56b7a6c86742219553caa8e733b5d1a",
+    "cnf_uncompressed_sha256": "c73c666c082ff5eca49a802162d53376e91a8e25360d41d5f893260f13680790",
+    "cnf_gz_bytes": 1260324,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-34-1-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "6e1f65d1cf5ec67b5619aaee9d882c7be90c48e6e726e3fdba3abf0d9bba179a",
+    "drat_uncompressed_sha256": "cc450c47f05826c80998a378025259825ad6fe05975dc9bfb879771ed194c71a",
+    "drat_gz_bytes": 16983810
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 168.33026474899088
+  },
+  {
+   "hnf": [
+    60,
+    37,
+    1
+   ],
+   "canonical_cnf_clause_hash": "1f96c19d06b4d6883285771587c73141f13cec8f8e74bd844fcc10b060602114",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     60,
+     37,
+     1
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 267764,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1877,
+    "conflicts": 889324,
+    "decisions": 2557039,
+    "propagations": 48928631
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-37-1-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "e7b00c5bcbc46a017320bee97304d72eb4050019e87aae4668f1018de647e3ab",
+    "cnf_uncompressed_sha256": "9ef807d0ed8c865edbefda486bce19c732021d96b2b5745b0038894acfb42709",
+    "cnf_gz_bytes": 1326910,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-37-1-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "79684b8fb41f6168fed16778140037a77dbcc17162785a504323f0778e2ace63",
+    "drat_uncompressed_sha256": "4ccf7367c9327e73aa0f9f8f8706d7083f95ed170c4ae1d40f91ba93cb9ce078",
+    "drat_gz_bytes": 19378094
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 182.58446005800215
+  },
+  {
+   "hnf": [
+    60,
+    42,
+    1
+   ],
+   "canonical_cnf_clause_hash": "be2ae085e07b79727e587f66bd5ed4a85834509f7166dd0ab26ddf810d46f7ad",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     60,
+     42,
+     1
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 146727,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 946,
+    "conflicts": 378148,
+    "decisions": 949893,
+    "propagations": 18007258
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-42-1-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "de3be3f1b630e4710b28256ee0cae0e456c8fc8002f3ce4b883394b07ee25874",
+    "cnf_uncompressed_sha256": "fb0d681754bc92f0fce4ff06529e65c7119e4cee70cff08a178e624f4923538c",
+    "cnf_gz_bytes": 689285,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-42-1-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "d1708741aa52e428969f6a3a9618f1199b3f36bdf289be496b2a938ada3b874c",
+    "drat_uncompressed_sha256": "79917a251686fce3658d485c7d22d334cc804d6f8807354c6c1c74ca757fc9f1",
+    "drat_gz_bytes": 8510313
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 90.64156547498715
+  },
+  {
+   "hnf": [
+    60,
+    43,
+    1
+   ],
+   "canonical_cnf_clause_hash": "668664ea1d837010f03533d862a286a48c0aa6d267574457fe177fd3e53c1900",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     60,
+     43,
+     1
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 186286,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1316,
+    "conflicts": 490168,
+    "decisions": 1354442,
+    "propagations": 24932034
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-43-1-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "0a56c4b0d46a060921d784b001c85302a21e3ef5768529129faf371b8d665ae7",
+    "cnf_uncompressed_sha256": "a4a8fd705e28f56893e1eb14afa84dddabb18c70c7d581c54f65a090e7a7437c",
+    "cnf_gz_bytes": 897018,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-43-1-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "719718675bf98cfaa1fdd40d0d2824c8ed82028e529e7a9d828175b4658fa27d",
+    "drat_uncompressed_sha256": "49031d8ac5dbc3ab05d8f11c39f09b48644ff7b4622ab11d121583717c698341",
+    "drat_gz_bytes": 10543349
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 99.03265306499088
+  },
+  {
+   "hnf": [
+    60,
+    46,
+    1
+   ],
+   "canonical_cnf_clause_hash": "69ea23e428cfeed21a0d861d143be7450ab0d3a790e91c4cfa243d281d321a9e",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     60,
+     46,
+     1
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 259106,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1999,
+    "conflicts": 852191,
+    "decisions": 2455280,
+    "propagations": 46226830
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-46-1-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "5cf3f9bd67dd4ab33e24fbb6846816a528c4214f7adc254930afb95005987aed",
+    "cnf_uncompressed_sha256": "0219dc390ae5c9dc7906e9c63c49102b599710588dbe82fa175a5b11e2ded11d",
+    "cnf_gz_bytes": 1262978,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-46-1-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "4412836db0ca0b49022ba1f8ecc3d53d29328551709a232203fe356e91c7c49a",
+    "drat_uncompressed_sha256": "2879da043c7684f828da7d747f9ba23bb3b127859415a43832ca8c72f169a5b8",
+    "drat_gz_bytes": 17159133
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 145.79846680999617
+  },
+  {
+   "hnf": [
+    60,
+    51,
+    1
+   ],
+   "canonical_cnf_clause_hash": "9c03cb7a062ca9abcfb4efb93ece0e9ce664c1caf927880235791b2f422787d1",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     60,
+     51,
+     1
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 243748,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 2171,
+    "conflicts": 713677,
+    "decisions": 2098712,
+    "propagations": 35982788
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-51-1-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "547162548e797f21d5734932b6558d8801cabce867684b0bc3d5370f5e51a7bc",
+    "cnf_uncompressed_sha256": "6310c83b238aab110a1ec1e13cb65c85ca98192b4c6cfc29e85843ae51b5f1c8",
+    "cnf_gz_bytes": 1192532,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-51-1-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "35f26f5be793eaa18f4a64f031dde353d5148143c8c8db6d27b4a26fd92dae22",
+    "drat_uncompressed_sha256": "af2051416390617a024f0f392cb27f8e9a917140fbf85ade2b3cdbfc2530162c",
+    "drat_gz_bytes": 15038744
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 120.0892222810071
+  },
+  {
+   "hnf": [
+    60,
+    52,
+    1
+   ],
+   "canonical_cnf_clause_hash": "efa642fee8459cf53489484afe1c683c8fe7cee78817ac84dd8c0c3ced280ab2",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     60,
+     52,
+     1
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 191448,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 1388,
+    "conflicts": 572072,
+    "decisions": 1464763,
+    "propagations": 28500665
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-52-1-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "f8f3a08067d696298dea69f4ad1fc3c8d421d6884670af799a138826add66b60",
+    "cnf_uncompressed_sha256": "c791491a62075fc3464f88b2d589bcde72273a95b106395fbfb2b5db93aa421b",
+    "cnf_gz_bytes": 913800,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-52-1-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "5aeabe5fad5dc4304f21b128f8bb5b52f0e935e0ed67086814870113cdffdfa1",
+    "drat_uncompressed_sha256": "65c0609b731a06f975fa75ba312412429a52295da44aca4d1d9159c14fec0eed",
+    "drat_gz_bytes": 13282205
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 108.33232345199212
+  },
+  {
+   "hnf": [
+    60,
+    53,
+    1
+   ],
+   "canonical_cnf_clause_hash": "a426455fff61d70cb24f19e9b275ec6ed3f1fd990fc0a2b6249f2b8ba5af51ff",
+   "canonical_metadata": {
+    "kind": "a4-geometric-c3-v4-local-coverability-twist-union",
+    "images": [
+     1,
+     2,
+     1,
+     0,
+     3,
+     8
+    ],
+    "hnf": [
+     60,
+     53,
+     1
+    ],
+    "cover_mode": "at-least",
+    "twist_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "twist_components": 16,
+    "selectors": [
+     1441,
+     1442,
+     1443,
+     1444,
+     1445,
+     1446,
+     1447,
+     1448,
+     1449,
+     1450,
+     1451,
+     1452,
+     1453,
+     1454,
+     1455,
+     1456
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 720,
+    "common_clauses": 360,
+    "component_clause_counts": [
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320,
+     40320
+    ],
+    "variables": 1456,
+    "clauses": 645481
+   },
+   "core_clauses": 159460,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 837,
+    "conflicts": 417075,
+    "decisions": 1033657,
+    "propagations": 19518816
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-53-1-map7-v4-twist-union.cnf.gz",
+    "cnf_gz_sha256": "5f05ec3996ea9c5a71e4493e9eb0d956806908f2a1b7acb65048ac1253db44cd",
+    "cnf_uncompressed_sha256": "19706329be767c0e07b3195aa6100d5b8f3e5145946d984a0dfbc9952c3cc8e5",
+    "cnf_gz_bytes": 758622,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-60-53-1-map7-v4-twist-union.drat.gz",
+    "drat_gz_sha256": "23801f7dd8c398e29eaa9e8ce7e23159b0f83359dff4f2c6b02fafca21c5873f",
+    "drat_uncompressed_sha256": "ddf0840df1cf436086790b1f65617f1de9e10f5834083ebe18f03c9ccf07d750",
+    "drat_gz_bytes": 9107379
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 80.58216526500473
+  }
+ ]
+}

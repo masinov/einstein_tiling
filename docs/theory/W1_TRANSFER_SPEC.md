@@ -1,5 +1,7 @@
 # W1 reference transfer engine — correctness and certificate specification
 
+> “Finalist” in legacy IDs/artifacts means the known Turtle (ERR-003/D-0048).
+
 ## Purpose
 
 For a fixed finite grid-aligned tile \(T\) and an arbitrary nonzero period

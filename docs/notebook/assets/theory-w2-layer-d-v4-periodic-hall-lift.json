@@ -1,0 +1,749 @@
+{
+ "status": "HALL_CORE_BLOCKED_BY_AFFINE_CIRCUIT",
+ "source_torus": [
+  4,
+  0,
+  4
+ ],
+ "source_selected": [
+  [
+   4,
+   0,
+   0
+  ],
+  [
+   6,
+   0,
+   1
+  ],
+  [
+   6,
+   1,
+   1
+  ],
+  [
+   9,
+   2,
+   0
+  ],
+  [
+   9,
+   3,
+   0
+  ],
+  [
+   11,
+   0,
+   0
+  ],
+  [
+   11,
+   1,
+   3
+  ],
+  [
+   11,
+   2,
+   2
+  ],
+  [
+   11,
+   3,
+   3
+  ]
+ ],
+ "maximum_periods": 7,
+ "tested": [
+  {
+   "period_rectangle": [
+    1,
+    1
+   ],
+   "placements": 9,
+   "whole_set_deficiency": -5,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    1,
+    2
+   ],
+   "placements": 18,
+   "whole_set_deficiency": -7,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    2,
+    1
+   ],
+   "placements": 18,
+   "whole_set_deficiency": -7,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    1,
+    3
+   ],
+   "placements": 27,
+   "whole_set_deficiency": -9,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    3,
+    1
+   ],
+   "placements": 27,
+   "whole_set_deficiency": -9,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    2,
+    2
+   ],
+   "placements": 36,
+   "whole_set_deficiency": -7,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    1,
+    4
+   ],
+   "placements": 36,
+   "whole_set_deficiency": -11,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    4,
+    1
+   ],
+   "placements": 36,
+   "whole_set_deficiency": -11,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    1,
+    5
+   ],
+   "placements": 45,
+   "whole_set_deficiency": -13,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    5,
+    1
+   ],
+   "placements": 45,
+   "whole_set_deficiency": -13,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    2,
+    3
+   ],
+   "placements": 54,
+   "whole_set_deficiency": -7,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    3,
+    2
+   ],
+   "placements": 54,
+   "whole_set_deficiency": -7,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    1,
+    6
+   ],
+   "placements": 54,
+   "whole_set_deficiency": -15,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    6,
+    1
+   ],
+   "placements": 54,
+   "whole_set_deficiency": -15,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    1,
+    7
+   ],
+   "placements": 63,
+   "whole_set_deficiency": -17,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    7,
+    1
+   ],
+   "placements": 63,
+   "whole_set_deficiency": -17,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    2,
+    4
+   ],
+   "placements": 72,
+   "whole_set_deficiency": -7,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    4,
+    2
+   ],
+   "placements": 72,
+   "whole_set_deficiency": -7,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    3,
+    3
+   ],
+   "placements": 81,
+   "whole_set_deficiency": -5,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    2,
+    5
+   ],
+   "placements": 90,
+   "whole_set_deficiency": -7,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    5,
+    2
+   ],
+   "placements": 90,
+   "whole_set_deficiency": -7,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    3,
+    4
+   ],
+   "placements": 108,
+   "whole_set_deficiency": -3,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    4,
+    3
+   ],
+   "placements": 108,
+   "whole_set_deficiency": -3,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    2,
+    6
+   ],
+   "placements": 108,
+   "whole_set_deficiency": -7,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    6,
+    2
+   ],
+   "placements": 108,
+   "whole_set_deficiency": -7,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    2,
+    7
+   ],
+   "placements": 126,
+   "whole_set_deficiency": -7,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    7,
+    2
+   ],
+   "placements": 126,
+   "whole_set_deficiency": -7,
+   "has_hall_deficient_subset": false
+  },
+  {
+   "period_rectangle": [
+    3,
+    5
+   ],
+   "placements": 135,
+   "whole_set_deficiency": -1,
+   "has_hall_deficient_subset": true
+  }
+ ],
+ "first_period_rectangle": [
+  3,
+  5
+ ],
+ "minimal_hall_profile": {
+  "tile_count": 79,
+  "center_count": 157,
+  "deficiency": 1,
+  "private_center_histogram": {
+   "0": 48,
+   "1": 31
+  },
+  "center_degree_histogram": {
+   "1": 31,
+   "2": 93,
+   "3": 33
+  },
+  "signed_curvature": 2,
+  "intersection_edges": 158
+ },
+ "minimal_hall_placements": [
+  [
+   6,
+   1,
+   5
+  ],
+  [
+   9,
+   3,
+   4
+  ],
+  [
+   11,
+   1,
+   7
+  ],
+  [
+   11,
+   2,
+   6
+  ],
+  [
+   11,
+   3,
+   7
+  ],
+  [
+   6,
+   1,
+   9
+  ],
+  [
+   9,
+   2,
+   8
+  ],
+  [
+   9,
+   3,
+   8
+  ],
+  [
+   11,
+   1,
+   11
+  ],
+  [
+   11,
+   2,
+   10
+  ],
+  [
+   11,
+   3,
+   11
+  ],
+  [
+   6,
+   1,
+   13
+  ],
+  [
+   9,
+   2,
+   12
+  ],
+  [
+   9,
+   3,
+   12
+  ],
+  [
+   11,
+   1,
+   15
+  ],
+  [
+   11,
+   2,
+   14
+  ],
+  [
+   11,
+   3,
+   15
+  ],
+  [
+   6,
+   1,
+   17
+  ],
+  [
+   9,
+   2,
+   16
+  ],
+  [
+   9,
+   3,
+   16
+  ],
+  [
+   6,
+   5,
+   1
+  ],
+  [
+   9,
+   7,
+   0
+  ],
+  [
+   11,
+   5,
+   3
+  ],
+  [
+   11,
+   6,
+   2
+  ],
+  [
+   11,
+   7,
+   3
+  ],
+  [
+   4,
+   4,
+   4
+  ],
+  [
+   6,
+   4,
+   5
+  ],
+  [
+   6,
+   5,
+   5
+  ],
+  [
+   9,
+   6,
+   4
+  ],
+  [
+   9,
+   7,
+   4
+  ],
+  [
+   11,
+   4,
+   4
+  ],
+  [
+   11,
+   5,
+   7
+  ],
+  [
+   11,
+   6,
+   6
+  ],
+  [
+   11,
+   7,
+   7
+  ],
+  [
+   4,
+   4,
+   8
+  ],
+  [
+   6,
+   4,
+   9
+  ],
+  [
+   6,
+   5,
+   9
+  ],
+  [
+   9,
+   6,
+   8
+  ],
+  [
+   9,
+   7,
+   8
+  ],
+  [
+   11,
+   4,
+   8
+  ],
+  [
+   11,
+   5,
+   11
+  ],
+  [
+   11,
+   6,
+   10
+  ],
+  [
+   11,
+   7,
+   11
+  ],
+  [
+   4,
+   4,
+   12
+  ],
+  [
+   6,
+   4,
+   13
+  ],
+  [
+   6,
+   5,
+   13
+  ],
+  [
+   9,
+   6,
+   12
+  ],
+  [
+   9,
+   7,
+   12
+  ],
+  [
+   11,
+   4,
+   12
+  ],
+  [
+   11,
+   5,
+   15
+  ],
+  [
+   11,
+   6,
+   14
+  ],
+  [
+   11,
+   7,
+   15
+  ],
+  [
+   4,
+   4,
+   16
+  ],
+  [
+   6,
+   5,
+   17
+  ],
+  [
+   9,
+   6,
+   16
+  ],
+  [
+   9,
+   7,
+   16
+  ],
+  [
+   11,
+   4,
+   16
+  ],
+  [
+   4,
+   8,
+   0
+  ],
+  [
+   6,
+   8,
+   1
+  ],
+  [
+   6,
+   9,
+   1
+  ],
+  [
+   9,
+   10,
+   0
+  ],
+  [
+   11,
+   8,
+   0
+  ],
+  [
+   11,
+   9,
+   3
+  ],
+  [
+   4,
+   8,
+   4
+  ],
+  [
+   6,
+   8,
+   5
+  ],
+  [
+   6,
+   9,
+   5
+  ],
+  [
+   9,
+   10,
+   4
+  ],
+  [
+   11,
+   8,
+   4
+  ],
+  [
+   11,
+   9,
+   7
+  ],
+  [
+   4,
+   8,
+   8
+  ],
+  [
+   6,
+   8,
+   9
+  ],
+  [
+   6,
+   9,
+   9
+  ],
+  [
+   9,
+   10,
+   8
+  ],
+  [
+   11,
+   8,
+   8
+  ],
+  [
+   11,
+   9,
+   11
+  ],
+  [
+   4,
+   8,
+   12
+  ],
+  [
+   6,
+   8,
+   13
+  ],
+  [
+   9,
+   10,
+   12
+  ],
+  [
+   11,
+   8,
+   12
+  ]
+ ],
+ "packing_pair_conflicts": 0,
+ "affine_pair_conflicts": 0,
+ "affine_compatible": false,
+ "minimal_affine_circuit_size": 3,
+ "minimal_affine_circuit": [
+  [
+   11,
+   7,
+   11
+  ],
+  [
+   11,
+   8,
+   12
+  ],
+  [
+   11,
+   9,
+   11
+  ]
+ ],
+ "mapping_index": 7
+}

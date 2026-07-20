@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Render the smallest genuinely new blind depth-3 A2 survivors.
+"""Render the smallest blind depth-3 A2 survivors, labelling known shapes.
 
 Writes:
   docs/notebook/assets/a2-depth3-small-candidates.svg
@@ -9,7 +9,13 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from einstein.e1_candidates import smallest_depth3_candidates
+from einstein.e1_candidates import (
+    TURTLE_KEY,
+    known_polykite_name,
+    novel_smallest_depth3_candidates,
+    smallest_depth3_candidates,
+    unregistered_smallest_depth3_candidates,
+)
 from einstein.render.svg import hex_to_xy
 from einstein.substrate.kitegrid import cell_vertices
 
@@ -33,6 +39,8 @@ def render(rows):
         '<rect width="100%" height="100%" fill="#11151c"/>',
     ]
     for index, (n, local_index, key, cells) in enumerate(rows):
+        known_name = known_polykite_name(key)
+        known_suffix = f" · known {known_name.title()}" if known_name else ""
         column, line = index % columns, index // columns
         ox, oy = column * panel_w, line * panel_h
         polygons = [
@@ -64,7 +72,7 @@ def render(rows):
                 f'<text x="{ox + panel_w / 2}" y="{oy + 31}" '
                 'fill="#f8f9fa" font-family="sans-serif" font-size="16" '
                 f'font-weight="700" text-anchor="middle">n={n} candidate '
-                f'{local_index}</text>'
+                f'{local_index}{known_suffix}</text>'
             ),
             (
                 f'<text x="{ox + panel_w / 2}" y="{oy + 50}" '

@@ -24,6 +24,10 @@ from einstein.funnel.a4_diffraction import (
     fingerprint,
     save_spectrum_pgm,
 )
+from einstein.e1_candidates import (
+    PUBLISHED_APERIODIC_POLYKITE_HORIZON,
+    aperiodic_discovery_status,
+)
 from einstein.render.svg import hex_to_xy
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -98,6 +102,11 @@ def write_gallery(rows):
         '<rect width="100%" height="100%" fill="#11151c"/>',
     ]
     for i, row in enumerate(rows):
+        shape_label = (
+            f'known {row["known_name"].title()}'
+            if row.get("known_name")
+            else f'candidate {row["index"]}'
+        )
         x = (i % columns) * panel
         y = (i // columns) * (panel + 48)
         confirm = row["full_confirm"]
@@ -124,7 +133,7 @@ def write_gallery(rows):
                 f'<text x="{x + panel / 2}" y="{y + panel + 19}" '
                 'fill="#f8f9fa" font-family="sans-serif" font-size="14" '
                 f'font-weight="700" text-anchor="middle">n={row["n"]} '
-                f'candidate {row["index"]}</text>'
+                f'{shape_label}</text>'
             ),
             (
                 f'<text x="{x + panel / 2}" y="{y + panel + 38}" '
@@ -168,10 +177,19 @@ def main():
             f"{candidate['index']:02}-spectrum"
         )
         png = render_spectrum(full, confirm_floor, name)
+        discovery_status = aperiodic_discovery_status(
+            candidate["n"], candidate["shape"]
+        )
         row = {
             "n": candidate["n"],
             "index": candidate["index"],
             "shape": candidate["shape"],
+            "known_name": candidate.get("known_name"),
+            "novel_key": candidate.get(
+                "novel_key", candidate.get("known_name") is None
+            ),
+            "aperiodic_discovery_status": discovery_status,
+            "novel": discovery_status == "eligible",
             "patch_r2": cert["r2"],
             "patch_tiles": cert["tiles"],
             "crop_classes": [len(points) for points in crop],
@@ -208,6 +226,13 @@ def main():
 
     payload = {
         "kind": "matched-null-two-scale-a4-candidate-screen",
+        "literature_scope": {
+            "published_aperiodic_polykite_horizon": (
+                PUBLISHED_APERIODIC_POLYKITE_HORIZON
+            ),
+            "all_rows_are_validation_not_discovery": True,
+            "controlling_correction": "ERR-004/D-0049",
+        },
         "screen_grid": 1024,
         "confirm_grid": 2048,
         "crop_r2": 3200,

@@ -14,7 +14,7 @@
 <polygon points="269.89,182.93 269.89,129.69 239.16,129.69 223.79,156.31" fill="#4d9078" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
 <polygon points="269.89,182.93 223.79,156.31 208.42,182.93 223.79,209.55" fill="#577590" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
 <rect x="348" y="8" width="324" height="234" rx="10" fill="#1c2430" stroke="#394555"/>
-<text x="510.0" y="31" fill="#f8f9fa" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">n=10 candidate 2</text>
+<text x="510.0" y="31" fill="#f8f9fa" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">n=10 candidate 2 · known Turtle</text>
 <text x="510.0" y="50" fill="#adb5bd" font-family="monospace" font-size="10" text-anchor="middle">Hc ≥ 3 · 0100010101040105…</text>
 <polygon points="492.03,122.25 527.97,143.00 539.95,122.25 527.97,101.50" fill="#f2c14e" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>
 <polygon points="492.03,122.25 527.97,101.50 515.99,80.75 492.03,80.75" fill="#f78154" fill-opacity="0.88" stroke="#f8f9fa" stroke-width="1.4" stroke-linejoin="round"/>

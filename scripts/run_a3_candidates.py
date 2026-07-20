@@ -19,7 +19,12 @@ import json
 import time
 from pathlib import Path
 
-from einstein.e1_candidates import smallest_depth3_candidates
+from einstein.e1_candidates import (
+    PUBLISHED_APERIODIC_POLYKITE_HORIZON,
+    aperiodic_discovery_status,
+    known_polykite_name,
+    smallest_depth3_candidates,
+)
 from einstein.funnel.a3_patch import sat_grow_patch
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -29,6 +34,8 @@ OUTPUT = ASSETS / "a3-small-candidate-results.json"
 
 def run_one(candidate, radii, conflict_budget):
     n, index, key, shape = candidate
+    known_name = known_polykite_name(key)
+    discovery_status = aperiodic_discovery_status(n, key)
     ladder = []
     largest_certificate = None
     for r2 in radii:
@@ -60,6 +67,13 @@ def run_one(candidate, radii, conflict_budget):
         "n": n,
         "index": index,
         "shape": key,
+        "known_name": known_name,
+        "novel_key": known_name is None,
+        "published_aperiodic_horizon": (
+            n <= PUBLISHED_APERIODIC_POLYKITE_HORIZON
+        ),
+        "aperiodic_discovery_status": discovery_status,
+        "novel": discovery_status == "eligible",
         "ladder": ladder,
         "largest_certificate": largest_certificate,
     }
@@ -111,6 +125,13 @@ def main():
             counts["unknown"] += 1
     payload = {
         "kind": "pose-free-a3-candidate-ladder",
+        "literature_scope": {
+            "published_aperiodic_polykite_horizon": (
+                PUBLISHED_APERIODIC_POLYKITE_HORIZON
+            ),
+            "all_rows_are_validation_not_discovery": True,
+            "controlling_correction": "ERR-004/D-0049",
+        },
         "radii": radii,
         "conflict_budget": args.conflict_budget,
         "jobs": min(args.jobs, len(candidates)),

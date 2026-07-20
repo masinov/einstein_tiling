@@ -25,6 +25,20 @@
 > be infeasible because their transformed target is zero (T2.B0); Layer B is
 > retained only as a decomposition tool and the obstruction path proceeds to
 > the full integer SNF module.
+>
+> **Identity correction (2026-07-20, ERR-003/D-0048).** The n=10
+> “finalist” that motivated this plan is exactly the published Turtle. All
+> legacy `finalist` identifiers below mean the Turtle control. O1 and O3 are
+> externally settled for this tile; internal W1--W3 work is independent
+> certificate-method development, not a route to a new-einstein claim. The
+> general family-level program remains intact.
+>
+> **Literature-scope correction (2026-07-20, ERR-004/D-0049).** The Hat
+> paper already proves the periodic-alignment reduction for finite polykite
+> sets (Appendix A, Lemmas A.1/A.3/A.5), and reports the complete `n≤24`
+> aperiodic-polykite search horizon. W4 is therefore optional stronger
+> rigidity/extension work, not a prerequisite for lifting a periodicity
+> obstruction from the kite grid. See `docs/literature/POLYKITE_BASELINE.md`.
 
 ---
 
@@ -35,7 +49,7 @@ finite certificates — that (a) decides periodicity/aperiodicity questions for
 restricted polykite tile families where the general problem is undecidable,
 (b) converts the repository's budget-limited computational evidence into
 proof components, and (c) stands as a community contribution independent of
-whether the current finalist survives.
+whether any particular discovery candidate survives.
 
 **Thesis.** For a *fixed tile* on a *fixed substrate*, the three obligations
 of the einstein property split into problems with different logical
@@ -45,7 +59,7 @@ character, and each admits a distinct finite-certificate attack:
 |---|---|---|---|
 | No tiling has any nontrivial period (⇔ no fully periodic tiling; Lemma 1.1) | ∀ over a countable family of vectors/quotients | piecewise: per-vector transfer automata + algebraic invariants; wholesale: substitution + recognizability certificate | W1, W2, W3 |
 | Existence of at least one tiling | ∃ (not provable by any finite patch) | substitution fixed point + Extension Theorem (constructive); any all-radii tileability theorem + compactness (abstract) | W3 |
-| Unconditional (not just grid-aligned) scope | geometric rigidity | finite contact case analysis | W4 |
+| Unconditional exclusion of periodic polykite tilings | published alignment reduction | Appendix A + an internal grid-aligned obstruction | external theorem; W4 optional |
 
 A structural gift of the substrate (Lemma 1.1, §1.3): grid-aligned tilings
 form a ℤ² subshift of finite type, where "some tiling has one period"
@@ -62,8 +76,8 @@ single-tile variants remain undecidable or open in closely related settings
 translational monotiles in high dimension). Restricting to a family —
 bounded polykites on the Laves [3.4.6.4] substrate — is therefore not a
 concession but the only honest route to decision procedures. Every theorem
-below is scoped to this family, with the grid-aligned caveat tracked
-explicitly (§1.4, W4).
+below states its scope explicitly; Appendix A of the Hat paper supplies the
+published bridge from arbitrary periodic polykite tilings to aligned ones.
 
 ---
 
@@ -150,14 +164,20 @@ Consequences we must respect (already learned the hard way in session 19):
 
 ### 1.4 Scope: grid-aligned vs unconditional
 
-All funnel results are currently grid-aligned (D-0006): sound positives,
-incomplete negatives. An unconditional einstein claim additionally requires
-**grid rigidity**: every tiling of the plane by (geometric) T is congruent
-to a grid-aligned one. This is W4. Until W4 delivers, every theorem is
-stated with the explicit scope "grid-aligned", which matches the scope of
-Myers' census and is a publishable scope on its own — but papers must never
-elide the caveat. Precedent: the hat/Spectre papers (Smith–Myers–Kaplan–
-Goodman-Strauss 2024) spend real effort on exactly this reduction.
+All funnel searches are currently grid-aligned (D-0006): positive tiling
+certificates are sound, while a raw negative search result is grid-scoped.
+For *periodicity*, however, the needed bridge is already published:
+Appendix A, Lemmas A.1, A.3 and A.5 of *An aperiodic monotile* show that if a
+finite polykite set admits a periodic tiling under arbitrary Euclidean
+placements, it admits one aligned to a common Laves grid (with the stated
+monokite presentation handled in the lemma). Thus a complete internal proof
+excluding aligned periodic tilings excludes arbitrary periodic tilings too.
+
+The stronger assertion that **every** tiling by a particular polykite is
+aligned is different and is not needed for this implication. Lemma A.6 proves
+it for the Hat; W4 may investigate it for other tiles or extend the alignment
+reduction beyond polykites. Papers must cite the external reduction and still
+label each internal computation's native scope.
 
 ### 1.5 What is already in hand (inputs to this program)
 
@@ -173,8 +193,10 @@ From the computational program, verified and relevant here:
   Spectre, SAT-proved unique composability over the recovered collar
   language, and a partially closed hat hierarchy (16/15-pattern shared
   libraries forcing 430→71/72 and 43/41→8).
-- **The n=10 finalist** (shape key `010001010104010502f002f1030b030c04fa04fb`,
-  candidate 2): no torus certificate through index 215; verified nested
+- **The Turtle control** (legacy “n=10 finalist,” shape key
+  `010001010104010502f002f1030b030c04fa04fb`, candidate 2): exact
+  primary-source identity pinned by `tests/test_turtle.py`; no internal torus
+  certificate through index 215; verified nested
   core chain r²=9,000 → 30,000 inside patches to r²=100,000 (18,386 tiles);
   robust diffraction rank ≥ 4 (D-0025); one exact period-47 stripe domain
   in one patch; ambiguous first-composition (8/7-type) decompositions in
@@ -185,34 +207,37 @@ From the computational program, verified and relevant here:
   instances and 36 targeted jobs), all reporting exact UNSAT before a power
   outage; this recovered finite evidence is checksummed in
   `e1-overnight-recovered.json`, includes deliberate reruns, and does not close
-  the infinite quotient family.
+  the infinite quotient family. These facts independently exercise the
+  machinery against a known aperiodic tile; they do not establish novelty.
 - Observed strong return scales **18, 29, 47, 76** (lattice-coordinate
   separations, not Euclidean lengths — see §7) — consecutive Lucas numbers
   L₆..L₉.
 
 ---
 
-## 2. Proof-obligation ledger for the finalist
+## 2. Internal certificate ledger for the Turtle control
 
-Maintained here so every workstream knows exactly which box it fills.
-An einstein claim requires all rows green; partial rows are still
-publishable as scoped theorems.
+Maintained so every workstream knows exactly which internal certificate box it
+fills. The Turtle's einstein status is already externally proved; “open” below
+means not yet independently recovered by this repository's certificate class.
 
 | # | Obligation | Current status | Closes via |
 |---|---|---|---|
-| O1 | No fully periodic tiling — by Lemma 1.1 this **is** "every tiling nonperiodic" | evidence: A1 UNSAT through index 215; budgeted SAT `unknown` at circumference 47 | piecewise: W1 (per-vector norm ladder) + W2 (invariants kill infinite index families) + A1/SNF (finite residue); wholesale: W3 recognizability meta-theorem |
+| O1 | No fully periodic tiling — by Lemma 1.1 this **is** "every tiling nonperiodic" | **externally proved for Turtle**; internal certificate partial through the recorded W1/W2 bounds | optional independent recovery: W1/W2 piecewise or W3 wholesale |
 | O2 | ~~No singly periodic tiling~~ — merged into O1 (Lemma 1.1: singly periodic ⇒ fully periodic) | — | number retained so earlier notes stay readable |
-| O3 | Existence of a tiling | evidence: disks to r²=10⁵, nested cores | W3 (substitution fixed point + Extension Theorem); or any all-radii tileability theorem + compactness |
+| O3 | Existence of a tiling | **externally proved for Turtle** by substitution; internal nested-core evidence only | optional independent W3 certificate recovery |
 | O4 | ~~Every tiling nonperiodic~~ — merged into O1 (Lemma 1.1) | — | — |
-| O5 | Unconditional geometric scope | open (grid-aligned only) | W4, or stated scope restriction |
+| O5 | Stronger claim that every Turtle tiling is grid-aligned | optional/open internally; not needed for periodicity | optional W4 contact theorem |
 
 The v0.1 ledger treated O1/O2/O4 as independent; Lemma 1.1 collapses them
 into one obligation with two attack granularities. W1/W2 close O1
 *piecewise* (per vector, per index family) — unconditional partial theorems
 that survive even if W3 never closes, and cheap refutation channels (a
-transfer-graph cycle at any single vector retires the candidate
-immediately). W3 closes O1 *wholesale* and is the only constructive route
-to O3. **The grid-aligned einstein property is exactly O1 ∧ O3.**
+transfer-graph cycle at any single vector would falsify that certificate
+route). W3 can recover O1 *wholesale* and O3 constructively. For future unknown
+candidates, internal grid-aligned O1 ∧ O3 plus the published Appendix-A
+periodic-alignment reduction yields the ordinary polykite einstein property;
+for the Turtle these are validation targets, not open status.
 
 ---
 
@@ -484,6 +509,57 @@ A1 sweep; record which indices are SNF-killed vs need SAT.
 > distinct V4 values on the final three generators, a finite pattern now
 > targeted for a symbolic HNF-family theorem. O1 remains open.
 
+> **Phase-5 result (session 33, D-0043).** Exact semidirect reduction turns
+> the distinct-tail A4 maps into four-colour local coverability SFTs and closes
+> the certified finite prefix through index 55. The proposed infinite-family
+> obstruction is falsified sharply at index 60: one three-HNF D6 orbit survives
+> every signature map. All escapes pull back from explicit HNF `(2,0,2)`
+> models, giving an infinite blind family `L <= 2 Lambda`. Even the product of
+> all 16 maps with shared placements has a multiplicity-at-most-two model.
+> Therefore more products of the same at-least boundary invariant are retired;
+> further Layer D must encode packing/density, or effort returns to W1/W3.
+
+> **Phase-6 result (session 34, D-0044).** The required packing refinement is
+> local and sparse. The full exact-cover relation has 22,680 colliding pairs
+> in 40 geometric D6 orbits on each index-60 escape. Forbidding only the orbit
+> of a representative pair sharing six kites (720 clauses) makes the common
+> 16-signature product UNSAT on all three residual HNFs. Three independently
+> checked and cold-replayed DRAT cores establish T2.D6. The certified prefix
+> remains 55 only because the other 42 solver-verified map-7 exclusions have
+> not yet received proof bundles; producing those is now a finite packaging
+> task rather than an invariant-design problem.
+
+> **Phase-7 result (session 35, D-0045).** The finite packaging task is
+> complete. One selector-union CNF per HNF represents all 16 map-7 V4 twists;
+> 42/42 Glucose proofs were checked during production and cold-replayed,
+> covering 672 direct logical cases. Together with 123 W1 exclusions and the
+> three Phase-6 packing proofs, this exhausts all 168 index-60 HNFs. Area
+> excludes indices 56--59, so T2.D2-60 is promoted. Further finite shells are
+> controls, not the main theorem path; the next target is an infinite
+> packing/holonomy family or W1/W3 recognizability.
+
+> **Phase-8 result (session 36).** The packing mechanism survives its first
+> family-scale falsification gate: all 193 area-admissible HNF sublattices of
+> `2 Lambda` through index 120 are UNSAT, and every one of the 16 distinct-tail
+> maps suffices separately (3,088/3,088 searches). A sharper candidate theorem
+> removes coverage: exact controls at `k=4,8,20` attain at most `k/2` selected
+> placements, below the `3k/5` required by area. Fixed 2x2 blocks and pairwise
+> conflict graphs both have explicit counterexamples; the missing constraints
+> are higher affine V4 gluing circuits of sizes at least 3--5. The theorem path
+> is now a translation-periodic circuit-hypergraph density certificate
+> (discharging or rational dual), not a larger raw quotient sweep. T2.D7
+> remains a conjecture.
+
+> **Phase-9 result (sessions 37--38).** The planar two-center/Hall route is
+> retired by a literal countermodel. A deletion-minimal set of 63 fully
+> nonoverlapping placements is compatible with one complete V4 signature but
+> touches only 125 centers, so the required 126-capacity matching is
+> impossible. Exact matching, geometric nonoverlap, seam-free XOR integration
+> and an independent CNF replay all verify. The general minimal-core curvature
+> lemma survives, but T2.D7-H is false even with full packing. Radius tapers
+> remain diagnostics; primary effort returns to W3 as prescribed by the
+> Phase-7 branch point.
+
 The abelian layers are known to be blunt in general: many non-tilers pass
 all of them. The tools with historical teeth are nonabelian: the
 Conway–Lagarias tiling group (1990) and Kenyon's boundary-word invariants,
@@ -638,6 +714,18 @@ substrate for legality data, and it must be stated prominently in the paper
 
 ### 5.4 Validation gates (order of battle)
 
+> **2026-07-19 implementation status.** The Spectre gate now has a versioned
+> partial certificate: 17 closed deterministic states, primitivity exponent 3,
+> and a unimodular 16-coordinate exact geometry recurrence matching all 32
+> vendored levels. Exact physical legality passes for all labels at levels
+> zero/one. The nine labels reduce inductively to two geometric support types;
+> their abstract boundaries are disks through level four, and a five-piece
+> boundary-word recurrence survives through level five. A four-side macro
+> endpoint grammar is proved on every recurrence level using the degree-eight
+> matrix annihilator. C1 now awaits a simplicity/noncrossing induction; C3
+> awaits inball growth; sampled A6
+> forcing still does not satisfy exhaustive C4, and C5 remains open.
+
 1. **Spectre gate:** wrap A6 v2's existing closed 17-state hierarchy +
    forcing results into certificate format; verifier passes; meta-theorem
    hypotheses checked (the known-aperiodic control).
@@ -679,18 +767,26 @@ characterized); finalist run recorded either way.
 
 ---
 
-## 6. Workstream W4 — grid rigidity
+## 6. Workstream W4 — optional stronger grid rigidity and extensions
 
-**One-line goal:** remove (or precisely fence) the "grid-aligned" caveat.
+> **Status after ERR-004:** no longer a core proof obligation for polykites.
+> Appendix A of the primary Hat paper already proves the weaker statement the
+> periodicity program needs: existence of any periodic polykite tiling implies
+> existence of an aligned periodic one. The plan below is retained only for
+> the stronger all-tilings claim and for substrate families not covered by
+> that theorem.
+
+**One-line goal:** characterize when every tiling is aligned, or extend the
+published periodic-alignment theorem beyond polykites.
 
 ### 6.1 The question
 
 Does every tiling of the plane by the geometric tile T (congruent copies,
 reflections allowed) align all copies to a single kite grid? If yes,
 Ω_T as defined in §1.2 captures all tilings and every theorem upgrades to
-unconditional. If no — T has non-grid tilings — those tilings are outside
-all current evidence and the candidate's status changes materially in
-either direction.
+the stronger all-tilings statement. If no, this does **not** reopen the
+periodicity bridge already supplied by Appendix A; it only shows that some
+nonperiodic or otherwise unclassified tilings lie outside the internal SFT.
 
 ### 6.2 Approach: finite contact analysis (feasibility spike first)
 
@@ -787,8 +883,8 @@ Inherited from the search program, restated as binding for theory work:
    validates against independent data before its output feeds anything —
    W1 vs Myers census cycles; W2 vs the verified periodic-certificate
    corpus (zero false exclusions) and Conway–Lagarias' published results;
-   W3 vs Spectre and the blind hat gate; W4 vs the hat literature's
-   alignment discussion.
+   W3 vs Spectre and the blind hat gate; any optional W4 extension against
+   the Hat paper's Appendix-A theorem.
 3. **Independent re-verification:** every SAT/automaton result re-checked
    by a second implementation path (existing repo discipline).
 4. **Negative results are results:** dead invariants, infeasible state
@@ -796,9 +892,10 @@ Inherited from the search program, restated as binding for theory work:
    parameters, per program §2/§7.4.
 5. **Scope honesty:** every theorem statement carries its scope
    (grid-aligned or unconditional; per-vector or norm-bounded; which
-   quotient family). No claim of "aperiodic" for the finalist before
-   O1 and O3 close (O2/O4 merged into O1 by Lemma 1.1) *and* the W3 hat
-   gate has passed.
+   quotient family). The Turtle is cited as externally aperiodic; an
+   *internal-certificate* Turtle claim may say only which O1/O3 components its
+   own artifacts close. Future unknown candidates still require internal O1
+   and O3 plus the W3 control gates before any aperiodicity claim.
 
 ---
 
@@ -812,7 +909,7 @@ Inherited from the search program, restated as binding for theory work:
   W2 Layers A–C with the quantifier-reduction theorem T2.1, the W3
   certificate format + meta-theorem + Spectre/hat validation instances,
   and the verifier as released artifact. This paper does not depend on the
-  finalist's fate — its validation instances are the known aperiodic
+  Turtle-control computation — its validation instances are known aperiodic
   tiles, and its data instances are the census. Target venues:
   Combinatorial Theory (hat-paper venue), Discrete & Computational
   Geometry, or SoCG→journal track; arXiv (math.CO, cross math.MG) first.
@@ -821,13 +918,9 @@ Inherited from the search program, restated as binding for theory work:
   exists), the A1 periodicity census n≤16 with certificates, and the
   Layer A–C kill tables. Target: Experimental Mathematics or the
   electronic Journal of Combinatorics.
-- **Paper C (the finalist), strictly conditional:** (i) if W3 closes O1+O3:
-  a new einstein — extraordinary claim, extraordinary checking, Lean
-  strongly advised before submission; (ii) if W1/W2 find a periodic
-  tiling: a cautionary/methods note folded into Paper A or B (near-miss
-  tiles with deep hierarchical camouflage are interesting data); (iii) if
-  neither: the finalist appears in Paper A as the open-problem case study
-  with the piecewise O1 partial theorems.
+- **Former Paper C (the finalist): retired.** The subject is the known Turtle,
+  so there is no new-einstein paper. The finite Turtle results move into Paper
+  A as a demanding blind validation instance for the certificate framework.
 - **Possible Paper D (only if W2 Layer D succeeds):** torus/holonomy
   extension of Conway–Lagarias–Kenyon invariants — standalone
   combinatorial-group-theory interest.
@@ -845,9 +938,10 @@ JSON) released with the papers; reproducibility is a stated selling point.
 
 Pre-registration style: the proof-obligation ledger (§2) is the public
 scoreboard. Nothing stronger than the ledger's green rows is claimed in
-any abstract, talk, or preprint. The phrase "strong empirical
-prioritization, not proof" (D-0024) remains the finalist's official status
-until O-rows flip.
+any abstract, talk, or preprint. For Turtle, distinguish the cited external
+theorem from the repository's partial independent certificates. For future
+unknown shapes, finite evidence remains “prioritization, not proof” until O1
+and O3 close.
 
 ---
 
@@ -857,9 +951,8 @@ until O-rows flip.
 Phase 0  (infrastructure, ~2–4 sessions)
   W1.a  frontier automaton core + controls (anchors §3.4)
   W2.a  Layers A–C implemented + zero-false-exclusion gate
-  W4.a  rigidity feasibility spike (timeboxed)
   P7.1  Lucas prediction test on existing patches
-        [W1.a ⊥ W2.a ⊥ W4.a ⊥ P7.1 — fully parallel]
+        [W1.a ⊥ W2.a ⊥ P7.1 — fully parallel]
 
 Phase 1  (first theorems, ~4–8 sessions)
   W1.b  circumference ladder 18 → 29 → 47 (P7.2 decision) → 76
@@ -871,19 +964,19 @@ Phase 1  (first theorems, ~4–8 sessions)
 Phase 2  (the hard middles)
   W3.b  exhaustive 𝓛_r via A2 machinery; hat gate           [needs W3.a, W1.c]
   W2.c  Layer D research (torus holonomy invariants)        [independent]
-  W3.c  finalist inflation-matrix synthesis (P7.3)          [needs W3.b, W1.b]
+  W3.c  optional Turtle certificate recovery (legacy finalist) [needs W3.b]
 
 Phase 3  (writing)
   Paper A draft   [needs W1.b, W2.b, W3.b]
   Paper B draft   [needs W2.b; census already in hand]
-  Paper C/D       [conditional per §9.1]
+  Paper D         [conditional per §9.1; former finalist Paper C retired]
 ```
 
 Kill-switches / reprioritization triggers:
 
-- W1 finds a cycle (periodic tiling) for the finalist → finalist retired
-  from einstein candidacy immediately; Papers A/B proceed unchanged;
-  compute budget returns to the n=13–16 promotion queue.
+- W1 finds a Turtle cycle → treat it as a bug in the internal model or scope,
+  because it contradicts the published Turtle theorem; preserve and diagnose
+  the counterexample before trusting further certificate output.
 - W3 hat gate fails irreparably → the meta-theorem stands but the
   "blind pipeline" claim is weakened; Paper A rescopes to
   Spectre-validated; the failure analysis itself goes in the paper.
@@ -900,9 +993,9 @@ Kill-switches / reprioritization triggers:
 | W1 state-space explosion at useful norms | medium–high | T1.2's N smaller than hoped | mitigation ladder §3.3; small-norm results still publishable |
 | W2 abelian layers too blunt (kill few L) | medium | quantifier reduction weak; O1 stays budget-bounded | SNF layer is strictly stronger; Layer D is the real bet; bluntness data itself is reportable |
 | W2 Layer D not effectively computable | medium–high | no torus holonomy theorem | milestone ladder isolates it; Paper A doesn't depend on it |
-| W3 completeness gap (𝓛_r) prohibitively large at needed r | medium | hat/finalist certificates out of reach | A2 machinery is the best-in-repo tool; r grows one step at a time; partial-r results bound the recognizability radius from below |
+| W3 completeness gap (𝓛_r) prohibitively large at needed r | medium | Hat/Turtle independent certificates out of reach | A2 machinery is the best-in-repo tool; r grows one step at a time; partial-r results bound the recognizability radius from below |
 | Hat gate reveals hat has no certificate in our format | low–medium | framework claim weakens | format designed after A6-v2's Spectre success; failure analysis publishable |
-| Finalist is periodic (W1 cycle) | unknown | candidate dies | that is the system working; §10 kill-switch |
+| Turtle control appears periodic internally | low but severe | model/certificate unsoundness | stop promotion, preserve witness, reconcile scope and geometry against published proofs |
 | Rigidity spike inconclusive | medium | grid-aligned caveat permanent | acceptable published scope (Myers precedent); conjecture logged |
 | Parallel-with-codex divergence (formats, definitions) | medium | wasted work, merge pain | freeze §1 definitions + §5.1 schema in this document before splitting work |
 | Literature collision (someone publishes the framework first) | low | novelty loss | arXiv early once meta-theorem + Spectre gate done; census data is collision-proof |
@@ -910,6 +1003,22 @@ Kill-switches / reprioritization triggers:
 ---
 
 ## 12. Literature map (to engage before writing; verify all claims against sources at citation time)
+
+The live, source-ID-based map is now `docs/literature/SOURCES.json`; its
+synthesis and implementation gaps are `STATE_OF_THE_ART.md` and
+`METHODS_MATRIX.md` in the same directory. Those files supersede this compact
+orientation list for current publication status. D-0050 requires every new
+theory branch to name its prior-art controls before implementation.
+
+Immediate W3 dependencies are the SMKGS hierarchy proofs, Chéritat's Spectre
+cluster analysis, Walton's general recognisability hypotheses,
+Labbé--Selinger's SFT/Markov construction, and Tatham's finite-state
+transducers. Optional Turtle recovery must additionally compare its output to
+Akiyama--Araki's Golden Hex/Sturmian/Ammann-bar proof and James Smith's
+rhombille representation. W1/W2 group work must distinguish itself explicitly
+from the poly-`K` correspondence of Coulbois et al. None of these comparisons
+is discharged by bibliographic presence alone; review depth remains recorded
+per source.
 
 - **Undecidability / decidability frontier:** Berger 1966 (domino problem);
   Ollinger 2009 (five polyominoes); Greenfeld–Tao 2023–24 (translational
@@ -937,9 +1046,11 @@ Kill-switches / reprioritization triggers:
 
 ## 13. Open problems (append-only)
 
-1. Grid rigidity for the finalist (W4 outcome pending). Conjectured true.
-2. Does any single computable invariant settle O1 for the finalist
-   (aspirational T2.3)?
+1. Optional stronger rigidity: are all Turtle tilings grid-aligned? This is
+   not needed for unconditional periodicity exclusion because the published
+   Appendix-A reduction already supplies that bridge.
+2. Does any single computable invariant independently recover O1 for the
+   Turtle control (aspirational T2.3)?
 3. Extend the binary-coupled Conway–Lagarias torus obstruction beyond the
    certified index-45 shell. Exact diagonal D6 covariance now reduces each
    finite HNF/map matrix to pair-orbit representatives; seek finite-group or
@@ -978,8 +1089,8 @@ Kill-switches / reprioritization triggers:
 > and budget-limited results are henceforth treated as prioritization
 > evidence only; claims stronger than the §2 proof-obligation ledger are
 > prohibited. The W3 hat gate extends Gate G1 to the theory track: no
-> finalist certificate is trusted before the hat's certificate closes
-> blind. Budgeted per-width cylinder SAT sweeps are deprecated in favor of
+> unknown-candidate certificate is trusted before the known control
+> certificates close blind. Budgeted per-width cylinder SAT sweeps are deprecated in favor of
 > W1 exact per-vector decisions once W1.a passes its anchors.
 
 The authoritative decision text is in `docs/DECISIONS.md`; this appendix is a

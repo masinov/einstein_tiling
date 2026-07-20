@@ -1,7 +1,7 @@
 #!/usr/bin/env python
-"""Escalate the sole survivor of the ten smallest blind E1 candidates.
+"""Reproduce the blind E1 rediscovery of the known Turtle control.
 
-Candidate: n=10, candidate 2.
+Legacy corpus label: n=10, candidate 2 / "E1 finalist".
 
 Checks:
   * pose-free A3 disk cover at r2=50,000 (~9,000 tiles);
@@ -28,6 +28,7 @@ from pathlib import Path
 
 from einstein.e1_candidates import (
     SMALLEST_DEPTH3_KEYS,
+    TURTLE_KEY,
     decode_compiled_key,
 )
 from einstein.funnel.a1_torus import find_periodic_tiling_sat
@@ -51,6 +52,7 @@ OUTPUT = ASSETS / "e1-finalist-results.json"
 PATCH_SVG = ASSETS / "e1-finalist-patch.svg"
 SPECTRUM_PNG = ASSETS / "e1-finalist-spectrum.png"
 KEY = SMALLEST_DEPTH3_KEYS[10][1]
+assert KEY == TURTLE_KEY
 SHAPE = decode_compiled_key(KEY)
 COLORS = (
     "#f2c14e", "#f78154", "#4d9078", "#577590",
@@ -161,7 +163,7 @@ def render_patch(certificate):
         (
             '<text x="500" y="27" fill="#f8f9fa" '
             'font-family="sans-serif" font-size="18" font-weight="700" '
-            'text-anchor="middle">E1 finalist · n=10 candidate 2</text>'
+            'text-anchor="middle">E1 blind rediscovery · known Turtle</text>'
         ),
         (
             '<text x="500" y="49" fill="#51cf66" '
@@ -236,8 +238,15 @@ def main():
     render_patch(a3["certificate"])
 
     payload = {
-        "kind": "e1-smallest-corpus-finalist-escalation",
-        "candidate": {"n": 10, "index": 2, "shape": KEY},
+        "kind": "e1-turtle-control-escalation",
+        "legacy_kind": "e1-smallest-corpus-finalist-escalation",
+        "candidate": {
+            "n": 10,
+            "index": 2,
+            "shape": KEY,
+            "known_name": "turtle",
+            "novel": False,
+        },
         "a3": {
             "wall_seconds": a3_wall,
             "stats": a3["stats"],

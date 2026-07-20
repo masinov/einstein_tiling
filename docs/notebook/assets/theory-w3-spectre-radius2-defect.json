@@ -1,0 +1,2434 @@
+{
+ "schema": "einstein.w3.spectre-radius2-defect",
+ "version": 1,
+ "status": "RADIUS2_FORCES_TYPED_OUTER_DEFECT_FOR_ALL_THREE_STATES",
+ "provenance": {
+  "a6_source": "docs/notebook/assets/a6-spectre-results.json",
+  "a6_sha256": "42b67a5a6e80b63471073aae77698bfff64dc063b47cad4108ba214ef961193b",
+  "control_source": "docs/notebook/assets/theory-w3-spectre-colored-interface.json",
+  "control_sha256": "81b131ed80796791444cb230d3a32ef0e0514a19c96f58177a315a24d2e90126",
+  "two_sided_source": "docs/notebook/assets/theory-w3-spectre-two-sided-overlap.json",
+  "two_sided_sha256": "732207682463772cc52650d0b69055db4a7e11225b5b1f8c092878ca0800e973"
+ },
+ "scope": {
+  "states": 20,
+  "generated_states": 17,
+  "extra_states": 3,
+  "constraints": [
+   "exact reciprocal endpoint types and child-edge contacts",
+   "agreement on adjacency/nonadjacency for every represented anchor pair",
+   "exact nonoverlap of all canonical 8/9-child physical supports"
+  ],
+  "objective": "lexicographically minimize extra states on ring two, then on all nonroot positions"
+ },
+ "roots": [
+  {
+   "root_state_id": "288091b49587a4b2",
+   "root_star_witnesses": 28,
+   "satisfiable_witnesses": 1,
+   "position_count_histogram": {
+    "19": 2,
+    "20": 2,
+    "22": 12,
+    "23": 12
+   },
+   "minimum_outer_extras": 1,
+   "minimum_nonroot_extras": 3,
+   "best_witness_index": 6,
+   "complete_assignment_count": 960,
+   "outer_extra_signature_histogram": {
+    "288091b49587a4b2,2fb5d0cf9a68ffe2,2f1d7f0fac5b9704": 80,
+    "288091b49587a4b2,2fb5d0cf9a68ffe2,2f1d7f0fac5b9704,2f1d7f0fac5b9704": 40,
+    "288091b49587a4b2,2f1d7f0fac5b9704": 240,
+    "288091b49587a4b2,2f1d7f0fac5b9704,2f1d7f0fac5b9704": 120,
+    "2fb5d0cf9a68ffe2,2f1d7f0fac5b9704": 80,
+    "2fb5d0cf9a68ffe2,2f1d7f0fac5b9704,2f1d7f0fac5b9704": 40,
+    "2f1d7f0fac5b9704": 240,
+    "2f1d7f0fac5b9704,2f1d7f0fac5b9704": 120
+   },
+   "forced_outer_extra_state_ids": [
+    "2f1d7f0fac5b9704"
+   ],
+   "best_assignment": [
+    {
+     "position": [
+      0,
+      0,
+      [
+       -13,
+       -9,
+       5,
+       0
+      ]
+     ],
+     "ring": 2,
+     "state_id": "376da12ee0050076",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      0,
+      [
+       0,
+       0,
+       0,
+       0
+      ]
+     ],
+     "ring": 0,
+     "state_id": "288091b49587a4b2",
+     "source": "extra"
+    },
+    {
+     "position": [
+      0,
+      0,
+      [
+       7,
+       4,
+       -2,
+       1
+      ]
+     ],
+     "ring": 1,
+     "state_id": "7389fa7fee6c04c2",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      2,
+      [
+       -5,
+       -6,
+       7,
+       6
+      ]
+     ],
+     "ring": 1,
+     "state_id": "2fb5d0cf9a68ffe2",
+     "source": "extra"
+    },
+    {
+     "position": [
+      0,
+      2,
+      [
+       -5,
+       -1,
+       -8,
+       -7
+      ]
+     ],
+     "ring": 2,
+     "state_id": "afe6f61d3256520b",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      2,
+      [
+       -3,
+       -7,
+       12,
+       11
+      ]
+     ],
+     "ring": 2,
+     "state_id": "d8f2d250ad08715d",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      2,
+      [
+       -3,
+       -2,
+       -3,
+       -2
+      ]
+     ],
+     "ring": 1,
+     "state_id": "d8f2d250ad08715d",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      2,
+      [
+       8,
+       3,
+       2,
+       6
+      ]
+     ],
+     "ring": 2,
+     "state_id": "6fcab283c7bf89b0",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      4,
+      [
+       -12,
+       -12,
+       9,
+       6
+      ]
+     ],
+     "ring": 2,
+     "state_id": "afe6f61d3256520b",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      4,
+      [
+       -7,
+       -7,
+       2,
+       2
+      ]
+     ],
+     "ring": 1,
+     "state_id": "6fcab283c7bf89b0",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      4,
+      [
+       1,
+       -3,
+       4,
+       6
+      ]
+     ],
+     "ring": 1,
+     "state_id": "3637d1954a43822d",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      4,
+      [
+       1,
+       2,
+       -11,
+       -7
+      ]
+     ],
+     "ring": 2,
+     "state_id": "2f1d7f0fac5b9704",
+     "source": "extra"
+    },
+    {
+     "position": [
+      0,
+      6,
+      [
+       -9,
+       -12,
+       12,
+       9
+      ]
+     ],
+     "ring": 2,
+     "state_id": "3637d1954a43822d",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      6,
+      [
+       -9,
+       -7,
+       -3,
+       -4
+      ]
+     ],
+     "ring": 2,
+     "state_id": "32937e32c477d821",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      8,
+      [
+       9,
+       8,
+       -15,
+       -10
+      ]
+     ],
+     "ring": 2,
+     "state_id": "d8f2d250ad08715d",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      8,
+      [
+       11,
+       7,
+       -10,
+       -5
+      ]
+     ],
+     "ring": 2,
+     "state_id": "90a8964c33054d56",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      10,
+      [
+       5,
+       -1,
+       8,
+       8
+      ]
+     ],
+     "ring": 2,
+     "state_id": "a0a367681af859b0",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      10,
+      [
+       5,
+       4,
+       -7,
+       -5
+      ]
+     ],
+     "ring": 1,
+     "state_id": "2f1d7f0fac5b9704",
+     "source": "extra"
+    },
+    {
+     "position": [
+      0,
+      10,
+      [
+       13,
+       8,
+       -5,
+       -1
+      ]
+     ],
+     "ring": 2,
+     "state_id": "a66ae6a7e82b1217",
+     "source": "generated"
+    }
+   ],
+   "cases": [
+    {
+     "witness_index": 0,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 294
+    },
+    {
+     "witness_index": 1,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 292
+    },
+    {
+     "witness_index": 2,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 294
+    },
+    {
+     "witness_index": 3,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 294
+    },
+    {
+     "witness_index": 4,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 294
+    },
+    {
+     "witness_index": 5,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 294
+    },
+    {
+     "witness_index": 6,
+     "positions": 19,
+     "first_ring": 6,
+     "second_ring": 12,
+     "satisfiable": true,
+     "minimum_outer_extras": 1,
+     "minimum_nonroot_extras": 3,
+     "search_nodes": 20,
+     "constraint_arcs": 234
+    },
+    {
+     "witness_index": 7,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 294
+    },
+    {
+     "witness_index": 8,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 292
+    },
+    {
+     "witness_index": 9,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 294
+    },
+    {
+     "witness_index": 10,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 294
+    },
+    {
+     "witness_index": 11,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 294
+    },
+    {
+     "witness_index": 12,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 294
+    },
+    {
+     "witness_index": 13,
+     "positions": 19,
+     "first_ring": 6,
+     "second_ring": 12,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 234
+    },
+    {
+     "witness_index": 14,
+     "positions": 23,
+     "first_ring": 6,
+     "second_ring": 16,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 314
+    },
+    {
+     "witness_index": 15,
+     "positions": 23,
+     "first_ring": 6,
+     "second_ring": 16,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 312
+    },
+    {
+     "witness_index": 16,
+     "positions": 23,
+     "first_ring": 6,
+     "second_ring": 16,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 314
+    },
+    {
+     "witness_index": 17,
+     "positions": 23,
+     "first_ring": 6,
+     "second_ring": 16,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 314
+    },
+    {
+     "witness_index": 18,
+     "positions": 23,
+     "first_ring": 6,
+     "second_ring": 16,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 314
+    },
+    {
+     "witness_index": 19,
+     "positions": 23,
+     "first_ring": 6,
+     "second_ring": 16,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 314
+    },
+    {
+     "witness_index": 20,
+     "positions": 20,
+     "first_ring": 6,
+     "second_ring": 13,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 254
+    },
+    {
+     "witness_index": 21,
+     "positions": 23,
+     "first_ring": 6,
+     "second_ring": 16,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 314
+    },
+    {
+     "witness_index": 22,
+     "positions": 23,
+     "first_ring": 6,
+     "second_ring": 16,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 312
+    },
+    {
+     "witness_index": 23,
+     "positions": 23,
+     "first_ring": 6,
+     "second_ring": 16,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 314
+    },
+    {
+     "witness_index": 24,
+     "positions": 23,
+     "first_ring": 6,
+     "second_ring": 16,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 314
+    },
+    {
+     "witness_index": 25,
+     "positions": 23,
+     "first_ring": 6,
+     "second_ring": 16,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 314
+    },
+    {
+     "witness_index": 26,
+     "positions": 23,
+     "first_ring": 6,
+     "second_ring": 16,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 314
+    },
+    {
+     "witness_index": 27,
+     "positions": 20,
+     "first_ring": 6,
+     "second_ring": 13,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 254
+    }
+   ]
+  },
+  {
+   "root_state_id": "2fb5d0cf9a68ffe2",
+   "root_star_witnesses": 100,
+   "satisfiable_witnesses": 1,
+   "position_count_histogram": {
+    "19": 1,
+    "20": 1,
+    "21": 1,
+    "22": 11,
+    "23": 10,
+    "24": 8,
+    "25": 28,
+    "26": 24,
+    "27": 16
+   },
+   "minimum_outer_extras": 1,
+   "minimum_nonroot_extras": 2,
+   "best_witness_index": 99,
+   "complete_assignment_count": 432,
+   "outer_extra_signature_histogram": {
+    "288091b49587a4b2,2f1d7f0fac5b9704": 96,
+    "288091b49587a4b2,2f1d7f0fac5b9704,2f1d7f0fac5b9704": 96,
+    "288091b49587a4b2,2f1d7f0fac5b9704,2f1d7f0fac5b9704,2f1d7f0fac5b9704": 24,
+    "2f1d7f0fac5b9704": 96,
+    "2f1d7f0fac5b9704,2f1d7f0fac5b9704": 96,
+    "2f1d7f0fac5b9704,2f1d7f0fac5b9704,2f1d7f0fac5b9704": 24
+   },
+   "forced_outer_extra_state_ids": [
+    "2f1d7f0fac5b9704"
+   ],
+   "best_assignment": [
+    {
+     "position": [
+      0,
+      0,
+      [
+       -8,
+       -4,
+       -2,
+       -4
+      ]
+     ],
+     "ring": 2,
+     "state_id": "d8f2d250ad08715d",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      0,
+      [
+       0,
+       0,
+       0,
+       0
+      ]
+     ],
+     "ring": 0,
+     "state_id": "2fb5d0cf9a68ffe2",
+     "source": "extra"
+    },
+    {
+     "position": [
+      0,
+      0,
+      [
+       7,
+       4,
+       -2,
+       1
+      ]
+     ],
+     "ring": 1,
+     "state_id": "d8f2d250ad08715d",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      0,
+      [
+       8,
+       9,
+       -13,
+       -9
+      ]
+     ],
+     "ring": 2,
+     "state_id": "6fcab283c7bf89b0",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      2,
+      [
+       -7,
+       -5,
+       2,
+       1
+      ]
+     ],
+     "ring": 1,
+     "state_id": "6fcab283c7bf89b0",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      2,
+      [
+       -5,
+       -6,
+       7,
+       6
+      ]
+     ],
+     "ring": 1,
+     "state_id": "afe6f61d3256520b",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      2,
+      [
+       -3,
+       -7,
+       12,
+       11
+      ]
+     ],
+     "ring": 2,
+     "state_id": "d8f2d250ad08715d",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      2,
+      [
+       3,
+       3,
+       -6,
+       -3
+      ]
+     ],
+     "ring": 1,
+     "state_id": "3637d1954a43822d",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      2,
+      [
+       8,
+       3,
+       2,
+       6
+      ]
+     ],
+     "ring": 2,
+     "state_id": "6fcab283c7bf89b0",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      4,
+      [
+       -14,
+       -11,
+       4,
+       1
+      ]
+     ],
+     "ring": 2,
+     "state_id": "32937e32c477d821",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      4,
+      [
+       1,
+       -3,
+       4,
+       6
+      ]
+     ],
+     "ring": 1,
+     "state_id": "3637d1954a43822d",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      6,
+      [
+       -9,
+       -12,
+       12,
+       9
+      ]
+     ],
+     "ring": 2,
+     "state_id": "d19ae9b40b6c9036",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      8,
+      [
+       -4,
+       -1,
+       -10,
+       -10
+      ]
+     ],
+     "ring": 2,
+     "state_id": "2f1d7f0fac5b9704",
+     "source": "extra"
+    },
+    {
+     "position": [
+      0,
+      8,
+      [
+       11,
+       7,
+       -10,
+       -5
+      ]
+     ],
+     "ring": 2,
+     "state_id": "a0a367681af859b0",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      10,
+      [
+       -10,
+       -9,
+       8,
+       3
+      ]
+     ],
+     "ring": 2,
+     "state_id": "376da12ee0050076",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      10,
+      [
+       -2,
+       0,
+       -5,
+       -6
+      ]
+     ],
+     "ring": 1,
+     "state_id": "288091b49587a4b2",
+     "source": "extra"
+    },
+    {
+     "position": [
+      0,
+      10,
+      [
+       3,
+       5,
+       -12,
+       -10
+      ]
+     ],
+     "ring": 2,
+     "state_id": "7389fa7fee6c04c2",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      10,
+      [
+       5,
+       -1,
+       8,
+       8
+      ]
+     ],
+     "ring": 2,
+     "state_id": "a0a367681af859b0",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      10,
+      [
+       13,
+       8,
+       -5,
+       -1
+      ]
+     ],
+     "ring": 2,
+     "state_id": "a66ae6a7e82b1217",
+     "source": "generated"
+    }
+   ],
+   "cases": [
+    {
+     "witness_index": 0,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 356
+    },
+    {
+     "witness_index": 1,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 380
+    },
+    {
+     "witness_index": 2,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 380
+    },
+    {
+     "witness_index": 3,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 358
+    },
+    {
+     "witness_index": 4,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 358
+    },
+    {
+     "witness_index": 5,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 356
+    },
+    {
+     "witness_index": 6,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 380
+    },
+    {
+     "witness_index": 7,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 380
+    },
+    {
+     "witness_index": 8,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 358
+    },
+    {
+     "witness_index": 9,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 358
+    },
+    {
+     "witness_index": 10,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 356
+    },
+    {
+     "witness_index": 11,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 380
+    },
+    {
+     "witness_index": 12,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 380
+    },
+    {
+     "witness_index": 13,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 358
+    },
+    {
+     "witness_index": 14,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 358
+    },
+    {
+     "witness_index": 15,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 356
+    },
+    {
+     "witness_index": 16,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 380
+    },
+    {
+     "witness_index": 17,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 380
+    },
+    {
+     "witness_index": 18,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 358
+    },
+    {
+     "witness_index": 19,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 358
+    },
+    {
+     "witness_index": 20,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 294
+    },
+    {
+     "witness_index": 21,
+     "positions": 23,
+     "first_ring": 6,
+     "second_ring": 16,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 318
+    },
+    {
+     "witness_index": 22,
+     "positions": 23,
+     "first_ring": 6,
+     "second_ring": 16,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 318
+    },
+    {
+     "witness_index": 23,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 296
+    },
+    {
+     "witness_index": 24,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 296
+    },
+    {
+     "witness_index": 25,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 382
+    },
+    {
+     "witness_index": 26,
+     "positions": 27,
+     "first_ring": 6,
+     "second_ring": 20,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 402
+    },
+    {
+     "witness_index": 27,
+     "positions": 27,
+     "first_ring": 6,
+     "second_ring": 20,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 402
+    },
+    {
+     "witness_index": 28,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 382
+    },
+    {
+     "witness_index": 29,
+     "positions": 27,
+     "first_ring": 6,
+     "second_ring": 20,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 402
+    },
+    {
+     "witness_index": 30,
+     "positions": 27,
+     "first_ring": 6,
+     "second_ring": 20,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 402
+    },
+    {
+     "witness_index": 31,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 382
+    },
+    {
+     "witness_index": 32,
+     "positions": 27,
+     "first_ring": 6,
+     "second_ring": 20,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 402
+    },
+    {
+     "witness_index": 33,
+     "positions": 27,
+     "first_ring": 6,
+     "second_ring": 20,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 402
+    },
+    {
+     "witness_index": 34,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 382
+    },
+    {
+     "witness_index": 35,
+     "positions": 27,
+     "first_ring": 6,
+     "second_ring": 20,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 402
+    },
+    {
+     "witness_index": 36,
+     "positions": 27,
+     "first_ring": 6,
+     "second_ring": 20,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 402
+    },
+    {
+     "witness_index": 37,
+     "positions": 23,
+     "first_ring": 6,
+     "second_ring": 16,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 320
+    },
+    {
+     "witness_index": 38,
+     "positions": 24,
+     "first_ring": 6,
+     "second_ring": 17,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 340
+    },
+    {
+     "witness_index": 39,
+     "positions": 24,
+     "first_ring": 6,
+     "second_ring": 17,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 340
+    },
+    {
+     "witness_index": 40,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 382
+    },
+    {
+     "witness_index": 41,
+     "positions": 27,
+     "first_ring": 6,
+     "second_ring": 20,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 402
+    },
+    {
+     "witness_index": 42,
+     "positions": 27,
+     "first_ring": 6,
+     "second_ring": 20,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 402
+    },
+    {
+     "witness_index": 43,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 382
+    },
+    {
+     "witness_index": 44,
+     "positions": 27,
+     "first_ring": 6,
+     "second_ring": 20,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 402
+    },
+    {
+     "witness_index": 45,
+     "positions": 27,
+     "first_ring": 6,
+     "second_ring": 20,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 402
+    },
+    {
+     "witness_index": 46,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 382
+    },
+    {
+     "witness_index": 47,
+     "positions": 27,
+     "first_ring": 6,
+     "second_ring": 20,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 402
+    },
+    {
+     "witness_index": 48,
+     "positions": 27,
+     "first_ring": 6,
+     "second_ring": 20,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 402
+    },
+    {
+     "witness_index": 49,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 382
+    },
+    {
+     "witness_index": 50,
+     "positions": 27,
+     "first_ring": 6,
+     "second_ring": 20,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 402
+    },
+    {
+     "witness_index": 51,
+     "positions": 27,
+     "first_ring": 6,
+     "second_ring": 20,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 402
+    },
+    {
+     "witness_index": 52,
+     "positions": 23,
+     "first_ring": 6,
+     "second_ring": 16,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 320
+    },
+    {
+     "witness_index": 53,
+     "positions": 24,
+     "first_ring": 6,
+     "second_ring": 17,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 340
+    },
+    {
+     "witness_index": 54,
+     "positions": 24,
+     "first_ring": 6,
+     "second_ring": 17,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 340
+    },
+    {
+     "witness_index": 55,
+     "positions": 24,
+     "first_ring": 6,
+     "second_ring": 17,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 336
+    },
+    {
+     "witness_index": 56,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 360
+    },
+    {
+     "witness_index": 57,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 360
+    },
+    {
+     "witness_index": 58,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 376
+    },
+    {
+     "witness_index": 59,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 376
+    },
+    {
+     "witness_index": 60,
+     "positions": 24,
+     "first_ring": 6,
+     "second_ring": 17,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 336
+    },
+    {
+     "witness_index": 61,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 360
+    },
+    {
+     "witness_index": 62,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 360
+    },
+    {
+     "witness_index": 63,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 376
+    },
+    {
+     "witness_index": 64,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 376
+    },
+    {
+     "witness_index": 65,
+     "positions": 24,
+     "first_ring": 6,
+     "second_ring": 17,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 336
+    },
+    {
+     "witness_index": 66,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 360
+    },
+    {
+     "witness_index": 67,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 360
+    },
+    {
+     "witness_index": 68,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 376
+    },
+    {
+     "witness_index": 69,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 376
+    },
+    {
+     "witness_index": 70,
+     "positions": 24,
+     "first_ring": 6,
+     "second_ring": 17,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 336
+    },
+    {
+     "witness_index": 71,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 360
+    },
+    {
+     "witness_index": 72,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 360
+    },
+    {
+     "witness_index": 73,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 376
+    },
+    {
+     "witness_index": 74,
+     "positions": 26,
+     "first_ring": 6,
+     "second_ring": 19,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 376
+    },
+    {
+     "witness_index": 75,
+     "positions": 21,
+     "first_ring": 6,
+     "second_ring": 14,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 274
+    },
+    {
+     "witness_index": 76,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 298
+    },
+    {
+     "witness_index": 77,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 298
+    },
+    {
+     "witness_index": 78,
+     "positions": 23,
+     "first_ring": 6,
+     "second_ring": 16,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 314
+    },
+    {
+     "witness_index": 79,
+     "positions": 23,
+     "first_ring": 6,
+     "second_ring": 16,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 314
+    },
+    {
+     "witness_index": 80,
+     "positions": 23,
+     "first_ring": 6,
+     "second_ring": 16,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 314
+    },
+    {
+     "witness_index": 81,
+     "positions": 23,
+     "first_ring": 6,
+     "second_ring": 16,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 314
+    },
+    {
+     "witness_index": 82,
+     "positions": 23,
+     "first_ring": 6,
+     "second_ring": 16,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 314
+    },
+    {
+     "witness_index": 83,
+     "positions": 23,
+     "first_ring": 6,
+     "second_ring": 16,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 314
+    },
+    {
+     "witness_index": 84,
+     "positions": 20,
+     "first_ring": 6,
+     "second_ring": 13,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 254
+    },
+    {
+     "witness_index": 85,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 358
+    },
+    {
+     "witness_index": 86,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 358
+    },
+    {
+     "witness_index": 87,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 358
+    },
+    {
+     "witness_index": 88,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 358
+    },
+    {
+     "witness_index": 89,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 298
+    },
+    {
+     "witness_index": 90,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 358
+    },
+    {
+     "witness_index": 91,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 358
+    },
+    {
+     "witness_index": 92,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 358
+    },
+    {
+     "witness_index": 93,
+     "positions": 25,
+     "first_ring": 6,
+     "second_ring": 18,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 358
+    },
+    {
+     "witness_index": 94,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 298
+    },
+    {
+     "witness_index": 95,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 294
+    },
+    {
+     "witness_index": 96,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 294
+    },
+    {
+     "witness_index": 97,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 294
+    },
+    {
+     "witness_index": 98,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 294
+    },
+    {
+     "witness_index": 99,
+     "positions": 19,
+     "first_ring": 6,
+     "second_ring": 12,
+     "satisfiable": true,
+     "minimum_outer_extras": 1,
+     "minimum_nonroot_extras": 2,
+     "search_nodes": 20,
+     "constraint_arcs": 234
+    }
+   ]
+  },
+  {
+   "root_state_id": "2f1d7f0fac5b9704",
+   "root_star_witnesses": 3,
+   "satisfiable_witnesses": 1,
+   "position_count_histogram": {
+    "19": 1,
+    "22": 2
+   },
+   "minimum_outer_extras": 1,
+   "minimum_nonroot_extras": 3,
+   "best_witness_index": 0,
+   "complete_assignment_count": 840,
+   "outer_extra_signature_histogram": {
+    "288091b49587a4b2": 720,
+    "288091b49587a4b2,2fb5d0cf9a68ffe2": 120
+   },
+   "forced_outer_extra_state_ids": [
+    "288091b49587a4b2"
+   ],
+   "best_assignment": [
+    {
+     "position": [
+      0,
+      0,
+      [
+       -2,
+       -4,
+       10,
+       8
+      ]
+     ],
+     "ring": 2,
+     "state_id": "a66ae6a7e82b1217",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      0,
+      [
+       0,
+       0,
+       0,
+       0
+      ]
+     ],
+     "ring": 0,
+     "state_id": "2f1d7f0fac5b9704",
+     "source": "extra"
+    },
+    {
+     "position": [
+      0,
+      0,
+      [
+       5,
+       0,
+       8,
+       9
+      ]
+     ],
+     "ring": 2,
+     "state_id": "afe6f61d3256520b",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      0,
+      [
+       13,
+       9,
+       -5,
+       0
+      ]
+     ],
+     "ring": 2,
+     "state_id": "6fcab283c7bf89b0",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      2,
+      [
+       -7,
+       -5,
+       2,
+       1
+      ]
+     ],
+     "ring": 1,
+     "state_id": "288091b49587a4b2",
+     "source": "extra"
+    },
+    {
+     "position": [
+      0,
+      2,
+      [
+       -5,
+       -6,
+       7,
+       6
+      ]
+     ],
+     "ring": 1,
+     "state_id": "7389fa7fee6c04c2",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      2,
+      [
+       8,
+       3,
+       2,
+       6
+      ]
+     ],
+     "ring": 2,
+     "state_id": "3637d1954a43822d",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      4,
+      [
+       -14,
+       -11,
+       4,
+       1
+      ]
+     ],
+     "ring": 2,
+     "state_id": "b8febe26439cd826",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      4,
+      [
+       -9,
+       -11,
+       12,
+       10
+      ]
+     ],
+     "ring": 2,
+     "state_id": "6fcab283c7bf89b0",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      4,
+      [
+       -4,
+       -3,
+       -4,
+       -3
+      ]
+     ],
+     "ring": 1,
+     "state_id": "d8f2d250ad08715d",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      4,
+      [
+       1,
+       2,
+       -11,
+       -7
+      ]
+     ],
+     "ring": 2,
+     "state_id": "90a8964c33054d56",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      6,
+      [
+       -11,
+       -11,
+       7,
+       4
+      ]
+     ],
+     "ring": 2,
+     "state_id": "d19ae9b40b6c9036",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      6,
+      [
+       -9,
+       -7,
+       -3,
+       -4
+      ]
+     ],
+     "ring": 2,
+     "state_id": "6fcab283c7bf89b0",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      6,
+      [
+       4,
+       2,
+       -8,
+       -4
+      ]
+     ],
+     "ring": 1,
+     "state_id": "2f1d7f0fac5b9704",
+     "source": "extra"
+    },
+    {
+     "position": [
+      0,
+      8,
+      [
+       -4,
+       -1,
+       -10,
+       -10
+      ]
+     ],
+     "ring": 2,
+     "state_id": "d19ae9b40b6c9036",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      8,
+      [
+       9,
+       8,
+       -15,
+       -10
+      ]
+     ],
+     "ring": 2,
+     "state_id": "7389fa7fee6c04c2",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      8,
+      [
+       11,
+       7,
+       -10,
+       -5
+      ]
+     ],
+     "ring": 2,
+     "state_id": "288091b49587a4b2",
+     "source": "extra"
+    },
+    {
+     "position": [
+      0,
+      10,
+      [
+       3,
+       0,
+       3,
+       3
+      ]
+     ],
+     "ring": 1,
+     "state_id": "90a8964c33054d56",
+     "source": "generated"
+    },
+    {
+     "position": [
+      0,
+      10,
+      [
+       8,
+       5,
+       -4,
+       -1
+      ]
+     ],
+     "ring": 1,
+     "state_id": "d8f2d250ad08715d",
+     "source": "generated"
+    }
+   ],
+   "cases": [
+    {
+     "witness_index": 0,
+     "positions": 19,
+     "first_ring": 6,
+     "second_ring": 12,
+     "satisfiable": true,
+     "minimum_outer_extras": 1,
+     "minimum_nonroot_extras": 3,
+     "search_nodes": 19,
+     "constraint_arcs": 234
+    },
+    {
+     "witness_index": 1,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 298
+    },
+    {
+     "witness_index": 2,
+     "positions": 22,
+     "first_ring": 6,
+     "second_ring": 15,
+     "satisfiable": false,
+     "minimum_outer_extras": null,
+     "minimum_nonroot_extras": null,
+     "search_nodes": 1,
+     "constraint_arcs": 298
+    }
+   ]
+  }
+ ],
+ "conclusion": {
+  "minimum_outer_extras": [
+   1,
+   1,
+   1
+  ],
+  "all_zero_outer_problems_unsatisfiable": true,
+  "forced_type_map": {
+   "288091b49587a4b2": [
+    "2f1d7f0fac5b9704"
+   ],
+   "2fb5d0cf9a68ffe2": [
+    "2f1d7f0fac5b9704"
+   ],
+   "2f1d7f0fac5b9704": [
+    "288091b49587a4b2"
+   ]
+  },
+  "interpretation": "no extra state can be surrounded by a radius-two parent patch whose outer ring is entirely generated; the forced type map sends the absorbable state into the alternating pair and maps the pair into each other"
+ },
+ "claim_boundary": "this is a finite two-ring propagation theorem in the 20-state colored parent language; it neither proves an infinite defect configuration exists nor yet eliminates all three defects"
+}

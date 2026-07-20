@@ -1,0 +1,1983 @@
+{
+ "status": "PLANAR_HALL_COUNTERMODEL",
+ "source_hnf": [
+  4,
+  0,
+  4
+ ],
+ "source_target_count": 9,
+ "requested_samples": 20,
+ "enumerated_sources": 20,
+ "maximum_periods": 7,
+ "mapping_index": 7,
+ "packing_mode": "single",
+ "rows": [
+  {
+   "source_index": 0,
+   "source": [
+    [
+     1,
+     1,
+     0
+    ],
+    [
+     3,
+     1,
+     3
+    ],
+    [
+     5,
+     3,
+     3
+    ],
+    [
+     6,
+     3,
+     3
+    ],
+    [
+     8,
+     0,
+     0
+    ],
+    [
+     8,
+     3,
+     1
+    ],
+    [
+     10,
+     1,
+     3
+    ],
+    [
+     10,
+     2,
+     1
+    ],
+    [
+     11,
+     0,
+     2
+    ]
+   ],
+   "status": "BLOCKED_BY_AFFINE_CIRCUIT",
+   "first_period_rectangle": [
+    3,
+    5
+   ],
+   "whole_set_deficiency": -2,
+   "minimal_hall_profile": {
+    "tile_count": 77,
+    "center_count": 153,
+    "deficiency": 1,
+    "private_center_histogram": {
+     "0": 52,
+     "1": 25
+    },
+    "center_degree_histogram": {
+     "1": 25,
+     "2": 101,
+     "3": 27
+    },
+    "signed_curvature": 2,
+    "intersection_edges": 156
+   },
+   "packing_pair_conflicts": 0,
+   "actual_overlap_pairs": 16,
+   "affine_pair_conflicts": 0,
+   "minimal_affine_circuit_size": 3
+  },
+  {
+   "source_index": 1,
+   "source": [
+    [
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     3,
+     1
+    ],
+    [
+     3,
+     1,
+     3
+    ],
+    [
+     5,
+     3,
+     3
+    ],
+    [
+     6,
+     3,
+     3
+    ],
+    [
+     8,
+     3,
+     1
+    ],
+    [
+     10,
+     1,
+     3
+    ],
+    [
+     10,
+     2,
+     1
+    ],
+    [
+     11,
+     0,
+     2
+    ]
+   ],
+   "status": "BLOCKED_BY_AFFINE_CIRCUIT",
+   "first_period_rectangle": [
+    3,
+    5
+   ],
+   "whole_set_deficiency": -1,
+   "minimal_hall_profile": {
+    "tile_count": 77,
+    "center_count": 153,
+    "deficiency": 1,
+    "private_center_histogram": {
+     "0": 53,
+     "1": 24
+    },
+    "center_degree_histogram": {
+     "1": 24,
+     "2": 103,
+     "3": 26
+    },
+    "signed_curvature": 2,
+    "intersection_edges": 148
+   },
+   "packing_pair_conflicts": 0,
+   "actual_overlap_pairs": 23,
+   "affine_pair_conflicts": 0,
+   "minimal_affine_circuit_size": 3
+  },
+  {
+   "source_index": 2,
+   "source": [
+    [
+     6,
+     3,
+     0
+    ],
+    [
+     7,
+     1,
+     1
+    ],
+    [
+     8,
+     3,
+     1
+    ],
+    [
+     9,
+     0,
+     3
+    ],
+    [
+     10,
+     1,
+     3
+    ],
+    [
+     10,
+     2,
+     1
+    ],
+    [
+     11,
+     0,
+     1
+    ],
+    [
+     11,
+     1,
+     0
+    ],
+    [
+     11,
+     2,
+     3
+    ]
+   ],
+   "status": "BLOCKED_BY_AFFINE_CIRCUIT",
+   "first_period_rectangle": [
+    3,
+    5
+   ],
+   "whole_set_deficiency": 0,
+   "minimal_hall_profile": {
+    "tile_count": 77,
+    "center_count": 153,
+    "deficiency": 1,
+    "private_center_histogram": {
+     "0": 44,
+     "1": 33
+    },
+    "center_degree_histogram": {
+     "1": 33,
+     "2": 85,
+     "3": 35
+    },
+    "signed_curvature": 2,
+    "intersection_edges": 165
+   },
+   "packing_pair_conflicts": 0,
+   "actual_overlap_pairs": 16,
+   "affine_pair_conflicts": 0,
+   "minimal_affine_circuit_size": 3
+  },
+  {
+   "source_index": 3,
+   "source": [
+    [
+     7,
+     1,
+     1
+    ],
+    [
+     8,
+     0,
+     0
+    ],
+    [
+     8,
+     3,
+     1
+    ],
+    [
+     9,
+     0,
+     3
+    ],
+    [
+     10,
+     1,
+     3
+    ],
+    [
+     10,
+     2,
+     1
+    ],
+    [
+     11,
+     0,
+     1
+    ],
+    [
+     11,
+     1,
+     0
+    ],
+    [
+     11,
+     2,
+     3
+    ]
+   ],
+   "status": "BLOCKED_BY_AFFINE_CIRCUIT",
+   "first_period_rectangle": [
+    3,
+    3
+   ],
+   "whole_set_deficiency": 0,
+   "minimal_hall_profile": {
+    "tile_count": 65,
+    "center_count": 129,
+    "deficiency": 1,
+    "private_center_histogram": {
+     "0": 46,
+     "1": 19
+    },
+    "center_degree_histogram": {
+     "1": 19,
+     "2": 89,
+     "3": 21
+    },
+    "signed_curvature": 2,
+    "intersection_edges": 131
+   },
+   "packing_pair_conflicts": 0,
+   "actual_overlap_pairs": 14,
+   "affine_pair_conflicts": 0,
+   "minimal_affine_circuit_size": 3
+  },
+  {
+   "source_index": 4,
+   "source": [
+    [
+     6,
+     3,
+     3
+    ],
+    [
+     7,
+     1,
+     1
+    ],
+    [
+     8,
+     0,
+     0
+    ],
+    [
+     8,
+     3,
+     1
+    ],
+    [
+     10,
+     1,
+     3
+    ],
+    [
+     10,
+     2,
+     1
+    ],
+    [
+     11,
+     0,
+     1
+    ],
+    [
+     11,
+     1,
+     0
+    ],
+    [
+     11,
+     3,
+     2
+    ]
+   ],
+   "status": "BLOCKED_BY_AFFINE_CIRCUIT",
+   "first_period_rectangle": [
+    4,
+    2
+   ],
+   "whole_set_deficiency": -2,
+   "minimal_hall_profile": {
+    "tile_count": 39,
+    "center_count": 77,
+    "deficiency": 1,
+    "private_center_histogram": {
+     "0": 20,
+     "1": 19
+    },
+    "center_degree_histogram": {
+     "1": 19,
+     "2": 37,
+     "3": 21
+    },
+    "signed_curvature": 2,
+    "intersection_edges": 81
+   },
+   "packing_pair_conflicts": 0,
+   "actual_overlap_pairs": 14,
+   "affine_pair_conflicts": 0,
+   "minimal_affine_circuit_size": 3
+  },
+  {
+   "source_index": 5,
+   "source": [
+    [
+     6,
+     3,
+     0
+    ],
+    [
+     7,
+     1,
+     1
+    ],
+    [
+     8,
+     3,
+     1
+    ],
+    [
+     9,
+     0,
+     3
+    ],
+    [
+     10,
+     1,
+     3
+    ],
+    [
+     10,
+     2,
+     1
+    ],
+    [
+     11,
+     0,
+     1
+    ],
+    [
+     11,
+     1,
+     0
+    ],
+    [
+     11,
+     3,
+     2
+    ]
+   ],
+   "status": "BLOCKED_BY_AFFINE_CIRCUIT",
+   "first_period_rectangle": [
+    4,
+    3
+   ],
+   "whole_set_deficiency": -1,
+   "minimal_hall_profile": {
+    "tile_count": 53,
+    "center_count": 105,
+    "deficiency": 1,
+    "private_center_histogram": {
+     "0": 28,
+     "1": 25
+    },
+    "center_degree_histogram": {
+     "1": 25,
+     "2": 53,
+     "3": 27
+    },
+    "signed_curvature": 2,
+    "intersection_edges": 117
+   },
+   "packing_pair_conflicts": 0,
+   "actual_overlap_pairs": 17,
+   "affine_pair_conflicts": 0,
+   "minimal_affine_circuit_size": 3
+  },
+  {
+   "source_index": 6,
+   "source": [
+    [
+     7,
+     1,
+     1
+    ],
+    [
+     8,
+     0,
+     0
+    ],
+    [
+     8,
+     3,
+     1
+    ],
+    [
+     9,
+     0,
+     3
+    ],
+    [
+     10,
+     1,
+     3
+    ],
+    [
+     10,
+     2,
+     1
+    ],
+    [
+     11,
+     0,
+     1
+    ],
+    [
+     11,
+     1,
+     0
+    ],
+    [
+     11,
+     3,
+     2
+    ]
+   ],
+   "status": "BLOCKED_BY_AFFINE_CIRCUIT",
+   "first_period_rectangle": [
+    4,
+    2
+   ],
+   "whole_set_deficiency": 0,
+   "minimal_hall_profile": {
+    "tile_count": 39,
+    "center_count": 77,
+    "deficiency": 1,
+    "private_center_histogram": {
+     "0": 20,
+     "1": 19
+    },
+    "center_degree_histogram": {
+     "1": 19,
+     "2": 37,
+     "3": 21
+    },
+    "signed_curvature": 2,
+    "intersection_edges": 81
+   },
+   "packing_pair_conflicts": 0,
+   "actual_overlap_pairs": 14,
+   "affine_pair_conflicts": 0,
+   "minimal_affine_circuit_size": 3
+  },
+  {
+   "source_index": 7,
+   "source": [
+    [
+     6,
+     3,
+     0
+    ],
+    [
+     7,
+     1,
+     1
+    ],
+    [
+     8,
+     3,
+     1
+    ],
+    [
+     10,
+     1,
+     3
+    ],
+    [
+     10,
+     2,
+     1
+    ],
+    [
+     11,
+     0,
+     1
+    ],
+    [
+     11,
+     1,
+     0
+    ],
+    [
+     11,
+     2,
+     3
+    ],
+    [
+     11,
+     3,
+     2
+    ]
+   ],
+   "status": "BLOCKED_BY_AFFINE_CIRCUIT",
+   "first_period_rectangle": [
+    3,
+    4
+   ],
+   "whole_set_deficiency": 0,
+   "minimal_hall_profile": {
+    "tile_count": 69,
+    "center_count": 137,
+    "deficiency": 1,
+    "private_center_histogram": {
+     "0": 41,
+     "1": 28
+    },
+    "center_degree_histogram": {
+     "1": 28,
+     "2": 79,
+     "3": 30
+    },
+    "signed_curvature": 2,
+    "intersection_edges": 148
+   },
+   "packing_pair_conflicts": 0,
+   "actual_overlap_pairs": 14,
+   "affine_pair_conflicts": 0,
+   "minimal_affine_circuit_size": 3
+  },
+  {
+   "source_index": 8,
+   "source": [
+    [
+     6,
+     3,
+     0
+    ],
+    [
+     7,
+     0,
+     2
+    ],
+    [
+     8,
+     3,
+     1
+    ],
+    [
+     10,
+     1,
+     3
+    ],
+    [
+     10,
+     2,
+     1
+    ],
+    [
+     11,
+     0,
+     1
+    ],
+    [
+     11,
+     1,
+     0
+    ],
+    [
+     11,
+     2,
+     3
+    ],
+    [
+     11,
+     3,
+     2
+    ]
+   ],
+   "status": "BLOCKED_BY_AFFINE_CIRCUIT",
+   "first_period_rectangle": [
+    4,
+    3
+   ],
+   "whole_set_deficiency": -2,
+   "minimal_hall_profile": {
+    "tile_count": 63,
+    "center_count": 125,
+    "deficiency": 1,
+    "private_center_histogram": {
+     "0": 41,
+     "1": 22
+    },
+    "center_degree_histogram": {
+     "1": 22,
+     "2": 79,
+     "3": 24
+    },
+    "signed_curvature": 2,
+    "intersection_edges": 128
+   },
+   "packing_pair_conflicts": 0,
+   "actual_overlap_pairs": 8,
+   "affine_pair_conflicts": 0,
+   "minimal_affine_circuit_size": 3
+  },
+  {
+   "source_index": 9,
+   "source": [
+    [
+     6,
+     3,
+     3
+    ],
+    [
+     7,
+     1,
+     1
+    ],
+    [
+     8,
+     0,
+     0
+    ],
+    [
+     8,
+     3,
+     1
+    ],
+    [
+     10,
+     1,
+     3
+    ],
+    [
+     10,
+     2,
+     0
+    ],
+    [
+     10,
+     2,
+     1
+    ],
+    [
+     11,
+     0,
+     1
+    ],
+    [
+     11,
+     3,
+     2
+    ]
+   ],
+   "status": "BLOCKED_BY_AFFINE_CIRCUIT",
+   "first_period_rectangle": [
+    4,
+    2
+   ],
+   "whole_set_deficiency": -2,
+   "minimal_hall_profile": {
+    "tile_count": 42,
+    "center_count": 83,
+    "deficiency": 1,
+    "private_center_histogram": {
+     "0": 23,
+     "1": 19
+    },
+    "center_degree_histogram": {
+     "1": 19,
+     "2": 43,
+     "3": 21
+    },
+    "signed_curvature": 2,
+    "intersection_edges": 86
+   },
+   "packing_pair_conflicts": 0,
+   "actual_overlap_pairs": 15,
+   "affine_pair_conflicts": 0,
+   "minimal_affine_circuit_size": 3
+  },
+  {
+   "source_index": 10,
+   "source": [
+    [
+     6,
+     3,
+     0
+    ],
+    [
+     7,
+     1,
+     1
+    ],
+    [
+     8,
+     3,
+     1
+    ],
+    [
+     9,
+     0,
+     3
+    ],
+    [
+     10,
+     1,
+     3
+    ],
+    [
+     10,
+     2,
+     0
+    ],
+    [
+     10,
+     2,
+     1
+    ],
+    [
+     11,
+     0,
+     1
+    ],
+    [
+     11,
+     3,
+     2
+    ]
+   ],
+   "status": "BLOCKED_BY_AFFINE_CIRCUIT",
+   "first_period_rectangle": [
+    7,
+    2
+   ],
+   "whole_set_deficiency": -2,
+   "minimal_hall_profile": {
+    "tile_count": 72,
+    "center_count": 143,
+    "deficiency": 1,
+    "private_center_histogram": {
+     "0": 37,
+     "1": 35
+    },
+    "center_degree_histogram": {
+     "1": 35,
+     "2": 71,
+     "3": 37
+    },
+    "signed_curvature": 2,
+    "intersection_edges": 159
+   },
+   "packing_pair_conflicts": 0,
+   "actual_overlap_pairs": 23,
+   "affine_pair_conflicts": 0,
+   "minimal_affine_circuit_size": 3
+  },
+  {
+   "source_index": 11,
+   "source": [
+    [
+     5,
+     1,
+     2
+    ],
+    [
+     6,
+     2,
+     2
+    ],
+    [
+     7,
+     0,
+     3
+    ],
+    [
+     8,
+     0,
+     2
+    ],
+    [
+     9,
+     0,
+     1
+    ],
+    [
+     10,
+     1,
+     0
+    ],
+    [
+     10,
+     1,
+     1
+    ],
+    [
+     10,
+     1,
+     3
+    ],
+    [
+     11,
+     2,
+     1
+    ]
+   ],
+   "status": "PLANAR_HALL_COUNTERMODEL",
+   "first_period_rectangle": [
+    3,
+    4
+   ],
+   "whole_set_deficiency": 1,
+   "minimal_hall_profile": {
+    "tile_count": 75,
+    "center_count": 149,
+    "deficiency": 1,
+    "private_center_histogram": {
+     "0": 46,
+     "1": 29
+    },
+    "center_degree_histogram": {
+     "1": 29,
+     "2": 89,
+     "3": 31
+    },
+    "signed_curvature": 2,
+    "intersection_edges": 161
+   },
+   "packing_pair_conflicts": 0,
+   "actual_overlap_pairs": 7,
+   "affine_pair_conflicts": 0,
+   "minimal_affine_circuit_size": 0
+  }
+ ],
+ "circuit_size_histogram": {
+  "0": 1,
+  "3": 11
+ },
+ "countermodel": {
+  "source_index": 11,
+  "source": [
+   [
+    5,
+    1,
+    2
+   ],
+   [
+    6,
+    2,
+    2
+   ],
+   [
+    7,
+    0,
+    3
+   ],
+   [
+    8,
+    0,
+    2
+   ],
+   [
+    9,
+    0,
+    1
+   ],
+   [
+    10,
+    1,
+    0
+   ],
+   [
+    10,
+    1,
+    1
+   ],
+   [
+    10,
+    1,
+    3
+   ],
+   [
+    11,
+    2,
+    1
+   ]
+  ],
+  "status": "PLANAR_HALL_COUNTERMODEL",
+  "first_period_rectangle": [
+   3,
+   4
+  ],
+  "whole_set_deficiency": 1,
+  "minimal_hall_profile": {
+   "tile_count": 75,
+   "center_count": 149,
+   "deficiency": 1,
+   "private_center_histogram": {
+    "0": 46,
+    "1": 29
+   },
+   "center_degree_histogram": {
+    "1": 29,
+    "2": 89,
+    "3": 31
+   },
+   "signed_curvature": 2,
+   "intersection_edges": 161
+  },
+  "packing_pair_conflicts": 0,
+  "actual_overlap_pairs": 7,
+  "affine_pair_conflicts": 0,
+  "minimal_affine_circuit_size": 0,
+  "placements": [
+   [
+    6,
+    2,
+    6
+   ],
+   [
+    5,
+    1,
+    10
+   ],
+   [
+    6,
+    2,
+    10
+   ],
+   [
+    7,
+    0,
+    11
+   ],
+   [
+    8,
+    0,
+    10
+   ],
+   [
+    9,
+    0,
+    9
+   ],
+   [
+    10,
+    1,
+    8
+   ],
+   [
+    10,
+    1,
+    9
+   ],
+   [
+    10,
+    1,
+    11
+   ],
+   [
+    11,
+    2,
+    9
+   ],
+   [
+    5,
+    1,
+    14
+   ],
+   [
+    6,
+    2,
+    14
+   ],
+   [
+    8,
+    0,
+    14
+   ],
+   [
+    9,
+    0,
+    13
+   ],
+   [
+    10,
+    1,
+    12
+   ],
+   [
+    10,
+    1,
+    13
+   ],
+   [
+    10,
+    1,
+    15
+   ],
+   [
+    11,
+    2,
+    13
+   ],
+   [
+    6,
+    6,
+    2
+   ],
+   [
+    7,
+    4,
+    3
+   ],
+   [
+    10,
+    5,
+    3
+   ],
+   [
+    5,
+    5,
+    6
+   ],
+   [
+    6,
+    6,
+    6
+   ],
+   [
+    7,
+    4,
+    7
+   ],
+   [
+    8,
+    4,
+    6
+   ],
+   [
+    9,
+    4,
+    5
+   ],
+   [
+    10,
+    5,
+    4
+   ],
+   [
+    10,
+    5,
+    5
+   ],
+   [
+    10,
+    5,
+    7
+   ],
+   [
+    11,
+    6,
+    5
+   ],
+   [
+    5,
+    5,
+    10
+   ],
+   [
+    6,
+    6,
+    10
+   ],
+   [
+    7,
+    4,
+    11
+   ],
+   [
+    8,
+    4,
+    10
+   ],
+   [
+    9,
+    4,
+    9
+   ],
+   [
+    10,
+    5,
+    8
+   ],
+   [
+    10,
+    5,
+    9
+   ],
+   [
+    10,
+    5,
+    11
+   ],
+   [
+    11,
+    6,
+    9
+   ],
+   [
+    5,
+    5,
+    14
+   ],
+   [
+    6,
+    6,
+    14
+   ],
+   [
+    8,
+    4,
+    14
+   ],
+   [
+    9,
+    4,
+    13
+   ],
+   [
+    10,
+    5,
+    12
+   ],
+   [
+    10,
+    5,
+    13
+   ],
+   [
+    10,
+    5,
+    15
+   ],
+   [
+    11,
+    6,
+    13
+   ],
+   [
+    5,
+    9,
+    2
+   ],
+   [
+    6,
+    10,
+    2
+   ],
+   [
+    7,
+    8,
+    3
+   ],
+   [
+    8,
+    8,
+    2
+   ],
+   [
+    9,
+    8,
+    1
+   ],
+   [
+    10,
+    9,
+    1
+   ],
+   [
+    10,
+    9,
+    3
+   ],
+   [
+    11,
+    10,
+    1
+   ],
+   [
+    5,
+    9,
+    6
+   ],
+   [
+    6,
+    10,
+    6
+   ],
+   [
+    7,
+    8,
+    7
+   ],
+   [
+    8,
+    8,
+    6
+   ],
+   [
+    9,
+    8,
+    5
+   ],
+   [
+    10,
+    9,
+    4
+   ],
+   [
+    10,
+    9,
+    5
+   ],
+   [
+    10,
+    9,
+    7
+   ],
+   [
+    11,
+    10,
+    5
+   ],
+   [
+    5,
+    9,
+    10
+   ],
+   [
+    6,
+    10,
+    10
+   ],
+   [
+    7,
+    8,
+    11
+   ],
+   [
+    8,
+    8,
+    10
+   ],
+   [
+    9,
+    8,
+    9
+   ],
+   [
+    10,
+    9,
+    8
+   ],
+   [
+    10,
+    9,
+    9
+   ],
+   [
+    10,
+    9,
+    11
+   ],
+   [
+    11,
+    10,
+    9
+   ],
+   [
+    9,
+    8,
+    13
+   ],
+   [
+    10,
+    9,
+    12
+   ]
+  ],
+  "centers": [
+   [
+    -1,
+    9
+   ],
+   [
+    -1,
+    10
+   ],
+   [
+    -1,
+    11
+   ],
+   [
+    -1,
+    12
+   ],
+   [
+    -1,
+    13
+   ],
+   [
+    -1,
+    14
+   ],
+   [
+    -1,
+    15
+   ],
+   [
+    0,
+    8
+   ],
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    12
+   ],
+   [
+    0,
+    13
+   ],
+   [
+    0,
+    14
+   ],
+   [
+    0,
+    15
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    1,
+    11
+   ],
+   [
+    1,
+    12
+   ],
+   [
+    1,
+    13
+   ],
+   [
+    1,
+    14
+   ],
+   [
+    1,
+    15
+   ],
+   [
+    2,
+    6
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    2,
+    8
+   ],
+   [
+    2,
+    9
+   ],
+   [
+    2,
+    10
+   ],
+   [
+    2,
+    11
+   ],
+   [
+    2,
+    12
+   ],
+   [
+    2,
+    13
+   ],
+   [
+    2,
+    14
+   ],
+   [
+    2,
+    15
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    5
+   ],
+   [
+    3,
+    6
+   ],
+   [
+    3,
+    7
+   ],
+   [
+    3,
+    8
+   ],
+   [
+    3,
+    9
+   ],
+   [
+    3,
+    10
+   ],
+   [
+    3,
+    11
+   ],
+   [
+    3,
+    12
+   ],
+   [
+    3,
+    13
+   ],
+   [
+    3,
+    14
+   ],
+   [
+    3,
+    15
+   ],
+   [
+    4,
+    3
+   ],
+   [
+    4,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    4,
+    6
+   ],
+   [
+    4,
+    7
+   ],
+   [
+    4,
+    8
+   ],
+   [
+    4,
+    9
+   ],
+   [
+    4,
+    10
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    4,
+    12
+   ],
+   [
+    4,
+    13
+   ],
+   [
+    4,
+    14
+   ],
+   [
+    4,
+    15
+   ],
+   [
+    5,
+    2
+   ],
+   [
+    5,
+    3
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    7
+   ],
+   [
+    5,
+    8
+   ],
+   [
+    5,
+    9
+   ],
+   [
+    5,
+    10
+   ],
+   [
+    5,
+    11
+   ],
+   [
+    5,
+    12
+   ],
+   [
+    5,
+    13
+   ],
+   [
+    5,
+    14
+   ],
+   [
+    5,
+    15
+   ],
+   [
+    6,
+    2
+   ],
+   [
+    6,
+    3
+   ],
+   [
+    6,
+    4
+   ],
+   [
+    6,
+    5
+   ],
+   [
+    6,
+    6
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    6,
+    8
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    6,
+    10
+   ],
+   [
+    6,
+    11
+   ],
+   [
+    6,
+    12
+   ],
+   [
+    6,
+    13
+   ],
+   [
+    6,
+    14
+   ],
+   [
+    6,
+    15
+   ],
+   [
+    7,
+    1
+   ],
+   [
+    7,
+    2
+   ],
+   [
+    7,
+    3
+   ],
+   [
+    7,
+    4
+   ],
+   [
+    7,
+    5
+   ],
+   [
+    7,
+    6
+   ],
+   [
+    7,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    7,
+    9
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    7,
+    11
+   ],
+   [
+    7,
+    12
+   ],
+   [
+    7,
+    13
+   ],
+   [
+    7,
+    14
+   ],
+   [
+    8,
+    0
+   ],
+   [
+    8,
+    1
+   ],
+   [
+    8,
+    2
+   ],
+   [
+    8,
+    3
+   ],
+   [
+    8,
+    4
+   ],
+   [
+    8,
+    5
+   ],
+   [
+    8,
+    6
+   ],
+   [
+    8,
+    7
+   ],
+   [
+    8,
+    8
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    8,
+    10
+   ],
+   [
+    8,
+    11
+   ],
+   [
+    8,
+    12
+   ],
+   [
+    8,
+    13
+   ],
+   [
+    9,
+    0
+   ],
+   [
+    9,
+    1
+   ],
+   [
+    9,
+    2
+   ],
+   [
+    9,
+    3
+   ],
+   [
+    9,
+    4
+   ],
+   [
+    9,
+    5
+   ],
+   [
+    9,
+    6
+   ],
+   [
+    9,
+    7
+   ],
+   [
+    9,
+    8
+   ],
+   [
+    9,
+    9
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    11
+   ],
+   [
+    9,
+    12
+   ],
+   [
+    10,
+    0
+   ],
+   [
+    10,
+    1
+   ],
+   [
+    10,
+    2
+   ],
+   [
+    10,
+    3
+   ],
+   [
+    10,
+    4
+   ],
+   [
+    10,
+    5
+   ],
+   [
+    10,
+    6
+   ],
+   [
+    10,
+    7
+   ],
+   [
+    10,
+    8
+   ],
+   [
+    10,
+    9
+   ],
+   [
+    10,
+    10
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    11,
+    0
+   ],
+   [
+    11,
+    1
+   ],
+   [
+    11,
+    2
+   ],
+   [
+    11,
+    4
+   ],
+   [
+    11,
+    5
+   ],
+   [
+    11,
+    6
+   ],
+   [
+    11,
+    8
+   ],
+   [
+    11,
+    9
+   ],
+   [
+    11,
+    10
+   ]
+  ]
+ }
+}

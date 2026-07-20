@@ -1,0 +1,1828 @@
+{
+ "kind": "theory-w2-layer-d-a4-semidirect-factorization",
+ "schema_version": 1,
+ "date": "2026-07-18",
+ "scope": {
+  "statement_type": "exact group and finite-map classification",
+  "target": "A4",
+  "mapping_classes": 48,
+  "commuting_twists": 48
+ },
+ "provenance": {
+  "dependencies": [
+   {
+    "path": "docs/notebook/assets/theory-w2-layer-d-a4-index50.json",
+    "sha256": "25509bfcc1028e7206a9fed95392c336878d66d2c829bec73ddeba806ebcb85f"
+   },
+   {
+    "path": "docs/notebook/assets/theory-w2-layer-d-a4-signature.json",
+    "sha256": "a9095e29f730dcba5d7bd0f117748c51257f5070b75fb458d084f61ad9ce1d57"
+   }
+  ],
+  "sources": [
+   {
+    "path": "src/einstein/theory/a4_semidirect.py",
+    "sha256": "109fb4bff4a58a6adcd44d7c85d26fe8bdb49f0aadc068b79e3bbf89b77d02a5"
+   },
+   {
+    "path": "scripts/run_theory_w2_layer_d_a4_factor.py",
+    "sha256": "c9a6984e2accf738660ae604953a69a39b22c7cef5bd2236f33206d5faea8730"
+   }
+  ]
+ },
+ "factorization": {
+  "normal_subgroup": "V4 = GF(2)^2",
+  "quotient": "C3",
+  "coordinate_convention": "element = v * c^q",
+  "v4_packed_basis_elements": [
+   0,
+   3,
+   8,
+   11
+  ],
+  "c3_section_elements": [
+   0,
+   1,
+   2
+  ],
+  "action": "M(x,y) = (y,x+y) over GF(2)",
+  "multiplication": "(v,q)(w,r) = (v + M^q w, q+r)",
+  "edge_equation_c3": "q_y = q_d + q_x + q_label (mod 3)",
+  "edge_equation_v4": "v_y = v_d + M^q_d v_x + M^(q_d+q_x) v_label (over GF(2)^2)"
+ },
+ "map7": {
+  "mapping_index": 7,
+  "v4_coordinates": [
+   0,
+   0,
+   0,
+   0,
+   1,
+   2
+  ],
+  "c3_coordinates": [
+   1,
+   2,
+   1,
+   0,
+   0,
+   0
+  ],
+  "distinct_v4_tail": true,
+  "edge_vectors": [
+   [
+    0,
+    1
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    -1
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    1,
+    -2
+   ],
+   [
+    2,
+    -1
+   ]
+  ],
+  "geometric_c3_character": "chi(x,y) = 2x+y (mod 3)",
+  "geometric_c3_values": [
+   1,
+   2,
+   1,
+   0,
+   0,
+   0
+  ]
+ },
+ "signature": {
+  "killing_mapping_indices": [
+   7,
+   8,
+   11,
+   12,
+   17,
+   20,
+   21,
+   23,
+   29,
+   30,
+   33,
+   34,
+   39,
+   42,
+   43,
+   45
+  ],
+  "factorized_predicate_exact": true,
+  "predicate": "the three tail labels have q=0 and three distinct V4 values",
+  "mappings": [
+   {
+    "mapping_index": 0,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     3
+    ],
+    "c3_coordinates": [
+     0,
+     1,
+     1,
+     1,
+     1,
+     2
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 1,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     2
+    ],
+    "c3_coordinates": [
+     0,
+     2,
+     2,
+     2,
+     2,
+     1
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 2,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     3
+    ],
+    "c3_coordinates": [
+     1,
+     0,
+     2,
+     1,
+     1,
+     2
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 3,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     2
+    ],
+    "c3_coordinates": [
+     1,
+     1,
+     0,
+     2,
+     2,
+     1
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 4,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "c3_coordinates": [
+     1,
+     2,
+     1,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 5,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     0
+    ],
+    "c3_coordinates": [
+     1,
+     2,
+     1,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 6,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "c3_coordinates": [
+     1,
+     2,
+     1,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 7,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     2
+    ],
+    "c3_coordinates": [
+     1,
+     2,
+     1,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": true
+   },
+   {
+    "mapping_index": 8,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     3
+    ],
+    "c3_coordinates": [
+     1,
+     2,
+     1,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": true
+   },
+   {
+    "mapping_index": 9,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    "c3_coordinates": [
+     1,
+     2,
+     1,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 10,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     0,
+     1
+    ],
+    "c3_coordinates": [
+     1,
+     2,
+     1,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 11,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     0,
+     2
+    ],
+    "c3_coordinates": [
+     1,
+     2,
+     1,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": true
+   },
+   {
+    "mapping_index": 12,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     0,
+     3
+    ],
+    "c3_coordinates": [
+     1,
+     2,
+     1,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": true
+   },
+   {
+    "mapping_index": 13,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     0
+    ],
+    "c3_coordinates": [
+     1,
+     2,
+     1,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 14,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    "c3_coordinates": [
+     1,
+     2,
+     1,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 15,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     2
+    ],
+    "c3_coordinates": [
+     1,
+     2,
+     1,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 16,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     3
+    ],
+    "c3_coordinates": [
+     1,
+     2,
+     1,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 17,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     2,
+     0
+    ],
+    "c3_coordinates": [
+     1,
+     2,
+     1,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": true
+   },
+   {
+    "mapping_index": 18,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     2,
+     1
+    ],
+    "c3_coordinates": [
+     1,
+     2,
+     1,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 19,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     2,
+     2
+    ],
+    "c3_coordinates": [
+     1,
+     2,
+     1,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 20,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     2,
+     3
+    ],
+    "c3_coordinates": [
+     1,
+     2,
+     1,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": true
+   },
+   {
+    "mapping_index": 21,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     3,
+     0
+    ],
+    "c3_coordinates": [
+     1,
+     2,
+     1,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": true
+   },
+   {
+    "mapping_index": 22,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     3,
+     1
+    ],
+    "c3_coordinates": [
+     1,
+     2,
+     1,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 23,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     3,
+     2
+    ],
+    "c3_coordinates": [
+     1,
+     2,
+     1,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": true
+   },
+   {
+    "mapping_index": 24,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     3,
+     3
+    ],
+    "c3_coordinates": [
+     1,
+     2,
+     1,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 25,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     2
+    ],
+    "c3_coordinates": [
+     2,
+     0,
+     1,
+     2,
+     2,
+     1
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 26,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "c3_coordinates": [
+     2,
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 27,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     0
+    ],
+    "c3_coordinates": [
+     2,
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 28,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "c3_coordinates": [
+     2,
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 29,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     2
+    ],
+    "c3_coordinates": [
+     2,
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": true
+   },
+   {
+    "mapping_index": 30,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     3
+    ],
+    "c3_coordinates": [
+     2,
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": true
+   },
+   {
+    "mapping_index": 31,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    "c3_coordinates": [
+     2,
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 32,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     0,
+     1
+    ],
+    "c3_coordinates": [
+     2,
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 33,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     0,
+     2
+    ],
+    "c3_coordinates": [
+     2,
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": true
+   },
+   {
+    "mapping_index": 34,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     0,
+     3
+    ],
+    "c3_coordinates": [
+     2,
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": true
+   },
+   {
+    "mapping_index": 35,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     0
+    ],
+    "c3_coordinates": [
+     2,
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 36,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    "c3_coordinates": [
+     2,
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 37,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     2
+    ],
+    "c3_coordinates": [
+     2,
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 38,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     3
+    ],
+    "c3_coordinates": [
+     2,
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 39,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     2,
+     0
+    ],
+    "c3_coordinates": [
+     2,
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": true
+   },
+   {
+    "mapping_index": 40,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     2,
+     1
+    ],
+    "c3_coordinates": [
+     2,
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 41,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     2,
+     2
+    ],
+    "c3_coordinates": [
+     2,
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 42,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     2,
+     3
+    ],
+    "c3_coordinates": [
+     2,
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": true
+   },
+   {
+    "mapping_index": 43,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     3,
+     0
+    ],
+    "c3_coordinates": [
+     2,
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": true
+   },
+   {
+    "mapping_index": 44,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     3,
+     1
+    ],
+    "c3_coordinates": [
+     2,
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 45,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     3,
+     2
+    ],
+    "c3_coordinates": [
+     2,
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": true
+   },
+   {
+    "mapping_index": 46,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     3,
+     3
+    ],
+    "c3_coordinates": [
+     2,
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "distinct_v4_tail": false
+   },
+   {
+    "mapping_index": 47,
+    "v4_coordinates": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     3
+    ],
+    "c3_coordinates": [
+     2,
+     2,
+     0,
+     1,
+     1,
+     2
+    ],
+    "distinct_v4_tail": false
+   }
+  ]
+ },
+ "twists": {
+  "c3_pair_counts": {
+   "0,0": 16,
+   "0,1": 4,
+   "0,2": 4,
+   "1,0": 4,
+   "1,1": 4,
+   "1,2": 4,
+   "2,0": 4,
+   "2,1": 4,
+   "2,2": 4
+  },
+  "rows": [
+   {
+    "twist_index": 0,
+    "elements": [
+     0,
+     0
+    ],
+    "v4_coordinates": [
+     0,
+     0
+    ],
+    "c3_coordinates": [
+     0,
+     0
+    ]
+   },
+   {
+    "twist_index": 1,
+    "elements": [
+     0,
+     1
+    ],
+    "v4_coordinates": [
+     0,
+     0
+    ],
+    "c3_coordinates": [
+     0,
+     1
+    ]
+   },
+   {
+    "twist_index": 2,
+    "elements": [
+     0,
+     2
+    ],
+    "v4_coordinates": [
+     0,
+     0
+    ],
+    "c3_coordinates": [
+     0,
+     2
+    ]
+   },
+   {
+    "twist_index": 3,
+    "elements": [
+     0,
+     3
+    ],
+    "v4_coordinates": [
+     0,
+     1
+    ],
+    "c3_coordinates": [
+     0,
+     0
+    ]
+   },
+   {
+    "twist_index": 4,
+    "elements": [
+     0,
+     4
+    ],
+    "v4_coordinates": [
+     0,
+     1
+    ],
+    "c3_coordinates": [
+     0,
+     2
+    ]
+   },
+   {
+    "twist_index": 5,
+    "elements": [
+     0,
+     5
+    ],
+    "v4_coordinates": [
+     0,
+     1
+    ],
+    "c3_coordinates": [
+     0,
+     1
+    ]
+   },
+   {
+    "twist_index": 6,
+    "elements": [
+     0,
+     6
+    ],
+    "v4_coordinates": [
+     0,
+     2
+    ],
+    "c3_coordinates": [
+     0,
+     1
+    ]
+   },
+   {
+    "twist_index": 7,
+    "elements": [
+     0,
+     7
+    ],
+    "v4_coordinates": [
+     0,
+     2
+    ],
+    "c3_coordinates": [
+     0,
+     2
+    ]
+   },
+   {
+    "twist_index": 8,
+    "elements": [
+     0,
+     8
+    ],
+    "v4_coordinates": [
+     0,
+     2
+    ],
+    "c3_coordinates": [
+     0,
+     0
+    ]
+   },
+   {
+    "twist_index": 9,
+    "elements": [
+     0,
+     9
+    ],
+    "v4_coordinates": [
+     0,
+     3
+    ],
+    "c3_coordinates": [
+     0,
+     2
+    ]
+   },
+   {
+    "twist_index": 10,
+    "elements": [
+     0,
+     10
+    ],
+    "v4_coordinates": [
+     0,
+     3
+    ],
+    "c3_coordinates": [
+     0,
+     1
+    ]
+   },
+   {
+    "twist_index": 11,
+    "elements": [
+     0,
+     11
+    ],
+    "v4_coordinates": [
+     0,
+     3
+    ],
+    "c3_coordinates": [
+     0,
+     0
+    ]
+   },
+   {
+    "twist_index": 12,
+    "elements": [
+     1,
+     0
+    ],
+    "v4_coordinates": [
+     0,
+     0
+    ],
+    "c3_coordinates": [
+     1,
+     0
+    ]
+   },
+   {
+    "twist_index": 13,
+    "elements": [
+     1,
+     1
+    ],
+    "v4_coordinates": [
+     0,
+     0
+    ],
+    "c3_coordinates": [
+     1,
+     1
+    ]
+   },
+   {
+    "twist_index": 14,
+    "elements": [
+     1,
+     2
+    ],
+    "v4_coordinates": [
+     0,
+     0
+    ],
+    "c3_coordinates": [
+     1,
+     2
+    ]
+   },
+   {
+    "twist_index": 15,
+    "elements": [
+     2,
+     0
+    ],
+    "v4_coordinates": [
+     0,
+     0
+    ],
+    "c3_coordinates": [
+     2,
+     0
+    ]
+   },
+   {
+    "twist_index": 16,
+    "elements": [
+     2,
+     1
+    ],
+    "v4_coordinates": [
+     0,
+     0
+    ],
+    "c3_coordinates": [
+     2,
+     1
+    ]
+   },
+   {
+    "twist_index": 17,
+    "elements": [
+     2,
+     2
+    ],
+    "v4_coordinates": [
+     0,
+     0
+    ],
+    "c3_coordinates": [
+     2,
+     2
+    ]
+   },
+   {
+    "twist_index": 18,
+    "elements": [
+     3,
+     0
+    ],
+    "v4_coordinates": [
+     1,
+     0
+    ],
+    "c3_coordinates": [
+     0,
+     0
+    ]
+   },
+   {
+    "twist_index": 19,
+    "elements": [
+     3,
+     3
+    ],
+    "v4_coordinates": [
+     1,
+     1
+    ],
+    "c3_coordinates": [
+     0,
+     0
+    ]
+   },
+   {
+    "twist_index": 20,
+    "elements": [
+     3,
+     8
+    ],
+    "v4_coordinates": [
+     1,
+     2
+    ],
+    "c3_coordinates": [
+     0,
+     0
+    ]
+   },
+   {
+    "twist_index": 21,
+    "elements": [
+     3,
+     11
+    ],
+    "v4_coordinates": [
+     1,
+     3
+    ],
+    "c3_coordinates": [
+     0,
+     0
+    ]
+   },
+   {
+    "twist_index": 22,
+    "elements": [
+     4,
+     0
+    ],
+    "v4_coordinates": [
+     1,
+     0
+    ],
+    "c3_coordinates": [
+     2,
+     0
+    ]
+   },
+   {
+    "twist_index": 23,
+    "elements": [
+     4,
+     4
+    ],
+    "v4_coordinates": [
+     1,
+     1
+    ],
+    "c3_coordinates": [
+     2,
+     2
+    ]
+   },
+   {
+    "twist_index": 24,
+    "elements": [
+     4,
+     6
+    ],
+    "v4_coordinates": [
+     1,
+     2
+    ],
+    "c3_coordinates": [
+     2,
+     1
+    ]
+   },
+   {
+    "twist_index": 25,
+    "elements": [
+     5,
+     0
+    ],
+    "v4_coordinates": [
+     1,
+     0
+    ],
+    "c3_coordinates": [
+     1,
+     0
+    ]
+   },
+   {
+    "twist_index": 26,
+    "elements": [
+     5,
+     5
+    ],
+    "v4_coordinates": [
+     1,
+     1
+    ],
+    "c3_coordinates": [
+     1,
+     1
+    ]
+   },
+   {
+    "twist_index": 27,
+    "elements": [
+     5,
+     9
+    ],
+    "v4_coordinates": [
+     1,
+     3
+    ],
+    "c3_coordinates": [
+     1,
+     2
+    ]
+   },
+   {
+    "twist_index": 28,
+    "elements": [
+     6,
+     0
+    ],
+    "v4_coordinates": [
+     2,
+     0
+    ],
+    "c3_coordinates": [
+     1,
+     0
+    ]
+   },
+   {
+    "twist_index": 29,
+    "elements": [
+     6,
+     4
+    ],
+    "v4_coordinates": [
+     2,
+     1
+    ],
+    "c3_coordinates": [
+     1,
+     2
+    ]
+   },
+   {
+    "twist_index": 30,
+    "elements": [
+     6,
+     6
+    ],
+    "v4_coordinates": [
+     2,
+     2
+    ],
+    "c3_coordinates": [
+     1,
+     1
+    ]
+   },
+   {
+    "twist_index": 31,
+    "elements": [
+     7,
+     0
+    ],
+    "v4_coordinates": [
+     2,
+     0
+    ],
+    "c3_coordinates": [
+     2,
+     0
+    ]
+   },
+   {
+    "twist_index": 32,
+    "elements": [
+     7,
+     7
+    ],
+    "v4_coordinates": [
+     2,
+     2
+    ],
+    "c3_coordinates": [
+     2,
+     2
+    ]
+   },
+   {
+    "twist_index": 33,
+    "elements": [
+     7,
+     10
+    ],
+    "v4_coordinates": [
+     2,
+     3
+    ],
+    "c3_coordinates": [
+     2,
+     1
+    ]
+   },
+   {
+    "twist_index": 34,
+    "elements": [
+     8,
+     0
+    ],
+    "v4_coordinates": [
+     2,
+     0
+    ],
+    "c3_coordinates": [
+     0,
+     0
+    ]
+   },
+   {
+    "twist_index": 35,
+    "elements": [
+     8,
+     3
+    ],
+    "v4_coordinates": [
+     2,
+     1
+    ],
+    "c3_coordinates": [
+     0,
+     0
+    ]
+   },
+   {
+    "twist_index": 36,
+    "elements": [
+     8,
+     8
+    ],
+    "v4_coordinates": [
+     2,
+     2
+    ],
+    "c3_coordinates": [
+     0,
+     0
+    ]
+   },
+   {
+    "twist_index": 37,
+    "elements": [
+     8,
+     11
+    ],
+    "v4_coordinates": [
+     2,
+     3
+    ],
+    "c3_coordinates": [
+     0,
+     0
+    ]
+   },
+   {
+    "twist_index": 38,
+    "elements": [
+     9,
+     0
+    ],
+    "v4_coordinates": [
+     3,
+     0
+    ],
+    "c3_coordinates": [
+     2,
+     0
+    ]
+   },
+   {
+    "twist_index": 39,
+    "elements": [
+     9,
+     5
+    ],
+    "v4_coordinates": [
+     3,
+     1
+    ],
+    "c3_coordinates": [
+     2,
+     1
+    ]
+   },
+   {
+    "twist_index": 40,
+    "elements": [
+     9,
+     9
+    ],
+    "v4_coordinates": [
+     3,
+     3
+    ],
+    "c3_coordinates": [
+     2,
+     2
+    ]
+   },
+   {
+    "twist_index": 41,
+    "elements": [
+     10,
+     0
+    ],
+    "v4_coordinates": [
+     3,
+     0
+    ],
+    "c3_coordinates": [
+     1,
+     0
+    ]
+   },
+   {
+    "twist_index": 42,
+    "elements": [
+     10,
+     7
+    ],
+    "v4_coordinates": [
+     3,
+     2
+    ],
+    "c3_coordinates": [
+     1,
+     2
+    ]
+   },
+   {
+    "twist_index": 43,
+    "elements": [
+     10,
+     10
+    ],
+    "v4_coordinates": [
+     3,
+     3
+    ],
+    "c3_coordinates": [
+     1,
+     1
+    ]
+   },
+   {
+    "twist_index": 44,
+    "elements": [
+     11,
+     0
+    ],
+    "v4_coordinates": [
+     3,
+     0
+    ],
+    "c3_coordinates": [
+     0,
+     0
+    ]
+   },
+   {
+    "twist_index": 45,
+    "elements": [
+     11,
+     3
+    ],
+    "v4_coordinates": [
+     3,
+     1
+    ],
+    "c3_coordinates": [
+     0,
+     0
+    ]
+   },
+   {
+    "twist_index": 46,
+    "elements": [
+     11,
+     8
+    ],
+    "v4_coordinates": [
+     3,
+     2
+    ],
+    "c3_coordinates": [
+     0,
+     0
+    ]
+   },
+   {
+    "twist_index": 47,
+    "elements": [
+     11,
+     11
+    ],
+    "v4_coordinates": [
+     3,
+     3
+    ],
+    "c3_coordinates": [
+     0,
+     0
+    ]
+   }
+  ]
+ },
+ "next_obligation": "derive from exact-cover topology and the factorized edge equations which HNF congruence classes force the distinct-V4-tail obstruction"
+}

@@ -5,6 +5,17 @@ the living roadmap in `docs/program/theory_research_plan.md` into stable
 theorem statements, proof drafts, certificate specifications, and a ledger of
 what has actually been established.
 
+> **Terminology correction (ERR-003/D-0048):** “finalist” in legacy theorem
+> IDs, prose, symbols, scripts, and artifact filenames means the published
+> ten-kite **Turtle**. These results are known-control and independent
+> certificate results, not evidence for a new monotile.
+>
+> **Literature-scope correction (ERR-004/D-0049):** the primary Hat paper's
+> Appendix A already reduces arbitrary periodic polykite tilings to aligned
+> periodic tilings. W4 is optional stronger rigidity/extension work, not a
+> missing bridge. The same audit places all `n≤24` polykites inside the
+> published classified horizon; see `docs/literature/POLYKITE_BASELINE.md`.
+
 ## Source-of-truth hierarchy
 
 1. `docs/program/theory_research_plan.md` is the living research roadmap.
@@ -25,7 +36,7 @@ reviewable proof or certificate.
 - `01_periodic_completion.md` — T0.1, the reduction from arbitrary
   translational periodicity to a rank-2 torus tiling.
 - `02_transfer_certificates.md` — T1.1 correctness proof and the
-  machine-verified T1.2-25 finalist bounded-norm theorem.
+  machine-verified T1.2-25 Turtle-control bounded-norm theorem.
 - `03_w2_invariants.md` — Layer A exact result, zero-false-exclusion gate,
   and T2.B0 showing why isolated nontrivial character blocks are vacuous.
 - `04_w2_cokernel.md` — quotient-wide modular cokernel certificates, the
@@ -35,7 +46,12 @@ reviewable proof or certificate.
 - `05_w2_binary_holonomy.md` — binary period-vector quotient families,
   the three-family thin D6 theorem, the Conway--Lagarias primary-source
   control, the binary-coupled torus-holonomy theorem, and the independently
-  certified complete finalist quotient prefix through index 40.
+  certified complete Turtle-control quotient prefix through index 60.
+- `06_w3_substitution_certificates.md` — the C1--C5 certificate contract,
+  Spectre's exact 17-state finite kernel, its recurrent rank-four geometry,
+  the ancestry-blind `166→30→21` physical-language prefix, its conditional
+  coordinated contraction to 18 types, and the remaining
+  legality/growth/recognizability/gluing obligations.
 - `W1_TRANSFER_SPEC.md` — the soundness/completeness contract for the exact
   cylinder transfer engine and its certificates.
 - `PROOF_LEDGER.md` — stable IDs, scope, status, dependencies, and artifacts.

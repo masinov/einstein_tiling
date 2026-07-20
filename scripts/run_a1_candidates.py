@@ -20,8 +20,11 @@ import tempfile
 from pathlib import Path
 
 from einstein.e1_candidates import (
+    PUBLISHED_APERIODIC_POLYKITE_HORIZON,
     SMALLEST_DEPTH3_KEYS,
+    aperiodic_discovery_status,
     decode_compiled_key,
+    known_polykite_name,
 )
 from einstein.funnel.a1_torus import verify_certificate
 
@@ -85,6 +88,8 @@ def main():
             ]
             by_key = {row["shape"]: row for row in rows}
             for index, key in enumerate(keys, 1):
+                known_name = known_polykite_name(key)
+                discovery_status = aperiodic_discovery_status(n, key)
                 certificate = by_key.get(key)
                 if certificate is not None:
                     certificate["kind"] = "torus-exact-cover"
@@ -101,6 +106,15 @@ def main():
                     "n": n,
                     "index": index,
                     "shape": key,
+                    "known_name": known_name,
+                    "novel_key": known_name is None,
+                    "published_aperiodic_horizon": (
+                        n <= PUBLISHED_APERIODIC_POLYKITE_HORIZON
+                    ),
+                    "aperiodic_discovery_status": discovery_status,
+                    # Backward-compatible field: novelty means publishable
+                    # aperiodic discovery eligibility, not merely a new key.
+                    "novel": discovery_status == "eligible",
                     "verdict": (
                         "periodic" if certificate is not None
                         else "no-periodic-at-budget"
@@ -111,6 +125,13 @@ def main():
 
     payload = {
         "kind": "extended-exact-torus-screen",
+        "literature_scope": {
+            "published_aperiodic_polykite_horizon": (
+                PUBLISHED_APERIODIC_POLYKITE_HORIZON
+            ),
+            "all_rows_are_validation_not_discovery": True,
+            "controlling_correction": "ERR-004/D-0049",
+        },
         "k_max": 21,
         "node_budget_per_torus": 5_000_000,
         "periodic": sum(

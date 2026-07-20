@@ -1,0 +1,231 @@
+{
+ "schema": "einstein.w3.spectre-colored-overlap",
+ "version": 1,
+ "status": "COLORED_RADIUS1_OVERLAP_LEAVES_A_FRONTIER",
+ "provenance": {
+  "control_source": "docs/notebook/assets/theory-w3-spectre-colored-interface.json",
+  "control_sha256": "81b131ed80796791444cb230d3a32ef0e0514a19c96f58177a315a24d2e90126",
+  "frontier_source": "docs/notebook/assets/theory-w3-spectre-colored-frontier.json",
+  "frontier_sha256": "f14363b913471356c39cc82a86b535377ea581aa2b45e5bb0295968f2e979767"
+ },
+ "alphabet": {
+  "combined_states": 22,
+  "generated_control_states": 17,
+  "generated_radius7_states": 17,
+  "extra_radius7_states": 5,
+  "control_equals_radius7_generated": true,
+  "generated_extra_intersection": 0,
+  "generated_occurrences": 51309,
+  "extra_occurrences": 6280
+ },
+ "reciprocal_edge_stage": {
+  "supported_states": 22,
+  "unsupported_state_ids": [],
+  "directed_domain_size_histogram": {
+   "1": 1,
+   "2": 15,
+   "3": 8,
+   "4": 30,
+   "5": 14,
+   "6": 14,
+   "8": 9,
+   "10": 6,
+   "11": 11,
+   "12": 24
+  }
+ },
+ "colored_parent_star_stage": {
+  "supported_states": 22,
+  "unsupported_state_ids": []
+ },
+ "fixed_point": {
+  "rounds": [],
+  "surviving_states": 22,
+  "surviving_generated_states": 17,
+  "surviving_extra_states": 5,
+  "surviving_extra_state_ids": [
+   "9a2f5cc008b829c4",
+   "8cc5bb20b019338f",
+   "0d3dd82f7245e04b",
+   "abfa256de22aa483",
+   "6ae4178c29817205"
+  ],
+  "removed_generated_state_ids": []
+ },
+ "transition_sccs": {
+  "component_count": 1,
+  "component_sizes": [
+   22
+  ],
+  "closed_component_count": 1,
+  "closed_component_sizes": [
+   22
+  ],
+  "components": [
+   {
+    "state_ids": [
+     "28c11d600420a782",
+     "5ec01e4d67c5d75a",
+     "2892b04e9daa6268",
+     "9a2f5cc008b829c4",
+     "d09205848cf6d09c",
+     "3a205eecd08e174d",
+     "aab79b97f7589bf4",
+     "76a1109524de7d2c",
+     "8cc5bb20b019338f",
+     "40a335425a0143c8",
+     "2198057548728b2b",
+     "0009694efd15e5e7",
+     "0d3dd82f7245e04b",
+     "2f3a9ea02c28cb68",
+     "afce7bc239d20246",
+     "d2ba90c8c4b50049",
+     "abfa256de22aa483",
+     "615882786d5c9ffb",
+     "9f8dd2cbed49a692",
+     "a2093f601167dd86",
+     "91e8f6b31b2f837e",
+     "6ae4178c29817205"
+    ],
+    "generated_states": 17,
+    "extra_states": 5,
+    "closed": true
+   }
+  ]
+ },
+ "state_index": [
+  {
+   "id": "28c11d600420a782",
+   "kind": "full",
+   "source": "generated",
+   "radius7_occurrences": 584
+  },
+  {
+   "id": "5ec01e4d67c5d75a",
+   "kind": "full",
+   "source": "generated",
+   "radius7_occurrences": 1626
+  },
+  {
+   "id": "2892b04e9daa6268",
+   "kind": "full",
+   "source": "generated",
+   "radius7_occurrences": 430
+  },
+  {
+   "id": "9a2f5cc008b829c4",
+   "kind": "full",
+   "source": "extra",
+   "radius7_occurrences": 3103
+  },
+  {
+   "id": "d09205848cf6d09c",
+   "kind": "full",
+   "source": "generated",
+   "radius7_occurrences": 19748
+  },
+  {
+   "id": "3a205eecd08e174d",
+   "kind": "full",
+   "source": "generated",
+   "radius7_occurrences": 1966
+  },
+  {
+   "id": "aab79b97f7589bf4",
+   "kind": "full",
+   "source": "generated",
+   "radius7_occurrences": 15146
+  },
+  {
+   "id": "76a1109524de7d2c",
+   "kind": "full",
+   "source": "generated",
+   "radius7_occurrences": 172
+  },
+  {
+   "id": "8cc5bb20b019338f",
+   "kind": "full",
+   "source": "extra",
+   "radius7_occurrences": 144
+  },
+  {
+   "id": "40a335425a0143c8",
+   "kind": "full",
+   "source": "generated",
+   "radius7_occurrences": 188
+  },
+  {
+   "id": "2198057548728b2b",
+   "kind": "full",
+   "source": "generated",
+   "radius7_occurrences": 1410
+  },
+  {
+   "id": "0009694efd15e5e7",
+   "kind": "full",
+   "source": "generated",
+   "radius7_occurrences": 2228
+  },
+  {
+   "id": "0d3dd82f7245e04b",
+   "kind": "full",
+   "source": "extra",
+   "radius7_occurrences": 98
+  },
+  {
+   "id": "2f3a9ea02c28cb68",
+   "kind": "full",
+   "source": "generated",
+   "radius7_occurrences": 708
+  },
+  {
+   "id": "afce7bc239d20246",
+   "kind": "full",
+   "source": "generated",
+   "radius7_occurrences": 844
+  },
+  {
+   "id": "d2ba90c8c4b50049",
+   "kind": "full",
+   "source": "generated",
+   "radius7_occurrences": 72
+  },
+  {
+   "id": "abfa256de22aa483",
+   "kind": "full",
+   "source": "extra",
+   "radius7_occurrences": 69
+  },
+  {
+   "id": "615882786d5c9ffb",
+   "kind": "full",
+   "source": "generated",
+   "radius7_occurrences": 952
+  },
+  {
+   "id": "9f8dd2cbed49a692",
+   "kind": "full",
+   "source": "generated",
+   "radius7_occurrences": 304
+  },
+  {
+   "id": "a2093f601167dd86",
+   "kind": "missing",
+   "source": "generated",
+   "radius7_occurrences": 4601
+  },
+  {
+   "id": "91e8f6b31b2f837e",
+   "kind": "missing",
+   "source": "generated",
+   "radius7_occurrences": 330
+  },
+  {
+   "id": "6ae4178c29817205",
+   "kind": "missing",
+   "source": "extra",
+   "radius7_occurrences": 2866
+  }
+ ],
+ "claim_boundary": "fixed-point deletion is a rigorous necessary-condition test on the complete radius-seven colored parent alphabet; a surviving state is not by itself globally realizable"
+}

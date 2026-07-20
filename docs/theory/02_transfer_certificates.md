@@ -1,5 +1,8 @@
 # T1.1–T1.2 — exact cylinder transfer certificates
 
+> “Finalist” in legacy IDs/artifacts means the known Turtle (ERR-003/D-0048).
+> The finite theorems remain valid as independent Turtle-control results.
+
 ## Fixed-vector theorem
 
 Let (T) be a finite grid-aligned polykite and let (v\in\Lambda\setminus
@@ -85,8 +88,12 @@ including all nonprimitive vectors. The artifact
 independently verified cycle-free certificate for every orbit representative.
 There were no resource exhaustions.
 
-This theorem does not prove aperiodicity: vectors with (Q(v)>25) remain. It
-also has grid-aligned scope; W4 is required for arbitrary Euclidean placements.
+This theorem does not prove aperiodicity: vectors with (Q(v)>25) remain. Its
+native computation is grid-aligned. For polykites, no new W4 theorem is needed
+to promote a *complete* aligned periodicity obstruction: the external
+Appendix-A alignment theorem (ledger X0.1) says any arbitrary periodic tiling
+would have an aligned periodic counterpart. The finite norm bound here is the
+remaining reason this particular result is partial.
 
 ### Certified extension through Q=36
 

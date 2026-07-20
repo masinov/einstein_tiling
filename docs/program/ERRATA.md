@@ -27,3 +27,71 @@ reported feature is the largest preserved core (and the discarded collar
 depth), not merely the largest independently coverable circle. A complete
 finite crown being non-extendable does not refute the tile; it refutes that
 particular finite patch as a fragment of an infinite tiling.
+
+## ERR-003 (2026-07-20) — The n=10 “finalist” is the known Turtle (§8 E1)
+
+The shape historically promoted as “n=10 candidate 2” or the “E1 finalist,”
+with compiled key
+`010001010104010502f002f1030b030c04fa04fb`, is **exactly the Turtle** of
+Smith--Myers--Kaplan--Goodman-Strauss, up to the canonical translation and
+dihedral normalization already used by the enumerator. It is not a new shape.
+
+This was checked without visual judgement. The primary paper's exact
+`rawtileB` outline (arXiv:2303.10798 source, `00_macros.tex`) contains ten kite
+cells; applying this repository's `cells_in_polygon` and `canonical_form`
+produces the finalist key byte-for-byte. The identity is pinned by
+`tests/test_turtle.py` and registered in `src/einstein/e1_candidates.py`.
+
+The error was in promotion-time known-shape deduplication, not enumeration or
+certificate verification. E1's specification explicitly expected the blind
+funnel to surface both Hat and Turtle. The disk, diffraction, transfer,
+cokernel, holonomy, and packing artifacts remain valid finite computations,
+but their subject is now a **known aperiodic Turtle control**. Legacy filenames
+containing `finalist` are retained for reproducibility and must be read as
+aliases for Turtle.
+
+Tilability and nonperiodicity are already established externally. In
+particular, arXiv:2403.01911 gives a recursive Bricks-and-Mortar construction
+and an Ammann-bar contradiction: periodicity would force rational `k/n` to
+satisfy `q(1-q)=1/5`, hence `q=(5±sqrt(5))/10`. Internal W1--W3 work may seek
+independent finite certificates for those known facts, but it is no longer a
+proof obligation for a new-einstein claim. Novelty promotion must henceforth
+classify every canonical key against the registered known-polykite anchors
+before assigning candidate status.
+
+## ERR-004 (2026-07-20) — E2 is not beyond the known polykite horizon (§8)
+
+The program calls E2's `n≈22--24` polykite sweep “beyond the known horizon.”
+That is false. Smith--Myers--Kaplan--Goodman-Strauss, *An aperiodic
+monotile*, Section 6, explicitly report an exhaustive computer search with no
+aperiodic `n`-kites other than Hat and Turtle for **`n≤24`**. This supersedes
+ERR-001's statement that the original E2 horizon remained sensible.
+
+The same section completely classifies the positive `Tile(a,b)` continuum:
+every positive unequal pair is aperiodic and combinatorially equivalent to
+Hat tilings; the three exceptional similarity classes `a=0`, `b=0`, and
+`a=b` admit periodic tilings. It also identifies infinitely many polykites in
+that continuum, namely `Tile(1,k√3)` and `Tile(k√3,1)` for every positive odd
+integer `k`. Therefore named Hat/Turtle key comparison alone is not a
+complete prior-art check even above `n=24`.
+
+Appendix A also proves the periodic-alignment reduction the theory plan had
+assigned to W4: if a polykite admits a periodic tiling under arbitrary
+Euclidean placements, it admits a grid-aligned periodic tiling (Lemmas A.1,
+A.3, A.5). Lemma A.6 proves the stronger statement that every Hat tiling is
+aligned. W4 may still investigate stronger all-tilings rigidity or other
+substrates, but it is not a missing bridge for polykite periodicity.
+
+Consequences:
+
+- E1 remains a validation experiment; none of its `n≤16` shapes can be a new
+  aperiodic polykite under the published classification.
+- E2, as frozen, is invalidated before launch and must be redesigned. Merely
+  moving to `n=25` is not an adequate research justification: Kaplan's 2025
+  review reports a later search of roughly 500 billion polykites with no
+  other unusual behavior.
+- New-polykite promotion is fail-closed pending both the finite-horizon check
+  and recognition of the infinite polykite part of `Tile(a,b)`.
+
+The controlling claim matrix and source tiers are recorded in
+`docs/literature/POLYKITE_BASELINE.md`.

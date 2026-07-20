@@ -1,0 +1,117 @@
+{
+ "schema": "einstein.w3.spectre-defect-propagation",
+ "version": 1,
+ "status": "LOCAL_DEFECT_SPLIT_ONE_ABSORBABLE_TWO_PROPAGATING",
+ "provenance": {
+  "control_source": "docs/notebook/assets/theory-w3-spectre-colored-interface.json",
+  "control_sha256": "81b131ed80796791444cb230d3a32ef0e0514a19c96f58177a315a24d2e90126",
+  "two_sided_source": "docs/notebook/assets/theory-w3-spectre-two-sided-overlap.json",
+  "two_sided_sha256": "732207682463772cc52650d0b69055db4a7e11225b5b1f8c092878ca0800e973"
+ },
+ "analysis": {
+  "generated_states": 17,
+  "extra_states": 3,
+  "locally_absorbable_extra_states": 1,
+  "locally_propagating_extra_states": 2,
+  "states": [
+   {
+    "state_id": "288091b49587a4b2",
+    "kind": "full",
+    "minimum_extra_neighbors": 1,
+    "generated_only_star": false,
+    "minimum_witness": [
+     {
+      "state_id": "7389fa7fee6c04c2",
+      "source": "generated"
+     },
+     {
+      "state_id": "b8febe26439cd826",
+      "source": "generated"
+     },
+     {
+      "state_id": "d8f2d250ad08715d",
+      "source": "generated"
+     },
+     {
+      "state_id": "6fcab283c7bf89b0",
+      "source": "generated"
+     },
+     {
+      "state_id": "d19ae9b40b6c9036",
+      "source": "generated"
+     },
+     {
+      "state_id": "2f1d7f0fac5b9704",
+      "source": "extra"
+     }
+    ]
+   },
+   {
+    "state_id": "2fb5d0cf9a68ffe2",
+    "kind": "full",
+    "minimum_extra_neighbors": 0,
+    "generated_only_star": true,
+    "minimum_witness": [
+     {
+      "state_id": "d8f2d250ad08715d",
+      "source": "generated"
+     },
+     {
+      "state_id": "a66ae6a7e82b1217",
+      "source": "generated"
+     },
+     {
+      "state_id": "376da12ee0050076",
+      "source": "generated"
+     },
+     {
+      "state_id": "7022d0a169d268a6",
+      "source": "generated"
+     },
+     {
+      "state_id": "d19ae9b40b6c9036",
+      "source": "generated"
+     },
+     {
+      "state_id": "2886016038854b90",
+      "source": "generated"
+     }
+    ]
+   },
+   {
+    "state_id": "2f1d7f0fac5b9704",
+    "kind": "full",
+    "minimum_extra_neighbors": 1,
+    "generated_only_star": false,
+    "minimum_witness": [
+     {
+      "state_id": "288091b49587a4b2",
+      "source": "extra"
+     },
+     {
+      "state_id": "7389fa7fee6c04c2",
+      "source": "generated"
+     },
+     {
+      "state_id": "7389fa7fee6c04c2",
+      "source": "generated"
+     },
+     {
+      "state_id": "a0a367681af859b0",
+      "source": "generated"
+     },
+     {
+      "state_id": "90a8964c33054d56",
+      "source": "generated"
+     },
+     {
+      "state_id": "d8f2d250ad08715d",
+      "source": "generated"
+     }
+    ]
+   }
+  ]
+ },
+ "claim_boundary": "minimum cost is exact for one colored parent star; an absorbable star need not extend globally, while positive cost proves only that the defect cannot terminate at that single parent",
+ "next_experiment": "pin each extra at the root of a radius-two parent-state CSP and minimize extra states on the outer parent ring"
+}

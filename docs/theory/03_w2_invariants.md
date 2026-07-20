@@ -1,5 +1,7 @@
 # W2 exact invariants — Layer A result and Layer B correction
 
+> “Finalist” in legacy IDs/artifacts means the known Turtle (ERR-003/D-0048).
+
 ## T2.A — area and sector-count obstructions
 
 For an index-(k) quotient of the center lattice, the torus contains exactly

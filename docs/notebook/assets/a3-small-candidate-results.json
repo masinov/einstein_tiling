@@ -1,5 +1,10 @@
 {
  "kind": "pose-free-a3-candidate-ladder",
+ "literature_scope": {
+  "published_aperiodic_polykite_horizon": 24,
+  "all_rows_are_validation_not_discovery": true,
+  "controlling_correction": "ERR-004/D-0049"
+ },
  "radii": [
   200,
   800,
@@ -308,6 +313,8 @@
    "n": 10,
    "index": 2,
    "shape": "010001010104010502f002f1030b030c04fa04fb",
+   "known_name": "turtle",
+   "novel": false,
    "ladder": [
     {
      "r2": 200,

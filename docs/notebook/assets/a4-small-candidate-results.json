@@ -1,5 +1,10 @@
 {
  "kind": "matched-null-two-scale-a4-candidate-screen",
+ "literature_scope": {
+  "published_aperiodic_polykite_horizon": 24,
+  "all_rows_are_validation_not_discovery": true,
+  "controlling_correction": "ERR-004/D-0049"
+ },
  "screen_grid": 1024,
  "confirm_grid": 2048,
  "crop_r2": 3200,
@@ -8,6 +13,8 @@
    "n": 10,
    "index": 2,
    "shape": "010001010104010502f002f1030b030c04fa04fb",
+   "known_name": "turtle",
+   "novel": false,
    "patch_r2": 12800,
    "patch_tiles": 2404,
    "crop_classes": [

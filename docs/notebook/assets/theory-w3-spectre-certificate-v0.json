@@ -1,0 +1,4525 @@
+{
+ "schema": "einstein.w3.substitution-certificate",
+ "version": 2,
+ "status": "VALID_PARTIAL_CERTIFICATE",
+ "subject": "Spectre / Tile(1,1) recovered 17-state hierarchy",
+ "scope": {
+  "claim_domain": "all whole-plane tilings by undeformed Tile(1,1) under the declared motion convention",
+  "allowed_isometries": [
+   "translation",
+   "rotation"
+  ],
+  "reflections_allowed": false,
+  "formal_all_tilings_language_encoded": true,
+  "current_evidence_domain": "the unrestricted fixed-chirality polygonal hull reduces to the exact 14-segment model, enters L18 by ancestry-free radius-five exclusion, has a unique parent partition, and closes under contraction to the 17 generated states"
+ },
+ "provenance": {
+  "source": "docs/notebook/assets/a6-spectre-results.json",
+  "sha256": "42b67a5a6e80b63471073aae77698bfff64dc063b47cad4108ba214ef961193b",
+  "geometry_source": "vendor/spectre/spectre-core/src/tables.rs",
+  "geometry_sha256": "53b814b56bcb09f564c5b31ec76dcc26e467a6d9ac28cba7ddfb9d185a2c920e",
+  "physical_language_source": "docs/notebook/assets/theory-w3-spectre-physical-language.json",
+  "physical_language_sha256": "28a28010dc85d944d100be80f9c4de9b50a3c8b781bad4e0f5bd61bed70227ff",
+  "parent_overlap_source": "docs/notebook/assets/theory-w3-spectre-parent-overlap.json",
+  "parent_overlap_sha256": "65a6bfe8302f724ef6c4e1802f41307b99fb5e59af368a3fb3371b6123960483",
+  "component_language_source": "docs/notebook/assets/theory-w3-spectre-component-language.json",
+  "component_language_sha256": "82f693dc70f6580d861078075d618ab8e8c9cd0bfd2f32c77768de8aac02442a",
+  "radius3_closure_source": "docs/notebook/assets/theory-w3-spectre-radius3-defect.json",
+  "radius3_closure_sha256": "5484790d73940f06ce2ee533753742cf40da543da5024bf0ecda9c4095dee482",
+  "d1_entry_source": "docs/notebook/assets/theory-w3-spectre-d1-entry.json",
+  "d1_entry_sha256": "60d2e4cd78a301ebba2f75c0e671afeabe745dd3dd84245c7b368f44aeef49d1",
+  "edge_patch_bridge_source": "docs/notebook/assets/theory-w3-spectre-edge-patch-bridge.json",
+  "edge_patch_bridge_sha256": "bc656205e22a7c4c04c4a23ac84b25b91a2495f92c0b10c8c239eeeb8649ada6",
+  "d4_equivalence_source": "docs/notebook/assets/theory-w3-spectre-d4-equivalence.json",
+  "d4_equivalence_sha256": "a019bef5f2b694ace51cd4b19f77d550e8e069ea0cd5a524be6cac863a8dcac3"
+ },
+ "substitution": {
+  "alphabet": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16
+  ],
+  "rules": [
+   {
+    "parent": 0,
+    "children": [
+     {
+      "pose": [
+       0,
+       0,
+       [
+        -8,
+        -4,
+        -2,
+        -4
+       ]
+      ],
+      "state": 15
+     },
+     {
+      "pose": [
+       0,
+       0,
+       [
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "state": 11
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -7,
+        -5,
+        2,
+        1
+       ]
+      ],
+      "state": 4
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -5,
+        -6,
+        7,
+        6
+       ]
+      ],
+      "state": 2
+     },
+     {
+      "pose": [
+       0,
+       4,
+       [
+        -14,
+        -11,
+        4,
+        1
+       ]
+      ],
+      "state": 13
+     },
+     {
+      "pose": [
+       0,
+       8,
+       [
+        -4,
+        -1,
+        -10,
+        -10
+       ]
+      ],
+      "state": 9
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        -2,
+        0,
+        -5,
+        -6
+       ]
+      ],
+      "state": 3
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        3,
+        5,
+        -12,
+        -10
+       ]
+      ],
+      "state": 1
+     }
+    ]
+   },
+   {
+    "parent": 1,
+    "children": [
+     {
+      "pose": [
+       0,
+       0,
+       [
+        -8,
+        -4,
+        -2,
+        -4
+       ]
+      ],
+      "state": 15
+     },
+     {
+      "pose": [
+       0,
+       0,
+       [
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "state": 11
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -7,
+        -5,
+        2,
+        1
+       ]
+      ],
+      "state": 4
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -5,
+        -6,
+        7,
+        6
+       ]
+      ],
+      "state": 1
+     },
+     {
+      "pose": [
+       0,
+       4,
+       [
+        -14,
+        -11,
+        4,
+        1
+       ]
+      ],
+      "state": 13
+     },
+     {
+      "pose": [
+       0,
+       8,
+       [
+        -4,
+        -1,
+        -10,
+        -10
+       ]
+      ],
+      "state": 9
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        -2,
+        0,
+        -5,
+        -6
+       ]
+      ],
+      "state": 3
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        3,
+        5,
+        -12,
+        -10
+       ]
+      ],
+      "state": 1
+     }
+    ]
+   },
+   {
+    "parent": 2,
+    "children": [
+     {
+      "pose": [
+       0,
+       0,
+       [
+        -8,
+        -4,
+        -2,
+        -4
+       ]
+      ],
+      "state": 15
+     },
+     {
+      "pose": [
+       0,
+       0,
+       [
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "state": 10
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -7,
+        -5,
+        2,
+        1
+       ]
+      ],
+      "state": 4
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -5,
+        -6,
+        7,
+        6
+       ]
+      ],
+      "state": 0
+     },
+     {
+      "pose": [
+       0,
+       4,
+       [
+        -14,
+        -11,
+        4,
+        1
+       ]
+      ],
+      "state": 13
+     },
+     {
+      "pose": [
+       0,
+       8,
+       [
+        -4,
+        -1,
+        -10,
+        -10
+       ]
+      ],
+      "state": 9
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        -2,
+        0,
+        -5,
+        -6
+       ]
+      ],
+      "state": 3
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        3,
+        5,
+        -12,
+        -10
+       ]
+      ],
+      "state": 1
+     }
+    ]
+   },
+   {
+    "parent": 3,
+    "children": [
+     {
+      "pose": [
+       0,
+       0,
+       [
+        -8,
+        -4,
+        -2,
+        -4
+       ]
+      ],
+      "state": 16
+     },
+     {
+      "pose": [
+       0,
+       0,
+       [
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "state": 11
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -7,
+        -5,
+        2,
+        1
+       ]
+      ],
+      "state": 4
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -5,
+        -6,
+        7,
+        6
+       ]
+      ],
+      "state": 2
+     },
+     {
+      "pose": [
+       0,
+       4,
+       [
+        -14,
+        -11,
+        4,
+        1
+       ]
+      ],
+      "state": 14
+     },
+     {
+      "pose": [
+       0,
+       8,
+       [
+        -4,
+        -1,
+        -10,
+        -10
+       ]
+      ],
+      "state": 5
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        -2,
+        0,
+        -5,
+        -6
+       ]
+      ],
+      "state": 3
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        3,
+        5,
+        -12,
+        -10
+       ]
+      ],
+      "state": 0
+     }
+    ]
+   },
+   {
+    "parent": 4,
+    "children": [
+     {
+      "pose": [
+       0,
+       0,
+       [
+        -8,
+        -4,
+        -2,
+        -4
+       ]
+      ],
+      "state": 15
+     },
+     {
+      "pose": [
+       0,
+       0,
+       [
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "state": 11
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -7,
+        -5,
+        2,
+        1
+       ]
+      ],
+      "state": 4
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -5,
+        -6,
+        7,
+        6
+       ]
+      ],
+      "state": 2
+     },
+     {
+      "pose": [
+       0,
+       4,
+       [
+        -14,
+        -11,
+        4,
+        1
+       ]
+      ],
+      "state": 14
+     },
+     {
+      "pose": [
+       0,
+       8,
+       [
+        -4,
+        -1,
+        -10,
+        -10
+       ]
+      ],
+      "state": 8
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        -2,
+        0,
+        -5,
+        -6
+       ]
+      ],
+      "state": 3
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        3,
+        5,
+        -12,
+        -10
+       ]
+      ],
+      "state": 0
+     }
+    ]
+   },
+   {
+    "parent": 5,
+    "children": [
+     {
+      "pose": [
+       0,
+       0,
+       [
+        -8,
+        -4,
+        -2,
+        -4
+       ]
+      ],
+      "state": 15
+     },
+     {
+      "pose": [
+       0,
+       0,
+       [
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "state": 11
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -7,
+        -5,
+        2,
+        1
+       ]
+      ],
+      "state": 4
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -5,
+        -6,
+        7,
+        6
+       ]
+      ],
+      "state": 2
+     },
+     {
+      "pose": [
+       0,
+       4,
+       [
+        -14,
+        -11,
+        4,
+        1
+       ]
+      ],
+      "state": 13
+     },
+     {
+      "pose": [
+       0,
+       8,
+       [
+        -4,
+        -1,
+        -10,
+        -10
+       ]
+      ],
+      "state": 8
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        -2,
+        0,
+        -5,
+        -6
+       ]
+      ],
+      "state": 3
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        3,
+        5,
+        -12,
+        -10
+       ]
+      ],
+      "state": 0
+     }
+    ]
+   },
+   {
+    "parent": 6,
+    "children": [
+     {
+      "pose": [
+       0,
+       0,
+       [
+        -8,
+        -4,
+        -2,
+        -4
+       ]
+      ],
+      "state": 15
+     },
+     {
+      "pose": [
+       0,
+       0,
+       [
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "state": 11
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -7,
+        -5,
+        2,
+        1
+       ]
+      ],
+      "state": 4
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -5,
+        -6,
+        7,
+        6
+       ]
+      ],
+      "state": 2
+     },
+     {
+      "pose": [
+       0,
+       4,
+       [
+        -14,
+        -11,
+        4,
+        1
+       ]
+      ],
+      "state": 14
+     },
+     {
+      "pose": [
+       0,
+       8,
+       [
+        -4,
+        -1,
+        -10,
+        -10
+       ]
+      ],
+      "state": 8
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        -2,
+        0,
+        -5,
+        -6
+       ]
+      ],
+      "state": 3
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        3,
+        5,
+        -12,
+        -10
+       ]
+      ],
+      "state": 0
+     }
+    ]
+   },
+   {
+    "parent": 7,
+    "children": [
+     {
+      "pose": [
+       0,
+       0,
+       [
+        -8,
+        -4,
+        -2,
+        -4
+       ]
+      ],
+      "state": 15
+     },
+     {
+      "pose": [
+       0,
+       0,
+       [
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "state": 11
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -7,
+        -5,
+        2,
+        1
+       ]
+      ],
+      "state": 4
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -5,
+        -6,
+        7,
+        6
+       ]
+      ],
+      "state": 2
+     },
+     {
+      "pose": [
+       0,
+       4,
+       [
+        -14,
+        -11,
+        4,
+        1
+       ]
+      ],
+      "state": 13
+     },
+     {
+      "pose": [
+       0,
+       8,
+       [
+        -4,
+        -1,
+        -10,
+        -10
+       ]
+      ],
+      "state": 9
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        -2,
+        0,
+        -5,
+        -6
+       ]
+      ],
+      "state": 3
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        3,
+        5,
+        -12,
+        -10
+       ]
+      ],
+      "state": 1
+     }
+    ]
+   },
+   {
+    "parent": 8,
+    "children": [
+     {
+      "pose": [
+       0,
+       0,
+       [
+        -8,
+        -4,
+        -2,
+        -4
+       ]
+      ],
+      "state": 15
+     },
+     {
+      "pose": [
+       0,
+       0,
+       [
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "state": 11
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -7,
+        -5,
+        2,
+        1
+       ]
+      ],
+      "state": 4
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -5,
+        -6,
+        7,
+        6
+       ]
+      ],
+      "state": 1
+     },
+     {
+      "pose": [
+       0,
+       4,
+       [
+        -14,
+        -11,
+        4,
+        1
+       ]
+      ],
+      "state": 13
+     },
+     {
+      "pose": [
+       0,
+       8,
+       [
+        -4,
+        -1,
+        -10,
+        -10
+       ]
+      ],
+      "state": 8
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        -2,
+        0,
+        -5,
+        -6
+       ]
+      ],
+      "state": 3
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        3,
+        5,
+        -12,
+        -10
+       ]
+      ],
+      "state": 0
+     }
+    ]
+   },
+   {
+    "parent": 9,
+    "children": [
+     {
+      "pose": [
+       0,
+       0,
+       [
+        -8,
+        -4,
+        -2,
+        -4
+       ]
+      ],
+      "state": 15
+     },
+     {
+      "pose": [
+       0,
+       0,
+       [
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "state": 11
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -7,
+        -5,
+        2,
+        1
+       ]
+      ],
+      "state": 4
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -5,
+        -6,
+        7,
+        6
+       ]
+      ],
+      "state": 1
+     },
+     {
+      "pose": [
+       0,
+       4,
+       [
+        -14,
+        -11,
+        4,
+        1
+       ]
+      ],
+      "state": 13
+     },
+     {
+      "pose": [
+       0,
+       8,
+       [
+        -4,
+        -1,
+        -10,
+        -10
+       ]
+      ],
+      "state": 8
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        -2,
+        0,
+        -5,
+        -6
+       ]
+      ],
+      "state": 3
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        3,
+        5,
+        -12,
+        -10
+       ]
+      ],
+      "state": 0
+     }
+    ]
+   },
+   {
+    "parent": 10,
+    "children": [
+     {
+      "pose": [
+       0,
+       0,
+       [
+        -8,
+        -4,
+        -2,
+        -4
+       ]
+      ],
+      "state": 15
+     },
+     {
+      "pose": [
+       0,
+       0,
+       [
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "state": 11
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -7,
+        -5,
+        2,
+        1
+       ]
+      ],
+      "state": 4
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -5,
+        -6,
+        7,
+        6
+       ]
+      ],
+      "state": 1
+     },
+     {
+      "pose": [
+       0,
+       4,
+       [
+        -14,
+        -11,
+        4,
+        1
+       ]
+      ],
+      "state": 13
+     },
+     {
+      "pose": [
+       0,
+       8,
+       [
+        -4,
+        -1,
+        -10,
+        -10
+       ]
+      ],
+      "state": 8
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        -2,
+        0,
+        -5,
+        -6
+       ]
+      ],
+      "state": 3
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        3,
+        5,
+        -12,
+        -10
+       ]
+      ],
+      "state": 0
+     }
+    ]
+   },
+   {
+    "parent": 11,
+    "children": [
+     {
+      "pose": [
+       0,
+       0,
+       [
+        -8,
+        -4,
+        -2,
+        -4
+       ]
+      ],
+      "state": 15
+     },
+     {
+      "pose": [
+       0,
+       0,
+       [
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "state": 11
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -7,
+        -5,
+        2,
+        1
+       ]
+      ],
+      "state": 4
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -5,
+        -6,
+        7,
+        6
+       ]
+      ],
+      "state": 1
+     },
+     {
+      "pose": [
+       0,
+       4,
+       [
+        -14,
+        -11,
+        4,
+        1
+       ]
+      ],
+      "state": 13
+     },
+     {
+      "pose": [
+       0,
+       8,
+       [
+        -4,
+        -1,
+        -10,
+        -10
+       ]
+      ],
+      "state": 8
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        -2,
+        0,
+        -5,
+        -6
+       ]
+      ],
+      "state": 3
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        3,
+        5,
+        -12,
+        -10
+       ]
+      ],
+      "state": 0
+     }
+    ]
+   },
+   {
+    "parent": 12,
+    "children": [
+     {
+      "pose": [
+       0,
+       0,
+       [
+        -8,
+        -4,
+        -2,
+        -4
+       ]
+      ],
+      "state": 15
+     },
+     {
+      "pose": [
+       0,
+       0,
+       [
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "state": 10
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -7,
+        -5,
+        2,
+        1
+       ]
+      ],
+      "state": 4
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -5,
+        -6,
+        7,
+        6
+       ]
+      ],
+      "state": 0
+     },
+     {
+      "pose": [
+       0,
+       4,
+       [
+        -14,
+        -11,
+        4,
+        1
+       ]
+      ],
+      "state": 13
+     },
+     {
+      "pose": [
+       0,
+       8,
+       [
+        -4,
+        -1,
+        -10,
+        -10
+       ]
+      ],
+      "state": 8
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        -2,
+        0,
+        -5,
+        -6
+       ]
+      ],
+      "state": 3
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        3,
+        5,
+        -12,
+        -10
+       ]
+      ],
+      "state": 0
+     }
+    ]
+   },
+   {
+    "parent": 13,
+    "children": [
+     {
+      "pose": [
+       0,
+       0,
+       [
+        -8,
+        -4,
+        -2,
+        -4
+       ]
+      ],
+      "state": 15
+     },
+     {
+      "pose": [
+       0,
+       0,
+       [
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "state": 11
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -7,
+        -5,
+        2,
+        1
+       ]
+      ],
+      "state": 4
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -5,
+        -6,
+        7,
+        6
+       ]
+      ],
+      "state": 1
+     },
+     {
+      "pose": [
+       0,
+       4,
+       [
+        -14,
+        -11,
+        4,
+        1
+       ]
+      ],
+      "state": 13
+     },
+     {
+      "pose": [
+       0,
+       8,
+       [
+        -4,
+        -1,
+        -10,
+        -10
+       ]
+      ],
+      "state": 9
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        -2,
+        0,
+        -5,
+        -6
+       ]
+      ],
+      "state": 3
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        3,
+        5,
+        -12,
+        -10
+       ]
+      ],
+      "state": 1
+     }
+    ]
+   },
+   {
+    "parent": 14,
+    "children": [
+     {
+      "pose": [
+       0,
+       0,
+       [
+        -8,
+        -4,
+        -2,
+        -4
+       ]
+      ],
+      "state": 15
+     },
+     {
+      "pose": [
+       0,
+       0,
+       [
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "state": 10
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -7,
+        -5,
+        2,
+        1
+       ]
+      ],
+      "state": 4
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -5,
+        -6,
+        7,
+        6
+       ]
+      ],
+      "state": 0
+     },
+     {
+      "pose": [
+       0,
+       4,
+       [
+        -14,
+        -11,
+        4,
+        1
+       ]
+      ],
+      "state": 13
+     },
+     {
+      "pose": [
+       0,
+       8,
+       [
+        -4,
+        -1,
+        -10,
+        -10
+       ]
+      ],
+      "state": 9
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        -2,
+        0,
+        -5,
+        -6
+       ]
+      ],
+      "state": 3
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        3,
+        5,
+        -12,
+        -10
+       ]
+      ],
+      "state": 1
+     }
+    ]
+   },
+   {
+    "parent": 15,
+    "children": [
+     {
+      "pose": [
+       0,
+       0,
+       [
+        -8,
+        -4,
+        -2,
+        -4
+       ]
+      ],
+      "state": 15
+     },
+     {
+      "pose": [
+       0,
+       0,
+       [
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "state": 12
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -7,
+        -5,
+        2,
+        1
+       ]
+      ],
+      "state": 6
+     },
+     {
+      "pose": [
+       0,
+       4,
+       [
+        -14,
+        -11,
+        4,
+        1
+       ]
+      ],
+      "state": 7
+     },
+     {
+      "pose": [
+       0,
+       8,
+       [
+        -4,
+        -1,
+        -10,
+        -10
+       ]
+      ],
+      "state": 9
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        -2,
+        0,
+        -5,
+        -6
+       ]
+      ],
+      "state": 3
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        3,
+        5,
+        -12,
+        -10
+       ]
+      ],
+      "state": 2
+     }
+    ]
+   },
+   {
+    "parent": 16,
+    "children": [
+     {
+      "pose": [
+       0,
+       0,
+       [
+        -8,
+        -4,
+        -2,
+        -4
+       ]
+      ],
+      "state": 15
+     },
+     {
+      "pose": [
+       0,
+       0,
+       [
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "state": 12
+     },
+     {
+      "pose": [
+       0,
+       2,
+       [
+        -7,
+        -5,
+        2,
+        1
+       ]
+      ],
+      "state": 6
+     },
+     {
+      "pose": [
+       0,
+       4,
+       [
+        -14,
+        -11,
+        4,
+        1
+       ]
+      ],
+      "state": 7
+     },
+     {
+      "pose": [
+       0,
+       8,
+       [
+        -4,
+        -1,
+        -10,
+        -10
+       ]
+      ],
+      "state": 9
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        -2,
+        0,
+        -5,
+        -6
+       ]
+      ],
+      "state": 3
+     },
+     {
+      "pose": [
+       0,
+       10,
+       [
+        3,
+        5,
+        -12,
+        -10
+       ]
+      ],
+      "state": 2
+     }
+    ]
+   }
+  ],
+  "recovered_language_evidence": {
+   "source": "sampled Delta level-4/5 interiors",
+   "exhaustive_for_all_legal_tilings": false,
+   "states_checked": 17,
+   "all_states_checked": true,
+   "complete_context_instances": 309,
+   "unique_instances": 309,
+   "ambiguous_instances": 0,
+   "legal_candidates_outside_known_cover": 0,
+   "unique_composition_on_recovered_language": true
+  }
+ },
+ "physical_patch_language": {
+  "status": "COMPLETE_RADIUS3_PREFIX",
+  "radius_completed": 3,
+  "ancestry_blind": true,
+  "radius1_coronas": 166,
+  "radius2_survivors": 30,
+  "radius3_survivors": 21,
+  "substitution_observed": 18,
+  "unobserved_radius3_survivors": 3,
+  "unique_parent_radius3_survivors": 0,
+  "all_unobserved_radius3_survivors_have_radius4_witnesses": true,
+  "radius1_language_sha256": "219a0b735d56e0ee5e201bb92e108ece25008d7f40c1ff3ab235313415789c92",
+  "observed_language_sha256": "9a24ff78e87542394f0924471b4998158841704646349b2e8368583d65344126",
+  "claim_boundary": "complete existential central-corona language through three rings; no claim that every radius-three survivor extends to a whole-plane tiling"
+ },
+ "parent_overlap_language": {
+  "status": "CONDITIONAL_EXTRAS_REFUTED_RADIUS4",
+  "conditional_on_recovered_parent_language": true,
+  "generated_controls_surviving": 18,
+  "extra_coronas_refuted": [
+   33,
+   44,
+   155
+  ],
+  "radius3_frontier_states_exhausted": 224,
+  "radius4_frontier_states": 0,
+  "conditional_language_after_grouping": 18,
+  "claim_boundary": "conditional finite exclusion from the recovered parent-grouping language; not a proof that every whole-plane physical tiling admits such a grouping"
+ },
+ "conditional_l18_composition": {
+  "unrestricted_contact_bridge": {
+   "status": "UNRESTRICTED_EDGE_PATCH_BRIDGE_PROVED",
+   "scope": {
+    "motions": [
+     "translation",
+     "rotation"
+    ],
+    "reflections_allowed": false,
+    "input_contact_model": "arbitrary locally finite polygon tilings, including vertices on sides and T-junctions",
+    "output_contact_model": "full primitive unit-edge contacts"
+   },
+   "theorem": {
+    "unrestricted_contacts_reduce_to_primitive_edge_to_edge": true,
+    "bijection": "split every maximal-side word at all integer offsets; the ten patterns map uniquely to full primitive unit-edge contacts, and forgetting artificial 180-degree splits is the inverse",
+    "T_junctions_are_exactly_primitive_vertices": true
+   },
+   "claim": {
+    "verdict": "every fixed-chirality straight-Spectre tiling is represented by the exact 14-segment primitive contact model",
+    "logic": "the angle hypotheses bound each maximal straight interface to two sides per half-plane; all ten equal-length words have one common integer unit subdivision; adjacency locks one 30-degree frame and matched endpoints lock all anchors to the rank-four module"
+   },
+   "claim_boundary": "fixed chirality only; mixed reflected/unreflected Tile(1,1) tilings are outside the W3 Spectre domain"
+  },
+  "edge_to_edge_entry": {
+   "status": "EDGE_TO_EDGE_L18_ENTRY_PROVED_RADIUS5",
+   "scope": {
+    "tile": "straight-edged Tile(1,1)",
+    "chirality": "one fixed handedness",
+    "motions": [
+     "translation",
+     "rotation"
+    ],
+    "contact_model": "edge-to-edge unit-edge tilings",
+    "ancestry_or_parent_data_used_in_ring_enumeration": false,
+    "target_selection": "the three exact physical corona types outside L18"
+   },
+   "theorem": {
+    "verdict": "every complete tile corona in any whole-plane tiling in the declared edge-to-edge domain belongs to L18",
+    "logic": "a whole-plane occurrence of any non-L18 corona restricts to one of the exhaustively enumerated finite ring patches, but their complete radius-five frontier is empty"
+   },
+   "claim_boundary": "this discharges D1 inside the fixed-chirality edge-to-edge model; a separate theorem must exclude non-edge-to-edge straight-Spectre tilings before claiming the unrestricted geometric hull"
+  },
+  "component_language": {
+   "status": "PARENT_PARTITION_PROVED_CLOSURE_OPEN_RADIUS9",
+   "partition_theorem": {
+    "decisive_radius": 6,
+    "surviving_radius6_patches": 15216,
+    "common_eight_child_core_failures": 0,
+    "fiber_types": [
+     8,
+     9
+    ],
+    "verdict": "unique-parent-anchor fibers form a full/missing partition"
+   }
+  },
+  "radius3_closure": {
+   "status": "RADIUS3_ELIMINATES_ALL_EXTRA_STATES_WITHIN_L18",
+   "scope": {
+    "state_alphabet": 20,
+    "generated_states": 17,
+    "extra_states": 3,
+    "radius2_assignments_checked": 2232,
+    "constraints": [
+     "exact reciprocal endpoint types and child-edge contacts",
+     "agreement on adjacency/nonadjacency for every represented anchor pair",
+     "exact nonoverlap of all canonical 8/9-child physical supports"
+    ]
+   },
+   "elimination": {
+    "dead_root_state_ids": [
+     "288091b49587a4b2"
+    ],
+    "every_surviving_other_root_contains_a_dead_state": true,
+    "all_extra_states_eliminated": true,
+    "conditional_contraction_closure": true,
+    "logic": "a whole-plane occurrence restricts to a radius-three CSP; the dead root has none, and every survivor of either other root contains that dead state in its fixed inner patch"
+   }
+  },
+  "d4_equivalence": {
+   "status": "FAITHFUL_FINITE_KERNEL_CONTEXT_LANGUAGE_OPEN",
+   "scope": {
+    "input": "unique 9/8 component partition of an L18 physical tiling",
+    "intermediate": "17 exact child-edge-colored component states",
+    "output": "next reflected physical Spectre phase",
+    "motions": [
+     "translation",
+     "rotation"
+    ],
+    "reflections_as_allowed_tile_motions": false,
+    "hierarchy_chirality_behavior": "the correspondence toggles the entire chirality phase; it never mixes handednesses in one tiling"
+   },
+   "colored_collar_bijection": {
+    "control_level": 4,
+    "complete_occurrences": 310,
+    "collar_states": 17,
+    "colored_states": 17,
+    "maximum_colors_per_collar": 1,
+    "maximum_collars_per_color": 1,
+    "occurrences_by_state": {
+     "0": 18,
+     "1": 11,
+     "2": 30,
+     "3": 30,
+     "4": 34,
+     "5": 8,
+     "6": 8,
+     "7": 7,
+     "8": 24,
+     "9": 17,
+     "10": 6,
+     "11": 13,
+     "12": 8,
+     "13": 18,
+     "14": 16,
+     "15": 54,
+     "16": 8
+    },
+    "bijective": true
+   },
+   "component_state_roundtrips": {
+    "states_checked": 17,
+    "all_exact": true
+   },
+   "normalization": {
+    "determinants": {
+     "0": 1,
+     "1": 1
+    },
+    "exact_inverse_matrices": true,
+    "chirality_toggles_uniformly": true,
+    "translation_covariance": "within one chirality/parity phase, a global module translation u maps to A_(chirality,parity) u",
+    "two_level_characteristic_polynomials": {
+     "0_then_1": "(x**2 - 8*x + 1)**2",
+     "1_then_0": "(x**2 - 8*x + 1)**2"
+    }
+   },
+   "level_pair_roundtrips": [
+    {
+     "levels": [
+      3,
+      2
+     ],
+     "upper_physical_tiles": 559,
+     "upper_first_parents": 63,
+     "upper_second_parents": 8,
+     "lower_physical_tiles": 71,
+     "ordinary_tiles": 63,
+     "companion_tiles": 8,
+     "ordinary_companion_disjoint": true,
+     "next_physical_patch_exact": true,
+     "forward_count_identity": true,
+     "inverse_first_exact": true,
+     "inverse_second_exact": true,
+     "normalized_second_equals_lower_first": true,
+     "second_parent_adjacency_and_kind_preserved": true
+    },
+    {
+     "levels": [
+      4,
+      3
+     ],
+     "upper_physical_tiles": 4401,
+     "upper_first_parents": 496,
+     "upper_second_parents": 63,
+     "lower_physical_tiles": 559,
+     "ordinary_tiles": 496,
+     "companion_tiles": 63,
+     "ordinary_companion_disjoint": true,
+     "next_physical_patch_exact": true,
+     "forward_count_identity": true,
+     "inverse_first_exact": true,
+     "inverse_second_exact": true,
+     "normalized_second_equals_lower_first": true,
+     "second_parent_adjacency_and_kind_preserved": true
+    },
+    {
+     "levels": [
+      5,
+      4
+     ],
+     "upper_physical_tiles": 34649,
+     "upper_first_parents": 3905,
+     "upper_second_parents": 496,
+     "lower_physical_tiles": 4401,
+     "ordinary_tiles": 3905,
+     "companion_tiles": 496,
+     "ordinary_companion_disjoint": true,
+     "next_physical_patch_exact": true,
+     "forward_count_identity": true,
+     "inverse_first_exact": true,
+     "inverse_second_exact": true,
+     "normalized_second_equals_lower_first": true,
+     "second_parent_adjacency_and_kind_preserved": true
+    }
+   ],
+   "marker_transducer": {
+    "control_level": 5,
+    "complete_first_parent_collars": 3109,
+    "complete_second_parent_markers": 337,
+    "marker_state_ids": [
+     10,
+     11,
+     12
+    ],
+    "marker_iff_second_parent_base": true,
+    "all_second_parent_bases_are_first_parent_bases": true
+   },
+   "finite_kernel_verified": true,
+   "radius1_context_probe": {
+    "total_stars": 3565,
+    "total_by_center": {
+     "0": 96,
+     "1": 816,
+     "2": 48,
+     "3": 432,
+     "4": 96,
+     "5": 15,
+     "6": 10,
+     "7": 36,
+     "8": 140,
+     "9": 168,
+     "10": 560,
+     "11": 672,
+     "12": 2,
+     "13": 336,
+     "14": 24,
+     "15": 108,
+     "16": 6
+    },
+    "outcomes": {
+     "central_ordinary_not_buffered": 410,
+     "central_ordinary_valid": 2619,
+     "output_overlap": 536
+    },
+    "central_signature_count_by_state": {
+     "0": 1,
+     "1": 1,
+     "2": 1,
+     "3": 1,
+     "4": 1,
+     "5": 0,
+     "6": 1,
+     "7": 1,
+     "8": 0,
+     "9": 0,
+     "10": 1,
+     "11": 1,
+     "12": 1,
+     "13": 1,
+     "14": 1,
+     "15": 0,
+     "16": 0
+    },
+    "distinct_buffered_central_signatures": 12,
+    "buffered_signature_owner_sets_are_disjoint": true
+   },
+   "radius2_context_filter": {
+    "radius1_stars": 3565,
+    "radius2_extendible_seed_stars": 80,
+    "radius2_dead_seed_stars": 3485,
+    "surviving_by_center": {
+     "0": 6,
+     "1": 4,
+     "2": 4,
+     "3": 15,
+     "4": 12,
+     "5": 1,
+     "6": 2,
+     "7": 2,
+     "8": 2,
+     "9": 4,
+     "10": 2,
+     "11": 4,
+     "12": 1,
+     "13": 4,
+     "14": 2,
+     "15": 14,
+     "16": 1
+    },
+    "solver": "CaDiCaL 1.9.5"
+   },
+   "d4_assessment": {
+    "status": "partial",
+    "proved": [
+     "17-to-17 bijection between colored physical interfaces and A6 collars",
+     "exact component expansion/re-encoding with complete boundary ownership",
+     "unimodular forward/inverse scale normalization with translation covariance",
+     "exact next-physical-patch round trip on three consecutive level pairs",
+     "second-parent markers are exactly A6 states 10, 11 and 12 on complete controls"
+    ],
+    "remaining": "prove that every colored parent star arising from the full physical L18 hull lies in the faithful transition language. The bare radius-one 17-state overlap SFT is too broad: it admits output-overlap stars, although only 80 of 3565 seed stars survive one further exact state ring.",
+    "standalone_d4_verified": false
+   },
+   "claim_boundary": "the finite maps and generated level-pair round trips are exact; they do not yet prove that the radius-two surviving state-star language equals the contraction of every whole-plane physical tiling"
+  }
+ },
+ "geometry_recurrence": {
+  "dimension": 16,
+  "levels_verified": 32,
+  "matrix": [
+   [
+    0,
+    0,
+    -1,
+    0,
+    -1,
+    0,
+    -2,
+    0,
+    1,
+    0,
+    1,
+    0,
+    -1,
+    0,
+    1,
+    0
+   ],
+   [
+    0,
+    -1,
+    0,
+    -1,
+    0,
+    -2,
+    0,
+    -1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    2
+   ],
+   [
+    -1,
+    0,
+    0,
+    0,
+    -1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    -1,
+    0,
+    2,
+    0,
+    1,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    2,
+    0,
+    -1,
+    0,
+    -1,
+    0,
+    1,
+    0,
+    -1
+   ],
+   [
+    0,
+    0,
+    -1,
+    0,
+    1,
+    0,
+    -1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    -2,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    -1,
+    0,
+    -1,
+    0,
+    -1,
+    0,
+    -2,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    2
+   ],
+   [
+    -1,
+    0,
+    0,
+    0,
+    -2,
+    0,
+    -1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    2,
+    0,
+    2,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    1,
+    0,
+    -1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    -1,
+    0,
+    2,
+    0,
+    0
+   ],
+   [
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    -1,
+    0,
+    -1,
+    0,
+    1,
+    0,
+    -2,
+    0,
+    -1,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    -1,
+    0,
+    -1,
+    0,
+    -2,
+    0,
+    1,
+    0,
+    2,
+    0,
+    -1,
+    0,
+    1
+   ],
+   [
+    -1,
+    0,
+    -1,
+    0,
+    -2,
+    0,
+    -1,
+    0,
+    2,
+    0,
+    1,
+    0,
+    1,
+    0,
+    2,
+    0
+   ],
+   [
+    0,
+    -1,
+    0,
+    0,
+    0,
+    -1,
+    0,
+    1,
+    0,
+    1,
+    0,
+    -1,
+    0,
+    2,
+    0,
+    1
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    -1,
+    0,
+    -1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    -1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  ],
+  "determinant": 1,
+  "annihilating_polynomial_constant_first": [
+   1,
+   0,
+   -10,
+   0,
+   18,
+   0,
+   -10,
+   0,
+   1
+  ],
+  "expanding_linear_factor": "sqrt(4+sqrt(15))",
+  "expanding_two_level_factor": "4+sqrt(15)",
+  "initial_quad": [
+   [
+    2,
+    1,
+    -1,
+    0
+   ],
+   [
+    3,
+    1,
+    -1,
+    1
+   ],
+   [
+    3,
+    0,
+    0,
+    2
+   ],
+   [
+    0,
+    -1,
+    1,
+    2
+   ]
+  ],
+  "child_frames": [
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    8
+   ]
+  ],
+  "final_quad": [
+   [
+    221458845734658,
+    302272883779393,
+    -527304576083265,
+    -386659768393344
+   ],
+   [
+    471046653007299,
+    414788729931329,
+    -471046653007297,
+    -249587807272639
+   ],
+   [
+    414788729931331,
+    277716768810624,
+    -165200922658688,
+    2
+   ],
+   [
+    -108942999582720,
+    -28128961537985,
+    -84386884613951,
+    -112515846151934
+   ]
+  ],
+  "vendored_table_comparison": {
+   "levels": 32,
+   "children_per_level": 8,
+   "vectors_compared": 256,
+   "all_equal": true
+  },
+  "realized_patch_evidence": {
+   "complete_levels": 1,
+   "labels_per_level": 9,
+   "patches_checked": 18,
+   "all_legal": true,
+   "checks": [
+    {
+     "level": 0,
+     "label": "Gamma",
+     "tiles": 2,
+     "interior_overlap_pairs": [],
+     "interiors_disjoint": true,
+     "edge_connected": true,
+     "edge_incidence_at_most_two": true,
+     "boundary_unit_edges": 20,
+     "legal_patch": true
+    },
+    {
+     "level": 0,
+     "label": "Delta",
+     "tiles": 1,
+     "interior_overlap_pairs": [],
+     "interiors_disjoint": true,
+     "edge_connected": true,
+     "edge_incidence_at_most_two": true,
+     "boundary_unit_edges": 14,
+     "legal_patch": true
+    },
+    {
+     "level": 0,
+     "label": "Theta",
+     "tiles": 1,
+     "interior_overlap_pairs": [],
+     "interiors_disjoint": true,
+     "edge_connected": true,
+     "edge_incidence_at_most_two": true,
+     "boundary_unit_edges": 14,
+     "legal_patch": true
+    },
+    {
+     "level": 0,
+     "label": "Lambda",
+     "tiles": 1,
+     "interior_overlap_pairs": [],
+     "interiors_disjoint": true,
+     "edge_connected": true,
+     "edge_incidence_at_most_two": true,
+     "boundary_unit_edges": 14,
+     "legal_patch": true
+    },
+    {
+     "level": 0,
+     "label": "Xi",
+     "tiles": 1,
+     "interior_overlap_pairs": [],
+     "interiors_disjoint": true,
+     "edge_connected": true,
+     "edge_incidence_at_most_two": true,
+     "boundary_unit_edges": 14,
+     "legal_patch": true
+    },
+    {
+     "level": 0,
+     "label": "Pi",
+     "tiles": 1,
+     "interior_overlap_pairs": [],
+     "interiors_disjoint": true,
+     "edge_connected": true,
+     "edge_incidence_at_most_two": true,
+     "boundary_unit_edges": 14,
+     "legal_patch": true
+    },
+    {
+     "level": 0,
+     "label": "Sigma",
+     "tiles": 1,
+     "interior_overlap_pairs": [],
+     "interiors_disjoint": true,
+     "edge_connected": true,
+     "edge_incidence_at_most_two": true,
+     "boundary_unit_edges": 14,
+     "legal_patch": true
+    },
+    {
+     "level": 0,
+     "label": "Phi",
+     "tiles": 1,
+     "interior_overlap_pairs": [],
+     "interiors_disjoint": true,
+     "edge_connected": true,
+     "edge_incidence_at_most_two": true,
+     "boundary_unit_edges": 14,
+     "legal_patch": true
+    },
+    {
+     "level": 0,
+     "label": "Psi",
+     "tiles": 1,
+     "interior_overlap_pairs": [],
+     "interiors_disjoint": true,
+     "edge_connected": true,
+     "edge_incidence_at_most_two": true,
+     "boundary_unit_edges": 14,
+     "legal_patch": true
+    },
+    {
+     "level": 1,
+     "label": "Gamma",
+     "tiles": 8,
+     "interior_overlap_pairs": [],
+     "interiors_disjoint": true,
+     "edge_connected": true,
+     "edge_incidence_at_most_two": true,
+     "boundary_unit_edges": 44,
+     "legal_patch": true
+    },
+    {
+     "level": 1,
+     "label": "Delta",
+     "tiles": 9,
+     "interior_overlap_pairs": [],
+     "interiors_disjoint": true,
+     "edge_connected": true,
+     "edge_incidence_at_most_two": true,
+     "boundary_unit_edges": 46,
+     "legal_patch": true
+    },
+    {
+     "level": 1,
+     "label": "Theta",
+     "tiles": 9,
+     "interior_overlap_pairs": [],
+     "interiors_disjoint": true,
+     "edge_connected": true,
+     "edge_incidence_at_most_two": true,
+     "boundary_unit_edges": 46,
+     "legal_patch": true
+    },
+    {
+     "level": 1,
+     "label": "Lambda",
+     "tiles": 9,
+     "interior_overlap_pairs": [],
+     "interiors_disjoint": true,
+     "edge_connected": true,
+     "edge_incidence_at_most_two": true,
+     "boundary_unit_edges": 46,
+     "legal_patch": true
+    },
+    {
+     "level": 1,
+     "label": "Xi",
+     "tiles": 9,
+     "interior_overlap_pairs": [],
+     "interiors_disjoint": true,
+     "edge_connected": true,
+     "edge_incidence_at_most_two": true,
+     "boundary_unit_edges": 46,
+     "legal_patch": true
+    },
+    {
+     "level": 1,
+     "label": "Pi",
+     "tiles": 9,
+     "interior_overlap_pairs": [],
+     "interiors_disjoint": true,
+     "edge_connected": true,
+     "edge_incidence_at_most_two": true,
+     "boundary_unit_edges": 46,
+     "legal_patch": true
+    },
+    {
+     "level": 1,
+     "label": "Sigma",
+     "tiles": 9,
+     "interior_overlap_pairs": [],
+     "interiors_disjoint": true,
+     "edge_connected": true,
+     "edge_incidence_at_most_two": true,
+     "boundary_unit_edges": 46,
+     "legal_patch": true
+    },
+    {
+     "level": 1,
+     "label": "Phi",
+     "tiles": 9,
+     "interior_overlap_pairs": [],
+     "interiors_disjoint": true,
+     "edge_connected": true,
+     "edge_incidence_at_most_two": true,
+     "boundary_unit_edges": 46,
+     "legal_patch": true
+    },
+    {
+     "level": 1,
+     "label": "Psi",
+     "tiles": 9,
+     "interior_overlap_pairs": [],
+     "interiors_disjoint": true,
+     "edge_connected": true,
+     "edge_incidence_at_most_two": true,
+     "boundary_unit_edges": 46,
+     "legal_patch": true
+    }
+   ],
+   "inductive_all_levels": false
+  },
+  "binary_geometry_quotient": {
+   "label_count": 9,
+   "geometric_support_types": 2,
+   "type_for_label": {
+    "Gamma": "missing",
+    "Delta": "full",
+    "Theta": "full",
+    "Lambda": "full",
+    "Xi": "full",
+    "Pi": "full",
+    "Sigma": "full",
+    "Phi": "full",
+    "Psi": "full"
+   },
+   "full_child_pattern": [
+    "full",
+    "full",
+    "full",
+    "full",
+    "full",
+    "full",
+    "full",
+    "missing"
+   ],
+   "missing_child_pattern": [
+    "full",
+    "full",
+    null,
+    "full",
+    "full",
+    "full",
+    "full",
+    "missing"
+   ],
+   "valid_at_all_levels_by_induction": true
+  },
+  "binary_boundary_prefix": {
+   "maximum_level": 4,
+   "support_types": 2,
+   "reports": [
+    {
+     "level": 0,
+     "kind": "full",
+     "tiles": 1,
+     "vertices": 14,
+     "edges": 14,
+     "euler_characteristic": 1,
+     "maximum_edge_incidence": 1,
+     "boundary_vertex_degree_counts": [
+      [
+       2,
+       14
+      ]
+     ],
+     "boundary_components": 1,
+     "boundary_cycles": [
+      {
+       "length": 14,
+       "direction_counts": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+       ]
+      }
+     ],
+     "abstract_disk": true
+    },
+    {
+     "level": 0,
+     "kind": "missing",
+     "tiles": 2,
+     "vertices": 23,
+     "edges": 24,
+     "euler_characteristic": 1,
+     "maximum_edge_incidence": 2,
+     "boundary_vertex_degree_counts": [
+      [
+       2,
+       20
+      ]
+     ],
+     "boundary_components": 1,
+     "boundary_cycles": [
+      {
+       "length": 20,
+       "direction_counts": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+       ]
+      }
+     ],
+     "abstract_disk": true
+    },
+    {
+     "level": 1,
+     "kind": "full",
+     "tiles": 9,
+     "vertices": 78,
+     "edges": 86,
+     "euler_characteristic": 1,
+     "maximum_edge_incidence": 2,
+     "boundary_vertex_degree_counts": [
+      [
+       2,
+       46
+      ]
+     ],
+     "boundary_components": 1,
+     "boundary_cycles": [
+      {
+       "length": 46,
+       "direction_counts": [
+        5,
+        3,
+        4,
+        3,
+        5,
+        3,
+        5,
+        3,
+        4,
+        3,
+        5,
+        3
+       ]
+      }
+     ],
+     "abstract_disk": true
+    },
+    {
+     "level": 1,
+     "kind": "missing",
+     "tiles": 8,
+     "vertices": 71,
+     "edges": 78,
+     "euler_characteristic": 1,
+     "maximum_edge_incidence": 2,
+     "boundary_vertex_degree_counts": [
+      [
+       2,
+       44
+      ]
+     ],
+     "boundary_components": 1,
+     "boundary_cycles": [
+      {
+       "length": 44,
+       "direction_counts": [
+        5,
+        3,
+        4,
+        3,
+        4,
+        3,
+        5,
+        3,
+        4,
+        3,
+        4,
+        3
+       ]
+      }
+     ],
+     "abstract_disk": true
+    },
+    {
+     "level": 2,
+     "kind": "full",
+     "tiles": 71,
+     "vertices": 518,
+     "edges": 588,
+     "euler_characteristic": 1,
+     "maximum_edge_incidence": 2,
+     "boundary_vertex_degree_counts": [
+      [
+       2,
+       182
+      ]
+     ],
+     "boundary_components": 1,
+     "boundary_cycles": [
+      {
+       "length": 182,
+       "direction_counts": [
+        18,
+        11,
+        19,
+        11,
+        19,
+        13,
+        18,
+        11,
+        19,
+        11,
+        19,
+        13
+       ]
+      }
+     ],
+     "abstract_disk": true
+    },
+    {
+     "level": 2,
+     "kind": "missing",
+     "tiles": 62,
+     "vertices": 453,
+     "edges": 514,
+     "euler_characteristic": 1,
+     "maximum_edge_incidence": 2,
+     "boundary_vertex_degree_counts": [
+      [
+       2,
+       160
+      ]
+     ],
+     "boundary_components": 1,
+     "boundary_cycles": [
+      {
+       "length": 160,
+       "direction_counts": [
+        16,
+        11,
+        16,
+        9,
+        17,
+        11,
+        16,
+        11,
+        16,
+        9,
+        17,
+        11
+       ]
+      }
+     ],
+     "abstract_disk": true
+    },
+    {
+     "level": 3,
+     "kind": "full",
+     "tiles": 559,
+     "vertices": 3734,
+     "edges": 4292,
+     "euler_characteristic": 1,
+     "maximum_edge_incidence": 2,
+     "boundary_vertex_degree_counts": [
+      [
+       2,
+       758
+      ]
+     ],
+     "boundary_components": 1,
+     "boundary_cycles": [
+      {
+       "length": 758,
+       "direction_counts": [
+        77,
+        49,
+        78,
+        49,
+        79,
+        47,
+        77,
+        49,
+        78,
+        49,
+        79,
+        47
+       ]
+      }
+     ],
+     "abstract_disk": true
+    },
+    {
+     "level": 3,
+     "kind": "missing",
+     "tiles": 488,
+     "vertices": 3255,
+     "edges": 3742,
+     "euler_characteristic": 1,
+     "maximum_edge_incidence": 2,
+     "boundary_vertex_degree_counts": [
+      [
+       2,
+       652
+      ]
+     ],
+     "boundary_components": 1,
+     "boundary_cycles": [
+      {
+       "length": 652,
+       "direction_counts": [
+        67,
+        41,
+        66,
+        43,
+        68,
+        41,
+        67,
+        41,
+        66,
+        43,
+        68,
+        41
+       ]
+      }
+     ],
+     "abstract_disk": true
+    },
+    {
+     "level": 4,
+     "kind": "full",
+     "tiles": 4401,
+     "vertices": 28006,
+     "edges": 32406,
+     "euler_characteristic": 1,
+     "maximum_edge_incidence": 2,
+     "boundary_vertex_degree_counts": [
+      [
+       2,
+       3198
+      ]
+     ],
+     "boundary_components": 1,
+     "boundary_cycles": [
+      {
+       "length": 3198,
+       "direction_counts": [
+        328,
+        203,
+        329,
+        203,
+        331,
+        205,
+        328,
+        203,
+        329,
+        203,
+        331,
+        205
+       ]
+      }
+     ],
+     "abstract_disk": true
+    },
+    {
+     "level": 4,
+     "kind": "missing",
+     "tiles": 3842,
+     "vertices": 24421,
+     "edges": 28262,
+     "euler_characteristic": 1,
+     "maximum_edge_incidence": 2,
+     "boundary_vertex_degree_counts": [
+      [
+       2,
+       2736
+      ]
+     ],
+     "boundary_components": 1,
+     "boundary_cycles": [
+      {
+       "length": 2736,
+       "direction_counts": [
+        282,
+        175,
+        280,
+        173,
+        283,
+        175,
+        282,
+        175,
+        280,
+        173,
+        283,
+        175
+       ]
+      }
+     ],
+     "abstract_disk": true
+    }
+   ],
+   "all_abstract_disks": true,
+   "proves_planar_nonintersection": false
+  },
+  "boundary_word_recurrence_evidence": {
+   "maximum_level": 5,
+   "recipe": [
+    [
+     1,
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     4
+    ],
+    [
+     2,
+     0,
+     0,
+     8
+    ],
+    [
+     1,
+     1,
+     1,
+     6
+    ],
+    [
+     1,
+     0,
+     1,
+     2
+    ]
+   ],
+   "base_words": [
+    [
+     11,
+     8
+    ],
+    [
+     7,
+     10,
+     8,
+     8,
+     10,
+     7,
+     9,
+     0
+    ]
+   ],
+   "checks": [
+    {
+     "level": 0,
+     "length": 2,
+     "sha256": "7bff368f1e75148da4270692262b9fb963e180e8c618bcbb178fdcc9fb3d1c13"
+    },
+    {
+     "level": 1,
+     "length": 8,
+     "sha256": "c7b892011e440c657043ca8799066d1ed14bce92f19bf620fde8712fc655f508"
+    },
+    {
+     "level": 2,
+     "length": 34,
+     "sha256": "d6881d23f5a6cb7866d121b7e3d2858f7cda8960b17b79c5f43b76f3b25126e6"
+    },
+    {
+     "level": 3,
+     "length": 144,
+     "sha256": "7530b3b1280455b71042e464c19f079063a522916e9d8d2047deefe11fb50f8a"
+    },
+    {
+     "level": 4,
+     "length": 610,
+     "sha256": "0c5da1ff72ac8e95f1e7432df319537414db42f517d510559c4a5b0cfa5e3ac4"
+    },
+    {
+     "level": 5,
+     "length": 2584,
+     "sha256": "748129001261f5437cfb263e7ad47a421259dc3f5cb8f80895769ff628d5e0f4"
+    }
+   ],
+   "all_equal": true,
+   "length_recurrence": "a[n]=4*a[n-1]+a[n-2]",
+   "dominant_root": "2+sqrt(5)",
+   "inductive_derivation_from_child_gluing": false
+  },
+  "all_level_macro_side_chains": {
+   "full_grammar": {
+    "A": [
+     [
+      3,
+      2,
+      3
+     ],
+     [
+      4,
+      1,
+      2
+     ],
+     [
+      5,
+      0,
+      1
+     ]
+    ],
+    "B": [
+     [
+      5,
+      1,
+      2
+     ],
+     [
+      5,
+      2,
+      3
+     ],
+     [
+      6,
+      1,
+      2
+     ]
+    ],
+    "C": [
+     [
+      6,
+      2,
+      3
+     ],
+     [
+      7,
+      3,
+      0
+     ],
+     [
+      0,
+      0,
+      1
+     ]
+    ],
+    "D": [
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      0,
+      2,
+      3
+     ],
+     [
+      1,
+      1,
+      2
+     ],
+     [
+      2,
+      0,
+      1
+     ],
+     [
+      2,
+      1,
+      2
+     ],
+     [
+      2,
+      2,
+      3
+     ],
+     [
+      3,
+      1,
+      2
+     ]
+    ]
+   },
+   "missing_grammar": {
+    "A": [
+     [
+      3,
+      2,
+      3
+     ],
+     [
+      4,
+      1,
+      2
+     ],
+     [
+      5,
+      0,
+      1
+     ]
+    ],
+    "B": [
+     [
+      5,
+      1,
+      2
+     ],
+     [
+      5,
+      2,
+      3
+     ],
+     [
+      6,
+      1,
+      2
+     ]
+    ],
+    "C": [
+     [
+      6,
+      2,
+      3
+     ],
+     [
+      7,
+      3,
+      0
+     ],
+     [
+      0,
+      0,
+      1
+     ]
+    ],
+    "D": [
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      0,
+      2,
+      3
+     ],
+     [
+      1,
+      1,
+      2
+     ],
+     [
+      2,
+      0,
+      3
+     ],
+     [
+      3,
+      1,
+      2
+     ]
+    ]
+   },
+   "quad_levels_checked": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "all_level_endpoint_identity": true,
+   "missing_slot_two_complement_is_virtual": true,
+   "proof": "endpoint differences are linear in q; eight initial zeros plus the verified degree-8 annihilator prove zero for every level",
+   "proves_boundary_simplicity_or_nonintersection": false
+  },
+  "macro_word_recurrence_evidence": {
+   "maximum_level": 5,
+   "side_types": 8,
+   "checks": [
+    {
+     "level": 0,
+     "kind": "full",
+     "side": "A",
+     "length": 2,
+     "sha256": "7bff368f1e75148da4270692262b9fb963e180e8c618bcbb178fdcc9fb3d1c13"
+    },
+    {
+     "level": 0,
+     "kind": "full",
+     "side": "B",
+     "length": 2,
+     "sha256": "9fdded952da6a0b5e0b5caa90e194b5b2da46092b26a9e382c8d895c662d9b0f"
+    },
+    {
+     "level": 0,
+     "kind": "full",
+     "side": "C",
+     "length": 6,
+     "sha256": "89a0c3138248498617c8f72a181d3e2aca504f348ce3f618c0c56e62f89d2e25"
+    },
+    {
+     "level": 0,
+     "kind": "full",
+     "side": "D",
+     "length": 4,
+     "sha256": "e95ddbb319142aaef999f53c827dce3e0815f38c766b7895e14e6b43bb2aac7d"
+    },
+    {
+     "level": 0,
+     "kind": "missing",
+     "side": "B",
+     "length": 2,
+     "sha256": "9fdded952da6a0b5e0b5caa90e194b5b2da46092b26a9e382c8d895c662d9b0f"
+    },
+    {
+     "level": 0,
+     "kind": "missing",
+     "side": "C",
+     "length": 6,
+     "sha256": "89a0c3138248498617c8f72a181d3e2aca504f348ce3f618c0c56e62f89d2e25"
+    },
+    {
+     "level": 1,
+     "kind": "full",
+     "side": "A",
+     "length": 8,
+     "sha256": "c7b892011e440c657043ca8799066d1ed14bce92f19bf620fde8712fc655f508"
+    },
+    {
+     "level": 1,
+     "kind": "full",
+     "side": "B",
+     "length": 8,
+     "sha256": "ea536387ad8616ef6ff2132f01675b958fc28e49c80244337ed873075e9deb97"
+    },
+    {
+     "level": 1,
+     "kind": "full",
+     "side": "C",
+     "length": 12,
+     "sha256": "677f6c6fc3e57d81b7a29428e20fba7938b629e3d571732c0f5148634f1159be"
+    },
+    {
+     "level": 1,
+     "kind": "full",
+     "side": "D",
+     "length": 18,
+     "sha256": "ea67c9744745ba120119669661097d4d1e54b1bbce52b5e307e8a61c60febd9b"
+    },
+    {
+     "level": 1,
+     "kind": "missing",
+     "side": "A",
+     "length": 8,
+     "sha256": "c7b892011e440c657043ca8799066d1ed14bce92f19bf620fde8712fc655f508"
+    },
+    {
+     "level": 1,
+     "kind": "missing",
+     "side": "B",
+     "length": 8,
+     "sha256": "ea536387ad8616ef6ff2132f01675b958fc28e49c80244337ed873075e9deb97"
+    },
+    {
+     "level": 1,
+     "kind": "missing",
+     "side": "C",
+     "length": 12,
+     "sha256": "677f6c6fc3e57d81b7a29428e20fba7938b629e3d571732c0f5148634f1159be"
+    },
+    {
+     "level": 1,
+     "kind": "missing",
+     "side": "D",
+     "length": 16,
+     "sha256": "dbcacc7cf35ce43e8f8b2ae91e4f7391b6182e794c02c17ef6eca53fbe09a4ed"
+    },
+    {
+     "level": 2,
+     "kind": "full",
+     "side": "A",
+     "length": 34,
+     "sha256": "d6881d23f5a6cb7866d121b7e3d2858f7cda8960b17b79c5f43b76f3b25126e6"
+    },
+    {
+     "level": 2,
+     "kind": "full",
+     "side": "B",
+     "length": 34,
+     "sha256": "bed52cb87be90b9eac53a23fb2d8d190f72c4a5e6bc2917ec5c2c0674f8eb4f7"
+    },
+    {
+     "level": 2,
+     "kind": "full",
+     "side": "C",
+     "length": 38,
+     "sha256": "7f304761031989dc345f7646661bc5f23f47e4c97d7b84120ed244f69f115ffe"
+    },
+    {
+     "level": 2,
+     "kind": "full",
+     "side": "D",
+     "length": 76,
+     "sha256": "6b1cf36e8e937b2331017da46819be5e3193cf3e4530311f3b55f996dd008cc1"
+    },
+    {
+     "level": 2,
+     "kind": "missing",
+     "side": "A",
+     "length": 34,
+     "sha256": "d6881d23f5a6cb7866d121b7e3d2858f7cda8960b17b79c5f43b76f3b25126e6"
+    },
+    {
+     "level": 2,
+     "kind": "missing",
+     "side": "B",
+     "length": 34,
+     "sha256": "bed52cb87be90b9eac53a23fb2d8d190f72c4a5e6bc2917ec5c2c0674f8eb4f7"
+    },
+    {
+     "level": 2,
+     "kind": "missing",
+     "side": "C",
+     "length": 38,
+     "sha256": "7f304761031989dc345f7646661bc5f23f47e4c97d7b84120ed244f69f115ffe"
+    },
+    {
+     "level": 2,
+     "kind": "missing",
+     "side": "D",
+     "length": 54,
+     "sha256": "bf56c0bdfc4a4930eed02661ecd53e9c2d5740a9b066decbb90c6f95a34683b1"
+    },
+    {
+     "level": 3,
+     "kind": "full",
+     "side": "A",
+     "length": 144,
+     "sha256": "7530b3b1280455b71042e464c19f079063a522916e9d8d2047deefe11fb50f8a"
+    },
+    {
+     "level": 3,
+     "kind": "full",
+     "side": "B",
+     "length": 144,
+     "sha256": "43dced26b3ab0e631617edc8fdce879f4570837f00a76afb8c18123a197b4840"
+    },
+    {
+     "level": 3,
+     "kind": "full",
+     "side": "C",
+     "length": 148,
+     "sha256": "6ee80b1c1ec5d54bb189a788441f1491c30e4e07584d96729e8d05fccd79197d"
+    },
+    {
+     "level": 3,
+     "kind": "full",
+     "side": "D",
+     "length": 322,
+     "sha256": "c79e43cfeef9f0ee0088f072e730eb5b6fac3398b53f07e2dbb2751467179bfa"
+    },
+    {
+     "level": 3,
+     "kind": "missing",
+     "side": "A",
+     "length": 144,
+     "sha256": "7530b3b1280455b71042e464c19f079063a522916e9d8d2047deefe11fb50f8a"
+    },
+    {
+     "level": 3,
+     "kind": "missing",
+     "side": "B",
+     "length": 144,
+     "sha256": "43dced26b3ab0e631617edc8fdce879f4570837f00a76afb8c18123a197b4840"
+    },
+    {
+     "level": 3,
+     "kind": "missing",
+     "side": "C",
+     "length": 148,
+     "sha256": "6ee80b1c1ec5d54bb189a788441f1491c30e4e07584d96729e8d05fccd79197d"
+    },
+    {
+     "level": 3,
+     "kind": "missing",
+     "side": "D",
+     "length": 216,
+     "sha256": "f7f771814eb08e99c1558ed0f24be72c5231bf3238b471f541a85be16647c5bb"
+    },
+    {
+     "level": 4,
+     "kind": "full",
+     "side": "A",
+     "length": 610,
+     "sha256": "0c5da1ff72ac8e95f1e7432df319537414db42f517d510559c4a5b0cfa5e3ac4"
+    },
+    {
+     "level": 4,
+     "kind": "full",
+     "side": "B",
+     "length": 610,
+     "sha256": "9a59d68cbe4d926072b9ef61b41483464e109bcc78a4500630a3510642e7f40f"
+    },
+    {
+     "level": 4,
+     "kind": "full",
+     "side": "C",
+     "length": 614,
+     "sha256": "2f5e7092a49a7670b970bb3c607962141c33f3a742104f4ba9f9adafc4c3ff39"
+    },
+    {
+     "level": 4,
+     "kind": "full",
+     "side": "D",
+     "length": 1364,
+     "sha256": "c011497b6798312f21b8aa55df02bf5dcdec1da33bca350d1018f326801ddbd2"
+    },
+    {
+     "level": 4,
+     "kind": "missing",
+     "side": "A",
+     "length": 610,
+     "sha256": "0c5da1ff72ac8e95f1e7432df319537414db42f517d510559c4a5b0cfa5e3ac4"
+    },
+    {
+     "level": 4,
+     "kind": "missing",
+     "side": "B",
+     "length": 610,
+     "sha256": "9a59d68cbe4d926072b9ef61b41483464e109bcc78a4500630a3510642e7f40f"
+    },
+    {
+     "level": 4,
+     "kind": "missing",
+     "side": "C",
+     "length": 614,
+     "sha256": "2f5e7092a49a7670b970bb3c607962141c33f3a742104f4ba9f9adafc4c3ff39"
+    },
+    {
+     "level": 4,
+     "kind": "missing",
+     "side": "D",
+     "length": 902,
+     "sha256": "618ecd4fb0d5a5ef2f143c6494db58bab2baa0267bf2c105fabf9062a26b53a3"
+    },
+    {
+     "level": 5,
+     "kind": "full",
+     "side": "A",
+     "length": 2584,
+     "sha256": "748129001261f5437cfb263e7ad47a421259dc3f5cb8f80895769ff628d5e0f4"
+    },
+    {
+     "level": 5,
+     "kind": "full",
+     "side": "B",
+     "length": 2584,
+     "sha256": "8ddf8a9698034b92f1301156fc81743eed80e03a12c963e75db61b12bf46794e"
+    },
+    {
+     "level": 5,
+     "kind": "full",
+     "side": "C",
+     "length": 2588,
+     "sha256": "1e62bc693b4e1e52de3209677fc3977ef26b8c6741f52667e1b4120d897adb8e"
+    },
+    {
+     "level": 5,
+     "kind": "full",
+     "side": "D",
+     "length": 5778,
+     "sha256": "1034db8b7a73b66c5de61f40d4d233d1c6c93d1f42dd875798981ba8fa6b2406"
+    },
+    {
+     "level": 5,
+     "kind": "missing",
+     "side": "A",
+     "length": 2584,
+     "sha256": "748129001261f5437cfb263e7ad47a421259dc3f5cb8f80895769ff628d5e0f4"
+    },
+    {
+     "level": 5,
+     "kind": "missing",
+     "side": "B",
+     "length": 2584,
+     "sha256": "8ddf8a9698034b92f1301156fc81743eed80e03a12c963e75db61b12bf46794e"
+    },
+    {
+     "level": 5,
+     "kind": "missing",
+     "side": "C",
+     "length": 2588,
+     "sha256": "1e62bc693b4e1e52de3209677fc3977ef26b8c6741f52667e1b4120d897adb8e"
+    },
+    {
+     "level": 5,
+     "kind": "missing",
+     "side": "D",
+     "length": 3808,
+     "sha256": "8d3165a59e3771d0546b0e0802ca8acacbccb049844e762f40d0edf37977a456"
+    }
+   ],
+   "all_equal": true,
+   "derived_from_macro_chain_grammar": true,
+   "all_level_endpoint_identity": true,
+   "all_level_simplicity_or_nonintersection": false
+  },
+  "boundary_simplicity_prefix": {
+   "maximum_level": 7,
+   "reports": [
+    {
+     "level": 1,
+     "kind": "full",
+     "edges": 46,
+     "repeated_nonclosing_vertices": 0,
+     "nonadjacent_segment_intersections": [],
+     "simple": true,
+     "candidate_acceleration": "rational sqrt(3) interval bins; every candidate is decided exactly"
+    },
+    {
+     "level": 1,
+     "kind": "missing",
+     "edges": 44,
+     "repeated_nonclosing_vertices": 0,
+     "nonadjacent_segment_intersections": [],
+     "simple": true,
+     "candidate_acceleration": "rational sqrt(3) interval bins; every candidate is decided exactly"
+    },
+    {
+     "level": 2,
+     "kind": "full",
+     "edges": 182,
+     "repeated_nonclosing_vertices": 0,
+     "nonadjacent_segment_intersections": [],
+     "simple": true,
+     "candidate_acceleration": "rational sqrt(3) interval bins; every candidate is decided exactly"
+    },
+    {
+     "level": 2,
+     "kind": "missing",
+     "edges": 160,
+     "repeated_nonclosing_vertices": 0,
+     "nonadjacent_segment_intersections": [],
+     "simple": true,
+     "candidate_acceleration": "rational sqrt(3) interval bins; every candidate is decided exactly"
+    },
+    {
+     "level": 3,
+     "kind": "full",
+     "edges": 758,
+     "repeated_nonclosing_vertices": 0,
+     "nonadjacent_segment_intersections": [],
+     "simple": true,
+     "candidate_acceleration": "rational sqrt(3) interval bins; every candidate is decided exactly"
+    },
+    {
+     "level": 3,
+     "kind": "missing",
+     "edges": 652,
+     "repeated_nonclosing_vertices": 0,
+     "nonadjacent_segment_intersections": [],
+     "simple": true,
+     "candidate_acceleration": "rational sqrt(3) interval bins; every candidate is decided exactly"
+    },
+    {
+     "level": 4,
+     "kind": "full",
+     "edges": 3198,
+     "repeated_nonclosing_vertices": 0,
+     "nonadjacent_segment_intersections": [],
+     "simple": true,
+     "candidate_acceleration": "rational sqrt(3) interval bins; every candidate is decided exactly"
+    },
+    {
+     "level": 4,
+     "kind": "missing",
+     "edges": 2736,
+     "repeated_nonclosing_vertices": 0,
+     "nonadjacent_segment_intersections": [],
+     "simple": true,
+     "candidate_acceleration": "rational sqrt(3) interval bins; every candidate is decided exactly"
+    },
+    {
+     "level": 5,
+     "kind": "full",
+     "edges": 13534,
+     "repeated_nonclosing_vertices": 0,
+     "nonadjacent_segment_intersections": [],
+     "simple": true,
+     "candidate_acceleration": "rational sqrt(3) interval bins; every candidate is decided exactly"
+    },
+    {
+     "level": 5,
+     "kind": "missing",
+     "edges": 11564,
+     "repeated_nonclosing_vertices": 0,
+     "nonadjacent_segment_intersections": [],
+     "simple": true,
+     "candidate_acceleration": "rational sqrt(3) interval bins; every candidate is decided exactly"
+    },
+    {
+     "level": 6,
+     "kind": "full",
+     "edges": 57318,
+     "repeated_nonclosing_vertices": 0,
+     "nonadjacent_segment_intersections": [],
+     "simple": true,
+     "candidate_acceleration": "rational sqrt(3) interval bins; every candidate is decided exactly"
+    },
+    {
+     "level": 6,
+     "kind": "missing",
+     "edges": 48960,
+     "repeated_nonclosing_vertices": 0,
+     "nonadjacent_segment_intersections": [],
+     "simple": true,
+     "candidate_acceleration": "rational sqrt(3) interval bins; every candidate is decided exactly"
+    },
+    {
+     "level": 7,
+     "kind": "full",
+     "edges": 242790,
+     "repeated_nonclosing_vertices": 0,
+     "nonadjacent_segment_intersections": [],
+     "simple": true,
+     "candidate_acceleration": "rational sqrt(3) interval bins; every candidate is decided exactly"
+    },
+    {
+     "level": 7,
+     "kind": "missing",
+     "edges": 207372,
+     "repeated_nonclosing_vertices": 0,
+     "nonadjacent_segment_intersections": [],
+     "simple": true,
+     "candidate_acceleration": "rational sqrt(3) interval bins; every candidate is decided exactly"
+    }
+   ],
+   "all_simple": true,
+   "all_level_induction": false
+  }
+ },
+ "audit": {
+  "finite_kernel": {
+   "deterministic": true,
+   "closed": true,
+   "states": 17,
+   "minimum_children": 7,
+   "maximum_children": 8,
+   "primitive": true,
+   "primitivity_exponent": 3,
+   "incidence_matrix": [
+    [
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     2,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     1,
+     1,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     1,
+     0,
+     1
+    ],
+    [
+     1,
+     0,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     1,
+     0,
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     1,
+     0,
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    [
+     2,
+     0,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     2,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     1,
+     1,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     1,
+     0,
+     0,
+     1,
+     1,
+     0,
+     1,
+     0,
+     0,
+     1,
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     1,
+     0,
+     0,
+     1,
+     1,
+     0,
+     1,
+     0,
+     0,
+     1,
+     0,
+     0,
+     1,
+     0
+    ]
+   ]
+  },
+  "geometry_kernel": {
+   "exact_stationary_recurrence": true,
+   "dimension": 16,
+   "unimodular": true,
+   "levels_verified_against_vendor": 32,
+   "realized_patch_levels": 1,
+   "realized_patches_exactly_legal": 18,
+   "geometric_support_types": 2,
+   "abstract_disk_prefix_through_level": 4,
+   "boundary_word_recurrence_checked_through_level": 5,
+   "all_level_macro_side_endpoints": true,
+   "macro_word_recurrence_checked_through_level": 5,
+   "exact_simple_boundary_prefix_through_level": 7,
+   "expanding_linear_factor": "sqrt(4+sqrt(15))",
+   "expanding_two_level_factor": "4+sqrt(15)"
+  },
+  "recognisability_crosswalk": {
+   "claim": "no independent recognisability or aperiodicity theorem yet",
+   "walton_theorem_route": {
+    "control": "walton-recognisability-2026",
+    "theorem": "Theorem 5.2 and Corollary 5.5",
+    "conclusion": "unique composition modulo translation; for return-discrete tiling spaces, strict injectivity iff the hull has no periodic elements",
+    "role_in_W3": "post-aperiodicity recognisability theorem and consistency control, not a standalone proof of aperiodicity",
+    "hypotheses": {
+     "W1_compact_FLC_pattern_space": {
+      "status": "missing",
+      "maps_to": [
+       "C1_legality",
+       "C5_global_consistency"
+      ],
+      "missing": "a formal admitted hull and a proof that its complete translation patch language has finite local complexity"
+     },
+     "W2_Hausdorff_well_separated": {
+      "status": "missing",
+      "maps_to": [
+       "C1_legality",
+       "C5_global_consistency"
+      ],
+      "missing": "a return-discreteness or well-separation witness for the encoded whole-plane tiling space"
+     },
+     "W3_expansive_linear_automorphism": {
+      "status": "partial",
+      "maps_to": [
+       "C3_existence_growth"
+      ],
+      "evidence": "an exact expanding recurrent rank-four geometry factor is verified, but it is not yet encoded as one Euclidean linear automorphism L on the admitted hull"
+     },
+     "W4_surjective_LD_subdivision": {
+      "status": "missing",
+      "maps_to": [
+       "C2_closure",
+       "C4_recognizability",
+       "C5_global_consistency"
+      ],
+      "missing": "a local-derivation subdivision S:L\u03a9\u2192\u03a9 defined and surjective on every admitted whole-plane tiling"
+     },
+     "W5_discrete_nonperiodicity_for_injectivity": {
+      "status": "missing",
+      "maps_to": [
+       "C4_recognizability",
+       "T3_aperiodicity"
+      ],
+      "missing": "an independent proof that the admitted hull contains no periodic element; using this hypothesis to prove the same claim would be circular"
+     }
+    },
+    "all_hypotheses_verified": false,
+    "standalone_aperiodicity_route": false
+   },
+   "direct_local_composition_route": {
+    "control": "cheritat-spectre-clusters-2024",
+    "result": "Corollary 63 (whole-plane, rotations only, unique hierarchy)",
+    "scope_warning": "the published argument concerns all whole-plane Tile(1,1) tilings without reflections, not merely generated patches",
+    "obligations": {
+     "D1_formal_all_tilings_domain": {
+      "status": "verified",
+      "within_edge_to_edge_status": "verified",
+      "maps_to": [
+       "C1_legality",
+       "C5_global_consistency"
+      ],
+      "missing": null
+     },
+     "D2_parent_exists_for_every_tiling": {
+      "status": "verified",
+      "within_L18_status": "verified",
+      "within_edge_to_edge_status": "verified",
+      "maps_to": [
+       "C3_existence_growth",
+       "C4_recognizability"
+      ],
+      "missing": null
+     },
+     "D3_parent_grouping_is_unique": {
+      "status": "verified",
+      "within_L18_status": "verified",
+      "within_edge_to_edge_status": "verified",
+      "maps_to": [
+       "C4_recognizability"
+      ],
+      "evidence": "the unrestricted edge-patch bridge enters L18 and the 418-case transducer plus radius-six component audit prove one unique parent-anchor partition"
+     },
+     "D4_equivalence_chain_is_faithful": {
+      "status": "partial",
+      "maps_to": [
+       "C1_legality",
+       "C5_global_consistency"
+      ],
+      "evidence": "the exact colored-interface/A6-collar bijection, all 17 component boundary round trips, unimodular forward and inverse normalization, and three consecutive generated level-pair physical round trips verify",
+      "missing": "prove that every colored parent star arising from the full physical L18 hull lies in the faithful transition language; the bare 17-state radius-one overlap SFT admits 536 output-overlap stars, and 80 of its 3,565 seed stars survive one further exact state ring"
+     },
+     "D5_hierarchy_iterates_on_same_domain": {
+      "status": "verified",
+      "within_L18_status": "verified",
+      "within_edge_to_edge_status": "verified",
+      "maps_to": [
+       "C2_closure",
+       "C4_recognizability",
+       "C5_global_consistency"
+      ],
+      "evidence": "the unrestricted hull enters L18 and radius-three defect elimination proves contraction to exactly the 17 generated states"
+     },
+     "D6_local_inverse_or_uniform_recognition_radius": {
+      "status": "verified",
+      "within_L18_status": "verified",
+      "within_edge_to_edge_status": "verified",
+      "maps_to": [
+       "C4_recognizability"
+      ],
+      "missing": null
+     },
+     "D7_period_descent_and_scale_growth": {
+      "status": "partial",
+      "maps_to": [
+       "C3_existence_growth",
+       "T3_aperiodicity"
+      ],
+      "evidence": "expanding algebra is known, but no theorem yet links every legal hierarchy to shrinking translational periods"
+     }
+    },
+    "all_obligations_verified": false,
+    "standalone_aperiodicity_route": false
+   },
+   "standalone_aperiodicity_route_ready": false,
+   "finite_physical_prefix": {
+    "status": "COMPLETE_RADIUS3_PREFIX",
+    "radius_completed": 3,
+    "ancestry_blind": true,
+    "radius1_coronas": 166,
+    "radius2_survivors": 30,
+    "radius3_survivors": 21,
+    "substitution_observed": 18,
+    "unobserved_radius3_survivors": 3,
+    "unique_parent_radius3_survivors": 0,
+    "all_unobserved_radius3_survivors_have_radius4_witnesses": true,
+    "radius1_language_sha256": "219a0b735d56e0ee5e201bb92e108ece25008d7f40c1ff3ab235313415789c92",
+    "observed_language_sha256": "9a24ff78e87542394f0924471b4998158841704646349b2e8368583d65344126",
+    "claim_boundary": "complete existential central-corona language through three rings; no claim that every radius-three survivor extends to a whole-plane tiling"
+   },
+   "finite_parent_overlap_prefix": {
+    "status": "CONDITIONAL_EXTRAS_REFUTED_RADIUS4",
+    "conditional_on_recovered_parent_language": true,
+    "generated_controls_surviving": 18,
+    "extra_coronas_refuted": [
+     33,
+     44,
+     155
+    ],
+    "radius3_frontier_states_exhausted": 224,
+    "radius4_frontier_states": 0,
+    "conditional_language_after_grouping": 18,
+    "claim_boundary": "conditional finite exclusion from the recovered parent-grouping language; not a proof that every whole-plane physical tiling admits such a grouping"
+   },
+   "conditional_l18_composition": {
+    "unrestricted_contact_bridge": true,
+    "unrestricted_l18_entry": true,
+    "edge_to_edge_entry": true,
+    "unique_parent_partition": true,
+    "same_domain_closure": true,
+    "d4_finite_kernel": true,
+    "d4_full_hull_equivalence": false,
+    "scope": "all fixed-chirality straight-Spectre polygonal tilings; unrestricted contacts reduce to the primitive model and all complete physical coronas are proved to lie in L18"
+   }
+  },
+  "obligations": {
+   "C1_legality": {
+    "status": "partial",
+    "exact_recursive_geometry": true,
+    "reason": "exact recursive child geometry and a finite prefix of realized leaf patches are verified, but no boundary-induction proof yet extends legality to every level/collared state"
+   },
+   "C2_closure": {
+    "status": "verified",
+    "reason": "one deterministic rule per state; every child state is in the alphabet"
+   },
+   "C3_existence_growth": {
+    "status": "partial",
+    "primitive": true,
+    "primitivity_exponent": 3,
+    "exact_expanding_geometry_recurrence": true,
+    "expanding_two_level_factor": "4+sqrt(15)",
+    "missing": "a certified inball-radius growth witness linking the exact recurrence to realized metatile supports"
+   },
+   "C4_recognizability": {
+    "status": "partial",
+    "sampled_language_unique": true,
+    "missing": "D1/D2/D3/D5/D6 are verified on the unrestricted fixed-chirality hull; D4 now has an exact finite equivalence kernel, but equality of its 80 surviving radius-two context seeds with the physical-derived hull remains open; Walton cannot replace it without independently assuming the absence of periodic tilings"
+   },
+   "C5_global_consistency": {
+    "status": "partial",
+    "reason": "the unrestricted edge-patch bridge, radius-five L18 entry, unique parent partition and 17-state contraction closure all verify; D4's 17-state bijection and exact scale round trips also verify, but its surviving context language has not yet been proved equal to the physical-derived hull"
+   }
+  },
+  "theorem_ready": false,
+  "blocking_obligations": [
+   "C1_legality",
+   "C3_existence_growth",
+   "C4_recognizability",
+   "C5_global_consistency"
+  ]
+ }
+}

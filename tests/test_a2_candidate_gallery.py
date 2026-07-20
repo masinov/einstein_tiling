@@ -24,3 +24,13 @@ def test_small_candidate_gallery_is_complete_and_current():
     assert path.read_text() == expected
     assert expected.count("<polygon ") == 116
     assert expected.count("Hc ≥ 3") == 10
+    assert "known Turtle" in expected
+
+
+def test_known_shapes_are_excluded_from_novelty_promotion():
+    novel = list(MODULE.novel_smallest_depth3_candidates())
+    assert novel == []
+
+    unregistered = list(MODULE.unregistered_smallest_depth3_candidates())
+    assert len(unregistered) == 9
+    assert all(key != MODULE.TURTLE_KEY for _, _, key, _ in unregistered)

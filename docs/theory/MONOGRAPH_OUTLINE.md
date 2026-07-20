@@ -79,6 +79,8 @@ This part is conditional and must not drive the framework's claims.
 
 - **Framework paper:** Parts I–III plus validated portions of Part V.
 - **Census/data paper:** Chapters 6, 9, 19 and 22.
-- **Rigidity paper or section:** Part IV, depending on W4's outcome.
+- **Optional rigidity paper or section:** Part IV only for an all-tilings
+  theorem or a substrate extension beyond the published polykite
+  periodic-alignment reduction.
 - **Finalist paper:** Part VI only if its proof obligations close.
 - **Tiling-group note:** Chapter 10 if W2.D produces a genuine theorem.

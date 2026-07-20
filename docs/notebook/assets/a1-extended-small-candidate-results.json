@@ -1,5 +1,10 @@
 {
  "kind": "extended-exact-torus-screen",
+ "literature_scope": {
+  "published_aperiodic_polykite_horizon": 24,
+  "all_rows_are_validation_not_discovery": true,
+  "controlling_correction": "ERR-004/D-0049"
+ },
  "k_max": 21,
  "node_budget_per_torus": 5000000,
  "periodic": 8,
@@ -16,6 +21,8 @@
    "n": 10,
    "index": 2,
    "shape": "010001010104010502f002f1030b030c04fa04fb",
+   "known_name": "turtle",
+   "novel": false,
    "verdict": "no-periodic-at-budget",
    "certificate": null
   },

@@ -1,0 +1,992 @@
+{
+ "kind": "theory-w2-layer-d-index60-single-orbit-packing-certificates",
+ "schema_version": 1,
+ "date": "2026-07-18",
+ "scope": {
+  "hnfs": [
+   [
+    10,
+    2,
+    6
+   ],
+   [
+    30,
+    6,
+    2
+   ],
+   [
+    30,
+    22,
+    2
+   ]
+  ],
+  "signature_layers": 16,
+  "packing_axiom": "forbid one exact D6 orbit of two-tile collisions sharing six kites",
+  "logical_polarity": "sound relaxation of exact cover: all omitted collision orbits remain allowed"
+ },
+ "provenance": {
+  "dependencies": [
+   {
+    "path": "docs/notebook/assets/theory-w2-layer-d-v4-product.json",
+    "sha256": "62aae01fe772401bb0e9a9af4305e181ddb53e151c423413583f156e59e0e278"
+   }
+  ],
+  "producer": "Glucose 4 via python-sat",
+  "checker": {
+   "name": "drat-trim",
+   "git_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985"
+  },
+  "sources": [
+   {
+    "path": "src/einstein/theory/a4_v4_sft.py",
+    "sha256": "655431ad81c5d0f9f07351c6a8b8f06563394cbf1272f641f54124e76013cb74"
+   },
+   {
+    "path": "src/einstein/theory/a4_v4_product.py",
+    "sha256": "99788224463340a4022e4f4fe4b1c9bdbe121b48aae1dac255fbe1267740c41f"
+   },
+   {
+    "path": "src/einstein/theory/a4_v4_packing.py",
+    "sha256": "5f3bdc50d9a66e2d76612a0b06e7de52df7d16e77004246b5a5efaaa6f3ad182"
+   },
+   {
+    "path": "scripts/run_theory_w2_layer_d_v4_packing.py",
+    "sha256": "435da00fdedd25f7bb5a78545ba48081a054f94305ab6cb72cef51b9e23c79a3"
+   }
+  ]
+ },
+ "conclusion": {
+  "all_three_index60_escapes_unsat": true,
+  "full_nonoverlap_used": false,
+  "collision_orbits_used": 1,
+  "not_a_general_aperiodicity_proof": true
+ },
+ "summary": {
+  "certificates": 3,
+  "independently_verified": 3,
+  "compressed_certificate_bytes": 4337057
+ },
+ "results": [
+  {
+   "hnf": [
+    10,
+    2,
+    6
+   ],
+   "canonical_cnf_clause_hash": "bf9fc180b2fdc93f03bc3d17ea44275b87d7144ead8f61ce040db726a4dfeb9c",
+   "canonical_metadata": {
+    "kind": "a4-v4-product-local-coverability-sft",
+    "hnf": [
+     10,
+     2,
+     6
+    ],
+    "cover_mode": "at-least",
+    "layers": [
+     {
+      "images": [
+       1,
+       2,
+       1,
+       0,
+       3,
+       8
+      ],
+      "twists": [
+       3,
+       1
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       1,
+       2,
+       1,
+       0,
+       3,
+       11
+      ],
+      "twists": [
+       2,
+       1
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       1,
+       2,
+       1,
+       3,
+       0,
+       8
+      ],
+      "twists": [
+       2,
+       1
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       1,
+       2,
+       1,
+       3,
+       0,
+       11
+      ],
+      "twists": [
+       3,
+       1
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       1,
+       2,
+       1,
+       3,
+       8,
+       0
+      ],
+      "twists": [
+       2,
+       3
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       1,
+       2,
+       1,
+       3,
+       8,
+       11
+      ],
+      "twists": [
+       1,
+       3
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       1,
+       2,
+       1,
+       3,
+       11,
+       0
+      ],
+      "twists": [
+       3,
+       2
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       1,
+       2,
+       1,
+       3,
+       11,
+       8
+      ],
+      "twists": [
+       1,
+       2
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       0,
+       3,
+       8
+      ],
+      "twists": [
+       3,
+       1
+      ],
+      "c3_sign": -1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       0,
+       3,
+       11
+      ],
+      "twists": [
+       2,
+       1
+      ],
+      "c3_sign": -1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       3,
+       0,
+       8
+      ],
+      "twists": [
+       2,
+       1
+      ],
+      "c3_sign": -1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       3,
+       0,
+       11
+      ],
+      "twists": [
+       3,
+       1
+      ],
+      "c3_sign": -1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       3,
+       8,
+       0
+      ],
+      "twists": [
+       2,
+       3
+      ],
+      "c3_sign": -1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       3,
+       8,
+       11
+      ],
+      "twists": [
+       1,
+       3
+      ],
+      "c3_sign": -1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       3,
+       11,
+       0
+      ],
+      "twists": [
+       3,
+       2
+      ],
+      "c3_sign": -1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       3,
+       11,
+       8
+      ],
+      "twists": [
+       1,
+       2
+      ],
+      "c3_sign": -1
+     }
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 11520,
+    "variables": 12240,
+    "clauses": 645480,
+    "cover_clauses": 360
+   },
+   "packing_refinement": {
+    "kind": "single-D6-collision-orbit-nonoverlap",
+    "seed_placements": [
+     [
+      3,
+      0,
+      0
+     ],
+     [
+      5,
+      0,
+      1
+     ]
+    ],
+    "overlap_cells": 6,
+    "orbit_clauses": 720,
+    "is_subset_of_exact_nonoverlap": true
+   },
+   "core_clauses": 17449,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 228,
+    "conflicts": 60593,
+    "decisions": 180045,
+    "propagations": 3744797
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-packing/hnf-10-2-6-full16-overlap6-orbit.cnf.gz",
+    "cnf_gz_sha256": "0361f51dee0f2c20779752d8c996d271791a79839ead963a931805bc91149d95",
+    "cnf_uncompressed_sha256": "d142b0e604825c398f2d19de6ca44655f6a439b74f419b995ad6c83da79607f8",
+    "cnf_gz_bytes": 82291,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-packing/hnf-10-2-6-full16-overlap6-orbit.drat.gz",
+    "drat_gz_sha256": "070b4f8aeb6ba28cf5fcec16474daf57b8920e69277eb5c1251b287649e23ee1",
+    "drat_uncompressed_sha256": "a299db4c49d1482fc1fa980dd925e675b62e152e05a8bf69c138e53115456dab",
+    "drat_gz_bytes": 1440770
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 25.163295948004816
+  },
+  {
+   "hnf": [
+    30,
+    6,
+    2
+   ],
+   "canonical_cnf_clause_hash": "b124dee2e4eef34393d78cda4da635c56bc0c2fbed8fef01e49bd09f9f417f76",
+   "canonical_metadata": {
+    "kind": "a4-v4-product-local-coverability-sft",
+    "hnf": [
+     30,
+     6,
+     2
+    ],
+    "cover_mode": "at-least",
+    "layers": [
+     {
+      "images": [
+       1,
+       2,
+       1,
+       0,
+       3,
+       8
+      ],
+      "twists": [
+       3,
+       1
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       1,
+       2,
+       1,
+       0,
+       3,
+       11
+      ],
+      "twists": [
+       2,
+       1
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       1,
+       2,
+       1,
+       3,
+       0,
+       8
+      ],
+      "twists": [
+       2,
+       1
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       1,
+       2,
+       1,
+       3,
+       0,
+       11
+      ],
+      "twists": [
+       3,
+       1
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       1,
+       2,
+       1,
+       3,
+       8,
+       0
+      ],
+      "twists": [
+       2,
+       3
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       1,
+       2,
+       1,
+       3,
+       8,
+       11
+      ],
+      "twists": [
+       1,
+       3
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       1,
+       2,
+       1,
+       3,
+       11,
+       0
+      ],
+      "twists": [
+       3,
+       2
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       1,
+       2,
+       1,
+       3,
+       11,
+       8
+      ],
+      "twists": [
+       1,
+       2
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       0,
+       3,
+       8
+      ],
+      "twists": [
+       3,
+       1
+      ],
+      "c3_sign": -1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       0,
+       3,
+       11
+      ],
+      "twists": [
+       2,
+       1
+      ],
+      "c3_sign": -1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       3,
+       0,
+       8
+      ],
+      "twists": [
+       2,
+       1
+      ],
+      "c3_sign": -1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       3,
+       0,
+       11
+      ],
+      "twists": [
+       3,
+       1
+      ],
+      "c3_sign": -1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       3,
+       8,
+       0
+      ],
+      "twists": [
+       2,
+       3
+      ],
+      "c3_sign": -1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       3,
+       8,
+       11
+      ],
+      "twists": [
+       1,
+       3
+      ],
+      "c3_sign": -1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       3,
+       11,
+       0
+      ],
+      "twists": [
+       3,
+       2
+      ],
+      "c3_sign": -1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       3,
+       11,
+       8
+      ],
+      "twists": [
+       1,
+       2
+      ],
+      "c3_sign": -1
+     }
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 11520,
+    "variables": 12240,
+    "clauses": 645480,
+    "cover_clauses": 360
+   },
+   "packing_refinement": {
+    "kind": "single-D6-collision-orbit-nonoverlap",
+    "seed_placements": [
+     [
+      3,
+      0,
+      0
+     ],
+     [
+      5,
+      0,
+      1
+     ]
+    ],
+    "overlap_cells": 6,
+    "orbit_clauses": 720,
+    "is_subset_of_exact_nonoverlap": true
+   },
+   "core_clauses": 17267,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 177,
+    "conflicts": 52981,
+    "decisions": 154773,
+    "propagations": 3340164
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-packing/hnf-30-6-2-full16-overlap6-orbit.cnf.gz",
+    "cnf_gz_sha256": "f913b58dd5d1e7d4f30db67262d497e37a7068eb4d5ef50aa3101e337597500e",
+    "cnf_uncompressed_sha256": "c03fb7783eefccae6899144f40f0d9802a12b2679f9015694ebde03048af5cac",
+    "cnf_gz_bytes": 80083,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-packing/hnf-30-6-2-full16-overlap6-orbit.drat.gz",
+    "drat_gz_sha256": "fe685a3d41a6c6c30ad0690dae329702657b0f030c76427335e96f13b5778f71",
+    "drat_uncompressed_sha256": "b2b1986ea9f133cb286c0f7e4b1fa7d540ff8d99298982f6c6b8858ce690f94f",
+    "drat_gz_bytes": 1212534
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 23.68394798100053
+  },
+  {
+   "hnf": [
+    30,
+    22,
+    2
+   ],
+   "canonical_cnf_clause_hash": "7b9acdd86dc6ca4d57220279fbdd56df75929e8f48337f17ba0c0965a8869b62",
+   "canonical_metadata": {
+    "kind": "a4-v4-product-local-coverability-sft",
+    "hnf": [
+     30,
+     22,
+     2
+    ],
+    "cover_mode": "at-least",
+    "layers": [
+     {
+      "images": [
+       1,
+       2,
+       1,
+       0,
+       3,
+       8
+      ],
+      "twists": [
+       3,
+       1
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       1,
+       2,
+       1,
+       0,
+       3,
+       11
+      ],
+      "twists": [
+       2,
+       1
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       1,
+       2,
+       1,
+       3,
+       0,
+       8
+      ],
+      "twists": [
+       2,
+       1
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       1,
+       2,
+       1,
+       3,
+       0,
+       11
+      ],
+      "twists": [
+       3,
+       1
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       1,
+       2,
+       1,
+       3,
+       8,
+       0
+      ],
+      "twists": [
+       2,
+       3
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       1,
+       2,
+       1,
+       3,
+       8,
+       11
+      ],
+      "twists": [
+       1,
+       3
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       1,
+       2,
+       1,
+       3,
+       11,
+       0
+      ],
+      "twists": [
+       3,
+       2
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       1,
+       2,
+       1,
+       3,
+       11,
+       8
+      ],
+      "twists": [
+       1,
+       2
+      ],
+      "c3_sign": 1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       0,
+       3,
+       8
+      ],
+      "twists": [
+       3,
+       1
+      ],
+      "c3_sign": -1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       0,
+       3,
+       11
+      ],
+      "twists": [
+       2,
+       1
+      ],
+      "c3_sign": -1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       3,
+       0,
+       8
+      ],
+      "twists": [
+       2,
+       1
+      ],
+      "c3_sign": -1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       3,
+       0,
+       11
+      ],
+      "twists": [
+       3,
+       1
+      ],
+      "c3_sign": -1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       3,
+       8,
+       0
+      ],
+      "twists": [
+       2,
+       3
+      ],
+      "c3_sign": -1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       3,
+       8,
+       11
+      ],
+      "twists": [
+       1,
+       3
+      ],
+      "c3_sign": -1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       3,
+       11,
+       0
+      ],
+      "twists": [
+       3,
+       2
+      ],
+      "c3_sign": -1
+     },
+     {
+      "images": [
+       2,
+       1,
+       2,
+       3,
+       11,
+       8
+      ],
+      "twists": [
+       1,
+       2
+      ],
+      "c3_sign": -1
+     }
+    ],
+    "cells": 360,
+    "placements": 720,
+    "vertices": 360,
+    "potential_bits": 11520,
+    "variables": 12240,
+    "clauses": 645480,
+    "cover_clauses": 360
+   },
+   "packing_refinement": {
+    "kind": "single-D6-collision-orbit-nonoverlap",
+    "seed_placements": [
+     [
+      3,
+      0,
+      0
+     ],
+     [
+      5,
+      0,
+      1
+     ]
+    ],
+    "overlap_cells": 6,
+    "orbit_clauses": 720,
+    "is_subset_of_exact_nonoverlap": true
+   },
+   "core_clauses": 17308,
+   "core_subset_verified": true,
+   "glucose_stats": {
+    "restarts": 215,
+    "conflicts": 58615,
+    "decisions": 165713,
+    "propagations": 3680380
+   },
+   "certificate": {
+    "cnf_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-packing/hnf-30-22-2-full16-overlap6-orbit.cnf.gz",
+    "cnf_gz_sha256": "ac96ac18f4ebd86108b06793d19edb4d2075df01c70f83ee40ca831b5460f84b",
+    "cnf_uncompressed_sha256": "e3eef6aa4108d24a14a9f7e7b7da514f85a944c71e74c5d63ec19bd58760ed04",
+    "cnf_gz_bytes": 80686,
+    "drat_gz": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-packing/hnf-30-22-2-full16-overlap6-orbit.drat.gz",
+    "drat_gz_sha256": "30a6232196a2d69376dda0c780c09ef2b8a40d60d9a4c5e47e9969e9ec57a05a",
+    "drat_uncompressed_sha256": "ab21171410fc0faa9f81682a556b2ef240e49ecd8e254c330fbe637a4200c15c",
+    "drat_gz_bytes": 1440693
+   },
+   "independent_verification": {
+    "raw_proof": "VERIFIED",
+    "trimmed_core": "VERIFIED"
+   },
+   "wall_seconds": 24.717781463012216
+  }
+ ]
+}

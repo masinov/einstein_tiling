@@ -1,0 +1,506 @@
+{
+ "kind": "theory-w3-turtle-golden-sturmian-control",
+ "schema_version": 1,
+ "source_id": "akiyama-araki-turtle-2025",
+ "source_locations": {
+  "standard_and_central_words": "section 2, equations (1)-(2)",
+  "golden_hex_existence": "section 3, Lemma 1 and Theorem 1",
+  "forced_bars_and_kagome": "section 4, Lemmas 2-5",
+  "density": "section 4, Lemma 6 and Theorem 2"
+ },
+ "scope": {
+  "internally_verified": [
+   "standard-word recurrence and exact counts",
+   "central palindrome property and both decomposition identities",
+   "Golden Ammann-bar density polynomial",
+   "minority-chirality density polynomial",
+   "existing Turtle patch handedness count"
+  ],
+  "published_but_not_internally_reconstructed": [
+   "geometric realization of Golden Sturmian Patches",
+   "Golden Hex patch-tile induction and arbitrary inballs",
+   "forced continuation of dispensable Golden Ammann bars",
+   "generalized-bar Kagome structure and crossing bijection"
+  ]
+ },
+ "sturmian": {
+  "slope": "(5-sqrt(5))/10 = [3,1,1,1,...]",
+  "recurrence": "s_-1=1; s_0=0; s_1=001; s_(n+1)=s_n s_(n-1)",
+  "max_index": 24,
+  "central_checks": {
+   "palindromes": 25,
+   "equation_1_instances": 11,
+   "equation_2_instances": 11
+  },
+  "standard_words": [
+   {
+    "index": 0,
+    "length": 1,
+    "zeros": 1,
+    "ones": 0,
+    "one_frequency": [
+     0,
+     1
+    ],
+    "side_of_q_minus": null
+   },
+   {
+    "index": 1,
+    "length": 3,
+    "zeros": 2,
+    "ones": 1,
+    "one_frequency": [
+     1,
+     3
+    ],
+    "side_of_q_minus": 1
+   },
+   {
+    "index": 2,
+    "length": 4,
+    "zeros": 3,
+    "ones": 1,
+    "one_frequency": [
+     1,
+     4
+    ],
+    "side_of_q_minus": -1
+   },
+   {
+    "index": 3,
+    "length": 7,
+    "zeros": 5,
+    "ones": 2,
+    "one_frequency": [
+     2,
+     7
+    ],
+    "side_of_q_minus": 1
+   },
+   {
+    "index": 4,
+    "length": 11,
+    "zeros": 8,
+    "ones": 3,
+    "one_frequency": [
+     3,
+     11
+    ],
+    "side_of_q_minus": -1
+   },
+   {
+    "index": 5,
+    "length": 18,
+    "zeros": 13,
+    "ones": 5,
+    "one_frequency": [
+     5,
+     18
+    ],
+    "side_of_q_minus": 1
+   },
+   {
+    "index": 6,
+    "length": 29,
+    "zeros": 21,
+    "ones": 8,
+    "one_frequency": [
+     8,
+     29
+    ],
+    "side_of_q_minus": -1
+   },
+   {
+    "index": 7,
+    "length": 47,
+    "zeros": 34,
+    "ones": 13,
+    "one_frequency": [
+     13,
+     47
+    ],
+    "side_of_q_minus": 1
+   },
+   {
+    "index": 8,
+    "length": 76,
+    "zeros": 55,
+    "ones": 21,
+    "one_frequency": [
+     21,
+     76
+    ],
+    "side_of_q_minus": -1
+   },
+   {
+    "index": 9,
+    "length": 123,
+    "zeros": 89,
+    "ones": 34,
+    "one_frequency": [
+     34,
+     123
+    ],
+    "side_of_q_minus": 1
+   },
+   {
+    "index": 10,
+    "length": 199,
+    "zeros": 144,
+    "ones": 55,
+    "one_frequency": [
+     55,
+     199
+    ],
+    "side_of_q_minus": -1
+   },
+   {
+    "index": 11,
+    "length": 322,
+    "zeros": 233,
+    "ones": 89,
+    "one_frequency": [
+     89,
+     322
+    ],
+    "side_of_q_minus": 1
+   },
+   {
+    "index": 12,
+    "length": 521,
+    "zeros": 377,
+    "ones": 144,
+    "one_frequency": [
+     144,
+     521
+    ],
+    "side_of_q_minus": -1
+   },
+   {
+    "index": 13,
+    "length": 843,
+    "zeros": 610,
+    "ones": 233,
+    "one_frequency": [
+     233,
+     843
+    ],
+    "side_of_q_minus": 1
+   },
+   {
+    "index": 14,
+    "length": 1364,
+    "zeros": 987,
+    "ones": 377,
+    "one_frequency": [
+     377,
+     1364
+    ],
+    "side_of_q_minus": -1
+   },
+   {
+    "index": 15,
+    "length": 2207,
+    "zeros": 1597,
+    "ones": 610,
+    "one_frequency": [
+     610,
+     2207
+    ],
+    "side_of_q_minus": 1
+   },
+   {
+    "index": 16,
+    "length": 3571,
+    "zeros": 2584,
+    "ones": 987,
+    "one_frequency": [
+     987,
+     3571
+    ],
+    "side_of_q_minus": -1
+   },
+   {
+    "index": 17,
+    "length": 5778,
+    "zeros": 4181,
+    "ones": 1597,
+    "one_frequency": [
+     1597,
+     5778
+    ],
+    "side_of_q_minus": 1
+   },
+   {
+    "index": 18,
+    "length": 9349,
+    "zeros": 6765,
+    "ones": 2584,
+    "one_frequency": [
+     2584,
+     9349
+    ],
+    "side_of_q_minus": -1
+   },
+   {
+    "index": 19,
+    "length": 15127,
+    "zeros": 10946,
+    "ones": 4181,
+    "one_frequency": [
+     4181,
+     15127
+    ],
+    "side_of_q_minus": 1
+   },
+   {
+    "index": 20,
+    "length": 24476,
+    "zeros": 17711,
+    "ones": 6765,
+    "one_frequency": [
+     6765,
+     24476
+    ],
+    "side_of_q_minus": -1
+   },
+   {
+    "index": 21,
+    "length": 39603,
+    "zeros": 28657,
+    "ones": 10946,
+    "one_frequency": [
+     10946,
+     39603
+    ],
+    "side_of_q_minus": 1
+   },
+   {
+    "index": 22,
+    "length": 64079,
+    "zeros": 46368,
+    "ones": 17711,
+    "one_frequency": [
+     17711,
+     64079
+    ],
+    "side_of_q_minus": -1
+   },
+   {
+    "index": 23,
+    "length": 103682,
+    "zeros": 75025,
+    "ones": 28657,
+    "one_frequency": [
+     28657,
+     103682
+    ],
+    "side_of_q_minus": 1
+   },
+   {
+    "index": 24,
+    "length": 167761,
+    "zeros": 121393,
+    "ones": 46368,
+    "one_frequency": [
+     46368,
+     167761
+    ],
+    "side_of_q_minus": -1
+   }
+  ],
+  "central_words": [
+   {
+    "index": 0,
+    "length": 0,
+    "palindrome": true,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   {
+    "index": 1,
+    "length": 1,
+    "palindrome": true,
+    "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+   },
+   {
+    "index": 2,
+    "length": 2,
+    "palindrome": true,
+    "sha256": "f1534392279bddbf9d43dde8701cb5be14b82f76ec6607bf8d6ad557f60f304e"
+   },
+   {
+    "index": 3,
+    "length": 5,
+    "palindrome": true,
+    "sha256": "83dc8ab9acc8e45c2d2dec3e34a08e2c1e84c91cef7262fb086f0192040fa4cf"
+   },
+   {
+    "index": 4,
+    "length": 9,
+    "palindrome": true,
+    "sha256": "95f8c19776ea0fd678d88fcf9aeeadddab62b47a4270129e725ee70026f385f7"
+   },
+   {
+    "index": 5,
+    "length": 16,
+    "palindrome": true,
+    "sha256": "a6338ca029833cd608d67858dd4cc03eca88754fdef74c5e6343b9f3a3a875e3"
+   },
+   {
+    "index": 6,
+    "length": 27,
+    "palindrome": true,
+    "sha256": "816d421f04f5f6e2152195aa96dfbfb31f7d5897e5148e7c5c1c19b3faed7c4f"
+   },
+   {
+    "index": 7,
+    "length": 45,
+    "palindrome": true,
+    "sha256": "1d787cda505f48afe7720872117e2c52b73904518f367c467a455ced7492bfd2"
+   },
+   {
+    "index": 8,
+    "length": 74,
+    "palindrome": true,
+    "sha256": "3cd7a48773a801d06173725110d9516a787c334b84dfcb8ae87a0b92562978cb"
+   },
+   {
+    "index": 9,
+    "length": 121,
+    "palindrome": true,
+    "sha256": "8ea3e8acb4532b2e507dc34593da87eda2c3db0aa9a7940bf2cef86cbbff04d0"
+   },
+   {
+    "index": 10,
+    "length": 197,
+    "palindrome": true,
+    "sha256": "1f039dfed4c03624b8daa0ff4991ccc6ab2f4086d842f27b8bd2bde991018c19"
+   },
+   {
+    "index": 11,
+    "length": 320,
+    "palindrome": true,
+    "sha256": "68067e872ab5a6355a73236f7c622f385037999e9acc39bdc13c27f57c9d129b"
+   },
+   {
+    "index": 12,
+    "length": 519,
+    "palindrome": true,
+    "sha256": "71d216cb3e96eb820d81ef0ec0424c514444c5d5e4f2e233fa00aa1799744bf6"
+   },
+   {
+    "index": 13,
+    "length": 841,
+    "palindrome": true,
+    "sha256": "5017376055c05709d88d985c0f721b1f8fbb43f29869605637179718c1d5ac7b"
+   },
+   {
+    "index": 14,
+    "length": 1362,
+    "palindrome": true,
+    "sha256": "97f1f6ae51cf8640394acffdbf8aeeec95156fcff014620522c88d9655796b5b"
+   },
+   {
+    "index": 15,
+    "length": 2205,
+    "palindrome": true,
+    "sha256": "88d17e770017a9808fa87cd00d7e2370730ae894584415ad9768d4a5a3d0a2a5"
+   },
+   {
+    "index": 16,
+    "length": 3569,
+    "palindrome": true,
+    "sha256": "e2cb130b44bf0747a3a9050e34139f97ecac83742ee3f867c0187346d23a21f9"
+   },
+   {
+    "index": 17,
+    "length": 5776,
+    "palindrome": true,
+    "sha256": "339a07296caaccd40631d09c626ff3eb2fc8cacfaabfddfef6084047f59db709"
+   },
+   {
+    "index": 18,
+    "length": 9347,
+    "palindrome": true,
+    "sha256": "65905eccfced3e49e5be459c40820a41577afd4d0df2cda57dd6ab579ae309dd"
+   },
+   {
+    "index": 19,
+    "length": 15125,
+    "palindrome": true,
+    "sha256": "c11ab2cd2d0f1d4633dd3e6d6f095495c65e713243c29fb5575248a1f36e457d"
+   },
+   {
+    "index": 20,
+    "length": 24474,
+    "palindrome": true,
+    "sha256": "500b89060cb7c26b9a3689632b0f2069c3f10190814f5a0c834b052a1a5d6363"
+   },
+   {
+    "index": 21,
+    "length": 39601,
+    "palindrome": true,
+    "sha256": "bddb0414ee59f830bf460f30901fc5bcae88d64743f643c478f8657817d3ed63"
+   },
+   {
+    "index": 22,
+    "length": 64077,
+    "palindrome": true,
+    "sha256": "b5a0965e67d745f2e4edc384d2c6c2feaa98540b34a068cf8446900d4f6afd31"
+   },
+   {
+    "index": 23,
+    "length": 103680,
+    "palindrome": true,
+    "sha256": "26e2acbe96151e2d7bed5421cdb6cde71d56bf6a0d8723ebb0da62765b70f4c9"
+   },
+   {
+    "index": 24,
+    "length": 167759,
+    "palindrome": true,
+    "sha256": "ed0197ee1964d51caae6949d40c3445a4786d5b28e591eb655a2abfe12b2dcc9"
+   }
+  ]
+ },
+ "density": {
+  "gab_equation": "q^2-q+1/5=0",
+  "gab_roots": [
+   "(5-sqrt(5))/10",
+   "(5+sqrt(5))/10"
+  ],
+  "gab_root_residuals": [
+   [
+    "0",
+    "0"
+   ],
+   [
+    "0",
+    "0"
+   ]
+  ],
+  "minority_chirality": "(5/3)q_minus^2=(3-sqrt(5))/6=1/(1+phi^4)",
+  "minority_polynomial": "9f^2-9f+1=0",
+  "minority_root_residual": [
+   "0",
+   "0"
+  ]
+ },
+ "turtle_patch": {
+  "source": "docs/notebook/assets/e1-finalist-results.json",
+  "source_sha256": "b586ec0fabf9fbf5d21977861acd2ddfae8f5149c55ba0a90fdd85c4b44f8bf0",
+  "canonical_key": "010001010104010502f002f1030b030c04fa04fb",
+  "placements": 9239,
+  "orientation_preserving": 1181,
+  "mirrored": 8058,
+  "minority": 1181,
+  "minority_fraction": [
+   1181,
+   9239
+  ],
+  "side_of_exact_prediction": 1,
+  "decimal": 0.1278276869791103,
+  "exact_prediction_decimal": 0.12732200375003502
+ },
+ "verdict": "exact-combinatorial-and-density-control-pass",
+ "aperiodicity_claim": "external-published-theorem; internal geometric obligations remain open"
+}

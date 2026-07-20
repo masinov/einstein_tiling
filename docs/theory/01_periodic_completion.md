@@ -87,12 +87,18 @@ That engineering and certificate contract is specified in
 
 ## Scope and review obligations
 
-- The theorem concerns grid-aligned tilings. W4 grid rigidity is required to
-  upgrade it to arbitrary Euclidean placements.
+- The theorem itself concerns grid-aligned tilings. For finite polykite sets,
+  the upgrade needed for periodicity is already external: Appendix A,
+  Lemmas A.1, A.3 and A.5 of Smith--Myers--Kaplan--Goodman-Strauss,
+  *An aperiodic monotile*, show that any weakly or strongly periodic
+  geometric polykite tiling has an aligned counterpart with the same listed
+  property. Combining that reduction with T0.1 means exclusion of all aligned
+  rank-two tori excludes every nonzero translational period under arbitrary
+  Euclidean placements. W4 concerns only stronger all-tilings rigidity or
+  extensions outside the polykite hypotheses.
 - The proof relies only on finite local complexity and finite-range exact
   coverage, not on the candidate's diffraction or hierarchy.
 - Before theorem-ready status, verify the terminology and preferred citation
   against the standard periodic-point result for one-dimensional SFTs.
 - The implementation must handle \(\Lambda/\langle v\rangle\)'s torsion when
   \(v\) is nonprimitive.
-

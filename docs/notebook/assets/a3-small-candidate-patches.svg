@@ -57,7 +57,7 @@
 <polygon points="161.09,113.49 161.09,125.91 168.26,125.91 171.85,132.13 161.09,138.34 161.09,150.77 153.91,150.77 150.33,156.98 146.74,163.19 150.33,169.40 153.91,175.62 161.09,175.62 161.09,163.19 171.85,156.98 168.26,150.77 171.85,144.55 175.44,138.34 182.61,138.34 182.61,125.91 171.85,119.70 175.44,113.49 171.85,107.28" fill="#f78154" fill-opacity="0.82" stroke="#f8f9fa" stroke-width="0.65" stroke-linejoin="round"/>
 <polygon points="232.83,312.30 236.41,306.09 247.17,312.30 257.93,306.09 261.52,312.30 268.70,312.30 275.87,312.30 279.46,306.09 290.22,312.30 290.22,324.72 297.39,324.72 300.98,330.94 290.22,337.15 279.46,330.94 283.04,324.72 279.46,318.51 268.70,324.72 257.93,318.51 254.35,324.72 247.17,324.72 240.00,324.72 236.41,318.51" fill="#f8961e" fill-opacity="0.82" stroke="#f8f9fa" stroke-width="0.65" stroke-linejoin="round"/>
 <rect x="488" y="8" width="464" height="374" rx="10" fill="#1c2430" stroke="#394555"/>
-<text x="720.0" y="30" fill="#f8f9fa" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">n=10 candidate 2</text>
+<text x="720.0" y="30" fill="#f8f9fa" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">n=10 known Turtle</text>
 <text x="720.0" y="50" fill="#51cf66" font-family="sans-serif" font-size="12" text-anchor="middle">grown through r²=12800; 2404 tiles</text>
 <text x="720.0" y="65" fill="#adb5bd" font-family="sans-serif" font-size="10" text-anchor="middle">central r²≤800 view · 167 intersecting tiles</text>
 <circle cx="716.54" cy="214.00" r="130.64" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="1.2" stroke-dasharray="4 4"/>

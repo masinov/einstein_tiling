@@ -15,6 +15,11 @@ Scope limitation (recorded as D-0006): only grid-aligned placements are
 considered, i.e. images of the shape under the kite grid's symmetry group
 p6m = D6 (about a hex center) x center-lattice translations.  Polyform
 tilings that break grid alignment exist in general and are invisible here.
+For finite polykite sets, the external Appendix-A alignment theorem in
+Smith--Myers--Kaplan--Goodman-Strauss (2024) shows that any periodic geometric
+tiling has an aligned periodic counterpart.  That theorem can promote a
+*complete* aligned obstruction, but it does not turn this solver's finite
+``k_max`` negative verdict into a proof.
 
 Lattice bookkeeping: hexagon centers form a rank-2 lattice with basis
 t1 = (2, 2), t2 = (-2, 4) in hex coordinates.  A cell (cx, cy, d) maps to

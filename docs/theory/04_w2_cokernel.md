@@ -1,5 +1,7 @@
 # W2.C — quotient incidence cokernels
 
+> “Finalist” in legacy IDs/artifacts means the known Turtle (ERR-003/D-0048).
+
 ## Modular certificate
 
 For a quotient lattice (L), let (M(L)) be the cell-by-placement incidence

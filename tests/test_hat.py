@@ -14,6 +14,7 @@ This test validates, end to end:
 """
 
 from einstein.enumeration.polyform import enumerate_free_polykites
+from einstein.e1_candidates import HAT_KEY, HAT_OUTLINE, decode_compiled_key
 from einstein.substrate.kitegrid import (
     boundary_cycle,
     canonical_form,
@@ -22,13 +23,6 @@ from einstein.substrate.kitegrid import (
     remove_collinear,
     shoelace2,
 )
-
-# hatviz geometry.js: const hat_outline = [ hexPt(0,0), ... ]
-HAT_OUTLINE = [
-    (0, 0), (-1, -1), (0, -2), (2, -2), (2, -1), (4, -2), (5, -1),
-    (4, 0), (3, 0), (2, 2), (0, 3), (0, 2), (-1, 2),
-]
-
 
 def _cyclic_variants(poly):
     n = len(poly)
@@ -57,3 +51,9 @@ def test_hat_found_by_enumeration():
     for n, forms in enumerate_free_polykites(8):
         if n == 8:
             assert hat_canon in forms
+
+
+def test_hat_known_shape_key_is_registered():
+    assert canonical_form(cells_in_polygon(HAT_OUTLINE)) == decode_compiled_key(
+        HAT_KEY
+    )

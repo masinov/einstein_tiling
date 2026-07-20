@@ -1,0 +1,626 @@
+{
+ "schema": "einstein.w3.spectre-edge-patch-bridge",
+ "version": 1,
+ "status": "UNRESTRICTED_EDGE_PATCH_BRIDGE_PROVED",
+ "subject": "straight Tile(1,1), one fixed chirality",
+ "scope": {
+  "motions": [
+   "translation",
+   "rotation"
+  ],
+  "reflections_allowed": false,
+  "input_contact_model": "arbitrary locally finite polygon tilings, including vertices on sides and T-junctions",
+  "output_contact_model": "full primitive unit-edge contacts"
+ },
+ "published_crosscheck": {
+  "source": "smkgs-chiral-2024",
+  "results": [
+   "Lemma 2.3",
+   "Theorem 3.1"
+  ],
+  "role": "independent unrestricted edge-patch and even/odd deformation route to aligned hat-turtle tilings"
+ },
+ "analysis": {
+  "primitive_boundary": {
+   "edges": 14,
+   "direction_word": [
+    0,
+    10,
+    1,
+    3,
+    0,
+    2,
+    5,
+    7,
+    4,
+    6,
+    6,
+    8,
+    11,
+    9
+   ],
+   "all_edges_have_unit_exact_norm": true,
+   "uses_all_12_directions": true
+  },
+  "maximal_sides": {
+   "count": 13,
+   "length_histogram": {
+    "1": 12,
+    "2": 1
+   },
+   "records": [
+    {
+     "first_primitive_edge": 0,
+     "primitive_edges": 1,
+     "direction": 0,
+     "start_angle_units30": 3,
+     "end_angle_units30": 8
+    },
+    {
+     "first_primitive_edge": 1,
+     "primitive_edges": 1,
+     "direction": 10,
+     "start_angle_units30": 8,
+     "end_angle_units30": 3
+    },
+    {
+     "first_primitive_edge": 2,
+     "primitive_edges": 1,
+     "direction": 1,
+     "start_angle_units30": 3,
+     "end_angle_units30": 4
+    },
+    {
+     "first_primitive_edge": 3,
+     "primitive_edges": 1,
+     "direction": 3,
+     "start_angle_units30": 4,
+     "end_angle_units30": 9
+    },
+    {
+     "first_primitive_edge": 4,
+     "primitive_edges": 1,
+     "direction": 0,
+     "start_angle_units30": 9,
+     "end_angle_units30": 4
+    },
+    {
+     "first_primitive_edge": 5,
+     "primitive_edges": 1,
+     "direction": 2,
+     "start_angle_units30": 4,
+     "end_angle_units30": 3
+    },
+    {
+     "first_primitive_edge": 6,
+     "primitive_edges": 1,
+     "direction": 5,
+     "start_angle_units30": 3,
+     "end_angle_units30": 4
+    },
+    {
+     "first_primitive_edge": 7,
+     "primitive_edges": 1,
+     "direction": 7,
+     "start_angle_units30": 4,
+     "end_angle_units30": 9
+    },
+    {
+     "first_primitive_edge": 8,
+     "primitive_edges": 1,
+     "direction": 4,
+     "start_angle_units30": 9,
+     "end_angle_units30": 4
+    },
+    {
+     "first_primitive_edge": 9,
+     "primitive_edges": 2,
+     "direction": 6,
+     "start_angle_units30": 4,
+     "end_angle_units30": 4
+    },
+    {
+     "first_primitive_edge": 11,
+     "primitive_edges": 1,
+     "direction": 8,
+     "start_angle_units30": 4,
+     "end_angle_units30": 3
+    },
+    {
+     "first_primitive_edge": 12,
+     "primitive_edges": 1,
+     "direction": 11,
+     "start_angle_units30": 3,
+     "end_angle_units30": 8
+    },
+    {
+     "first_primitive_edge": 13,
+     "primitive_edges": 1,
+     "direction": 9,
+     "start_angle_units30": 8,
+     "end_angle_units30": 3
+    }
+   ]
+  },
+  "angle_bound": {
+   "interior_angles_units30": [
+    3,
+    8,
+    3,
+    4,
+    9,
+    4,
+    3,
+    4,
+    9,
+    4,
+    6,
+    4,
+    3,
+    8
+   ],
+   "minimum_degrees": 90,
+   "no_maximal_side_has_right_angles_at_both_ends": true,
+   "consequence": "a straight tiling interface has at most two polygon sides on either side",
+   "proof": "three or more sides would give a middle tile whose two side endpoints are both 90-degree corners; any additional point-only tile already exceeds the 180-degree half-plane"
+  },
+  "finite_correspondence": {
+   "side_words": [
+    [
+     1
+    ],
+    [
+     2
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "ordered_equal_length_patterns": 10,
+   "patterns": [
+    {
+     "left_side_lengths": [
+      1
+     ],
+     "right_side_lengths": [
+      1
+     ],
+     "total_primitive_length": 1,
+     "left_polygon_corners": [],
+     "right_polygon_corners": [],
+     "primitive_vertices": [
+      0,
+      1
+     ],
+     "T_junction_offsets": []
+    },
+    {
+     "left_side_lengths": [
+      2
+     ],
+     "right_side_lengths": [
+      2
+     ],
+     "total_primitive_length": 2,
+     "left_polygon_corners": [],
+     "right_polygon_corners": [],
+     "primitive_vertices": [
+      0,
+      1,
+      2
+     ],
+     "T_junction_offsets": []
+    },
+    {
+     "left_side_lengths": [
+      2
+     ],
+     "right_side_lengths": [
+      1,
+      1
+     ],
+     "total_primitive_length": 2,
+     "left_polygon_corners": [],
+     "right_polygon_corners": [
+      1
+     ],
+     "primitive_vertices": [
+      0,
+      1,
+      2
+     ],
+     "T_junction_offsets": [
+      1
+     ]
+    },
+    {
+     "left_side_lengths": [
+      1,
+      1
+     ],
+     "right_side_lengths": [
+      2
+     ],
+     "total_primitive_length": 2,
+     "left_polygon_corners": [
+      1
+     ],
+     "right_polygon_corners": [],
+     "primitive_vertices": [
+      0,
+      1,
+      2
+     ],
+     "T_junction_offsets": [
+      1
+     ]
+    },
+    {
+     "left_side_lengths": [
+      1,
+      1
+     ],
+     "right_side_lengths": [
+      1,
+      1
+     ],
+     "total_primitive_length": 2,
+     "left_polygon_corners": [
+      1
+     ],
+     "right_polygon_corners": [
+      1
+     ],
+     "primitive_vertices": [
+      0,
+      1,
+      2
+     ],
+     "T_junction_offsets": []
+    },
+    {
+     "left_side_lengths": [
+      1,
+      2
+     ],
+     "right_side_lengths": [
+      1,
+      2
+     ],
+     "total_primitive_length": 3,
+     "left_polygon_corners": [
+      1
+     ],
+     "right_polygon_corners": [
+      1
+     ],
+     "primitive_vertices": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "T_junction_offsets": []
+    },
+    {
+     "left_side_lengths": [
+      1,
+      2
+     ],
+     "right_side_lengths": [
+      2,
+      1
+     ],
+     "total_primitive_length": 3,
+     "left_polygon_corners": [
+      1
+     ],
+     "right_polygon_corners": [
+      2
+     ],
+     "primitive_vertices": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "T_junction_offsets": [
+      1,
+      2
+     ]
+    },
+    {
+     "left_side_lengths": [
+      2,
+      1
+     ],
+     "right_side_lengths": [
+      1,
+      2
+     ],
+     "total_primitive_length": 3,
+     "left_polygon_corners": [
+      2
+     ],
+     "right_polygon_corners": [
+      1
+     ],
+     "primitive_vertices": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "T_junction_offsets": [
+      1,
+      2
+     ]
+    },
+    {
+     "left_side_lengths": [
+      2,
+      1
+     ],
+     "right_side_lengths": [
+      2,
+      1
+     ],
+     "total_primitive_length": 3,
+     "left_polygon_corners": [
+      2
+     ],
+     "right_polygon_corners": [
+      2
+     ],
+     "primitive_vertices": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "T_junction_offsets": []
+    },
+    {
+     "left_side_lengths": [
+      2,
+      2
+     ],
+     "right_side_lengths": [
+      2,
+      2
+     ],
+     "total_primitive_length": 4,
+     "left_polygon_corners": [
+      2
+     ],
+     "right_polygon_corners": [
+      2
+     ],
+     "primitive_vertices": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "T_junction_offsets": []
+    }
+   ],
+   "all_reduce_to_identical_unit_subdivisions": true,
+   "maximum_interface_primitive_length": 4
+  },
+  "orientation_and_anchor_lock": {
+   "relative_orientations_are_multiples_of_30_degrees": true,
+   "reason": "every adjacency equates two directions from the complete 12-direction word; connectedness propagates one frame",
+   "neighbor_anchor_difference_lies_in_rank4_module": true,
+   "reason_anchor": "matched primitive endpoints are exact boundary module points"
+  },
+  "even_odd_deformation_control": [
+   {
+    "scaled_direction_parity": 0,
+    "boundary_closes_exactly": true,
+    "boundary_is_simple_exactly": true,
+    "vertices": [
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      2,
+      0,
+      -1
+     ],
+     [
+      0,
+      3,
+      0,
+      -3
+     ],
+     [
+      0,
+      4,
+      0,
+      -3
+     ],
+     [
+      0,
+      4,
+      0,
+      -2
+     ],
+     [
+      0,
+      6,
+      0,
+      -3
+     ],
+     [
+      0,
+      7,
+      0,
+      -2
+     ],
+     [
+      0,
+      6,
+      0,
+      -1
+     ],
+     [
+      0,
+      5,
+      0,
+      -1
+     ],
+     [
+      0,
+      4,
+      0,
+      1
+     ],
+     [
+      0,
+      2,
+      0,
+      2
+     ],
+     [
+      0,
+      0,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      0,
+      2
+     ],
+     [
+      0,
+      0,
+      0,
+      1
+     ]
+    ]
+   },
+   {
+    "scaled_direction_parity": 1,
+    "boundary_closes_exactly": true,
+    "boundary_is_simple_exactly": true,
+    "vertices": [
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      0,
+      0
+     ],
+     [
+      2,
+      0,
+      -1,
+      0
+     ],
+     [
+      3,
+      0,
+      0,
+      0
+     ],
+     [
+      2,
+      0,
+      2,
+      0
+     ],
+     [
+      3,
+      0,
+      2,
+      0
+     ],
+     [
+      3,
+      0,
+      3,
+      0
+     ],
+     [
+      1,
+      0,
+      4,
+      0
+     ],
+     [
+      0,
+      0,
+      3,
+      0
+     ],
+     [
+      -1,
+      0,
+      4,
+      0
+     ],
+     [
+      -2,
+      0,
+      4,
+      0
+     ],
+     [
+      -3,
+      0,
+      4,
+      0
+     ],
+     [
+      -3,
+      0,
+      3,
+      0
+     ],
+     [
+      -1,
+      0,
+      2,
+      0
+     ]
+    ]
+   }
+  ],
+  "theorem": {
+   "unrestricted_contacts_reduce_to_primitive_edge_to_edge": true,
+   "bijection": "split every maximal-side word at all integer offsets; the ten patterns map uniquely to full primitive unit-edge contacts, and forgetting artificial 180-degree splits is the inverse",
+   "T_junctions_are_exactly_primitive_vertices": true
+  }
+ },
+ "claim": {
+  "verdict": "every fixed-chirality straight-Spectre tiling is represented by the exact 14-segment primitive contact model",
+  "logic": "the angle hypotheses bound each maximal straight interface to two sides per half-plane; all ten equal-length words have one common integer unit subdivision; adjacency locks one 30-degree frame and matched endpoints lock all anchors to the rank-four module"
+ },
+ "claim_boundary": "fixed chirality only; mixed reflected/unreflected Tile(1,1) tilings are outside the W3 Spectre domain"
+}

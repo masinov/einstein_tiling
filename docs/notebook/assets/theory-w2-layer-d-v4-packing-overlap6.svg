@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="525" viewBox="0 0 620.00 524.75">
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<polygon points="166.00,158.31 238.00,199.88 262.00,158.31 238.00,116.74" fill="#d1495b" stroke="#ffffff" stroke-width="1.4"/>
+<polygon points="166.00,158.31 166.00,241.45 214.00,241.45 238.00,199.88" fill="#d1495b" stroke="#ffffff" stroke-width="1.4"/>
+<polygon points="166.00,324.58 238.00,366.15 262.00,324.58 238.00,283.02" fill="#6baed6" stroke="#ffffff" stroke-width="1.4"/>
+<polygon points="166.00,324.58 238.00,283.02 214.00,241.45 166.00,241.45" fill="#6baed6" stroke="#ffffff" stroke-width="1.4"/>
+<polygon points="310.00,75.17 382.00,116.74 406.00,75.17 382.00,33.60" fill="#f2b134" stroke="#ffffff" stroke-width="1.4"/>
+<polygon points="310.00,75.17 238.00,33.60 214.00,75.17 238.00,116.74" fill="#d1495b" stroke="#ffffff" stroke-width="1.4"/>
+<polygon points="310.00,75.17 238.00,116.74 262.00,158.31 310.00,158.31" fill="#d1495b" stroke="#ffffff" stroke-width="1.4"/>
+<polygon points="310.00,75.17 310.00,158.31 358.00,158.31 382.00,116.74" fill="#f2b134" stroke="#ffffff" stroke-width="1.4"/>
+<polygon points="310.00,241.45 382.00,199.88 358.00,158.31 310.00,158.31" fill="#d1495b" stroke="#ffffff" stroke-width="1.4"/>
+<polygon points="310.00,241.45 310.00,158.31 262.00,158.31 238.00,199.88" fill="#d1495b" stroke="#ffffff" stroke-width="1.4"/>
+<polygon points="310.00,241.45 238.00,199.88 214.00,241.45 238.00,283.02" fill="#6baed6" stroke="#ffffff" stroke-width="1.4"/>
+<polygon points="310.00,241.45 238.00,283.02 262.00,324.58 310.00,324.58" fill="#6baed6" stroke="#ffffff" stroke-width="1.4"/>
+<polygon points="454.00,158.31 454.00,75.17 406.00,75.17 382.00,116.74" fill="#f2b134" stroke="#ffffff" stroke-width="1.4"/>
+<polygon points="454.00,158.31 382.00,116.74 358.00,158.31 382.00,199.88" fill="#f2b134" stroke="#ffffff" stroke-width="1.4"/>
+<polygon points="166.00,158.31 166.00,241.45 166.00,324.58 238.00,366.15 262.00,324.58 310.00,324.58 310.00,241.45 382.00,199.88 358.00,158.31 310.00,158.31 310.00,75.17 238.00,33.60 214.00,75.17 238.00,116.74" fill="none" stroke="#185a7d" stroke-width="3.2" stroke-linejoin="round"/>
+<polygon points="166.00,158.31 166.00,241.45 214.00,241.45 238.00,199.88 310.00,241.45 382.00,199.88 454.00,158.31 454.00,75.17 406.00,75.17 382.00,33.60 310.00,75.17 238.00,33.60 214.00,75.17 238.00,116.74" fill="none" stroke="#9a6500" stroke-width="3.2" stroke-linejoin="round"/>
+<rect x="18" y="412.75375505322444" width="18" height="18" fill="#6baed6"/>
+<text x="43" y="427.75375505322444" font-family="sans-serif" font-size="16">placement (3,0,0)</text>
+<rect x="18" y="442.75375505322444" width="18" height="18" fill="#f2b134"/>
+<text x="43" y="457.75375505322444" font-family="sans-serif" font-size="16">placement (5,0,1)</text>
+<rect x="18" y="472.75375505322444" width="18" height="18" fill="#d1495b"/>
+<text x="43" y="487.75375505322444" font-family="sans-serif" font-size="16">six shared kites; entire D6 orbit forbidden</text>
+</svg>

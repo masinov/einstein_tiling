@@ -36,6 +36,11 @@ def render(payload, display_r2=800):
         '<rect width="100%" height="100%" fill="#11151c"/>',
     ]
     for panel, result in enumerate(payload["results"]):
+        shape_label = (
+            f'known {result["known_name"].title()}'
+            if result.get("known_name")
+            else f'candidate {result["index"]}'
+        )
         column, row = panel % columns, panel // columns
         ox, oy = column * panel_w, row * panel_h
         cert = result["largest_certificate"]
@@ -81,7 +86,7 @@ def render(payload, display_r2=800):
                 f'<text x="{ox + panel_w / 2}" y="{oy + 30}" '
                 'fill="#f8f9fa" font-family="sans-serif" font-size="16" '
                 f'font-weight="700" text-anchor="middle">n={result["n"]} '
-                f'candidate {result["index"]}</text>'
+                f'{shape_label}</text>'
             ),
             (
                 f'<text x="{ox + panel_w / 2}" y="{oy + 50}" '

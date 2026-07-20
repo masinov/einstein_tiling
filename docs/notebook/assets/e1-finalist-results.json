@@ -1,9 +1,12 @@
 {
- "kind": "e1-smallest-corpus-finalist-escalation",
+ "kind": "e1-turtle-control-escalation",
+ "legacy_kind": "e1-smallest-corpus-finalist-escalation",
  "candidate": {
   "n": 10,
   "index": 2,
-  "shape": "010001010104010502f002f1030b030c04fa04fb"
+  "shape": "010001010104010502f002f1030b030c04fa04fb",
+  "known_name": "turtle",
+  "novel": false
  },
  "a3": {
   "wall_seconds": 276.18,

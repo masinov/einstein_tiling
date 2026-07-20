@@ -8,6 +8,9 @@ dependencies = [
     "numpy",       # A4 spectral analysis only (D-0010)
     "sympy==1.14.0",  # exact Smith forms for W2 Layer C (D-0032)
     "python-flint==0.9.0",  # compiled production Smith backend (D-0032)
+    "highspy==1.15.1",  # Layer-D LP/MIP discovery and rational-dual search
+    "networkx==3.6.1",  # finite conflict-graph clique enumeration probes
+    "scipy==1.18.0",  # small continuous masters paired with HiGHS MIP probes
 ]
 
 [build-system]

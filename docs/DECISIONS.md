@@ -441,13 +441,16 @@ for A3/A4, not evidence of aperiodicity or quasicrystalline order. The eight
 produced no result; they remain explicitly unknown rather than being inferred
 from empty output.
 
-Human inspection starts with the complete smallest new witnessed sets: both
-n=10 candidates and all eight n=12 candidates are rendered in one SVG. These
-are genuinely new shapes from the exhaustive blind corpus, unlike the earlier
-hat A6 drawings, which showed two hierarchy exception variants of the same
-known hat.
+Human inspection starts with the complete smallest witnessed sets: both n=10
+shapes and all eight n=12 shapes are rendered in one SVG. **Correction
+(D-0048/ERR-003):** n=10 candidate 2 is exactly the known Turtle. The gallery
+is therefore a blind-survivor gallery, not a gallery of ten novel shapes.
 
-## D-0024 (2026-07-16) — One smallest-corpus shape earns finalist status
+## D-0024 (2026-07-16) — Blind promotion rediscovers the Turtle
+
+> **Superseded classification (D-0048/ERR-003):** this experiment's numerical
+> results stand, but “finalist” is a legacy alias for the known Turtle and not
+> a novelty classification.
 
 The ten smallest witnessed depth-3 shapes were promoted together, without
 visual preselection, through pose-free A3. One n=10 shape is exactly refuted
@@ -456,7 +459,8 @@ audit beyond the production k≤12 budget finds torus certificates for all
 eight n=12 shapes at index 16. Those are periodic budget escapes and are
 retired regardless of their finite-patch A4 estimates.
 
-The remaining shape is n=10 candidate 2, canonical compiled key
+The remaining shape is n=10 candidate 2, now identified exactly as the Turtle,
+with canonical compiled key
 `010001010104010502f002f1030b030c04fa04fb`. It has:
 
 - no exact torus certificate through index 100, with no SAT budget
@@ -465,11 +469,11 @@ The remaining shape is n=10 candidate 2, canonical compiled key
 - rank-4 diffraction at both 2,404 and 9,239 anchors, with sixfold symmetry
   recovered on the larger patch.
 
-This earns **high-priority E1 finalist** status, not an einstein verdict.
-Finite disk growth does not prove an infinite tiling; a bounded torus search
-does not prove aperiodicity; and A4 is a prioritization signal. The next
-obligations are independent large-patch solutions, a deeper/structurally
-different periodicity attack, and blind A6 hierarchy/forcing analysis.
+At the time this earned **high-priority E1 finalist** status. D-0048 retracts
+that status: the computations are instead a blind Turtle rediscovery and a
+known-aperiodic control. Finite disk growth, bounded torus searches, and A4
+remain only internal evidence; the Turtle's tilability and nonperiodicity come
+from the published proofs.
 
 The exact SAT torus audit subsequently extends the contiguous no-certificate
 range through index 215 with no budget exhaustions. Additional completed
@@ -481,7 +485,7 @@ indices 235–1,175) are UNSAT.
 
 ## D-0025 (2026-07-16) — A4 promotion requires independent patch robustness
 
-The first finalist's deterministic r²=50,000 patch contains an exact
+The Turtle control's deterministic r²=50,000 patch contains an exact
 period-47 translation across a central 706-tile comparison region, and its
 rendered exterior crown appears gapped. The two observations require separate
 treatment:
@@ -500,9 +504,9 @@ strong approximate translations instead recur at 18- and 29-step scales.
 Symmetry votes are less stable at 2048² (2, 3 or 6), so “sixfold” remains a
 large-patch observation rather than a patch-independent invariant.
 
-The finalist remains prioritized because rank≥4 survives independent
-solutions, not because one visually regular patch was labeled
-“quasicrystal-candidate.” A4's rank and symmetry remain numerical ranking
+The Turtle control passed this robustness check because rank≥4 survives
+independent solutions, not because one visually regular patch was labelled
+“quasicrystal-candidate.” A4's rank and symmetry remain numerical validation
 features, never proof.
 
 A coefficient-bound and peak-depth stress test further separates the
@@ -518,7 +522,7 @@ periodicity and hierarchy follow-up.
 
 The user's "crown gaps" observation concerned continuability, not uncovered
 cells. Re-testing with exact required-placement clauses confirms the issue:
-all five r²=12,800 finalist patches are UNSAT when frozen in full and enlarged
+all five r²=12,800 Turtle-control patches are UNSAT when frozen in full and enlarged
 even to r²=16,000. Their final crowns are dead ends. The earlier response that
 only checked zero missing cells inside the disk answered the wrong question.
 
@@ -528,7 +532,7 @@ through r²=9,000, one through 10,000, and two require retreat to r²=5,000.
 Thus roughly 36–73% of placements survive, with collars about 2–6 tile
 diameters deep.
 
-The candidate nevertheless has a machine-verified nested chain:
+The Turtle control nevertheless has a machine-verified nested chain:
 
 1. 1,576 placements of a phase-seed-1 r²=12,800 patch, wholly inside the
    r²=9,000 core, remain literal placements in an r²=50,000 patch;
@@ -833,3 +837,592 @@ shared killing-map signature—three distinct V4 values on the final three
 generators—should be attacked symbolically before an indiscriminate larger
 finite-shell census; index 55 is the next finite control for any proposed
 family theorem.
+
+## D-0042 (2026-07-18) — Factor A4; promote the certified prefix through 55
+
+The canonical A4 obstruction is no longer treated as an opaque permutation
+table. Exact coordinates `A4 = GF(2)^2 semidirect C3` reproduce every group
+operation and Layer-D edge equation. For the killing maps, the C3 projection
+is the geometric character `±(2x+y) mod 3`. It vanishes on every center-period
+translation, so an exact cover can realize only the 16 ordered V4 twist pairs,
+not all 48 commuting A4 pairs. We adopt this T2.D4 reduction for later proof
+production while retaining all-twist scans as falsification controls.
+
+At index 55, the 21 HNFs not excluded by W1 cross the 16 distinct-V4-tail map
+classes into 336 logical pairs and 28 exact diagonal-D6 orbits. Every orbit is
+UNSAT for all 48 twists; hence every signature map obstructs every frontier
+HNF. For promotion, map 7 was fixed and all 21 x 16 theorem-relevant direct
+CNFs received independently verified DRAT cores. A separate cold verifier
+regenerated and replayed 336/336 certificates. The 3,021,269,794-byte payload
+remains ignored locally; its tracked manifest pins all hashes and provenance.
+
+We therefore promote T2.D2-55. The shell decomposition is 51 W1 exclusions
+plus 21 A4 exclusions, with indices 51--54 removed by area. This remains a
+finite grid-aligned periodicity theorem, not O1, O3, or O5. The next theory
+target is an infinite-family derivation of the persistent V4-tail obstruction,
+not merely another larger finite shell.
+
+## D-0043 (2026-07-18) — Record the 2-Lambda blind family; require packing
+
+Factoring out the geometric C3 character turns each distinct-tail A4 map into
+a two-bit local coverability SFT. This exact reduction reproduces the complete
+index-55 proof matrix cheaply. At index 60 it gives the required
+falsification: map 7 obstructs 42 of 45 W1 survivors, while one three-HNF D6
+orbit survives all 16 signature maps. No index-60 theorem is promoted.
+
+The escape is explained, not merely observed. Each signature map has an
+explicit rank-two-twist model on HNF `(2,0,2)`, and every HNF sublattice of
+`2 Lambda` inherits it by covering pullback. Sixteen base assignments and
+3,024 finite pullbacks cold-check clausewise. More finite quotient data does
+not repair the issue: all 16 maps simultaneously admit one shared three-
+placement model. It covers 18 base cells once and six twice, so even the
+overlap-at-most-two strengthening passes; its index-60 lifts also verify.
+
+We therefore retire both indiscriminate multiplication of the present finite
+boundary quotients and overlap-two as the next Layer-D escalation. The missing
+condition is nonoverlap/packing, or a genuinely equivalent density constraint.
+These SAT assignments are overlapping pseudo-covers, not tilings, and do not
+refute O1. The certified prefix remains 55. The next implementation should
+either derive a packing-sensitive invariant from the local V4 colours or move
+to W1/W3 recognizability, where packing is native.
+
+## D-0044 (2026-07-18) — Adopt the single-orbit packing refinement
+
+The missing packing information is much smaller than full exact cover on the
+three index-60 escapes. Their lifted full-product witness has 45 placements
+and exactly 15 colliding pairs; every collision is a translate of placements
+`(3,0,0)` and `(5,0,1)`, sharing six kites. Exact geometric classification
+partitions all 22,680 torus collision pairs into 40 D6 orbits. We add only the
+720 clauses in this one orbit, leaving the other 39 overlap types permitted.
+
+The full 16-signature product plus that single sound orbit is UNSAT on all
+three escape HNFs. Glucose proofs were checked and trimmed by `drat-trim`;
+a separate cold verifier rebuilt the exact orbit, checked that every added
+pair truly overlaps, checked core inclusion and hashes, and replayed 3/3
+proofs. The compressed payload is 4,337,057 bytes.
+
+We adopt this as T2.D6 and as the packing-sensitive Layer-D primitive. It
+proves that the `2 Lambda` countermodels fail for a sharply local reason rather
+than requiring the complete nonoverlap relation. It closes the three hard
+index-60 residual HNFs, but T2.D2-60 remains unpromoted until the other 42
+map-7 exclusions receive the same independent proof treatment. The result is
+finite and does not establish O1, O3, or O5.
+
+## D-0045 (2026-07-18) — Promote the certified quotient prefix through 60
+
+The 42 index-60 HNFs killed by the map-7 V4 SFT now have independently
+checkable proof bundles. To avoid 672 separate files, each HNF uses an exact
+selector union of its 16 twist components: common cover and potential
+variables, guarded component suffixes, and an at-least-one selector clause.
+The union is satisfiable exactly when one direct twist component is
+satisfiable.
+
+Glucose proved all 42 unions UNSAT. `drat-trim` checked every raw proof and
+trimmed core during production; a separate cold run regenerated every union,
+checked source, dependency, compressed and uncompressed hashes, verified core
+inclusion, and replayed 42/42 certificates. The bundle represents 672 direct
+twist cases and occupies 694,971,396 compressed bytes.
+
+The full index-60 shell is now 123 W1 period-family exclusions, 42 map-7
+twist-union exclusions, and the three T2.D6 one-orbit packing exclusions.
+Indices 56--59 fail area. We therefore promote T2.D2-60: no grid-aligned
+finalist exact cover exists on any HNF torus through index 60.
+
+This is still a finite theorem and does not establish O1. The next theoretical
+advance should seek an infinite packing/holonomy family theorem or return to
+W1/W3 recognizability, not treat another finite shell as evidence by
+accumulation.
+
+## D-0046 (2026-07-19) — Retire the planar Hall branch; return to W3
+
+The adaptive two-center proposal has received its required structural
+falsification test. A translation-distinct 4x4 full-packing pair-graph
+extremizer was lifted literally to the plane. Inside a 3x4 period rectangle it
+contains a deletion-minimal set of 63 placements touching 125 substrate
+centers. The placements are mutually nonoverlapping and share a consistent V4
+potential, yet two unit-capacity centers per tile would require 126 centers.
+
+A standalone cold verifier reconstructs all kite cells, checks zero overlaps,
+recomputes and deletion-minimizes the Hall witness, guards every V4 equation
+away from quotient seams, checks the packed-XOR integration, and independently
+replays the potential implications with CaDiCaL. The artifact passes.
+
+We therefore retire T2.D7-H and any binary-matroid or discharging proof whose
+conclusion is that same two-center matching. The elementary minimal-Hall-core
+lemma (connectedness, deficiency 1 or 2, private-center bound, curvature
+identity) remains useful but does not imply the conjecture. The running
+radius-two taper is retained as a no-go/optimization artifact only. Per the
+predeclared branch point in D-0045, primary theorem development returns to W3's
+substitution-certificate schema and Spectre validation gate rather than
+inventing a third local-density ansatz immediately.
+
+## D-0047 (2026-07-19) — Separate stationary combinatorics from recurrent geometry in W3
+
+The recovered A6 collared substitution is stationary as a finite state rule,
+but the Spectre child translations are not one fixed Euclidean similarity on
+the kite/module substrate. Treating the representative A6 poses as an
+iterable fixed geometric substitution would therefore be unsound.
+
+W3 certificates will encode these layers separately: a stationary collared
+state transition kernel and an exact finite-dimensional recurrence for its
+scale-dependent realization. For the Spectre control the latter is a
+unimodular 16-by-16 integer matrix on four rank-four module points, with exact
+minimal polynomial `(x^2-1)^2(x^4-8x^2+1)` and agreement with all 32 generated
+table levels. Exact expansion alone does not discharge legality or inball
+growth: C1 awaits macro-boundary induction and C3 awaits a divergent certified
+inradius. The verifier keeps both clauses partial until those checks exist.
+
+## D-0048 (2026-07-20) — Reclassify the E1 finalist as the known Turtle
+
+An exact primary-source comparison proves that canonical n=10 candidate 2,
+key `010001010104010502f002f1030b030c04fa04fb`, is the published ten-kite
+Turtle. The primary `rawtileB` outline canonicalizes to the same ten-cell tuple
+and compiled key. We therefore retract the “genuinely new” and “new-shape
+finalist” classifications in D-0023/D-0024; ERR-003 is controlling.
+
+No computational artifact is discarded. Existing `e1-finalist-*` and
+`theory-*-finalist-*` paths are stable legacy identifiers for Turtle-control
+experiments. Their exact finite claims remain valid, but their logical use is
+method validation or independent Turtle certification—not evidence for a new
+monotile. The externally known Turtle theorems close tilability and
+nonperiodicity; internal O1/O3 rows now describe optional independent proof
+recovery rather than open mathematical status.
+
+Promotion now has a mandatory canonical known-shape identity gate. The Turtle
+outline/key is registered in production code and independently reconstructed
+in `tests/test_turtle.py`. Search resumes only after Hat and Turtle are removed
+from novelty rankings. Historical notebook entries remain unchanged as an
+audit trail and are superseded by this decision wherever they call the Turtle
+new or its aperiodicity unknown.
+
+## D-0049 (2026-07-20) — Install a fail-closed literature and family gate
+
+ERR-003 was not merely a missing alias. The frozen program already named the
+Turtle and `Tile(a,b)`, yet implementation promoted Turtle as new and proposed
+`n≈22--24` as a discovery horizon even though the peer-reviewed Hat paper
+reports the exhaustive classified horizon `n≤24`. This is a research-process
+failure: canonical-key novelty was allowed to stand in for a primary-source
+prior-art audit.
+
+`docs/literature/POLYKITE_BASELINE.md` is now the controlling polykite claim
+matrix. Evidence classes are explicit: peer-reviewed theorem, published
+exhaustive-computation report, author review, or dated search snapshot.
+Promotion requires exact identity, size-horizon, infinite-family, motion-group
+and current-literature checks. Absence from `KNOWN_POLYKITE_KEYS` means only
+“unregistered key.”
+
+The production gate is deliberately fail-closed. All `n≤24` polykites are
+ineligible for an aperiodic-discovery label. An unregistered `n>24` key is
+also ineligible until a `Tile(a,b)` family classifier has explicitly rejected
+membership. Historical artifacts retain their data, but future payloads use
+`novel_key` separately from `aperiodic_discovery_status`; the legacy `novel`
+boolean means the latter is literally `eligible`.
+
+E2 is paused for redesign rather than shifted mechanically to `n=25`.
+Kaplan's reported 500-billion-polykite follow-up means a credible next search
+must target a theoretically distinguished family, a different substrate, or
+a demonstrably new invariant—not merely repeat an undocumented larger census.
+
+For periodicity theory, the published Appendix-A alignment reduction
+supersedes W4 as a required bridge: arbitrary periodic polykite tileability
+implies aligned periodic tileability. W4 survives only as optional work on the
+stronger “every tiling is aligned” property or on substrate classes outside
+the theorem.
+
+## D-0050 (2026-07-20) — Make literature a versioned, testable subsystem
+
+The Turtle misidentification cannot be prevented by adding one more named
+shape. The repository now treats prior art as part of the research apparatus:
+`docs/literature/SOURCES.json` is a machine-readable catalog; the tracked
+state-of-the-art, methods matrix, reading queue, and novelty protocol state
+what is known, how deeply it has been reviewed, where it affects the code, and
+what remains unimplemented. Structural tests require the controlling sources
+and route every catalog entry into the review documents.
+
+Open PDFs and text extracts are cached under ignored `data/literature/` paths,
+with SHA-256 hashes in an ignored local lock. This keeps roughly 90 MiB of
+third-party source material out of Git while retaining reproducible metadata
+and a one-command fetcher. Publication status and repository review depth are
+orthogonal: an abstract-verified peer-reviewed paper cannot support a detailed
+internal claim until its relevant theorem and assumptions are audited.
+
+Candidate records must distinguish exact shape identity, tiling-system
+identity, proof of aperiodicity, and method novelty. The current Turtle result
+is formally a blinded positive control for the funnel and certificate
+machinery. Future promotion fails closed until the novelty dossier covers
+named and parameterized families, finite census scope, motion convention,
+dated current searches, proof obligations, and comparison with known tiling
+systems. No new search workstream begins without a source map and an explicit
+statement of which known search it does not repeat.
+
+## D-0051 (2026-07-20) — Adopt the Golden-Sturmian Turtle density control
+
+The full Akiyama--Araki alternative Turtle proof has been audited at theorem
+level. Its two proof halves remain logically separate in this repository:
+Golden Hex patch-tiles establish existence, while forced dispensable Golden
+Ammann bars establish universal nonperiodicity through an irrational density.
+
+The exact internal control reproduces standard words, central palindromes and
+both decomposition identities through level 24. It also verifies symbolically
+that the bar frequencies solve `q^2-q+1/5=0` and that the induced minority
+handedness density is `(3-sqrt(5))/6 = 1/(1+phi^4)`, the root of
+`9f^2-9f+1=0`. The existing independently generated 9,239-tile Turtle disk has
+minority D6 count `1181/9239 = 0.127827687`, within `5.06e-4` of the exact
+infinite-volume value `0.127322004`. This is an external structural validation
+that the patch generator was not fitted to reproduce.
+
+The claim boundary is strict. The repository has not yet reconstructed the
+geometric Golden Sturmian Patches, arbitrary-inball Golden Hex induction,
+forced GAB continuation, Kagome lemma, or crossing bijection. The published
+paper, not the new finite artifact, supplies Turtle tileability and
+aperiodicity. The next internal proof step is exact GAB endpoint geometry and
+local continuation enumeration; the next literature workstream remains
+Kaplan's isohedral SAT control.
+
+## D-0052 (2026-07-20) — Adopt the isohedral-surround SAT prefilter
+
+Kaplan's Proposition-1 criterion is now an exact grid-aligned A1 prefilter:
+a simply connected first surround is accepted iff every neighbour can carry
+the congruent surround without conflict. The implementation combines halo
+exact cover, inverse closure, direct composition-conflict clauses and lazy
+hole cuts. Every positive result carries a finite surround independently
+checked from geometry.
+
+The external benchmark was essential. An initial edge-neighbour halo returned
+54 isohedral seven-kites instead of Myers's 52 because it could leave an
+uncovered angular sector at a vertex. Reusing A2's full vertex halo corrected
+the complete `n<=8` counts to `1,1,4,4,0,70,52,37`, exactly matching Myers at
+all eight orders. The artifact contains 169 cold-verified positive surrounds,
+the unique periodic-but-anisohedral four-kite as an A1-positive/isohedral-
+negative control, and negative Hat/Turtle controls.
+
+The filter is complete only for isohedral tilings in the alignment model. A1
+remains necessary for periodic tilings with multiple transitivity classes.
+Neither negative result proves aperiodicity. This closes a portable method
+control; it does not reopen or justify rerunning the settled `n<=24` polykite
+classification. Primary literature work now moves to W3 recognisability.
+
+## D-0053 (2026-07-20) — Separate theorem-import and direct recognisability routes
+
+Walton's general theorem and Chéritat's Spectre proof have different logical
+roles and may not be cited interchangeably. Walton Theorem 5.2 applies to a
+compact Hausdorff expansive `L`-sub pattern space, where `L`-sub means that a
+surjective local-derivation subdivision `S:LΩ→Ω` is already defined. It
+gives unique composition modulo translation. For return-discrete tiling
+spaces, Corollary 5.5 gives strict injectivity exactly when the hull contains
+no periodic element. Consequently, Walton is a consistency theorem and a
+post-aperiodicity recognisability route for W3; using its injectivity
+conclusion to establish that same absence of periodic tilings would be
+circular.
+
+Chéritat Corollary 63 is the appropriate non-circular control: a whole-plane
+Spectre tiling without reflections passes through a finite chain of faithful
+cluster/interface/triangle/pack representations, has one unique grouping, and
+returns to the same class so the grouping iterates. The existence direction is
+separate (Proposition 64 and Corollary 65). W3 now records this as direct-route
+obligations D1--D7 alongside Walton hypotheses W1--W5.
+
+The version-2 substitution certificate computes these statuses rather than
+accepting self-reported theorem flags. The recovered 17-state artifact remains
+valid but partial: Walton's compact-hull, separation, surjective-LD and
+no-periodic-hull hypotheses are unproved; the direct route has only sampled
+parent uniqueness, finite state closure and partial expanding geometry. The
+next proof experiment must enumerate a physical legal Spectre patch language
+independently of the vendor ancestry and test total, unique parent ownership
+at increasing finite radii.
+
+## D-0054 (2026-07-20) — Replace isolated ownership by coordinated grouping
+
+The first physical Spectre language experiment is ancestry-blind: it uses the
+exact straight `Tile(1,1)` polygon, one fixed chirality, rotations and
+translations, and edge-to-edge unit-edge contacts. It enumerates all 166
+complete first coronas and uses exact SAT cover plus exact polygon nonoverlap
+to decide existential completion through successive rings. Thirty central
+corona types reach radius two and 21 reach radius three. All 18 types observed
+stably in every level-3/4 generated control lie in that set. Three additional
+types (indices 33, 44 and 155) remain, and targeted exact witnesses extend all
+three through radius four.
+
+The proposed shortcut “find a radius where each viable central tile has one
+parent” is rejected. All eight first coronas with one locally compatible
+recovered parent are refuted at radius two. None of the 21 radius-three
+survivors is uniquely owned: their parent-count histogram is `2:17, 3:3,
+5:1`. Parent grouping is a joint constraint across overlapping centers, not
+an independent label attached to one central corona.
+
+W3 C5 advances from missing to partial, but C4 is not proved. The exact scope
+is an existential central-corona prefix through three rings in an edge-to-edge
+model; it is neither the full radius-three patch language nor a theorem that a
+finite survivor reaches the plane. Further blind radius growth is
+deprioritized. The next experiment constructs the translation-compatible
+parent-overlap constraint language and tests the three extra branches against
+global grouping consistency and Chéritat's component/interface cases.
+
+## D-0055 (2026-07-20) — Adopt buffered coordinated grouping; keep it conditional
+
+Parent grouping is encoded as a joint partial exact partition by translated
+and rotated occurrences of the recovered full/missing 9/8-child templates.
+Every universally buffered inner tile must have exactly one selected parent;
+every other visible or candidate tile has at most one. Exact physical
+next-ring completion and parent selection share one SAT instance.
+
+“Universally buffered” means that every parent occurrence still geometrically
+compatible with the fixed inner patch lies in the union of that patch and all
+legal next-ring candidates. A branch with no buffered target is expanded by
+ordinary physical exact cover and is never counted as grouping UNSAT. This
+guard caught 3 such radius-two branches for corona 44 and 12 for corona 155;
+all 15 later die physically, but the distinction is part of the soundness
+contract.
+
+All 18 substitution-observed corona types admit exact groupings on generated
+graph-radius-four controls. The three extra physical types do not survive:
+corona 33 has 200 admissible radius-three frontier states and corona 155 has
+24, but both have zero radius-four successors; corona 44 has zero admissible
+radius-three states after all 27 second-ring branches. Thus the conditional
+central-corona language is exactly the 18 generated types.
+
+The result is deliberately conditional on the recovered 9/8 parent language.
+It proves that types 33, 44 and 155 cannot occur in a whole-plane tiling that
+admits that grouping, not that arbitrary physical tilings admit the grouping.
+It also does not prove unique partition or same-domain iteration. W3 therefore
+remains a valid partial certificate; D2, D3 and D5 are not promoted. The next
+step is to derive parent/component existence from the 18 physical cases and
+then exclude ambiguous overlap domains, following Chéritat's logical order.
+
+## D-0056 (2026-07-20) — Promote L18 parent partition; reject blind-ring closure
+
+Treat the 18 substitution-observed physical coronas as an ancestry-blind local
+language `L18`. Exact local completion gives 87 radius-two and 418 radius-three
+rooted cases. Every radius-three case has a buffered parent grouping and all
+groupings induce the same parent **anchor** on every safe tile. The 48 cases
+with more than one raw grouping differ only by the optional ninth child; their
+anchor maps agree.
+
+The resulting 418-entry radius-three transducer is a local map from physical
+geometry to a parent anchor. Exhaustive `L18` extension through radius six
+leaves 15,216 patches. In every survivor, the eight canonical core children
+of the central anchor are present and carry that same anchor. Since any tile
+mapped to an anchor belongs to its canonical nine-child support, the fibers
+are exactly the common eight children with or without the optional ninth.
+Thus, within the fixed-chirality edge-to-edge `L18` domain, parent existence
+and the unique full/missing partition are finite theorems rather than assumed
+variables.
+
+Contraction closure is not promoted. Complete contracted interfaces first
+appear at radius six. Generated parent-corona states coexist with finite
+non-generated states; after exact continuation the latter have frontier sizes
+6,280 at radius seven, 1,796 at radius eight, and 4,482 at radius nine. The
+radius-nine states are finite witnesses, not plane tilings, but their renewed
+branching makes larger blind rings the wrong proof object. D2 and D3 are now
+verified conditional on `L18`; D5 remains open. The next experiment contracts
+the frontier to a parent/interface state graph and tests that graph for dead
+components or globally recurrent counterlanguages.
+
+## D-0057 (2026-07-20) — Require colored interfaces beyond parent coronas
+
+The complete contracted frontier has only nine non-generated uncolored corona
+signatures. Together with the 17 generated signatures this gives a 26-state
+parent-anchor alphabet. Reciprocal-edge support and every triangle consistency
+constraint expressible from those radius-one anchor coronas were enumerated
+exactly. All 26 states survive; iterative support deletion removes none.
+
+Therefore uncolored parent-corona overlap is retired as a possible closure
+proof. The failure is informative: the abstraction forgets whether an anchor
+is a full or missing parent and which physical boundary interface realizes a
+parent-parent contact. The next state refinement must carry those component
+types and interface colors. This is the smallest natural refinement aligned
+with Chéritat's faithful component/interface representations; adding more
+blind physical rings or more constraints derived from the same uncolored
+coronas would repeat an already falsified method.
+
+## D-0058 (2026-07-20) — One-sided physical colors are necessary but insufficient
+
+The complete radius-seven L18 census contains 51,309 extensions whose
+contracted corona is generated and 6,280 whose contracted corona is not.
+Recording the center's full/missing component type and every exact oriented
+child-edge contact compresses these to 17 generated and five extra states.
+The generated set agrees exactly with the independent level-five substitution
+control. Missing types are accepted from a finite patch only when the optional
+child is mapped to another component or an adjacent core child's complete
+physical corona witnesses the alternative contact; mere boundary absence is
+never interpreted as a missing child.
+
+This one-sided alphabet deliberately leaves the six neighbor component types
+unknown. All 22 states have reciprocal colored edges, colored triangle-star
+support, and fixed-point support. Their transition graph is one closed
+strongly connected component containing all 17 generated and all five extra
+states. Thus exact contact intervals plus the center type still cannot prove
+contraction closure. This is a finite no-go theorem for that abstraction, not
+a counterexample tiling.
+
+The next minimal refinement is two-sided: extend the five extra interface
+states until the full/missing type at both ends of every contact is physically
+buffered. Large intermediate frontiers are resumable local checkpoints under
+`data/w3-frontiers/` and are git-ignored; only small census/certificate
+artifacts are versioned.
+
+## D-0059 (2026-07-20) — Two-sided colors leave three defect states
+
+The 6,280 non-generated radius-seven branches were exhaustively extended.
+Exactly 1,796 radius-eight patches survive and yield 4,482 radius-nine
+extensions, reproducing the earlier contraction audit. Every radius-nine
+extension buffers the center and all six neighbor component types: there are
+zero unresolved two-sided interfaces and zero contractions back into the 17
+generated uncolored coronas.
+
+The 4,482 extensions collapse to three new two-sided colored states, all full
+components, with occurrence counts 776, 2,410 and 1,296. Combined with the 17
+generated controls, all 20 states survive reciprocal/colored-star fixed-point
+pruning and form one strongly connected component. Thus even full/missing
+types at both ends plus exact child-edge contacts do not by themselves prove
+D5 contraction closure.
+
+The failure has internal structure. Exact minimum-cost enumeration of each
+extra state's six-neighbor star gives extra-neighbor costs `[1,0,1]`. One
+state can be surrounded entirely by generated states. The other two cannot
+terminate locally: a minimum witness for either contains the other. This
+turns the next experiment from another undirected state refinement into a
+small pinned-defect propagation problem. Build radius-two parent-state CSPs,
+pin each extra at the root, and minimize extra states on the outer ring.
+
+## D-0060 (2026-07-20) — Radius two forces typed defect propagation
+
+For each of the three two-sided extra states, every colored radius-one star
+was pinned at the root: 28, 100 and 3 cases respectively. The radius-two CSP
+adds a state at every parent anchor named by the six first-ring coronas and
+requires exact reciprocal type/contact agreement, agreement on adjacency or
+nonadjacency for every represented anchor pair, and exact nonoverlap of their
+canonical 8/9-child physical supports.
+
+Only one first-ring star per root survives these radius-two constraints; 128
+of 131 are UNSAT. The three surviving CSPs have 960, 432 and 840 complete
+assignments. Exhaustive model enumeration and an independent CaDiCaL encoding
+agree that every case becomes UNSAT when all second-ring extras are forbidden.
+The minimum number of outer defects is `[1,1,1]` and the minimum nonroot totals
+are `[3,2,3]`.
+
+More strongly, intersecting the second-ring defect types across **all** models
+gives the forced map
+
+```text
+288091b49587a4b2 -> 2f1d7f0fac5b9704
+2fb5d0cf9a68ffe2 -> 2f1d7f0fac5b9704
+2f1d7f0fac5b9704 -> 288091b49587a4b2
+```
+
+Thus the state previously absorbable at radius one feeds into a mutually
+propagating pair, and no defect can terminate within two parent rings. This
+does not yet imply unbounded propagation: iterating the local implication may
+revisit an earlier anchor and close a finite cycle. It also does not prove that
+a whole-plane configuration exists or contradict planar packing. The next
+experiment grows the forced defect relation to radius three and tests whether
+exact geometry closes it, creates a cycle/fault line, or yields a quantitative
+density bound.
+
+## D-0061 (2026-07-20) — Radius three eliminates the contracted defect alphabet
+
+Every complete radius-two assignment from D-0060 was extended by adding all
+anchors named by its second-ring states and solving the same exact colored and
+physical-support CSP. This gives 2,232 independently replayable radius-three
+instances.
+
+The three pinned root types have respectively 0 of 960, 2 of 432 and 1 of 840
+radius-three survivors. The first state, `288091b49587a4b2`, is therefore
+impossible in any whole-plane configuration over the 20-state alphabet. Every
+survivor of either other root already contains that dead state in its fixed
+inner radius-two patch. Hence those roots are impossible as well. This is a
+finite elimination proof, not an inference from failed random growth.
+
+Consequently, within the fixed-chirality edge-to-edge L18 domain, the unique
+8/9 parent partition contracts only to the 17 generated colored states. D5
+same-domain closure is verified under the L18 hypothesis. The larger W3
+recognisability claim remains partial because D1—proving that every admitted
+geometric straight-Spectre tiling has only L18 coronas—has not been proved.
+Nor does this repair the separate C1 all-level geometric legality or C3
+inradius-growth obligations.
+
+## D-0062 (2026-07-20) — Physical radius five proves L18 entry edge-to-edge
+
+The three non-L18 physical corona types `33`, `44` and `155` were returned to
+the ancestry-blind polygon engine: no parent templates, substitution states or
+generated-patch filters entered the ring constraints (the generated control is
+used only to identify which physical types are outside L18). Every exposed edge
+was covered by every possible exact nonoverlapping next ring. The complete
+rooted frontier is
+
+```text
+radius       1    2    3    4   5
+patches      3   89  368  282   0
+```
+
+The roots split as `2/27/60` at radius two, `200/144/24` at radius three and
+`72/18/192` at radius four. All 282 radius-four patches fail at radius five;
+each already has an exposed edge with no admissible candidate cover, so no SAT
+model is entered at the decisive layer. An independent one-hot CaDiCaL
+encoding reproduces the full frontier and digests.
+
+Together with the earlier exhaustive `166→30→21` physical-corona prefix, this
+proves that every complete corona in any whole-plane fixed-chirality
+**edge-to-edge** straight-Spectre tiling belongs to L18. Thus D1 entry, and by
+composition D2/D3/D5/D6, are verified throughout that declared contact model.
+The unrestricted geometric claim remains partial: a separate local theorem
+must rule out T-junctions or other non-edge-to-edge contacts. D4 faithful hull
+equivalence also remains open.
+
+## D-0063 (2026-07-20) — Ten edge-patch patterns close unrestricted D1
+
+The exact 14-segment `Tile(1,1)` boundary uses all twelve 30-degree directions
+and merges into thirteen maximal polygon sides: twelve of primitive length one
+and one of length two. Its interior angles are all at least 90 degrees, and no
+maximal side has 90-degree corners at both ends.
+
+At a junction on one side of a straight tiling interface, two distinct incident
+tiles must therefore contribute `90+90=180` degrees; an additional point-only
+tile is impossible. Three consecutive sides would make the middle tile's side
+have right angles at both ends, which the exact boundary excludes. Hence every
+maximal interface has at most two polygon sides on either side. Enumerating
+words of one or two lengths from `{1,2}` leaves exactly ten ordered equal-length
+patterns, with total lengths one through four. Splitting the length-two side at
+its existing 180-degree boundary vertex sends every pattern bijectively to the
+same unit subdivision on both sides. All apparent T-junctions are primitive
+vertices.
+
+The boundary direction word also locks adjacent copies to one common
+30-degree frame, and matched primitive endpoints propagate every anchor into
+the exact rank-four module. Independent arithmetic reconstruction verifies all
+ten patterns and both even/odd `sqrt(3)` deformation controls. Consequently
+every unrestricted fixed-chirality straight-Spectre tiling belongs to the
+primitive contact model used by the radius-five D1 certificate. D1/D2/D3/D5/D6
+are now verified on the full fixed-chirality hull. D4 and D7 remain open, as do
+C1 and C3.
+
+## D-0064 (2026-07-20) — D4 finite equivalence kernel; context equality stays open
+
+The physical child-edge-colored component alphabet and A6's oriented
+radius-one collar alphabet are exactly the same finite information. Across 310
+complete level-four component occurrences, both have 17 states and the
+relation is one-to-one in both directions. Expanding each colored state into
+its central 9/8 component plus six neighboring components, then recomputing
+the physical interfaces, returns the identical state in all 17 cases. Every
+one of the central component's 46 (full) or 44 (missing) external primitive
+edges has exactly one recorded owner across an interface.
+
+Successive phases are related by two explicit determinant-one integer matrices
+(one per chirality), orientation-dependent integer offsets and exact inverse
+maps. The map toggles the entire chirality phase without mixing handednesses
+and sends translations through the corresponding module matrix. Every first
+parent contributes one normalized ordinary Spectre; every second-parent marker
+(exactly collar states 10, 11 or 12) contributes a companion at relative pose
+`(0,1,(1,-3,-2,0))`. This forward/inverse construction reproduces the complete
+generated level pairs `3→2`, `4→3` and `5→4` exactly, with counts
+`63+8=71`, `496+63=559` and `3905+496=4401`. The two-level translation matrices
+both have characteristic polynomial `(x²-8x+1)²`, matching the previously
+derived factor `4+sqrt(15)`.
+
+D4 is not promoted to verified. Exhausting the abstract 17-state colored
+radius-one overlap language gives 3,565 stars; 536 map to overlapping next-phase
+Spectres and 410 do not yet buffer the central output tile. These are states of
+an over-approximation, not counterexamples in the physical hull. Exact
+radius-two state completion kills 3,485 seeds and leaves 80. The next D4 proof
+object is therefore the physical-origin/context correspondence for those 80
+survivors, not another change to the already exact coordinate maps.

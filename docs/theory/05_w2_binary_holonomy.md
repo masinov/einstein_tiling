@@ -1,5 +1,9 @@
 # W2.C binary families and W2.D torus holonomy
 
+> “Finalist” in legacy IDs/artifacts means the known Turtle (ERR-003/D-0048).
+> All finite exclusions are independent known-control results, not a novelty
+> claim.
+
 ## T2.C4 — composing period-vector and quotient certificates
 
 Let an HNF lattice be
@@ -379,3 +383,391 @@ Artifacts: `theory-w2-layer-d-small-groups.json`,
 `theory-w2-layer-d-a4-sat-index50.json`, and
 `theory-w2-layer-d-a4-proof-index50.json` plus its 576 compressed certificate
 pairs. Replay: `scripts/verify_theory_w2_layer_d_a4_proofs.py`.
+
+## T2.D4 — A4 semidirect coordinates and geometric twist reduction
+
+Write `A4 = V4 semidirect C3`, identify `V4` with `GF(2)^2`, and choose the
+order-three action
+
+\[
+M(x,y)=(y,x+y).
+\]
+
+In coordinates `(v,q)` representing `v c^q`, multiplication and the Layer-D
+edge equation factor exactly as
+
+\[
+(v,q)(w,r)=(v+M^q w,q+r),
+\]
+
+\[
+q_y=q_d+q_x+q_e,\qquad
+v_y=v_d+M^{q_d}v_x+M^{q_d+q_x}v_e.
+\]
+
+The canonical killing map 7 has C3 coordinates `(1,2,1,0,0,0)` and V4
+coordinates `(0,0,0,0,e1,e2)`. More generally, both C3 signatures of the 16
+killing maps are `chi` or `-chi`, where the geometric character of a signed
+edge vector is
+
+\[
+\chi(x,y)=2x+y \pmod 3.
+\]
+
+This agrees on all six edge generators, hence on every boundary path. A
+center-lattice translation `(u,v)` moves a kite vertex by
+`(2(u-v), 2u+4v)`, whose character is `6u = 0 mod 3`.
+
+> **T2.D4 (geometric C3 twist reduction; proof draft).** For an A4 boundary
+> map whose C3 projection is `chi` or `-chi`, both torus twists associated to
+> any exact grid-aligned cover lie in V4. Consequently only the 16 ordered
+> V4×V4 twist pairs need be excluded; the other 32 commuting A4 pairs cannot
+> be the developing holonomy of an exact cover.
+
+*Proof.* In the lifted exact tiling, the connected boundary skeleton contains
+a path from a base vertex to each of its two period translates. The C3 image
+of its boundary word is the signed sum of `chi` over its edges, hence `chi` of
+the endpoint displacement. Every center-lattice period has character zero by
+the calculation above. The two developing holonomies therefore project to
+zero in C3 and lie in V4. Since V4 is abelian, its 16 ordered pairs are exactly
+the remaining commuting twists. ∎
+
+The factorization explains why A4 supplies a genuinely binary layer over the
+geometric C3 character and reduces future certificate volume by a factor of
+three. It does not yet prove that the three distinct V4 tail values obstruct
+an infinite HNF family; that is the next obligation.
+
+Implementation and exact table artifact:
+`src/einstein/theory/a4_semidirect.py` and
+`theory-w2-layer-d-a4-factor.json`.
+
+## D-W2-D7 — the V4-tail signature persists at index 55
+
+The index-55 shell contains 72 HNFs. T1.2-36 and T2.C4 exclude 51 of them,
+leaving 21 HNFs in four D6 orbits. Crossing these with the 16 A4 map classes
+whose tail labels are the three distinct V4 values gives 336 logical pairs.
+The exact diagonal D6 action is free on this product and reduces it to 28
+representatives.
+
+Every representative is UNSAT for every one of the 48 commuting A4 twist
+pairs. Thus the finite signature observed at index 50 survives unchanged:
+all 16 signature maps obstruct every one of the 21 frontier HNFs. This
+all-twist scan is stronger than required for exact covers and remains useful
+as a falsification control.
+
+For theorem promotion, map 7 was fixed on every HNF and T2.D4 reduced the
+necessary twists to the 16 ordered V4 pairs. All 21 x 16 = 336 canonical CNFs
+produced Glucose 4 DRAT proofs. During production, `drat-trim` verified each
+raw proof, extracted and reverified a core, and the producer checked that the
+core is a multiplicity-respecting subset of the generated CNF. A separate
+cold process then checked completeness, source/dependency and payload hashes,
+regenerated every canonical CNF, checked every core subset, and replayed all
+336 compressed proofs. The compressed certificate payload is 3,021,269,794
+bytes.
+
+> **T2.D2-55 (machine-verified finite theorem).** No grid-aligned finalist
+> exact cover exists on any HNF torus of index at most 55.
+
+Indices 51--54 fail the tile-area equation. At index 55 the complete shell
+decomposition is 51 W1 period-family exclusions plus 21 A4 holonomy
+exclusions. This remains a finite periodicity theorem, not O1, O3, or O5.
+The persistence across two nontrivial shells strengthens the case for deriving
+the distinct-V4-tail obstruction as an infinite HNF-family theorem, but does
+not substitute for that derivation.
+
+Artifacts: `theory-w2-layer-d-a4-signature-index55.json` and
+`theory-w2-layer-d-a4-proof-index55.json` plus 336 ignored local CNF/DRAT
+pairs. Cold replay:
+`scripts/verify_theory_w2_layer_d_a4_proofs_index55.py`.
+
+## T2.D5 — local V4 SFT and the 2-Lambda saturation theorem
+
+After T2.D4, fix the global C3 phase to the geometric character. An A4
+potential then has only a packed two-bit value `v` at each quotient vertex,
+and every selected boundary edge obeys
+
+\[
+v_y=v_{\rm deck}+v_x+M^{\chi(x)}v_e.
+\]
+
+Consequently the at-least-cover Layer-D relaxation is a four-colour local
+SFT: a placement is available precisely when its 14 boundary vertices match
+one of four affine V4 patterns, and every kite cell must have an available
+covering placement. The two-bit encoder reproduced all 336 certified
+index-55 map-7/V4-twist polarities.
+
+At index 60, map 7 obstructs 42 of the 45 W1-frontier HNFs. The three escapes
+`(10,2,6)`, `(30,6,2)`, `(30,22,2)` form one D6 orbit. Every one of the 16
+distinct-tail maps escapes on all three, with exactly one rank-two V4 twist
+per map. All three period lattices lie in `2 Lambda`.
+
+On the base quotient HNF `(2,0,2)`, each signature map has one explicit
+rank-two-twist SAT assignment. Pulling a base assignment back along
+
+\[
+\Lambda/L\longrightarrow\Lambda/(2\Lambda)
+\]
+
+gives an assignment for every HNF `L <= 2 Lambda`, equivalently every
+`(a,b,d)` with `a,b,d` even. If the base twists are `(s,t)`, their restriction
+to HNF `(a,b,d)` is
+
+\[
+\left((a/2)s,\;(b/2)s+(d/2)t\right)\pmod 2.
+\]
+
+The selected placements and vertex colours pull back locally, so every CNF
+clause remains true. Sixteen base witnesses and 3,024 map/HNF pullbacks over
+all 189 even HNFs through index 60 passed a separate clause-by-clause replay.
+
+The limitation survives multiplication of invariants. One shared set of
+three placements on `(2,0,2)` supports all 16 V4 layers simultaneously. It
+covers 18 cells once and six cells twice. The full 16-map product, every pair
+by projection, the overlap-at-most-two strengthening, and the three index-60
+lifts all have explicit cold-checked assignments.
+
+> **T2.D5 (2-Lambda saturation; proof draft with explicit witnesses).** Every
+> finite product of the 16 distinct-V4-tail local Layer-D invariants admits an
+> at-least-cover, multiplicity-at-most-two model on every HNF sublattice of
+> `2 Lambda`. Therefore neither a richer product of these boundary quotients
+> nor the overlap-two cap can exclude that infinite HNF family. A further
+> Layer-D advance must encode nonoverlap/packing, or an equivalent density
+> constraint.
+
+These assignments are overlapping pseudo-covers, not tilings. Thus T2.D5
+does not weaken T2.D2-55 or provide a periodic counterexample to O1. It is a
+sharp no-go theorem for the current relaxation and retires indiscriminate
+finite-target multiplication as the next research move.
+
+Artifacts: `theory-w2-layer-d-v4-sft-index60.json`,
+`theory-w2-layer-d-v4-signature-index60.json`,
+`theory-w2-layer-d-v4-2lambda.json`, and
+`theory-w2-layer-d-v4-product.json`.
+
+## T2.D6 — one local packing orbit closes the index-60 escapes
+
+The full-product countermodel is unusually rigid. On each of the three
+index-60 escape HNFs it selects 45 placements. Its only collisions are 15
+translates of the same local pair: placements `(3,0,0)` and `(5,0,1)` share
+six of their ten kites. Taking exact images under all translations and all
+twelve operations of D6 gives one geometric collision orbit. On an index-60
+torus it contributes 720 binary clauses `not(p and q)`.
+
+This is a deliberately weak packing axiom. The complete exact-cover encoding
+forbids all 22,680 colliding placement pairs, partitioned into 40 geometric
+D6 orbits. T2.D6 forbids only this one orbit and leaves the other 39 collision
+orbits available. Every added clause is nevertheless sound for an exact
+tiling because its two placements overlap in at least one kite.
+
+For each residual HNF, couple the common placement variables to all 16 V4
+signature layers at their unique surviving twists, and add only the 720
+clauses of the six-kite collision orbit. All three formulas are UNSAT:
+
+| HNF | signature layers | packing orbits / clauses | result |
+|---|---:|---:|---|
+| `(10,2,6)` | 16 | 1 / 720 | UNSAT, DRAT verified |
+| `(30,6,2)` | 16 | 1 / 720 | UNSAT, DRAT verified |
+| `(30,22,2)` | 16 | 1 / 720 | UNSAT, DRAT verified |
+
+Glucose produced each proof; `drat-trim` checked the raw proof, extracted and
+checked a core, and a cold verifier rebuilt the exact geometry, confirmed
+that the packing clauses are a subset of ordinary nonoverlap, checked hashes
+and core inclusion, and replayed all three cores.
+
+> **T2.D6 (single-orbit packing lemma; machine-verified finite theorem).**
+> None of the three index-60 V4-SFT escape tori admits an exact cover by the
+> finalist. In fact, they already fail the weaker conjunction of the 16
+> distinct-tail boundary signatures and nonoverlap for one six-kite D6
+> collision orbit.
+
+The lemma closes the genuinely packing-sensitive residual at index 60, but
+does not by itself promote T2.D2-60: the other 42 frontier HNFs currently have
+solver-verified map-7 exclusions whose independent proof bundle has not yet
+been produced. It also remains finite and therefore does not settle O1.
+
+Artifacts: `theory-w2-layer-d-a4-proof-index60-packing.json`, its three local
+compressed proof pairs, and the representative drawing
+`theory-w2-layer-d-v4-packing-overlap6.svg`. Cold replay:
+`scripts/verify_theory_w2_layer_d_v4_packing.py`.
+
+## T2.D2-60 — complete certified quotient prefix through index 60
+
+The 42 index-60 frontier HNFs already obstructed by map 7 required all 16 V4
+twists to be excluded. Instead of storing 672 separate proofs, form one exact
+selector union per HNF. Its cover and potential variables are shared; selector
+`s_i` guards the boundary implications for twist `i`, and the clause
+`s_0 or ... or s_15` activates at least one component. Hence the union is SAT
+if and only if at least one direct twist CNF is SAT. An UNSAT proof for the
+union certifies all 16 twists without an at-most-one selector constraint.
+
+All 42 unions have 1,456 variables and 645,481 clauses. Glucose produced an
+UNSAT proof for each. During production, `drat-trim` checked the raw proof,
+extracted and rechecked a core, and the producer checked multiplicity-aware
+core inclusion in the generated union. A separate eight-process cold replay
+then checked the complete 42-HNF manifest, every source/dependency and payload
+hash, regenerated every union, rechecked core inclusion, and replayed 42/42
+stored proofs. These 42 certificates represent 672 direct logical cases and
+occupy 694,971,396 compressed bytes.
+
+The index-60 shell has 168 HNFs and now splits exactly as follows:
+
+| exclusion | HNFs |
+|---|---:|
+| T1.2-36 / T2.C4 period-family certificate | 123 |
+| map-7 V4 twist-union certificate | 42 |
+| full 16-map product + one collision orbit (T2.D6) | 3 |
+| **total** | **168** |
+
+Indices 56--59 fail the area equation because an area-10 tile can cover a
+six-sector index-`k` torus only when `5` divides `k`.
+
+> **T2.D2-60 (machine-verified finite theorem).** No grid-aligned finalist
+> exact cover exists on any HNF torus of index at most 60.
+
+As before, this excludes only fully periodic grid-aligned tilings through a
+finite quotient bound. It does not settle O1, O3, or O5, and no accumulation
+of finite prefixes will be presented as a proof of aperiodicity.
+
+Artifact: `theory-w2-layer-d-a4-proof-index60-map7.json` plus its 42 ignored
+local compressed certificate pairs. Cold replay:
+`scripts/verify_theory_w2_layer_d_v4_proofs_index60.py`.
+
+## T2.D7 candidate — an affine packing-density theorem
+
+T2.D6 suggests a family statement on the blind sublattice family
+`L <= 2 Lambda`. A finite falsification gate enumerated every area-admissible
+HNF in this family through index 120: 193 quotients at indices 20, 40, 60,
+80, 100 and 120. The full 16-map product plus the six-kite collision orbit is
+UNSAT on all 193. Each of the 16 distinct-tail maps also works separately on
+every quotient, for 3,088/3,088 UNSAT searches. These are reproducible search
+controls, not proof certificates or an infinite conclusion.
+
+The sharper conjecture removes coverage. If `k=[Lambda:L]`, an exact cover
+needs `3k/5` area-ten placements. One signature's affine V4 equations plus
+the collision orbit appears to permit at most `k/2`. Exact MaxSAT attains
+`k/2` on controls with `k=4,8,20`; hence the proposed inequality would give
+the strict density contradiction
+
+```text
+selected <= k/2 < 3k/5 = placements required by exact cover.
+```
+
+> **T2.D7 (V4 packing-density conjecture).** For every area-admissible HNF
+> sublattice `L <= 2 Lambda`, every placement set compatible with one
+> distinct-tail V4 boundary potential and avoiding the T2.D6 collision orbit
+> has cardinality at most `[Lambda:L]/2`.
+
+The obvious proofs have been falsified. A 2x2 anchor block can support five
+placements. The pairwise compatibility graph exceeds the proposed bound on
+4x4 and 6x6 tori. A pairwise-compatible nine-placement witness already has a
+minimal inconsistent triple, while core learning also exposes affine gluing
+circuits of sizes four and five. The remaining object is thus a
+translation-periodic hypergraph of circuits of a binary affine matroid, not a
+simple packing graph. A theorem needs a finite discharging or rational-dual
+certificate for its maximum density; more finite HNF enumeration is only a
+falsification control.
+
+Artifacts and probes are recorded in notebook session 36. The two index-120
+JSON files are the finite family controls. `a4_v4_density.py` encodes the
+candidate inequality without cover clauses.
+
+### T2.D7 circuit/Hall refinement
+
+Eliminating the V4 potentials turns incompatible placement sets into affine
+circuits over `GF(2)^2`; exact XOR union-find now extracts deletion-minimal
+circuits and their translation orbits. The ordinary circuit-clause relaxation
+cannot prove density `1/2`: a size-`s` no-good has right side `s-1`, and its
+translation sum has incidence `s`.
+
+Each placement touches four substrate centers. The sharper planar conjecture
+is that every finite compatible packing admits a capacity-one matching of two
+distinct incident centers to every tile. Hall would then give `2N <= C`, and
+a Følner limit gives density at most `1/2`. Small quotient centers must not be
+used for this claim: a compatible 4x4 torus configuration has an artificial
+Hall deficiency created by seam identifications, while its literal planar lift
+has a saturated matching. Interior planar windows through 4x4 pass exact
+falsification gates.
+
+A finite translation-averaged taper dual was also implemented. Radius one is
+insufficient: its exact minimax search returns local bound `42/13 > 2` for
+both nonnegative tapers and signed tapers bounded by 8. Radius two learns new
+higher affine circuit orbits but had not produced a certificate at the session
+cut. Consequently T2.D7 remains a conjecture; the preferred next step is a
+binary-matroid or minimal-Hall-circuit proof of planar `(2,0)` sparsity, not a
+larger HNF census. See notebook session 37.
+
+### Minimal Hall-core reduction
+
+The structural search can be restricted without loss to a sharply constrained
+class.  Let `S` be inclusion-minimal among finite placement sets that fail the
+two-center matching, write `N(S)` for its center neighborhood, and put
+
+```text
+delta = 2|S| - |N(S)| > 0.
+```
+
+Every finalist placement touches exactly four centers.  The following facts
+are elementary, tile-independent consequences of four-uniformity and are now
+checked by `hall_witness_profile` on every discovered witness.
+
+> **Lemma T2.D7-H0 (minimal four-center Hall cores).** An inclusion-minimal
+> Hall-deficient set `S` has: (i) connected tile-intersection graph; (ii)
+> `delta` equal to 1 or 2; (iii) at most `2-delta` private centers on each
+> tile; and (iv), writing `n_j` for the number of centers incident to exactly
+> `j` tiles, the exact curvature identity
+>
+> ```text
+> sum_j (j-2)n_j = 2 delta,
+> ```
+>
+> equivalently `sum_{j>=3}(j-2)n_j = n_1 + 2 delta`.
+
+For (i), disconnected components have disjoint neighborhoods, so one
+component is already deficient.  For (ii)--(iii), deleting a tile with `p`
+private centers leaves a matchable set and gives `delta+p <= 2`.  For (iv),
+double-count incidences: `sum j n_j = 4|S|` and
+`sum n_j = |N(S)| = 2|S|-delta`.
+
+This converts the desired theorem into a finite-curvature question: positive
+incidence curvature at degree-three-or-higher centers must be paid for by
+boundary/private centers, and any unpaid excess must force a forbidden
+packing pair or an affine V4 circuit.  It is the precise discharging statement
+to prove, rather than another fixed-radius averaging ansatz.
+
+### T2.D7-H is refuted
+
+The proposed final sentence above is false for this placement system: positive
+curvature need not force either outcome. Sampling translation-distinct
+nine-placement extremizers of the 4x4 pair graph and lifting them literally to
+the plane produces two independently verified countermodels.
+
+The stronger one already enforces **full geometric nonoverlap**, not merely
+the T2.D6 six-kite collision orbit. A deletion-minimal set of 63 mutually
+nonoverlapping placements is compatible with the complete shared V4 potential
+and touches 125 centers. A two-center matching would need 126 distinct
+centers, so Hall fails by one. Its exact profile is
+
+```text
+tiles=63, centers=125, delta=1
+n_1=18, n_2=87, n_3=20
+sum (j-2)n_j = -18 + 20 = 2.
+```
+
+The literal placement list is checked four ways: the augmenting-path matcher
+returns and verifies the `125 < 126` witness; deletion of every tile restores
+a saturated matching; exact kite-cell intersections are empty for every pair;
+and V4 compatibility agrees between XOR union-find and an independent CaDiCaL
+replay of the boundary-potential implications. All involved equations remain
+strictly inside a larger ambient quotient, excluding seam artifacts.
+
+> **Negative result T2.D7-HN.** Planar V4 compatibility plus full nonoverlap
+> does not imply `(2,0)` Hall sparsity. Therefore neither the adaptive
+> two-center assignment nor any proof equivalent to that Hall statement can
+> establish T2.D7.
+
+Lemma T2.D7-H0 remains valid as general four-uniform combinatorics, but it is a
+classification aid rather than a route to the desired density theorem. The
+Hall branch is retired. Artifacts:
+`theory-w2-layer-d-v4-periodic-hall-catalog-full-packing.json` and its cold
+verifier; the companion single-orbit artifact records an earlier 75/149
+countermodel with seven four-kite overlaps.
