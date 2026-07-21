@@ -57,8 +57,9 @@ reviewable proof or certificate.
   reflection-safe conditional carrier theorem, and the pre-geometric kill
   conditions for a coupled contact-star encoder.
 - `08_stm1_equal_support_compiler.md` — the proof-draft compiler from
-  connected common-cell macrotiles to one colored support; the attempted
-  `E-infinity` instantiation is withdrawn by ERR-006 and remains blocked.
+  connected common-cell macrotiles to one colored support, P0's corrected
+  slope intersection, and G0's `30,30,2` common-support geometry;
+  `E-infinity` remains blocked on the complete limiting language L0.
 - `09_stm1_symbolic_quotient.md` — the full-local-closure safety criterion and
   the source-backed failure of the natural `S/M/L` quotient; application to a
   finite address table is blocked until a valid equal-support source exists.

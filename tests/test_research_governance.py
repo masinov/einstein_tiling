@@ -40,7 +40,9 @@ def test_stm1_source_correction_is_fail_closed():
     assert "ERR-006" in errata
     assert "12S+6M+6L" in errata
     assert "ST-M1.E∞" in ledger
-    assert "prior `18,18,2` derivation refuted" in ledger
+    assert "partial: G0 geometry proved; blocked on L0 language transport" in ledger
+    assert "ST-M1.L0" in ledger
+    assert "open; next blocker, no enumeration authorized" in ledger
 
 
 def test_gate_rejects_template_and_accepts_completed_record(tmp_path):

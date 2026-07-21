@@ -8,10 +8,11 @@ quotient refuted; application blocked by ERR-006
 **Scope:** any future minimal colored `sqrt(2)-1` source satisfying
 ST-M1.S0; no polygonal carrier or positive-entropy claim
 
-ERR-006 withdraws the claimed 38-state common-triangle construction. This
-note's quotient criterion and no-go results do not depend on that count, but
-there is currently no proved S0 alphabet to merge. They specify tests for any
-future valid source before boundary geometry is considered.
+ERR-006 withdraws the claimed 38-state construction. G0 later derives 62 raw
+geometric addresses (`30,30,2`), but L0 has not proved that their finite local
+closure decodes to the source. This note's criterion and no-go results do not
+depend on either count; they specify tests for a future valid S0 before
+carrier geometry is considered.
 
 ## 1. Local closure is the adversary
 
@@ -124,12 +125,12 @@ supply:
 
 ## 5. Present K1 boundary
 
-K1 does not pass the pre-geometric gate because S0/E-infinity is blocked. The
-next object is not a collar table or polygon but a proof of the equal-support
-source for the actual optimized templates. Only after that proof fixes a
-finite addressed alphabet may one list internal ports and SAB/vertex collars,
-define symmetry merges, and prove future equivalence. A shape search or table
-enumeration performed earlier would have no valid symbolic specification.
+K1 does not pass the pre-geometric gate because S0/E-infinity is blocked on
+L0. G0 fixes 62 raw geometric addresses, but the next object is a proof of
+their complete finite SAB/vertex language, not an enumerated quotient or
+polygon. Only after L0 gives a total decoder may one define symmetry merges
+and prove future equivalence. A shape search performed earlier would have no
+valid symbolic specification.
 
 ## 6. Claim boundary
 

@@ -157,3 +157,9 @@ Consequences:
 The affected historical notebooks are retained with correction notices. The
 stable theory notes and proof ledger use this erratum as the controlling
 status.
+
+Session 69 subsequently resolved the geometry without undoing this erratum:
+the centroid formulas give `30,30,2` common-triangle addresses after splitting
+the six embedded `M` rhombi in each large template and the small `M` rhombus.
+This is ST-M1.G0. Complete SAB/vertex-language transport remains open as L0,
+so the withdrawn `18,18,2` proof and S0 closure remain withdrawn.

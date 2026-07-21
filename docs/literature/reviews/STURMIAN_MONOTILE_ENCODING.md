@@ -323,3 +323,18 @@ P0 is not a common-support result. The source SAB rule excludes `M` by forcing
 the colored source tiling onto the parabola. Any recoding must prove a total
 decoder before using that exclusion. Thus the arithmetic target survives
 while E-infinity, its atlas, and K1 remain blocked.
+
+## Corrected common-support geometry (session 69)
+
+The isometric-cell centroid definition gives an exact deformation calculation.
+For adjacent corridor gaps `p,q`, the cell has edge vectors proportional to
+`p(2,-1)` and `q(-1,2)` in cabinet coordinates. The isometric coordinate map
+makes the unit vectors equal in length at 120 degrees. Since normalized gaps
+are `1` or `1+1/kappa`, all cell supports converge to one `60/120` rhombus.
+
+The source's `S/L` diagonal becomes the short diagonal and yields equilateral
+triangles. Applying the same marked split to `M` changes the actual
+`12S+6M+6L` templates to `30,30,2` primitive triangles. This proves G0, not
+S0. Tiny generating triangles collapse at the limit and add possible point
+contacts, so a complete finite SAB/vertex language with a total source decoder
+remains the separate open lemma L0.

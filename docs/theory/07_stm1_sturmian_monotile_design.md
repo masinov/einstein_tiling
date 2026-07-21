@@ -341,3 +341,19 @@ new guessed address count, a larger collar radius, or sampled intended
 tilings for that theorem. The two-tile lower bound in the source applies to
 its colored-tile category; a contextual unmarked carrier would lie outside
 that category, but no such carrier is implied by the source remark.
+
+## 13. Sessions 68--69 corrected recovery
+
+P0 proves that the segment spanned by the actual optimized composition
+`[12:12:6]` and `M=[0:2:0]` meets the Sturmian parabola only at
+`sqrt(2)-1`. Thus the source-level irrational slope selection survives.
+
+G0 then derives the support limit from the centroid coordinates. Normalized
+isometric cells converge to one `60/120` rhombus; splitting each `M` along the
+same short diagonal as `S/L` produces congruent equilateral triangles. The
+correct raw template counts are `30,30,2`, not `18,18,2`.
+
+This still does not close S0. The equidistant limit collapses tiny generating
+triangles to vertices and can add point contacts. L0 must give a finite
+SAB/vertex atlas whose full local closure has a total decoder into the source.
+Until L0 is proved, the 62 geometric addresses are not a safe K1 alphabet.

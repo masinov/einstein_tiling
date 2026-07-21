@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 68)
+**Last updated:** 2026-07-21 (session 69)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⛔ S0/E-infinity blocked after the `18,18,2` source misread; Q0/N1/N2 survive conditionally; no K1 table exists (ERR-006/D-0076) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⛔ P0 slope and G0 common-support geometry proved; E-infinity/S0 blocked on complete limiting language L0; K1 not admitted (D-0077/D-0078) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -102,6 +102,13 @@
   retains the irrational-slope arithmetic target. The source SAB language,
   not composition alone, excludes all-`M`; E-infinity remains blocked
   (D-0077).
+- **ST-M1 corrected common-support geometry:** direct centroid coordinates
+  show normalized `kappa→infinity` isometric cells converge to one
+  `60/120` rhombus. Splitting each `M` along the marked short diagonal gives
+  common equilateral triangles and actual raw template counts `30,30,2`.
+  This proves G0 only. New limiting point contacts and bent SAB/vertex rules
+  leave the all-tilings language equivalence L0 open; S0 and K1 remain blocked
+  (D-0078).
 - **ST-M1 symbolic quotient boundary:** Q0 correctly requires safety on the
   full finite local closure. Erasing ownership to unrestricted `S/M/L`
   restores rational periodic tilings, and independent corridor rails admit
@@ -408,7 +415,7 @@
   lines remain unknown. The completed blind hierarchy
   screen retained two non-unique first-composition rules out of 22,094 but no
   stationary recognizable recursion. Artifact: `e1-overnight-recovered.json`.
-- Test suite: **222 fast passed** (17 deselected, 145.42 s, session 68);
+- Test suite: **222 fast passed** (17 deselected, 144.42 s, session 69);
   **17 slow passed** previously (192 deselected, 389.36 s).
   Vendored Rust: **5 passed**.
 
@@ -505,16 +512,16 @@ Research is under the 2026-07-21 reset recorded in
 2. The E1 benchmark assessment is **closed no-go** for new ablations. Package
    the exact reproduction fixtures and postmortem during release work only.
 3. Human checkpoint `HC-2026-07-21-04` was explicitly authorized after review
-   of sessions 64--66. Sessions 67--68 used two slots for the primary-source
-   correction and corrected projective-composition lemma; no experiment or
-   large artifact was produced.
+   of sessions 64--66. Sessions 67--69 used all three slots for the source
+   correction, projective-composition lemma and common-support geometry; no
+   experiment or large artifact was produced.
 4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
    escalation, and all Spectre radius escalation frozen.
-5. **ST-M1 remains upstream of K1.** P0 proves that the corrected template
-   segment selects only `sqrt(2)-1`, so the arithmetic target survives. The
-   final HC-04 session may inspect the actual isometric-cell supports for a
-   plausible common refinement; no table, shape search, or radius escalation
-   is authorized.
+5. **Stop for human review.** P0 and G0 retain the arithmetic target and derive
+   the corrected `30,30,2` common-support templates. E-infinity is still
+   blocked on L0: a total finite language transport across limiting point
+   contacts. No 62-address atlas enumeration, K1 geometry, shape search or
+   radius escalation follows automatically.
 6. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.

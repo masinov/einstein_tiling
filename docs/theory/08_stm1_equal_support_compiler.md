@@ -195,8 +195,9 @@ instantiated ST-M1.S0 are **blocked**. Their next admissible input would be an
 exact source-independent construction for the actual two
 `12S+6M+6L` templates and the `M` template, proving congruent constituent
 supports, connectedness, complete local-language equivalence, and irrational
-corridor decoding. Until then there is no raw address count, collar alphabet,
-or K1 table. See ERR-006 and D-0076.
+corridor decoding. At this stage there was no raw address count, collar
+alphabet, or K1 table. Section 8 later resolves the support/count portion but
+not the language. See ERR-006 and D-0076.
 
 ## 7. Actual-composition arithmetic that survives
 
@@ -262,3 +263,91 @@ parabola. This does **not** repair E-infinity. A recoded common-support system
 may admit spurious all-`M`-like tilings unless its complete local language has
 a total decoder into the source. P0 fixes the target slope but supplies no
 support subdivision, collar atlas, or language-equivalence theorem.
+
+## 8. Correct common-support geometry
+
+The source's centroid definition is enough to close the geometric half of
+E-infinity without assuming its language half. Work first in cabinet
+coordinates, where the three line families have equations
+
+```
+a: x+y=-A,    b: x=B,    c: y=C.
+```
+
+The triangle determined by these lines has vertices
+`(B,C)`, `(B,-A-B)`, and `(-A-C,C)`, so its centroid is
+
+```
+g(B,C;A) = ((2B-A-C)/3, (2C-A-B)/3).
+```
+
+Fix the `a` line used in the definition of `H^a_{j,k}`. If consecutive `b`
+and `c` gaps are `p` and `q`, the four centroids are the translates generated
+by
+
+```
+u_p = p*(2,-1)/3,    v_q = q*(-1,2)/3.
+```
+
+Hence `H^a_{j,k}` is a parallelogram whose two side scales are exactly the
+two corridor widths. The linear map from cabinet to isometric coordinates is
+
+```
+A = [ -1/2    1/2 ]
+    [ -sqrt(3)/2  -sqrt(3)/2 ].
+```
+
+It sends `(2,-1)` and `(-1,2)` to equal-length vectors with dot product equal
+to minus one half the product of their lengths. Thus when `p=q` the cell is a
+`60/120` rhombus. The cyclic `b` and `c` cell families are rotations of the
+same calculation.
+
+In `SL(kappa,beta)`, every gap is `kappa` or `kappa+1`. Rescale supports by
+`1/kappa` and let `kappa` tend to infinity. Both normalized gaps tend to one,
+so every `S`, `M`, and `L` isometric-cell parallelogram tends to the same
+nondegenerate rhombus. The source's diagonal for splitting `S` and `L` is the
+one not parallel to the omitted line family. In the limiting rhombus it is
+the short diagonal; it divides the rhombus into two equilateral triangles.
+Split each limiting `M` rhombus along the corresponding marked diagonal.
+
+### ST-M1.G0 (equal-support geometry)
+
+After normalized equidistancing and the marked `M` split, all constituent
+supports of the actual optimized templates are congruent equilateral
+triangles in a periodic triangular cellulation. The two large and one small
+templates have raw primitive-address counts
+
+```
+12 + 2*6 + 6 = 30,    30,    2,
+```
+
+respectively.
+
+**Justification of the cellulation and connectivity.** The centroid vertices
+are affine functions of the gaps. The normalized finite-`kappa` cell tilings
+therefore converge locally to the rank-two periodic polygonal complex just
+described. Cell areas stay positive. Away from limiting boundaries, tile
+membership stabilizes; hence no positive-area gap or overlap can appear in
+the limit. Splitting rhombi does not change their union. The source's three
+patch-tile supports are connected topological disks, and their constituent
+edge adjacencies have positive limiting length, so the same finite adjacency
+graphs give connected limiting templates. \(\square\)
+
+This resolves the numerical uncertainty left by ERR-006 but does not restore
+the withdrawn proof. Tiny triangles in the generating line arrangement
+collapse to vertices in the equidistant limit, potentially adding point
+contacts. G0 proves common supports and connected templates, not that every
+locally legal colored triangular tiling lifts to the original SAB system.
+
+Accordingly E-infinity now has a sharp remaining lemma:
+
+### ST-M1.L0 (language transport; open)
+
+Construct a finite colored edge/vertex atlas on the 62 addressed triangles
+such that subdivision maps every source tiling into it and every tiling in its
+full local closure groups uniquely and decodes to a legal source tiling.
+
+L0 must explicitly control the new limiting point contacts, the bent SABs,
+both large geometries and their reflected occurrence, and the split halves of
+each `M`. Its all-tilings direction is the all-`M` exclusion. G0 does not
+authorize an enumeration of this atlas.

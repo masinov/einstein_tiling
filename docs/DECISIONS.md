@@ -1752,3 +1752,34 @@ Sturmian parabola and therefore excludes the all-`M` endpoint. A future
 common-support or unmarked system cannot borrow that conclusion until it has
 a total decoder into the complete source language. P0 does not close
 E-infinity/S0, define an address alphabet, or authorize an atlas run.
+
+## D-0078 (2026-07-21) — Correct common-support geometry is `30,30,2`
+
+The final HC-04 session derives the support geometry directly from the
+source's centroid definition instead of reading it from a figure. In cabinet
+coordinates, the centroid of the triangle bounded by `a=A`, `b=B`, `c=C` is
+
+`((2B-A-C)/3, (2C-A-B)/3)`.
+
+For adjacent `b` and `c` gaps `p` and `q`, the four centroids defining an
+isometric cell therefore form a parallelogram with edge vectors
+`p(2,-1)/3` and `q(-1,2)/3`. The fixed map to isometric coordinates sends the
+unit vectors to equal-length vectors at 120 degrees. After rescaling by
+`1/kappa`, both possible gaps `kappa` and `kappa+1` tend to one. Every
+`S/M/L` isometric-cell support consequently tends to the same
+`60/120` rhombus, cyclic orientations included.
+
+The source cuts `S` and `L` along the diagonal not parallel to the omitted
+line family. In the limiting rhombus this is the short diagonal, producing
+two equilateral triangles. Splitting each `M` rhombus along the corresponding
+marked diagonal therefore gives the same triangle support. The actual large
+composition `12S+6M+6L` becomes `12+2*6+6=30` triangles, and the small `M`
+becomes two. Thus the two large and one small templates have corrected raw
+address counts `30,30,2` (62 total).
+
+This closes only the support-and-template geometry lemma ST-M1.G0. It does
+not close E-infinity: the normalized limit collapses tiny line-arrangement
+triangles to vertices and can create new point contacts. A finite transported
+SAB/vertex language must still prove that every equal-support colored tiling
+decodes to the original source and excludes spurious recombinations. No atlas
+was enumerated, and no radius escalation is authorized. HC-04 is exhausted.
