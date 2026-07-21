@@ -30,43 +30,46 @@ assumptions, exact claims used here, and a repository impact decision.
    claims, and the 116-page 8-kite artifact audited 2026-07-21. The session-58
    coordinate crosswalk verifies a 116/116 per-shape reproduction; the earlier
    novelty claim is withdrawn. See `reviews/KAPLAN_HEESCH_POLYKITES.md`.
+6. `conway-lagarias-tiling-groups-1990` and
+   `lidjan-baralic-flat-surface-homology-2021` — targeted abelian-invariant
+   audit completed 2026-07-21. W2's GF(2)/integer incidence certificates are
+   classical coloring/tile-homology obstructions; the explicit Turtle formula
+   remains only a worked control. See `reviews/W2_ABELIAN_INVARIANTS.md`.
 
-## Immediate: proof and discovery controls
+## Immediate: research-return decision
 
-The Walton/Chéritat crosswalk, ancestry-blind `166→30→21` physical prefix and
-coordinated constraint system are complete through radius four. All three
-extra types are conditionally refuted and all 18 generated controls survive.
-The remaining Chéritat control is the non-conditional direction:
-derive parent/component existence from every one of the 18 admitted physical
-cases, prove overlap choices make a unique partition, and show contraction
-stays in the same domain.
+The classified-corpus benchmark assessment is closed with a no-go on new
+ablations; see `docs/benchmarks/E1_CLASSIFIED_CORPUS_ASSESSMENT.md`. At the
+human checkpoint, select one outside-horizon direction for a targeted
+primary-source audit before implementation. W2 quotient work and W3 Spectre
+radius work remain frozen.
 
 ## Next: machine representations
 
-6. `labbe-selinger-markov-2026` — reproduce the Hat SFT/toral coding and
+7. `labbe-selinger-markov-2026` — reproduce the Hat SFT/toral coding and
    record its explicit Turtle and Spectre/CASPr open questions.
-7. `tatham-transducers-2026` — reproduce one Hat address/neighbor transducer
+8. `tatham-transducers-2026` — reproduce one Hat address/neighbor transducer
    and test exact random access against our generator.
-8. `james-smith-rhombic-2024` — compare the rhombille coloring game and
+9. `james-smith-rhombic-2024` — compare the rhombille coloring game and
    Fibonacci/Sturmian structure with the Akiyama--Araki route.
-9. `akiyama-hamada-ito-sturmian-2026` — reproduce one small quadratic-slope
+10. `akiyama-hamada-ito-sturmian-2026` — reproduce one small quadratic-slope
    tile-set construction; treat the July announcement only as a pointer.
-10. `coulbois-et-al-groups-2026` — formalize the poly-`K` correspondence for
+11. `coulbois-et-al-groups-2026` — formalize the poly-`K` correspondence for
    our Laves substrate before using group subsets as candidates.
 
 ## Characterization controls
 
-11. `baake-gaehler-sadun-hat-2025` — record the exact deformation,
+12. `baake-gaehler-sadun-hat-2025` — record the exact deformation,
     conjugacy, MLD, cohomology, and model-set statements.
-12. `baake-et-al-spectre-order-2025` — do the analogous CASPr audit.
-13. `baake-et-al-diffraction-2025` — compare explicit Fourier modules and
+13. `baake-et-al-spectre-order-2025` — do the analogous CASPr audit.
+14. `baake-et-al-diffraction-2025` — compare explicit Fourier modules and
     coefficients with the limited outputs of A4.
 
 ## Supporting audits
 
-14. `kaplan-path-review-2025` — retain as author-review evidence only; locate
+15. `kaplan-path-review-2025` — retain as author-review evidence only; locate
     primary artifacts before promoting quantitative search claims.
-15. `jungck-biswas-five-polykites-2025` — use as a secondary pointer only and
+16. `jungck-biswas-five-polykites-2025` — use as a secondary pointer only and
     verify named-tile classifications in primary constructions.
 
 The two SMKGS primary papers are already the controlling full-text audits for

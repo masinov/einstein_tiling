@@ -7,7 +7,7 @@ leave an entry here linking to its notebook session and artifacts.
 
 | ID | Name | Kind | Status | Depends on | Evidence |
 |---|---|---|---|---|---|
-| E1 | Blind rediscovery of the hat | validation gate | **in progress** — `n≤16` is entirely within the published classified horizon; A0–A4 validation complete, A6 gate incomplete | funnel A0–A4+A6 (M1–M5) | sessions 01–19; ERR-004 |
+| E1 | Blind rediscovery of the hat | validation gate | **closed/retired, not passed as designed** — strong component validation and retrospective Hat/Turtle recovery, but no sealed global ranking and A6 gate incomplete; not a quantitative discovery benchmark | funnel A0–A4+A6 (M1–M5) | sessions 01–19, 60; ERR-003/004, D-0068; [assessment](benchmarks/E1_CLASSIFIED_CORPUS_ASSESSMENT.md) |
 | E2 | Frozen `n≈22–24` 12-fold sweep | invalid discovery design | **invalidated before launch** — the published exhaustive horizon is `n≤24`; redesign required | literature/family gate, E1 | ERR-004/D-0049; [literature baseline](literature/POLYKITE_BASELINE.md) |
 | E3 | First hunts in 5-fold / 8-fold substrates | discovery | not started | E1 pass, new substrates | — |
 | E4 | Diffraction fingerprint calibration | validation gate | **PASSED** (2026-07-16) | A4 (M4), full reference library | `scripts/run_e4.py`, `scripts/run_e4_wide.py`; [notebook 05](notebook/2026-07-16-session-05.md), [notebook 06](notebook/2026-07-16-session-06.md); assets `e4-results.json`, `e4-wide-results.json`, `e4-spectrum-*.png` |

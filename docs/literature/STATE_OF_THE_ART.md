@@ -123,6 +123,23 @@ virtually `Z^2` Coxeter group (`coulbois-et-al-groups-2026`). This makes group
 subsets a principled candidate space, but geometric realization and novelty
 relative to known tiling systems remain separate checks.
 
+### Coloring, homology, and quotient obstructions
+
+Conway--Lagarias identify additive cell colorings with homomorphisms into
+abelian groups and package the strongest such information as tile homology
+(`conway-lagarias-tiling-groups-1990`). Their boundary-word groups can be
+strictly stronger than signed-tiling/coloring obstructions. Lidjan--Baralic
+apply tile homology directly to finite grids on flat surfaces, including
+explicit parity obstructions on tori
+(`lidjan-baralic-flat-surface-homology-2021`).
+
+The repository's GF(2) incidence null vectors and integer cokernels belong to
+this classical abelian class. Its uniform Turtle thin-family support was not
+found in the audited Turtle papers, but it proves only a small corollary of
+known Turtle aperiodicity. W2 is therefore retained as a worked certificate
+control and closed as a novelty branch; see
+`reviews/W2_ABELIAN_INVARIANTS.md`.
+
 ## 3. Computational filtering
 
 Kaplan's Heesch SAT method measures finite surround depth; his public

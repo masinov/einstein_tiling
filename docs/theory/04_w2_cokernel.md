@@ -1,6 +1,14 @@
 # W2.C — quotient incidence cokernels
 
 > “Finalist” in legacy IDs/artifacts means the known Turtle (ERR-003/D-0048).
+>
+> **Prior-art disposition (2026-07-21):** T2.C0/T2.C2 are classical
+> coloring/tile-homology and integer-incidence formulations; T2.C3 is a
+> standard symmetry-average/conic reduction. T2.C1 and its D6 transport
+> T2.C5 give an independently derived compact Turtle control, but only a
+> special corollary of published Turtle aperiodicity. No method or Turtle
+> theorem novelty is claimed. See
+> `docs/literature/reviews/W2_ABELIAN_INVARIANTS.md`.
 
 ## Modular certificate
 

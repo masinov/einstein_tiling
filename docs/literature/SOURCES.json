@@ -339,6 +339,40 @@
       "themes": ["named polykites", "graph encodings", "periodic controls", "secondary classification"],
       "workstreams": ["D"],
       "review_status": "source-caution"
+    },
+    {
+      "id": "conway-lagarias-tiling-groups-1990",
+      "title": "Tiling with Polyominoes and Combinatorial Group Theory",
+      "authors": ["J. H. Conway", "Jeffrey C. Lagarias"],
+      "year": 1990,
+      "evidence_class": "peer-reviewed theorem",
+      "venue": "Journal of Combinatorial Theory, Series A 53, 183-208",
+      "arxiv": null,
+      "doi": "10.1016/0097-3165(90)90057-4",
+      "record_url": "https://doi.org/10.1016/0097-3165(90)90057-4",
+      "download_url": "https://www.komal.hu/kep/abra/2c/1f/39/43dca0a5f04ffc973681258f4/conway-lagarias.pdf",
+      "local_filename": "1990-conway-lagarias-tiling-groups.pdf",
+      "themes": ["coloring invariants", "tile homology", "signed tilings", "boundary groups", "polyforms"],
+      "workstreams": ["B", "C"],
+      "review_status": "targeted-theorem-audit",
+      "review_note": "docs/literature/reviews/W2_ABELIAN_INVARIANTS.md"
+    },
+    {
+      "id": "lidjan-baralic-flat-surface-homology-2021",
+      "title": "Homology of Polyomino Tilings on Flat Surfaces",
+      "authors": ["Edin Lidjan", "Djordje Baralic"],
+      "year": 2021,
+      "evidence_class": "preprint",
+      "venue": "arXiv preprint",
+      "arxiv": "2103.04404",
+      "doi": null,
+      "record_url": "https://arxiv.org/abs/2103.04404",
+      "download_url": "https://arxiv.org/pdf/2103.04404",
+      "local_filename": "2103.04404-flat-surface-tile-homology.pdf",
+      "themes": ["tile homology", "torus grids", "parity obstructions", "flat surfaces", "polyominoes"],
+      "workstreams": ["B", "C"],
+      "review_status": "targeted-theorem-audit",
+      "review_note": "docs/literature/reviews/W2_ABELIAN_INVARIANTS.md"
     }
   ]
 }

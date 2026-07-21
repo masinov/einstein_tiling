@@ -1466,3 +1466,43 @@ This closes the bounded comparison proposed by ERR-005. It strengthens the
 claim from aggregate agreement to an exact per-shape independent reproduction.
 It does not make the census new, authorize a larger census, or alter the
 published `n<=24` discovery boundary.
+
+## D-0067 (2026-07-21) — Close W2 abelian invariants as a control branch
+
+The adversarial prior-art audit of T2.C1/T2.C5 is complete. Conway--Lagarias
+already identify additive cell weights with generalized coloring maps and
+tile homology; later flat-surface work applies the same relation/parity logic
+directly to finite torus grids. W2's GF(2) left-null witnesses and integer
+cokernels are instances of that classical certificate class.
+
+No audited Turtle source states our exact parity support for the three thin
+HNF families. Nevertheless, the published theorem that every Turtle tiling is
+nonperiodic already excludes every torus quotient, so the thin-family result
+is only a small independently derived corollary. It is retained as a compact
+producer/verifier control, not claimed as a new method, a new Turtle theorem,
+or an aperiodicity proof. No further W2 quotient index, prime, group, or shell
+run is authorized under this branch. The next research decision is whether
+the blind Hat/Turtle funnel supports a publishable classified-corpus benchmark
+after comparison and ablations are specified on paper.
+
+## D-0068 (2026-07-21) — E1 is a validation postmortem, not a clean benchmark
+
+The historical E1 runs do not support unbiased rank, recall or ablation
+claims. Hat was the explicit development and calibration target; Turtle was
+named in the program's expected outcome even though its canonical key was not
+registered; thresholds and budgets changed in response to observations; and
+the expensive A3/A4 stages were run only on the ten smallest depth-three
+survivors. There is no frozen global score over the complete corpus.
+
+The exact outputs still form a useful public reproduction package: the
+116-shape Kaplan crosswalk, cold-verifiable certificates, a disclosed
+ten-shape retrospective bracket, and the identity/prior-art failure
+postmortem. They must be described as validation and research-governance
+evidence, not as a blind discovery-method benchmark.
+
+A clean `n<=12` replay could freeze labels, baselines and rank metrics, but it
+would contain only two positives, one already used during method development.
+Its expected research return does not justify another run. No E1 ablation
+campaign is authorized. E1 is closed as validation/postmortem, and the next
+research branch must begin outside the classified polykite catalog after a
+primary-source go/no-go audit.

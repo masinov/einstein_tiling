@@ -49,7 +49,17 @@ become a legitimate benchmark or postmortem if it reports:
 This would evaluate a discovery method. It would not discover a tile or
 reclassify the corpus.
 
-### 3. T2.C1/T2.C5 as a theorem candidate
+The session-60 design audit gives a **no-go** on that quantitative claim for
+the historical runs. Hat was a development/calibration target, Turtle was
+expected by the program even though its key was not registered, no sealed
+configuration preceded evaluation, and A3/A4 covered only the ten smallest
+survivors rather than one globally ranked corpus. The defensible package is a
+reproduction plus research-governance postmortem. A clean replay would have
+only two positives and is not authorized because its expected research return
+does not justify the computation. See
+`docs/benchmarks/E1_CLASSIFIED_CORPUS_ASSESSMENT.md`.
+
+### 3. T2.C1/T2.C5: audit closed as a worked control
 
 The parity construction excludes three infinite thin HNF families for the
 Turtle, using an explicit odd-weight support and exact dihedral transport.
@@ -62,9 +72,13 @@ development it needs a focused prior-art comparison against:
 - existing algebraic exact-cover obstructions on quotient lattices;
 - published Turtle Sturmian/Ammann-bar proofs.
 
-Only if the obstruction or its certificate form is absent from that literature
-should it be polished into a short theorem package. Otherwise it becomes a
-worked control example.
+The 2026-07-21 primary-source audit found that the certificate class is
+classical generalized coloring/tile homology, including explicit parity
+obstructions on torus grids. The exact Turtle support formula was not located,
+but its conclusion is a tiny strict corollary of published Turtle
+aperiodicity. It is therefore retained as a compact worked verifier example,
+not polished as a novelty claim. W2 escalation is closed. See
+`reviews/W2_ABELIAN_INVARIANTS.md`.
 
 ## Retain as controls, not research claims
 
@@ -92,16 +106,11 @@ worked control example.
 
 ## Next decision sequence
 
-1. Audit T2.C1/T2.C5 against primary algebraic-tiling literature. This is
-   reading and proof comparison only.
-2. If it survives, reduce it to a self-contained theorem, proof, and tiny
-   verifier. If it does not, mark it as a control and stop that branch.
-3. Independently assess whether the blind Hat/Turtle funnel has enough
-   quantitative ablation data for a reproducible benchmark note. Do not run
-   missing ablations until the note's novelty and comparison set are defined.
-4. Only after one package is closed should candidate generation resume, and
-   then outside the classified polykite catalog: for example a precisely
-   defined poly-`K`, Sturmian-encoding, or new-substrate family motivated by a
-   theorem rather than raw enumeration.
+1. At the human checkpoint, choose one genuinely outside-horizon direction
+   only after a targeted primary-source go/no-go audit. Candidate families
+   include a precisely defined poly-`K`, Sturmian-encoding, or new-substrate
+   family motivated by a theorem rather than raw enumeration.
+2. Treat the `Tile(a,b)` recognizer and release packaging as bounded
+   infrastructure tasks, not substitutes for the next mathematical question.
 
 The controlling admission rule is Section 0 of `NOVELTY_PROTOCOL.md`.

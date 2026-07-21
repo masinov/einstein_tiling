@@ -46,6 +46,12 @@ Artifact: `docs/notebook/assets/theory-w2-binary-families.json`.
 
 ## T2.C5 — all three thin directions
 
+This symmetry transport is retained as a worked control. The general abelian
+certificate form is classical tile homology, and published Turtle
+aperiodicity already excludes all three quotient families; see the
+2026-07-21 audit in
+`docs/literature/reviews/W2_ABELIAN_INVARIANTS.md`.
+
 T2.C1 proved the GF(2) obstruction for `(1,0,k)`, all (k\ge4). The exact
 center-lattice D6 action sends this family to the other two observed thin
 directions:

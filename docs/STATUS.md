@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-20 (session 56)
+**Last updated:** 2026-07-21 (session 59)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -30,16 +30,16 @@
 | M4 — A4 diffraction fingerprint | §4 A4 | ✅ done v0; 12-fold core calibration passed (session 05) |
 | E4 — full fingerprint calibration gate | §8 E4 | ✅ passed (sessions 05–06) |
 | M5 — A6 hierarchy mining | §4 A6 | ✅ done v0; recursive, stationary-collar and SAT forcing gate passed |
-| T0/W1/W2 — exact theory foundations | theory program v0.2 | 🟨 in progress; Turtle-control T1.2-36 composes into 126 infinite HNF families; S3/A4 holonomy, V4 twist unions and one exact D6 packing orbit close the certified quotient prefix through index 60. These are independent certificate-method results for a known aperiodic tile (sessions 20–40) |
-| W3 — substitution certificates | theory program v0.2 | 🟨 in progress; Spectre C2 verified, C1/C3/C4/C5 partial. Direct obligations D1/D2/D3/D5/D6 are verified throughout the unrestricted fixed-chirality polygonal hull. D4 now has an exact 17↔17 colored/collar bijection, complete component-boundary round trips and a unimodular next-phase normalization; full-hull faithfulness remains partial because the bare state SFT admits 536 spurious overlap stars and 80/3,565 seeds survive radius two. D7 period descent remains open (sessions 39, 45–56) |
-| **Gate G1 — E1 blind hat rediscovery** | §8 E1 | 🟨 in progress; hat A6 has one 3-type local rule family |
+| T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
+| W3 — substitution certificates | theory program v0.2 | ⏸ frozen pending a concrete method-novelty proposition; the exact Spectre finite results remain controls against published hierarchy work, not an invitation to another radius (sessions 39, 45–56) |
+| **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
 
 ## What exists and is verified
 
-- **Versioned literature subsystem:** 18 source records distinguish
+- **Versioned literature subsystem:** 22 source records distinguish
   peer-reviewed theorems, computational methods, preprints, reviews and
   secondary evidence; 17 open PDFs plus text extracts are reproducibly cached
   outside Git. The state-of-the-art map, methods-to-code matrix, reading queue,
@@ -321,6 +321,11 @@
   through index 36 and 2,941/8,864 Turtle area-admissible HNFs through index
   215. Exact D6 maps promote the thin proof to all three families `(1,0,k)`,
   `(k,0,1)`, `(k,k-1,1)` for every k≥4. Missing family membership is unknown.
+- **W2 prior-art disposition:** additive incidence/cokernel witnesses are
+  classical generalized coloring/tile homology, including on finite tori.
+  The explicit Turtle thin support was not found in the audited Turtle papers,
+  but is only a small corollary of published aperiodicity. W2 is frozen as a
+  control branch (D-0067), not a method- or Turtle-novelty claim.
 - **W2.D phase 0:** an exact p3 Cayley model reproduces Conway--Lagarias'
   three-in-line boundary invariant. The Turtle has 2,556 S3 boundary-group
   surjections, but exhaustive zero-displacement analysis yields no commuting-
@@ -453,17 +458,16 @@ that separation is finite benchmark evidence, not a novelty claim.
 Research is under the 2026-07-21 reset recorded in
 `docs/literature/RESEARCH_RETURN_AUDIT.md`.
 
-1. Perform a primary-source novelty audit of the uniform T2.C1/T2.C5 parity
-   obstruction. Do not run it at more values of `k`; the question is whether
-   its proof or certificate form adds anything to the literature.
-2. Depending on that audit, either package T2.C1/T2.C5 as a self-contained
-   small theorem with a tiny verifier, or demote it to a control and close W2.
-3. Assess the blind Hat/Turtle funnel as a reproducible classified-corpus
-   benchmark. Define comparison methods and ablations before authorizing any
-   missing measurements.
+1. The T2.C1/T2.C5 audit is **closed**: the method class is classical tile
+   homology and the explicit Turtle formula is retained only as a worked
+   control. W2 escalation is frozen.
+2. The E1 benchmark assessment is **closed no-go** for new ablations. Package
+   the exact reproduction fixtures and postmortem during release work only.
+3. Stop at human checkpoint `HC-2026-07-21-01` (session +3) and obtain an
+   explicit new checkpoint before choosing an outside-horizon research branch.
 4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
    escalation, and all Spectre radius escalation frozen.
-5. Only after closing one of the preceding packages, choose a genuinely
+5. After checkpoint approval, choose a genuinely
    outside-horizon candidate family from a literature-backed theorem. The
    `Tile(a,b)` recognizer remains required infrastructure before any future
    polykite novelty promotion, but is not itself the next research result.

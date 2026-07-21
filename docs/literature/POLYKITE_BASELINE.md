@@ -77,5 +77,10 @@ fail-closed: `n<=24` is ineligible, and `n>24` remains blocked until the
   horizon) is factually invalid and is superseded by ERR-004.
 - Existing Turtle W1--W3 computations remain exact independent-control and
   certificate-method results. They are not evidence for a new tile.
+- The W2 parity/cokernel layer has now been compared with classical generalized
+  coloring and torus tile-homology sources
+  (`conway-lagarias-tiling-groups-1990`,
+  `lidjan-baralic-flat-surface-homology-2021`). Its thin Turtle formula is a
+  worked control, not a new invariant method or a new aperiodicity theorem.
 - W4 may study stronger all-tilings rigidity or extensions to other
   substrates, but it is no longer the missing bridge for polykite periodicity.
