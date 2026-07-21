@@ -82,6 +82,14 @@ reviewable proof or certificate.
   N5--N9/K2C/K2V dependency chain and the conditional K2J-to-monotile
   theorem. This is the canonical review entry point for ST-M1; it is a proof
   draft, not a construction or novelty claim.
+- `15_stm1_flag_carrier.md` — K3F relocates the three K2C potentials to three
+  congruent corner-kite occurrences and states the remaining K3G color-erasure
+  problem.
+- `16_stm1_retiling_compiler.md` — N10's corner-kite rigidity and K3R's
+  conditional inverse-retiling theorem/search architecture.
+- `17_stm1_binary_retiling_kernel.md` — the concrete two-diagonal square
+  kernel, its conditional unique-pairing argument, and the open B0/contact-
+  guard obligations that stop geometry after HC-11.
 - `W1_TRANSFER_SPEC.md` — the soundness/completeness contract for the exact
   cylinder transfer engine and its certificates.
 - `PROOF_LEDGER.md` — stable IDs, scope, status, dependencies, and artifacts.

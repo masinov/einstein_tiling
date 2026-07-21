@@ -2229,3 +2229,21 @@ multiplicity, retiling template, unique-grouping marker and finite
 contact-completeness argument. Otherwise K3R freezes as a search
 specification. Intentional T-junctions are no longer forbidden categorically;
 they must be exhaustively classified.
+
+## D-0100 (2026-07-21) — Retain the binary retiling kernel; fire the HC-11 kill
+
+Two right-isosceles copies tile one square along either diagonal. If a
+polygonal deformation forces exclusive full hypotenuse pairing and a complete
+leg/corner atlas, its tilings group uniquely into binary square macrocells.
+The diagonal choice changes boundary ownership and corner valence, providing
+a concrete contextual-state channel with two-dimensional plaquette coupling.
+
+This is not a tile candidate. No guard is known that proves contact
+completeness for unrestricted plane tilings, and no binary plaquette language
+has been proved to decode totally to K3F/S0. B0 records the latter symbolic
+question. Both results are required before boundary synthesis.
+
+HC-11's kill condition therefore fires after session 90. No geometry run is
+admitted; K3G remains frozen. The next admissible action is a primary-source
+and on-paper audit of B0. Only a positive audit can justify a later fixed-`N`,
+preregistered inverse boundary-word experiment.
