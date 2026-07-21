@@ -2144,3 +2144,21 @@ reductions, but the selected exact-compiler K2G route closes as active
 research. Reopening requires an exact on-paper polygon or general geometric
 gadget lemma satisfying J1--J6. Shape search, notch drawing, collar
 escalation, or finite patches are explicitly insufficient. HC-09 is exhausted.
+
+## D-0095 (2026-07-21) — Define SER0; do not digitize source figures as tables
+
+HC-10 consolidates the symbolic ST-M1 chain. SER0 specifies the complete
+machine-readable source object: exact `30,30,2` templates and addresses,
+state fields, oriented edges, cyclic vertex words, decoder data, fixed K1P
+code and cold-verifier obligations.
+
+The arXiv v3 source archive was audited. Its TeX supplies formulas and prose;
+the relevant construction figures are standalone Adobe Illustrator PDFs.
+There is no constituent-address list, bent-SAB table, vertex atlas or figure-
+generating coordinate source. Visual/path extraction would therefore be an
+independent reconstruction with semantic choices, not direct serialization.
+
+No producer run is admitted. SER0 is blocked pending author data or a
+separately preregistered, independently validated reconstruction. The
+self-contained theory write-up may use an abstract finite S0 presentation but
+must expose SER0 as the reproducibility gap.

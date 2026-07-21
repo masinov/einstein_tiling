@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 84)
+**Last updated:** 2026-07-21 (session 85)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⛔ minimal colored S0 and parity-selected symbolic quotient K1P closed in proof draft; unmarked construction blocked at geometric coupled-mode realization K2G (D-0077--D-0086) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ S0/K1P/K2C/K2V symbolic chain closed in proof draft; unmarked K2G frozen after the HC-09 kill because no geometry meets K2J (through D-0094) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -203,6 +203,12 @@
   supply none of these proofs and merely rename colors. K2C/K2V are retained,
   but active exact-compiler geometry is frozen until an exact gadget lemma
   meets J1--J6 (D-0094).
+- **ST-M1 serialization audit:** SER0 defines the extensional `30,30,2`
+  templates, rules, decoder and K1P certificate a cold checker would need.
+  The primary arXiv source contains exact prose/formulas but only Illustrator
+  PDFs for the construction figures, not address/SAB/vertex tables. Direct
+  serialization is blocked; figure digitization would be a separately
+  validated reconstruction (D-0095).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -608,12 +614,14 @@ Research is under the 2026-07-21 reset recorded in
    session kill condition; session 82 derives the surviving K2C boundary-
    cocycle candidate and its sector-separated vertex lift; session 84 applies
    the kill condition because no unmarked gadget meets K2J. HC-09 is exhausted
-   with no experiment or large artifact.
+   with no experiment or large artifact. HC-10 is authorized for
+   consolidation; session 85 defines SER0 and records the primary-source data
+   blocker. This is session 1 of at most 3.
 4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
    escalation, and all Spectre radius escalation frozen.
-5. **Stop for review.** Active K2G geometry is closed by D-0094. It may reopen
-   only with an exact on-paper polygon/gadget lemma satisfying K2J J1--J6.
-   No drawing, contact census, collar escalation or experiment is authorized.
+5. Direct SER0 production is blocked by missing primary extensional data.
+   HC-10 next consolidates the proof-draft symbolic chain into one self-
+   contained theorem document, explicitly retaining SER0 and K2J as blockers.
 6. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.

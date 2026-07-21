@@ -303,11 +303,13 @@
       "doi": null,
       "record_url": "https://arxiv.org/abs/2506.19362",
       "download_url": "https://arxiv.org/pdf/2506.19362",
+      "source_url": "https://export.arxiv.org/e-print/2506.19362",
+      "source_archive_sha256": "de757bfc8e3fe174fc04dd19101f30e13dc6776d245f573ff9554f23a60bad28",
       "local_filename": "2506.19362-sturmian-lattices-full.pdf",
       "themes": ["Sturmian lattices", "quadratic irrationals", "aperiodic tile sets", "bounded displacement", "hierarchy"],
       "workstreams": ["A", "C"],
       "review_status": "full-text-audited",
-      "review_note": "docs/literature/reviews/STURMIAN_MONOTILE_ENCODING.md"
+      "review_note": "docs/literature/reviews/STURMIAN_MONOTILE_ENCODING.md; source archive audited in docs/theory/13_stm1_serialization_contract.md"
     },
     {
       "id": "akiyama-hamada-ito-announcement-2026",
