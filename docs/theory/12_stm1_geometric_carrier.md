@@ -459,3 +459,57 @@ sector state at a six-valent frame vertex, make each side contact enforce the
 difference equation, and admit no other point/segment contacts. HC-09's next
 question is whether those sector states can remain independent enough at a
 shared six-tile vertex to lift a K1P configuration.
+
+## 18. Shared vertices: one bit or six sectors
+
+At a frame vertex `v`, six triangular carriers meet. Their corner potentials
+are initially six sector variables `q_(F,v)`, one for each incident face
+`F`. They should not silently be identified.
+
+If all sectors are forced to one common bit `Q_v`, then on an edge `vw`
+shared by faces `F` and `G`, K2C gives
+
+```
+parity(x_(F,vw)) = Q_w-Q_v = parity(x_(G,vw)).
+```
+
+Thus common vertex bits require equality of the two directed half-mode
+parities across every edge. K1P's code was selected on center states, and its
+source edge rule does not establish this extra equality. It cannot be assumed.
+
+If that equality were separately proved, the face parity equations would
+make the common edge parities a closed `Z/2` one-cocycle. The simply connected
+triangular plane would then integrate it to `Q_v`, uniquely up to global
+flip. This is a useful conditional simplification, not the present case.
+
+### ST-M1.K2V — sector-separated vertex lift
+
+Every K1P configuration has a lift to corner potentials in which each
+six-valent frame vertex retains the six incident sector bits separately.
+
+### Proof
+
+For every carrier face independently, use K2C to integrate its visible base
+word to three corner bits, choosing either gauge; fresh diagonal faces need no
+bits. At a shared frame vertex, retain the resulting participant bits with
+their cyclic sector identities rather than identifying them. No equation from
+one face changes a bit belonging to another face. Hence all face equations
+hold simultaneously. \(\square\)
+
+K2V is an existence statement for a finite decorated vertex language. A base
+vertex has at most six binary sectors, so at most 64 raw bit words before the
+source vertex rule removes illegal combinations. Fresh tags add finitely many
+sector symbols because `A_ess` is finite. No occurrence enumeration is needed
+for this finiteness claim.
+
+## 19. Geometric consequence
+
+The vertex gadget must be **sector-aware**. One shared point color is too
+coarse unless half-mode parity matching is proved. A valid unmarked junction
+must let the complete local geometry distinguish the participant/cyclic-order
+sector record—exactly the kind of record O0 retained abstractly—while still
+using one fixed carrier boundary.
+
+This does not yet prove such a junction exists. It prevents a false shortcut
+and leaves a finite exact target: locally visible sector words, side
+difference checks, and the already stated source vertex legality.

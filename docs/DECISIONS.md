@@ -2106,3 +2106,22 @@ The candidate survives admission. It fails unless a shared six-valent
 geometric vertex can expose separate sector states for its incident carriers,
 side contacts can enforce the difference relation, and the resulting atlas
 has no additional contacts. No drawing or search is authorized.
+
+## D-0093 (2026-07-21) — K2C needs sector-separated six-valent vertices
+
+Identifying all six carrier-corner potentials at one frame vertex would force
+the two directed half-mode parities on every shared edge to agree. K1P's
+center-state code and source edge rule do not establish that property. A
+single common vertex bit is therefore forbidden unless a later code theorem
+proves half-mode parity matching.
+
+K2V gives the exact alternative. Integrate each carrier face's even word
+independently and retain at every shared vertex the six participant bits with
+their cyclic sector identities. This always lifts a K1P configuration and has
+a finite raw base alphabet of at most 64 sector words. It is symbolic, not a
+geometric atlas.
+
+The remaining HC-09 question is whether one fixed unmarked boundary can make
+those sector records locally visible and transport their differences along
+sides without merely reintroducing painted colors. Failure of that
+noncircular junction contract closes the selected route.

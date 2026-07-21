@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 82)
+**Last updated:** 2026-07-21 (session 83)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -192,6 +192,11 @@
   parity; cyclic equality enforces every remaining fresh diagonal tag. The
   two potential lifts differ by gauge flip. This survives N7--N9 symbolically
   but has no geometric vertex gadget yet (D-0092).
+- **ST-M1 sector vertex lift:** one bit shared by all six incident carriers
+  would wrongly force adjacent half-mode parities to match. K2V instead keeps
+  six participant sectors in cyclic order; independent face integration lifts
+  every K1P configuration, with at most 64 raw base sector words. This proves
+  symbolic consistency, not geometric realizability (D-0093).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -595,13 +600,13 @@ Research is under the 2026-07-21 reset recorded in
    pose-action question; session 79 proves N7 and closes pure intrinsic pose.
    Sessions 79--81 exhaust HC-08. The user authorized HC-09 with a three-
    session kill condition; session 82 derives the surviving K2C boundary-
-   cocycle candidate. This is session 1 of at most 3, with no experiment or
-   large artifact.
+   cocycle candidate, and session 83 proves its sector-separated vertex lift.
+   This is session 2 of at most 3, with no experiment or large artifact.
 4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
    escalation, and all Spectre radius escalation frozen.
-5. K2G is reopened only for K2C's on-paper audit. Next test whether corner
-   potentials can remain sector-specific at a shared six-valent vertex while
-   allowing a K1P lift. No carrier drawing, contact census or experiment is
+5. K2G is reopened only for K2C's on-paper audit. The final HC-09 session must
+   state a noncircular geometric sector-junction contract; merely renaming the
+   bits as colors triggers the kill condition. No drawing or experiment is
    authorized.
 6. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research

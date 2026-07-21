@@ -127,6 +127,7 @@ Turtle under the production canonicalization.
 | ST-M1.N8 | The bare triangular frame has no translation-equivariant local absolute `L/2L` coset coloring | unanchored frame phase only; contextual geometric anchors excluded from scope | proof-draft refutation | primitive `L` periods conflict with the `2L` period lattice; integrated phase has global gauge ambiguity | `12_stm1_geometric_carrier.md` §11; D-0090 |
 | ST-M1.N9 | Orientation plus an unanchored `L/2L` residue cannot realize the four K2H parity classes | pose-only state relative to the bare frame; no contextual landmark | proof-draft refutation | translation equivariance removes residue dependence; N7 excludes the remaining orientation orbit | `12_stm1_geometric_carrier.md` §13; D-0091 |
 | ST-M1.K2C | Corner potentials and cyclic branch/tag constraints project exactly to the complete K1P tile-star codebook | symbolic boundary cycle; contextual corner variables, no polygon | proof-draft constructive factorization | K1P base parity plus fresh diagonal extension; zero `Z/2` boundary holonomy | `12_stm1_geometric_carrier.md` §16; D-0092 |
+| ST-M1.K2V | Every K1P configuration lifts to K2C corner potentials when each six-valent vertex retains the six incident face sectors separately | finite symbolic decorated-vertex language; no geometric atlas | proof-draft constructive lift | independent per-face K2C integration; participant/cyclic sector identities | `12_stm1_geometric_carrier.md` §18; D-0093 |
 
 ## Preserved Turtle-control evidence (legacy “finalist” identifiers)
 
