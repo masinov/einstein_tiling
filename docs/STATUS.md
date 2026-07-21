@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 80)
+**Last updated:** 2026-07-21 (session 81)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -181,6 +181,11 @@
   translation-equivariant rule. Primitive `L` translations fix the frame and
   permute the cosets; integrated phases retain a global gauge. Only additional
   bounded contact geometry could anchor the phase (D-0090).
+- **ST-M1 frame-pose closure:** translation equivariance removes dependence on
+  an unanchored `L/2L` residue, leaving the pure orientation case already
+  excluded by N7. K2H helps geometry only if one independently visible
+  four-class central feature is shared by all interfaces. No such feature or
+  ternary junction is known; K2G is frozen at that exact boundary (D-0091).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -582,14 +587,14 @@ Research is under the 2026-07-21 reset recorded in
    user explicitly authorized `HC-2026-07-21-07` after independent review.
    Sessions 76--78 exhaust HC-07. The user authorized HC-08 for the bounded
    pose-action question; session 79 proves N7 and closes pure intrinsic pose.
-   Sessions 79--80 close pure intrinsic pose and unanchored `L/2L`. This is
-   session 2 of at most 3, with no experiment or large artifact.
+   Sessions 79--81 close pure intrinsic pose, unanchored `L/2L`, and their
+   combination. HC-08 is exhausted with no experiment or large artifact.
 4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
    escalation, and all Spectre radius escalation frozen.
-5. K2G remains the blocker. The final HC-08 session will determine whether an
-   abstract hidden phase reduces the geometric problem without an independently
-   visible central feature. Contextual docking and ternary exact-cover
-   junctions remain open; no search or experiment is authorized.
+5. **Stop for review.** K2G is frozen until an on-paper candidate supplies an
+   independently visible four-class contextual star or a genuine ternary
+   exact-cover junction. HC-08 is exhausted; no further theory, contact
+   census, carrier drawing or experiment is authorized before a checkpoint.
 6. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.

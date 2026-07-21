@@ -436,3 +436,22 @@ Nothing in the audited literature or current geometry makes that phase a
 state of one unmarked carrier. It must be locally recovered from rigid pose or
 contact-star geometry; an absolute lattice residue defined only up to global
 gauge is invalid. K2G remains open at that geometric realization step.
+
+## Pose-action audit (sessions 79--81)
+
+The four hidden labels do not need to embed as a subgroup of the carrier's
+rotation group. The actual pure-pose obstruction is equivariant: rotations
+and reflections only permute one fixed three-side parity pattern and preserve
+Hamming weight, while K2H needs weights zero and two. N7 closes that route.
+
+The natural `L/2L` translation phase also fails without extra geometry. The
+bare triangular frame has every primitive `L` translation as a period, so a
+local equivariant output cannot select a coloring whose period lattice is
+only `2L`. N8 records the gauge obstruction; N9 shows that combining the
+unanchored residue with orientation reduces back to N7.
+
+K2G is therefore frozen at a concrete boundary. K2H becomes geometric only
+if one bounded four-class carrier feature is independently visible to all
+three interfaces, or if a genuine ternary exact-cover junction enforces the
+relation directly. No such feature is supplied by the source or the current
+design.

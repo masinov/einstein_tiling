@@ -125,6 +125,7 @@ Turtle under the production canonicalization.
 | ST-M1.N6 | Any hidden-state star factorization of the K1P parity core as a union of product boxes uses at least four hidden values | immediate three-interface star factorization | proof-draft lower bound; attained by K2H | Boolean parity rectangle-cover argument | `12_stm1_geometric_carrier.md` §6; D-0088 |
 | ST-M1.N7 | Rotations or reflections of one fixed intrinsic three-side parity pattern cannot realize all four K2H phases | pure pose encoding; side data transformed only by interface permutation | proof-draft refutation | coordinate permutations preserve Hamming weight; K2H spans weights 0 and 2 | `12_stm1_geometric_carrier.md` §9; D-0089 |
 | ST-M1.N8 | The bare triangular frame has no translation-equivariant local absolute `L/2L` coset coloring | unanchored frame phase only; contextual geometric anchors excluded from scope | proof-draft refutation | primitive `L` periods conflict with the `2L` period lattice; integrated phase has global gauge ambiguity | `12_stm1_geometric_carrier.md` §11; D-0090 |
+| ST-M1.N9 | Orientation plus an unanchored `L/2L` residue cannot realize the four K2H parity classes | pose-only state relative to the bare frame; no contextual landmark | proof-draft refutation | translation equivariance removes residue dependence; N7 excludes the remaining orientation orbit | `12_stm1_geometric_carrier.md` §13; D-0091 |
 
 ## Preserved Turtle-control evidence (legacy “finalist” identifiers)
 

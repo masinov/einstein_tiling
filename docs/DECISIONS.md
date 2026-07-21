@@ -2066,3 +2066,22 @@ and prevents gauge-related distinct source decodings of the same unmarked
 tiling. Without that anchor, the quotient is bookkeeping and does not enforce
 K1P parity. The unanchored translation-phase option is closed; contextual
 stars and genuine ternary junctions remain open.
+
+## D-0091 (2026-07-21) — Close unanchored pose action; require a physical shared state
+
+N9 combines the HC-08 results. If a proposed hidden state uses only carrier
+orientation and an absolute `L/2L` residue in the bare frame, translation
+equivariance makes it invariant under every residue shift. It therefore
+depends only on orientation, and N7's Hamming-weight orbit obstruction applies.
+The combined unanchored frame-pose shortcut fails.
+
+K2H's existential variable reduces geometric arity only if one bounded,
+locally visible carrier feature is shared by all three interface constraints.
+If the variable is reconstructed only after reading the three modes, its
+existence is simply the original parity relation and N5 is not bypassed.
+
+K2G is frozen. It may reopen only with an on-paper candidate for a four-class
+contextual star map or a genuine ternary/larger-radius exact-cover junction,
+together with a noncircular shape-enforcement argument. Pure pose, bare
+`L/2L`, radius escalation and unmotivated notch search are closed. HC-08 is
+exhausted.

@@ -320,3 +320,74 @@ Consequently the natural quotient is useful vocabulary for a future anchor
 but does not solve K2G. A valid design must add one locally visible feature
 that distinguishes the four phases or replace the auxiliary route by a
 genuine ternary exact-cover junction.
+
+## 13. Combined frame-pose obstruction
+
+Consider the complete “pose only” proposal in which the hidden phase is a
+function of:
+
+- the carrier's finite orientation class in the recovered triangular frame;
+  and
+- its absolute translation residue in `L/2L`, with no additional bounded
+  landmark or contextual contact feature.
+
+### ST-M1.N9 — unanchored frame pose is insufficient
+
+No such translation-equivariant pose-only state realizes K2H's four parity
+classes from one fixed intrinsic boundary pattern.
+
+### Proof
+
+A primitive global translation changes the `L/2L` residue by an arbitrary
+element of the quotient and leaves the orientation unchanged. With no
+geometric anchor, translation equivariance requires the decoded state to be
+invariant under every such residue shift. It therefore cannot depend on the
+translation residue. What remains is a function of orientation alone.
+
+The intrinsic side pattern of orientation-related copies lies in one
+coordinate-permutation orbit. N7 shows that such an orbit cannot contain both
+the weight-zero and weight-two K2H patterns. Hence the combined unanchored
+frame pose also fails. \(\square\)
+
+The scope matters. A carrier may have several locally visible docking offsets
+relative to a contact frame; those offsets are additional contextual
+geometry, not an absolute `L/2L` residue. N9 does not rule them out.
+
+## 14. No free auxiliary variable
+
+K2H's variable `h` reduces a ternary relation to pairwise constraints only if
+one physical feature of the central carrier occurrence is shared by all three
+interfaces. Formally, a geometric realization must provide a bounded,
+translation-equivariant star map
+
+```
+eta : geometric rooted stars -> H
+```
+
+such that interface `i` physically enforces `R_i(eta,x_i)`. If `eta` is
+introduced only after observing `(x_0,x_1,x_2)`, its existence is equivalent
+to the parity relation itself and supplies no geometric enforcement. N5 then
+remains the burden.
+
+Thus the remaining options are exactly:
+
+1. an independently visible four-class central star feature shared by all
+   three interfaces; or
+2. a genuine ternary or larger-radius exact-cover junction that enforces
+   parity directly.
+
+Pure intrinsic pose and unanchored lattice phase supply neither.
+
+## 15. HC-08 disposition
+
+The bounded pose-action question closes negatively. The group-embedding
+argument suggested at admission was unnecessary; N7's orbit invariant and
+N8's translation gauge combine into N9. The K2H factorization is still a
+correct symbolic theorem, but it does not reduce the geometric task until an
+actual shared four-class feature is identified.
+
+K2G is frozen at this boundary. Reopening the exact-compiler route requires
+an on-paper candidate for `eta` or for a ternary exact-cover junction and a
+noncircular explanation of how one fixed unmarked boundary realizes it.
+Increasing a collar radius, drawing notches, or searching contacts without
+that mechanism is not authorized.

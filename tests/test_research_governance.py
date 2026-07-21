@@ -54,6 +54,9 @@ def test_stm1_source_correction_is_fail_closed():
     assert "ST-M1.N5" in ledger
     assert "ST-M1.K2H" in ledger
     assert "ST-M1.N6" in ledger
+    assert "ST-M1.N7" in ledger
+    assert "ST-M1.N8" in ledger
+    assert "ST-M1.N9" in ledger
 
 
 def test_gate_rejects_template_and_accepts_completed_record(tmp_path):
