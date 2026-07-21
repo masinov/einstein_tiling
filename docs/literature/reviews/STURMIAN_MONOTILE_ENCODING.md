@@ -400,4 +400,18 @@ period-reflecting decoder to the irrational source language. It is the
 minimal S0 required upstream of a carrier. It is not a claim of MLD or
 topological conjugacy between the finite-`kappa` and equidistant Euclidean
 embeddings, and it does not transfer the source's positive entropy. The
-unmarked K1 quotient remains open.
+unmarked K1 quotient remained open at the end of session 72.
+
+## Symbolic contact quotient (sessions 73--75)
+
+K1C gives a lossless incidence presentation; K1R/K1T state the exact inverse
+and full-local-closure obligations. K1D supplies a nontrivial but elementary
+safe quotient by distributing an injective source-state code over the three
+incident contact modes. It is information redistribution, not a reduction of
+the decoded source language and not a new aperiodicity mechanism.
+
+This sharpens rather than solves the monotile problem. Independent side-mode
+choices form a Cartesian product and admit illegal mixed codewords. A single
+unmarked boundary would need a genuine corner coupler that realizes the joint
+code while excluding sliding, T-junctions, unintended contacts and
+opposite-handed faults. That geometric K2G obligation remains open.

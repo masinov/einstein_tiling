@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 74)
+**Last updated:** 2026-07-21 (session 75)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⛔ minimal colored S0 and lossless contact compiler K1C closed in proof draft; unmarked construction blocked at a nontrivial safe quotient K1, with no geometry admitted (D-0077--D-0083) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⛔ minimal colored S0 and symbolic distributed contact quotient K1D closed in proof draft; unmarked construction blocked at geometric coupled-mode realization K2G (D-0077--D-0085) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -145,8 +145,17 @@
   intended compact image from K1T's stronger totality on the quotient SFT.
   K1T requires a bounded decoder that satisfies source rules and re-encodes
   every admitted quotient configuration. Erasing all modes fails because the
-  remaining triangular frame is periodic. No quotient or radius has been
-  chosen (D-0084).
+  remaining triangular frame is periodic. At session 74 no quotient or radius
+  had yet been chosen (D-0084); K1D below supplies the quotient without a
+  collar-radius search.
+- **ST-M1 distributed contact quotient:** an injective three-coordinate code
+  distributes each addressed source state over its incident contacts. The
+  joint tile star decodes exactly and satisfies K1T on the whole local-rule
+  space. At least 32 essential addresses force four modes per side for an
+  immediate balanced decoder. Independent side choices cannot enforce the
+  non-Cartesian codeword set, so K2G needs a genuine geometric corner coupler.
+  K1D is standard information coding, not a monotile construction or novelty
+  claim (D-0085).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -546,14 +555,14 @@ Research is under the 2026-07-21 reset recorded in
    the exact reproduction fixtures and postmortem during release work only.
 3. Human checkpoint `HC-2026-07-21-05` is closed after sessions 70--72. The
    user explicitly authorized `HC-2026-07-21-06` after independent review and
-   the D-0082 clarifications; sessions 73--74 use two slots for K1C and the
-   K1R/K1T safety contract, with no experiment or large artifact.
+   the D-0082 clarifications; sessions 73--75 exhaust its three slots with
+   K1C, the K1R/K1T contract and K1D/N4, with no experiment or large artifact.
 4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
    escalation, and all Spectre radius escalation frozen.
-5. **K1 remains on paper.** The final HC-06 unit may derive information that
-   every K1T-safe quotient must preserve and decide whether the contextual
-   carrier route remains plausible. It may not enumerate collars, draw a
-   carrier, or run an experiment.
+5. **Stop for review.** Symbolic K1 is feasible and closed in proof draft.
+   K2G is the next blocker: realize the coupled contact code with one fixed
+   unmarked boundary. HC-06 is exhausted, so no geometry, contact census,
+   carrier drawing or experiment is authorized before a new checkpoint.
 6. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.

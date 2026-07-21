@@ -1941,3 +1941,29 @@ Erasing all contact and corner modes fails immediately (N3), because it
 leaves the periodic equilateral-triangle frame. This does not refute an
 unmarked carrier with several geometrically realized relative contact modes.
 No specific quotient, radius or collar table was chosen.
+
+## D-0085 (2026-07-21) — Distributed contact code closes symbolic K1 only
+
+K1D gives a nontrivial safe quotient without guessing source-state merges.
+Choose an injective three-coordinate code for the essential addressed S0
+states and place one coordinate on each incident directed contact. The legal
+tile-star rule admits exactly complete codewords; decoded neighbors and
+vertex cycles must satisfy S0. The three modes recover the source state and
+re-encoding returns the quotient configuration, so K1T holds on the complete
+stated local-rule space.
+
+This redistributes information rather than reducing the number of decoded
+source star types. With `n` essential states, an immediate three-contact
+decoder needs at least `ceil(n^(1/3))` modes per directed side. P0 guarantees
+positive total large and small macro coefficients, so one 30-address large
+macro and the 2-address small macro give `n>=32` and a lower bound of four
+modes. The argument does not assume that both 30-address large types are
+essential.
+
+N4 records the new obstruction: independent side-mode choices admit a
+Cartesian product and cannot enforce a non-Cartesian codeword set. A geometric
+carrier therefore needs a genuine corner/tile-star coupler. The purely
+symbolic K1 obligation closes in proof draft; the full monotile route remains
+blocked at K2G, which must realize the coupled modes with one fixed unmarked
+boundary while excluding illegal mixed stars, sliding, T-junctions and
+opposite-handed faults. HC-06 is exhausted and no geometry is authorized.

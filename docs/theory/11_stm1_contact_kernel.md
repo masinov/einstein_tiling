@@ -2,8 +2,9 @@
 
 **Date:** 2026-07-21
 
-**Status:** lossless compiler K1C proved in draft; every nontrivial quotient
-and every geometric realization remain open
+**Status:** lossless compiler K1C, exact quotient contract K1T and distributed
+symbolic quotient K1D proved in draft; every geometric realization remains
+open
 
 **Scope:** the full addressed minimal colored source S0 from theory note 10;
 no polygon, boundary teeth, collar enumeration, or positive-entropy claim
@@ -227,3 +228,107 @@ must remain invariant under every K1T-safe quotient, and whether those
 invariants already require explicit macro identity. Failure would close the
 selected contextual-carrier route before geometry. No enumeration is
 authorized.
+
+## 12. Distributed contact code
+
+Let `A_ess` be the finite set of addressed source states that occur in S0 and
+put `n=|A_ess|`. Choose finite sets `C_0,C_1,C_2` and an injective code
+
+```
+c:A_ess -> C_0 x C_1 x C_2.
+```
+
+For a balanced generic choice one may take
+`C_i={0,...,m-1}` with `m=ceil(n^(1/3))` and use the three base-`m` digits of
+an enumeration of `A_ess`.
+
+This construction is made on one rooted triangular frame. Rotating or
+reflecting a complete source configuration transports the three coordinates
+and their directed-side names together. Thus every Euclidean image branch has
+the conjugate code. K1D does not claim that one geometric boundary already
+realizes all of those transported modes; that is part of K2G.
+
+Map the K1C half-contact on side `i` with center state `a` to the mode
+`(i,c_i(a))`; in particular, erase the neighboring state and the other two
+digits. Define `K_dist(c)` by these finite local rules:
+
+1. the three modes incident with one triangle form `c(a)` for exactly one
+   `a in A_ess`;
+2. the states decoded at two adjacent triangles form a legal source edge;
+3. the decoded cyclic states around every vertex form a legal source vertex
+   word.
+
+These are contact-star rules, not interior tile colors: no single side mode
+determines `a`; the three-direction tuple does.
+
+## 13. ST-M1.K1D — safe distributed quotient
+
+`K_dist(c)` is a nontrivial finite quotient presentation of K1C with a
+radius-one exact source lift on its full local-rule space.
+
+### Proof
+
+Apply the coordinate code to every K1C half-contact. This gives the quotient
+map. Conversely, condition 1 uniquely decodes the addressed state at every
+triangle. Conditions 2 and 3 put the decoded configuration in `Y`. Reapplying
+the coordinate code returns the same three incident modes, so the decoder is
+a right inverse on every `K_dist(c)` configuration. K1T applies.
+
+The quotient is nontrivial whenever a coordinate code merges two occurring
+center states, which the balanced construction does whenever `n>m`. In the
+present source P0 gives positive total large-macro and small-`M` coefficients.
+Thus at least one complete 30-address large macro and the 2-address small
+macro occur, so `n>=32>ceil(cuberoot(32))=4`. Every single side coordinate
+necessarily forgets source identity. The complete three-side tuple restores
+it. If both large macro types are essential, the syntactic `30+30+2=62`
+addresses give the same lower bound; K1D does not assume that stronger fact.
+\(\square\)
+
+K1D is information redistribution, not state minimization: there remain `n`
+legal decoded tile-star codewords. It is a standard finite coding argument
+and carries no method-novelty claim.
+
+## 14. Immediate-star lower bound and corner-coupling no-go
+
+If one common set of `m` contact modes is used on each of the three directed
+sides and the addressed state must be decoded from the immediate tile star,
+then at most `m^3` states can be distinguished. Hence
+
+```
+m >= ceil(n^(1/3)).
+```
+
+The guaranteed 32 essential addresses already give `m>=4`. K1D meets the
+counting bound at the symbolic level.
+
+The counting construction also identifies the structural obstruction.
+Suppose side modes are independently selectable and legality is only the
+product of three separate side conditions. Then the admitted tile-star set is
+`D_0 x D_1 x D_2`. It cannot equal a non-Cartesian codeword set `c(A_ess)`;
+every missing mixed tuple is a spurious local state.
+
+### ST-M1.N4 (independent-side code no-go)
+
+A distributed K1D code whose codeword set is not a Cartesian product cannot
+be enforced by three independent side-mode rules. Any realization needs a
+genuine tile-star or corner coupling that jointly sees the incident modes.
+
+This is the local analogue of N1. It does not refute a polygonal carrier:
+corners or multi-edge interlocks might couple contacts. It proves that merely
+assigning several offsets independently to three sides is insufficient.
+
+## 15. HC-06 disposition
+
+The purely symbolic part of K1 is feasible: K1D gives a nontrivial contact
+quotient satisfying K1T, with explicit finite-radius decoding and
+three-direction coupling. What remains is no longer a symbolic quotient
+question. A single fixed unmarked polygon must geometrically realize the
+contact modes and the non-Cartesian codeword relation, while also forcing the
+global frame, excluding unintended contacts and handling full-isometry
+chirality.
+
+Call this next obligation **K2G (geometric coupled-mode realization)**. K1D
+does not authorize it. A proposed K2G theorem must specify how one fixed
+boundary makes each legal codeword attainable and every illegal mixed
+codeword, T-junction, sliding contact and opposite-handed fault impossible.
+HC-06 is exhausted; geometry requires a new checkpoint.

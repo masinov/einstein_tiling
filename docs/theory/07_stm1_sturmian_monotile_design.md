@@ -375,3 +375,18 @@ not supply the unmarked carrier. K1 must still find a genuinely smaller
 coupled contact-star quotient whose **full** local closure decodes back to the
 addressed system. The role-only and independent-rail quotients remain
 refuted. No K1 table or geometry is authorized by this closure.
+
+## 15. Sessions 73--75 symbolic contact quotient
+
+K1C losslessly moves the full addressed source state into directed contact
+incidence. K1R and K1T separate invertibility on the intended factor image
+from total decoding on the complete quotient SFT. K1D then gives a concrete
+nontrivial symbolic quotient: an injective three-coordinate code distributes
+each addressed state over the three incident contact modes, and the joint
+tile-star rule recovers it exactly.
+
+This closes only the symbolic K1 obligation. The codeword set is generally
+non-Cartesian, so three independently selectable side rules admit illegal
+mixed stars (N4). K2G must realize the joint relation with one fixed unmarked
+boundary and simultaneously prove frame locking, contact completeness and
+full-isometry safety. No such carrier has been drawn or constructed.

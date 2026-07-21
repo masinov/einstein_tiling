@@ -46,6 +46,10 @@ def test_stm1_source_correction_is_fail_closed():
     assert "no finite-`kappa` MLD claim" in ledger
     assert "source orders `s in {-1,0,1}`" in ledger
     assert "source conjugate outside `[0,1]`" in ledger
+    assert "ST-M1.K1D" in ledger
+    assert "information redistribution, not state minimization" in ledger
+    assert "ST-M1.K2G" in ledger
+    assert "open; not authorized under HC-06" in ledger
 
 
 def test_gate_rejects_template_and_accepts_completed_record(tmp_path):
