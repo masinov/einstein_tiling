@@ -9,10 +9,10 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-21-06",
+    "id": "HC-2026-07-21-07",
     "date": "2026-07-21",
-    "through_session": 72,
-    "reason": "Sessions 70--72 and the O0/I0/D0 colored-source closure were independently reviewed; after D-0082 made the restricted-order and conjugate-slope hypotheses explicit, the user authorized HC-06 for on-paper K1 quotient design. No carrier geometry, collar enumeration, or experiment is authorized.",
+    "through_session": 75,
+    "reason": "Sessions 73--75 and the K1C/K1T/K1D symbolic quotient were independently reviewed. The user authorized HC-07 for on-paper K2G design, with the N4 Cartesian-code loophole resolved before K2G may rely on corner coupling. No contact census, carrier search, generated geometry, or experiment is authorized.",
     "artifact_bytes": {
       "docs/notebook/assets": 6756125300,
       "data": 1793649957

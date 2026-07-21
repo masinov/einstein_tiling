@@ -1967,3 +1967,28 @@ symbolic K1 obligation closes in proof draft; the full monotile route remains
 blocked at K2G, which must realize the coupled modes with one fixed unmarked
 boundary while excluding illegal mixed stars, sliding, T-junctions and
 opposite-handed faults. HC-06 is exhausted and no geometry is authorized.
+
+## D-0086 (2026-07-21) — Repair N4 with a selected parity code, not an unproved 62-state lemma
+
+Independent review found that D-0085 applied the conditional N4 obstruction
+without proving its premise. At the conservative count `n=32`, a Cartesian
+codeword image of size `4*4*2` is numerically possible. P0 also does not imply
+that both large macro types are essential: it forces positive total large
+density and small density, which guarantees 30 addresses of one occurring
+large type plus two small addresses, but not `30+30+2=62`.
+
+The repair chooses the code rather than strengthening the occurrence claim.
+Map a guaranteed 32-state subset bijectively to the even-parity half of
+`{0,1,2,3}^3`. Map every remaining state to a fresh diagonal triple. The
+result is injective, every individual coordinate forgets identity, and the
+image is non-Cartesian because `(0,0,1)` belongs to the product of the three
+coordinate projections but not to the image. Thus N4 applies unconditionally
+to this selected K1P compiler.
+
+Allowed claim: one explicit safe distributed compiler requires joint
+tile-star or corner coupling. Forbidden claims: every safe distributed code
+requires such coupling; both large macro types occur; the essential alphabet
+has 62 states; or four modes per side suffice for the selected code. The user
+authorized HC-07 for on-paper K2G design after this loophole was identified.
+No contact census, carrier search, generated geometry or experiment is
+authorized.

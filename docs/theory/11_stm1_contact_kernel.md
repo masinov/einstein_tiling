@@ -321,14 +321,64 @@ assigning several offsets independently to three sides is insufficient.
 
 The purely symbolic part of K1 is feasible: K1D gives a nontrivial contact
 quotient satisfying K1T, with explicit finite-radius decoding and
-three-direction coupling. What remains is no longer a symbolic quotient
-question. A single fixed unmarked polygon must geometrically realize the
-contact modes and the non-Cartesian codeword relation, while also forcing the
-global frame, excluding unintended contacts and handling full-isometry
-chirality.
+three-direction coupling. N4 by itself is conditional, however: the balanced
+code in Section 12 was not proved non-Cartesian, and at the conservative
+bound `n=32` a Cartesian image of size `4*4*2` is arithmetically possible.
+Consequently HC-06 did **not** yet establish that every admissible K1D code,
+or even that particular unspecified balanced code, needs a corner coupler.
 
 Call this next obligation **K2G (geometric coupled-mode realization)**. K1D
 does not authorize it. A proposed K2G theorem must specify how one fixed
 boundary makes each legal codeword attainable and every illegal mixed
 codeword, T-junction, sliding contact and opposite-handed fault impossible.
 HC-06 is exhausted; geometry requires a new checkpoint.
+
+## 16. Audit correction: select a checksum code
+
+The missing N4 premise can be established constructively without assuming
+that both 30-address large macro types are essential.
+
+P0's positive large and small coefficients and macro completion guarantee a
+32-state subset `B` of `A_ess`: the 30 distinct addresses of one occurring
+large macro and the two addresses of the occurring small macro. This does not
+select or require the other large macro type.
+
+Let
+
+```
+E = {(x,y,z) in {0,1,2,3}^3 : x+y+z = 0 mod 2}.
+```
+
+Exactly half of the 64 triples have even parity, so `|E|=32`. Map `B`
+bijectively to `E`. Enumerate the remaining states as
+`a_0,...,a_(n-33)` and assign
+
+```
+c(a_t) = (4+t, 4+t, 4+t).
+```
+
+This extends the map on `B` to an injective three-coordinate code on all of
+`A_ess`. Every coordinate separately merges states already on `B`. Its image
+is non-Cartesian: `0` and `1` occur in every coordinate projection, but the
+odd-parity mixed tuple `(0,0,1)` is absent from `E` and cannot be one of the
+fresh diagonal triples.
+
+### ST-M1.K1P — parity-selected distributed quotient
+
+There exists a K1D code satisfying the N4 premise. For this selected code,
+three independent side-mode rules necessarily admit a spurious mixed tile
+star; a joint tile-star or corner constraint is required.
+
+The proof is the construction above followed by N4. It makes no assertion
+that every safe K1D code is non-Cartesian and no assertion that `n=62`.
+The price of the transparent proof is that the fresh diagonal extension is
+not mode-optimal. The four-mode result remains a lower bound, not a claim
+about this selected compiler's total mode count.
+
+## 17. HC-07 corrected starting point
+
+K2G may now use K1P/N4 as a valid necessity statement for the **selected**
+symbolic compiler. It may not turn that statement into a universal no-go for
+all distributed encodings. The open problem is to realize K1P's finite joint
+star language with one fixed unmarked polygon and to prove equality between
+the complete geometric tiling space and the symbolic rule space.

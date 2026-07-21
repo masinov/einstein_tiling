@@ -31,7 +31,7 @@ def test_checkpoint_policy_is_bounded_and_current():
     assert data["schema_version"] == 1
     assert 1 <= data["policy"]["max_research_sessions"] <= 3
     assert data["policy"]["max_new_artifact_bytes"] <= 1024**3
-    assert data["latest"]["through_session"] == 72
+    assert data["latest"]["through_session"] == 75
 
 
 def test_stm1_source_correction_is_fail_closed():
@@ -49,7 +49,7 @@ def test_stm1_source_correction_is_fail_closed():
     assert "ST-M1.K1D" in ledger
     assert "information redistribution, not state minimization" in ledger
     assert "ST-M1.K2G" in ledger
-    assert "open; not authorized under HC-06" in ledger
+    assert "open; authorized on-paper under HC-07" in ledger
 
 
 def test_gate_rejects_template_and_accepts_completed_record(tmp_path):

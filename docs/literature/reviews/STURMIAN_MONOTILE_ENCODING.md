@@ -411,7 +411,12 @@ incident contact modes. It is information redistribution, not a reduction of
 the decoded source language and not a new aperiodicity mechanism.
 
 This sharpens rather than solves the monotile problem. Independent side-mode
-choices form a Cartesian product and admit illegal mixed codewords. A single
-unmarked boundary would need a genuine corner coupler that realizes the joint
-code while excluding sliding, T-junctions, unintended contacts and
-opposite-handed faults. That geometric K2G obligation remains open.
+choices form a Cartesian product and admit illegal mixed codewords whenever
+the selected codebook is non-Cartesian. The unspecified balanced code in
+session 75 did not establish that premise: at `n=32`, a `4*4*2` Cartesian
+image is possible. K1P now selects the even-parity 32-word code explicitly
+and extends it by fresh diagonal triples, making N4 applicable without an
+unproved 62-state claim. A single unmarked boundary for this compiler would
+need a genuine corner coupler while excluding sliding, T-junctions,
+unintended contacts and opposite-handed faults. That geometric K2G obligation
+remains open.
