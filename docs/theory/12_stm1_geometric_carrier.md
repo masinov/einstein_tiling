@@ -513,3 +513,60 @@ using one fixed carrier boundary.
 This does not yet prove such a junction exists. It prevents a false shortcut
 and leaves a finite exact target: locally visible sector words, side
 difference checks, and the already stated source vertex legality.
+
+## 20. K2J geometric admission contract
+
+A future shape proposal for K2C/K2V is admissible only if it supplies all of
+the following before any contact search.
+
+- **J1 — visible sector state.** From a bounded unmarked geometric
+  neighborhood of a frame vertex and one incident carrier sector, a local
+  rule returns the base corner bit or fresh tag. This must be an actual
+  coordinate/contact invariant, not an assigned color.
+- **J2 — same-corner sharing.** The two sides of one carrier incident with
+  that corner read the same sector state.
+- **J3 — exact side transducer.** The complete set of possible contacts along
+  a carrier side is finite and projects exactly to K2C's branch/tag and
+  endpoint-difference relation.
+- **J4 — vertex completeness.** Every whole-plane tiling has only the stated
+  six-sector vertex stars, including point contacts and subdivisions of
+  maximal segments; every stated lifted star has the intended cyclic sector
+  record.
+- **J5 — frame and chirality.** No sliding, alternate frame, T-junction or
+  mixed-handed contact escapes J1--J4.
+- **J6 — lift.** One fixed K1P witness, with the G6 type `tau`, lifts to exact
+  geometry satisfying J1--J5.
+
+Together with K2C/K2V and K1T, J1--J6 imply K2E's G1--G6. They are a contract,
+not a construction.
+
+## 21. Why the tempting gadget descriptions do not pass
+
+A “two-phase zipper” could be imagined along each side, and a “forked corner”
+could be imagined to choose which of two nearby tips becomes the active
+six-tile junction. Those words suggest how J1--J3 might be approached, but
+they do not establish:
+
+- one simple polygon realizing every required docking mode simultaneously;
+- absence of unintended cross-window contacts and continuous offsets;
+- compatibility of three independently chosen sides at one rigid occurrence;
+- completeness of six-tile vertex fills; or
+- homochirality and a whole-plane lift.
+
+Treating the imagined tip or zipper phase as `q` would merely rename a color.
+No exact coordinate gadget or topological realization lemma has been proved.
+It therefore fails HC-09's noncircular admission test.
+
+## 22. HC-09 disposition
+
+K2C and K2V are retained as sound symbolic reductions: boundary holonomy is a
+gauge-invariant way to express the complete K1P star relation, and the
+sector-separated six-valent language is consistent. They identify what a
+successful junction would have to do.
+
+No geometric `eta`, ternary junction, or exact side transducer satisfying
+J1--J6 was produced within the checkpoint. Under the predeclared kill
+condition, the selected exact-compiler route closes as an active research
+branch. It may reopen only when an exact on-paper polygon/gadget lemma meets
+J1--J6; a drawing, sampled patch or proposal to increase a collar radius is
+insufficient.

@@ -72,7 +72,9 @@ reviewable proof or certificate.
   parity-check compiler K1P.
 - `12_stm1_geometric_carrier.md` — K2E's exact carrier contract, N5's
   unary/binary arity obstruction, and the sharp four-state hidden-phase
-  factorization and lower bound K2H/N6.
+  factorization and lower bound K2H/N6; N7--N9 close unanchored pose routes,
+  while K2C/K2V retain the gauge-invariant boundary mechanism and K2J states
+  the unresolved geometric admission contract.
 - `W1_TRANSFER_SPEC.md` — the soundness/completeness contract for the exact
   cylinder transfer engine and its certificates.
 - `PROOF_LEDGER.md` — stable IDs, scope, status, dependencies, and artifacts.

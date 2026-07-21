@@ -2125,3 +2125,22 @@ The remaining HC-09 question is whether one fixed unmarked boundary can make
 those sector records locally visible and transport their differences along
 sides without merely reintroducing painted colors. Failure of that
 noncircular junction contract closes the selected route.
+
+## D-0094 (2026-07-21) — HC-09 kill condition closes active K2G geometry
+
+K2J states the exact admission contract for K2C/K2V geometry: a bounded
+unmarked sector invariant, same-corner sharing, an exact finite side
+transducer, complete six-sector vertex/contact classification, frame and
+chirality forcing, and a lift of the fixed G6 witness.
+
+No candidate meets it. “Two-phase zipper” and “forked corner” descriptions
+do not provide one exact polygon, exclude unintended offsets and contacts,
+prove rigid three-side compatibility, classify vertices, or lift a whole
+plane. Naming their hypothetical local state `q` would merely reintroduce an
+external color.
+
+The HC-09 kill condition therefore fires. K2C and K2V remain valid symbolic
+reductions, but the selected exact-compiler K2G route closes as active
+research. Reopening requires an exact on-paper polygon or general geometric
+gadget lemma satisfying J1--J6. Shape search, notch drawing, collar
+escalation, or finite patches are explicitly insufficient. HC-09 is exhausted.

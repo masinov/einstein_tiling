@@ -455,3 +455,21 @@ if one bounded four-class carrier feature is independently visible to all
 three interfaces, or if a genuine ternary exact-cover junction enforces the
 relation directly. No such feature is supplied by the source or the current
 design.
+
+## Boundary-holonomy attempt and closure (sessions 82--84)
+
+K2C gives a valid gauge-invariant alternative to a central phase. Corner
+potentials on a carrier boundary have side differences equal to mode parity;
+zero holonomy around the three-cycle enforces exactly the 32-word parity
+core, while cyclic tag equality handles K1P's remaining diagonal words. K2V
+shows that every symbolic K1P configuration lifts when a six-valent vertex
+retains participant sectors separately. A single shared vertex bit would add
+an unproved equality between adjacent directed half-mode parities.
+
+This is the strongest surviving symbolic mechanism, but it did not produce
+an unmarked carrier. K2J makes the gap explicit: the polygon must expose the
+sector state geometrically, share it across two incident sides, realize an
+exact finite side transducer, classify all vertex/contact faults, force frame
+and chirality, and lift a witness. Zipper and forked-corner descriptions do
+not prove those claims. The HC-09 kill condition therefore freezes active K2G
+work until an exact geometric gadget lemma is supplied.

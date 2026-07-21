@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 83)
+**Last updated:** 2026-07-21 (session 84)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -197,6 +197,12 @@
   six participant sectors in cyclic order; independent face integration lifts
   every K1P configuration, with at most 64 raw base sector words. This proves
   symbolic consistency, not geometric realizability (D-0093).
+- **ST-M1 K2G kill decision:** K2J requires an actual bounded unmarked sector
+  invariant, exact side transducer, complete six-sector contact atlas,
+  frame/chirality forcing and a witness lift. Zipper/forked-corner metaphors
+  supply none of these proofs and merely rename colors. K2C/K2V are retained,
+  but active exact-compiler geometry is frozen until an exact gadget lemma
+  meets J1--J6 (D-0094).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -600,14 +606,14 @@ Research is under the 2026-07-21 reset recorded in
    pose-action question; session 79 proves N7 and closes pure intrinsic pose.
    Sessions 79--81 exhaust HC-08. The user authorized HC-09 with a three-
    session kill condition; session 82 derives the surviving K2C boundary-
-   cocycle candidate, and session 83 proves its sector-separated vertex lift.
-   This is session 2 of at most 3, with no experiment or large artifact.
+   cocycle candidate and its sector-separated vertex lift; session 84 applies
+   the kill condition because no unmarked gadget meets K2J. HC-09 is exhausted
+   with no experiment or large artifact.
 4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
    escalation, and all Spectre radius escalation frozen.
-5. K2G is reopened only for K2C's on-paper audit. The final HC-09 session must
-   state a noncircular geometric sector-junction contract; merely renaming the
-   bits as colors triggers the kill condition. No drawing or experiment is
-   authorized.
+5. **Stop for review.** Active K2G geometry is closed by D-0094. It may reopen
+   only with an exact on-paper polygon/gadget lemma satisfying K2J J1--J6.
+   No drawing, contact census, collar escalation or experiment is authorized.
 6. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.

@@ -49,7 +49,7 @@ def test_stm1_source_correction_is_fail_closed():
     assert "ST-M1.K1D" in ledger
     assert "information redistribution, not state minimization" in ledger
     assert "ST-M1.K2G" in ledger
-    assert "open; authorized on-paper under HC-07" in ledger
+    assert "blocked/frozen after HC-09" in ledger
     assert "ST-M1.K1P" in ledger
     assert "ST-M1.N5" in ledger
     assert "ST-M1.K2H" in ledger
@@ -57,6 +57,10 @@ def test_stm1_source_correction_is_fail_closed():
     assert "ST-M1.N7" in ledger
     assert "ST-M1.N8" in ledger
     assert "ST-M1.N9" in ledger
+    assert "ST-M1.K2C" in ledger
+    assert "ST-M1.K2V" in ledger
+    assert "ST-M1.K2J" in ledger
+    assert "blocked/frozen after HC-09" in ledger
 
 
 def test_gate_rejects_template_and_accepts_completed_record(tmp_path):
