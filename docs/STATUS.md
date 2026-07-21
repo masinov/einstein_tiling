@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 66)
+**Last updated:** 2026-07-21 (session 67)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⛔ colored S0 proof-draft closed; natural `S/M/L` quotient refuted, no smaller quotient safe; K1 blocked on explicit 38-address collar table (D-0074) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⛔ S0/E-infinity blocked after the `18,18,2` source misread; Q0/N1/N2 survive conditionally; no K1 table exists (ERR-006/D-0076) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -89,19 +89,17 @@
   S0C. The source's `kappa=infinity` remark does not itself provide the
   common-cell subdivision or preserve the complete Section 10.1 language;
   session 65 supplies the separate proof-draft derivation below (D-0072).
-- **ST-M1 minimal colored source:** the E-infinity derivation splits every
-  equidistanced `M` rhombus consistently with `2M`, giving one equilateral
-  triangle support. The two large and one small connected templates have raw
-  address counts `18,18,2`. Finite macro/address/SAB/vertex collars transport
-  the complete combinatorial language; a period would make an irrational
-  corridor word periodic. S0 is proof-draft closed for minimal aperiodicity,
-  not positive entropy or an unmarked monotile (D-0073).
-- **ST-M1 symbolic quotient boundary:** safety must hold on the full finite
-  local closure. Erasing macro ownership to `S/M/L` restores the source's
-  all-slope system and hence rational periodic tilings; independent corridor
-  rails also admit periodic products. No nontrivial quotient of the 38 raw
-  addresses is proved safe. K1 awaits a complete collar/port table and a total
-  decoder proof before any geometry (D-0074).
+- **ST-M1 source correction:** primary Table 1 gives the optimized
+  `sqrt(2)-1` large templates composition `12S+6M+6L`, not bare `2S+L`.
+  The one-support `kappa=infinity` sentence belongs to the separate Turtle
+  subsection. The session-65 `18,18,2` specialization, its all-`M` exclusion,
+  and the resulting S0 closure are withdrawn. S0C remains a valid conditional
+  compiler, but S0/E-infinity are blocked (ERR-006/D-0076).
+- **ST-M1 symbolic quotient boundary:** Q0 correctly requires safety on the
+  full finite local closure. Erasing ownership to unrestricted `S/M/L`
+  restores rational periodic tilings, and independent corridor rails admit
+  periodic products. These conditional no-go results survive, but there is no
+  established raw S0 alphabet to quotient and no K1 collar table to write.
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -403,7 +401,7 @@
   lines remain unknown. The completed blind hierarchy
   screen retained two non-unique first-composition rules out of 22,094 but no
   stationary recognizable recursion. Artifact: `e1-overnight-recovered.json`.
-- Test suite: **221 fast passed** (17 deselected, 142.36 s, session 66);
+- Test suite: **222 fast passed** (17 deselected, 145.52 s, session 67);
   **17 slow passed** previously (192 deselected, 389.36 s).
   Vendored Rust: **5 passed**.
 
@@ -499,16 +497,15 @@ Research is under the 2026-07-21 reset recorded in
    control. W2 escalation is frozen.
 2. The E1 benchmark assessment is **closed no-go** for new ablations. Package
    the exact reproduction fixtures and postmortem during release work only.
-3. Human checkpoint `HC-2026-07-21-03` was explicitly authorized after review
-   of sessions 61--63. Sessions 64--66 have consumed its three-session
-   allowance.
+3. Human checkpoint `HC-2026-07-21-04` was explicitly authorized after review
+   of sessions 64--66. Session 67 used its first slot for a primary-source
+   audit and correction; no experiment or large artifact was produced.
 4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
    escalation, and all Spectre radius escalation frozen.
-5. **Stop for human review.** The natural three-role and independent-rail
-   quotients fail. No smaller K1 alphabet is currently proved safe. A new
-   checkpoint may authorize the explicit finite 38-address collar/port table
-   and future-equivalence proof, but not polygon design, a contact search, or
-   another Spectre extension.
+5. **ST-M1 is halted upstream of K1.** The authorized 38-address table had an
+   invalid source premise and was stopped before enumeration. Reopening needs
+   a source-independent common-support derivation for the actual optimized
+   templates and complete language, not a larger guessed table or radius.
 6. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.

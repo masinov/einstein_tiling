@@ -271,34 +271,41 @@ source-specific statement E-infinity must construct the common cell and prove
 that the SAB/boundary language and irrational symbolic sequences survive.
 Until then S0 stays blocked and K1 has no correct alphabet to encode.
 
-## E-infinity derivation (session 65)
+## E-infinity attempt (session 65; withdrawn by ERR-006)
 
-The source gap is not silently reclassified as a citation. Instead,
-`docs/theory/08_stm1_equal_support_compiler.md` now supplies our own
-proof-draft derivation for the minimal target. In the equidistanced trigonal
-model, split each `M` rhombus along the same diagonal used for `S/L`, matching
-the source's `2M` bookkeeping. All primitive supports are then congruent
-equilateral triangles. The three connected templates have raw address counts
-`18,18,2`.
-
-A finite higher-block collar transports macro address, handedness, cell type,
-SAB continuation, and source vertex stars. This prevents new flat vertex
-cycles and uniquely regroups by S0C. A periodic colored triangular tiling
-would make a virtual irrational-slope corridor word periodic, contradicting
-the source projective restriction. Minimal colored S0 is therefore proof-draft
-closed. The argument does not establish entropy preservation and remains an
-intermediate colored/atlas system, not a monotile.
+Session 65 attempted to fill the source gap by splitting cells into common
+triangles. It inferred `18,18,2` addresses from composition `2S+L`, but that
+composition belongs to the earlier 27-tile example. Primary Table 1 lists the
+optimized Section 10.1 large templates as `12S+6M+6L`. The same attempt also
+applied a `kappa=infinity` one-support remark from the separate Turtle
+subsection without proving the optimized system's complete language survives.
+The address count and S0 closure are withdrawn; only the conditional compiler
+S0C remains.
 
 ## Symbolic quotient follow-up (session 66)
 
-The raw `18+18+2` addresses cannot simply be called “three states.” The
-natural quotient that retains only `S/M/L` roles and unrestricted SAB
+The natural quotient that retains only `S/M/L` roles and unrestricted SAB
 continuation is explicitly unsafe: source Remark 7 says `{S,M,L}` realizes
 every slope, so rational periodic configurations return. Independent finite
-corridor rails also fail by the elementary sofic-product obstruction.
+corridor rails also fail by the elementary sofic-product obstruction. These
+are conditional no-go statements and survive ERR-006.
 
 The safe criterion in `docs/theory/09_stm1_symbolic_quotient.md` requires a
 total irrational-corridor decoder on the quotient's **entire finite local
-closure**. No nontrivial quotient currently meets it. The next symbolic object
-would be the complete 38-address collar/port table and proved
-future-equivalence merges; boundary geometry remains premature.
+closure**. Because no valid equal-support S0 alphabet is now established,
+there is no address table to minimize. Boundary geometry remains premature.
+
+## Primary-source correction (session 67)
+
+The source TeX was checked before the authorized radius-one table was built.
+The exact rows of Table 1 distinguish:
+
+- Section 9 at slope `sqrt(2)-1`: Type I `2S+L`, count 26, plus `M`;
+- optimized Section 10.1: Type I `12S+6M+6L`, count 2, plus `M`.
+
+The later one-support suggestion follows the Turtle construction and is not a
+theorem about the optimized row. Accordingly, E-infinity/S0 and the all-`M`
+endpoint exclusion are blocked. Reopening requires an explicit
+common-support construction and complete local-language equivalence for the
+actual optimized templates, not a revised numerical count. This is recorded
+as ERR-006 and D-0076.

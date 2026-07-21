@@ -310,26 +310,13 @@ preservation of the irrational symbolic sequences. S0 therefore remains
 blocked, and K1 was not begun. The eventual carrier must encode the full
 addressed cell alphabet, not merely the three visible macro shapes.
 
-## 10. Session-65 E-infinity closure
+## 10. Session-65 attempted E-infinity closure — withdrawn
 
-The exact follow-up in `08_stm1_equal_support_compiler.md` closes E-infinity
-in proof draft for the **minimal colored aperiodicity target**. Equidistancing
-turns every cabinet/isometric rhombus into the same trigonal rhombus; splitting
-`M` along the marked diagonal, consistently with the paper's `2M`
-bookkeeping, leaves one equilateral-triangle support. The three transported
-connected macro templates contain `18,18,2` primitive triangles.
-
-A finite collared atlas retains macro address, handedness, `S/M/L` type, the
-`M` half, SAB data, and source vertex stars. It prevents new adjacencies caused
-by equidistancing and uniquely groups by S0C. A period of the colored triangle
-system would periodically shift at least one virtual corridor word, forcing a
-rational slope contrary to the source composition theorem. Thus S0 is closed
-in proof draft as a colored system.
-
-This does not prove a monotile or transport positive entropy. K1 is now
-admissible, but it must encode a collared refinement of 38 raw addressed
-states, not three colors, unless a smaller aperiodicity-preserving quotient is
-proved first.
+Session 65 claimed a common-triangle system with `18,18,2` addresses. ERR-006
+withdraws it: primary Table 1 gives the optimized large templates composition
+`12S+6M+6L`, while `2S+L` belongs to the earlier 27-tile construction. The
+one-support `kappa=infinity` remark is Turtle-specific and does not transport
+the optimized local language. E-infinity and S0 are blocked again.
 
 ## 11. Session-66 symbolic quotient boundary
 
@@ -340,8 +327,17 @@ are erased, the remaining `{S,M,L}` cabinet system is exactly the source's
 example admitting every slope, including rational periodic configurations.
 Independent finite-state corridor rails fail separately by ST-M1.N1.
 
-The smallest presently proved safe input to K1 is therefore the full
-addressed, collared S0 system. Its uncollared core has 38 states; its complete
-collar table has not yet been written. K1 remains blocked before geometry on
-that finite specification and a proof of any proposed future-equivalent state
-merges.
+Conditional on a valid S0, Q0 still requires safety on the full local closure,
+and the two no-go results still eliminate obvious reductions. There is,
+however, no presently established addressed S0 alphabet to minimize. K1 is
+blocked upstream of a collar table.
+
+## 12. Session-67 primary-source correction
+
+The planned radius-one table was halted before enumeration. A valid reopening
+must first construct equal supports for the actual optimized templates and
+prove the complete language transport required by S0. It may not substitute a
+new guessed address count, a larger collar radius, or sampled intended
+tilings for that theorem. The two-tile lower bound in the source applies to
+its colored-tile category; a contextual unmarked carrier would lie outside
+that category, but no such carrier is implied by the source remark.

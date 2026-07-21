@@ -122,3 +122,38 @@ Session 58 subsequently derived the exact coordinate conversion and verified
 a 116/116 per-shape bijection, including identical individual `H_c` values and
 the three inconclusive identities. This strengthens the reproduction claim;
 it does not restore any novelty claim.
+
+## ERR-006 (2026-07-21) — The ST-M1 38-address source was misread
+
+Sessions 65--66 claimed that the optimized `sqrt(2)-1` construction in
+Akiyama--Hamada--Ito had two connected large templates of composition
+`2S+L`, hence `18,18,2` common-triangle addresses. That claim is withdrawn.
+
+The primary TeX distinguishes two constructions with the same slope. The
+general construction in Section 9 has Type I composition `2S+L` and 26
+possible large patch-tiles. The optimized three-prototile construction in
+Section 10.1 instead has two Type I patch-tiles of composition
+`12S+6M+6L`, plus one Type II `M`; this is stated explicitly in Table 1. The
+six attached `M` cells in each connected large prototile were omitted when
+the repository inferred `18,18,2` from the visible `2S+L` ratio.
+
+More importantly, the later statement that cell supports can coincide at
+`kappa=infinity` occurs in the separate Smith Turtle subsection. The source
+does not apply that specialization to the optimized Section 10.1 system, give
+a common-cell subdivision for its `12S+6M+6L` templates, or prove equivalence
+of the resulting complete local languages. Replacing 38 by another guessed
+integer would therefore not repair the proof.
+
+Consequences:
+
+- ST-M1.E-infinity and the instantiated ST-M1.S0 return to **blocked**;
+- the conditional common-cell compiler ST-M1.S0C remains valid;
+- the quotient criterion Q0 and the role-only/independent-rail no-go results
+  N2/N1 remain valid as conditional symbolic statements;
+- no raw addressed alphabet, collar/port table, or all-`M` exclusion has been
+  established for the optimized system;
+- the radius-one table authorized in D-0075 is halted before enumeration.
+
+The affected historical notebooks are retained with correction notices. The
+stable theory notes and proof ledger use this erratum as the controlling
+status.

@@ -2,20 +2,20 @@
 
 **Date:** 2026-07-21
 
-**Status:** safety criterion proof-draft; natural three-role quotient refuted
+**Status:** conditional safety criterion proof-draft; natural three-role
+quotient refuted; application blocked by ERR-006
 
-**Scope:** minimal colored `sqrt(2)-1` source from ST-M1.S0; no polygonal
-carrier or positive-entropy claim
+**Scope:** any future minimal colored `sqrt(2)-1` source satisfying
+ST-M1.S0; no polygonal carrier or positive-entropy claim
 
-The common-triangle construction has 38 raw macro-address states before
-handedness, SAB, orientation, and vertex-collar refinement. Thirty-eight is a
-safe presentation size, not a lower bound: a contextual decoder might merge
-many states. This note states what such a merge must prove and tests the two
-obvious reductions before any boundary geometry is considered.
+ERR-006 withdraws the claimed 38-state common-triangle construction. This
+note's quotient criterion and no-go results do not depend on that count, but
+there is currently no proved S0 alphabet to merge. They specify tests for any
+future valid source before boundary geometry is considered.
 
 ## 1. Local closure is the adversary
 
-Let `Y` be the proof-draft colored common-triangle source. Let `q` be a
+Let `Y` be a colored equal-support source satisfying S0. Let `q` be a
 finite-radius recoding of `Y` to a smaller alphabet `Q`. Merely inspecting the
 image `q(Y)` is insufficient. A geometric carrier will enforce some finite
 local rules, so the relevant object is the local closure
@@ -53,7 +53,7 @@ symbolic quotient question.
 The tempting quotient keeps only the primitive cabinet role `S`, `M`, or `L`
 and the unrestricted SAB continuation rule, while forgetting:
 
-- which of the two `2S+L` macro templates owns the cell;
+- which source macro template owns the cell;
 - the cell's address inside that macro;
 - the internal/boundary ports enforcing completion of the macro;
 - the two halves of the small `M` diamond as one forced component.
@@ -87,13 +87,13 @@ the product of compatible periodic rails gives a periodic plane
 configuration.
 
 Therefore a safe quotient must retain a genuinely two-dimensional coupling.
-The source coupling is the `2S+L` versus `M` macro composition. A different
-coupling is allowed, but it must itself imply an irrational-only decoder on
-the full local closure.
+The source construction uses projective patch-tile composition to select its
+irrational slope. A different coupling is allowed, but it must itself imply an
+irrational-only decoder on the full local closure.
 
 ## 4. What may be merged safely
 
-The 38 raw addresses split as `18+18+2`. The following distinctions have
+For any valid addressed S0 presentation, the following distinctions have
 different logical roles:
 
 - `S/M/L` and SAB data reconstruct the virtual corridor system;
@@ -124,23 +124,12 @@ supply:
 
 ## 5. Present K1 boundary
 
-The smallest **currently proved safe** symbolic presentation is the full
-addressed, collared S0 alphabet. Its raw uncollared core has 38 states; the
-actual collared cardinality has not been enumerated in the source or this
-repository. No smaller quotient is currently proved safe.
-
-Accordingly, K1 does not yet pass the pre-geometric gate. The next bounded
-object is not a polygon but an explicit finite source table:
-
-- list the 38 raw addresses and their internal directed ports;
-- list the finite SAB/vertex collars needed by E-infinity;
-- define candidate symmetry merges;
-- prove future equivalence or retain the states separately.
-
-Only after that table has a total decoder on its local closure can a contact-
-star carrier be asked to realize it. A shape search performed earlier would
-have no fixed symbolic specification and could only rediscover finite local
-patches.
+K1 does not pass the pre-geometric gate because S0/E-infinity is blocked. The
+next object is not a collar table or polygon but a proof of the equal-support
+source for the actual optimized templates. Only after that proof fixes a
+finite addressed alphabet may one list internal ports and SAB/vertex collars,
+define symmetry merges, and prove future equivalence. A shape search or table
+enumeration performed earlier would have no valid symbolic specification.
 
 ## 6. Claim boundary
 

@@ -9,10 +9,10 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-21-03",
+    "id": "HC-2026-07-21-04",
     "date": "2026-07-21",
-    "through_session": 63,
-    "reason": "Sessions 61--63 and the reflection-safe ST-M1 design were independently reviewed; the user explicitly authorized continued work on the bounded on-paper S0/K1 derivation.",
+    "through_session": 66,
+    "reason": "Sessions 64--66 were independently reviewed; the user authorized the proposed bounded 38-address collar/port table with a fixed collar-radius stop rule. Session 67 then invalidated that premise against the primary source before enumeration (ERR-006).",
     "artifact_bytes": {
       "docs/notebook/assets": 6756125300,
       "data": 1793649957

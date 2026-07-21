@@ -1665,3 +1665,60 @@ an explicit finite collar/port table and require each proposed state merge to
 preserve overlap transitions and a total irrational-corridor decoder on the
 full local closure. Session 66 exhausts `HC-2026-07-21-03`; no polygon or
 contact search follows automatically.
+
+## D-0075 (2026-07-21) — K1 table admitted at fixed contact radius one
+
+Independent review identified two controlling qualifications and the user
+authorized their resolution under checkpoint `HC-2026-07-21-04`.
+
+First, the source explicitly says that Theorem 4 requires at least two tiles
+to realize a quadratic-slope Sturmian lattice, immediately before suggesting
+one support at `kappa=infinity` “up to color.” This is a lower bound inside the
+paper's category: a tile is `(support,color)`, and contextual states count as
+different colored tile types. ST-M1 does not contradict it. ST-M1 seeks one
+unmarked support whose states are recovered from a surrounding contact star;
+those states are not prototile colors in the admitted geometric tiling. The
+finite-radius map is applied only after the shape-only tiling exists. The
+source's next section still asks whether another aperiodic monotile can be
+obtained, confirming that this category change is the open step rather than a
+claimed one-colored-tile corollary.
+
+Second, the proof-draft all-`M` exclusion currently depends on the unwritten
+transported collar table. It remains an explicit IOU until that table shows
+which `M` stars and completions are legal; the projective endpoint argument
+alone does not instantiate the finite local rule.
+
+The admitted table uses **contact-corona radius 1**, where contact means any
+nonempty intersection, so one corona contains the complete vertex stars of a
+triangular cell. Raw internal ports may name cells elsewhere in their fixed
+finite macro template, but no radius-2/3 collar escalation is allowed. If a
+radius-1 table cannot prove overlap consistency, exclude the all-`M` branch,
+or support a future-equivalence merge, that failure is the session result.
+Any code needed to construct or check the table is a gated research run under
+D-0065; no polygonal carrier work is authorized.
+
+## D-0076 (2026-07-21) — Withdraw E-infinity and halt the 38-address table
+
+The source check required before constructing D-0075's table found that its
+premise is false. Table 1 of the primary Akiyama--Hamada--Ito TeX lists the
+optimized Section 10.1 large prototiles as `12S+6M+6L`, not bare `2S+L`.
+The latter describes the earlier 27-tile construction at the same slope.
+Sessions 65--66 therefore omitted the attached `M` cells and did not derive
+the asserted `18,18,2` addressed templates.
+
+The error is deeper than the count. The `kappa=infinity` one-support sentence
+is made in the separate Turtle subsection, after a different cell
+construction. The source gives no common-cell specialization or complete
+language transport for the optimized `sqrt(2)-1` example. Consequently
+ST-M1.E-infinity and the instantiated colored source S0 are again blocked;
+the all-`M` exclusion and every cardinality attributed to their collar
+alphabet are unavailable.
+
+ST-M1.S0C survives as a conditional common-cell compiler. Q0, N1 and N2 also
+survive at their stated conditional scope and continue to rule out unsafe
+quotient strategies. They do not supply the missing source. The admitted
+radius-one classification is stopped before any enumeration, script, or
+artifact is produced. Reopening requires an exact source-independent
+common-support construction for the actual `12S+6M+6L`, `12S+6M+6L`, `M`
+templates, including their SAB and vertex language; a revised address count
+alone is insufficient. See ERR-006.

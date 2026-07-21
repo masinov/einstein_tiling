@@ -2,8 +2,8 @@
 
 **Date:** 2026-07-21
 
-**Status:** compiler and minimal source specialization proof-draft; entropy
-transport unproved
+**Status:** conditional compiler proof-draft; source specialization blocked
+and the session-65 attempt withdrawn by ERR-006
 
 **Primary source:** `akiyama-hamada-ito-sturmian-2026`, Sections 6, 8.1,
 10.1--11
@@ -12,12 +12,12 @@ This note asks a narrower question than ST-M1: before colors can be encoded by
 one unmarked shape, does the audited source actually provide a finite colored
 system in which every tile already has one common support?
 
-The answer has two parts. There is an elementary finite compiler from
-connected macrotiles over a common cell to colored copies of that cell. The
-source does not state the corresponding specialization for its
-positive-entropy `sqrt(2)-1` system, but Definitions 4--5 and the explicit
-templates suffice to derive the **minimal aperiodic colored specialization**.
-They do not yet prove that positive entropy survives this recoding.
+The answer has one established part. There is an elementary finite compiler
+from connected macrotiles over a common cell to colored copies of that cell.
+The source does not state the corresponding specialization for its
+positive-entropy `sqrt(2)-1` system, and the attempted repository derivation
+misread the optimized template composition. The source-specific instance is
+therefore still open.
 
 ## 1. Scope in the source
 
@@ -164,109 +164,36 @@ to cite their conjunction:
 - no all-tilings equivalence between the finite-`kappa` optimized system and
   an infinite-`kappa` colored system is stated.
 
-Accordingly, session 64 left S0C as a proof-draft lemma and E-infinity open.
-The following section records the exact follow-up derivation rather than
-silently attributing it to the source.
+Accordingly, S0C is a proof-draft lemma and E-infinity remains open. Session
+65 attempted a follow-up derivation; Section 5 retains its failure analysis.
 
-## 5. E-infinity derivation for the minimal target
+## 5. Withdrawn E-infinity attempt
 
-### The common primitive cell
+Session 65 conflated the earlier Section 9 construction with the optimized
+Section 10.1 construction. The former has Type I composition `2S+L` and 26
+large patch-tile possibilities. Primary Table 1 gives the latter's two large
+prototiles composition `12S+6M+6L`, plus the small `M`. The computation
+`2*6+1*6=18` therefore did not count either optimized connected template and
+the derived `18,18,2`/38-address alphabet does not exist as proved data.
 
-In the cabinet form, a rectangular cell is bounded by two consecutive lines
-in each of two directions. Equidistancing replaces both possible corridor
-widths by one common width. All rectangular supports therefore become one
-parallelogram up to the three cyclic orientations. In the isometric form this
-is the `60/120` rhombus of the trigonal lattice.
+The attempted repair also applied the `kappa=infinity` one-support strategy
+outside its source context. That statement occurs in the separate Turtle
+subsection after a different construction. Nothing in the source establishes
+that the optimized isometric cells become one congruent support while
+preserving their complete SAB, vertex, and macro language. Merely splitting
+more cells and announcing a revised address count would assume exactly the
+language equivalence E-infinity is meant to prove.
 
-Definition 4 already cuts every `S_R` and `L_R` rhombus along the distinguished
-diagonal into its two triangular cells. Split each `M_R` rhombus along the
-same marked diagonal. This is compatible with the paper's systematic use of
-the multiset `2M`. Every primitive support is now one equilateral triangle
-`C_infinity`, up to isometry. The split only refines a colored source tile; it
-does not assert that the unmarked triangle is aperiodic.
+The all-`M` exclusion was likewise circular: it invoked a “transported SAB
+atlas” that had never been written or shown to be the complete local language.
+It supplies no endpoint lemma independently of E-infinity.
 
-The same subdivision applies to the isometric cells in Section 10.1. The
-construction is cyclic in `a,b,c`; at equal corridor width the three
-orientations differ by rotations of the trigonal cellulation. Thus item 1 of
-E-infinity holds with a nondegenerate periodic triangular cell.
+## 6. Correct disposition
 
-### The three templates and the raw alphabet
-
-Section 10.1 defines each `S` and `L` hexagonal patch as six triangular cells.
-Both large prototile supports have composition `2S+L`, hence contain
-
-```
-2*6 + 1*6 = 18
-```
-
-primitive triangles. They are two different connected arrangements of the
-same composition. The small `M` diamond contains the two halves of one
-rhombus. Consequently the three connected templates transport to
-`18,18,2` primitive cells. Before orientation, SAB, and collar refinements,
-the macro-address alphabet has 38 states. Reflected occurrences are handled
-as collared handed states of the same macro support. This proves item 2.
-
-### Complete language transport
-
-Take the complete finite one-corona atlas of the original subdivided
-three-prototile system. It is finite because the source assumes edge-to-edge
-FLC and has finitely many prototiles, cell addresses, SAB patterns, and
-isometries modulo each support's stabilizer. Transport the following data to
-`C_infinity`:
-
-- macro type, handedness, and primitive-cell address;
-- original `S/M/L` type and the half of a split `M` cell;
-- the SAB segment and its continuation state;
-- the complete collared source edge and vertex-star type.
-
-Allow two colored triangles to meet only when their source collars agree on
-the overlap. S0C then gives a unique finite-radius grouping into the two large
-and one small macro templates. The vertex-star collar rules out a new flat
-cycle that exists only after equidistancing. Conversely, transporting any
-source tiling gives a legal colored triangular tiling. The two operations are
-inverse at the level of the finite combinatorial tiling language. This proves
-item 3 without claiming a bounded Euclidean displacement between the two
-geometric realizations.
-
-### Aperiodicity after the metric distinction is erased
-
-The colors retain the virtual long/short corridor symbols. From any legal
-colored triangular tiling, the transported atlas reconstructs the same
-cabinet-cell incidence and SAB system as a legal source macrotiling. Both
-large macro types contain `2S+L`, while `M` contains neither `S` nor `L`.
-Consequently any periodic fundamental domain containing large macros has
-exact count ratio `S:L=2:1`. For a virtual slope `beta`, the source cabinet
-frequencies give
-
-```
-(1-beta)^2 / beta^2 = 2,
-```
-
-whose unique solution in `(0,1)` is `beta=sqrt(2)-1`. The all-`M` endpoint is
-not on the source parabola and is excluded by the transported SAB atlas. This
-is the projective composition restriction in this special case.
-
-If the colored triangular tiling had a nonzero translational period, that
-period would be a nonzero vector of the triangular cell lattice and would
-periodically shift at least one of the three indexed corridor families. The
-corresponding long/short bi-infinite word would be periodic. Its slope would
-then be rational, contradicting `beta=sqrt(2)-1`. At least one colored
-tiling exists by transporting the exhibited Section 10.1 tiling. This proves
-item 4 and minimal aperiodicity.
-
-### Disposition
-
-E-infinity and ST-M1.S0 are therefore **proof-draft closed for the minimal
-aperiodicity target**. This is our collared symbolic derivation, not a theorem
-quoted from the paper. It uses external colors and atlas rules, so it is not a
-monotile result.
-
-No positive-entropy claim is made. Establishing it would require proving that
-the interchangeable-pair construction transports with the correct areal
-entropy normalization and that the colored triangular system covers the
-complete Section 10.1 entropy-bearing language.
-
-K1 is now logically admissible, but its input is the finite collared refinement
-of the 38 raw macro-address states, not a three-symbol alphabet. Any proposed
-unmarked carrier must encode this full state system or prove a smaller
-aperiodicity-preserving quotient first.
+ST-M1.S0C remains a conditional proof draft. ST-M1.E-infinity and the
+instantiated ST-M1.S0 are **blocked**. Their next admissible input would be an
+exact source-independent construction for the actual two
+`12S+6M+6L` templates and the `M` template, proving congruent constituent
+supports, connectedness, complete local-language equivalence, and irrational
+corridor decoding. Until then there is no raw address count, collar alphabet,
+or K1 table. See ERR-006 and D-0076.
