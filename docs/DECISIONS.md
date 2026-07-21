@@ -2416,3 +2416,21 @@ HC-14 may test one exact boundary mechanism against K5C.1--K5C.3. Failure to
 prove bounded cycles, independently visible transition states and complete
 contacts within sessions 98--99 closes the cyclic-corridor route without
 enumeration. No symbolic redesign qualifies as progress on that residue.
+
+## D-0109 (2026-07-22) — Refute the fixed-successor rosette
+
+The first exact HC-14 mechanism gives one polygon an intrinsic head and tail
+whose keyed fit fixes a relative isometry `g`. Requiring one predecessor and
+successor per occurrence and taking `g` to have order 42 seems to force a
+closed K5C corridor.
+
+N17 proves the conflict. A finite component of length greater than two is an
+orbit of a finite-order rotation. The successor rotation is transitive on the
+unmarked ring, so no Euclidean-equivariant local decoder using that component
+alone can select one delimiter or assign a nonconstant cyclic word. External
+contacts may break the symmetry only by becoming the missing state/root
+carrier themselves.
+
+Thus one fixed docking transform cannot satisfy K5C.2--K5C.3. HC-14's final
+session tests only the several-full-arc-mode escape; failure closes K5C without
+geometry enumeration.

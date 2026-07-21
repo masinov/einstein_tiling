@@ -97,6 +97,10 @@ reviewable proof or certificate.
   inverse-dissection kernel and its conditional six-bar unique-grouping
   invariant, the cheap-channel no-gos, and the surviving K5C closed-corridor
   compiler contract; no unmarked carrier or Wang interface realization.
+- `20_k5c_boundary_forcing.md` — the HC-14 geometric mechanism test. N17
+  refutes a fixed-successor order-42 rosette as a rooted state carrier; the
+  final bounded question is whether several full-arc modes can be exclusive
+  in a gapless one-polygon tiling.
 - `W1_TRANSFER_SPEC.md` — the soundness/completeness contract for the exact
   cylinder transfer engine and its certificates.
 - `PROOF_LEDGER.md` — stable IDs, scope, status, dependencies, and artifacts.

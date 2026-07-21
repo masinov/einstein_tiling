@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 97)
+**Last updated:** 2026-07-22 (session 98)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -255,6 +255,11 @@
   only retained research target is one connected unmarked planar polygon with
   exact gapless coverage and a total decoder on every unrestricted tiling
   (D-0108).
+- **ST-M1 fixed-successor no-go:** one intrinsic head/tail fit iterates a
+  fixed Euclidean isometry. Any finite component longer than two is a
+  transitive rotational orbit, so it cannot equivariantly select one delimiter
+  or carry a nonconstant K5C word. An order-42 keyed rosette therefore closes
+  geometrically only by erasing the state asymmetry it needs (N17/D-0109).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -699,9 +704,11 @@ Research is under the 2026-07-21 reset recorded in
    Socolar--Taylor and the exact `44/6` corner source as mandatory prior-art
    targets. Session 97 completes that audit and adds the closer Demaine
    one-puzzle-piece, Fletcher atlas and Mampusti--Whittaker dendrite controls.
-   The symbolic compiler is prior art. Sessions 98--99 may test one exact
-   boundary mechanism only; failure to prove K5C.1--K5C.3 closes the route
-   without enumeration.
+   The symbolic compiler is prior art. Session 98 tests and refutes the
+   fixed-successor order-42 rosette: transitive rotational symmetry forbids a
+   unique delimiter or nonconstant word. Session 99 tests only whether several
+   full-arc docking modes can be exclusive; failure closes the route without
+   enumeration.
 9. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.
