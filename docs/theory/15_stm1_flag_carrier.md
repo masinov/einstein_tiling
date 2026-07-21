@@ -129,8 +129,8 @@ must force:
 - the paired external half-edge relation and complete four-flag midpoint
   rule;
 - the six-flag source-vertex rule without identifying the six potentials;
-- absence of sliding, alternate subdivisions, T-junctions, mixed-handed
-  contacts and additional whole-plane components; and
+- absence of sliding, alternate or unrecorded subdivisions/T-junctions,
+  mixed-handed contacts and additional whole-plane components; and
 - a lift of the fixed K1P witness.
 
 Call this geometric obligation K3G. It is not solved merely by converting

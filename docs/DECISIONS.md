@@ -2209,3 +2209,23 @@ polygon must force the flag scaffold, internal cycle, paired midpoint and
 six-sector source-vertex rules, frame, chirality and a witness lift. If no
 boundary mechanism supplies both contextual state variation and a finite
 contact-completeness proof within HC-11, K3G freezes without a geometric run.
+
+## D-0099 (2026-07-21) — Search retilings, not isolated shapes
+
+N10 shows that the convex K3F corner kite has a unique edge-to-edge
+three-copy dissection of its equilateral macrotriangle. A uniquely aligned
+full-side deformation likewise fixes the rooted contact star and supplies no
+contextual alphabet. The undeformed flag scaffold is therefore a symbolic
+support, not a candidate tile.
+
+K3R replaces blind shape enumeration by inverse retiling. Seek one polygon
+with multiple exact retilings of a fixed macrocell; retiling choices and their
+boundary subdivisions are the symbols. The conditional R1--R5 theorem keeps
+unique macro grouping, contact completeness, source decoding, chirality and
+one lift separate.
+
+No run is admitted yet. The final HC-11 session must give a bounded macrocell,
+multiplicity, retiling template, unique-grouping marker and finite
+contact-completeness argument. Otherwise K3R freezes as a search
+specification. Intentional T-junctions are no longer forbidden categorically;
+they must be exhaustively classified.

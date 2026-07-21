@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 88)
+**Last updated:** 2026-07-21 (session 89)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -219,6 +219,12 @@
   physical occurrences; parity is a three-carrier cycle. This removes the
   one-rigid-carrier sector bottleneck but leaves K3G, exact unmarked
   contextual color erasure and contact completeness, open (D-0098).
+- **ST-M1 inverse retiling route:** the convex flag kite's three-copy
+  equilateral dissection is unique, and uniquely aligned full-side contacts
+  carry no contextual state. K3R instead treats multiple exact retilings of a
+  forced macrocell as symbols and states the complete R1--R5 conditional
+  monotile contract. No macrocell/retiling family or polygon exists yet
+  (D-0099).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -631,10 +637,10 @@ Research is under the 2026-07-21 reset recorded in
    or generated artifact.
 4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
    escalation, and all Spectre radius escalation frozen.
-5. HC-11 is authorized through at most sessions 88--90. Session 88 proves the
-   colored flag-carrier recoding K3F. Next test one contextual docking
-   mechanism for K3G on paper. If it cannot state unused-boundary coverage and
-   finite contact completeness, freeze it without coordinates or a run.
+5. HC-11 is authorized through at most sessions 88--90. Sessions 88--89 prove
+   K3F and the N10/K3R inverse-retiling reduction. The final session must name
+   a bounded macro/retiling template plus unique-grouping and finite-contact
+   arguments. Otherwise freeze K3R without coordinates or a run.
 6. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.

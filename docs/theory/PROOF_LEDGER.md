@@ -133,6 +133,8 @@ Turtle under the production canonicalization.
 | ST-M1.SYN0 | The P0/S0/Q0/K1T/K1P/N5--N9/K2C/K2V dependency chain is presented as one self-contained conditional theorem dossier | consolidation only; no new theorem or novelty claim | proof-draft synthesis | underlying ledger rows; SER0 and K2J remain explicit blockers | `14_stm1_symbolic_chain.md`; D-0096 |
 | ST-M1.K3F | The K2V colored triangular system has an MLD flag subdivision using three congruent corner-kite carriers per source face, with corner potentials on distinct occurrences | finite colored one-support system; not shape-only | proof-draft constructive recoding | K2C/K2V; finite source alphabet | `15_stm1_flag_carrier.md`; D-0098 |
 | ST-M1.K3G | One unmarked polygon forces the K3F flag scaffold and its complete internal, midpoint and source-vertex rules | full Euclidean shape-only realization | open; no polygon proposed | K3F; finite contact completeness; chirality; one witness lift | `15_stm1_flag_carrier.md`; D-0098 |
+| ST-M1.N10 | The convex `60/90/120/90` corner kite has only the standard edge-to-edge three-copy tiling of its side-two equilateral macrotriangle | fixed support and edge-to-edge three-copy macro only | proof-draft geometric rigidity | macro corners and long-side lengths fix all three placements | `16_stm1_retiling_compiler.md`; D-0099 |
+| ST-M1.K3R | A uniquely recognizable finite macro-retiling language with a total decoder to S0 and one lift implies an aperiodic monotile | conditional single-polygon retiling compiler | proof-draft sufficient contract; no `P` supplied | macro recognizability; complete retiling language; chirality; S0/Q0 | `16_stm1_retiling_compiler.md`; D-0099 |
 
 ## Preserved Turtle-control evidence (legacy “finalist” identifiers)
 
