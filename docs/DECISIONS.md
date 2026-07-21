@@ -2247,3 +2247,21 @@ HC-11's kill condition therefore fires after session 90. No geometry run is
 admitted; K3G remains frozen. The next admissible action is a primary-source
 and on-paper audit of B0. Only a positive audit can justify a later fixed-`N`,
 preregistered inverse boundary-word experiment.
+
+## D-0101 (2026-07-21) — Identify the K3F flag with the exact kite substrate
+
+The K3F flag carrier and the primitive cell of `substrate/kitegrid.py` have
+the same ordered angles `60,90,120,90`.  Scaling K3F by `sqrt(3)` changes its
+ordered sides from `1,1/sqrt(3),1/sqrt(3),1` to the repository cell's
+`sqrt(3),1,1,sqrt(3)`.  They are the same metric kite up to scale.
+
+Consequently the undeformed flag scaffold inherits the existing exact
+hex-coordinate and `D6` machinery.  This is computational infrastructure, not
+a candidate result.  A support made from at most 24 whole substrate cells is
+inside the published polykite horizon; a free boundary deformation or
+contextual retiling gadget need not be a polykite and is not classified by
+that statement.
+
+HC-12 is audit-only.  It distinguishes binary rule support, decoder radius
+and the neighborhood a physical contact gadget can jointly see.  No binary
+rule census or boundary synthesis is authorized.

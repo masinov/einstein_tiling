@@ -445,6 +445,57 @@
       "workstreams": ["B", "C"],
       "review_status": "targeted-theorem-audit",
       "review_note": "docs/literature/reviews/W2_ABELIAN_INVARIANTS.md"
+    },
+    {
+      "id": "hu-lin-two-color-square-2011",
+      "title": "Nonemptiness Problems of Plane Square Tiling with Two Colors",
+      "authors": ["Wen-Guei Hu", "Song-Sun Lin"],
+      "year": 2011,
+      "evidence_class": "peer-reviewed theorem",
+      "venue": "Proceedings of the American Mathematical Society 139(3), 1045-1059",
+      "arxiv": null,
+      "doi": "10.1090/S0002-9939-2010-10518-X",
+      "record_url": "https://ir.lib.nycu.edu.tw/handle/11536/9202",
+      "download_url": null,
+      "local_filename": null,
+      "themes": ["binary corner coloring", "periodic configurations", "square plaquettes", "nonemptiness"],
+      "workstreams": ["C"],
+      "review_status": "targeted-theorem-audit",
+      "review_note": "docs/literature/reviews/BINARY_PLAQUETTE_RADIUS.md"
+    },
+    {
+      "id": "kari-moutot-low-complexity-2023",
+      "title": "Decidability and Periodicity of Low Complexity Tilings",
+      "authors": ["Jarkko Kari", "Etienne Moutot"],
+      "year": 2023,
+      "evidence_class": "peer-reviewed theorem",
+      "venue": "Theory of Computing Systems 67, 125-148",
+      "arxiv": "1904.01267",
+      "doi": "10.1007/s00224-021-10063-8",
+      "record_url": "https://arxiv.org/abs/1904.01267",
+      "download_url": "https://arxiv.org/pdf/1904.01267",
+      "local_filename": "1904.01267-low-complexity-tilings.pdf",
+      "themes": ["binary SFT encoding", "rectangular local rules", "periodicity", "Nivat complexity"],
+      "workstreams": ["C"],
+      "review_status": "targeted-theorem-audit",
+      "review_note": "docs/literature/reviews/BINARY_PLAQUETTE_RADIUS.md"
+    },
+    {
+      "id": "jeandel-rao-wang-2021",
+      "title": "An Aperiodic Set of 11 Wang Tiles",
+      "authors": ["Emmanuel Jeandel", "Michael Rao"],
+      "year": 2021,
+      "evidence_class": "peer-reviewed theorem",
+      "venue": "Advances in Combinatorics 2021:1",
+      "arxiv": "1506.06492",
+      "doi": "10.19086/aic.18614",
+      "record_url": "https://arxiv.org/abs/1506.06492",
+      "download_url": "https://arxiv.org/pdf/1506.06492",
+      "local_filename": "1506.06492-eleven-wang-tiles.pdf",
+      "themes": ["Wang tiles", "minimum aperiodic alphabet", "four colors", "aperiodicity"],
+      "workstreams": ["C"],
+      "review_status": "targeted-scope-audit",
+      "review_note": "docs/literature/reviews/BINARY_PLAQUETTE_RADIUS.md"
     }
   ]
 }
