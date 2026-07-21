@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 77)
+**Last updated:** 2026-07-21 (session 78)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -164,6 +164,12 @@
   sides and ordinary two-side corner checks cannot enforce it. K2G needs a
   ternary junction, a locally recoverable auxiliary phase, or a proved
   larger-radius exclusion; no polygon or atlas exists yet (D-0087).
+- **ST-M1 auxiliary-phase bound:** K2H factors the parity core through four
+  hidden states and pairwise phase/interface relations; N6 proves four is
+  minimal by a product-box cover argument. The phase must be a locally
+  distinguishable geometric pose/star class, not an absolute lattice residue
+  ambiguous under global gauge shift. This closes only the symbolic auxiliary
+  calculation; K2G remains open (D-0088).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -563,14 +569,16 @@ Research is under the 2026-07-21 reset recorded in
    the exact reproduction fixtures and postmortem during release work only.
 3. Human checkpoint `HC-2026-07-21-06` is closed after sessions 73--75. The
    user explicitly authorized `HC-2026-07-21-07` after independent review.
-   Sessions 76--77 repair N4 and derive K2E/N5; this is session 2 of at most
-   3, with no experiment or large artifact.
+   Sessions 76--78 repair N4, derive K2E/N5 and establish the exact four-state
+   K2H/N6 auxiliary bound. HC-07 is exhausted with no experiment or large
+   artifact.
 4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
    escalation, and all Spectre radius escalation frozen.
-5. K2G remains the blocker. The final HC-07 session will decide on paper
-   whether an auxiliary geometric phase can enforce parity without an
-   absolute lattice origin. No contact census, carrier search, generated
-   drawing or experiment is authorized.
+5. **Stop for review.** K2G remains the blocker. The next on-paper question is
+   whether a finite pose action of one homochiral carrier can geometrically
+   realize K2H's four phase classes while preserving the triangular frame.
+   HC-07 is exhausted; no further theory, contact census, carrier search,
+   generated drawing or experiment is authorized before a new checkpoint.
 6. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.

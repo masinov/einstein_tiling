@@ -2012,3 +2012,22 @@ A viable exact carrier must name a genuine ternary exact-cover junction, a
 locally recoverable auxiliary phase, or a proved larger-radius geometric
 exclusion. No polygon, atlas or existence claim is made. The remaining HC-07
 session is restricted to analyzing the auxiliary-phase option on paper.
+
+## D-0088 (2026-07-21) — K1P parity has exact four-state hidden-phase cost
+
+The N5 arity obstruction is not fatal symbolically. With hidden phase
+`h=(p,q) in (Z/2)^2`, three pairwise relations can require
+`p=parity(x)`, `q=parity(y)` and `parity(z)=p+q`. Eliminating `h` gives exactly
+the even-parity K1P core.
+
+Four hidden values are minimal. Any hidden value in a star factorization
+contributes a product box. A box contained in even parity fixes all three
+coordinate parities and covers at most one of the four even Boolean patterns;
+four boxes are necessary, and the displayed construction attains the bound.
+
+This is a symbolic factorization, not a carrier. The hidden phase must be a
+locally recoverable geometric pose/contact-star class. A phase defined only
+by integrating edge increments is ambiguous up to global additive constant
+and is invalid unless all uses are gauge-invariant or a bounded geometric
+landmark fixes it without an external origin. K2G remains open at realizing
+four such local phase classes together with G1--G6. HC-07 is exhausted.

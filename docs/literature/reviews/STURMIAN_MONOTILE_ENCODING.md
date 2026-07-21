@@ -420,3 +420,19 @@ unproved 62-state claim. A single unmarked boundary for this compiler would
 need a genuine corner coupler while excluding sliding, T-junctions,
 unintended contacts and opposite-handed faults. That geometric K2G obligation
 remains open.
+
+## Geometric realization boundary (sessions 77--78)
+
+K2E now states the exact-compiler contract separately from minimal ST-M1.
+The parity core has full unary and binary projections, so N5 rules out any
+exact realization using only independent sides and ordinary two-side corner
+checks. This is an arity statement about the selected compiler, not a no-go
+for arbitrary monotiles or proper source subsystems.
+
+K2H shows that a hidden four-state phase is symbolically sufficient: two bits
+record the first two interface parities and determine the third. N6 proves
+four is minimal by covering the even-parity relation with product boxes.
+Nothing in the audited literature or current geometry makes that phase a
+state of one unmarked carrier. It must be locally recovered from rigid pose or
+contact-star geometry; an absolute lattice residue defined only up to global
+gauge is invalid. K2G remains open at that geometric realization step.

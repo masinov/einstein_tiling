@@ -124,3 +124,89 @@ The next on-paper question is whether a translation-equivariant auxiliary
 phase can carry the parity check without smuggling in an absolute lattice
 origin. If it cannot, the selected exact-compiler route should close before a
 shape is drawn.
+
+## 6. Four-state auxiliary factorization
+
+An auxiliary phase can remove the arity-three obstruction at the symbolic
+level. Let
+
+```
+H = Z/2 x Z/2,
+h = (p,q).
+```
+
+Use three binary phase/interface relations
+
+```
+R_0(h,x) : p = x mod 2,
+R_1(h,y) : q = y mod 2,
+R_2(h,z) : z mod 2 = p+q mod 2.
+```
+
+Then
+
+```
+(x,y,z) in E  iff  there exists h in H with
+R_0(h,x), R_1(h,y), and R_2(h,z).
+```
+
+The forward direction chooses `h=(x mod 2,y mod 2)`; the reverse direction
+sums the three displayed congruences. Thus a tile-centered four-state hidden
+phase is sufficient to factor the ternary parity check into three pairwise
+phase/interface checks.
+
+### ST-M1.N6 — four auxiliary states are necessary
+
+Any representation of `E` in the star form
+
+```
+E = union over h in H of A_h x B_h x C_h
+```
+
+needs at least four nonempty product boxes.
+
+### Proof
+
+Reduce each coordinate to even/odd parity. A nonempty product box contained
+in the even-parity relation cannot contain both parities in any coordinate:
+holding one choice in the other two coordinates fixed would then include one
+even and one odd total. Hence each box covers at most one of the four even
+parity patterns `000,011,101,110`. All four occur in `E`, so at least four
+boxes, and therefore at least four auxiliary values, are necessary. The
+construction above attains the bound. \(\square\)
+
+## 7. Gauge condition
+
+The symbol `h` cannot be painted on the carrier. It must be a locally
+distinguishable state of one rigid unmarked occurrence—for example a finite
+pose/contact-star class. Nor may it be an absolute residue relative to a
+chosen lattice origin.
+
+More precisely, suppose a proposed phase is obtained only by integrating
+finite edge increments on the connected contact graph. Such an integration
+determines vertex phases only up to a global additive constant. If the
+geometry and observed side modes are unchanged by that global gauge shift,
+then a non-gauge-invariant value of `h` is not locally determined and cannot
+serve as a geometric state. Either:
+
+- the four phase classes must be fixed by a bounded geometric star;
+- the decoder and all relations must depend only on gauge-invariant phase
+  differences; or
+- an explicit geometric landmark must break the gauge in a
+  translation-equivariant way.
+
+An externally chosen origin is none of these. This is a well-definedness
+condition, not a no-go against all auxiliary phases.
+
+## 8. HC-07 disposition
+
+The auxiliary route survives symbolically and has an exact cost: four hidden
+states are necessary and sufficient for the K1P parity core. Geometry is
+still wholly open. K2G must realize at least four locally distinguishable
+phase/star classes of one fixed carrier, couple them to the three side modes,
+and satisfy G1--G6. A global coordinate residue does not count.
+
+HC-07 ends here. No polygon should be drawn and no contact atlas searched
+until a new checkpoint authorizes an on-paper analysis of which finite pose
+actions of one carrier could realize `H` compatibly with homochirality and the
+triangular frame.

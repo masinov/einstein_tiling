@@ -68,7 +68,11 @@ reviewable proof or certificate.
   vertex contraction, the three-coset proof of unique physical provenance
   I0, and the face-cocycle/global-gap decoder D0 closing minimal colored L0.
 - `11_stm1_contact_kernel.md` — the lossless contact-incidence compiler K1C
-  and the exact local-closure boundary for any future nontrivial quotient.
+  and the exact local-closure boundary, distributed quotient K1D, and selected
+  parity-check compiler K1P.
+- `12_stm1_geometric_carrier.md` — K2E's exact carrier contract, N5's
+  unary/binary arity obstruction, and the sharp four-state hidden-phase
+  factorization and lower bound K2H/N6.
 - `W1_TRANSFER_SPEC.md` — the soundness/completeness contract for the exact
   cylinder transfer engine and its certificates.
 - `PROOF_LEDGER.md` — stable IDs, scope, status, dependencies, and artifacts.
