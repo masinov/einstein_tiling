@@ -2265,3 +2265,25 @@ that statement.
 HC-12 is audit-only.  It distinguishes binary rule support, decoder radius
 and the neighborhood a physical contact gadget can jointly see.  No binary
 rule census or boundary synthesis is authorized.
+
+## D-0102 (2026-07-21) — Refute `2x2` B0; retain larger binary support
+
+Hu--Lin's peer-reviewed Theorem 2.3 is exactly about allowed subsets of the
+sixteen binary `2x2` corner patterns.  It proves that every nonempty such
+whole-plane language contains a doubly periodic configuration.  Therefore the
+immediate K3B binary square-plaquette language cannot be strongly aperiodic
+and cannot map totally and period-reflectingly to S0.  ST-M1.N11 refutes that
+version of B0 without enumerating 65,536 rule sets.
+
+This does not close binary encodings.  Kari--Moutot Theorem 9 and Lemma 25
+effectively encode any Wang SFT into binary `n x m` rectangular rules whose
+complete closure is exactly the translates of valid sparse encodings and
+whose periodic-point existence agrees with the source.  Corollary 12 permits
+fixed height `m=2` and sufficiently large width.  ST-M1.N12 therefore retains
+a generalized finite-radius binary route, conditional on the still-missing
+extensional S0 presentation.
+
+No smallest surviving width is claimed.  Jeandel--Rao's 11-tile/four-color
+minimum concerns ordinary edge-colored Wang tiles and does not by itself
+settle binary corner plaquettes; it is Hu--Lin's corner theorem that supplies
+the exact no-go.

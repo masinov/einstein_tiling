@@ -64,3 +64,111 @@ is not excluded by that horizon.
 The theorem consequences and HC-12 decision are completed in the following
 sessions.  No enumeration of the `2^16` binary plaquette rule sets is needed:
 Hu--Lin already settle that class.
+
+## N11: the immediate `2x2` binary language is impossible
+
+Let `P` be any subset of the sixteen binary `2x2` blocks and let
+
+```
+X_P = {x in {0,1}^{Z^2}: every translated 2x2 block of x belongs to P}.
+```
+
+This is exactly Hu--Lin's two-color **corner-coloring** system
+`Sigma(B_c)`: their colors occupy lattice vertices, and each unit square is
+one allowed four-corner block.  Theorem 2.3 and its conclusion on pp.
+1050--1051 prove
+
+```
+X_P nonempty  =>  X_P contains a doubly periodic configuration.
+```
+
+The proof classifies 17 minimal cycle generators and 56 maximal noncycle
+sets; every maximal noncycle set already fails on a `5x4` rectangle.  This is
+stronger than decidability and is precisely the statement B0 needs.
+
+### ST-M1.N11
+
+No nonempty binary `2x2` square-plaquette SFT is strongly aperiodic.
+Consequently there is no total translation-equivariant period-reflecting map
+from such an SFT to the aperiodic S0 language.
+
+Indeed, Hu--Lin supply a periodic `x in X_P`.  If a map to S0 were total and
+period-reflecting, its image would inherit nonzero periods, contradicting S0.
+Thus the immediate B0 formulation in theory note 17 is refuted without a
+`2^16` rule-set census.
+
+This result is about binary **corner** blocks.  Jeandel--Rao's sharp lower
+bound concerns ordinary edge-colored Wang tiles: an aperiodic Wang set needs
+at least 11 tiles and four edge colors.  Translating a binary `2x2` block to
+its four overlapping binary-pair edge colors uses four colors and at most 16
+tiles, so the Jeandel--Rao count alone would not exclude it.  Hu--Lin's
+special corner theorem does.
+
+Primary anchors:
+
+- Hu--Lin, Definition 2.1 and Theorem 2.3, pp. 1048--1051,
+  DOI `10.1090/S0002-9939-2010-10518-X`;
+- Jeandel--Rao, abstract and minimality theorem,
+  DOI `10.19086/aic.18614`.
+
+## N12: binary finite-radius encoding survives
+
+Hu--Lin do not prove that every binary SFT is periodic.  Kari--Moutot give the
+opposite existence result at larger rectangular support.
+
+Their Theorem 9 starts from any finite Wang set `T`.  After a checkerboard
+doubling that prevents self-neighbor matches, let `t` be the resulting tile
+count, `s=2^t-1` and `N=3s`.  For every width `n>=N` and every height `m>=2`
+they effectively construct allowed binary `n x m` patterns `P`.  Lemma 25 is
+the crucial full-closure statement:
+
+```
+V(P) = { translate(beta(c)) : c is a valid T-tiling }.
+```
+
+Every `1` in `beta(c)` identifies one Wang tile by its horizontal offset in a
+sparse, locally recognizable rectangular scaffold.  Hence the construction
+preserves nonemptiness and preserves existence of a periodic configuration
+in both directions.  Corollary 12 applies it to an aperiodic Wang set and
+obtains a strongly aperiodic binary rectangular SFT; height `m=2` is allowed
+once the width is sufficiently large.
+
+### ST-M1.N12
+
+Every finite two-dimensional SFT has an effective binary rectangular cover
+with exact full local closure and preservation of whether periodic points
+exist.  In particular, conditional on the extensional S0 presentation, a
+binary period-reflecting encoding of S0 exists at some finite rectangular
+support.
+
+The last sentence uses the standard conjugate conversion of a finite SFT to
+Wang tiles stated in Kari--Moutot Section 2.3, followed by Theorem 9 and Lemma
+25.  Their sparse encoding is a rectangular inflation, not a unit-scale
+sliding-block conjugacy to `T`.  Locally recognizing its phase gives a finite
+decorated lift of the coarse Wang tiling; that lift is the correct intermediate
+object for a later geometric decoder.  A direct unit-scale map to K3F is not
+claimed here.
+
+The displayed exponential `N` is an existence bound, not an efficiency
+claim.  The paper notes that Sidon/Mian--Chowla positions reduce the coding
+growth, but no numerical bound can be instantiated for S0 while SER0 lacks
+the extensional source alphabet and rule table.
+
+Primary anchors:
+
+- Kari--Moutot, Section 2.3 (finite SFT to conjugate Wang presentation),
+  Theorem 9, Lemmas 23--25 and Corollary 12,
+  DOI `10.1007/s00224-021-10063-8`.
+
+## The actual radius boundary
+
+| binary rule support | theorem-level status | implication for K3B |
+|---|---|---|
+| independent horizontal/vertical pairs | periodic product whenever nonempty (repository N1) | impossible |
+| one `2x2` corner plaquette | periodic configuration whenever nonempty (Hu--Lin/N11) | impossible if bits are the complete state |
+| `n x 2`, sufficiently large `n` | strongly aperiodic examples exist (Kari--Moutot/N12) | symbolically possible; no direct geometric reader |
+| arbitrary finite support | generic binary encoding possible via the same construction | symbolically possible; efficiency and geometry open |
+
+The smallest width of a strongly aperiodic binary height-two rectangular SFT
+is not established by the audited sources.  It must not be guessed from the
+`2x2` no-go or from the very large constructive upper bound.
