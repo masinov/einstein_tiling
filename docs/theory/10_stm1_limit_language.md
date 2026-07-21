@@ -18,7 +18,9 @@ Section 10.1 uses two geometrically different systems.
    final three patch-tiles in Figure 37 are unions of these physical cells;
    the BD construction concludes that this tile set admits tilings of
    `R^2`. The global matching rule requires physical patch-tiles to meet
-   edge-to-edge and their bent SABs to continue.
+   edge-to-edge and their bent SABs to continue. Here “bent SAB” is repository
+   shorthand for the source's isometric-cell SAB construction in Figure 41,
+   not terminology quoted from the paper.
 2. The auxiliary patches `P1,P2,P3` are made from first-order **Sturmian
    triangles** and are used to construct and verify the BD correspondence.
    Only here does the source say that “tilings” is nonstandard and overlapping
@@ -160,6 +162,12 @@ V_1  = Z^2 - (1/3,1/3).
 The coset recovers `s`; then `(j,k)` and `r=s-j-k` are unique. Hence no two
 distinct indexed source triangles collapse to one physical centroid.
 
+The restriction to the physical order set is essential. On unrestricted
+triples, `(r,j,k)` and `(r+1,j+1,k+1)` have the same centroid while their
+orders differ by three. The physical vertices above have
+`s in {-1,0,1}`; these are distinct modulo three, so the vertex coset selects
+one actual integer `s` and removes exactly this diagonal ambiguity.
+
 After the marked short-diagonal split, every limiting triangle edge has one
 of the primitive cabinet differences
 
@@ -177,17 +185,20 @@ no physical T-junction and no new edge crossing.
 
 Retain on every limiting triangle its source `S/M/L` role, macro address,
 split-`M` half and bent-SAB state, and retain the order class on each vertex.
-Then every decorated limiting physical vertex star has exactly one prelimit
-source-star lift. Cyclic families and global reflection give the corresponding
-rotated/reflected lift, not a second lift of the same decorated star.
+Assume, as in the physical isometric-cell construction, that each generating
+vertex has order `s in {-1,0,1}`. Then every decorated limiting physical
+vertex star has exactly one prelimit source-star lift. Cyclic families and
+global reflection give the corresponding rotated/reflected lift, not a
+second lift of the same decorated star.
 
-**Proof.** The coset calculation uniquely recovers the indexed generating
-triangle at each vertex. Primitive edges recover the same physical incidence
-graph as before the limit. The transported colors restore the corridor-width
-symbols erased by equidistancing. Therefore the incident colored cells and
-their cyclic order reconstruct one source star. A different lift would have
-to change an index, order coset, edge incidence or retained color, all of
-which are fixed. \(\square\)
+**Proof.** The restricted order hypothesis turns the residue class recovered
+from the coset into the unique integer `s`; the calculation then recovers the
+indexed generating triangle at each vertex. Primitive edges recover the same
+physical incidence graph as before the limit. The transported colors restore
+the corridor-width symbols erased by equidistancing. Therefore the incident
+colored cells and their cyclic order reconstruct one source star. A different
+lift would have to change an index, restricted order, edge incidence or
+retained color, all of which are fixed. \(\square\)
 
 I0 also sharpens the role of O0. Tiny auxiliary patches contract to decorated
 vertices, but distinct **physical** cell vertices do not collapse together.
@@ -281,6 +292,11 @@ the segment spanned by
 Sturmian parabola is `beta=sqrt(2)-1`. In particular, the apparent all-`M`
 endpoint is not a decoded source configuration. Thus every legal limiting
 tiling decodes to the irrational source language.
+
+The conjugate alternative in source Theorem 4(2) adds no second slope here.
+The algebraic conjugate of `beta=sqrt(2)-1` is `-1-sqrt(2)`, outside the
+Sturmian parameter interval `[0,1]`. Equivalently, P0 already computed the
+unique intersection on that interval.
 
 The output attached to a rooted triangle—macro state/address, indexed source
 cell, gap symbols and SAB state—is already present in a bounded neighborhood.

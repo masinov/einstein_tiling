@@ -44,6 +44,8 @@ def test_stm1_source_correction_is_fail_closed():
     assert "ST-M1.L0" in ledger
     assert "proof-draft; O0/I0/D0 closed without atlas enumeration" in ledger
     assert "no finite-`kappa` MLD claim" in ledger
+    assert "source orders `s in {-1,0,1}`" in ledger
+    assert "source conjugate outside `[0,1]`" in ledger
 
 
 def test_gate_rejects_template_and_accepts_completed_record(tmp_path):

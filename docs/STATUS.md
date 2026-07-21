@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⛔ minimal colored source S0 closed in proof draft via P0/G0/O0/I0/D0; unmarked construction blocked at safe contact-star quotient K1, with no geometry admitted (D-0077--D-0081) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⛔ minimal colored source S0 closed in proof draft via P0/G0/O0/I0/D0; unmarked construction blocked at safe contact-star quotient K1, with no geometry admitted (D-0077--D-0082) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -119,14 +119,17 @@
   in three disjoint order cosets. The coset and lattice coordinate uniquely
   recover the source triangle; primitive limiting edges contain no interior
   vertex. With retained role/address/SAB colors, every physical vertex star
-  has one prelimit lift. I0 closes without an atlas (D-0080); the following
+  has one prelimit lift. The physical-order restriction `s in {-1,0,1}` is
+  essential and now explicit: unrestricted indices have a diagonal `(1,1,1)`
+  ambiguity. I0 closes without an atlas (D-0080/D-0082); the following
   session supplies D0.
 - **ST-M1 minimal colored source:** the global triangular frame integrates
   exact line-index increments with zero face holonomy. Local gap-equality
   ports recover three global narrow/wide sequences; source edge/SAB rules and
   P0 force slope `sqrt(2)-1`. D0 closes L0, E-infinity and S0 in proof draft
   without enumerating an atlas. This is a period-reflecting symbolic decoder,
-  not finite-`kappa` MLD or a positive-entropy result (D-0081).
+  not finite-`kappa` MLD or a positive-entropy result. The possible source
+  conjugate is `-1-sqrt(2)`, outside `[0,1]` (D-0081/D-0082).
 - **ST-M1 symbolic quotient boundary:** Q0 correctly requires safety on the
   full finite local closure. Erasing ownership to unrestricted `S/M/L`
   restores rational periodic tilings, and independent corridor rails admit

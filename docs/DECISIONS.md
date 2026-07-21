@@ -1876,3 +1876,28 @@ finite, period-reflecting symbolic decoder, which is sufficient for minimal
 ST-M1 but not for the positive-entropy strengthening. No unmarked monotile,
 carrier, collar quotient or geometric contact atlas has been constructed.
 K1 is the next theorem blocker and requires a new human checkpoint.
+
+## D-0082 (2026-07-21) — Make I0's order restriction and D0's slope branch explicit
+
+Post-checkpoint audit identified two hypotheses that were used correctly but
+not stated at their load-bearing locations.
+
+First, the centroid map is not injective on arbitrary index triples:
+`(r,j,k)` and `(r+1,j+1,k+1)` have the same centroid. Their orders differ by
+three. I0 applies only to the physical generating vertices of an isometric
+cell, whose orders are exactly `{-1,0,1}`. The three centroid cosets determine
+the order modulo three, and on this restricted set that residue determines the
+integer order itself. I0's statement and ledger dependencies now include this
+restriction explicitly.
+
+Second, source Theorem 4(2) allows a quadratic slope or its algebraic
+conjugate when that conjugate also lies in `(0,1)`. For
+`beta=sqrt(2)-1`, the conjugate is `-1-sqrt(2)`, outside the Sturmian slope
+interval. Hence it supplies no second branch; this is also immediate from
+P0's unique intersection with the parabola on `[0,1]`.
+
+Neither clarification changes the O0/I0/D0 conclusions or reopens S0. They
+are recorded before K1 because its decoder inherits the restricted-order
+argument. “Bent SAB” is also marked as repository shorthand for the
+isometric-cell construction in source Figure 41. HC-05 remains exhausted and
+K1 remains unauthorized pending HC-06.

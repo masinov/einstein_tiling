@@ -367,6 +367,12 @@ coordinate recovers all three line indices.  Primitive limiting edges contain
 no further vertex from these cosets.  Thus distinct physical source vertices
 do not collapse and no physical T-junction is introduced.
 
+This injectivity is restricted to the physical orders `s in {-1,0,1}`.
+Unrestricted triples have a diagonal `(1,1,1)` ambiguity that fixes the
+centroid and changes the order by three; the three physical residues select a
+unique integer order. This restriction is now explicit in I0 and its ledger
+entry.
+
 With the role, macro address, split-`M` half, bent-SAB state and vertex order
 retained, each limiting physical star has one source-star lift.  This is I0,
 not yet the desired language theorem: D0 must still prove that the finite
@@ -383,6 +389,11 @@ connected plane. Repeated descriptions of one corridor gap are equated by a
 local propagation port. The resulting global gap sequences and transported
 bent SABs satisfy the original source matching rule, and P0 fixes their slope
 to `sqrt(2)-1`.
+
+Source Theorem 4(2)'s possible conjugate does not add a branch: the conjugate
+is `-1-sqrt(2)`, outside the allowed slope interval `[0,1]`. The phrase “bent
+SAB” in repository notes refers to the source's Figure 41 isometric-cell SAB;
+it is not source terminology.
 
 This proves a nonempty finite colored equal-triangle system with a total
 period-reflecting decoder to the irrational source language. It is the
