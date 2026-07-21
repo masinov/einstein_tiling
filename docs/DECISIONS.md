@@ -2391,3 +2391,28 @@ geometric admission contract. It does not solve the monotile problem. No
 unmarked polygon is known to force bounded disjoint cycles, make the automaton
 states independently visible, exclude all unintended contacts and lift the
 source. HC-13 is exhausted at session 96; no shape run is authorized.
+
+## D-0108 (2026-07-22) — Downgrade K5C to a test instance; retain only the gapless geometric residue
+
+The HC-14 primary-source audit finds that K5C's symbolic architecture is
+established prior art. Ollinger already concatenates all Wang codes, selects
+one with a jaw, propagates its four interfaces by wires and proves an
+all-tilings converse using five functional polyomino supports. Demaine et al.
+compile plane tiling systems into one rotatable polygon, but in a prescribed
+lattice “nearly-plane” model whose copies leave gaps. Greenfeld--Tao compile a
+finite system of translational tiling equations into one equation by adding a
+finite cyclic fibre. Fletcher, Socolar--Taylor, Akiyama and
+Lagae--Kari--Dutre cover atlas, marked-boundary, unique-composition and
+edge/corner recodings. The `44/6` corner system is a construction from the
+16-Wang-tile/six-color source, not a lower bound.
+
+Therefore K5C's trie, delimiter, selector, wire and corner-source conversions
+carry no method-novelty claim. The only retained target is the conjunction not
+supplied by those sources: one connected unmarked planar polygon, ordinary
+gapless coverage without an imposed lattice/atlas/seed/fibre, full declared
+isometries, and a total decoder on every shape-only tiling.
+
+HC-14 may test one exact boundary mechanism against K5C.1--K5C.3. Failure to
+prove bounded cycles, independently visible transition states and complete
+contacts within sessions 98--99 closes the cyclic-corridor route without
+enumeration. No symbolic redesign qualifies as progress on that residue.

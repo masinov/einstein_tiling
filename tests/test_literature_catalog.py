@@ -16,7 +16,7 @@ def load_catalog():
 def test_catalog_schema_and_identifiers_are_unambiguous():
     catalog = load_catalog()
     assert catalog["schema_version"] == 1
-    assert catalog["snapshot_date"] == "2026-07-21"
+    assert catalog["snapshot_date"] == "2026-07-22"
     assert len(catalog["sources"]) >= 18
 
     ids = [source["id"] for source in catalog["sources"]]

@@ -9,13 +9,13 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-22-13",
+    "id": "HC-2026-07-22-14",
     "date": "2026-07-22",
-    "through_session": 93,
-    "reason": "Sessions 91--93 and the B0/K4W audit were independently reviewed. The user explicitly authorized HC-13 after requiring the Hu--Lin cache repair and Kari--Moutot transcription correction. HC-13 is an on-paper inverse-dissection design checkpoint: exhibit one exact macrocell topology with at least 11 rooted retilings and a credible unique-grouping invariant within three sessions, or close that parameterization without a shape run.",
+    "through_session": 96,
+    "reason": "Sessions 94--96 and the K5S/K5C inverse-dissection checkpoint were independently reviewed. The user explicitly authorized HC-14 with four mandatory prior-art targets: Greenfeld--Tao translational monotiles, Ollinger's small polyomino simulations, Ammann A2 and Socolar--Taylor marked mechanisms, and the Lagae--Kari--Dutre 44/6 corner source. Audit precedes design. Only if an unoccupied geometric obligation remains may HC-14 propose one exact mechanism for K5C.1--K5C.3; otherwise the cyclic-corridor route closes without enumeration.",
     "artifact_bytes": {
       "docs/notebook/assets": 6756125300,
-      "data": 1795000203
+      "data": 1795586222
     }
   }
 }

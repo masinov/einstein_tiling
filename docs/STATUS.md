@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 93)
+**Last updated:** 2026-07-22 (session 97)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,16 +33,16 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-12 closed: bit-only B0 refuted; larger binary/hidden-state routes reduced to K4W's 11-state/four-interface inverse-retiling contract; no polygon or run (D-0101--D-0103) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-14 audit: K5C's selector/wire compiler is prior art; only the gapless connected one-polygon all-tilings realization survives for one bounded mechanism attempt; no polygon or run (D-0108) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
 
 ## What exists and is verified
 
-- **Versioned literature subsystem:** 26 source records distinguish
+- **Versioned literature subsystem:** 36 source records distinguish
   peer-reviewed theorems, computational methods, preprints, reviews and
-  secondary evidence; 23 open PDFs plus text extracts are reproducibly cached
+  secondary evidence; 33 open PDFs plus text extracts are reproducibly cached
   outside Git. The state-of-the-art map, methods-to-code matrix, reading queue,
   and novelty protocol make exact shape novelty, tiling-system novelty,
   aperiodicity, and method novelty separate claims. Turtle is now a blinded
@@ -246,6 +246,15 @@
   realization of any fixed aperiodic Wang set, full-isometry contact
   completeness and one lift suffice for one polygon to be an aperiodic
   monotile. This is a contract, not a construction (D-0103).
+- **ST-M1 single-tile simulation audit:** K5C's codeword selector, four
+  interface wires and all-tilings decoder architecture are already represented
+  by Ollinger's five-role polyomino compiler. Demaine et al. reduce arbitrary
+  square/hexagonal systems to one rotatable puzzle piece only in a prescribed
+  lattice near-plane model with gaps; Greenfeld--Tao use an auxiliary finite
+  group fibre. Marked, atlas and corner recodings are also established. The
+  only retained research target is one connected unmarked planar polygon with
+  exact gapless coverage and a total decoder on every unrestricted tiling
+  (D-0108).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -686,6 +695,13 @@ Research is under the 2026-07-21 reset recorded in
    a compiler topology, not a polygon; a future checkpoint requires prior-art
    review and one concrete geometric mechanism for bounded cycles, visible
    automaton modes and contact completeness before any run.
-8. The `Tile(a,b)` recognizer remains required infrastructure before any
+8. The user authorized HC-14 with Greenfeld--Tao, Ollinger, Ammann A2,
+   Socolar--Taylor and the exact `44/6` corner source as mandatory prior-art
+   targets. Session 97 completes that audit and adds the closer Demaine
+   one-puzzle-piece, Fletcher atlas and Mampusti--Whittaker dendrite controls.
+   The symbolic compiler is prior art. Sessions 98--99 may test one exact
+   boundary mechanism only; failure to prove K5C.1--K5C.3 closes the route
+   without enumeration.
+9. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.
