@@ -99,5 +99,105 @@ strong one-successor hypotheses, and that very symmetry forbids the delimiter
 and nonconstant code it was meant to support.
 
 The remaining question is whether several full-arc docking modes can be
-exclusive in a gapless one-polygon tiling.  Session 99 must resolve that
-bounded question or fire HC-14's kill for K5C.
+exclusive in a gapless one-polygon tiling.  Session 99 resolves that bounded
+question below.
+
+## 6. N18: every boundary port must be filled
+
+The first multiplexing attempt puts several disjoint keyed head arcs and
+several matching tail arcs on `P`, intending a tile to choose exactly one pair
+and leave the other options unused.
+
+### ST-M1.N18
+
+Let a locally finite family of compact topological disks tile the plane with
+pairwise disjoint interiors.  Every point in the relative interior of a tile's
+polygonal boundary edge belongs to the boundary of another tile.  Therefore
+every nondegenerate arc in a disjoint option-port bank is contacted in every
+tiling; “choose one port and leave the others unused” is impossible in an
+ordinary gapless tiling.
+
+### Proof
+
+Let `x` be in the relative interior of a boundary edge of a tile `T`.  There
+are points outside `T` arbitrarily close to `x`.  The tiling covers them, and
+local finiteness lets us pass to a sequence covered by one fixed neighboring
+tile `U`.  Since tiles are closed, `x` belongs to `U`.  It cannot lie in the
+interior of `U`: an open disk there would meet the interior side of `T`,
+contradicting disjoint interiors.  Hence `x` lies on `boundary(U)`.  □
+
+N18 permits several neighbors to subdivide one port and permits neutral caps.
+But those are additional contact roles whose complete arrangement must be
+forced.  They do not make the unused options disappear.  In particular a
+diagram showing one selected key while leaving the other key arcs exposed is
+not a tiling mechanism.
+
+## 7. N19: one full arc is not an arbitrary mode bank
+
+The only immediate escape from N18 is to multiplex alternatives on the same
+full contact arc.
+
+### ST-M1.N19
+
+Fix two nondegenerate compact polygonal boundary arcs `A` and `B`, each with
+two distinct endpoints.  There are at most four Euclidean isometries taking
+`A` onto `B` and its endpoint set onto the endpoint set of `B`.  Thus one
+fixed full-arc pair cannot directly expose an arbitrary finite transition
+alphabet.
+
+### Proof
+
+There are two bijections between the two endpoint sets.  For either ordered
+endpoint assignment, an isometry of the plane has at most two choices: the
+orientation-preserving rigid motion and its composition with reflection in
+the line through the two target endpoints.  Requiring the whole arc to map
+onto `B` can only remove choices.  Hence at most four remain.  If the local
+interior sides are also prescribed to be opposite across the contact, at most
+one of the two side choices for each endpoint order survives, but the
+conservative bound four is sufficient here.  □
+
+The bound is deliberately scoped to one specified full-arc pair.  Multiple
+arc pairs return to N18.  Partial contacts, offsets and T-junctions are outside
+N19, but they require an extensional contact atlas proving that no slide,
+branch, overlap or unintended cap occurs—the very K5C completeness burden.
+
+## 8. The two-mode holonomy residue is not a mechanism yet
+
+An endpoint-reversing full-arc pair can plausibly expose two local docking
+modes.  A chain could then spell a binary word, and the product of its relative
+isometries could act as a closure test.  This is the strongest variant left by
+N17--N19, but it does not meet the admitted contract:
+
+- no arcs `A,B` or two placement isometries have been constructed;
+- no proof makes every component a simple cycle of length 42 rather than a
+  path, branch, other cycle or collision;
+- no product calculation accepts exactly the eleven K5C words and rejects
+  every other admitted word; and
+- the two local modes reveal a bit, not the prefix-automaton state required by
+  K5C.3.  Recovering a state after reading the completed word would be the
+  circular labeling the contract forbids.
+
+It could become a different exact holonomy mechanism only after all four
+items are proved from one explicit boundary.  Naming the two alignments is not
+such a proof.
+
+## 9. HC-14 disposition
+
+The admitted mechanism attempt has exhausted its variants:
+
+1. one fixed successor transform yields a symmetric unrooted rosette (N17);
+2. disjoint optional ports are all contacted in a gapless tiling (N18); and
+3. one full-arc pair has at most four rigid alignments and supplies no finite
+   selector by itself (N19).
+
+No concrete boundary survives with K5C.1--K5C.3 proved.  The predeclared
+HC-14 kill therefore fires.  K5C remains a useful conditional test instance,
+but the cyclic-corridor route is frozen: no polygon search, contact-radius
+escalation or drawing is authorized.
+
+Reopening requires an explicit polygonal boundary and, before computation, a
+proof draft giving: (R1) its complete full-contact modes; (R2) exclusive
+bounded component closure; (R3) an independently visible accepting state or
+an exact non-circular holonomy replacement; (R4) exclusion of every partial,
+sliding and vertex contact; and (R5) one gapless whole-plane lift.  These are
+geometric data, not a new symbolic compiler.

@@ -231,3 +231,14 @@ closure, independently visible transition state, and exclusion of every
 unintended contact.  Failure within HC-14's remaining two sessions closes the
 cyclic-corridor route.  No boundary enumeration, SAT run, drawing or candidate
 promotion follows from this audit.
+
+## HC-14 mechanism outcome
+
+Theory note 20 applies the stop rule. N17 refutes a one-head/one-tail
+order-42 rosette: its successor rotation acts transitively, forbidding a
+unique root or nonconstant word. N18 shows that disjoint option ports are all
+contacted in a gapless tiling, and N19 bounds one full polygonal arc pair to
+at most four rigid alignments. No explicit multiplexed arc supplied bounded
+42-cycles, exact eleven-word acceptance and a pre-decoding state. The kill
+therefore fires after session 99; K5C is frozen under reopening contract
+R1--R5, without an experiment.

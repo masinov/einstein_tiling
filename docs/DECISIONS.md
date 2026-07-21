@@ -2434,3 +2434,23 @@ carrier themselves.
 Thus one fixed docking transform cannot satisfy K5C.2--K5C.3. HC-14's final
 session tests only the several-full-arc-mode escape; failure closes K5C without
 geometry enumeration.
+
+## D-0110 (2026-07-22) — Fire the HC-14 kill; freeze K5C geometry
+
+N18 proves the gapless boundary-coverage obstruction: every nondegenerate
+boundary port is contacted, so disjoint “optional” keys cannot encode a choice
+by leaving all but one unused. Neutral caps would be additional roles whose
+complete organization remains to be forced.
+
+N19 bounds one specified full polygonal arc pair to at most four Euclidean
+docking isometries (at most two after fixing which local sides face). This
+prevents treating one full arc as an arbitrary automaton-state bank. A
+two-mode endpoint flip could in principle feed a holonomy word test, but no
+explicit boundary, length-42 component theorem, exact eleven-word acceptance
+or pre-decoding state is supplied. It does not satisfy K5C.1--K5C.3.
+
+HC-14's predeclared failure outcome therefore applies after session 99. K5C
+is retained only as a conditional test instance and the cyclic-corridor route
+is frozen. Reopening requires an explicit boundary with complete full-contact
+modes, exclusive bounded closure, non-circular state/holonomy, exclusion of
+partial/sliding/vertex faults and one gapless plane lift before any run.

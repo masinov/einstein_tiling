@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 98)
+**Last updated:** 2026-07-22 (session 99)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-14 audit: K5C's selector/wire compiler is prior art; only the gapless connected one-polygon all-tilings realization survives for one bounded mechanism attempt; no polygon or run (D-0108) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ frozen after HC-14: K5C's compiler is prior art; fixed-rosette and disjoint-port boundary mechanisms fail; no explicit gapless polygon meets reopening contract R1--R5 (D-0108--D-0110) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -260,6 +260,13 @@
   transitive rotational orbit, so it cannot equivariantly select one delimiter
   or carry a nonconstant K5C word. An order-42 keyed rosette therefore closes
   geometrically only by erasing the state asymmetry it needs (N17/D-0109).
+- **ST-M1 gapless-port boundary:** every nondegenerate boundary port is
+  contacted in a locally finite gapless disk tiling, so disjoint option keys
+  cannot be selected by leaving the others unused (N18). One specified full
+  polygonal arc pair has at most four Euclidean docking alignments (N19). A
+  two-mode holonomy analogy lacks an explicit boundary, bounded-cycle theorem,
+  exact eleven-word acceptance and visible state. HC-14's kill fires and K5C
+  is frozen with reopening obligations R1--R5 (D-0110).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -561,7 +568,7 @@
   lines remain unknown. The completed blind hierarchy
   screen retained two non-unique first-composition rules out of 22,094 but no
   stationary recognizable recursion. Artifact: `e1-overnight-recovered.json`.
-- Test suite: **222 fast passed** (17 deselected, 145.23 s, session 70);
+- Test suite: **222 fast passed** (17 deselected, 31.2 s, session 99);
   **17 slow passed** previously (192 deselected, 389.36 s).
   Vendored Rust: **5 passed**.
 
@@ -706,9 +713,12 @@ Research is under the 2026-07-21 reset recorded in
    one-puzzle-piece, Fletcher atlas and Mampusti--Whittaker dendrite controls.
    The symbolic compiler is prior art. Session 98 tests and refutes the
    fixed-successor order-42 rosette: transitive rotational symmetry forbids a
-   unique delimiter or nonconstant word. Session 99 tests only whether several
-   full-arc docking modes can be exclusive; failure closes the route without
-   enumeration.
+   unique delimiter or nonconstant word. Session 99 proves the gapless
+   boundary-coverage and full-arc alignment bounds N18--N19. No multiplexed
+   boundary meets K5C.1--K5C.3, so the predeclared kill fires. HC-14 is
+   exhausted at 3 of 3 sessions with no experiment or generated research
+   artifact; K5C is frozen until an explicit boundary satisfies R1--R5 before
+   computation.
 9. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.
