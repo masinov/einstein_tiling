@@ -338,3 +338,17 @@ triangles. Applying the same marked split to `M` changes the actual
 S0. Tiny generating triangles collapse at the limit and add possible point
 contacts, so a complete finite SAB/vertex language with a total source decoder
 remains the separate open lemma L0.
+
+## Overlap semantics (session 70)
+
+The source sentence permitting overlapping tiny triangles applies to the
+auxiliary first-order Sturmian-triangle patches `P1,P2,P3` used to establish
+the BD correspondence. It does not describe the final three physical
+patch-tiles: the source first says the isometric cells provide a tiling and
+later concludes that the physical Figure 37 tile set tiles the plane.
+
+The overlap warning still creates a real provenance obligation. O0 contracts
+each disjoint auxiliary tiny-overlap disk to a vertex decorated by its
+participants and cyclic order. The quotient remains a plane and retains the
+BD incidence. L0 is correspondingly factorized into O0, physical point-star
+transport I0, and total decoder D0. Only O0 is currently proved.

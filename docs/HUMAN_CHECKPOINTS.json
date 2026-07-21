@@ -9,10 +9,10 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-21-04",
+    "id": "HC-2026-07-21-05",
     "date": "2026-07-21",
-    "through_session": 66,
-    "reason": "Sessions 64--66 were independently reviewed; the user authorized the proposed bounded 38-address collar/port table with a fixed collar-radius stop rule. Session 67 then invalidated that premise against the primary source before enumeration (ERR-006).",
+    "through_session": 69,
+    "reason": "Sessions 67--69 and the P0/G0 corrections were independently reviewed; the user explicitly authorized an on-paper L0 design with overlap-to-point conversion as a named obligation and no atlas/radius escalation.",
     "artifact_bytes": {
       "docs/notebook/assets": 6756125300,
       "data": 1793649957

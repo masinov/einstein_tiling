@@ -31,7 +31,7 @@ def test_checkpoint_policy_is_bounded_and_current():
     assert data["schema_version"] == 1
     assert 1 <= data["policy"]["max_research_sessions"] <= 3
     assert data["policy"]["max_new_artifact_bytes"] <= 1024**3
-    assert data["latest"]["through_session"] == 66
+    assert data["latest"]["through_session"] == 69
 
 
 def test_stm1_source_correction_is_fail_closed():
@@ -42,7 +42,7 @@ def test_stm1_source_correction_is_fail_closed():
     assert "ST-M1.E∞" in ledger
     assert "partial: G0 geometry proved; blocked on L0 language transport" in ledger
     assert "ST-M1.L0" in ledger
-    assert "open; next blocker, no enumeration authorized" in ledger
+    assert "open; factorized as O0 proved, I0/D0 open; no enumeration authorized" in ledger
 
 
 def test_gate_rejects_template_and_accepts_completed_record(tmp_path):

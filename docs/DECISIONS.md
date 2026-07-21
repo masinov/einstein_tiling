@@ -1783,3 +1783,33 @@ triangles to vertices and can create new point contacts. A finite transported
 SAB/vertex language must still prove that every equal-support colored tiling
 decodes to the original source and excludes spurious recombinations. No atlas
 was enumerated, and no radius escalation is authorized. HC-04 is exhausted.
+
+## D-0079 (2026-07-21) — Separate auxiliary overlaps from physical tilings
+
+The user authorized HC-05 for on-paper L0 work, with the review's
+overlap-to-point warning as a mandatory obligation. Reading the cited source
+sentence in its full construction context corrects its scope.
+
+The objects permitted to overlap on tiny triangles are the auxiliary
+first-order Sturmian-triangle patches `P1,P2,P3` used to prove the bounded-
+displacement correspondence between the `S` and `L` hexagon centers. They are
+introduced after the physical isometric cells, which the source explicitly
+says “provide a tiling,” and before the conclusion that the resulting tile
+set in Figure 37 admits tilings of the plane. Thus the final three physical
+patch-tiles are ordinary unions of a cellulation; the cited sentence does not
+say that their interiors overlap.
+
+The warning remains mathematically relevant. The auxiliary overlaps certify
+coordination of the BD assignment, and their tiny triangular supports shrink
+to vertices under normalized equidistancing. ST-M1.O0 records the correct
+bridge: contract each locally finite, interior-disjoint tiny overlap disk to
+a vertex while retaining its participant set and cyclic order as a finite
+vertex decoration. The quotient is again a plane, auxiliary patch interiors
+become disjoint, and the decorated vertex star retains exactly the collapsed
+incidence.
+
+L0 is therefore split into: O0 auxiliary overlap contraction; I0 transport
+of the final physical edge/vertex incidence; and D0 a total finite local
+decoder on the full limiting language. This is a proof design, not an atlas
+enumeration. Failure of any component closes the current equal-support route;
+it may not be answered by silently weakening the physical/source distinction.

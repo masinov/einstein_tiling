@@ -63,6 +63,9 @@ reviewable proof or certificate.
 - `09_stm1_symbolic_quotient.md` — the full-local-closure safety criterion and
   the source-backed failure of the natural `S/M/L` quotient; application to a
   finite address table is blocked until a valid equal-support source exists.
+- `10_stm1_limit_language.md` — the distinction between auxiliary overlapping
+  Sturmian-triangle patches and the physical cell tiling, O0's decorated-
+  vertex contraction, and the open I0/D0 obligations composing L0.
 - `W1_TRANSFER_SPEC.md` — the soundness/completeness contract for the exact
   cylinder transfer engine and its certificates.
 - `PROOF_LEDGER.md` — stable IDs, scope, status, dependencies, and artifacts.
