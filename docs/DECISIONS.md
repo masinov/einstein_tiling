@@ -2050,3 +2050,19 @@ one large type `tau` occurring in it, map its 30 address types and the two
 small types onto the parity core, and require G6's lift to contain `tau`.
 This answers the audit's quantifier note without asserting universal
 occurrence of either large type.
+
+## D-0090 (2026-07-21) — `L/2L` is a gauge, not a carrier state, without a local anchor
+
+The triangular lattice quotient `L/2L` has the desired four-element structure
+but the bare frame cannot select its absolute cosets locally. Every primitive
+`L` translation fixes the unmarked frame. Translation equivariance forces any
+local output to inherit that period, whereas the coset coloring is changed by
+the translation and has period lattice `2L`. N8 records the contradiction.
+
+Integrating quotient-valued edge increments gives the same result: vertex
+phases are determined only up to a global additive element. A future carrier
+may use `L/2L` only if additional bounded contact geometry anchors the coset
+and prevents gauge-related distinct source decodings of the same unmarked
+tiling. Without that anchor, the quotient is bookkeeping and does not enforce
+K1P parity. The unanchored translation-phase option is closed; contextual
+stars and genuine ternary junctions remain open.

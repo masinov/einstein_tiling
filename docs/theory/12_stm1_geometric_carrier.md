@@ -265,3 +265,58 @@ G6 must lift a source tiling containing type `tau`; `y_0` is the intended
 witness. Other S0 tilings need not contain `tau` for K1P or the total decoder
 to remain defined. This closes the quantifier ambiguity without asserting
 that both large types occur in every tiling.
+
+## 11. The natural `L/2L` phase
+
+Let `L` be the triangular translation lattice of the recovered frame. Its
+index-four quotient
+
+```
+L/2L is isomorphic to (Z/2)^2
+```
+
+has the right cardinality and group structure for K2H. It does not, by
+itself, give a local state of an unmarked carrier.
+
+### ST-M1.N8 — unanchored lattice-coset no-go
+
+There is no translation-equivariant local rule from the bare unmarked
+triangular frame to its absolute `L/2L` coset coloring.
+
+### Proof
+
+Let `T_frame` be the bare frame. Every primitive `u in L` is a period:
+`T_frame+u=T_frame`. If a translation-equivariant local map `d` produced the
+coset coloring, then
+
+```
+d(T_frame)+u = d(T_frame+u) = d(T_frame).
+```
+
+Thus its output would have every `u in L` as a period. The `L/2L` coset
+coloring has period lattice `2L`, not `L`; a primitive vector interchanges
+cosets. Contradiction. \(\square\)
+
+The same obstruction appears as gauge ambiguity. Integrating the natural
+`L/2L` edge increments on a connected contact graph determines a vertex
+phase only up to one global additive element of `L/2L`. Edge differences do
+not choose an origin.
+
+N8 does not rule out a carrier whose **additional** bounded contact geometry
+breaks the fourfold ambiguity. In that event the phase is a contextual
+star invariant, not a consequence of the triangular frame alone. The proof
+must display the bounded geometric anchor and show that all four gauge shifts
+cannot describe the same unmarked tiling with different K1P decodings.
+
+## 12. What `L/2L` can and cannot contribute
+
+An unobservable coset label cannot enforce the parity relation. If it is used
+only as an existential proof variable, the visible three side modes must
+already satisfy even parity, which is exactly the N5 obligation. If a bounded
+star uniquely determines it, that star—not the abstract quotient—is the
+geometric mechanism.
+
+Consequently the natural quotient is useful vocabulary for a future anchor
+but does not solve K2G. A valid design must add one locally visible feature
+that distinguishes the four phases or replace the auxiliary route by a
+genuine ternary exact-cover junction.
