@@ -141,6 +141,23 @@
       "review_status": "priority-deep-read"
     },
     {
+      "id": "batle-bednorz-qecc-2026",
+      "title": "Quantum Error-Correcting Codes from Aperiodic Monotiles: the Hat and the Spectre",
+      "authors": ["Josep Batle", "Adam Bednorz"],
+      "year": 2026,
+      "evidence_class": "preprint",
+      "venue": "arXiv preprint, v1 submitted 2026-07-16",
+      "arxiv": "2607.15326",
+      "doi": null,
+      "record_url": "https://arxiv.org/abs/2607.15326",
+      "download_url": "https://arxiv.org/pdf/2607.15326",
+      "local_filename": "2607.15326-hat-spectre-qecc.pdf",
+      "themes": ["Hat", "Spectre", "local recoverability", "exact SAT certificate", "quantum error correction"],
+      "workstreams": ["C", "D"],
+      "review_status": "targeted-computational-audit",
+      "review_note": "docs/literature/reviews/W3_CERTIFICATE_METHOD.md"
+    },
+    {
       "id": "walton-recognisability-2026",
       "title": "Recognisability for Generalised Hierarchical Pattern Spaces of Finite Local Complexity",
       "authors": ["James J. Walton"],
@@ -289,7 +306,8 @@
       "local_filename": "2506.19362-sturmian-lattices-full.pdf",
       "themes": ["Sturmian lattices", "quadratic irrationals", "aperiodic tile sets", "bounded displacement", "hierarchy"],
       "workstreams": ["A", "C"],
-      "review_status": "frontier-priority"
+      "review_status": "full-text-audited",
+      "review_note": "docs/literature/reviews/STURMIAN_MONOTILE_ENCODING.md"
     },
     {
       "id": "akiyama-hamada-ito-announcement-2026",
@@ -322,7 +340,59 @@
       "local_filename": "2409.15880-geometry-to-groups.pdf",
       "themes": ["poly-K tiles", "group monotiles", "Coxeter groups", "symbolic simulation", "grid symmetry"],
       "workstreams": ["A", "D"],
-      "review_status": "priority-deep-read"
+      "review_status": "targeted-theorem-audit",
+      "review_note": "docs/literature/reviews/STURMIAN_MONOTILE_ENCODING.md"
+    },
+    {
+      "id": "goodman-strauss-matching-1998",
+      "title": "Matching Rules and Substitution Tilings",
+      "authors": ["Chaim Goodman-Strauss"],
+      "year": 1998,
+      "evidence_class": "peer-reviewed theorem",
+      "venue": "Annals of Mathematics 147(1), 181-223",
+      "arxiv": null,
+      "doi": "10.2307/120988",
+      "record_url": "https://annals.math.princeton.edu/articles/12903",
+      "download_url": null,
+      "local_filename": null,
+      "themes": ["matching rules", "substitution tilings", "hierarchy", "local rules"],
+      "workstreams": ["C"],
+      "review_status": "abstract-and-scope-verified",
+      "review_note": "docs/literature/reviews/STURMIAN_MONOTILE_ENCODING.md"
+    },
+    {
+      "id": "fletcher-atlas-2010",
+      "title": "Aperiodic Tilings with One Prototile and Low Complexity Atlas Matching Rules",
+      "authors": ["David Fletcher"],
+      "year": 2010,
+      "evidence_class": "preprint",
+      "venue": "arXiv preprint",
+      "arxiv": "1003.4909",
+      "doi": null,
+      "record_url": "https://arxiv.org/abs/1003.4909",
+      "download_url": "https://arxiv.org/pdf/1003.4909",
+      "local_filename": "1003.4909-atlas-matching-rules.pdf",
+      "themes": ["atlas matching rules", "Wang tiles", "prototile reduction", "MLD"],
+      "workstreams": ["A", "C"],
+      "review_status": "full-text-audited",
+      "review_note": "docs/literature/reviews/STURMIAN_MONOTILE_ENCODING.md"
+    },
+    {
+      "id": "vereshchagin-matching-2026",
+      "title": "Matching Rules for Substitution and Hierarchical Tilings for any Substitution with Finite Local Complexity",
+      "authors": ["Nikolay Vereshchagin"],
+      "year": 2026,
+      "evidence_class": "preprint",
+      "venue": "arXiv preprint, submitted 2026-06-23",
+      "arxiv": "2606.25005",
+      "doi": null,
+      "record_url": "https://arxiv.org/abs/2606.25005",
+      "download_url": "https://arxiv.org/pdf/2606.25005",
+      "local_filename": "2606.25005-matching-rules-flc.pdf",
+      "themes": ["matching rules", "substitution tilings", "hierarchical tilings", "FLC", "sofic tilings"],
+      "workstreams": ["C"],
+      "review_status": "abstract-verified",
+      "review_note": "docs/literature/reviews/STURMIAN_MONOTILE_ENCODING.md"
     },
     {
       "id": "jungck-biswas-five-polykites-2025",

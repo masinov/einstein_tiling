@@ -7,6 +7,17 @@ is the vendored Spectre generator. The legacy “finalist” is now identified a
 the known Turtle (ERR-003/D-0048); this gate supports the general certificate
 method rather than a Turtle novelty claim.
 
+> **Disposition (D-0070, 2026-07-21):** W3 is closed as a novelty branch.
+> The exact finite results below are retained as a machine-readable partial
+> reconstruction of the published Spectre hierarchy and as verifier controls.
+> Reduced-patch pruning, forced grouping, all-whole-plane hierarchy,
+> matching-rule encodings, and finite-state refinement all have controlling
+> prior art. T3.1 has no authorized novelty claim without a generic
+> soundness/completeness theorem and validation on structurally independent
+> systems. The 80 D4 contexts will not be extended merely to finish this
+> known-tile reconstruction. See
+> `docs/literature/reviews/W3_CERTIFICATE_METHOD.md`.
+
 ## Literature crosswalk
 
 W3's five clauses are repository certificate fields, not new names for an

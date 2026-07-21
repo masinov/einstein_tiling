@@ -82,5 +82,11 @@ fail-closed: `n<=24` is ineligible, and `n>24` remains blocked until the
   (`conway-lagarias-tiling-groups-1990`,
   `lidjan-baralic-flat-surface-homology-2021`). Its thin Turtle formula is a
   worked control, not a new invariant method or a new aperiodicity theorem.
+- The outside-horizon Sturmian encoding audit
+  (`akiyama-hamada-ito-sturmian-2026`,
+  `goodman-strauss-matching-1998`, `fletcher-atlas-2010`,
+  `vereshchagin-matching-2026`, `coulbois-et-al-groups-2026`) is deliberately
+  outside this finite polykite baseline. It does not reopen enumeration; see
+  `reviews/STURMIAN_MONOTILE_ENCODING.md`.
 - W4 may study stronger all-tilings rigidity or extensions to other
   substrates, but it is no longer the missing bridge for polykite periodicity.

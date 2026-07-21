@@ -35,41 +35,56 @@ assumptions, exact claims used here, and a repository impact decision.
    audit completed 2026-07-21. W2's GF(2)/integer incidence certificates are
    classical coloring/tile-homology obstructions; the explicit Turtle formula
    remains only a worked control. See `reviews/W2_ABELIAN_INVARIANTS.md`.
+7. `akiyama-hamada-ito-sturmian-2026`,
+   `coulbois-et-al-groups-2026`, `fletcher-atlas-2010`, and the scope of
+   `goodman-strauss-matching-1998` / `vereshchagin-matching-2026` —
+   tile-set-to-monotile go/no-go completed 2026-07-21. The finite Sturmian
+   construction does not already give a shape-only monotile; nearby machinery
+   preserves types, retains atlas rules, or changes the ambient group. ST-M1
+   survives as a theorem-design question. See
+   `reviews/STURMIAN_MONOTILE_ENCODING.md`.
+8. `smkgs-chiral-2024`, `cheritat-spectre-clusters-2024`,
+   `walton-recognisability-2026`, `goodman-strauss-matching-1998`,
+   `vereshchagin-matching-2026`, `tatham-transducers-2026`, and the adjacent
+   `batle-bednorz-qecc-2026` certificate — adversarial W3 method-novelty audit
+   completed 2026-07-21. The mathematics and finite-state architecture are
+   controlled prior art; the exact verifier implementation remains a
+   reproducibility contribution. See `reviews/W3_CERTIFICATE_METHOD.md`.
 
 ## Immediate: research-return decision
 
-The classified-corpus benchmark assessment is closed with a no-go on new
-ablations; see `docs/benchmarks/E1_CLASSIFIED_CORPUS_ASSESSMENT.md`. At the
-human checkpoint, select one outside-horizon direction for a targeted
-primary-source audit before implementation. W2 quotient work and W3 Spectre
-radius work remain frozen.
+The classified-corpus benchmark assessment, W2 novelty branch, and W3 novelty
+branch are closed. The outside-horizon Sturmian monotile audit is a go for
+theorem design only: no runner or shape search precedes a plausible
+no-spurious-tilings lemma. Obtain an explicit decision before beginning that
+proof design.
 
 ## Next: machine representations
 
-7. `labbe-selinger-markov-2026` — reproduce the Hat SFT/toral coding and
+9. `labbe-selinger-markov-2026` — reproduce the Hat SFT/toral coding and
    record its explicit Turtle and Spectre/CASPr open questions.
-8. `tatham-transducers-2026` — reproduce one Hat address/neighbor transducer
+10. `tatham-transducers-2026` — reproduce one Hat address/neighbor transducer
    and test exact random access against our generator.
-9. `james-smith-rhombic-2024` — compare the rhombille coloring game and
+11. `james-smith-rhombic-2024` — compare the rhombille coloring game and
    Fibonacci/Sturmian structure with the Akiyama--Araki route.
-10. `akiyama-hamada-ito-sturmian-2026` — reproduce one small quadratic-slope
-   tile-set construction; treat the July announcement only as a pointer.
-11. `coulbois-et-al-groups-2026` — formalize the poly-`K` correspondence for
-   our Laves substrate before using group subsets as candidates.
+12. `akiyama-hamada-ito-sturmian-2026` — do not reproduce yet; first complete
+   the ST-M1 congruence/no-spurious-tilings theorem design.
+13. `coulbois-et-al-groups-2026` — use as a cardinality/acting-group boundary,
+   not as a tile-set-to-Euclidean-monotile conversion.
 
 ## Characterization controls
 
-12. `baake-gaehler-sadun-hat-2025` — record the exact deformation,
+14. `baake-gaehler-sadun-hat-2025` — record the exact deformation,
     conjugacy, MLD, cohomology, and model-set statements.
-13. `baake-et-al-spectre-order-2025` — do the analogous CASPr audit.
-14. `baake-et-al-diffraction-2025` — compare explicit Fourier modules and
+15. `baake-et-al-spectre-order-2025` — do the analogous CASPr audit.
+16. `baake-et-al-diffraction-2025` — compare explicit Fourier modules and
     coefficients with the limited outputs of A4.
 
 ## Supporting audits
 
-15. `kaplan-path-review-2025` — retain as author-review evidence only; locate
+17. `kaplan-path-review-2025` — retain as author-review evidence only; locate
     primary artifacts before promoting quantitative search claims.
-16. `jungck-biswas-five-polykites-2025` — use as a secondary pointer only and
+18. `jungck-biswas-five-polykites-2025` — use as a secondary pointer only and
     verify named-tile classifications in primary constructions.
 
 The two SMKGS primary papers are already the controlling full-text audits for

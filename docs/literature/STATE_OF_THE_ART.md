@@ -1,6 +1,6 @@
 # State of the art: planar aperiodic monotiles
 
-**Snapshot:** 2026-07-20  
+**Snapshot:** 2026-07-21
 **Scope:** connected, unmarked tiles in the Euclidean plane, with emphasis on
 polykites, Hat--Turtle--Spectre systems, and methods usable by this repository.
 
@@ -51,6 +51,15 @@ whole-plane tilings (`smkgs-hat-2024`, `smkgs-chiral-2024`,
 Our W3 certificate schema follows this separation. A generated large patch is
 not a substitute for steps 2--4.
 
+The adversarial method audit now closes W3 as a novelty branch. Smith et al.'s
+original Spectre proof already uses generated local patch lists, iterative
+overlap-based extendability pruning, and reduced 5-patches to force unique
+parent assignment; Chéritat supplies the full all-whole-plane correspondence.
+Goodman--Strauss/Vereshchagin and Tatham cover the general matching-rule and
+finite-state encoding ideas. W3 remains an exact machine-readable partial
+reconstruction, not a new aperiodicity theorem or demonstrated generic method.
+See `reviews/W3_CERTIFICATE_METHOD.md`.
+
 The first ancestry-blind straight-Spectre control now enumerates 166 complete
 edge-to-edge central coronas. Exact ring completion leaves 30 through radius
 two and 21 through radius three, while the substitution controls contain 18.
@@ -75,6 +84,13 @@ aperiodicity. Chéritat's all-whole-plane local grouping is the direct control
 for that route. See `reviews/WALTON_RECOGNISABILITY.md` and
 `reviews/CHERITAT_SPECTRE_CLUSTERS.md`.
 
+Machine-readable certificates now also have an adjacent primary control.
+Batle--Bednorz publish exact JSON data and a Python verifier for exhaustive
+unique retiling of a 2,490-hat region (`batle-bednorz-qecc-2026`). That finite
+local-recoverability result is not universal Spectre recognisability, but it
+precludes broad novelty claims based only on the use of certificate files and
+independent checking.
+
 ### Arithmetic and Sturmian structure
 
 Akiyama--Araki derive Turtle tilings using Golden Hex substitutions, Golden
@@ -92,6 +108,20 @@ tile sets from quadratic-irrational Sturmian data
 `akiyama-hamada-ito-announcement-2026`). These are tile sets rather than a new
 monotile family, so any monotile consequence would require an additional
 encoding theorem.
+
+A full-text audit now sharpens that boundary. The construction treats color
+and Ammann-bar adjacency as part of the tile, can produce disconnected
+supports, and explicitly asks whether another monotile and disk-like tiles can
+be obtained. Its optimized `sqrt(2)-1` example uses three topological-disk
+prototiles and has positive entropy. Standard geometric matching rules,
+one-prototile atlas rules, and poly-`K` groupification do not supply the missing
+shape-only congruence theorem: they respectively preserve tile types, retain
+external local rules, or preserve cardinality/change the acting group
+(`goodman-strauss-matching-1998`, `fletcher-atlas-2010`,
+`vereshchagin-matching-2026`, `coulbois-et-al-groups-2026`). The precise open
+target is a finite-radius factor from every tiling by one unmarked disk into
+the irrational Sturmian system; see
+`reviews/STURMIAN_MONOTILE_ENCODING.md`.
 
 ### Geometric deformation and incommensurability
 
@@ -237,9 +267,13 @@ claim.
 
 ## 6. Open directions supported by this survey
 
-- Derive parent/component existence from the 18 surviving physical Spectre
-  cases without assuming recovered parents, then prove unique exact partition
-  and same-domain iteration; align the cases with Chéritat's interfaces.
+- On paper first, design a faithful one-shape encoding of the three-prototile
+  `sqrt(2)-1` Sturmian system. The decisive lemma must exclude every
+  shape-only tiling that fails to decode; an atlas rule or one generated patch
+  is insufficient.
+- Preserve the W3 Spectre certificates as controls. Reopen them only for a
+  generic, on-paper certificate theorem satisfying D-0070, not to eliminate
+  another finite context frontier.
 - Add exact `Tile(a,b)` family recognition, then broaden identity to local
   languages and symbolic factors.
 - Extend the completed Kaplan isohedral control to new substrates only when a

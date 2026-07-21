@@ -54,13 +54,16 @@ hull. D4's finite maps are now explicit as well: the 17 physical-interface
 states and 17 A6 collars are bijective, all component boundaries round-trip,
 and a determinant-one phase map reconstructs three consecutive generated
 physical levels. Full D4 remains partial because the abstract state SFT is an
-over-approximation; 80 radius-two context seeds still require comparison with
-the physical-derived hull.
+over-approximation; 80 radius-two context seeds have not been equated with the
+physical-derived hull. D-0070 freezes that finite frontier: completing it
+would reconstruct a published hierarchy without a currently defensible
+method-novelty theorem.
 
 ## Relation to the new radius-five result
 
 The ancestry-free computation proves that the three non-L18 coronas have exact
 physical frontier `3→89→368→282→0`. The ten-case bridge now composes this
 finite theorem with the published unrestricted domain. Further blind
-polygon-ring expansion is unnecessary; the next structural task is the pinned
-D4 context comparison for those 80 seeds.
+polygon-ring and D4-context expansion is closed; see
+`W3_CERTIFICATE_METHOD.md` for the prior-art decision and reopening
+conditions.

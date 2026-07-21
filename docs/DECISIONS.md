@@ -1506,3 +1506,57 @@ Its expected research return does not justify another run. No E1 ablation
 campaign is authorized. E1 is closed as validation/postmortem, and the next
 research branch must begin outside the classified polykite catalog after a
 primary-source go/no-go audit.
+
+## D-0069 (2026-07-21) — Sturmian monotile encoding survives only as ST-M1
+
+The full Akiyama--Hamada--Ito construction gives quadratic-slope aperiodic
+finite tile sets with colors/Ammann-bar matching rules; it does not give a new
+monotile family. Its optimized `sqrt(2)-1` system has three disk-like
+prototiles and positive entropy, while its open-problem section explicitly
+asks whether another monotile and disk-like general constructions can be
+obtained.
+
+Nearby general results do not silently close this gap. Geometric matching
+rules preserve multiple tile types; atlas reduction retains external legal
+patch rules; the poly-`K` correspondence preserves tileset cardinality and may
+change the acting group. Accordingly, the only authorized continuation is the
+on-paper theorem candidate ST-M1: construct one connected unmarked disk whose
+every tiling has a translation-equivariant finite-radius factor onto the
+`sqrt(2)-1` Sturmian system. The central obligations are congruence encoding
+and exclusion of all spurious unmarked tilings. No runner, search, or generated
+patch is authorized until a plausible proof plan for both obligations exists.
+
+This decision and its dated permitted/forbidden claims are recorded in
+`docs/literature/reviews/STURMIAN_MONOTILE_ENCODING.md`. The adversarial W3
+method-novelty audit remains next, as required by the human checkpoint review.
+
+## D-0070 (2026-07-21) — Close W3 as a novelty branch
+
+The adversarial W3 audit finds no current method-novelty proposition. The
+original chiral-Spectre proof already uses computer-generated reduced patch
+lists, iterative overlap-based deletion, reduced 5-patches and forced unique
+supertile assignment. Chéritat proves the complete all-whole-plane faithful
+component/interface chain and iterable unique hierarchy. Walton supplies the
+general recognisability framework, while Goodman--Strauss/Vereshchagin and
+Tatham cover finite local matching-rule and finite-state substitution
+encodings.
+
+W3's exact JSON schemas, independent cold verifiers, tamper tests and explicit
+obligation ledger remain useful reproducibility engineering. They do not yet
+form a new general method: only the published Spectre system has been treated,
+there is no generic soundness/completeness theorem for the schema, and the
+remaining 80 D4 contexts belong to an abstract over-approximation rather than
+the physical hull. Eliminating them would complete another executable
+reconstruction of a known theorem.
+
+A July 2026 adjacent preprint by Batle and Bednorz also publishes exact JSON
+certificates and a Python verifier for finite Hat retiling. It does not solve
+Spectre recognisability, but independently forbids broad novelty claims about
+machine-readable certificates in Hat/Spectre computation.
+
+No further W3 radius, seed, corona or context computation is authorized.
+Reopening requires an on-paper generic theorem over a stated class, a proved
+certificate soundness map to whole-plane conclusions, explicit control of
+spurious abstract states, and validation on at least two structurally
+independent systems. Permitted and forbidden claims are fixed in
+`docs/literature/reviews/W3_CERTIFICATE_METHOD.md`.

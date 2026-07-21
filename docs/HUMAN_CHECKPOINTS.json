@@ -9,13 +9,13 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-21-01",
+    "id": "HC-2026-07-21-02",
     "date": "2026-07-21",
-    "through_session": 57,
-    "reason": "Post-ERR-005 research reset reviewed; user explicitly instructed continuation.",
+    "through_session": 60,
+    "reason": "W2 and E1 closure decisions independently reviewed; user explicitly authorized the audit-only Sturmian tile-set-to-monotile checkpoint with W3 audit queued next.",
     "artifact_bytes": {
-      "docs/notebook/assets": 6756090472,
-      "data": 1774854725
+      "docs/notebook/assets": 6756125300,
+      "data": 1791354773
     }
   }
 }

@@ -90,7 +90,7 @@ not polished as a novelty claim. W2 escalation is closed. See
 | A3 large disks/nested cores | finite continuability evidence | retain demonstrations; do not infer plane tilability |
 | A4 diffraction | calibrated prioritization heuristic | retain E4 control; no proof use |
 | W2 index `40..60` exclusions | exact finite theorems for known Turtle | archive/freeze; no index escalation |
-| W3 Spectre local languages | partial reconstruction of a published hierarchy | freeze pending a concrete method-novelty proposition |
+| W3 Spectre local languages | exact partial reconstruction of a published hierarchy; no generic soundness theorem | close novelty branch; preserve as reproducibility/control evidence |
 
 ## Retire or suspend
 
@@ -106,11 +106,18 @@ not polished as a novelty claim. W2 escalation is closed. See
 
 ## Next decision sequence
 
-1. At the human checkpoint, choose one genuinely outside-horizon direction
-   only after a targeted primary-source go/no-go audit. Candidate families
-   include a precisely defined poly-`K`, Sturmian-encoding, or new-substrate
-   family motivated by a theorem rather than raw enumeration.
-2. Treat the `Tile(a,b)` recognizer and release packaging as bounded
+1. The first outside-horizon audit is complete. ST-M1—the construction of one
+   unmarked disk whose complete tiling hull locally factors onto the
+   `sqrt(2)-1` Sturmian system—survives as a theorem-design question. No run or
+   shape search is authorized before a plausible congruence encoder and
+   no-spurious-tilings lemma exist on paper. See
+   `reviews/STURMIAN_MONOTILE_ENCODING.md`.
+2. The adversarial W3 audit is complete and negative for current method
+   novelty. Do not reopen the 80-context frontier; see
+   `reviews/W3_CERTIFICATE_METHOD.md` and D-0070.
+3. Obtain an explicit decision before beginning the on-paper ST-M1 proof
+   design.
+4. Treat the `Tile(a,b)` recognizer and release packaging as bounded
    infrastructure tasks, not substitutes for the next mathematical question.
 
 The controlling admission rule is Section 0 of `NOVELTY_PROTOCOL.md`.

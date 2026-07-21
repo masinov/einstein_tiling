@@ -136,7 +136,9 @@ component boundary round-trips, and determinant-one phase maps reconstruct
 three consecutive generated physical levels. This reproduces the coordinate
 role of the arrows in Figure 137, but not yet their whole-plane context
 classification. The abstract radius-one state SFT admits 536 nonphysical
-output-overlap stars; 80 seeds survive radius two. Eliminating or physically
-identifying those 80 is the remaining independent analogue of Chéritat's
-faithful all-tilings equivalence. See `SMKGS_CHIRAL_SPECTRE.md` for the original
-paper's Theorem 3.1 route through aligned hat–turtle tilings.
+output-overlap stars; 80 seeds survive radius two. These are a documented gap
+in the independent reconstruction, not a gap in Chéritat's theorem and not an
+authorization for another finite expansion. D-0070 closes the W3 novelty
+branch after the adversarial comparison in `W3_CERTIFICATE_METHOD.md`. See
+`SMKGS_CHIRAL_SPECTRE.md` for the original paper's Theorem 3.1 route through
+aligned hat–turtle tilings.

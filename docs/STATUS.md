@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 59)
+**Last updated:** 2026-07-21 (session 62)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -31,17 +31,18 @@
 | E4 — full fingerprint calibration gate | §8 E4 | ✅ passed (sessions 05–06) |
 | M5 — A6 hierarchy mining | §4 A6 | ✅ done v0; recursive, stationary-collar and SAT forcing gate passed |
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
-| W3 — substitution certificates | theory program v0.2 | ⏸ frozen pending a concrete method-novelty proposition; the exact Spectre finite results remain controls against published hierarchy work, not an invitation to another radius (sessions 39, 45–56) |
+| W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | 📝 prior-art go; theorem design only, no construction/search authorized (D-0069) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
 
 ## What exists and is verified
 
-- **Versioned literature subsystem:** 22 source records distinguish
+- **Versioned literature subsystem:** 26 source records distinguish
   peer-reviewed theorems, computational methods, preprints, reviews and
-  secondary evidence; 17 open PDFs plus text extracts are reproducibly cached
+  secondary evidence; 23 open PDFs plus text extracts are reproducibly cached
   outside Git. The state-of-the-art map, methods-to-code matrix, reading queue,
   and novelty protocol make exact shape novelty, tiling-system novelty,
   aperiodicity, and method novelty separate claims. Turtle is now a blinded
@@ -66,6 +67,14 @@
   injectivity is equivalent to already excluding periodic hull elements,
   whereas Chéritat directly proves total unique grouping for every tiling.
   Certificate v2 cold-verifies and honestly remains partial (D-0053).
+- **W3 method-novelty audit:** the reduced-patch/overlap-deletion/forced-parent
+  architecture is already explicit in the original Spectre proof, Chéritat
+  supplies the all-whole-plane equivalence, and the matching-rule and
+  finite-state literature covers the general encoding ideas. A new July 2026
+  Hat paper also publishes exact JSON retiling certificates and a verifier.
+  W3 is therefore an exact reproducibility/control implementation, not a new
+  aperiodicity theorem or established general method. The 80 abstract D4
+  contexts will not be extended (D-0070).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -463,11 +472,14 @@ Research is under the 2026-07-21 reset recorded in
    control. W2 escalation is frozen.
 2. The E1 benchmark assessment is **closed no-go** for new ablations. Package
    the exact reproduction fixtures and postmortem during release work only.
-3. Stop at human checkpoint `HC-2026-07-21-01` (session +3) and obtain an
-   explicit new checkpoint before choosing an outside-horizon research branch.
+3. Human checkpoint `HC-2026-07-21-02` was explicitly authorized after review
+   of sessions 58--60; session 61 is the first session under it.
 4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
    escalation, and all Spectre radius escalation frozen.
-5. After checkpoint approval, choose a genuinely
-   outside-horizon candidate family from a literature-backed theorem. The
-   `Tile(a,b)` recognizer remains required infrastructure before any future
-   polykite novelty promotion, but is not itself the next research result.
+5. Checkpoint `HC-2026-07-21-02` is active. The two authorized audits are
+   complete: ST-M1 survives as an on-paper theorem-design target, while W3 is
+   closed as a novelty branch. No runner, shape search, or Spectre context
+   extension is authorized. Obtain an explicit decision before beginning the
+   ST-M1 congruence/no-spurious-tilings proof design. The `Tile(a,b)` recognizer
+   remains required infrastructure before any future polykite novelty
+   promotion, but is not itself the next research result.
