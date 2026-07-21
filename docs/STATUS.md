@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 72)
+**Last updated:** 2026-07-21 (session 73)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⛔ minimal colored source S0 closed in proof draft via P0/G0/O0/I0/D0; unmarked construction blocked at safe contact-star quotient K1, with no geometry admitted (D-0077--D-0082) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⛔ minimal colored S0 and lossless contact compiler K1C closed in proof draft; unmarked construction blocked at a nontrivial safe quotient K1, with no geometry admitted (D-0077--D-0083) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -135,6 +135,12 @@
   restores rational periodic tilings, and independent corridor rails admit
   periodic products. The full addressed S0 presentation is now available,
   but no smaller future-equivalent K1 quotient or collar table is established.
+- **ST-M1 lossless contact compiler:** directed half-contact records name both
+  addressed endpoint states and sides; the three records incident to one
+  triangle share a center state, and legal cyclic corner words retain the
+  vertex rule. Encoding and decoding are inverse radius-one maps on the full
+  contact-rule space. K1C is a standard symbolic recoding, not a nontrivial
+  quotient or geometric carrier (D-0083).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -532,16 +538,16 @@ Research is under the 2026-07-21 reset recorded in
    control. W2 escalation is frozen.
 2. The E1 benchmark assessment is **closed no-go** for new ablations. Package
    the exact reproduction fixtures and postmortem during release work only.
-3. Human checkpoint `HC-2026-07-21-04` was explicitly authorized after review
-   of sessions 64--66 and is closed. `HC-2026-07-21-05` was explicitly
-   authorized after review of sessions 67--69; sessions 70--72 exhaust its
-   three slots with O0, I0 and D0, with no experiment or large artifact.
+3. Human checkpoint `HC-2026-07-21-05` is closed after sessions 70--72. The
+   user explicitly authorized `HC-2026-07-21-06` after independent review and
+   the D-0082 clarifications; session 73 uses its first slot for lossless K1C,
+   with no experiment or large artifact.
 4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
    escalation, and all Spectre radius escalation frozen.
-5. **Stop for review.** Minimal colored L0/S0 now closes in proof draft. K1 is
-   the next theorem blocker: a safe future-equivalence quotient of the full
-   addressed source. HC-05 is exhausted, so no K1 table, geometry, shape
-   search or experiment is authorized before a new human checkpoint.
+5. **K1 remains on paper.** The next HC-06 unit may prove the finite-radius
+   local-inverse/future-equivalence criterion for a quotient of K1C. It may
+   not choose a radius, enumerate collars, draw a carrier, or run an
+   experiment.
 6. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.

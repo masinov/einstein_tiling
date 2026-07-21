@@ -58,15 +58,17 @@ reviewable proof or certificate.
   conditions for a coupled contact-star encoder.
 - `08_stm1_equal_support_compiler.md` — the proof-draft compiler from
   connected common-cell macrotiles to one colored support, P0's corrected
-  slope intersection, and G0's `30,30,2` common-support geometry;
-  `E-infinity` remains blocked on the complete limiting language L0.
+  slope intersection, G0's `30,30,2` common-support geometry, and the later
+  corrected E-infinity closure through L0.
 - `09_stm1_symbolic_quotient.md` — the full-local-closure safety criterion and
-  the source-backed failure of the natural `S/M/L` quotient; application to a
-  finite address table is blocked until a valid equal-support source exists.
+  the source-backed failure of the natural `S/M/L` quotient; it now governs
+  reductions of the valid addressed equal-support source.
 - `10_stm1_limit_language.md` — the distinction between auxiliary overlapping
   Sturmian-triangle patches and the physical cell tiling, O0's decorated-
   vertex contraction, the three-coset proof of unique physical provenance
   I0, and the face-cocycle/global-gap decoder D0 closing minimal colored L0.
+- `11_stm1_contact_kernel.md` — the lossless contact-incidence compiler K1C
+  and the exact local-closure boundary for any future nontrivial quotient.
 - `W1_TRANSFER_SPEC.md` — the soundness/completeness contract for the exact
   cylinder transfer engine and its certificates.
 - `PROOF_LEDGER.md` — stable IDs, scope, status, dependencies, and artifacts.

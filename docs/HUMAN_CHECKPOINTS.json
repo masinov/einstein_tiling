@@ -9,10 +9,10 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-21-05",
+    "id": "HC-2026-07-21-06",
     "date": "2026-07-21",
-    "through_session": 69,
-    "reason": "Sessions 67--69 and the P0/G0 corrections were independently reviewed; the user explicitly authorized an on-paper L0 design with overlap-to-point conversion as a named obligation and no atlas/radius escalation.",
+    "through_session": 72,
+    "reason": "Sessions 70--72 and the O0/I0/D0 colored-source closure were independently reviewed; after D-0082 made the restricted-order and conjugate-slope hypotheses explicit, the user authorized HC-06 for on-paper K1 quotient design. No carrier geometry, collar enumeration, or experiment is authorized.",
     "artifact_bytes": {
       "docs/notebook/assets": 6756125300,
       "data": 1793649957

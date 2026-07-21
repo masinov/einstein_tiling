@@ -1901,3 +1901,23 @@ are recorded before K1 because its decoder inherits the restricted-order
 argument. “Bent SAB” is also marked as repository shorthand for the
 isometric-cell construction in source Figure 41. HC-05 remains exhausted and
 K1 remains unauthorized pending HC-06.
+
+## D-0083 (2026-07-21) — Start K1 from a lossless incidence compiler
+
+The user explicitly authorized HC-06 for on-paper K1 work. The first step
+does not guess a quotient. ST-M1.K1C moves every full addressed S0 state into
+finite directed half-contact records `(a,e;b,e')` and retains the legal cyclic
+corner words. The three incident contacts of a triangle must share the same
+center state `a`; opposite half-contacts are involutes.
+
+Encoding a source tiling by these records and reading their common center
+state are inverse radius-one maps on the complete stated contact-rule space.
+This gives a finite coupled contact-star baseline and keeps Q0's
+no-spurious-configurations obligation explicit. It is a standard lossless
+recoding, not a novelty claim or a nontrivial quotient.
+
+K1C is not a geometric result. Its contact modes are still symbolic colors,
+whereas one unmarked carrier has one fixed boundary. K1 remains open until a
+quotient erases explicit source identities while retaining a finite-radius
+decoder on its full local closure. HC-06 does not authorize a collar census,
+carrier drawing, contact search or experiment.
