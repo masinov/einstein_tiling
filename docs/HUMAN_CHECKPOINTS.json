@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "policy": {
+    "max_research_sessions": 3,
+    "max_new_artifact_bytes": 1073741824,
+    "artifact_roots": [
+      "docs/notebook/assets",
+      "data"
+    ]
+  },
+  "latest": {
+    "id": "HC-2026-07-21-01",
+    "date": "2026-07-21",
+    "through_session": 57,
+    "reason": "Post-ERR-005 research reset reviewed; user explicitly instructed continuation.",
+    "artifact_bytes": {
+      "docs/notebook/assets": 6756090472,
+      "data": 1774854725
+    }
+  }
+}

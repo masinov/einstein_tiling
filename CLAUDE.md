@@ -7,8 +7,10 @@ it live in `docs/program/ERRATA.md` — the spec itself is never edited.
 ## Resume protocol (start of every session)
 
 1. Read `docs/STATUS.md` — current milestone, verified state, next actions.
-2. Skim the latest `docs/notebook/` entry.
-3. Work; keep `docs/` in sync (see "end of session" below).
+2. Read `docs/literature/RESEARCH_RETURN_AUDIT.md` and
+   `docs/literature/NOVELTY_PROTOCOL.md` before proposing research work.
+3. Skim the latest `docs/notebook/` entry.
+4. Work; keep `docs/` in sync (see "end of session" below).
 
 ## End-of-session protocol
 
@@ -32,6 +34,21 @@ it live in `docs/program/ERRATA.md` — the spec itself is never edited.
   verdict on new shapes is claimed.
 - Negative results and budget-exhausted runs are recorded, not discarded
   (program §2, §7.4).
+- **No run without pre-registration** (D-0065). Before writing or launching a
+  nontrivial research runner, create the current session notebook from
+  `docs/notebook/EXPERIMENT_TEMPLATE.md`, answer all admission questions, and
+  pass `venv/bin/python scripts/check_experiment_gate.py <notebook>`. Launch
+  via `scripts/run_research.py <notebook> -- <command>`. A session containing
+  an ungated research run is invalid. Unit tests and read-only diagnostics are
+  exempt; census/radius/index/SAT/search jobs are not.
+- **Human checkpoint cadence** (D-0065): stop after at most three numbered
+  research sessions or 1 GiB of new artifacts since the checkpoint recorded
+  in `docs/HUMAN_CHECKPOINTS.json`, whichever comes first. Present a decision
+  summary and obtain explicit continuation before updating the checkpoint.
+- **User facts are gates** (D-0065): a user-supplied prior-art fact, scope
+  constraint, or contradiction halts the affected branch. Record it in
+  `docs/DECISIONS.md` or `docs/program/ERRATA.md` in the same session, verify
+  it against primary sources, and propagate its consequences before resuming.
 
 ## Environment
 

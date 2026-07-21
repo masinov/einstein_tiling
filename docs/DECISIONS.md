@@ -1426,3 +1426,28 @@ an over-approximation, not counterexamples in the physical hull. Exact
 radius-two state completion kills 3,485 seeds and leaves 80. The next D4 proof
 object is therefore the physical-origin/context correspondence for those 80
 survivors, not another change to the already exact coordinate maps.
+
+## D-0065 (2026-07-21) — Experiments require admission and human checkpoints
+
+ERR-003 through ERR-005 exposed a process failure: decisive prior-art facts
+were acknowledged but did not halt the next computational continuation. The
+research protocol is therefore executable policy rather than advisory prose.
+
+Every nontrivial research computation now requires a notebook
+pre-registration stating its proposition, primary-source/non-redundancy audit,
+outcome-dependent decisions, finite stop rule and current human checkpoint.
+The record must pass `scripts/check_experiment_gate.py`, and the command must
+be launched through `scripts/run_research.py`. Ordinary unit tests and
+read-only diagnostics are exempt.
+
+The launcher refuses work beyond three numbered research sessions or 1 GiB of
+new material under the declared artifact roots since the last explicit human
+checkpoint. At that boundary the agent must present a decision summary and
+obtain explicit continuation; available RAM or unattended time is not a reason
+to extend the budget.
+
+Finally, a user-supplied prior-art fact, scope constraint or contradiction is
+a halt condition for the affected branch. It must be recorded in ERRATA or
+DECISIONS, checked against primary sources and propagated into STATUS before
+work resumes. This specifically prevents a known finite classification from
+being absorbed as context while the same catalog continues running.
