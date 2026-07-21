@@ -2371,3 +2371,23 @@ carry a K5S-style synchronization rail. It does not enforce a relation among
 the sockets. Hu--Lin mention a 44-tile six-color aperiodic corner system, but
 that controlling source must be audited before use. No novelty, polygon or
 aperiodicity claim is attached to K5Q.
+
+## D-0107 (2026-07-22) — Couple all ports on one rooted closed corridor
+
+N16 proves that four sockets separated by forced filler cannot impose an
+aperiodic corner relation: their Cartesian-product language is empty or has a
+constant periodic configuration. A real central constraint is mandatory.
+
+K5C supplies a non-product exact topology. Encode the four two-bit colors of
+each of the 11 source Wang tiles as one length-42 cyclic domino word. Fixed-
+width `H VV`/`H H` bit blocks keep component count constant; a unique
+`H VVVVVV H` delimiter roots the cycle and its four readout windows. The
+prefix trie of the 11 words is a finite automaton accepting exactly the source
+states. One physical cycle therefore couples all four interfaces rather than
+allowing independent socket choices.
+
+This meets HC-13's on-paper topology target and yields a compiler-aware
+geometric admission contract. It does not solve the monotile problem. No
+unmarked polygon is known to force bounded disjoint cycles, make the automaton
+states independently visible, exclude all unintended contacts and lift the
+source. HC-13 is exhausted at session 96; no shape run is authorized.

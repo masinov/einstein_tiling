@@ -218,3 +218,125 @@ socket products and many non-scaffold tilings. A central gadget must realize
 exactly `A`, and one polygon must force both it and the rail. Until that
 coupling is constructed, the `20 x 20` object is a compiler-aware search
 topology, not a tile candidate or a solution of K5Q.
+
+## 9. Product-socket obstruction
+
+The missing selector cannot be replaced by four independent guarded sockets.
+
+### ST-M1.N16
+
+Let the allowed corner tuples factor as
+
+```
+A = C_SW x C_SE x C_NE x C_NW,
+```
+
+with equality of the four incident corner modes at every macro-grid vertex.
+Then the resulting corner language is empty or has a constant periodic
+configuration.
+
+### Proof
+
+At any grid vertex, its color is simultaneously in `C_SW`, `C_SE`, `C_NE`
+and `C_NW`, because it occupies those four roles in the four incident
+macros. A whole-plane configuration therefore implies that the intersection
+of the four sets is nonempty. Choose one color in the intersection and put it
+at every vertex. Every macro then has an allowed tuple, giving a constant
+doubly periodic configuration. □
+
+Thus a fixed filler separating the four sockets destroys exactly the
+coupling needed for aperiodicity.
+
+## 10. Closed-corridor selector
+
+There is a non-product topology that retains the K5S synchronization idea.
+Let `T` be a fixed 11-tile, four-color Wang source and encode each color by
+two bits. Since duplicate edge quadruples are irrelevant in a set, every
+tile `t` has a distinct eight-bit word
+
+```
+b(t) = west(t) east(t) south(t) north(t).
+```
+
+Use a two-cell-wide **cyclic corridor** in one macrocell. Its abstract
+adjacency graph is a cyclic ladder; an eventual Euclidean carrier must embed
+it near the macro boundary. In a straight two-row piece, encode a bit by the
+fixed-width exact domino word
+
+```
+E(0) = H VV,        E(1) = H H.             (3)
+```
+
+Both occupy a `2 x 4` rectangle and use four dominoes. Prefix the eight
+encoded bits by
+
+```
+D = H VVVVVV H,                              (4)
+```
+
+which occupies `2 x 10` and uses ten dominoes. No payload contains a vertical
+run longer than two, so (4) is the unique six-bar delimiter. The 11 selected
+rooted cyclic words
+
+```
+z(t) = D E(b_1(t)) ... E(b_8(t))             (5)
+```
+
+all have longitudinal length 42 and use 42 congruent dominoes. Four fixed
+two-bit windows, measured from `D`, expose the four Wang colors.
+
+The finite set (5) has an explicit finite automaton: take the prefix trie of
+the 11 rooted words, identify its accepting leaves with the root after the
+closing contact, and omit every other transition. This is a constructive
+finite object, although the source tuples still need serialization before a
+cold table can be written.
+
+### K5C geometric admission contract
+
+One unmarked polygon realizes the closed-corridor selector only if:
+
+1. its exact contacts force disjoint bounded cyclic ladders, rather than
+   paths, merged cycles or a plane-spanning ladder;
+2. the two exact bit blocks and delimiter are locally distinguishable before
+   decoding a source state;
+3. independently visible docking modes realize exactly the prefix-automaton
+   transitions, not a label assigned after reading (5);
+4. the unique delimiter roots four geometrically fixed readout windows;
+5. contacts between neighboring cycles occur exactly when their exposed
+   two-bit colors agree; and
+6. the remaining area has a forced equal-count fill, with a complete
+   full-isometry atlas and at least one whole-plane lift.
+
+### ST-M1.K5C (conditional)
+
+Any polygon satisfying K5C satisfies K4W and is an aperiodic monotile.
+
+### Proof
+
+Items 1--4 give a unique finite-radius macro partition and one of the 11
+visible states (5). Item 5 makes the decoded macro configuration exactly a
+valid `T`-tiling. Item 6 supplies tileability and covers every admitted
+isometry. K4W period descent then excludes every translation period. □
+
+K5C is the requested non-circular macro topology: one closed physical word,
+not four independent labels, carries and couples all interfaces. It also
+turns a future search into a compiler-aware problem—realize six finite contact
+obligations—rather than blind polygon enumeration.
+
+It is not a tile. The hardest step remains item 1 together with item 3: one
+boundary must force finite rooted cycles and a multi-state automaton without
+external colors. No such boundary word or completeness proof is supplied.
+
+## 11. HC-13 disposition
+
+The checkpoint's topology threshold is met by K5S and sharpened by K5C. N14,
+N15 and N16 remove the three misleading cheap variants: a one-dimensional
+ownership channel, independent binary quadrants and independent non-binary
+sockets. The surviving exact-compiler search target is a rooted closed
+corridor with an independently visible automaton.
+
+No geometry run follows. HC-13 stops after its third session. Any next
+checkpoint must first audit single-prototile simulation and geometric
+synchronizing-frame prior art, then either propose one exact boundary
+mechanism satisfying K5C.1--K5C.3 or close the cyclic-corridor route without
+enumeration.

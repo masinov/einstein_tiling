@@ -679,9 +679,13 @@ Research is under the 2026-07-21 reset recorded in
    that its one raw ownership channel is periodic (N14), while four
    independent binary quadrant flips merely reproduce Hu--Lin's refuted
    corner SFT (N15). K5Q retains a six-mode corner-socket topology, but no
-   central exact-cover selector or unmarked guard exists. Session 96 must
-   couple those pieces non-circularly or fire the parameterization kill
-   without a shape run.
+   central exact-cover selector or unmarked guard exists. Session 96 proves
+   independent sockets periodic (N16) and replaces them with K5C: one rooted
+   closed corridor whose 11 exact length-42 words couple all four source
+   interfaces through a finite selector automaton. HC-13 is exhausted. K5C is
+   a compiler topology, not a polygon; a future checkpoint requires prior-art
+   review and one concrete geometric mechanism for bounded cycles, visible
+   automaton modes and contact completeness before any run.
 8. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.

@@ -80,9 +80,12 @@ Turtle throughout and must not revive a discovery or proof claim.
     theorem.
 34. Reproducibility boundary SER0 and the blocked geometric realization.
 35. Minimal aperiodicity versus surjective positive-entropy factors.
+36. Retiling compilers: synchronization markers, interface-arity no-gos, and
+    the conditional closed-corridor selector.
 
 Primary sources: `07_stm1_sturmian_monotile_design.md` through
-`14_stm1_symbolic_chain.md`, with note 14 as the consolidated reading path,
+`19_synchronizing_retiling_topology.md`, with note 14 as the consolidated
+symbolic reading path and notes 15--19 as the geometric/compiler branch,
 and `docs/literature/reviews/STURMIAN_MONOTILE_ENCODING.md`. The symbolic
 chain is an internal proof draft. It is not a monotile construction: SER0
 lacks extensional source tables and K2J lacks an unmarked geometric carrier.

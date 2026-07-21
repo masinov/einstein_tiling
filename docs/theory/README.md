@@ -95,7 +95,8 @@ reviewable proof or certificate.
   and the direct K4W sufficient monotile contract.
 - `19_synchronizing_retiling_topology.md` — the exact twelve-state domino
   inverse-dissection kernel and its conditional six-bar unique-grouping
-  invariant; no unmarked carrier or Wang interface realization.
+  invariant, the cheap-channel no-gos, and the surviving K5C closed-corridor
+  compiler contract; no unmarked carrier or Wang interface realization.
 - `W1_TRANSFER_SPEC.md` — the soundness/completeness contract for the exact
   cylinder transfer engine and its certificates.
 - `PROOF_LEDGER.md` — stable IDs, scope, status, dependencies, and artifacts.
