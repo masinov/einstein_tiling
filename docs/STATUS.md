@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 76)
+**Last updated:** 2026-07-21 (session 77)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -158,6 +158,12 @@
   32-state core and fresh diagonal triples thereafter. This selected safe
   code requires joint star coupling; no 62-state essentiality or universal
   coding no-go is claimed (D-0085/D-0086).
+- **ST-M1 exact geometric contract:** K2E separates the stronger exact K1P
+  realization from minimal ST-M1 and states six sufficient obligations. N5
+  proves that the parity core has full binary projections, so independent
+  sides and ordinary two-side corner checks cannot enforce it. K2G needs a
+  ternary junction, a locally recoverable auxiliary phase, or a proved
+  larger-radius exclusion; no polygon or atlas exists yet (D-0087).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -557,13 +563,13 @@ Research is under the 2026-07-21 reset recorded in
    the exact reproduction fixtures and postmortem during release work only.
 3. Human checkpoint `HC-2026-07-21-06` is closed after sessions 73--75. The
    user explicitly authorized `HC-2026-07-21-07` after independent review.
-   Session 76 repairs N4 by selecting K1P's parity code; this is session 1 of
-   at most 3, with no experiment or large artifact.
+   Sessions 76--77 repair N4 and derive K2E/N5; this is session 2 of at most
+   3, with no experiment or large artifact.
 4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
    escalation, and all Spectre radius escalation frozen.
-5. K2G is the next blocker: give an on-paper exact contract for realizing the
-   selected coupled contact code with one fixed unmarked boundary. HC-07
-   authorizes proof design only; no contact census, carrier search, generated
+5. K2G remains the blocker. The final HC-07 session will decide on paper
+   whether an auxiliary geometric phase can enforce parity without an
+   absolute lattice origin. No contact census, carrier search, generated
    drawing or experiment is authorized.
 6. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research

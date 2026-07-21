@@ -1992,3 +1992,23 @@ has 62 states; or four modes per side suffice for the selected code. The user
 authorized HC-07 for on-paper K2G design after this loophole was identified.
 No contact census, carrier search, generated geometry or experiment is
 authorized.
+
+## D-0087 (2026-07-21) — Exact K2G parity needs ternary information
+
+K2G is defined as an exact realization of the selected K1P compiler, a
+stronger target than minimal ST-M1. Its G1--G6 contract requires a complete
+geometric contact normal form, mode extraction, equality with the extendable
+K1P star language, overlap legality, homochirality and one lift. This strength
+is what makes K1P/N4 relevant; it is not claimed necessary for every possible
+Sturmian monotile factor.
+
+The even-parity core has full unary and binary projections. Hence no
+conjunction of constraints seeing at most two incident side modes can realize
+it exactly: every such constraint accepting all legal words is trivial on its
+scope. N5 therefore rules out not only independent side keys but also
+ordinary binary corner checks for this compiler.
+
+A viable exact carrier must name a genuine ternary exact-cover junction, a
+locally recoverable auxiliary phase, or a proved larger-radius geometric
+exclusion. No polygon, atlas or existence claim is made. The remaining HC-07
+session is restricted to analyzing the auxiliary-phase option on paper.
