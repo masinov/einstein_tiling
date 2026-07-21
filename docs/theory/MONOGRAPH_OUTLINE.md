@@ -55,29 +55,37 @@ Primary source: roadmap §6.
 
 Primary sources: `docs/EXPERIMENTS.md`, A6 artifacts, census tests.
 
-## Part VI — The n=10 case study
+## Part VI — Turtle-control postmortem
 
-23. Blind discovery history and crown-continuability correction.
+23. Blind rediscovery history, delayed identity check, and
+    crown-continuability correction.
 24. Nested-core and diffraction evidence.
 25. Failed nearest-cluster hierarchy language.
 26. Exact quotient exclusions and transfer-automaton results.
-27. Final disposition: periodic certificate, aperiodicity certificate, or
-   explicitly bounded open case.
+27. Final disposition: exact controls for the published Turtle, not a new
+    candidate or an independent aperiodicity proof.
 
-This part is conditional and must not drive the framework's claims.
+This part is a research-governance and validation case study. It must name the
+Turtle throughout and must not revive a discovery or proof claim.
 
 ## Part VII — Arithmetic symbolic factors beyond the polykite catalog
 
 28. Quadratic Sturmian lattices and finite colored source systems.
-29. Period descent through total local maps.
-30. Congruence encoding by one carrier: pose, contact stars, and its limits.
-31. The independent-sofic-rail obstruction and cross-direction coupling.
-32. Full-isometry semantics, chirality propagation, and reflected branches.
-33. Minimal aperiodicity versus surjective positive-entropy factors.
+29. The equal-support proof draft: composition, limiting incidence, and the
+    source decoder.
+30. Full-local-closure safety and period descent through total local maps.
+31. Distributed contact codes, parity arity, and hidden-state lower bounds.
+32. Gauge-invariant boundary holonomy and sector-separated vertex states.
+33. Full-isometry semantics, chirality, and the conditional K2J carrier
+    theorem.
+34. Reproducibility boundary SER0 and the blocked geometric realization.
+35. Minimal aperiodicity versus surjective positive-entropy factors.
 
-Primary sources: `07_stm1_sturmian_monotile_design.md` and
-`docs/literature/reviews/STURMIAN_MONOTILE_ENCODING.md`. This part remains a
-theorem-design branch until its source and contact-kernel obligations close.
+Primary sources: `07_stm1_sturmian_monotile_design.md` through
+`14_stm1_symbolic_chain.md`, with note 14 as the consolidated reading path,
+and `docs/literature/reviews/STURMIAN_MONOTILE_ENCODING.md`. The symbolic
+chain is an internal proof draft. It is not a monotile construction: SER0
+lacks extensional source tables and K2J lacks an unmarked geometric carrier.
 
 ## Appendices
 
@@ -95,7 +103,11 @@ theorem-design branch until its source and contact-kernel obligations close.
 - **Optional rigidity paper or section:** Part IV only for an all-tilings
   theorem or a substrate extension beyond the published polykite
   periodic-alignment reduction.
-- **Finalist paper:** Part VI only if its proof obligations close.
+- **Turtle-control postmortem:** Part VI as a validation/governance case
+  study only; it has no candidate-discovery or independent-proof branch.
 - **Tiling-group note:** Chapter 10 if W2.D produces a genuine theorem.
-- **Sturmian construction note:** Part VII only if the equal-support source
-  lemma and symbolic contact kernel close before geometric search begins.
+- **Sturmian symbolic-program note:** Chapters 28--34 may be extracted now as
+  a conditional proof-draft and negative-design dossier, with no novelty
+  claim pending review. A **Sturmian monotile construction paper** is not
+  available unless K2J closes; a machine-checkable source appendix also
+  requires SER0.

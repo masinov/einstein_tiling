@@ -106,17 +106,20 @@ not polished as a novelty claim. W2 escalation is closed. See
 
 ## Next decision sequence
 
-1. The first outside-horizon audit is complete. ST-M1—the construction of one
-   unmarked disk whose complete tiling hull locally factors onto the
-   `sqrt(2)-1` Sturmian system—survives as a theorem-design question. No run or
-   shape search is authorized before a plausible congruence encoder and
-   no-spurious-tilings lemma exist on paper. See
-   `reviews/STURMIAN_MONOTILE_ENCODING.md`.
+1. The first outside-horizon audit and on-paper ST-M1 design branch are
+   complete through their current boundary. The colored equal-support source,
+   safe parity compiler, scoped no-gos and boundary-cocycle factorization are
+   consolidated as proof drafts in `docs/theory/14_stm1_symbolic_chain.md`.
+   This is not a monotile result. SER0 is blocked by absent extensional source
+   tables, and K2J is blocked by the absence of an exact unmarked carrier.
+   No run or shape search is authorized.
 2. The adversarial W3 audit is complete and negative for current method
    novelty. Do not reopen the 80-context frontier; see
    `reviews/W3_CERTIFICATE_METHOD.md` and D-0070.
-3. Obtain an explicit decision before beginning the on-paper ST-M1 proof
-   design.
+3. Reopen ST-M1 only for author-supplied exact source tables, a separately
+   preregistered and independently validated source reconstruction, or an
+   on-paper geometric gadget satisfying every K2J obligation. Larger patches,
+   contact-radius escalation and suggestive drawings do not qualify.
 4. Treat the `Tile(a,b)` recognizer and release packaging as bounded
    infrastructure tasks, not substitutes for the next mathematical question.
 

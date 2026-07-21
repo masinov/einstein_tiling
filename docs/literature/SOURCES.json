@@ -309,7 +309,7 @@
       "themes": ["Sturmian lattices", "quadratic irrationals", "aperiodic tile sets", "bounded displacement", "hierarchy"],
       "workstreams": ["A", "C"],
       "review_status": "full-text-audited",
-      "review_note": "docs/literature/reviews/STURMIAN_MONOTILE_ENCODING.md; source archive audited in docs/theory/13_stm1_serialization_contract.md"
+      "review_note": "docs/literature/reviews/STURMIAN_MONOTILE_ENCODING.md"
     },
     {
       "id": "akiyama-hamada-ito-announcement-2026",

@@ -61,6 +61,9 @@ def test_stm1_source_correction_is_fail_closed():
     assert "ST-M1.K2V" in ledger
     assert "ST-M1.K2J" in ledger
     assert "blocked/frozen after HC-09" in ledger
+    assert "ST-M1.SER0" in ledger
+    assert "primary archive contains Illustrator figures" in ledger
+    assert "ST-M1.SYN0" in ledger
 
 
 def test_gate_rejects_template_and_accepts_completed_record(tmp_path):

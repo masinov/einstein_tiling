@@ -473,3 +473,24 @@ exact finite side transducer, classify all vertex/contact faults, force frame
 and chirality, and lift a witness. Zipper and forked-corner descriptions do
 not prove those claims. The HC-09 kill condition therefore freezes active K2G
 work until an exact geometric gadget lemma is supplied.
+
+## Serialization audit and consolidated disposition (sessions 85--87)
+
+SER0 now states the exact extensional object needed to turn the colored S0
+and K1P proof drafts into a cold-checkable presentation: the `30,30,2`
+templates, addressed states, oriented edge relation, cyclic vertex words,
+decoder fields and fixed parity code. The arXiv v3 source archive was checked
+before any producer was written. Its TeX contains the formulas and prose, but
+the construction geometry is supplied only in Illustrator-generated PDFs;
+there is no constituent-address, SAB or vertex table to transcribe. Direct
+serialization is therefore blocked. Digitizing those figures would be an
+independent reconstruction requiring preregistration and external validation,
+not source transcription.
+
+Theory note 14 consolidates P0/S0/Q0/K1T/K1P/N5--N9/K2C/K2V and the
+conditional K2J-to-monotile implication in one reviewable dependency chain.
+It makes no method-novelty claim. The current branch has two independent
+blockers: SER0 is an extensional reproducibility gap, while K2J is the missing
+unmarked geometry. Neither a larger finite patch nor a more elaborate drawing
+addresses either blocker. Active ST-M1 work is frozen until one of the exact
+reopening inputs exists.

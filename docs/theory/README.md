@@ -75,6 +75,13 @@ reviewable proof or certificate.
   factorization and lower bound K2H/N6; N7--N9 close unanchored pose routes,
   while K2C/K2V retain the gauge-invariant boundary mechanism and K2J states
   the unresolved geometric admission contract.
+- `13_stm1_serialization_contract.md` — SER0's extensional source/quotient
+  schema, cold-verifier obligations, and the primary-archive finding that
+  direct serialization is blocked by figure-only construction data.
+- `14_stm1_symbolic_chain.md` — the self-contained P0/S0/Q0/K1T/K1P/
+  N5--N9/K2C/K2V dependency chain and the conditional K2J-to-monotile
+  theorem. This is the canonical review entry point for ST-M1; it is a proof
+  draft, not a construction or novelty claim.
 - `W1_TRANSFER_SPEC.md` — the soundness/completeness contract for the exact
   cylinder transfer engine and its certificates.
 - `PROOF_LEDGER.md` — stable IDs, scope, status, dependencies, and artifacts.

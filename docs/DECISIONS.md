@@ -2174,3 +2174,18 @@ that no polygon, monotile, surjectivity or entropy result exists. SER0 and
 K2J remain independent blockers: missing source tables cannot be repaired by
 prose consolidation, and symbolic boundary holonomy cannot be promoted to
 geometry.
+
+## D-0097 (2026-07-21) — Freeze ST-M1 at the consolidated two-blocker boundary
+
+The HC-10 adversarial integration audit accepts theory note 14 only at
+proof-draft level. SER0 and K2J are logically independent: SER0 asks for the
+extensional colored source presentation needed for cold verification; K2J
+asks for one unmarked geometric carrier whose complete tiling language
+realizes the symbolic compiler. Closing either does not close the other.
+
+HC-10 is exhausted without an experiment or generated artifact. Active ST-M1
+work remains frozen. Reopening requires author-supplied exact source data, a
+separately preregistered and independently validated source reconstruction,
+or an exact on-paper polygon/gadget lemma meeting every K2J obligation. A
+larger patch, radius escalation, or suggestive drawing is not a reopening
+input.
