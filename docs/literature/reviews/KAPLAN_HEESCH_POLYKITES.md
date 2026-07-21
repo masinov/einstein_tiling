@@ -54,7 +54,7 @@ Thus A2 is an independent implementation of the same invariant. Independence
 is useful for cross-validation; it does not make already published values
 novel.
 
-## Exact aggregate reproduction at `n=8`
+## Exact aggregate and per-shape reproduction at `n=8`
 
 The 116-page public PDF has SHA-256
 `8e710b8d9418ca5ab6d4510fb6dba36080eac980166e1b355ed491e6304e8f12`.
@@ -75,16 +75,19 @@ classifies the remaining 833 non-tilers as
 `720 x H_c=0 + 108 x H_c=1 + 5 x H_c=2`, with the Hat as the sole growing
 case. The aggregate signatures agree exactly.
 
-This is strong external validation of A1+A2. Aggregate equality is not yet a
-per-shape corpus bijection because the two projects use different kite
-coordinates and canonical encodings. A bounded coordinate crosswalk may be
-worth adding as a benchmark artifact; it is not a discovery experiment.
+This is strong external validation of A1+A2. Session 58 subsequently closed
+the coordinate gap: each Kaplan point `p` maps to the unique repository cell
+`(p-origin[d], d)` for which `p-origin[d]` is a legal hex center. All 116 PDF
+records map to distinct repository keys, with exact agreement of every `H_c`
+value; pages 32, 47 and 50 map to the two periodic-anisohedral controls and the
+Hat. The machine-readable result is
+`docs/notebook/assets/kaplan-8kite-crosswalk.json`.
 
 ## Claims permitted after this audit
 
-- **Permitted:** A2 independently reproduces Kaplan's public `n=8` aggregate
-  polykite Heesch results exactly and supplies cold-verifiable witnesses in
-  its own representation.
+- **Permitted:** A2 independently reproduces Kaplan's public `n=8` polykite
+  Heesch results shape by shape and supplies cold-verifiable witnesses in its
+  own representation.
 - **Not permitted:** no published polykite Heesch census exists; the six
   deep shapes are novel data; or the `n<=16` funnel explores an unclassified
   discovery range.

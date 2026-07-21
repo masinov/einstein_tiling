@@ -129,7 +129,8 @@ Kaplan's Heesch SAT method measures finite surround depth; his public
 implementation later generalized the method to polykites, and its public
 eight-kite artifact exactly matches our A1+A2 aggregate (`108` at `H_c=1`,
 five at `H_c=2`, plus two periodic anisohedral cases and the Hat left
-inconclusive). His isohedral SAT method gives an exact test for extendable
+inconclusive). The exact coordinate crosswalk now also verifies a 116/116
+per-shape bijection. His isohedral SAT method gives an exact test for extendable
 isohedral surrounds in its stated polyform setting (`kaplan-heesch-2022`,
 `kaplan-heesch-sat-code`, `kaplan-8kites-2023`,
 `kaplan-isohedral-sat-2024`). These are valuable early rejection filters and

@@ -383,8 +383,9 @@ mini-E1 positive-control result: Heesch depth alone ranks it #1 in its size
 class. This is not a new census. Kaplan's public 2023 eight-kite artifact has
 exactly the same 108 `H_c=1` and five `H_c=2` counts; its three inconclusive
 cases are the two periodic anisohedral shapes removed by A1 and the Hat.
-Our structurally independent A2 engine therefore supplies an exact aggregate
-reproduction and cold-verifiable benchmark. See ERR-005 and
+Our structurally independent A2 engine therefore supplies an exact 116/116
+per-shape reproduction and cold-verifiable benchmark; session 58 maps the two
+periodic-anisohedral controls to IDs 506/793 and the Hat to ID 635. See ERR-005 and
 `docs/literature/reviews/KAPLAN_HEESCH_POLYKITES.md`. A3 sharpens the
 internal ranking: all six `H_c=2` shapes are pose-free refuted on disks of
 `r2<=200` (19–35 tiles max), while the Hat covers `r2=100000` (22,940 tiles);

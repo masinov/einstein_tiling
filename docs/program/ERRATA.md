@@ -117,3 +117,8 @@ SAT encoding. Its result is therefore a useful exact reproduction and
 pipeline benchmark, but not new census data. The source/algorithm crosswalk
 and evidence tiers are recorded in
 `docs/literature/reviews/KAPLAN_HEESCH_POLYKITES.md`.
+
+Session 58 subsequently derived the exact coordinate conversion and verified
+a 116/116 per-shape bijection, including identical individual `H_c` values and
+the three inconclusive identities. This strengthens the reproduction claim;
+it does not restore any novelty claim.

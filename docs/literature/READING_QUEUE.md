@@ -27,9 +27,9 @@ assumptions, exact claims used here, and a repository impact decision.
    recorded in `reviews/CHERITAT_SPECTRE_CLUSTERS.md`.
 5. `kaplan-heesch-2022`, `kaplan-heesch-sat-code`, and
    `kaplan-8kites-2023` — paper, current public implementation, project-page
-   claims, and the 116-page 8-kite artifact audited 2026-07-21. Our aggregate
-   `n=8` results reproduce the public artifact exactly; the earlier novelty
-   claim is withdrawn. See `reviews/KAPLAN_HEESCH_POLYKITES.md`.
+   claims, and the 116-page 8-kite artifact audited 2026-07-21. The session-58
+   coordinate crosswalk verifies a 116/116 per-shape reproduction; the earlier
+   novelty claim is withdrawn. See `reviews/KAPLAN_HEESCH_POLYKITES.md`.
 
 ## Immediate: proof and discovery controls
 

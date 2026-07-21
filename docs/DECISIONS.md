@@ -1451,3 +1451,18 @@ a halt condition for the affected branch. It must be recorded in ERRATA or
 DECISIONS, checked against primary sources and propagated into STATUS before
 work resumes. This specifically prevents a known finite classification from
 being absorbed as context while the same catalog continues running.
+
+## D-0066 (2026-07-21) — Kaplan eight-kite reproduction closes per shape
+
+Kaplan's 116-page public eight-kite artifact uses a different but exactly
+convertible cell representation. His point `p` represents the unique kite
+`(p-origin[d], d)` for which the translated point is a legal hex center.
+Converting and canonicalizing every page gives 116 distinct keys, each present
+in the repository database with the same individual classification: 108 at
+`H_c=1`, five at `H_c=2`, two periodic-anisohedral inconclusive controls and
+the Hat.
+
+This closes the bounded comparison proposed by ERR-005. It strengthens the
+claim from aggregate agreement to an exact per-shape independent reproduction.
+It does not make the census new, authorize a larger census, or alter the
+published `n<=24` discovery boundary.

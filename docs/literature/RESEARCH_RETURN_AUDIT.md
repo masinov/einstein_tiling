@@ -36,7 +36,8 @@ proof artifact.
 ### 2. A classified-corpus benchmark
 
 The funnel independently ranks the Hat first among eight-kites and later
-surfaces the Turtle. A1+A2 exactly reproduce Myers/Kaplan aggregates. This can
+surfaces the Turtle. A1+A2 reproduce Kaplan's 8-kite artifact shape by shape
+and match Myers's tiler aggregates. This can
 become a legitimate benchmark or postmortem if it reports:
 
 - the frozen candidate corpus and concealed labels;
@@ -71,7 +72,7 @@ worked control example.
 |---|---|---|
 | A0 enumeration through `n=16` | independent enumeration inside a classified range | freeze; use only as a labeled corpus |
 | A1 bounded torus search | exact bounded periodicity filter | retain small tests; no larger Turtle shells |
-| A2 Heesch census through `n=8` | exact Kaplan reproduction | package benchmark; no novelty claim |
+| A2 Heesch census through `n=8` | exact 116/116 per-shape Kaplan reproduction | benchmark closed; no novelty claim |
 | A3 large disks/nested cores | finite continuability evidence | retain demonstrations; do not infer plane tilability |
 | A4 diffraction | calibrated prioritization heuristic | retain E4 control; no proof use |
 | W2 index `40..60` exclusions | exact finite theorems for known Turtle | archive/freeze; no index escalation |
