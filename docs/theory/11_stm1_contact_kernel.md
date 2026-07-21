@@ -119,3 +119,111 @@ Before any table or shape is drawn, define a future-equivalence relation on
 The next session may prove this criterion and derive necessary invariants for
 any merge. It may not guess a radius, enumerate collars, or infer safety from
 source samples.
+
+## 7. Two different quotient obligations
+
+Let `F:Y -> K_full` be K1C. Let `q` be a finite symbol map from the full
+contact records to a smaller alphabet `Q`, extended equivariantly to
+configurations. For a fixed presentation radius `rho`, define
+
+```
+Z_rho(q) = {z : every radius-rho patch of z occurs in q(K_full)}.
+```
+
+There are two logically separate questions.
+
+1. **Image resolving:** does `q(x)` determine `x` for configurations already
+   known to lie in `q(K_full)`?
+2. **Local-closure totality:** does every `z in Z_rho(q)`, including a
+   configuration assembled from compatible intended patches but absent from
+   the image, decode to `Y`?
+
+The first question is a conjugacy question. The second is Q0's
+no-spurious-configurations obligation. Passing the first does not imply the
+second because a two-dimensional factor image need not equal any prescribed
+finite local closure.
+
+## 8. ST-M1.K1R — compact image-resolving criterion
+
+The restriction `q:K_full -> q(K_full)` has a finite-radius inverse if and
+only if it is injective on whole-plane configurations.
+
+### Proof
+
+A finite-radius inverse implies injectivity. Conversely, `K_full` is compact
+and its finite-alphabet image is Hausdorff. A continuous bijection from
+`K_full` to `q(K_full)` therefore has a continuous inverse. Continuity at the
+center cylinder gives, for every source state, a finite quotient
+neighborhood deciding that state. Compactness and finiteness of the source
+alphabet give one uniform radius. Translation equivariance transports the
+center rule to every cell. \(\square\)
+
+Equivalently, failure occurs when two distinct full configurations have the
+same quotient image. If ambiguity can be produced at arbitrarily large
+radii by globally extendable paired patches, compactness extracts such a
+whole-plane pair. Thus a proposed merge needs a **uniform context-separation
+proof**, not agreement through several sampled radii.
+
+K1R supplies no decision procedure for injectivity. In dimension two that
+would be an unjustified leap. It identifies the exact infinite proposition a
+finite proof must establish.
+
+## 9. ST-M1.K1T — finite local-closure certificate
+
+Fix `rho`. The quotient presentation is safe with an exact source lift if and
+only if there are a radius `R` and a map `delta` from centered radius-`R`
+patches occurring in `Z_rho(q)` to the addressed source alphabet `A` such
+that the following finite-local identities hold on every sufficiently large
+patch occurring in `Z_rho(q)`:
+
+1. applying `delta` at neighboring centers satisfies every source edge and
+   vertex rule of `Y`;
+2. rebuilding the lossless contacts with `F` and applying `q` reproduces the
+   centered quotient contact data.
+
+### Proof
+
+If such `delta` exists, apply it at every cell of any `z in Z_rho(q)`.
+Condition 1 puts the resulting configuration in `Y`; condition 2 says
+`q(F(delta(z)))=z`. Hence `delta` is a total finite-radius right inverse on
+the entire quotient SFT.
+
+Conversely, any finite-radius right inverse supplies its centered local rule
+`delta`. Membership of its output in the finite-type source and the right-
+inverse identity are checked on a bounded enlargement of its radius, giving
+conditions 1 and 2. \(\square\)
+
+K1T is the finite certificate contract for a future quotient. “Finite” here
+describes the logical witness once `q`, `rho`, `R`, and the patch-domain are
+given; it does not authorize enumerating those objects or increasing `R`
+until a merge appears.
+
+By Q0, any nonempty quotient satisfying K1T is aperiodic. K1R is necessary
+for K1T but not sufficient: K1R controls only the intended image, whereas K1T
+controls all of `Z_rho(q)`.
+
+## 10. ST-M1.N3 — the one-symbol frame quotient fails
+
+If all contact records and corner data are erased, the remaining system is
+the uncolored edge-to-edge equilateral-triangle frame. It has the standard
+periodic triangular tiling. Therefore it cannot admit a total equivariant map
+to the irrational S0 source.
+
+This does not rule out one unmarked geometric carrier. Such a carrier may
+have several relative contact modes arising from different offsets or poses.
+N3 says those modes—or some equally strong contextual data—cannot all be
+erased at the symbolic stage.
+
+## 11. Present K1 status
+
+The lossless K1C presentation and the exact K1R/K1T contract are established
+as proof drafts. No nontrivial map `q` has been proposed, and no merge is
+known safe. The source alphabet is still defined functorially rather than
+serialized, so even a bounded merge table would currently lack an auditable
+domain.
+
+The next on-paper question is structural: determine which source information
+must remain invariant under every K1T-safe quotient, and whether those
+invariants already require explicit macro identity. Failure would close the
+selected contextual-carrier route before geometry. No enumeration is
+authorized.

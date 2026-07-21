@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 73)
+**Last updated:** 2026-07-21 (session 74)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -141,6 +141,12 @@
   vertex rule. Encoding and decoding are inverse radius-one maps on the full
   contact-rule space. K1C is a standard symbolic recoding, not a nontrivial
   quotient or geometric carrier (D-0083).
+- **ST-M1 quotient safety contract:** K1R separates injectivity on the
+  intended compact image from K1T's stronger totality on the quotient SFT.
+  K1T requires a bounded decoder that satisfies source rules and re-encodes
+  every admitted quotient configuration. Erasing all modes fails because the
+  remaining triangular frame is periodic. No quotient or radius has been
+  chosen (D-0084).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -540,14 +546,14 @@ Research is under the 2026-07-21 reset recorded in
    the exact reproduction fixtures and postmortem during release work only.
 3. Human checkpoint `HC-2026-07-21-05` is closed after sessions 70--72. The
    user explicitly authorized `HC-2026-07-21-06` after independent review and
-   the D-0082 clarifications; session 73 uses its first slot for lossless K1C,
-   with no experiment or large artifact.
+   the D-0082 clarifications; sessions 73--74 use two slots for K1C and the
+   K1R/K1T safety contract, with no experiment or large artifact.
 4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
    escalation, and all Spectre radius escalation frozen.
-5. **K1 remains on paper.** The next HC-06 unit may prove the finite-radius
-   local-inverse/future-equivalence criterion for a quotient of K1C. It may
-   not choose a radius, enumerate collars, draw a carrier, or run an
-   experiment.
+5. **K1 remains on paper.** The final HC-06 unit may derive information that
+   every K1T-safe quotient must preserve and decide whether the contextual
+   carrier route remains plausible. It may not enumerate collars, draw a
+   carrier, or run an experiment.
 6. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.

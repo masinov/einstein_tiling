@@ -1921,3 +1921,23 @@ whereas one unmarked carrier has one fixed boundary. K1 remains open until a
 quotient erases explicit source identities while retaining a finite-radius
 decoder on its full local closure. HC-06 does not authorize a collar census,
 carrier drawing, contact search or experiment.
+
+## D-0084 (2026-07-21) — Separate image resolving from local-closure totality
+
+A contact quotient has two distinct obligations. K1R proves, by compactness,
+that a finite quotient of K1C has a finite-radius inverse on its intended
+image exactly when it is injective on complete configurations. Arbitrarily
+large ambiguities made from globally extendable source patches therefore
+converge to a whole-plane ambiguous pair.
+
+This is not enough for a carrier. Its finite matching rules define an SFT
+`Z_rho(q)` that may strictly contain the intended factor image. K1T is the
+exact safety contract: one fixed-radius local decoder must send every
+configuration of `Z_rho(q)` to S0, satisfy all source edge/vertex rules, and
+reproduce the quotient contacts when re-encoded. These bounded local
+identities are necessary and sufficient for a total right inverse.
+
+Erasing all contact and corner modes fails immediately (N3), because it
+leaves the periodic equilateral-triangle frame. This does not refute an
+unmarked carrier with several geometrically realized relative contact modes.
+No specific quotient, radius or collar table was chosen.
