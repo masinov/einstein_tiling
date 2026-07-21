@@ -1589,3 +1589,27 @@ begin only after the equal-support source lemma and a total, unambiguous
 three-state symbolic contact kernel are proved on paper. Session 63 exhausts
 the three-session allowance under `HC-2026-07-21-02`; further research needs a
 new explicit human checkpoint.
+
+## D-0072 (2026-07-21) — S0 splits into a compiler and E-infinity
+
+The user authorized checkpoint `HC-2026-07-21-03` for bounded on-paper S0/K1
+work. The first source derivation finds that the `kappa=infinity` sentence does
+not itself define the colored equal-support target needed by ST-M1. Section
+8.1's equidistanced model is introduced for bounded-displacement calculations,
+and the one-support suggestion occurs later in the distinct Turtle
+subsection. No common-cell subdivision or language equivalence is stated for
+the optimized positive-entropy `sqrt(2)-1` system.
+
+The formal reduction does close. ST-M1.S0C proves that finite connected
+macrotiles over one congruent periodic cell can be compiled into finitely
+colored copies of that cell with unique local regrouping and preservation of
+periods. This is an elementary colored-macro compiler, not a monotile result or
+a method-novelty claim.
+
+ST-M1.S0 now depends on the new exact lemma E-infinity: construct the
+nondegenerate common cell for all three Section 10.1 templates and prove that
+the complete SAB/boundary language and irrational symbolic sequences survive
+the transport. K1 remains blocked because its true alphabet is the full set of
+addressed constituent-cell colors, generally larger than the three visible
+macro types. In accordance with the dependency stop rule, no contact kernel,
+shape or experiment was started in session 64.

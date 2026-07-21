@@ -254,3 +254,19 @@ plane configuration. Cross-direction intersection constraints are therefore
 mandatory. The coupled contact-star architecture remains blocked because no
 complete three-state symbolic kernel has yet been derived. No shape drawing
 or computation is authorized by this follow-up.
+
+## Equal-support follow-up (session 64)
+
+The `kappa=infinity` passage has now been checked against the complete source
+context. It does not close the equal-support source lemma for the optimized
+`sqrt(2)-1` example. Section 8.1 uses the equidistanced trigonal model for BD
+calculations; the later one-support suggestion occurs in the Turtle
+subsection. The paper does not give a transported alphabet or an all-tilings
+equivalence with the Section 10.1 three-prototile system.
+
+`docs/theory/08_stm1_equal_support_compiler.md` proves the conditional part:
+connected macrotiles over one congruent cell can be compiled into finitely
+colored copies of that cell with unique local regrouping. The remaining
+source-specific statement E-infinity must construct the common cell and prove
+that the SAB/boundary language and irrational symbolic sequences survive.
+Until then S0 stays blocked and K1 has no correct alphabet to encode.

@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 63)
+**Last updated:** 2026-07-21 (session 64)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⛔ design specified but blocked before geometry on equal-support source lemma S0 and coupled three-state kernel K1 (D-0071) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⛔ S0C compiler proved in draft; source-specific E-infinity remains open, so S0 and K1 stay blocked before geometry (D-0072) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -83,6 +83,13 @@
   before drawing or computation because the source's `kappa=infinity`
   equal-support remark is not a complete system theorem and no total
   three-state contact kernel has yet been derived (D-0071).
+- **ST-M1 equal-support compiler:** a finite connected macrotiling system over
+  one congruent periodic cell is MLD with a finite colored one-support system
+  by explicit internal-address ports. This closes the conditional compiler
+  S0C, not its Sturmian specialization. The source's `kappa=infinity` remark
+  does not provide the common-cell subdivision or preserve the complete
+  Section 10.1 language. Exact lemma E-infinity remains open, and K1 was not
+  started without its true addressed-cell alphabet (D-0072).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -384,7 +391,7 @@
   lines remain unknown. The completed blind hierarchy
   screen retained two non-unique first-composition rules out of 22,094 but no
   stationary recognizable recursion. Artifact: `e1-overnight-recovered.json`.
-- Test suite: **221 fast passed** (17 deselected, 141.83 s, session 63);
+- Test suite: **221 fast passed** (17 deselected, 145.79 s, session 64);
   **17 slow passed** previously (192 deselected, 389.36 s).
   Vendored Rust: **5 passed**.
 
@@ -480,19 +487,14 @@ Research is under the 2026-07-21 reset recorded in
    control. W2 escalation is frozen.
 2. The E1 benchmark assessment is **closed no-go** for new ablations. Package
    the exact reproduction fixtures and postmortem during release work only.
-3. Human checkpoint `HC-2026-07-21-02` was explicitly authorized after review
-   of sessions 58--60. Sessions 61--63 have now consumed its three-session
-   allowance.
+3. Human checkpoint `HC-2026-07-21-03` was explicitly authorized after review
+   of sessions 61--63. Session 64 is the first of at most three sessions.
 4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
    escalation, and all Spectre radius escalation frozen.
-5. **Stop for human review.** The checkpoint allowance is exhausted. ST-M1's
-   design pass yields the independent-rail no-go and a conditional
-   reflection-safe local-map theorem, but the proposed carrier fails the
-   pre-geometric admission gate until S0 (complete equal-support colored
-   source) and K1 (total coupled three-state contact kernel) close on paper.
-   No runner, shape drawing, contact search, or Spectre extension is
-   authorized. A new explicit checkpoint must choose whether to attempt the
-   bounded S0/K1 source-lemma derivation or close ST-M1.
+5. Continue on paper only with E-infinity: derive exact common-cell coordinates
+   and template transport from Definitions 4--5 and Figures 37/44, or refute
+   that specialization. K1 remains forbidden until S0 closes. No runner,
+   shape drawing, contact search, or Spectre extension is authorized.
 6. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.

@@ -293,3 +293,19 @@ polygon or running a contact search now would be premature. The next action,
 if separately authorized after checkpoint review, is a bounded source-lemma
 derivation of S0 and K1 from the exact definitions in Sections 6--10—not a
 computation.
+
+## 9. Session-64 source-lemma result
+
+The follow-up in `08_stm1_equal_support_compiler.md` proves an elementary
+compiler S0C: any finite set of connected macrotiles over one congruent cell
+can be replaced, with finite colors and local rules, by colored copies of that
+cell, mutually locally derivable from the subdivided macro system.
+
+This does not yet instantiate the Sturmian source. The `kappa=infinity`
+passage is a strategy remark in the Turtle subsection, not an explicit
+common-cell subdivision of the Section 10.1 three-prototile system. The exact
+specialization E-infinity must still prove nondegenerate congruent cells,
+connected transported templates, boundary/SAB-language preservation and
+preservation of the irrational symbolic sequences. S0 therefore remains
+blocked, and K1 was not begun. The eventual carrier must encode the full
+addressed cell alphabet, not merely the three visible macro shapes.

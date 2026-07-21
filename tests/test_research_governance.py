@@ -31,7 +31,7 @@ def test_checkpoint_policy_is_bounded_and_current():
     assert data["schema_version"] == 1
     assert 1 <= data["policy"]["max_research_sessions"] <= 3
     assert data["policy"]["max_new_artifact_bytes"] <= 1024**3
-    assert data["latest"]["through_session"] == 60
+    assert data["latest"]["through_session"] == 63
 
 
 def test_gate_rejects_template_and_accepts_completed_record(tmp_path):
