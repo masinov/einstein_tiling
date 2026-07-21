@@ -13,12 +13,17 @@ tile sets. Several nearby results remove colors, reduce the number of supports,
 or transfer a geometric tile to a group tile, but each stops short of the
 ordinary monotile claim in a precisely identifiable way.
 
-The admissible target is not “collapse any aperiodic tile set.” It is:
+The admissible target is not “collapse any aperiodic tile set.” Its minimal
+aperiodicity form is:
 
 > For one explicit non-golden quadratic slope, construct a connected unmarked
 > topological-disk tile whose every Euclidean tiling has a translation-equivariant
-> finite-radius factor onto the corresponding irrational Sturmian-lattice
+> finite-radius map into the corresponding irrational Sturmian-lattice
 > tiling system.
+
+Surjectivity onto the complete Sturmian system is a separate, stronger target.
+It is not needed to exclude periods, but it is needed if the construction is
+also meant to transfer the source system's positive entropy.
 
 The first control should be `alpha = sqrt(2)-1`, because the source paper gives
 an optimized three-prototile realization by topological disks and reports
@@ -79,6 +84,13 @@ geometry. They ordinarily produce one distinct geometric prototile for each
 tile type. Thus they can help obtain an unmarked **finite tile set**, but they
 do not solve congruence of all supports.
 
+The positive-entropy source cannot simply be treated as the zero-entropy,
+uniquely deterministic substitution hull familiar from Hat/Turtle/Spectre,
+and the paper supplies no unique-parent hierarchy. That strategy therefore
+cannot merely be reused for the no-spurious-tilings lemma. The natural proof
+target is arithmetic: shape-forced Ammann bars or an equivalent local coding
+whose line sequences are Sturmian for every admitted tiling.
+
 ### Atlas reduction
 
 Fletcher (`fletcher-atlas-2010`) proves that congruent supports can encode
@@ -122,14 +134,25 @@ be placed by the full Euclidean isometry group and:
 1. at least one tiling of the plane by `P_alpha` exists;
 2. there is a finite-radius, translation-equivariant map
    `pi : X(P_alpha) -> X_alpha` defined on **every** `P_alpha` tiling;
-3. `pi` is faithful enough that a translational period of a source tiling is a
-   period of its image.
+3. a translational period of a `P_alpha` tiling is a period of its image under
+   `pi`.
 
-Item 3 follows from ordinary equivariance once `pi` is a genuine local factor.
+Item 3 follows from ordinary equivariance once `pi` is a genuine local map.
 Since every tiling in `X_alpha` realizes an irrational Sturmian lattice and has
 no nonzero translational period, items 1--3 prove that `P_alpha` is an
-aperiodic monotile. MLD would be stronger than necessary; a surjective local
-factor on every admitted tiling suffices for period exclusion.
+aperiodic monotile. Neither injectivity, MLD, nor surjectivity is needed for
+this minimal period-exclusion theorem.
+
+There is a distinct strengthened target:
+
+4. `pi` is surjective onto the complete positive-entropy space `X_alpha`.
+
+If item 4 is proved, monotonicity of topological entropy under factors gives
+`h(X(P_alpha)) >= h(X_alpha) > 0`, even if `pi` is not injective. Without
+surjectivity, the image of `pi` might be a zero-entropy subsystem, so positive
+entropy of the monotile hull remains unproved. The design must state whether
+it seeks only ST-M1's aperiodicity conclusion or this stronger
+positive-entropy monotile conclusion.
 
 The actual mathematical burden is concentrated in two lemmas:
 
@@ -142,6 +165,11 @@ The actual mathematical burden is concentrated in two lemmas:
 The second lemma is the analogue of the decisive all-tilings step in the Hat,
 Turtle, and Spectre proofs. Producing one attractive encoded patch does not
 address it.
+
+Because the intended mechanism is arithmetic rather than a deterministic
+substitution hierarchy, a proposed proof must identify the geometric local
+data that force the Sturmian line sequences and prove that the forcing works
+simultaneously in every lattice direction used by the source construction.
 
 ## Novelty and characterization boundary
 
@@ -196,7 +224,9 @@ Not permitted:
 ## Stop rule and next action
 
 No runner is authorized. Before drawing or searching for shapes, write a
-theorem-design note that chooses one congruence-encoding mechanism and proves
-on paper why it can express three states without external colors. If that note
-cannot state a plausible no-spurious-tilings lemma, close the branch without
-computation.
+theorem-design note that (i) declares whether it targets minimal ST-M1 or the
+surjective positive-entropy strengthening, (ii) chooses one arithmetic
+congruence-encoding mechanism, and (iii) proves on paper why it can express
+three states without external colors. If that note cannot state a plausible
+no-spurious-tilings lemma forcing the required Sturmian line systems, close
+the branch without computation.
