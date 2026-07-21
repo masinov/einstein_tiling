@@ -2313,3 +2313,40 @@ HC-12 ends after session 93. No polygon or run is authorized. A future K4W
 checkpoint must first produce on paper one exact macrocell topology supporting
 11 rooted retilings and a plausible unique-grouping invariant; failure within
 three sessions closes that parameterization without computation.
+
+## D-0104 (2026-07-22) — Repair HC-12 provenance before HC-13
+
+The HC-12 independent audit found one source-cache defect and one
+non-load-bearing transcription error. The Hu--Lin catalog entry now points to
+the Internet Archive snapshot of the AMS primary PDF. The repository fetcher
+cached a 535,019-byte PDF whose SHA-256 is
+`3f46f0e8f483f87a852f90bc28c0a51a0c798682ff1b4de4e50b1af09b7d5bbd`,
+exactly matching the independently supplied digest; extracted text contains
+Theorem 2.3's 17 corner cycle generators and 56 maximal noncycle generators.
+The zero-byte failed temporary download was removed.
+
+Kari--Moutot define `S={2^j-1 : 0<=j<=t-1}` and then `s=2^(t-1)`, not
+`2^t-1`; hence their explicit sufficient width is `N=3*2^(t-1)`. N12 used
+only finiteness and sufficiently large width, so its conclusion survives.
+The correction is recorded before inverse-dissection work.
+
+The user explicitly authorized `HC-2026-07-22-13`: at most three on-paper
+sessions to exhibit one exact macrocell topology with at least 11 rooted
+retilings and a credible unique-grouping invariant, or close that
+parameterization without a shape run.
+
+## D-0105 (2026-07-22) — A twelve-state synchronizing domino kernel
+
+A rooted `2 x 16` macrorectangle has 12 selected equal-area domino retilings
+of the form `VVV H w H VVV`, where `w` ranges over the width-six composition
+words other than `VVVVVV`. The Fibonacci recurrence gives 13 width-six
+words, hence 12 selected states; every state uses 16 congruent dominoes.
+
+When admitted macros concatenate, the two three-column collars form a
+maximal six-column vertical-domino bar. Because no selected macro contains
+such a run, its midpoint identifies the seam locally. With vertically
+aligned bars and a complete no-imitation contact rule, ST-M1.K5S proves a
+unique radius-16 macro partition and state decoder. This is an exact
+topological carrier and synchronization lemma, not an unmarked polygon:
+ordinary dominoes do not enforce the guarded language, and the topology does
+not yet route four Wang colors to four interfaces.

@@ -672,6 +672,13 @@ Research is under the 2026-07-21 reset recorded in
    is exhausted. The bit-only guard route is closed; K4W remains frozen until
    a new checkpoint authorizes an on-paper 11-retiling topology attempt with
    the recorded kill condition.
-7. The `Tile(a,b)` recognizer remains required infrastructure before any
+7. The user authorized HC-13 after independent review. Session 94 repairs the
+   Hu--Lin cache and Kari--Moutot exponent transcription, then constructs the
+   exact 12-state `2 x 16` synchronizing-domino topology K5S. Its six-bar
+   marker gives conditional unique finite-radius grouping. The bare domino
+   does not force that language or expose four Wang interfaces; sessions
+   95--96 must close those topological channels or fire the parameterization
+   kill without a shape run.
+8. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.

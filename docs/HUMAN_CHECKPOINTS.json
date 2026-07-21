@@ -9,13 +9,13 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-21-12",
-    "date": "2026-07-21",
-    "through_session": 90,
-    "reason": "Sessions 88--90 and the K3F/K3R/K3B mechanism attempt were independently reviewed. The user explicitly authorized HC-12 as a bounded, read-only audit of B0. HC-12 must verify the flag-kite/substrate identification, determine what primary results actually imply for binary square-plaquette and larger-radius SFTs, and separate rule radius, decoder radius and geometric visibility. No boundary synthesis, census or shape run is admitted.",
+    "id": "HC-2026-07-22-13",
+    "date": "2026-07-22",
+    "through_session": 93,
+    "reason": "Sessions 91--93 and the B0/K4W audit were independently reviewed. The user explicitly authorized HC-13 after requiring the Hu--Lin cache repair and Kari--Moutot transcription correction. HC-13 is an on-paper inverse-dissection design checkpoint: exhibit one exact macrocell topology with at least 11 rooted retilings and a credible unique-grouping invariant within three sessions, or close that parameterization without a shape run.",
     "artifact_bytes": {
       "docs/notebook/assets": 6756125300,
-      "data": 1793649957
+      "data": 1795000203
     }
   }
 }

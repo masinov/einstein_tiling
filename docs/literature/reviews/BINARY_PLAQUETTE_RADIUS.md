@@ -107,7 +107,9 @@ special corner theorem does.
 Primary anchors:
 
 - Hu--Lin, Definition 2.1 and Theorem 2.3, pp. 1048--1051,
-  DOI `10.1090/S0002-9939-2010-10518-X`;
+  DOI `10.1090/S0002-9939-2010-10518-X`; archived primary PDF cached as
+  `data/literature/papers/2011-hu-lin-two-color-square-tiling.pdf`, SHA-256
+  `3f46f0e8f483f87a852f90bc28c0a51a0c798682ff1b4de4e50b1af09b7d5bbd`;
 - Jeandel--Rao, abstract and minimality theorem,
   DOI `10.19086/aic.18614`.
 
@@ -118,7 +120,7 @@ opposite existence result at larger rectangular support.
 
 Their Theorem 9 starts from any finite Wang set `T`.  After a checkerboard
 doubling that prevents self-neighbor matches, let `t` be the resulting tile
-count, `s=2^t-1` and `N=3s`.  For every width `n>=N` and every height `m>=2`
+count, `s=2^(t-1)` and `N=3s`.  For every width `n>=N` and every height `m>=2`
 they effectively construct allowed binary `n x m` patterns `P`.  Lemma 25 is
 the crucial full-closure statement:
 
@@ -132,6 +134,11 @@ preserves nonemptiness and preserves existence of a periodic configuration
 in both directions.  Corollary 12 applies it to an aperiodic Wang set and
 obtains a strongly aperiodic binary rectangular SFT; height `m=2` is allowed
 once the width is sufficiently large.
+
+Here the paper defines `S={2^j-1 : 0<=j<=t-1}` and takes `s` to be its
+largest ambient index, `2^(t-1)`. The earlier review transcription `2^t-1`
+conflated the set elements with this maximum; the distinction is not
+load-bearing for N12 but is corrected here at attribution level.
 
 ### ST-M1.N12
 
