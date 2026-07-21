@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 62)
+**Last updated:** 2026-07-21 (session 63)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | 📝 prior-art go; theorem design only, no construction/search authorized (D-0069) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⛔ design specified but blocked before geometry on equal-support source lemma S0 and coupled three-state kernel K1 (D-0071) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -75,6 +75,14 @@
   W3 is therefore an exact reproducibility/control implementation, not a new
   aperiodicity theorem or established general method. The 80 abstract D4
   contexts will not be extended (D-0070).
+- **ST-M1 theorem design:** minimal aperiodicity is separated from the
+  surjective positive-entropy strengthening. A coupled contact-star carrier
+  is the only retained mechanism; independent finite-state rails admit a
+  periodic product. The full-isometry theorem requires geometric
+  homochirality and a reflected global decoder. Construction is blocked
+  before drawing or computation because the source's `kappa=infinity`
+  equal-support remark is not a complete system theorem and no total
+  three-state contact kernel has yet been derived (D-0071).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -376,8 +384,8 @@
   lines remain unknown. The completed blind hierarchy
   screen retained two non-unique first-composition rules out of 22,094 but no
   stationary recognizable recursion. Artifact: `e1-overnight-recovered.json`.
-- Test suite: **192 fast passed** (17 deselected, 130.61 s);
-  **17 slow passed** (192 deselected, 389.36 s).
+- Test suite: **221 fast passed** (17 deselected, 141.83 s, session 63);
+  **17 slow passed** previously (192 deselected, 389.36 s).
   Vendored Rust: **5 passed**.
 
 ## Funnel state (polykites, grid-aligned scope — D-0006)
@@ -473,13 +481,18 @@ Research is under the 2026-07-21 reset recorded in
 2. The E1 benchmark assessment is **closed no-go** for new ablations. Package
    the exact reproduction fixtures and postmortem during release work only.
 3. Human checkpoint `HC-2026-07-21-02` was explicitly authorized after review
-   of sessions 58--60; session 61 is the first session under it.
+   of sessions 58--60. Sessions 61--63 have now consumed its three-session
+   allowance.
 4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
    escalation, and all Spectre radius escalation frozen.
-5. Checkpoint `HC-2026-07-21-02` is active. The two authorized audits are
-   complete: ST-M1 survives as an on-paper theorem-design target, while W3 is
-   closed as a novelty branch. No runner, shape search, or Spectre context
-   extension is authorized. Obtain an explicit decision before beginning the
-   ST-M1 congruence/no-spurious-tilings proof design. The `Tile(a,b)` recognizer
-   remains required infrastructure before any future polykite novelty
-   promotion, but is not itself the next research result.
+5. **Stop for human review.** The checkpoint allowance is exhausted. ST-M1's
+   design pass yields the independent-rail no-go and a conditional
+   reflection-safe local-map theorem, but the proposed carrier fails the
+   pre-geometric admission gate until S0 (complete equal-support colored
+   source) and K1 (total coupled three-state contact kernel) close on paper.
+   No runner, shape drawing, contact search, or Spectre extension is
+   authorized. A new explicit checkpoint must choose whether to attempt the
+   bounded S0/K1 source-lemma derivation or close ST-M1.
+6. The `Tile(a,b)` recognizer remains required infrastructure before any
+   future polykite novelty promotion, but is not itself the next research
+   result.

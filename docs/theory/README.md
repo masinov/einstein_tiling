@@ -52,6 +52,10 @@ reviewable proof or certificate.
   the ancestry-blind `166→30→21` physical-language prefix, its conditional
   coordinated contraction to 18 types, and the remaining
   legality/growth/recognizability/gluing obligations.
+- `07_stm1_sturmian_monotile_design.md` — the minimal versus
+  positive-entropy ST-M1 targets, the independent-rail no-go, a
+  reflection-safe conditional carrier theorem, and the pre-geometric kill
+  conditions for a coupled contact-star encoder.
 - `W1_TRANSFER_SPEC.md` — the soundness/completeness contract for the exact
   cylinder transfer engine and its certificates.
 - `PROOF_LEDGER.md` — stable IDs, scope, status, dependencies, and artifacts.
@@ -82,6 +86,10 @@ Every theorem or computational proposition must state:
 5. independent validation controls;
 6. failure polarity — what a positive or negative computation proves;
 7. whether the result concerns existence, periodicity, or both.
+
+A conditional reduction is not a construction: every unproved hypothesis
+remains a separate ledger row, especially contact completeness,
+mixed-handedness exclusion, and totality of a local decoder.
 
 Changes to definitions or logical dependencies require a DECISIONS entry.
 Changes to proof wording alone are tracked by ordinary version control.

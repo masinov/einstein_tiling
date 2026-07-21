@@ -230,3 +230,27 @@ congruence-encoding mechanism, and (iii) proves on paper why it can express
 three states without external colors. If that note cannot state a plausible
 no-spurious-tilings lemma forcing the required Sturmian line systems, close
 the branch without computation.
+
+## Design follow-up (session 63)
+
+The requested on-paper design is now recorded in
+`docs/theory/07_stm1_sturmian_monotile_design.md`. It selects minimal ST-M1
+before the surjective positive-entropy strengthening and makes the full
+Euclidean motion convention explicit. Reflected and mixed-handed placements
+cannot be omitted: the proposed carrier would need a geometric chirality
+separator making every whole-plane tiling homochiral, with a reflected decoder
+on the opposite global branch.
+
+The design also corrects a tempting source conflation. Section 10.1 proves
+positive entropy for the three-prototile system; the `kappa=infinity` passage
+only suggests one support up to color. No bridge between those statements is
+presently proved. Extracting the complete colored equal-support source is now
+the named source lemma ST-M1.S0.
+
+Finally, an elementary no-go shows that three independent finite-state line
+encoders cannot suffice: each nonempty one-dimensional sofic shift contains a
+periodic point, and compatible independent periodic rails yield a periodic
+plane configuration. Cross-direction intersection constraints are therefore
+mandatory. The coupled contact-star architecture remains blocked because no
+complete three-state symbolic kernel has yet been derived. No shape drawing
+or computation is authorized by this follow-up.

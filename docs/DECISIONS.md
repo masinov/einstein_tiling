@@ -1560,3 +1560,32 @@ certificate soundness map to whole-plane conclusions, explicit control of
 spurious abstract states, and validation on at least two structurally
 independent systems. Permitted and forbidden claims are fixed in
 `docs/literature/reviews/W3_CERTIFICATE_METHOD.md`.
+
+## D-0071 (2026-07-21) — ST-M1 stops at a coupled-carrier design
+
+The first ST-M1 theorem-design pass selects the minimal aperiodicity theorem
+before the positive-entropy strengthening. A total finite-radius map into any
+aperiodic irrational Sturmian subsystem suffices for period descent; positive
+entropy requires the separate and stronger claim that the map is surjective
+onto the complete Section 10.1 three-prototile system.
+
+The source's `kappa=infinity` suggestion of one support up to color is not
+silently identified with its proved positive-entropy example. The former is
+now a named source-extraction obligation, ST-M1.S0. Until its complete finite
+alphabet, contacts and all-tilings aperiodicity are derived, it is not an
+available target system.
+
+The chosen candidate mechanism is a coupled contact-star carrier: finite
+relative boundary offsets encode contextual states, while corner relations
+couple all three Sturmian directions. Independent one-dimensional sofic rails
+are ruled out because they contain compatible periodic points under the
+product hypothesis. Full Euclidean isometries are controlling; an ordinary
+monotile proof must geometrically exclude mixed-handed contacts and propagate
+one chirality across every plane tiling, or be downgraded in advance to an
+orientation-preserving claim.
+
+No polygon, contact search or patch experiment is authorized. Geometry may
+begin only after the equal-support source lemma and a total, unambiguous
+three-state symbolic contact kernel are proved on paper. Session 63 exhausts
+the three-session allowance under `HC-2026-07-21-02`; further research needs a
+new explicit human checkpoint.

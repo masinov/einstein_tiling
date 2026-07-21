@@ -91,6 +91,17 @@ Turtle under the production canonicalization.
 | T3.0Q | The D4 colored-component/A6-collar correspondence and phase normalization form an exact finite equivalence kernel | machine-verified partial reconstruction; novelty branch closed | 17↔17 bijection on 310 controls; 17/17 boundary-owner round trips; two determinant-one maps and exact inverses; three generated level-pair round trips; bare SFT obstruction `3565→80` radius-two seeds | preserve artifact; D-0070 forbids another context expansion absent a generic theorem |
 | T4.1 | Every tiling by a target polykite shares one kite-grid frame | optional stronger property; no longer a polykite periodicity gate | exact contact enumeration; fault-line search; compare Hat Lemma A.6 | contact atlas and propagation proof |
 
+## Sturmian monotile encoding
+
+| ID | Statement | Scope | Status | Dependencies | Proof/certificate |
+|---|---|---|---|---|---|
+| ST-M1 | One polygonal disk under full Euclidean isometries tiles the plane and every tiling admits a total finite-radius equivariant map to an aperiodic `sqrt(2)-1` Sturmian system | ordinary unmarked Euclidean monotile; minimal target, no entropy claim | proposed; blocked before geometry | S0 and ST-M1.C0 hypotheses C1--C5 | `07_stm1_sturmian_monotile_design.md` |
+| ST-M1+ | The ST-M1 map is surjective onto the complete Section 10.1 three-prototile system, hence the monotile hull has positive entropy | strengthened target | deferred | ST-M1; complete lifting C6; exact identification of the source system | same design note; no proof |
+| ST-M1.N1 | Three independent nonempty one-dimensional sofic rail rules, when their periodic points superimpose compatibly, admit a periodic plane configuration | stated product/compatibility hypotheses only | proof-draft; elementary, no novelty claim | periodic point in every nonempty 1D sofic shift | same design note §2 |
+| ST-M1.C0 | Source aperiodicity, complete finite contact atlas, chirality propagation, total overlap-consistent local decoding to an exact source tiling, and one lift imply aperiodicity of the carrier monotile | conditional local-map theorem under full Euclidean isometries | proof-draft | S0; C1--C5 exactly as stated | same design note §6 |
+| ST-M1.S0 | The source paper's `kappa=infinity` strategy yields a fully specified finite colored equal-support system whose every tiling enforces an irrational Sturmian lattice | source-extraction lemma | blocked; not stated as a completed construction in the audited source | Sections 6--10 of `akiyama-hamada-ito-sturmian-2026` | source-lemma derivation required before geometry |
+| ST-M1.K1 | One finite coupled contact-star kernel expresses at least three source states, gives a total unambiguous decoder to anchored source cells, and imposes exact coverage and the three-direction intersection rule | symbolic encoding lemma | blocked; kernel not yet derived | ST-M1.S0; defeat ST-M1.N1; reflection semantics | design note §§3--7 |
+
 ## Preserved Turtle-control evidence (legacy “finalist” identifiers)
 
 | ID | Exact finite claim | Status | Artifact | Logical use |

@@ -66,6 +66,19 @@ Primary sources: `docs/EXPERIMENTS.md`, A6 artifacts, census tests.
 
 This part is conditional and must not drive the framework's claims.
 
+## Part VII — Arithmetic symbolic factors beyond the polykite catalog
+
+28. Quadratic Sturmian lattices and finite colored source systems.
+29. Period descent through total local maps.
+30. Congruence encoding by one carrier: pose, contact stars, and its limits.
+31. The independent-sofic-rail obstruction and cross-direction coupling.
+32. Full-isometry semantics, chirality propagation, and reflected branches.
+33. Minimal aperiodicity versus surjective positive-entropy factors.
+
+Primary sources: `07_stm1_sturmian_monotile_design.md` and
+`docs/literature/reviews/STURMIAN_MONOTILE_ENCODING.md`. This part remains a
+theorem-design branch until its source and contact-kernel obligations close.
+
 ## Appendices
 
 - A. Exact coordinate and group-action conventions.
@@ -84,3 +97,5 @@ This part is conditional and must not drive the framework's claims.
   periodic-alignment reduction.
 - **Finalist paper:** Part VI only if its proof obligations close.
 - **Tiling-group note:** Chapter 10 if W2.D produces a genuine theorem.
+- **Sturmian construction note:** Part VII only if the equal-support source
+  lemma and symbolic contact kernel close before geometric search begins.
