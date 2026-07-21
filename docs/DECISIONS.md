@@ -2350,3 +2350,24 @@ unique radius-16 macro partition and state decoder. This is an exact
 topological carrier and synchronization lemma, not an unmarked polygon:
 ordinary dominoes do not enforce the guarded language, and the topology does
 not yet route four Wang colors to four interfaces.
+
+## D-0106 (2026-07-22) — Independent flips do not supply aperiodic arity
+
+K5S clears the state-count threshold but its raw boundary ownership has one
+variable channel: east/west are fixed and north/south are the same state
+word. N14 proves any nonempty ordinary Wang language read only from those
+signatures has a constant periodic tiling.
+
+The obvious two-dimensional repair also fails. Four independent binary
+domino flips in a `4 x 4` macro provide 16 rooted states and a pair of bits on
+each side, but those bits are exactly four shared binary corner colors. N15
+identifies the complete language with Hu--Lin's corner SFT, so every nonempty
+selection has a periodic point. Independent local choices do not evade N11.
+
+K5Q records the surviving compiler shape: four visible non-binary corner
+modes plus an internal exact-cover relation. A `20 x 20` domino scaffold with
+four `2 x 5` sockets supplies at least six exact modes per corner and can
+carry a K5S-style synchronization rail. It does not enforce a relation among
+the sockets. Hu--Lin mention a 44-tile six-color aperiodic corner system, but
+that controlling source must be audited before use. No novelty, polygon or
+aperiodicity claim is attached to K5Q.

@@ -675,10 +675,13 @@ Research is under the 2026-07-21 reset recorded in
 7. The user authorized HC-13 after independent review. Session 94 repairs the
    Hu--Lin cache and Kari--Moutot exponent transcription, then constructs the
    exact 12-state `2 x 16` synchronizing-domino topology K5S. Its six-bar
-   marker gives conditional unique finite-radius grouping. The bare domino
-   does not force that language or expose four Wang interfaces; sessions
-   95--96 must close those topological channels or fire the parameterization
-   kill without a shape run.
+   marker gives conditional unique finite-radius grouping. Session 95 proves
+   that its one raw ownership channel is periodic (N14), while four
+   independent binary quadrant flips merely reproduce Hu--Lin's refuted
+   corner SFT (N15). K5Q retains a six-mode corner-socket topology, but no
+   central exact-cover selector or unmarked guard exists. Session 96 must
+   couple those pieces non-circularly or fire the parameterization kill
+   without a shape run.
 8. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.
