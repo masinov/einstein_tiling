@@ -2,8 +2,9 @@
 
 **Date:** 2026-07-21
 
-**Status:** O0 auxiliary contraction and I0 physical incidence transport
-proof drafts; full decoder D0 open
+**Status:** O0 auxiliary contraction, I0 physical incidence transport and D0
+global symbolic decoding are proof drafts; minimal L0 closed without an atlas
+enumeration
 
 **Primary source:** `akiyama-hamada-ito-sturmian-2026`, Section 10.1 and the
 general matching rule in Section 6
@@ -97,11 +98,14 @@ L0 factors into three obligations:
 - **D0 — full-language decoder:** a finite set of internal ports, edge labels,
   bent-SAB states and O0/I0 vertex decorations must force unique `30,30,2`
   macro grouping and define a total local map from **every** tiling satisfying
-  those rules into `X_kappa`.
+  those rules into the indexed source matching language.
 
-If I0 and D0 hold, the limit system is MLD with the subdivided physical source
-system. P0 then fixes the irrational slope and excludes all-`M` through the
-source decoder; S0 and E-infinity close for the minimal colored target.
+If I0 and D0 hold, the limit system has a finite-radius period-reflecting map
+to the indexed source language. P0 then fixes the irrational slope and
+excludes all-`M` through the source decoder; S0 and E-infinity close for the
+minimal colored target. This statement deliberately does not claim an MLD
+map between the two Euclidean embeddings: changing corridor widths is a shape
+deformation, not a position-preserving local derivation.
 
 ## 4. Stop conditions
 
@@ -194,7 +198,131 @@ ambiguity of a point star.
 
 D0 must prove that internal address ports, source edge/SAB matches, O0
 auxiliary decorations and I0 vertex stars define a finite local rule whose
-every whole-plane configuration groups uniquely into the source physical
+every whole-plane configuration groups uniquely into source-labeled
 macrotiles. The proof must cover global consistency of the order-coset labels
 without selecting an absolute origin and must show that every permitted local
-star participates in one source lift. No enumeration is authorized.
+star participates in one indexed source lift. No enumeration is authorized.
+
+## 7. The finite limiting presentation
+
+Let `C_infinity` be the edge-to-edge equilateral-triangle cellulation obtained
+in G0. An edge-to-edge whole-plane tiling by congruent equilateral triangles
+has one global triangular frame: fixing one triangle forces the pose of every
+edge-neighbor, and the dual graph is connected. Thus, up to one global
+isometry, its vertices and faces have the cabinet indices of Section 5.
+
+Define a finite color on a primitive triangle by retaining:
+
+- the large/small macro state, its finite address and the split-`M` half;
+- the directed internal-address ports of S0C;
+- on exposed edges, the source patch-tile boundary and bent-SAB data;
+- the line family, order coset, and narrow/wide gap symbols transported from
+  the indexed source cell;
+- at a contracted auxiliary vertex, the O0 participant and cyclic-order
+  decoration.
+
+The local rule has four parts. Internal ports meet only their unique
+complements. Exposed ports satisfy the source edge-to-edge and SAB
+continuation rule. At a vertex, order cosets and incident line families obey
+the I0 star. Finally, two occurrences describing the same indexed corridor
+gap carry the same narrow/wide symbol. The last equality propagates along the
+connected strip of cells incident with that gap; it is a nearest-star rule,
+not a global condition.
+
+This is finite without listing a radius table. There are only three finite
+macro templates (`30,30,2` addresses), finitely many directed constituent
+edges, two gap values in each of three line families, finitely many SAB
+segments, and finitely many O0 participant orders. Unlike a definition by
+"all patches that happen to occur", every rule above is the direct transport
+of specified source data or an exact address equality.
+
+## 8. ST-M1.D0 — global symbolic lift
+
+### Lemma D0
+
+Every whole-plane tiling satisfying the finite presentation of Section 7
+groups uniquely into complete limiting source macros and has a total,
+finite-radius, translation-equivariant decoder to an indexed Section 10.1
+source configuration. Its three narrow/wide corridor sequences and SABs form
+a Sturmian lattice of the slope selected by the source macro system.
+
+### Proof
+
+Internal-address ports first recover every finite macro. The address graph of
+each template is connected, so starting at any constituent triangle reaches
+all `30` or `2` addresses. A second component cannot occupy the same address:
+it would overlap a triangle interior. An internal obligation cannot terminate
+at a macro boundary. This is exactly the S0C grouping argument, and its radius
+is bounded by the largest template diameter.
+
+It remains to show that the locally recovered source data have no global
+holonomy. Choose one vertex as an index origin. Across the three primitive
+edge directions, change `(r,j,k)` by the fixed integer increment read from
+the cabinet frame. Around every triangular face these increments sum to zero.
+Because the triangular cellulation is simply connected, every closed edge
+path is a sum of face boundaries; hence its total increment is zero. The
+indices obtained by path integration are therefore independent of the path.
+Changing the chosen origin adds constants and changes no decoded state.
+
+The three order-coset labels agree with these indices by I0. Gap-equality
+ports make the bit between, for example, `a_r` and `a_(r+1)` independent of
+the transverse cell used to read it. They therefore define three global
+bi-infinite narrow/wide sequences. The exposed-edge rule makes every bent SAB
+continue exactly as in the physical source, and the I0 vertex rule supplies
+the same three-direction intersection state. Consequently the grouped macros,
+gap sequences and SABs satisfy the source matching rule, not merely a sampled
+list of its patches.
+
+The source proves in Section 8.1 (the matching rule on pp. 39--43, followed
+by the projective composition argument) that this edge-to-edge/SAB rule
+produces a Sturmian lattice with some slope. The macro composition lies on
+the segment spanned by
+`[12:12:6]` and `[0:2:0]`; P0 shows that its only intersection with the
+Sturmian parabola is `beta=sqrt(2)-1`. In particular, the apparent all-`M`
+endpoint is not a decoded source configuration. Thus every legal limiting
+tiling decodes to the irrational source language.
+
+The output attached to a rooted triangle—macro state/address, indexed source
+cell, gap symbols and SAB state—is already present in a bounded neighborhood.
+Grouping only adds the fixed maximum macro diameter. The decoder is therefore
+finite-radius and commutes with translations of the regular frame. Reflection
+transports all indices, ports and cyclic orders together. Reflected macro
+states, including locally occurring reflected large macros permitted by the
+source, are decoded according to their retained state; reflection does not
+make that lift multivalued.
+\(\square\)
+
+## 9. Existence and period reflection
+
+Take any physical Section 10.1 source tiling. Replace every indexed physical
+cell by its G0 limiting rhombus, perform the marked split, and retain the
+colors of Section 7. The exact index formula fills `C_infinity`; O0 and I0
+preserve its auxiliary and physical incidences. Hence the finite limiting
+system is nonempty.
+
+Any translational period of a colored limiting tiling preserves the vertex
+lattice and therefore induces a nonzero integral shift of `(r,j,k)`. D0 is
+equivariant for this shift, so it would give a period of the decoded
+irrational Sturmian configuration, which the source excludes. The limiting
+colored system is therefore aperiodic.
+
+This closes minimal L0, E-infinity and S0 at proof-draft level. It does **not**
+prove ST-M1, produce an unmarked shape, or show positive entropy. In
+particular, no topological conjugacy or surjection to the finite-`kappa`
+Euclidean hull is asserted; the result is the period-reflecting colored source
+needed by the minimal theorem.
+
+The finite alphabet is specified functorially from the published finite
+templates and their directed constituent edges; it has not been serialized as
+an extensional collar table. Such a table would be useful for implementation
+and independent checking, but its absence is why the result remains a proof
+draft rather than a machine-verified certificate.
+
+## 10. Boundary of the result
+
+The next mathematical object would be K1: a smaller coupled contact-star
+kernel whose complete local closure still decodes to this addressed system.
+Q0, N1 and N2 show why simply erasing addresses or separating the three rails
+is unsafe. D0 does not authorize a collar table, carrier drawing, geometric
+contact search or experiment. Those require a new human checkpoint and a
+separate finite proposition.

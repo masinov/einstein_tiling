@@ -40,9 +40,10 @@ def test_stm1_source_correction_is_fail_closed():
     assert "ERR-006" in errata
     assert "12S+6M+6L" in errata
     assert "ST-M1.E∞" in ledger
-    assert "partial: G0 geometry proved; blocked on L0 language transport" in ledger
+    assert "proof-draft; G0 support plus L0 symbolic language transport" in ledger
     assert "ST-M1.L0" in ledger
-    assert "open; factorized as O0/I0 proved, D0 open; no enumeration authorized" in ledger
+    assert "proof-draft; O0/I0/D0 closed without atlas enumeration" in ledger
+    assert "no finite-`kappa` MLD claim" in ledger
 
 
 def test_gate_rejects_template_and_accepts_completed_record(tmp_path):

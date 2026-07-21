@@ -2,7 +2,8 @@
 
 **Date:** 2026-07-21
 
-**Status:** theorem design; construction blocked before geometry
+**Status:** minimal colored source S0 proved in draft; unmarked construction
+blocked at the pre-geometric contact-star quotient K1
 
 **Primary source:** `akiyama-hamada-ito-sturmian-2026`, especially Theorem 4,
 Sections 10.1--11
@@ -329,8 +330,8 @@ Independent finite-state corridor rails fail separately by ST-M1.N1.
 
 Conditional on a valid S0, Q0 still requires safety on the full local closure,
 and the two no-go results still eliminate obvious reductions. There is,
-however, no presently established addressed S0 alphabet to minimize. K1 is
-blocked upstream of a collar table.
+at the end of session 66, no established addressed S0 alphabet to minimize.
+K1 was therefore blocked upstream of a collar table.
 
 ## 12. Session-67 primary-source correction
 
@@ -357,3 +358,20 @@ This still does not close S0. The equidistant limit collapses tiny generating
 triangles to vertices and can add point contacts. L0 must give a finite
 SAB/vertex atlas whose full local closure has a total decoder into the source.
 Until L0 is proved, the 62 geometric addresses are not a safe K1 alphabet.
+
+## 14. Sessions 70--72 limiting-language closure
+
+O0 separates the auxiliary overlapping Sturmian-triangle patches from the
+ordinary physical patch-tile cellulation. I0's three-coset calculation proves
+that limiting physical vertices retain unique source provenance. D0 then
+integrates exact line-index increments on the simply connected triangular
+frame; face-boundary sums kill holonomy, while gap-equality and bent-SAB ports
+recover the complete indexed source matching system. P0 forces its slope to
+`sqrt(2)-1`.
+
+This gives the finite colored equal-support source required by minimal S0 and
+makes the addressed `30,30,2` presentation a safe input in principle. It does
+not supply the unmarked carrier. K1 must still find a genuinely smaller
+coupled contact-star quotient whose **full** local closure decodes back to the
+addressed system. The role-only and independent-rail quotients remain
+refuted. No K1 table or geometry is authorized by this closure.

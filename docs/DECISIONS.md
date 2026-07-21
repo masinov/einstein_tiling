@@ -1842,3 +1842,37 @@ star has exactly one prelimit source-star provenance. Reflections act on the
 whole decorated star and do not create a second lift. I0 is therefore a
 proof-draft lemma at the colored stage. D0—the global total decoder from the
 finite local rules—remains open; no atlas was enumerated.
+
+## D-0081 (2026-07-21) — Close minimal colored S0 by an index-cocycle decoder
+
+The last HC-05 session closes D0 and L0 at proof-draft level without a collar
+enumeration. The limiting alphabet retains finite macro addresses and
+internal ports, source boundary/SAB data, line family and order coset,
+narrow/wide gap symbols, and O0 vertex decorations. Its rules are direct
+address equalities, source boundary matches, I0 vertex incidence, and equality
+of repeated descriptions of one indexed corridor gap.
+
+Every edge-to-edge tiling by the common equilateral triangle has one global
+triangular frame. Choose an arbitrary vertex as index origin and integrate the
+fixed `(r,j,k)` increment across primitive edges. The sum around every
+triangular face is zero; since the plane cellulation is simply connected, the
+sum around every closed path is zero. Thus local index data have no global
+holonomy. Gap equalities produce three global narrow/wide sequences, and
+transported edge/SAB rules produce exactly the indexed Section 10.1 source
+matching system. S0C ports group the `30,30,2` constituents uniquely into
+complete macros. The source theorem and P0 force slope `sqrt(2)-1`, excluding
+the spurious all-`M` endpoint.
+
+Flattening one physical source tiling by its line indices proves existence.
+A period of a limiting colored tiling is a triangular-lattice translation and
+would, through the finite-radius decoder, periodize its irrational source
+configuration. Therefore the minimal equal-support colored system is
+aperiodic. ST-M1.D0, L0, E-infinity and S0 close as proof drafts.
+
+The conclusion is deliberately weaker than the withdrawn claim in one
+respect: no MLD or topological conjugacy between the finite-`kappa` Euclidean
+hull and the equidistant Euclidean hull is asserted. The proved object is a
+finite, period-reflecting symbolic decoder, which is sufficient for minimal
+ST-M1 but not for the positive-entropy strengthening. No unmarked monotile,
+carrier, collar quotient or geometric contact atlas has been constructed.
+K1 is the next theorem blocker and requires a new human checkpoint.

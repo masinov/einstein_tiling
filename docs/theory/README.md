@@ -66,7 +66,7 @@ reviewable proof or certificate.
 - `10_stm1_limit_language.md` — the distinction between auxiliary overlapping
   Sturmian-triangle patches and the physical cell tiling, O0's decorated-
   vertex contraction, the three-coset proof of unique physical provenance
-  I0, and the remaining total-decoder obligation D0 composing L0.
+  I0, and the face-cocycle/global-gap decoder D0 closing minimal colored L0.
 - `W1_TRANSFER_SPEC.md` — the soundness/completeness contract for the exact
   cylinder transfer engine and its certificates.
 - `PROOF_LEDGER.md` — stable IDs, scope, status, dependencies, and artifacts.

@@ -292,8 +292,9 @@ are conditional no-go statements and survive ERR-006.
 
 The safe criterion in `docs/theory/09_stm1_symbolic_quotient.md` requires a
 total irrational-corridor decoder on the quotient's **entire finite local
-closure**. Because no valid equal-support S0 alphabet is now established,
-there is no address table to minimize. Boundary geometry remains premature.
+closure**. At the end of session 66 no valid equal-support S0 alphabet was
+established, so there was no address table to minimize. Boundary geometry
+remained premature.
 
 ## Primary-source correction (session 67)
 
@@ -351,8 +352,8 @@ The overlap warning still creates a real provenance obligation. O0 contracts
 each disjoint auxiliary tiny-overlap disk to a vertex decorated by its
 participants and cyclic order. The quotient remains a plane and retains the
 BD incidence. L0 is correspondingly factorized into O0, physical point-star
-transport I0, and total decoder D0. O0 and I0 are currently proof drafts;
-D0 remains open.
+transport I0, and total decoder D0. O0 was a proof draft; I0 and D0 remained
+open at the end of session 70.
 
 ## Unique physical provenance (session 71)
 
@@ -371,3 +372,21 @@ retained, each limiting physical star has one source-star lift.  This is I0,
 not yet the desired language theorem: D0 must still prove that the finite
 local stars glue to a total whole-plane source decoder.  See theory note 10
 and D-0080.
+
+## Global decoder (session 72)
+
+D0 closes the remaining minimal colored-language obligation without defining
+an atlas by occurrence. Internal address ports group the `30,30,2` templates.
+The regular triangular frame carries exact line-index increments; their sum
+is zero around each face and therefore around every closed path in the simply
+connected plane. Repeated descriptions of one corridor gap are equated by a
+local propagation port. The resulting global gap sequences and transported
+bent SABs satisfy the original source matching rule, and P0 fixes their slope
+to `sqrt(2)-1`.
+
+This proves a nonempty finite colored equal-triangle system with a total
+period-reflecting decoder to the irrational source language. It is the
+minimal S0 required upstream of a carrier. It is not a claim of MLD or
+topological conjugacy between the finite-`kappa` and equidistant Euclidean
+embeddings, and it does not transfer the source's positive entropy. The
+unmarked K1 quotient remains open.

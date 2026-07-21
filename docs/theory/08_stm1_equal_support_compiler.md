@@ -2,8 +2,8 @@
 
 **Date:** 2026-07-21
 
-**Status:** conditional compiler proof-draft; source specialization blocked
-and the session-65 attempt withdrawn by ERR-006
+**Status:** conditional compiler and corrected minimal source specialization
+are proof drafts; the session-65 attempt remains withdrawn by ERR-006
 
 **Primary source:** `akiyama-hamada-ito-sturmian-2026`, Sections 6, 8.1,
 10.1--11
@@ -351,3 +351,18 @@ L0 must explicitly control the new limiting point contacts, the bent SABs,
 both large geometries and their reflected occurrence, and the split halves of
 each `M`. Its all-tilings direction is the all-`M` exclusion. G0 does not
 authorize an enumeration of this atlas.
+
+## 9. Session-72 language closure
+
+Theory note `10_stm1_limit_language.md` closes the sharp remaining lemma by a
+different route from the withdrawn session-65 assertion. O0 transports the
+auxiliary overlap incidence, I0 proves unique physical star provenance, and
+D0 uses the exact triangular-frame index cocycle to prove global consistency.
+Internal ports group the `30,30,2` addresses, repeated gap symbols propagate
+to three bi-infinite sequences, and source edge/SAB rules decode every legal
+configuration to the optimized irrational source language.
+
+Thus E-infinity and the minimal colored S0 close at proof-draft level. The
+claim is a finite period-reflecting symbolic specialization. It is not an MLD
+or topological conjugacy statement between the finite-`kappa` and limiting
+Euclidean embeddings, and it supplies no positive-entropy conclusion.

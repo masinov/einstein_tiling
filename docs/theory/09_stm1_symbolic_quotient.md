@@ -2,16 +2,17 @@
 
 **Date:** 2026-07-21
 
-**Status:** conditional safety criterion proof-draft; natural three-role
-quotient refuted; application blocked by ERR-006
+**Status:** conditional safety criterion proof-draft; natural three-role and
+independent-rail quotients refuted; corrected addressed source now available,
+but no smaller K1 quotient is established
 
 **Scope:** any future minimal colored `sqrt(2)-1` source satisfying
 ST-M1.S0; no polygonal carrier or positive-entropy claim
 
 ERR-006 withdraws the claimed 38-state construction. G0 later derives 62 raw
-geometric addresses (`30,30,2`), but L0 has not proved that their finite local
-closure decodes to the source. This note's criterion and no-go results do not
-depend on either count; they specify tests for a future valid S0 before
+geometric addresses (`30,30,2`), and sessions 70--72 prove the corrected
+O0/I0/D0 language transport for that full addressed presentation. This note's
+criterion and no-go results now govern any attempt to quotient it before
 carrier geometry is considered.
 
 ## 1. Local closure is the adversary
@@ -125,12 +126,13 @@ supply:
 
 ## 5. Present K1 boundary
 
-K1 does not pass the pre-geometric gate because S0/E-infinity is blocked on
-L0. G0 fixes 62 raw geometric addresses, but the next object is a proof of
-their complete finite SAB/vertex language, not an enumerated quotient or
-polygon. Only after L0 gives a total decoder may one define symmetry merges
-and prove future equivalence. A shape search performed earlier would have no
-valid symbolic specification.
+O0/I0/D0 now make the full `30,30,2` addressed presentation a valid colored
+source. K1 nevertheless remains pre-geometric: the next object is a proposed
+finite equivalence on that presentation together with a proof that every
+quotient transition is well defined and every quotient configuration lifts
+or decodes directly to the irrational source. No symmetry merge, collar
+table, or polygon has yet met that condition. A shape search performed before
+it would still have no safe reduced symbolic specification.
 
 ## 6. Claim boundary
 
