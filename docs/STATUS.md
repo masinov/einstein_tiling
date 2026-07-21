@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 81)
+**Last updated:** 2026-07-21 (session 82)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -186,6 +186,12 @@
   excluded by N7. K2H helps geometry only if one independently visible
   four-class central feature is shared by all interfaces. No such feature or
   ternary junction is known; K2G is frozen at that exact boundary (D-0091).
+- **ST-M1 boundary-cocycle candidate:** K2C factors the complete K1P codebook
+  on a carrier's three-corner cycle. Contextual `Z/2` corner potentials make
+  base side parities exact differences, so boundary holonomy enforces even
+  parity; cyclic equality enforces every remaining fresh diagonal tag. The
+  two potential lifts differ by gauge flip. This survives N7--N9 symbolically
+  but has no geometric vertex gadget yet (D-0092).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -587,14 +593,16 @@ Research is under the 2026-07-21 reset recorded in
    user explicitly authorized `HC-2026-07-21-07` after independent review.
    Sessions 76--78 exhaust HC-07. The user authorized HC-08 for the bounded
    pose-action question; session 79 proves N7 and closes pure intrinsic pose.
-   Sessions 79--81 close pure intrinsic pose, unanchored `L/2L`, and their
-   combination. HC-08 is exhausted with no experiment or large artifact.
+   Sessions 79--81 exhaust HC-08. The user authorized HC-09 with a three-
+   session kill condition; session 82 derives the surviving K2C boundary-
+   cocycle candidate. This is session 1 of at most 3, with no experiment or
+   large artifact.
 4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
    escalation, and all Spectre radius escalation frozen.
-5. **Stop for review.** K2G is frozen until an on-paper candidate supplies an
-   independently visible four-class contextual star or a genuine ternary
-   exact-cover junction. HC-08 is exhausted; no further theory, contact
-   census, carrier drawing or experiment is authorized before a checkpoint.
+5. K2G is reopened only for K2C's on-paper audit. Next test whether corner
+   potentials can remain sector-specific at a shared six-valent vertex while
+   allowing a K1P lift. No carrier drawing, contact census or experiment is
+   authorized.
 6. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.

@@ -2085,3 +2085,24 @@ contextual star map or a genuine ternary/larger-radius exact-cover junction,
 together with a noncircular shape-enforcement argument. Pure pose, bare
 `L/2L`, radius escalation and unmotivated notch search are closed. HC-08 is
 exhausted.
+
+## D-0092 (2026-07-21) — Reopen K2G on an exact boundary-cocycle candidate
+
+The user authorized HC-09 with a three-session kill condition. K2C provides a
+concrete mechanism surviving N7--N9. Treat K1P's codebook as the union of its
+32 base even-parity words and its remaining fresh diagonal tags. A corner
+constraint forces one branch consistently around the carrier. On the base
+branch, contextual bits at the three corners have successive differences
+equal to the side-mode parities; closed-boundary holonomy is zero exactly for
+the even words. On the fresh branch, cyclic tag equality gives exactly one
+diagonal word.
+
+The corner potentials are defined only up to simultaneous flip and every
+constraint uses differences, so no absolute lattice phase is introduced.
+They are contextual vertex-sector states, not pure poses. K2C is an exact
+symbolic factorization of the complete K1P star relation, not a polygon.
+
+The candidate survives admission. It fails unless a shared six-valent
+geometric vertex can expose separate sector states for its incident carriers,
+side contacts can enforce the difference relation, and the resulting atlas
+has no additional contacts. No drawing or search is authorized.

@@ -338,11 +338,12 @@ classes from one fixed intrinsic boundary pattern.
 
 ### Proof
 
-A primitive global translation changes the `L/2L` residue by an arbitrary
-element of the quotient and leaves the orientation unchanged. With no
-geometric anchor, translation equivariance requires the decoded state to be
-invariant under every such residue shift. It therefore cannot depend on the
-translation residue. What remains is a function of orientation alone.
+Changing the arbitrary origin of the bare recovered frame changes the
+`L/2L` residue by an arbitrary quotient element while leaving the unmarked
+tiling and the carrier orientation unchanged. By N8's gauge argument, a local
+geometric state must be well defined under every such origin change. It
+therefore cannot depend on the unanchored translation residue. What remains
+is a function of orientation alone.
 
 The intrinsic side pattern of orientation-related copies lies in one
 coordinate-permutation orbit. N7 shows that such an orbit cannot contain both
@@ -391,3 +392,70 @@ an on-paper candidate for `eta` or for a ternary exact-cover junction and a
 noncircular explanation of how one fixed unmarked boundary realizes it.
 Increasing a collar radius, drawing notches, or searching contacts without
 that mechanism is not authorized.
+
+## 16. Boundary-cocycle candidate
+
+HC-09 tests a different auxiliary topology. Retain K1P's base alphabet
+`B_i={0,1,2,3}` on side `i`. Regard each remaining diagonal codeword
+`(4+t,4+t,4+t)` as a distinct fresh tag `f_t`, disjoint from the base modes.
+The full selected tile-star relation is
+
+```
+C = E union {(f_t,f_t,f_t) : t indexes a remaining state},
+```
+
+where `E` is the 32-word even-parity base relation.
+
+Put a bit `q_i in Z/2` at each of the three corners of a rooted carrier,
+with side `i` running from corner `i` to corner `i+1` cyclically. Impose:
+
+1. at every corner, the two incident side modes are either both base modes
+   or the same fresh tag;
+2. on the base branch, side `i` satisfies
+   `q_(i+1)-q_i = x_i mod 2`;
+3. on a fresh branch, no corner bit is needed.
+
+### ST-M1.K2C — exact cyclic factorization
+
+Existentially eliminating the corner bits from these corner/side constraints
+gives exactly `C`.
+
+### Proof
+
+The corner branch constraints around the three-cycle force either three base
+modes or one common fresh tag. The latter case gives exactly a diagonal fresh
+codeword.
+
+In the base case, summing the three side equations around the closed boundary
+gives
+
+```
+x_0+x_1+x_2 = 0 mod 2,
+```
+
+so the visible word lies in `E`. Conversely, for any word in `E`, choose
+`q_0` arbitrarily and integrate the first two side equations. Even parity
+makes the third equation close. There are exactly two lifts, related by the
+global gauge flip `q_i -> q_i+1`. Thus the visible relation is precisely
+`E`, and the two branches together give precisely `C`. \(\square\)
+
+K2C neither changes nor repairs K1P; it factors the already valid full
+codebook, including all diagonal extension states. It also does not
+contradict N5 or N6: its auxiliary variables live on a three-cycle rather
+than in N5's variable-free binary presentation or N6's single central-star
+product-box form.
+
+## 17. Why this candidate survives N7--N9
+
+The `q_i` are contextual corner states, not intrinsic rotations. Their
+simultaneous flip is a gauge symmetry, and every constraint depends only on
+differences, so no absolute `L/2L` origin is selected. The same corner state
+is shared by the two adjacent sides of one carrier, providing the physical
+common variable whose absence made K2H circular.
+
+This is still only a symbolic geometric interface specification. To count as
+a K2G mechanism, one fixed boundary must make each `q_i` a locally visible
+sector state at a six-valent frame vertex, make each side contact enforce the
+difference equation, and admit no other point/segment contacts. HC-09's next
+question is whether those sector states can remain independent enough at a
+shared six-tile vertex to lift a K1P configuration.
