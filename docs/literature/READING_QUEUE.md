@@ -51,13 +51,15 @@ assumptions, exact claims used here, and a repository impact decision.
    controlled prior art; the exact verifier implementation remains a
    reproducibility contribution. See `reviews/W3_CERTIFICATE_METHOD.md`.
 
-## Active bounded audit
+## Completed bounded audit
 
 9. `hu-lin-two-color-square-2011`,
    `kari-moutot-low-complexity-2023`, and
-   `jeandel-rao-wang-2021` — HC-12 separates binary corner-plaquette
-   impossibility, larger rectangular binary recoding, and ordinary Wang
-   alphabet bounds. No rule-set enumeration is authorized. See
+   `jeandel-rao-wang-2021` — HC-12 completed 2026-07-21. Binary `2x2`
+   corner-plaquette aperiodicity is impossible; larger rectangular binary
+   recoding and hidden-state sofic covers survive; ordinary edge-Wang
+   realization needs at least 11 states and four colors. No rule-set
+   enumeration is authorized. See
    `reviews/BINARY_PLAQUETTE_RADIUS.md`.
 
 ## Immediate: research-return decision

@@ -2287,3 +2287,29 @@ No smallest surviving width is claimed.  Jeandel--Rao's 11-tile/four-color
 minimum concerns ordinary edge-colored Wang tiles and does not by itself
 settle binary corner plaquettes; it is Hu--Lin's corner theorem that supplies
 the exact no-go.
+
+## D-0103 (2026-07-21) — Replace bit-only B0 by the K4W retiling compiler
+
+The visible diagonal map of a finite physical contact SFT is generally a
+sofic projection, not automatically the `2x2` SFT formed from its observed bit
+blocks. Hu--Lin closes the bit-complete K3B route but leaves independently
+visible hidden docking states open. Such states must be recovered from
+bounded unmarked geometry before source legality is invoked.
+
+For an ordinary edge-Wang macro presentation, Jeandel--Rao force at least 11
+macrostates and four interface colors. Two diagonal retilings with at most
+`h` docking modes each therefore require `h>=6` (N13). This is a scoped
+search lower bound, not a universal bound for vertex or larger-range systems.
+
+K4W is the direct sufficient contract: one polygon must force unique square
+macro grouping, locally visible states realizing a fixed aperiodic Wang set,
+exact complete interfaces under full isometries, and one lift. Period descent
+then proves aperiodicity. The preferred design specializes to the minimal
+11-state/four-color Jeandel--Rao set and seeks at least 11 rooted exact
+retilings of one macrocell rather than Kari--Moutot's enormous generic binary
+strip.
+
+HC-12 ends after session 93. No polygon or run is authorized. A future K4W
+checkpoint must first produce on paper one exact macrocell topology supporting
+11 rooted retilings and a plausible unique-grouping invariant; failure within
+three sessions closes that parameterization without computation.

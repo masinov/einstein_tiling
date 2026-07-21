@@ -172,3 +172,49 @@ Primary anchors:
 The smallest width of a strongly aperiodic binary height-two rectangular SFT
 is not established by the audited sources.  It must not be guessed from the
 `2x2` no-go or from the very large constructive upper bound.
+
+## Geometric interpretation: SFT versus sofic projection
+
+Theory note 17 originally said that the physical K3B language “projects to a
+binary square-plaquette SFT.” That is true only if the diagonal bit is the
+complete macro state. A finite contact atlas may contain locally visible
+docking states `Y`; forgetting them gives a binary **sofic** shift `b(Y)`,
+which need not be characterized by its allowed `2x2` bit blocks. N11 then
+does not apply to `Y`, and `b(Y)` itself need not carry the source decoder.
+
+This is not a loophole that permits post-hoc colors. Every hidden state must
+be a bounded function of the unmarked geometry before source legality is
+tested. If the complete macro language is ordinary Wang edge matching,
+Jeandel--Rao impose at least 11 visible macrostates and four interface colors.
+For two diagonal retilings and at most `h` docking modes per diagonal this
+gives `h>=6` (ST-M1.N13).
+
+## HC-12 decision
+
+### Permitted claims
+
+- the flag carrier is exactly the existing kite substrate up to scale;
+- bit-only `2x2` B0 is impossible by Hu--Lin;
+- larger binary rectangular aperiodic SFTs exist by Kari--Moutot;
+- a hidden-state edge-Wang compiler needs at least 11 macrostates and four
+  interface colors by Jeandel--Rao;
+- K4W in theory note 18 is a sufficient contract for turning any fixed
+  aperiodic Wang set into one shape-only monotile.
+
+### Forbidden claims
+
+- that a binary or 11-state unmarked polygon has been constructed;
+- that the smallest surviving binary rectangle is known;
+- that Kari--Moutot supply a unit-scale K3F decoder or a geometric carrier;
+- that every sofic binary projection is aperiodic;
+- that K4W's factor/period-descent theorem schema is novel.
+
+### Research decision
+
+Do not synthesize a guard for the two-state bit-only diagonal kernel: its
+target language is refuted. Do not instantiate the generic long-strip
+encoding while SER0 is unavailable. The most focused surviving “happy idea”
+route is the K4W internal multi-retiling problem: one common macrocell, at
+least 11 exact rooted retilings by one polygon, and boundary subdivisions that
+realize four Wang colors. This is an on-paper inverse-dissection question
+before it is a search problem.

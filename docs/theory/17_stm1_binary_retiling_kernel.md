@@ -60,14 +60,18 @@ The diagonal state changes which physical triangle owns each macro side and
 whether a macro corner contains one `90`-degree tip or two `45`-degree tips.
 Consequently a guarded leg contact can constrain two adjacent bits, while a
 complete macro-corner star can constrain the four bits of the incident
-square cells. The full geometric language therefore projects to a binary
-square-plaquette SFT, not merely to three independent one-dimensional rails.
+square cells. If these bits are the complete macro state, the full geometric
+language is therefore a binary square-plaquette SFT, not merely three
+independent one-dimensional rails. In general this needs the HC-12
+qualification: a finite physical contact language can retain hidden docking
+states, and its bit projection is then only guaranteed to be **sofic**, not an
+SFT determined by its observed `2x2` blocks.
 
 This evades the fixed-fusion objection and, in principle, the independent-
-rail no-go. It does not show that the resulting binary SFT is aperiodic or can
-decode K3F.
+rail no-go. It does not show that the resulting binary system is aperiodic or
+can decode K3F.
 
-## 4. Symbolic feasibility obligation B0
+## 4. Symbolic feasibility obligation B0 (refuted in its immediate form)
 
 Before synthesizing a boundary, one must exhibit a finite binary local
 language `Z_B` and a total finite-radius map
@@ -89,10 +93,19 @@ No B0 compiler is claimed. The existence and minimum radius of strongly
 aperiodic binary plaquette systems, and their relation to standard higher-
 block encodings, require a primary-source audit before any enumeration.
 
-## 5. Exact boundary-word problem
+HC-12 completed that audit. Hu--Lin prove that every nonempty binary `2x2`
+corner-plaquette SFT contains a periodic configuration, so the bit-complete
+B0 written above is impossible. Kari--Moutot prove that sufficiently long
+binary rectangular rule supports can encode arbitrary Wang systems with exact
+full closure and preservation of periodic-point existence. The surviving B1
+route must therefore expose a larger neighborhood or retain independently
+visible hidden docking states. See
+`docs/literature/reviews/BINARY_PLAQUETTE_RADIUS.md` and theory note 18.
 
-If B0 survives, boundary synthesis becomes a bounded inverse problem. Choose
-a maximum number `N` of rational polygonal segments for `H,L_0,L_1` and solve
+## 5. Superseded boundary-word problem
+
+HC-11 proposed the following bounded inverse problem if B0 survived: choose a
+maximum number `N` of rational polygonal segments for `H,L_0,L_1` and solve
 simultaneously for:
 
 1. both exact diagonal retiling identities;
@@ -105,6 +118,10 @@ For a fixed `N`, primitive segment/vertex incidences are finite, but that does
 not by itself prove whole-plane contact completeness. The preregistration
 would have to state the exact guard lemma or exact-real-algebraic certificate
 that turns those incidences into R1--R4.
+
+N11 means this bit-only synthesis must not be run. Theory note 18 replaces it
+with K4W: at least 11 visible Wang macrostates and four interface colors, or a
+non-Wang larger-support contract stated before geometry.
 
 ## 6. HC-11 disposition
 

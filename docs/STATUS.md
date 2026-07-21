@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 92)
+**Last updated:** 2026-07-21 (session 93)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | 🔎 HC-12: Hu--Lin refute the bit-only `2x2` B0; Kari--Moutot retain binary `n x 2` encodings at sufficiently large width. Physical visibility/hidden-state consequence remains (D-0101/D-0102) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-12 closed: bit-only B0 refuted; larger binary/hidden-state routes reduced to K4W's 11-state/four-interface inverse-retiling contract; no polygon or run (D-0101--D-0103) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -238,6 +238,14 @@
   two systems at sufficiently large width. Larger support survives
   symbolically; no geometric reader or smallest width is established
   (D-0102).
+- **ST-M1/Wang retiling compiler:** the diagonal bit is only a sofic
+  projection when bounded hidden docking states remain physically visible.
+  In an ordinary edge-Wang realization, Jeandel--Rao force at least 11
+  macrostates and four interface colors (`h>=6` modes per diagonal in the
+  balanced two-retiling model). K4W proves that unique macro grouping, exact
+  realization of any fixed aperiodic Wang set, full-isometry contact
+  completeness and one lift suffice for one polygon to be an aperiodic
+  monotile. This is a contract, not a construction (D-0103).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -660,8 +668,10 @@ Research is under the 2026-07-21 reset recorded in
    distinction between rule support, decoder radius and geometric visibility.
    No enumeration or shape run is admitted. Session 92 refutes bit-only
    `2x2` B0 by Hu--Lin and retains only a larger-support/hidden-state route by
-   Kari--Moutot. Session 93 must translate that boundary into a geometric
-   go/no-go and stop.
+   Kari--Moutot. Session 93 translates the boundary into K4W and stops. HC-12
+   is exhausted. The bit-only guard route is closed; K4W remains frozen until
+   a new checkpoint authorizes an on-paper 11-retiling topology attempt with
+   the recorded kill condition.
 7. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.

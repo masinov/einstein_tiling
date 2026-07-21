@@ -88,8 +88,11 @@ reviewable proof or certificate.
 - `16_stm1_retiling_compiler.md` — N10's corner-kite rigidity and K3R's
   conditional inverse-retiling theorem/search architecture.
 - `17_stm1_binary_retiling_kernel.md` — the concrete two-diagonal square
-  kernel, its conditional unique-pairing argument, and the open B0/contact-
-  guard obligations that stop geometry after HC-11.
+  kernel, its conditional unique-pairing argument, and the HC-12 refutation of
+  bit-complete B0.
+- `18_retiling_wang_compiler.md` — the HC-12 correction from binary SFT to
+  hidden-state sofic projection, the 11-state/four-interface design floor,
+  and the direct K4W sufficient monotile contract.
 - `W1_TRANSFER_SPEC.md` — the soundness/completeness contract for the exact
   cylinder transfer engine and its certificates.
 - `PROOF_LEDGER.md` — stable IDs, scope, status, dependencies, and artifacts.
