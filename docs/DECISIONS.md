@@ -1813,3 +1813,32 @@ of the final physical edge/vertex incidence; and D0 a total finite local
 decoder on the full limiting language. This is a proof design, not an atlas
 enumeration. Failure of any component closes the current equal-support route;
 it may not be answered by silently weakening the physical/source distinction.
+
+## D-0080 (2026-07-21) — Physical limiting vertices retain unique provenance
+
+The exact line-index calculation closes ST-M1.I0 without an atlas. For a
+triangle bounded in cabinet coordinates by indexed lines `a_r,b_j,c_k`, let
+`s=r+j+k`. In the normalized equidistant limit its centroid is
+
+`(j-s/3, k-s/3)`.
+
+Every physical isometric cell `H^a_{j,k}` uses `r=i-1` with `i+j+k=0` and
+the four choices `(j+epsilon,k+eta)`. Their orders are
+`s=-1+epsilon+eta`, hence `-1,0,0,1`. The three possible vertex classes lie
+in the disjoint cosets
+
+`Z^2+(1/3,1/3)`, `Z^2`, and `Z^2-(1/3,1/3)`.
+
+The coset determines `s`, then the coordinates determine `j,k`, and
+`r=s-j-k`. Thus two distinct indexed source triangles never acquire the same
+physical centroid. The limiting triangle edges have primitive differences
+`(2,-1)/3`, `(-1,2)/3`, or `(1,1)/3`; none contains another vertex in its
+relative interior. Consequently the G0 complex is a genuine simplicial
+triangulation with no new physical T-junction or vertex identification.
+
+The vanished narrow/wide metric information remains in the transported
+`S/M/L`, address and SAB colors. With these colors, every limiting physical
+star has exactly one prelimit source-star provenance. Reflections act on the
+whole decorated star and do not create a second lift. I0 is therefore a
+proof-draft lemma at the colored stage. D0—the global total decoder from the
+finite local rules—remains open; no atlas was enumerated.

@@ -351,4 +351,23 @@ The overlap warning still creates a real provenance obligation. O0 contracts
 each disjoint auxiliary tiny-overlap disk to a vertex decorated by its
 participants and cyclic order. The quotient remains a plane and retains the
 BD incidence. L0 is correspondingly factorized into O0, physical point-star
-transport I0, and total decoder D0. Only O0 is currently proved.
+transport I0, and total decoder D0. O0 and I0 are currently proof drafts;
+D0 remains open.
+
+## Unique physical provenance (session 71)
+
+The physical incidence question can be settled without enumerating a collar.
+In normalized cabinet coordinates, the centroid of the triangle indexed by
+`a_r,b_j,c_k`, with order `s=r+j+k`, is
+`(j-s/3,k-s/3)`.  The four generating triangles of one physical isometric
+cell have orders `-1,0,0,1`; their limiting vertices therefore occupy three
+disjoint translates of `Z^2`.  The translate recovers the order and the
+coordinate recovers all three line indices.  Primitive limiting edges contain
+no further vertex from these cosets.  Thus distinct physical source vertices
+do not collapse and no physical T-junction is introduced.
+
+With the role, macro address, split-`M` half, bent-SAB state and vertex order
+retained, each limiting physical star has one source-star lift.  This is I0,
+not yet the desired language theorem: D0 must still prove that the finite
+local stars glue to a total whole-plane source decoder.  See theory note 10
+and D-0080.

@@ -2,8 +2,8 @@
 
 **Date:** 2026-07-21
 
-**Status:** proof design; auxiliary overlap contraction O0 proved; physical
-incidence transport I0 and full decoder D0 open
+**Status:** O0 auxiliary contraction and I0 physical incidence transport
+proof drafts; full decoder D0 open
 
 **Primary source:** `akiyama-hamada-ito-sturmian-2026`, Section 10.1 and the
 general matching rule in Section 6
@@ -119,3 +119,82 @@ No finite atlas enumeration is authorized under HC-05. The next on-paper unit
 is I0: classify point-contact provenance symbolically from the centroid/line
 indices and decide whether the decorated limiting star has a unique prelimit
 lift.
+
+## 5. ST-M1.I0 — unique physical point-star provenance
+
+The centroid formula also classifies the complete limiting vertex set. Write
+the three indexed lines of a generating triangle as `a_r,b_j,c_k` and put
+`s=r+j+k`. In the normalized equidistant cabinet limit, set `A=r`, `B=j`,
+`C=k` in G0's formula:
+
+```
+g(r,j,k) = ((2j-r-k)/3, (2k-r-j)/3)
+           = (j-s/3, k-s/3).
+```
+
+For `H^a_{j,k}`, the source takes `i+j+k=0`, fixes `r=i-1`, and uses the
+four pairs `(j+epsilon,k+eta)` with `epsilon,eta in {0,1}`. Their orders are
+
+```
+s = -1 + epsilon + eta,
+```
+
+so the four vertices are
+
+```
+(j+1/3, k+1/3),  (j+1,k),  (j,k+1),  (j+2/3,k+2/3).
+```
+
+Globally, physical vertices therefore lie in three disjoint cosets:
+
+```
+V_-1 = Z^2 + (1/3,1/3),
+V_0  = Z^2,
+V_1  = Z^2 - (1/3,1/3).
+```
+
+The coset recovers `s`; then `(j,k)` and `r=s-j-k` are unique. Hence no two
+distinct indexed source triangles collapse to one physical centroid.
+
+After the marked short-diagonal split, every limiting triangle edge has one
+of the primitive cabinet differences
+
+```
+(2,-1)/3,  (-1,2)/3,  (1,1)/3
+```
+
+up to sign and cyclic rotation. No vertex from the three cosets lies in the
+relative interior of such an edge: for the first two directions, equality of
+the two fractional coordinates occurs only at an endpoint, and the third is
+already the shortest step between its two endpoint cosets. Thus the limit has
+no physical T-junction and no new edge crossing.
+
+### Lemma I0
+
+Retain on every limiting triangle its source `S/M/L` role, macro address,
+split-`M` half and bent-SAB state, and retain the order class on each vertex.
+Then every decorated limiting physical vertex star has exactly one prelimit
+source-star lift. Cyclic families and global reflection give the corresponding
+rotated/reflected lift, not a second lift of the same decorated star.
+
+**Proof.** The coset calculation uniquely recovers the indexed generating
+triangle at each vertex. Primitive edges recover the same physical incidence
+graph as before the limit. The transported colors restore the corridor-width
+symbols erased by equidistancing. Therefore the incident colored cells and
+their cyclic order reconstruct one source star. A different lift would have
+to change an index, order coset, edge incidence or retained color, all of
+which are fixed. \(\square\)
+
+I0 also sharpens the role of O0. Tiny auxiliary patches contract to decorated
+vertices, but distinct **physical** cell vertices do not collapse together.
+The remaining D0 problem is global/local-rule totality, not geometric
+ambiguity of a point star.
+
+## 6. Remaining D0 obligation
+
+D0 must prove that internal address ports, source edge/SAB matches, O0
+auxiliary decorations and I0 vertex stars define a finite local rule whose
+every whole-plane configuration groups uniquely into the source physical
+macrotiles. The proof must cover global consistency of the order-coset labels
+without selecting an absolute origin and must show that every permitted local
+star participates in one source lift. No enumeration is authorized.

@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 70)
+**Last updated:** 2026-07-21 (session 71)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⛔ P0/G0 and auxiliary contraction O0 proved; E-infinity/S0 blocked on physical incidence I0 and total decoder D0; K1 not admitted (D-0077--D-0079) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⛔ P0/G0/O0 and unique physical provenance I0 proved; E-infinity/S0 blocked on total finite decoder D0; K1 not admitted (D-0077--D-0080) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -115,6 +115,12 @@
   to finite decorated vertices retaining participant identities and cyclic
   order. L0 is now split into O0 (proved), physical incidence I0 and total
   decoder D0 (open). No atlas enumeration is authorized (D-0079).
+- **ST-M1 limiting physical incidence:** exact centroid indices place vertices
+  in three disjoint order cosets. The coset and lattice coordinate uniquely
+  recover the source triangle; primitive limiting edges contain no interior
+  vertex. With retained role/address/SAB colors, every physical vertex star
+  has one prelimit lift. I0 closes without an atlas; D0 remains open
+  (D-0080).
 - **ST-M1 symbolic quotient boundary:** Q0 correctly requires safety on the
   full finite local closure. Erasing ownership to unrestricted `S/M/L`
   restores rational periodic tilings, and independent corridor rails admit
@@ -519,14 +525,13 @@ Research is under the 2026-07-21 reset recorded in
    the exact reproduction fixtures and postmortem during release work only.
 3. Human checkpoint `HC-2026-07-21-04` was explicitly authorized after review
    of sessions 64--66 and is closed. `HC-2026-07-21-05` was explicitly
-   authorized after review of sessions 67--69; session 70 uses its first slot
-   for the overlap-semantics correction and O0, with no experiment or large
-   artifact.
+   authorized after review of sessions 67--69; sessions 70--71 use two slots
+   for O0 and I0, with no experiment or large artifact.
 4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
    escalation, and all Spectre radius escalation frozen.
-5. **L0 remains on paper.** Session 71 may address I0 only: classify limiting
-   physical point-contact provenance from exact line indices and decide
-   whether each decorated star has a unique prelimit lift. No 62-address atlas
+5. **L0 remains on paper.** The final HC-05 session may address D0 only:
+   prove or refute that the finite internal ports, edge/SAB matches and O0/I0
+   vertex data give a total whole-plane source decoder. No 62-address atlas
    enumeration, K1 geometry, shape search or radius escalation is authorized.
 6. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
