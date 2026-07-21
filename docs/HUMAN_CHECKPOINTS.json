@@ -9,10 +9,10 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-21-07",
+    "id": "HC-2026-07-21-08",
     "date": "2026-07-21",
-    "through_session": 75,
-    "reason": "Sessions 73--75 and the K1C/K1T/K1D symbolic quotient were independently reviewed. The user authorized HC-07 for on-paper K2G design, with the N4 Cartesian-code loophole resolved before K2G may rely on corner coupling. No contact census, carrier search, generated geometry, or experiment is authorized.",
+    "through_session": 78,
+    "reason": "Sessions 76--78 and the K1P/K2E/N5/K2H/N6 parity and hidden-phase results were independently reviewed. The user authorized HC-08 for the bounded on-paper pose-action question. The audit's V4/cyclic observation is treated as an unverified prompt, not an assumed theorem. No polygon, contact census, carrier search, generated geometry, or experiment is authorized.",
     "artifact_bytes": {
       "docs/notebook/assets": 6756125300,
       "data": 1793649957

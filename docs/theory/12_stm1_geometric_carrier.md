@@ -210,3 +210,58 @@ HC-07 ends here. No polygon should be drawn and no contact atlas searched
 until a new checkpoint authorizes an on-paper analysis of which finite pose
 actions of one carrier could realize `H` compatibly with homochirality and the
 triangular frame.
+
+## 9. Pure-pose model
+
+HC-08 first separates two claims that should not be conflated. Four abstract
+hidden labels do not require an embedding of `H=(Z/2)^2` into the carrier's
+rotation group: four selected poses could be named by four labels without
+respecting either group law. The relevant question is whether the side-parity
+relations arise equivariantly from one fixed boundary pattern.
+
+Call an auxiliary encoding **pure intrinsic pose** when:
+
+1. a reference carrier pose has one fixed parity triple
+   `u=(u_0,u_1,u_2) in {0,1}^3` on its three rooted interfaces; and
+2. every other admitted pose changes this triple only through the induced
+   permutation of the three interface directions.
+
+This model includes all rotations, and even allowing reflections only
+enlarges the acting permutation group to a subgroup of `S_3`.
+
+### ST-M1.N7 — pure-pose orbit no-go
+
+No pure intrinsic pose encoding realizes all four parity patterns required by
+K2H.
+
+### Proof
+
+Permuting coordinates preserves Hamming weight. Therefore the orbit of one
+reference triple lies in one weight layer of `{0,1}^3`. K2H needs
+
+```
+000, 011, 101, 110,
+```
+
+which occupy the two distinct weight layers zero and two. No orbit of one
+fixed triple under rotations—or even under all of `S_3`—contains both.
+Hence it cannot equal the required four-state parity set. \(\square\)
+
+N7 does not say that orientation can never contribute to a carrier state.
+It says that rotations of one fixed intrinsic three-side pattern cannot be
+the whole K2H mechanism. If one pose supports multiple parity patterns through
+different neighbor docking configurations, the state is contextual rather
+than pure pose and remains open.
+
+## 10. Fixed core choice for G6
+
+K1P's guaranteed 32-state core must be fixed once, not chosen separately in
+each tiling. Choose one known S0 tiling `y_0`, one large macro type `tau`
+occurring in it, and let `B` consist of that occurrence's 30 address types
+plus the two small-macro address types. Define the parity code on this fixed
+`B` and keep it fixed on all of `A_ess`.
+
+G6 must lift a source tiling containing type `tau`; `y_0` is the intended
+witness. Other S0 tilings need not contain `tau` for K1P or the total decoder
+to remain defined. This closes the quantifier ambiguity without asserting
+that both large types occur in every tiling.

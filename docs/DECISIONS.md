@@ -2031,3 +2031,22 @@ by integrating edge increments is ambiguous up to global additive constant
 and is invalid unless all uses are gauge-invariant or a bounded geometric
 landmark fixes it without an external origin. K2G remains open at realizing
 four such local phase classes together with G1--G6. HC-07 is exhausted.
+
+## D-0089 (2026-07-21) — Pure pose fails by orbit weight, not group non-embedding
+
+The user's HC-08 authorization carries an audit suggestion that
+`(Z/2)^2` cannot be represented by pure rotations because it does not embed
+in a cyclic group. That is not the right obstruction: four poses can be
+labeled by four states without the label map preserving a group law.
+
+For one fixed intrinsic three-side boundary pattern, however, rotations and
+reflections only permute the side parities and therefore preserve Hamming
+weight. K2H needs `000` together with `011,101,110`; these lie in weights zero
+and two. N7 proves that no orbit of one intrinsic pattern realizes the four
+states. Pure pose is closed, while contextual docking states remain open.
+
+The K1P core is also fixed explicitly: choose one source witness `y_0` and
+one large type `tau` occurring in it, map its 30 address types and the two
+small types onto the parity core, and require G6's lift to contain `tau`.
+This answers the audit's quantifier note without asserting universal
+occurrence of either large type.

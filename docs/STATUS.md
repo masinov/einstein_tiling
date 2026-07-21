@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 78)
+**Last updated:** 2026-07-21 (session 79)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -170,6 +170,12 @@
   distinguishable geometric pose/star class, not an absolute lattice residue
   ambiguous under global gauge shift. This closes only the symbolic auxiliary
   calculation; K2G remains open (D-0088).
+- **ST-M1 pure-pose no-go:** four pose labels need not form a subgroup, but a
+  fixed intrinsic three-side pattern moves only by coordinate permutation.
+  Such an orbit preserves Hamming weight and cannot contain both `000` and
+  the three weight-two K2H phases. N7 closes pure pose, not contextual
+  docking. G6's parity core is now tied to one fixed occurring large type and
+  witness tiling (D-0089).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -569,16 +575,14 @@ Research is under the 2026-07-21 reset recorded in
    the exact reproduction fixtures and postmortem during release work only.
 3. Human checkpoint `HC-2026-07-21-06` is closed after sessions 73--75. The
    user explicitly authorized `HC-2026-07-21-07` after independent review.
-   Sessions 76--78 repair N4, derive K2E/N5 and establish the exact four-state
-   K2H/N6 auxiliary bound. HC-07 is exhausted with no experiment or large
-   artifact.
+   Sessions 76--78 exhaust HC-07. The user authorized HC-08 for the bounded
+   pose-action question; session 79 proves N7 and closes pure intrinsic pose.
+   This is session 1 of at most 3, with no experiment or large artifact.
 4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
    escalation, and all Spectre radius escalation frozen.
-5. **Stop for review.** K2G remains the blocker. The next on-paper question is
-   whether a finite pose action of one homochiral carrier can geometrically
-   realize K2H's four phase classes while preserving the triangular frame.
-   HC-07 is exhausted; no further theory, contact census, carrier search,
-   generated drawing or experiment is authorized before a new checkpoint.
+5. K2G remains the blocker. HC-08 next analyzes the translation phase
+   `L/2L` and its gauge ambiguity. Contextual docking remains open; no contact
+   census, carrier search, generated drawing or experiment is authorized.
 6. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.

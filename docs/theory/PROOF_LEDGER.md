@@ -123,6 +123,7 @@ Turtle under the production canonicalization.
 | ST-M1.K2E | G1--G6 are sufficient for an exact geometric realization of K1P and hence minimal ST-M1 | stronger exact-compiler route; not necessary for arbitrary monotile factors | proof-draft conditional contract | C0; K1P/K1T; full-isometry chirality and one lift | `12_stm1_geometric_carrier.md` §§1--2; D-0087 |
 | ST-M1.K2H | The K1P even-parity core factors through four hidden tile-centered states and three pairwise phase/interface relations | symbolic auxiliary variable only; no claim the phase is geometrically realizable | proof-draft constructive factorization | K1P parity code | `12_stm1_geometric_carrier.md` §6; D-0088 |
 | ST-M1.N6 | Any hidden-state star factorization of the K1P parity core as a union of product boxes uses at least four hidden values | immediate three-interface star factorization | proof-draft lower bound; attained by K2H | Boolean parity rectangle-cover argument | `12_stm1_geometric_carrier.md` §6; D-0088 |
+| ST-M1.N7 | Rotations or reflections of one fixed intrinsic three-side parity pattern cannot realize all four K2H phases | pure pose encoding; side data transformed only by interface permutation | proof-draft refutation | coordinate permutations preserve Hamming weight; K2H spans weights 0 and 2 | `12_stm1_geometric_carrier.md` §9; D-0089 |
 
 ## Preserved Turtle-control evidence (legacy “finalist” identifiers)
 
