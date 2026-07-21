@@ -1722,3 +1722,33 @@ artifact is produced. Reopening requires an exact source-independent
 common-support construction for the actual `12S+6M+6L`, `12S+6M+6L`, `M`
 templates, including their SAB and vertex language; a revised address count
 alone is insufficient. See ERR-006.
+
+## D-0077 (2026-07-21) — Retain the actual-composition projective skeleton
+
+The user authorized the replacement on-paper task after ERR-006. Before any
+common-support construction, the actual optimized compositions were checked
+against the source's projective convention. A patch composition
+`xS+yM+zL` represents `[x:2y:z]`; hence each optimized large type
+`12S+6M+6L` is the point `[12:12:6]`, while the small type is
+`M=[0:2:0]`.
+
+ST-M1.P0 proves that their projective segment intersects the Sturmian
+parabola
+
+`[(1-beta)^2 : 2 beta (1-beta) : beta^2]`
+
+at exactly `beta=sqrt(2)-1`. Every non-`M` point of the segment has first to
+third coordinate ratio `2`, forcing
+`(1-beta)^2/beta^2=2`; the positive solution is unique. The intersection is
+genuine because its segment coefficients can be chosen
+`a=beta^2/6` for the combined large-type density and
+`b=beta(1-2 beta)>0` for the pure-`M` density.
+
+This retains the arithmetic core of the withdrawn proof and improves its
+scope: it is the source's exact `T_A intersect T_C` argument, not an argument
+that first assumes a periodic fundamental domain. At the original colored
+source level, the SAB matching rule is what places every tiling on the
+Sturmian parabola and therefore excludes the all-`M` endpoint. A future
+common-support or unmarked system cannot borrow that conclusion until it has
+a total decoder into the complete source language. P0 does not close
+E-infinity/S0, define an address alphabet, or authorize an atlas run.

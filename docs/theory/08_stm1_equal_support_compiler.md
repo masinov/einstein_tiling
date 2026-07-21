@@ -197,3 +197,68 @@ exact source-independent construction for the actual two
 supports, connectedness, complete local-language equivalence, and irrational
 corridor decoding. Until then there is no raw address count, collar alphabet,
 or K1 table. See ERR-006 and D-0076.
+
+## 7. Actual-composition arithmetic that survives
+
+The corrected compositions retain a useful source-level lemma. The paper
+represents a patch `xS+yM+zL` by the homogeneous point `[x:2y:z]`, because an
+`M` cell has weight two. Thus both optimized large prototiles represent
+
+```
+T_I = [12 : 12 : 6],
+```
+
+and the small prototile represents `T_II=M=[0:2:0]`. Let `L` be the
+projective segment they span. The source's Sturmian-cell parabola is
+
+```
+C(beta) = [(1-beta)^2 : 2*beta*(1-beta) : beta^2],  0 <= beta <= 1.
+```
+
+### ST-M1.P0 (actual-composition intersection)
+
+`L` intersects the Sturmian parabola in exactly
+`C(sqrt(2)-1)`.
+
+**Proof.** A point of `L` other than `M` has nonzero first and third
+coordinates with ratio `12/6=2`. An interior point `C(beta)` therefore lies
+on `L` only if
+
+```
+(1-beta)^2 / beta^2 = 2.
+```
+
+For `0<beta<1`, taking positive square roots gives
+`(1-beta)/beta=sqrt(2)`, hence `beta=sqrt(2)-1`, uniquely. Neither endpoint
+of the parabola is on `L`, and `M` itself is not on the parabola.
+
+It remains to check that the algebraic solution is on the segment rather than
+merely its projective line. Put
+
+```
+a = beta^2/6,
+b = beta*(1-2*beta).
+```
+
+For `beta=sqrt(2)-1`, both are positive and
+
+```
+a*[12:12:6] + b*[0:2:0]
+  = [(1-beta)^2 : 2*beta*(1-beta) : beta^2]
+```
+
+in homogeneous vector representatives. Thus the intersection exists and is
+unique. \(\square\)
+
+The two noncongruent large prototiles have the same composition; `a` is their
+combined density, so P0 does not constrain how that density splits between
+them. In a periodic source macrotiling, exact fundamental-domain counts give
+the same `S:L=2:1` ratio, but periodicity is unnecessary for P0.
+
+The source's complete SAB rule supplies the other half of its aperiodicity
+argument: every admitted colored tiling lies on the Sturmian parabola. Hence
+the original all-`M` configuration is excluded because `M` is not on that
+parabola. This does **not** repair E-infinity. A recoded common-support system
+may admit spurious all-`M`-like tilings unless its complete local language has
+a total decoder into the source. P0 fixes the target slope but supplies no
+support subdivision, collar atlas, or language-equivalence theorem.

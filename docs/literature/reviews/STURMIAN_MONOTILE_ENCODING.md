@@ -309,3 +309,17 @@ endpoint exclusion are blocked. Reopening requires an explicit
 common-support construction and complete local-language equivalence for the
 actual optimized templates, not a revised numerical count. This is recorded
 as ERR-006 and D-0076.
+
+## Corrected composition lemma (session 68)
+
+The optimized row still has `S:L=12:6=2:1`. In the source's homogeneous
+coordinates its large composition is `[12:12:6]`, not `[12:6:6]`, because
+`M` carries weight two. The segment from that point to `M=[0:2:0]` meets the
+Sturmian parabola at exactly `beta=sqrt(2)-1`; positive segment coefficients
+are explicit. This recovers the projective slope-selection skeleton as
+ST-M1.P0.
+
+P0 is not a common-support result. The source SAB rule excludes `M` by forcing
+the colored source tiling onto the parabola. Any recoding must prove a total
+decoder before using that exclusion. Thus the arithmetic target survives
+while E-infinity, its atlas, and K1 remain blocked.

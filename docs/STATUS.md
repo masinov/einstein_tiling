@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 67)
+**Last updated:** 2026-07-21 (session 68)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -85,16 +85,23 @@
   derived (D-0071).
 - **ST-M1 equal-support compiler:** a finite connected macrotiling system over
   one congruent periodic cell is MLD with a finite colored one-support system
-  by explicit internal-address ports. This closes the conditional compiler
-  S0C. The source's `kappa=infinity` remark does not itself provide the
-  common-cell subdivision or preserve the complete Section 10.1 language;
-  session 65 supplies the separate proof-draft derivation below (D-0072).
+  by explicit internal-address ports. This closes only the conditional
+  compiler S0C. The source's `kappa=infinity` remark does not provide the
+  common-cell subdivision or preserve the complete Section 10.1 language
+  (D-0072, ERR-006).
 - **ST-M1 source correction:** primary Table 1 gives the optimized
   `sqrt(2)-1` large templates composition `12S+6M+6L`, not bare `2S+L`.
   The one-support `kappa=infinity` sentence belongs to the separate Turtle
   subsection. The session-65 `18,18,2` specialization, its all-`M` exclusion,
   and the resulting S0 closure are withdrawn. S0C remains a valid conditional
   compiler, but S0/E-infinity are blocked (ERR-006/D-0076).
+- **ST-M1 corrected composition skeleton:** in the source convention the
+  actual large templates are `[12:12:6]` and the small template is
+  `M=[0:2:0]`. Their segment meets the Sturmian parabola exactly at
+  `beta=sqrt(2)-1`, with positive mixture coefficients. This proves P0 and
+  retains the irrational-slope arithmetic target. The source SAB language,
+  not composition alone, excludes all-`M`; E-infinity remains blocked
+  (D-0077).
 - **ST-M1 symbolic quotient boundary:** Q0 correctly requires safety on the
   full finite local closure. Erasing ownership to unrestricted `S/M/L`
   restores rational periodic tilings, and independent corridor rails admit
@@ -401,7 +408,7 @@
   lines remain unknown. The completed blind hierarchy
   screen retained two non-unique first-composition rules out of 22,094 but no
   stationary recognizable recursion. Artifact: `e1-overnight-recovered.json`.
-- Test suite: **222 fast passed** (17 deselected, 145.52 s, session 67);
+- Test suite: **222 fast passed** (17 deselected, 145.42 s, session 68);
   **17 slow passed** previously (192 deselected, 389.36 s).
   Vendored Rust: **5 passed**.
 
@@ -498,14 +505,16 @@ Research is under the 2026-07-21 reset recorded in
 2. The E1 benchmark assessment is **closed no-go** for new ablations. Package
    the exact reproduction fixtures and postmortem during release work only.
 3. Human checkpoint `HC-2026-07-21-04` was explicitly authorized after review
-   of sessions 64--66. Session 67 used its first slot for a primary-source
-   audit and correction; no experiment or large artifact was produced.
+   of sessions 64--66. Sessions 67--68 used two slots for the primary-source
+   correction and corrected projective-composition lemma; no experiment or
+   large artifact was produced.
 4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
    escalation, and all Spectre radius escalation frozen.
-5. **ST-M1 is halted upstream of K1.** The authorized 38-address table had an
-   invalid source premise and was stopped before enumeration. Reopening needs
-   a source-independent common-support derivation for the actual optimized
-   templates and complete language, not a larger guessed table or radius.
+5. **ST-M1 remains upstream of K1.** P0 proves that the corrected template
+   segment selects only `sqrt(2)-1`, so the arithmetic target survives. The
+   final HC-04 session may inspect the actual isometric-cell supports for a
+   plausible common refinement; no table, shape search, or radius escalation
+   is authorized.
 6. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.
