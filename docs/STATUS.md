@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 85)
+**Last updated:** 2026-07-21 (session 86)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -209,6 +209,10 @@
   PDFs for the construction figures, not address/SAB/vertex tables. Direct
   serialization is blocked; figure digitization would be a separately
   validated reconstruction (D-0095).
+- **ST-M1 consolidated dossier:** theory note 14 now gives the complete
+  P0/S0/Q0/K1T/K1P/N5--N9/K2C/K2V chain and conditional K2J-to-monotile
+  argument in one self-contained proof draft. It makes no novelty or monotile
+  claim and keeps SER0/K2J as independent blockers (D-0096).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -616,12 +620,13 @@ Research is under the 2026-07-21 reset recorded in
    the kill condition because no unmarked gadget meets K2J. HC-09 is exhausted
    with no experiment or large artifact. HC-10 is authorized for
    consolidation; session 85 defines SER0 and records the primary-source data
-   blocker. This is session 1 of at most 3.
+   blocker; session 86 consolidates the full symbolic chain. This is session
+   2 of at most 3.
 4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
    escalation, and all Spectre radius escalation frozen.
-5. Direct SER0 production is blocked by missing primary extensional data.
-   HC-10 next consolidates the proof-draft symbolic chain into one self-
-   contained theorem document, explicitly retaining SER0 and K2J as blockers.
+5. The final HC-10 session will adversarially audit theory note 14, integrate
+   it into the monograph map, and correct overstatements. No experiment or new
+   theorem branch is authorized.
 6. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.

@@ -130,6 +130,7 @@ Turtle under the production canonicalization.
 | ST-M1.K2V | Every K1P configuration lifts to K2C corner potentials when each six-valent vertex retains the six incident face sectors separately | finite symbolic decorated-vertex language; no geometric atlas | proof-draft constructive lift | independent per-face K2C integration; participant/cyclic sector identities | `12_stm1_geometric_carrier.md` §18; D-0093 |
 | ST-M1.K2J | A boundary-cocycle carrier must satisfy visible-sector, same-corner, exact-side-transducer, complete-vertex, frame/chirality and witness-lift obligations J1--J6 | admission contract for one unmarked polygon; not a construction | open blocker; no candidate satisfies the contract | K2C/K2V; K2E G1--G6; K1T | `12_stm1_geometric_carrier.md` §20; D-0094 |
 | ST-M1.SER0 | Serialize the complete S0/K1P alphabet, templates, edge/vertex rules and decoder fields with a cold verifier | extensional reproducibility object; does not replace O0/I0/D0 language proof | blocked: primary archive contains Illustrator figures, not coordinate/rule tables | exact author data or independently validated reconstruction | `13_stm1_serialization_contract.md`; D-0095 |
+| ST-M1.SYN0 | The P0/S0/Q0/K1T/K1P/N5--N9/K2C/K2V dependency chain is presented as one self-contained conditional theorem dossier | consolidation only; no new theorem or novelty claim | proof-draft synthesis | underlying ledger rows; SER0 and K2J remain explicit blockers | `14_stm1_symbolic_chain.md`; D-0096 |
 
 ## Preserved Turtle-control evidence (legacy “finalist” identifiers)
 

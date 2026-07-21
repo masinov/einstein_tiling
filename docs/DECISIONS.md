@@ -2162,3 +2162,15 @@ No producer run is admitted. SER0 is blocked pending author data or a
 separately preregistered, independently validated reconstruction. The
 self-contained theory write-up may use an abstract finite S0 presentation but
 must expose SER0 as the reproducibility gap.
+
+## D-0096 (2026-07-21) — Consolidate ST-M1 as a conditional symbolic dossier
+
+Theory note 14 replaces the need to reconstruct the ST-M1 argument from
+sessions 63--85. It states P0, S0, Q0/K1T, K1P, N5--N9 and K2C/K2V in one
+dependency chain, then isolates the conditional K2J-to-monotile implication.
+
+The dossier is a proof draft and carries no method-novelty claim. It states
+that no polygon, monotile, surjectivity or entropy result exists. SER0 and
+K2J remain independent blockers: missing source tables cannot be repaired by
+prose consolidation, and symbolic boundary holonomy cannot be promoted to
+geometry.
