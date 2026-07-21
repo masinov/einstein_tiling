@@ -2189,3 +2189,23 @@ separately preregistered and independently validated source reconstruction,
 or an exact on-paper polygon/gadget lemma meeting every K2J obligation. A
 larger patch, radius escalation, or suggestive drawing is not a reopening
 input.
+
+## D-0098 (2026-07-21) — Reopen geometry at flag-carrier granularity
+
+The user declines the author-contact route and authorizes HC-11 to pursue a
+new geometric idea, with compiler-aware search as a secondary outcome. The
+checkpoint is idea-first and inherits a three-session kill condition; no
+shape run is authorized merely because the branch reopened.
+
+K3F replaces one polygon per source triangle by three congruent corner-kite
+flag carriers per triangle. K2C's three potentials then live on three
+physical occurrences joined in a cycle, and K2V's six source-vertex sectors
+remain six occurrences. The colored flag system is MLD with K2V. This is not
+fixed fusion of source types and does not impose rational source-state
+frequencies.
+
+The remaining K3G problem is still shape-only color erasure: one unmarked
+polygon must force the flag scaffold, internal cycle, paired midpoint and
+six-sector source-vertex rules, frame, chirality and a witness lift. If no
+boundary mechanism supplies both contextual state variation and a finite
+contact-completeness proof within HC-11, K3G freezes without a geometric run.

@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 87)
+**Last updated:** 2026-07-21 (session 88)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ consolidated proof-draft symbolic chain; frozen at independent SER0 source-table and K2J geometric-carrier blockers after HC-10 (D-0097) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-11 flag-carrier route: K3F colored recoding proved in draft; unmarked contextual color erasure K3G open, no shape/run yet (D-0098) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -213,6 +213,12 @@
   P0/S0/Q0/K1T/K1P/N5--N9/K2C/K2V chain and conditional K2J-to-monotile
   argument in one self-contained proof draft. It makes no novelty or monotile
   claim and keeps SER0/K2J as independent blockers (D-0096).
+- **ST-M1 flag-carrier reduction:** partitioning each source triangle into
+  three congruent corner kites gives a colored system MLD with K2V. The K2C
+  potentials and the six source-vertex sectors now belong to distinct
+  physical occurrences; parity is a three-carrier cycle. This removes the
+  one-rigid-carrier sector bottleneck but leaves K3G, exact unmarked
+  contextual color erasure and contact completeness, open (D-0098).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -625,10 +631,10 @@ Research is under the 2026-07-21 reset recorded in
    or generated artifact.
 4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
    escalation, and all Spectre radius escalation frozen.
-5. ST-M1 is frozen at the two-blocker boundary. Reopen only with exact SER0
-   source input/validated reconstruction or an on-paper K2J gadget meeting the
-   existing contract. No experiment, shape search or new theorem branch is
-   authorized before a new human checkpoint.
+5. HC-11 is authorized through at most sessions 88--90. Session 88 proves the
+   colored flag-carrier recoding K3F. Next test one contextual docking
+   mechanism for K3G on paper. If it cannot state unused-boundary coverage and
+   finite contact completeness, freeze it without coordinates or a run.
 6. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.
