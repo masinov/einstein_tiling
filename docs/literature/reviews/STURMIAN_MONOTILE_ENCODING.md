@@ -288,3 +288,17 @@ would make a virtual irrational-slope corridor word periodic, contradicting
 the source projective restriction. Minimal colored S0 is therefore proof-draft
 closed. The argument does not establish entropy preservation and remains an
 intermediate colored/atlas system, not a monotile.
+
+## Symbolic quotient follow-up (session 66)
+
+The raw `18+18+2` addresses cannot simply be called “three states.” The
+natural quotient that retains only `S/M/L` roles and unrestricted SAB
+continuation is explicitly unsafe: source Remark 7 says `{S,M,L}` realizes
+every slope, so rational periodic configurations return. Independent finite
+corridor rails also fail by the elementary sofic-product obstruction.
+
+The safe criterion in `docs/theory/09_stm1_symbolic_quotient.md` requires a
+total irrational-corridor decoder on the quotient's **entire finite local
+closure**. No nontrivial quotient currently meets it. The next symbolic object
+would be the complete 38-address collar/port table and proved
+future-equivalence merges; boundary geometry remains premature.

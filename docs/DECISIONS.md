@@ -1640,3 +1640,28 @@ input is a collared refinement of 38 raw macro-address states rather than
 three colors. The next on-paper step must first seek an
 aperiodicity-preserving quotient of that alphabet; direct geometric encoding
 of an unspecified collar expansion is not authorized.
+
+## D-0074 (2026-07-21) — The natural K1 three-state quotient is unsafe
+
+A symbolic quotient must be judged on the complete shift defined by its
+finite local rules, not merely on recoded intended source tilings. ST-M1.Q0
+records the sufficient condition: the entire local closure must have a total
+finite-radius map to an irrational-only Sturmian system.
+
+The natural reduction to primitive `S/M/L` roles fails this test. Once macro
+ownership, internal addresses and completion ports are forgotten, the rule is
+the source's unrestricted `{S,M,L}` cabinet system. Remark 7 explicitly says
+that system forms Sturmian lattices of every slope; rational slopes supply
+periodic points. Keeping the three corridor families as independent
+finite-state rails also fails by ST-M1.N1.
+
+This refutes only the obvious source-role quotient, not every possible
+three-symbol coding. No nontrivial quotient is currently proved safe. The
+smallest safe presentation remains the full addressed/collared S0 alphabet,
+with a 38-state raw core and an as-yet unwritten finite collar expansion.
+
+K1 remains blocked before geometry. A future checkpoint must first authorize
+an explicit finite collar/port table and require each proposed state merge to
+preserve overlap transitions and a total irrational-corridor decoder on the
+full local closure. Session 66 exhausts `HC-2026-07-21-03`; no polygon or
+contact search follows automatically.

@@ -330,3 +330,18 @@ This does not prove a monotile or transport positive entropy. K1 is now
 admissible, but it must encode a collared refinement of 38 raw addressed
 states, not three colors, unless a smaller aperiodicity-preserving quotient is
 proved first.
+
+## 11. Session-66 symbolic quotient boundary
+
+`09_stm1_symbolic_quotient.md` shows that a quotient must be tested on its
+entire finite local closure, not only on images of intended source tilings.
+The natural three-role reduction fails: after macro ownership and addresses
+are erased, the remaining `{S,M,L}` cabinet system is exactly the source's
+example admitting every slope, including rational periodic configurations.
+Independent finite-state corridor rails fail separately by ST-M1.N1.
+
+The smallest presently proved safe input to K1 is therefore the full
+addressed, collared S0 system. Its uncollared core has 38 states; its complete
+collar table has not yet been written. K1 remains blocked before geometry on
+that finite specification and a proof of any proposed future-equivalent state
+merges.

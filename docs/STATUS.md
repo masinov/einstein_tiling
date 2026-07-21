@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-21 (session 65)
+**Last updated:** 2026-07-21 (session 66)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | 📝 minimal colored S0 proof-draft closed on one triangular support; K1 open on a collared refinement of 38 raw address states, no geometry authorized (D-0073) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⛔ colored S0 proof-draft closed; natural `S/M/L` quotient refuted, no smaller quotient safe; K1 blocked on explicit 38-address collar table (D-0074) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -96,6 +96,12 @@
   the complete combinatorial language; a period would make an irrational
   corridor word periodic. S0 is proof-draft closed for minimal aperiodicity,
   not positive entropy or an unmarked monotile (D-0073).
+- **ST-M1 symbolic quotient boundary:** safety must hold on the full finite
+  local closure. Erasing macro ownership to `S/M/L` restores the source's
+  all-slope system and hence rational periodic tilings; independent corridor
+  rails also admit periodic products. No nontrivial quotient of the 38 raw
+  addresses is proved safe. K1 awaits a complete collar/port table and a total
+  decoder proof before any geometry (D-0074).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -397,7 +403,7 @@
   lines remain unknown. The completed blind hierarchy
   screen retained two non-unique first-composition rules out of 22,094 but no
   stationary recognizable recursion. Artifact: `e1-overnight-recovered.json`.
-- Test suite: **221 fast passed** (17 deselected, 144.52 s, session 65);
+- Test suite: **221 fast passed** (17 deselected, 142.36 s, session 66);
   **17 slow passed** previously (192 deselected, 389.36 s).
   Vendored Rust: **5 passed**.
 
@@ -494,14 +500,15 @@ Research is under the 2026-07-21 reset recorded in
 2. The E1 benchmark assessment is **closed no-go** for new ablations. Package
    the exact reproduction fixtures and postmortem during release work only.
 3. Human checkpoint `HC-2026-07-21-03` was explicitly authorized after review
-   of sessions 61--63. Sessions 64--65 are the first two of at most three.
+   of sessions 61--63. Sessions 64--66 have consumed its three-session
+   allowance.
 4. Keep all polykite discovery work through `n=24`, all Turtle quotient-shell
    escalation, and all Spectre radius escalation frozen.
-5. Continue on paper only with K1's first reduction: determine whether the
-   collared refinement of the 38 raw states has a smaller quotient that still
-   forces an irrational corridor system. Do not design a polygon before this
-   quotient and its no-spurious symbolic decoder are proved. No runner,
-   contact search, or Spectre extension is authorized.
+5. **Stop for human review.** The natural three-role and independent-rail
+   quotients fail. No smaller K1 alphabet is currently proved safe. A new
+   checkpoint may authorize the explicit finite 38-address collar/port table
+   and future-equivalence proof, but not polygon design, a contact search, or
+   another Spectre extension.
 6. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.
