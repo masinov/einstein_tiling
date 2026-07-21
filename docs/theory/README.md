@@ -57,9 +57,9 @@ reviewable proof or certificate.
   reflection-safe conditional carrier theorem, and the pre-geometric kill
   conditions for a coupled contact-star encoder.
 - `08_stm1_equal_support_compiler.md` — the proof-draft compiler from
-  connected common-cell macrotiles to one colored support, and the exact
-  `E-infinity` source specialization still missing for the `sqrt(2)-1`
-  system.
+  connected common-cell macrotiles to one colored support and the derived
+  minimal `E-infinity` specialization on a triangular cell; positive-entropy
+  transport remains unproved.
 - `W1_TRANSFER_SPEC.md` — the soundness/completeness contract for the exact
   cylinder transfer engine and its certificates.
 - `PROOF_LEDGER.md` — stable IDs, scope, status, dependencies, and artifacts.

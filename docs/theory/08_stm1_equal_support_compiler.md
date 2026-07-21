@@ -2,7 +2,8 @@
 
 **Date:** 2026-07-21
 
-**Status:** compiler lemma proof-draft; source specialization blocked
+**Status:** compiler and minimal source specialization proof-draft; entropy
+transport unproved
 
 **Primary source:** `akiyama-hamada-ito-sturmian-2026`, Sections 6, 8.1,
 10.1--11
@@ -13,9 +14,10 @@ system in which every tile already has one common support?
 
 The answer has two parts. There is an elementary finite compiler from
 connected macrotiles over a common cell to colored copies of that cell. The
-source, however, does not yet verify the common-cell hypothesis for its
-positive-entropy `sqrt(2)-1` system. Thus the compiler closes the formal
-reduction but not ST-M1.S0 itself.
+source does not state the corresponding specialization for its
+positive-entropy `sqrt(2)-1` system, but Definitions 4--5 and the explicit
+templates suffice to derive the **minimal aperiodic colored specialization**.
+They do not yet prove that positive entropy survives this recoding.
 
 ## 1. Scope in the source
 
@@ -55,8 +57,9 @@ macrotiles such that:
 
 1. every `A_i` is a finite connected union of cells of `C`;
 2. all legal `A` tilings use the same `C` frame, up to one global isometry;
-3. macro-boundary legality is specified by a finite local rule on the exposed
-   cell edges, including all decorations and reflected states.
+3. macro-boundary legality is specified by a finite local atlas on exposed
+   cell edges and vertex stars, including all decorations and reflected
+   states.
 
 The rule is allowed to be colored: this is an intermediate symbolic system,
 not the desired unmarked monotile.
@@ -77,14 +80,17 @@ state. A color of `B` records:
 - the cell's finite address inside that macro;
 - the directed internal ports leading to adjacent addresses in the same
   macro;
-- on exposed cell edges, the complete original boundary and Ammann-bar data.
+- on exposed cell edges, the complete original boundary and Ammann-bar data;
+- enough finite collar data to identify the permitted source vertex star.
 
 Give every internal port a unique complementary label containing the macro
 type, the two cell addresses and the directed cell edge. An internal port can
 therefore meet only the prescribed neighboring address. Boundary ports meet
-exactly when the original macro-boundary rule permits them. Because the source
-treats every exposed constituent edge as a patch-tile edge, no unsynchronised
-maximal-segment convention is introduced by the subdivision.
+exactly when the original collared macro-boundary rule permits them. Because
+the source treats every exposed constituent edge as a patch-tile edge, no
+unsynchronised maximal-segment convention is introduced by the subdivision.
+The vertex collar prevents new vertex cycles made possible only by changing
+the cell geometry.
 
 The alphabet is finite because there are finitely many finite macro
 templates, cell addresses, orientations modulo the finite cell point group,
@@ -158,11 +164,109 @@ to cite their conjunction:
 - no all-tilings equivalence between the finite-`kappa` optimized system and
   an infinite-`kappa` colored system is stated.
 
-Accordingly, S0C is a proof-draft lemma, while E-infinity and hence ST-M1.S0
-remain blocked. The next mathematical action is an exact coordinate and
-combinatorial derivation of E-infinity from Definitions 4--5 and the three
-templates in Figures 37 and 44. K1 must not begin first: without the actual
-colored alphabet, a proposed three-state encoder would target the wrong
-language. In fact the compiler alphabet generally contains many addressed
-cell states; the visible three macro shapes are only a lower bound, not the
-alphabet that an unmarked carrier must reproduce.
+Accordingly, session 64 left S0C as a proof-draft lemma and E-infinity open.
+The following section records the exact follow-up derivation rather than
+silently attributing it to the source.
+
+## 5. E-infinity derivation for the minimal target
+
+### The common primitive cell
+
+In the cabinet form, a rectangular cell is bounded by two consecutive lines
+in each of two directions. Equidistancing replaces both possible corridor
+widths by one common width. All rectangular supports therefore become one
+parallelogram up to the three cyclic orientations. In the isometric form this
+is the `60/120` rhombus of the trigonal lattice.
+
+Definition 4 already cuts every `S_R` and `L_R` rhombus along the distinguished
+diagonal into its two triangular cells. Split each `M_R` rhombus along the
+same marked diagonal. This is compatible with the paper's systematic use of
+the multiset `2M`. Every primitive support is now one equilateral triangle
+`C_infinity`, up to isometry. The split only refines a colored source tile; it
+does not assert that the unmarked triangle is aperiodic.
+
+The same subdivision applies to the isometric cells in Section 10.1. The
+construction is cyclic in `a,b,c`; at equal corridor width the three
+orientations differ by rotations of the trigonal cellulation. Thus item 1 of
+E-infinity holds with a nondegenerate periodic triangular cell.
+
+### The three templates and the raw alphabet
+
+Section 10.1 defines each `S` and `L` hexagonal patch as six triangular cells.
+Both large prototile supports have composition `2S+L`, hence contain
+
+```
+2*6 + 1*6 = 18
+```
+
+primitive triangles. They are two different connected arrangements of the
+same composition. The small `M` diamond contains the two halves of one
+rhombus. Consequently the three connected templates transport to
+`18,18,2` primitive cells. Before orientation, SAB, and collar refinements,
+the macro-address alphabet has 38 states. Reflected occurrences are handled
+as collared handed states of the same macro support. This proves item 2.
+
+### Complete language transport
+
+Take the complete finite one-corona atlas of the original subdivided
+three-prototile system. It is finite because the source assumes edge-to-edge
+FLC and has finitely many prototiles, cell addresses, SAB patterns, and
+isometries modulo each support's stabilizer. Transport the following data to
+`C_infinity`:
+
+- macro type, handedness, and primitive-cell address;
+- original `S/M/L` type and the half of a split `M` cell;
+- the SAB segment and its continuation state;
+- the complete collared source edge and vertex-star type.
+
+Allow two colored triangles to meet only when their source collars agree on
+the overlap. S0C then gives a unique finite-radius grouping into the two large
+and one small macro templates. The vertex-star collar rules out a new flat
+cycle that exists only after equidistancing. Conversely, transporting any
+source tiling gives a legal colored triangular tiling. The two operations are
+inverse at the level of the finite combinatorial tiling language. This proves
+item 3 without claiming a bounded Euclidean displacement between the two
+geometric realizations.
+
+### Aperiodicity after the metric distinction is erased
+
+The colors retain the virtual long/short corridor symbols. From any legal
+colored triangular tiling, the transported atlas reconstructs the same
+cabinet-cell incidence and SAB system as a legal source macrotiling. Both
+large macro types contain `2S+L`, while `M` contains neither `S` nor `L`.
+Consequently any periodic fundamental domain containing large macros has
+exact count ratio `S:L=2:1`. For a virtual slope `beta`, the source cabinet
+frequencies give
+
+```
+(1-beta)^2 / beta^2 = 2,
+```
+
+whose unique solution in `(0,1)` is `beta=sqrt(2)-1`. The all-`M` endpoint is
+not on the source parabola and is excluded by the transported SAB atlas. This
+is the projective composition restriction in this special case.
+
+If the colored triangular tiling had a nonzero translational period, that
+period would be a nonzero vector of the triangular cell lattice and would
+periodically shift at least one of the three indexed corridor families. The
+corresponding long/short bi-infinite word would be periodic. Its slope would
+then be rational, contradicting `beta=sqrt(2)-1`. At least one colored
+tiling exists by transporting the exhibited Section 10.1 tiling. This proves
+item 4 and minimal aperiodicity.
+
+### Disposition
+
+E-infinity and ST-M1.S0 are therefore **proof-draft closed for the minimal
+aperiodicity target**. This is our collared symbolic derivation, not a theorem
+quoted from the paper. It uses external colors and atlas rules, so it is not a
+monotile result.
+
+No positive-entropy claim is made. Establishing it would require proving that
+the interchangeable-pair construction transports with the correct areal
+entropy normalization and that the colored triangular system covers the
+complete Section 10.1 entropy-bearing language.
+
+K1 is now logically admissible, but its input is the finite collared refinement
+of the 38 raw macro-address states, not a three-symbol alphabet. Any proposed
+unmarked carrier must encode this full state system or prove a smaller
+aperiodicity-preserving quotient first.

@@ -309,3 +309,24 @@ connected transported templates, boundary/SAB-language preservation and
 preservation of the irrational symbolic sequences. S0 therefore remains
 blocked, and K1 was not begun. The eventual carrier must encode the full
 addressed cell alphabet, not merely the three visible macro shapes.
+
+## 10. Session-65 E-infinity closure
+
+The exact follow-up in `08_stm1_equal_support_compiler.md` closes E-infinity
+in proof draft for the **minimal colored aperiodicity target**. Equidistancing
+turns every cabinet/isometric rhombus into the same trigonal rhombus; splitting
+`M` along the marked diagonal, consistently with the paper's `2M`
+bookkeeping, leaves one equilateral-triangle support. The three transported
+connected macro templates contain `18,18,2` primitive triangles.
+
+A finite collared atlas retains macro address, handedness, `S/M/L` type, the
+`M` half, SAB data, and source vertex stars. It prevents new adjacencies caused
+by equidistancing and uniquely groups by S0C. A period of the colored triangle
+system would periodically shift at least one virtual corridor word, forcing a
+rational slope contrary to the source composition theorem. Thus S0 is closed
+in proof draft as a colored system.
+
+This does not prove a monotile or transport positive entropy. K1 is now
+admissible, but it must encode a collared refinement of 38 raw addressed
+states, not three colors, unless a smaller aperiodicity-preserving quotient is
+proved first.

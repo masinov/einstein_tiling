@@ -1613,3 +1613,30 @@ the transport. K1 remains blocked because its true alphabet is the full set of
 addressed constituent-cell colors, generally larger than the three visible
 macro types. In accordance with the dependency stop rule, no contact kernel,
 shape or experiment was started in session 64.
+
+## D-0073 (2026-07-21) — Minimal colored S0 closes in proof draft
+
+The E-infinity derivation closes the source-specific colored stage for the
+minimal aperiodicity target. At equal corridor width, every cabinet/isometric
+rectangle is the same trigonal rhombus. Cutting `S` and `L` as in Definition 4
+and also cutting `M` along the marked diagonal—consistent with the paper's
+`2M` bookkeeping—produces one equilateral-triangle support.
+
+The two connected `2S+L` templates contain 18 primitive triangles each and
+the `M` diamond contains two. A finite higher-block collar records macro
+address, handedness, primitive cell type, `M` half, SAB continuation and the
+source vertex star. The S0C compiler then gives unique local regrouping and
+prevents equidistancing from adding new combinatorial vertex cycles.
+
+The colored system is minimally aperiodic: any translational period lies in
+the trigonal lattice and periodically shifts at least one virtual corridor
+word, which would have rational slope, contrary to the source composition
+restriction to `sqrt(2)-1` (or its admitted irrational conjugate). This is our
+proof-draft derivation, not a theorem stated by the source and not an unmarked
+monotile.
+
+Positive-entropy transport remains unproved. K1 is now admissible, but the
+input is a collared refinement of 38 raw macro-address states rather than
+three colors. The next on-paper step must first seek an
+aperiodicity-preserving quotient of that alphabet; direct geometric encoding
+of an unspecified collar expansion is not authorized.

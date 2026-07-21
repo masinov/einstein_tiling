@@ -270,3 +270,21 @@ colored copies of that cell with unique local regrouping. The remaining
 source-specific statement E-infinity must construct the common cell and prove
 that the SAB/boundary language and irrational symbolic sequences survive.
 Until then S0 stays blocked and K1 has no correct alphabet to encode.
+
+## E-infinity derivation (session 65)
+
+The source gap is not silently reclassified as a citation. Instead,
+`docs/theory/08_stm1_equal_support_compiler.md` now supplies our own
+proof-draft derivation for the minimal target. In the equidistanced trigonal
+model, split each `M` rhombus along the same diagonal used for `S/L`, matching
+the source's `2M` bookkeeping. All primitive supports are then congruent
+equilateral triangles. The three connected templates have raw address counts
+`18,18,2`.
+
+A finite higher-block collar transports macro address, handedness, cell type,
+SAB continuation, and source vertex stars. This prevents new flat vertex
+cycles and uniquely regroups by S0C. A periodic colored triangular tiling
+would make a virtual irrational-slope corridor word periodic, contradicting
+the source projective restriction. Minimal colored S0 is therefore proof-draft
+closed. The argument does not establish entropy preservation and remains an
+intermediate colored/atlas system, not a monotile.
