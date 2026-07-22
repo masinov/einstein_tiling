@@ -167,3 +167,13 @@ either:
 
 No enumeration, SAT search, coordinate optimizer, SVG or candidate promotion
 is admitted in HC-15.
+
+## HC-15 outcome
+
+Theory note 21 proves the interval-complex capacity `k!/2`, closes the
+two-neighbor apparent bit by reflection, and derives the exact endpoint-angle
+equation. It then proves N21: no convex complementary-port polygon realizes
+the surviving three- or four-neighbor universal order channel. No exact
+nonconvex witness was obtained, so the stop rule fired at session 102 without
+an experiment. This outcome does not change the prior-art decision above and
+does not establish novelty for the scoped lemmas.

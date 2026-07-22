@@ -191,3 +191,98 @@ coordinates for one polygon and two non-reversal, nonoverlapping contact
 patches, or prove a scoped obstruction for that class. An interval diagram,
 bounding-box sketch or assertion that thin arms can be added is not an exact
 polygonal witness.
+
+## 9. N21: convex complementary ports cannot realize the channel
+
+The first geometric attempt gives every code side a complementary endpoint
+pair. This includes the especially natural right-angle vocabulary suggested
+by J0 and every fixed-directed-pose carrier that admits all permutations.
+
+Call an irredundant convex polygon a **complementary-port carrier** when it
+has a distinct host side and `k>=3` code sides, every code side's two interior
+endpoint angles sum to `pi`, and the code-side lengths sum to the host length.
+Consecutive collinear boundary segments are merged, so every exterior turn is
+strictly positive.
+
+### ST-M1.N21
+
+No complementary-port carrier exists for `k>=3`.
+
+### Proof
+
+Write `delta_v=pi-alpha_v>0` for the exterior turn at a polygon vertex. A
+code side with endpoint angles `alpha_u,alpha_v` has
+
+```text
+delta_u + delta_v
+  = 2*pi - (alpha_u+alpha_v)
+  = pi.                                      (1)
+```
+
+The code sides form one or more maximal path blocks in the polygon's boundary
+cycle because the distinct host side is not a code side. Along a block of `r`
+code sides, equation (1) makes the vertex turns alternate
+
+```text
+delta_0, pi-delta_0, delta_0, pi-delta_0, ... .
+```
+
+Hence a one-edge block consumes exactly `pi` exterior turn; a two-edge block
+consumes `pi+delta_0>pi`; a three-edge block consumes exactly `2*pi`; and any
+block of four or more edges consumes more than `2*pi` (the four-edge prefix
+already consumes `2*pi+delta_0`).
+
+Every convex polygon has total exterior turn `2*pi`. If there are two code
+blocks and at least three code sides, one block contains at least two sides,
+so the two blocks consume strictly more than `2*pi`. Three or more blocks
+consume at least `3*pi`. A single block of four or more sides also consumes
+more than `2*pi`.
+
+The only remaining case is one block of exactly three code sides. Its four
+vertices already consume the full `2*pi`, so strict positivity leaves no
+other vertex. The polygon must be a quadrilateral consisting of those three
+code sides and the host side. But a nondegenerate polygon side is strictly
+shorter than the sum of all the other side lengths, whereas the carrier
+requires
+
+```text
+length(host) = length(code_1)+length(code_2)+length(code_3).
+```
+
+The quadrilateral is therefore degenerate, a contradiction.  □
+
+### Corollaries and scope
+
+1. A convex right-angle-port realization of the three- or four-neighbor
+   order channel is impossible.
+2. In the fixed directed-pose model of Section 6, admitting every permutation
+   forces a common complementary endpoint pair, so no convex universal-order
+   carrier exists for any `k>=3`.
+3. The twelve-state `k=4` capacity cannot be realized by merely placing four
+   separated rectangular ports around a convex support.
+
+N21 does **not** cover a nonconvex polygon, a junction with extra
+participants, a code side whose orientation/handedness changes contextually,
+or a carrier that deliberately realizes only a selected subset of words with
+non-complementary endpoints. Those are precisely the harder geometries left
+outside HC-15.
+
+## 10. HC-15 disposition
+
+The checkpoint has a useful positive and a decisive negative:
+
+- K6O gives an exact fully occupied order channel with capacities
+  `1,3,12,...`; and
+- N21 closes its simplest convex, universally compatible geometric
+  realization.
+
+No exact nonconvex polygonal disk realizing two non-reversal three-neighbor
+words was derived within the checkpoint. The HC-15 stop rule therefore fires.
+Subdivision order is retained as a compiler-aware **search primitive**, not a
+candidate tile or a reopened K5C proof.
+
+Reopening requires, before computation, exact coordinates for one nonconvex
+polygon and two proposed non-reversal patches, together with hand-checkable
+proofs of side-role recognition, disjoint interiors and exact host coverage.
+Only after that local witness survives may a separately authorized experiment
+classify its unintended contacts or test whole-plane forcing.

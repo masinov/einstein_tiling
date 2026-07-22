@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 101)
+**Last updated:** 2026-07-22 (session 102)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ frozen after HC-14: K5C's compiler is prior art; fixed-rosette and disjoint-port boundary mechanisms fail; no explicit gapless polygon meets reopening contract R1--R5 (D-0108--D-0110) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ frozen after HC-15: subdivision order has exact abstract capacity, but the convex complementary-port realization is impossible and no exact nonconvex polygon exists (D-0111--D-0113) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -278,6 +278,11 @@
   neighbors give three states and four give twelve. Every ordinary internal
   junction obeys the exact complementary-angle equation. No congruent
   polygonal realization is yet supplied (K6O/N20/J0, D-0112).
+- **ST-M1 convex subdivision no-go:** complementary endpoint ports each
+  consume `pi` of exterior turning, so no convex polygon with a separate host
+  realizes the three- or four-neighbor universal order channel. Right-angle
+  ports are closed. Nonconvex/contextual carriers remain logically open, but
+  no exact witness was derived; HC-15's stop fires (N21/D-0113).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -579,7 +584,7 @@
   lines remain unknown. The completed blind hierarchy
   screen retained two non-unique first-composition rules out of 22,094 but no
   stationary recognizable recursion. Artifact: `e1-overnight-recovered.json`.
-- Test suite: **222 fast passed** (17 deselected, 31.2 s, session 99);
+- Test suite: **222 fast passed** (17 deselected, 153.10 s, session 102);
   **17 slow passed** previously (192 deselected, 389.36 s).
   Vendored Rust: **5 passed**.
 
@@ -736,6 +741,6 @@ Research is under the 2026-07-21 reset recorded in
 10. The user authorized HC-15. Session 100 completed the mandatory
     T-junction/non-edge-to-edge prior-art audit. Session 101 proved the exact
     `k!/2` order capacity, the two-neighbor reflection no-go and the endpoint
-    angle equation. Session 102 is the final allowed session and must stop
-    with an exact host-plus-three polygonal local witness or a scoped no-go.
-    No run, SVG or shape promotion is admitted.
+    angle equation. Session 102 proves the convex complementary-port no-go
+    N21. HC-15 is exhausted at 3 of 3 sessions; no exact nonconvex witness,
+    run, SVG or shape promotion exists. A new checkpoint is required.

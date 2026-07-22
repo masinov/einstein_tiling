@@ -2491,3 +2491,23 @@ vocabulary. These results concern abstract interval contact complexes and do
 not prove that congruent copies of one polygon realize multiple orders.
 Session 102 retains exactly that geometric obligation for the host-plus-three
 class. Failure closes the class under HC-15's stop rule.
+
+## D-0113 (2026-07-22) — Close convex subdivision ports; fire the HC-15 stop
+
+N21 applies the convex exterior-turn budget to the natural complementary-port
+realization of K6O. Every code side whose endpoint interior angles sum to
+`pi` consumes exactly `pi` across its two exterior turns. Three or more such
+sides cannot form a proper subset of a convex boundary: multiple blocks or a
+block of length at least four exceed total turn `2*pi`; one block of three
+forces a quadrilateral, whose host-length equality is degenerate.
+
+Thus right-angle ports and all convex fixed-directed-pose universal-order
+carriers are impossible. This is a scoped no-go, not a theorem against
+nonconvex supports, contextual reflection choices, extra participants or
+selected non-complementary words.
+
+No exact nonconvex polygonal witness was found on paper. HC-15 is exhausted
+at session 102 and its stop rule fires without an experiment. K6O is retained
+only as an exact compiler-aware search primitive. Reopening requires exact
+coordinates and two hand-verifiable non-reversal patches before any contact
+classification run.

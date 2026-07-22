@@ -154,6 +154,7 @@ Turtle under the production canonicalization.
 | ST-M1.K6O | A host interval partitioned by `k>=2` pairwise-distinct complete neighbor roles has exactly `k!/2` order classes under full Euclidean isometry | abstract rooted interval contact complex; no polygonal realization | proof-draft exact capacity theorem | recognizable host/roles; exact coverage; reversal quotient | `21_subdivision_word_contacts.md` §3; D-0112 |
 | ST-M1.N20 | Two unequal whole neighbor sides partitioning one host side define only one full-isometry state, not a binary choice | three-occurrence ordinary T-junction only; no external handedness carrier | proof-draft geometric-symmetry no-go | K6O at `k=2`; full Euclidean isometries | `21_subdivision_word_contacts.md` §4; D-0112 |
 | ST-M1.J0 | At an ordinary internal host-side T-junction, the two neighbor endpoint angles sum to `pi` | exactly three participants; straight host interior; no extra emanating contact | proof-draft local angle equation | gapless coverage; disjoint interiors | `21_subdivision_word_contacts.md` §6; D-0112 |
+| ST-M1.N21 | No convex polygon has a separate host and `k>=3` complementary-endpoint code sides whose lengths sum to the host | irredundant convex polygon; complete code sides; each endpoint-angle pair sums to `pi` | proof-draft curvature/length no-go | total exterior turn `2*pi`; strict polygon inequality | `21_subdivision_word_contacts.md` §9; D-0113 |
 
 ## Preserved Turtle-control evidence (legacy “finalist” identifiers)
 

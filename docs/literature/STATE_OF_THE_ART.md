@@ -279,7 +279,10 @@ machine-dependent shapes in its purely geometric construction).  The
 edge-to-edge monohedral geometry cannot yield an unmarked aperiodic prototile.
 Intentional non-edge-to-edge subdivision is therefore legitimate territory,
 but T-junction atlases and FLC recodings themselves carry no novelty claim.
-See `reviews/TJUNCTION_CONTACT_COMPLEX.md`.
+HC-15 subsequently proved the abstract subdivision-order capacity and
+refuted the natural convex complementary-port realization; no nonconvex
+polygon was constructed. See `reviews/TJUNCTION_CONTACT_COMPLEX.md` and
+theory note 21.
 
 - On paper first, design a faithful one-shape encoding of the three-prototile
   `sqrt(2)-1` Sturmian system. The decisive lemma must exclude every
