@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 125)
+**Last updated:** 2026-07-22 (session 126)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-23 closed early at session 2/3: N31 refutes the fixed geometry and every K13F/K10B square-lens pairing; K13F arithmetic survives (D-0111--D-0136) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-24 session 1/3: K15S gives the exact complete lens system; N32 narrows weights to `b+c<a<(1+sqrt(2))b-c`, `b>sqrt(2)c`; joint U1/U2 solution is next (D-0111--D-0138) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -946,3 +946,18 @@ Research is under the 2026-07-21 reset recorded in
     combined bound for this unchanged K10B topology. HC-23 therefore closes
     one session early with no coordinates, experiment or candidate. A new
     checkpoint is required before changing a named N31 hypothesis.
+19. The user authorized HC-24 after review. It retains the K10B word and
+    square lens but varies the weights only after the complete spine and all
+    containment inequalities are derived over `Q(sqrt(2))`. Those inequalities
+    must be solved jointly with U1/U2 and semigroup exclusion of unintended
+    `d` host covers. Any survivor gets a fresh role/cover audit. The checkpoint
+    permits no numerical search, coordinate fitting, experiment, SVG or
+    candidate promotion and stops within three sessions with a proved family
+    or scoped no-go. Session 126 derives K15S: six exact relative partial
+    sums, all 24 open-square inequalities and the central closure line on the
+    unit circle. The free terminal angle makes the system semialgebraic, not
+    linear in weights alone. N32 adds the necessary wedge
+    `b+c<a<(1+sqrt(2))b-c`, hence `b>sqrt(2)c`, refuting the illustrative
+    `(11,4,6,21)` tuple. K15D reduces unintended arithmetic `d` host covers
+    to `h-d in <a,b,c>`. Session 127 must solve these jointly with U1/U2
+    without numerical search.

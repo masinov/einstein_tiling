@@ -2974,3 +2974,48 @@ This closes only the unchanged K10B square-lens word/angle topology paired
 with K13F. K13F's arithmetic language remains proved. A different boundary
 word, guard geometry or first-angle assignment requires a new checkpoint and
 must name which N31 hypothesis it changes; no such branch is admitted here.
+
+## D-0137 (2026-07-22) — Admit the complete K10B feasibility system
+
+After independent review, the user explicitly authorizes HC-24. The branch
+keeps K10B's square lens, boundary word, first `A,d` prefix and angle
+assignment, but no longer fixes K13F's weights. It must derive every spine
+vertex exactly over `Q(sqrt(2))` and reduce complete lens containment to a
+finite exact system before choosing a new tuple.
+
+That geometric system is solved jointly with K13A's U1/U2 arithmetic
+conditions. The old shortcut `d>h` is not inherited: exclusion of unintended
+`d`-side host covers must be handled by exact semigroup arithmetic. Any
+surviving tuple must also redo the complete role and side-cover audit from
+zero rather than inherit K14R.
+
+HC-24 has at most three sessions to prove a viable exact family or a scoped
+incompatibility theorem. Numerical search, approximate coordinate fitting,
+experiment, SVG, candidate promotion and an enlarged boundary/contact atlas
+are not authorized.
+
+## D-0138 (2026-07-22) — Retain the exact semialgebraic lens system
+
+K10B fixes five relative `pi/4` turns but not the terminal `A` angle. Thus
+the relative spine offsets lie in the `Q(sqrt(2))`-linear span of the
+weights, while the absolute orientation remains one unit variable `(C,S)`.
+K15S records all partial sums, every strict square inequality, and the exact
+central host-length equation. The latter reduces to one line on the unit
+circle, so the problem is finite and exact but not linear in the weights
+alone. No angle is silently fixed to satisfy the audit prompt.
+
+The fourth partial sum strengthens N31. N32 proves every feasible fixed-order
+spine needs
+
+```text
+b+c<a<(1+sqrt(2))*b-c,       b>sqrt(2)*c.
+```
+
+In particular the review's illustrative `(11,4,6,21)` tuple fails the
+complete prefix even though it passes N31. K15D handles the changed `d`
+burden: because K15S implies `2d>h`, an arithmetic host cover involving `d`
+exists exactly when `h-d` is a nonnegative member of `<a,b,c>`.
+
+Session 126 selects no tuple. The next session must solve K15S, N32, K13A
+and K15D jointly by exact analysis, not parameter enumeration or approximate
+fitting.

@@ -9,10 +9,10 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-22-23",
+    "id": "HC-2026-07-22-24",
     "date": "2026-07-22",
-    "through_session": 123,
-    "reason": "Sessions 121--123 completed HC-22: K13W gives the finite weighted-path criterion, K13A characterizes the K9A host language exactly, and K13F proves the infinite arithmetic family (1,n,n+2), n>=4. No geometry or candidate follows. After independent review, the user explicitly authorizes HC-23 for exact on-paper K10B geometry of the smallest member (a,b,c,h)=(1,4,6,11), with d fixed to 12. Before inheriting any recognition claim it must redo the complete length/context audit for {1,4,6,11,12}; beyond H it explicitly tracks the A, B, C and d full-side arithmetic cover tables. It must derive symbolic turn and square-lens closure before coordinates. Within at most three sessions it must give a complete exact polygon and both placement tables or close this fixed geometry by theorem. No computation, alternative weight tuple, boundary word, radius escalation, SVG or candidate promotion is authorized.",
+    "through_session": 125,
+    "reason": "Sessions 124--125 completed HC-23 early: K14R redid the fixed role and cover tables, and N31 proved that every unchanged K10B square-lens spine requires d<=sqrt(2)a and h<=sqrt(2)d, hence b+c<=a. This closes the fixed (1,4,6,11;d=12) instance and the entire K13F/K10B pairing without coordinate fitting. After independent review, the user explicitly authorizes HC-24 to characterize K13A-compatible weights against the complete K10B square-lens geometry. It must derive the full spine in Q(sqrt(2)) and every lens-containment inequality, then solve that finite system jointly with U1/U2. Because d>h is generally unavailable, d-side exclusion must be treated semigroup-arithmetically, and any surviving tuple requires a role/cover audit from zero. Within at most three sessions it must prove a viable exact family or a scoped incompatibility theorem. No numerical search, experiment, SVG, polygon promotion or candidate claim is authorized.",
     "artifact_bytes": {
       "docs/notebook/assets": 6756125300,
       "data": 1809060890
