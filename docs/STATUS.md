@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 120)
+**Last updated:** 2026-07-22 (session 121)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-21 exhausted: N29--N30 give `[A,B,B,B]` an exact factorized language and collar; K12C is frozen without a full-occurrence exclusion (D-0111--D-0131) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-22 session 1/3: K13W turns joint word/length uniqueness into a finite exact weighted-path test; K9A specialization remains (D-0111--D-0132) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -392,6 +392,12 @@
   coupling among complete occurrences away from `H` can exclude it. No such
   theorem or exact K10B polygon exists, so HC-21 closes at its fixed radius
   without escalation or a candidate (N30/D-0131).
+- **ST-M1 weighted-language criterion:** a finite transition graph with exact
+  positive role lengths has no accepted host word longer than
+  `floor(h/min w)`. K13W makes equality with a desired language a finite exact
+  path-weight test and requires the transition closure forced by the selected
+  words. It is an arithmetic design filter, not geometry or a novelty claim
+  (D-0132).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -905,3 +911,8 @@ Research is under the 2026-07-21 reset recorded in
     120 proves N30, an exact disjoint boundary collar for `ABBB`; no theorem
     controls the complete occurrences away from `H`. HC-21 is exhausted,
     K12C freezes at radius one, and no larger context is opened.
+17. The user authorized HC-22 after review. Session 121 treats side lengths
+    and the forced transition language jointly and proves K13W, the finite
+    exact weighted-path criterion. Sessions 122--123 must solve the K9A
+    `ABC/ACB` specialization symbolically and either exhibit a proved family
+    or close the arithmetic design class; no triple search is admitted.

@@ -9,10 +9,10 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-22-21",
+    "id": "HC-2026-07-22-22",
     "date": "2026-07-22",
-    "through_session": 117,
-    "reason": "Sessions 115--117 completed HC-20: N27 gives a scoped endpoint-polarity filter, K11S proves that one atomic root can synchronize a complete duplicated arc, ERR-009 corrects the terminal A-side scope, and N28 proves K10B's multiplexed H side is not atomic. K10W remains frozen. After independent review, the user explicitly authorizes HC-21 for one finite contextual synchronizer with radius declared before work. The radius is fixed at the closed H-star: the root occurrence, every occurrence meeting any point of its H side, and only incidences/contact sectors based on that side. Within at most three on-paper sessions it must prove a total three-state classification ([H], [A,B,C], [A,C,B]) on that full radius-one local closure or close radius one. No radius escalation, coordinates, alternative boundary, experiment, atlas enumeration or candidate promotion is authorized.",
+    "through_session": 120,
+    "reason": "Sessions 118--120 completed HC-21 at its fixed radius: K12C states the total H-star decoder contract, N29 proves the factorized K9A/K9T algebra admits the fourth word ABBB, and N30 gives that word an exact disjoint boundary collar. Radius one is frozen without escalation. After independent review, the user explicitly authorizes HC-22 for an on-paper weighted-language design theorem. Lengths and selected words must be treated jointly, and uniqueness must reduce to finite arithmetic over weighted directed paths or the corresponding numerical semigroup. Within at most three sessions it must characterize the K9A host language and either exhibit an exact passing design family or close the whole multiplexed-host arithmetic class. No coordinates, polygon, experiment, boundary synthesis, SVG, radius escalation or candidate promotion is authorized.",
     "artifact_bytes": {
       "docs/notebook/assets": 6756125300,
       "data": 1809060890

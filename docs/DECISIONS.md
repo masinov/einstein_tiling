@@ -2874,3 +2874,20 @@ frozen contract, and factorized angle/contact synchronization is closed for
 K10B. No radius escalation, coordinates, alternative boundary, experiment,
 SVG or candidate follows. Reopening requires an exact collision theorem or a
 complete K10B polygon and full radius-one tables supplied before work.
+
+## D-0132 (2026-07-22) — Admit joint weighted-language design
+
+The user authorizes HC-22 after independent review. Lengths and selected
+words are one joint design object: the transition graph is the complete
+closure forced by their local equations, not the desired edge list. K13W
+proves that exact positive weights bound every host word to at most
+`floor(h/min w)` roles. The desired language is complete exactly when its
+words have weight `h` and every other bounded directed start-to-terminal path
+has different weight.
+
+This is a finite arithmetic criterion and a standard weighted-automaton
+argument; no method novelty is claimed. Sessions 122--123 must derive a
+necessary-and-sufficient symbolic specialization for the K9A words
+`ABC,ACB`, then prove either a reusable passing family or nonexistence. A
+triple search, coordinate work, polygon, boundary synthesis, experiment, SVG,
+radius escalation or candidate promotion is not authorized.
