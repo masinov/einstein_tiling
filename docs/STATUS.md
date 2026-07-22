@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 100)
+**Last updated:** 2026-07-22 (session 101)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -272,6 +272,12 @@
   finite state into one unrestricted congruence class. HC-15 admits only one
   fully occupied subdivision-word contact class and requires an exact local
   realization or scoped no-go by session 102, without enumeration (D-0111).
+- **ST-M1 subdivision-word capacity:** `k` unequal complete neighbor sides
+  partitioning one host side have exactly `k!/2` abstract order states under
+  full isometry. The smallest three-occurrence split is not binary; three
+  neighbors give three states and four give twelve. Every ordinary internal
+  junction obeys the exact complementary-angle equation. No congruent
+  polygonal realization is yet supplied (K6O/N20/J0, D-0112).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -728,7 +734,8 @@ Research is under the 2026-07-21 reset recorded in
    future polykite novelty promotion, but is not itself the next research
    result.
 10. The user authorized HC-15. Session 100 completed the mandatory
-    T-junction/non-edge-to-edge prior-art audit. Sessions 101--102 may study
-    only the fixed fully occupied subdivision-word class and must stop with
-    an exact polygonal local witness or a scoped no-go. No run, SVG or shape
-    promotion is admitted.
+    T-junction/non-edge-to-edge prior-art audit. Session 101 proved the exact
+    `k!/2` order capacity, the two-neighbor reflection no-go and the endpoint
+    angle equation. Session 102 is the final allowed session and must stop
+    with an exact host-plus-three polygonal local witness or a scoped no-go.
+    No run, SVG or shape promotion is admitted.

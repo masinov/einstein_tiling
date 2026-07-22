@@ -102,6 +102,11 @@ reviewable proof or certificate.
   closes disjoint optional ports under gapless coverage; N19 bounds one full
   arc pair's alignments. No boundary meets K5C.1--K5C.3, so the route is
   frozen after HC-14.
+- `21_subdivision_word_contacts.md` — the HC-15 fully occupied partial-contact
+  alternative. K6O counts `k!/2` order states, N20 closes the apparent
+  two-neighbor bit under full isometry, and J0 gives the exact endpoint-angle
+  equations. No congruent polygonal witness or whole-plane forcing theorem is
+  claimed.
 - `W1_TRANSFER_SPEC.md` — the soundness/completeness contract for the exact
   cylinder transfer engine and its certificates.
 - `PROOF_LEDGER.md` — stable IDs, scope, status, dependencies, and artifacts.

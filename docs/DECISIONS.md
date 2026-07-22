@@ -2475,3 +2475,19 @@ exact order-capacity and endpoint-angle lemmas and must either give one exact
 nonoverlapping polygonal contact witness with multiple full-isometry states,
 or close the fixed class by a scoped no-go. No enumeration or candidate
 promotion is authorized.
+
+## D-0112 (2026-07-22) — Subdivision order starts at three states, not one bit
+
+K6O counts the fixed interval contact complex exactly. With `k` pairwise
+distinct complete neighbor-side lengths summing to one host side, full
+Euclidean isometry identifies precisely a word and its reversal, leaving
+`k!/2` order states. N20 therefore refutes the smallest three-occurrence
+binary idea: the two orders of two unequal neighbors are mirror images and
+form one state. Three neighbors give three states; four give twelve.
+
+At each ordinary internal T-junction, J0 forces the two neighbor endpoint
+angles to sum to `pi`. Right-angle ports are a universal sufficient local
+vocabulary. These results concern abstract interval contact complexes and do
+not prove that congruent copies of one polygon realize multiple orders.
+Session 102 retains exactly that geometric obligation for the host-plus-three
+class. Failure closes the class under HC-15's stop rule.
