@@ -2683,3 +2683,24 @@ nonconvexity or convex guard/code-vertex reuse, state every intrinsic role
 identification, and give exact coordinates and both complete shield patches
 before any computation. Failure closes this topology; it does not authorize
 a larger atlas.
+
+## D-0123 (2026-07-22) — Enumerate HC-19 roles and close convex guard reuse
+
+The user authorizes HC-19 with explicit recognition obligations for the six
+occurrence roles `H,A,B,C,G,W`. Distinct host/code lengths recover only the
+host word; guard pose, shield arc, terminal vertices and every repeated
+length/angle also require intrinsic or contact-context recognition before a
+polygon could be admitted.
+
+N25 closes the cheaper convex branch completely under K9T's fixed complete
+spokes. K9V forces the guard vertex onto the adjacent `B/C` block. At their
+shared vertex, the two sides leaving that endpoint have swapped lengths
+`b,c`, while the clean-spoke equations require equality. At an outer endpoint,
+the other endpoint angle is `pi-2gamma`, making K9V's strict curvature
+inequality an equality and leaving no turn for `A,H`. Equal endpoint angles
+reduce to the already excluded `gamma=pi/3` zero-remainder case.
+
+Thus fixed-pose, distinct-length K9T geometry is necessarily nonconvex. This
+is a theorem for the named branch, not a failed coordinate attempt. Sessions
+113--114 may examine one right-angle shield skeleton and must still provide a
+complete polygon and both exact patches or close K9T without search.
