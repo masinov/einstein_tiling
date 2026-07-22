@@ -2909,3 +2909,28 @@ The criterion explains two distinct traps. `(1,2,4)` fails uniqueness and
 admits `ABBB`; `(1,2,3)` passes that test but has `h=6=3b=2c`, admitting
 `BBB` and `CC`. Session 123 must prove a reusable passing family or close the
 class. No enumeration or geometry is authorized.
+
+## D-0134 (2026-07-22) — Retain an infinite arithmetic design family
+
+K13F proves that every integer `n>=4` with
+
+```text
+(a,b,c,h)=(1,n,n+2,2n+3)
+```
+
+satisfies both K13A conditions. For representations over `b,c`, the total
+coefficient count is forced to two; U1 then forces one copy of each, while U2
+fails by parity between `2n,2n+2,2n+4` and `2n+3`. Thus the complete
+code-only host language is exactly `ABC,ACB`. This is an infinite symbolic
+family proved without a triple search.
+
+Under the separate cover-side alignment hypothesis V, choosing `d=3n>h`
+also prevents a full `d` side from entering an `H` partition, leaving exactly
+`[H]` and the two code words at the arithmetic level. Sliding and overhangs
+are not excluded by this inequality.
+
+HC-22 closes positively as an arithmetic boundary-design result. It does not
+repair the original `(1,2,4)` skeleton or establish any polygon, coordinate,
+patch, full local language, tiling, aperiodicity, candidate, or novelty claim.
+Those geometric and literature gates remain explicit. No computation or
+artifact was produced.

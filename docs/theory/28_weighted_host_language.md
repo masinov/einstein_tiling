@@ -232,3 +232,104 @@ finite test in their number field.
 K13A is the requested joint characterization. It has not yet shown whether
 the conditions admit a useful infinite family; that is session 123's only
 remaining arithmetic question.
+
+## 9. K13F: an infinite passing family
+
+### ST-M1.K13F
+
+For every integer `n>=4`, set
+
+```text
+a=1,       b=n,       c=n+2,       h=2*n+3.             (9.1)
+```
+
+Then U1 and U2 hold. Consequently the complete code-only weight-`h` language
+of the forced K9A graph is exactly `{ABC,ACB}`.
+
+### Proof of U1
+
+Suppose
+
+```text
+p*n + q*(n+2) = 2*n+2,       p,q in N_0.               (9.2)
+```
+
+Put `k=p+q`. If `k<=1`, the left side is at most `n+2`, strictly below the
+right side. If `k>=3`, it is at least `3n>2n+2` because `n>=4`. Thus `k=2`,
+and (9.2) becomes
+
+```text
+2*n+2*q=2*n+2.
+```
+
+Hence `q=1` and `p=1`. The mixed representation is unique.
+
+### Proof of U2
+
+Suppose instead
+
+```text
+p*n + q*(n+2) = 2*n+3.                                 (9.3)
+```
+
+Again `k<=1` is too small and `k>=3` is too large, now using
+`3n>2n+3` for `n>=4`. If `k=2`, the left side is one of
+
+```text
+2*n,       2*n+2,       2*n+4,
+```
+
+never `2*n+3`. Thus (9.3) has no solution and `h` lies outside `<b,c>`. □
+
+The smallest member is
+
+```text
+(a,b,c,h)=(1,4,6,11),                                  (9.4)
+```
+
+and `(1,5,7,13)` is the next. This is a proved family, not the output of a
+triple search.
+
+## 10. Optional exclusion of the repeated `d` length
+
+The K10B boundary also contains repeated sides of length `d`. Under the
+cover-side vertex-alignment hypothesis V from K11S, choosing
+
+```text
+d=3*n                                                   (10.1)
+```
+
+makes `d>h` for `n>=4`, so no full `d` side can be an entry in a partition of
+`H`. It is also distinct from `a,b,c,h`. Thus the full-side arithmetic cover
+language becomes
+
+```text
+[H],       [A,B,C],       [A,C,B].                      (10.2)
+```
+
+This statement is conditional on V. A longer `d` side could otherwise
+overhang or slide across an endpoint of `H`; arithmetic does not exclude that
+geometry.
+
+## 11. HC-22 disposition and geometric boundary
+
+HC-22 closes positively at the requested arithmetic level:
+
+- K13W gives the reusable finite weighted-path test;
+- K13A gives necessary and sufficient conditions for the forced K9A graph;
+  and
+- K13F gives an infinite exact family satisfying them.
+
+This removes N29's **arithmetic** fourth-word obstruction after changing the
+length design. It does not repair the original `(1,2,4)` K10B instance, and
+it does not supply a polygon. Every geometric obligation remains:
+
+1. exact realization of the nonconvex boundary and half-turn lens;
+2. cover-side vertex alignment, including overhang/sliding exclusion;
+3. both complete `ABC/ACB` placement patches with disjoint interiors;
+4. full radius-one star completeness; and
+5. whole-plane lift and total symbolic decoding.
+
+No member of (9.1) is a candidate tile until those conditions and the usual
+prior-art gates close. The arithmetic family carries no novelty claim without
+a dedicated literature audit.

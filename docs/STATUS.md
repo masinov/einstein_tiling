@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 122)
+**Last updated:** 2026-07-22 (session 123)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-22 session 2/3: K13A exactly characterizes unique `ABC/ACB` acceptance by one representation and one semigroup exclusion; family existence remains (D-0111--D-0133) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-22 exhausted positively: K13F gives the infinite arithmetic family `(1,n,n+2)`, `n>=4`, with exactly `ABC/ACB`; all geometry remains open (D-0111--D-0134) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -403,6 +403,11 @@
   `b+c` has only its mixed representation and `a+b+c` lies outside
   `<b,c>`. K13A is necessary and sufficient. It explains `ABBB` for
   `(1,2,4)` and the separate `BBB/CC` failure for `(1,2,3)` (D-0133).
+- **ST-M1 infinite arithmetic repair family:** for every `n>=4`, weights
+  `(a,b,c,h)=(1,n,n+2,2n+3)` satisfy K13A and accept exactly `ABC,ACB` among
+  code-only covers. With cover-side alignment and `d=3n>h`, the full-side
+  arithmetic language adds only `[H]`. K13F is a symbolic design theorem;
+  it supplies no polygon, local-completeness result or candidate (D-0134).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -923,4 +928,6 @@ Research is under the 2026-07-21 reset recorded in
     or close the arithmetic design class; no triple search is admitted.
     Session 122 proves K13A: unique mixed representation of `b+c` plus
     exclusion of `a+b+c` from `<b,c>` is exactly necessary and sufficient.
-    Session 123 must settle whether a reusable passing family exists.
+    Session 123 proves K13F, the infinite passing family
+    `(1,n,n+2,2n+3)` for every `n>=4`, and closes HC-22 positively at the
+    arithmetic level. Geometry and prior-art gates remain wholly open.
