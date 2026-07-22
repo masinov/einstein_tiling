@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 121)
+**Last updated:** 2026-07-22 (session 122)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-22 session 1/3: K13W turns joint word/length uniqueness into a finite exact weighted-path test; K9A specialization remains (D-0111--D-0132) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-22 session 2/3: K13A exactly characterizes unique `ABC/ACB` acceptance by one representation and one semigroup exclusion; family existence remains (D-0111--D-0133) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -398,6 +398,11 @@
   path-weight test and requires the transition closure forced by the selected
   words. It is an arithmetic design filter, not geometry or a novelty claim
   (D-0132).
+- **ST-M1 exact K9A arithmetic characterization:** the forced transition
+  closure is `{A,B,C} x {B,C}`. Exactly `ABC,ACB` have host weight iff
+  `b+c` has only its mixed representation and `a+b+c` lies outside
+  `<b,c>`. K13A is necessary and sufficient. It explains `ABBB` for
+  `(1,2,4)` and the separate `BBB/CC` failure for `(1,2,3)` (D-0133).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -916,3 +921,6 @@ Research is under the 2026-07-21 reset recorded in
     exact weighted-path criterion. Sessions 122--123 must solve the K9A
     `ABC/ACB` specialization symbolically and either exhibit a proved family
     or close the arithmetic design class; no triple search is admitted.
+    Session 122 proves K13A: unique mixed representation of `b+c` plus
+    exclusion of `a+b+c` from `<b,c>` is exactly necessary and sufficient.
+    Session 123 must settle whether a reusable passing family exists.

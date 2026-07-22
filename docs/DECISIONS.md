@@ -2891,3 +2891,21 @@ necessary-and-sufficient symbolic specialization for the K9A words
 `ABC,ACB`, then prove either a reusable passing family or nonexistence. A
 triple search, coordinate work, polygon, boundary synthesis, experiment, SVG,
 radius escalation or candidate promotion is not authorized.
+
+## D-0133 (2026-07-22) — Characterize the K9A host language exactly
+
+The equations forced jointly by `ABC,ACB` close the transition graph to
+`{A,B,C} x {B,C}`: every edge into `B,C` is legal and every edge into `A` is
+illegal. K13A splits accepted host words into an optional unique initial `A`
+and a word over `B,C`.
+
+The desired two-word language is complete if and only if `b+c` has the unique
+nonnegative `(b,c)` representation `(1,1)` and `h=a+b+c` is not in the
+semigroup `<b,c>`. The first condition is equivalently that neither ratio
+`b/c,c/b` is a positive integer; the second is a finite bounded membership
+test. This is necessary and sufficient, not a heuristic.
+
+The criterion explains two distinct traps. `(1,2,4)` fails uniqueness and
+admits `ABBB`; `(1,2,3)` passes that test but has `h=6=3b=2c`, admitting
+`BBB` and `CC`. Session 123 must prove a reusable passing family or close the
+class. No enumeration or geometry is authorized.
