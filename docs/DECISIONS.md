@@ -3101,3 +3101,23 @@ Session 130 must either give one exact simple open-rectangle spine with fixed
 bridge angles and hand-checkable nonintersection, or prove K16B incompatible.
 Failure closes HC-25. Numerical fitting, angle enumeration, extra edges,
 changed guard angle, SVG and candidate promotion remain forbidden.
+
+## D-0143 (2026-07-22) — Freeze unequal spokes at K16W
+
+HC-25 reaches its three-session stop without an exact simple K17S spine or a
+general incompatibility proof. The straight-bridge specialization is
+reducible and therefore not K16B. Reusing `pi/4` at both bridges gives the
+exact eight-direction expression (10.2), but neither proves nor refutes all
+rectangle and central-closure predicates. Opposed width chords remain coupled
+through the fixed hooks and host equation.
+
+The finite unresolved obligation is named K16W: fixed exact positive weights,
+two fixed irredundant bridge angles, one exact terminal orientation, all
+K17S inequalities and host closure, and a complete nonintersection proof.
+No such witness, polygon, patch or candidate is claimed, and no no-go theorem
+for the free-angle topology is claimed.
+
+The branch is frozen. Reopening requires a complete exact K16W witness
+supplied before computation or a theorem eliminating the bridge variables.
+Angle enumeration, numerical fitting, added edges, a larger contact atlas and
+SVG-led promotion are not authorized continuations.

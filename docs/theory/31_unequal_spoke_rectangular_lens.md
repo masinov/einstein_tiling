@@ -265,3 +265,69 @@ either:
 Failure to do either closes HC-25 without coordinates. A numerical fit,
 angle enumeration, extra bridge edge, changed guard angle, placement-patch
 claim, SVG or candidate promotion is not an accepted outcome.
+
+## 10. Final exact construction audit
+
+Three algebraically natural specializations were checked on paper before the
+stop.
+
+### 10.1 Straight bridges are not a relaxation
+
+Taking `delta_j=pi` makes `z_j=1` and the consecutive `u,v` sides collinear.
+The bridge vertex is then reducible, so the two sides merge into one boundary
+segment. It no longer gives the two distinct complete clean contacts required
+by (1.1), and it leaves the class K16B admitted. This is not an exact witness.
+
+### 10.2 Reusing the sharp angle does not close the system
+
+The smallest angle vocabulary sets
+
+```text
+delta_1=delta_2=pi/4,       z_1=z_2=q.                (10.1)
+```
+
+Then all seven first-half turns are `3*pi/4`, and the eight directions are
+the complete orbit `1,q,...,q^7`. In particular
+
+```text
+w_8=(a-u) + (u-v)*q + (v-c)*q^2 + (b-u)*q^3.         (10.2)
+```
+
+Equation (10.2) is exact and useful, but it neither satisfies the sixteen
+strict inequalities automatically nor contradicts them. Central closure
+still couples its terminal rotation to `h=a+b+c`. No exact positive weights
+and orientation closing all predicates were derived.
+
+### 10.3 Opposed width chords remain coupled to closure
+
+Choosing the two length-`v` directions with opposite horizontal components
+can place their individual endpoints in the rectangle. The intervening
+fixed `B,u` and `C,u` hooks, however, shift those endpoints before the next
+width chord, while (6.6) simultaneously fixes the final position through the
+host length. The exact inequalities do not factor into independent local
+hooks. No coordinate-free contradiction or exact simple solution follows
+from this decomposition.
+
+These are negative construction findings, not nonexistence theorems for
+K16B.
+
+## 11. HC-25 disposition
+
+The predeclared stop fires in session 130. HC-25 establishes N34, K16B,
+K17S and K17G, but produces neither of the two required terminal outcomes:
+no exact simple K17S spine and no general K16B incompatibility theorem.
+
+The surviving object is therefore recorded as the open frozen obligation
+K16W:
+
+```text
+one fixed choice of positive a,b,c,u,v and irredundant delta_1,delta_2,
+one exact terminal orientation,
+all K17S inequalities and host closure,
+and all nonadjacent segment pairs disjoint.            (11.1)
+```
+
+No approximate coordinates, experiment, SVG, placement patch or candidate
+exists. Reopening requires either a complete exact witness satisfying
+(11.1), supplied before computation, or a new theorem eliminating bridge
+variables. Merely trying angle pairs or adding another bridge is forbidden.
