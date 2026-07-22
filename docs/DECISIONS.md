@@ -3177,3 +3177,21 @@ rigid-hook cones or simultaneous containment and is not a K16W witness.
 HC-26 has one session left. The prefix and closure results do not satisfy the
 terminal trichotomy; only a complete exact simple witness or scoped K16B
 incompatibility theorem prevents the predeclared freeze.
+
+## D-0147 (2026-07-22) — Fire the HC-26 freeze; retain K16W only as an exact obligation
+
+K20L proves that `(u,v,a,b,c,h)=(1,2,1,1/10,1/10,6/5)` passes
+K19P, both isolated K18H cones and K19E separately, with exact rational unit
+directions. This rules out a contradiction derived only from the weights and
+those decoupled projections. It does not combine their phases into one spine
+and is not a compatibility or candidate claim.
+
+The last authorized session obtains neither a complete exact simple K16W
+witness nor a scoped incompatibility theorem for every bridge choice.
+Therefore HC-26's predeclared third outcome fires. K16W remains open but
+frozen; no angle enumeration, coordinate fitting, extra bridge, SVG or
+candidate promotion follows.
+
+The next proposed branch is fixed as the non-right guard-angle mechanism
+`gamma!=pi/2`. It changes a named K9A/K9T hypothesis rather than modifying
+K16B again and requires a new human checkpoint before work begins.

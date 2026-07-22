@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 132)
+**Last updated:** 2026-07-22 (session 133)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-26 session 2/3: exact hook, prefix and closure relaxations survive separately; simultaneous K16W system remains (D-0111--D-0146) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-26 exhausted: exact hook/prefix/closure projections survive separately, but no K16W witness or no-go; non-right guard angle is the proposed pivot (D-0111--D-0147) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -1000,3 +1000,9 @@ Research is under the 2026-07-21 reset recorded in
     both separate tests. They are not K16W witnesses and do not satisfy the
     checkpoint trichotomy. One session remains to settle the simultaneous
     system or fire the predeclared freeze.
+23. Session 133 proves K20L: one exact positive unequal-leg tuple passes the
+    prefix, each isolated hook cone and relaxed closure separately. The
+    cumulative placement phases cannot be discarded, and no exact simple
+    simultaneous spine or all-phase incompatibility theorem is obtained.
+    HC-26's third terminal outcome fires. K16W remains open but frozen; a new
+    checkpoint is required for the pre-agreed `gamma!=pi/2` pivot.

@@ -364,3 +364,88 @@ K16B.  Only the simultaneous system—both K18H cones placed after the prefix,
 the nondegenerate closure line and all segment intersections—can decide the
 checkpoint.  One session remains; these relaxation results do not count as
 a terminal success.
+
+## 10. K20L: one tuple survives every decoupled subsystem
+
+The closure-control tuple (9.1) also passes each isolated rigid-hook cone.
+For either `w=b=c=1/10`, take
+
+```text
+r=(120/121,11/121).                               (10.1)
+```
+
+This is a unit vector.  Formula (1.3), with `u=1` and `v=2`, gives
+
+```text
+s_1=(240/121,22/121),
+s_2=s_1+(-131/(1210*sqrt(2)),
+          109/(1210*sqrt(2))),
+s_3=s_2+(11/121,-120/121).                        (10.2)
+```
+
+The horizontal order is
+
+```text
+0 < Re(s_2) < Re(s_1) < Re(s_3) < 2.              (10.3)
+```
+
+The only close last comparison reduces to
+
+```text
+90*sqrt(2) < 131,
+```
+
+whose square is `16200<17161`.  The comparison
+`Re(s_1)<Re(s_3)` follows from `110*sqrt(2)>131`.  Vertically,
+
+```text
+Im(s_3) < 0 < Im(s_1) < Im(s_2),
+Im(s_2)-Im(s_3)=120/121 < 1.                      (10.4)
+```
+
+Thus the horizontal span is below `2` and the vertical span is below `1`.
+K18H holds exactly.  Since `b=c`, the same construction supplies both
+isolated hook controls.
+
+### ST-M1.K20L
+
+The single positive unequal-leg tuple
+
+```text
+(u,v,a,b,c,h)=(1,2,1,1/10,1/10,6/5)              (10.5)
+```
+
+passes K19P, K18H separately for both `w=b,c`, and K19E.  Consequently no
+contradiction using only the weights plus these decoupled prefix, hook and
+closure projections can prove K16B incompatible.
+
+K20L is a separation control, not a compatibility theorem.  The directions
+used in the three projections are not asserted to arise from one common
+spine, and no containment, bridge irredundancy or nonintersection claim is
+made for their combination.
+
+## 11. HC-26 disposition
+
+The final session attempted to combine the three exact projections.  Their
+common phases must satisfy cumulative placement constraints: the admissible
+translation interval of the `B` hook begins at the K19P endpoint, the `C`
+hook begins at the complete `B`-hook endpoint, and the same three phases must
+land on the nondegenerate closure line.  K20L proves that eliminating any one
+of those offsets loses essential information.  No further bridge-independent
+inequality follows from K18H, K19P and K19E alone.
+
+No exact choices were derived that simultaneously satisfy every K17S bound,
+the host equation and the complete nonintersection table.  Nor was a theorem
+proved excluding all such choices.  Therefore neither of HC-26's two
+positive terminal outcomes is met, and the predeclared third outcome fires:
+
+```text
+K16W remains frozen.                              (11.1)
+```
+
+There will be no numerical angle search, coordinate fit or enlarged bridge
+topology.  Reopening K16W still requires a complete exact witness or a new
+incompatibility theorem supplied before computation.  The proposed next
+checkpoint, if the user authorizes it, changes the named right-angle
+hypothesis and studies a non-right guard angle `gamma!=pi/2`; it does not
+inherit a candidate or any unproved K16B geometry.
