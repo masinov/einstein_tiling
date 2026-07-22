@@ -138,3 +138,66 @@ using only the same local occurrences. If they separate and expose another
 sector, N22 applies again and starts a tertiary cascade. Session 108 must
 either provide a finite exact contact cycle closing this endpoint or fire the
 HC-17 stop. An assertion that the cap “turns the corner” is not such a cycle.
+
+## 6. N23: a one-edge cap transports the defect
+
+The most economical proposed endpoint uses the existing K7A reflex vertex.
+Orient the cap's `A` side vertically, with its convex `pi/2` endpoint at the
+upper secondary T-junction and its reflex `3*pi/2` endpoint at the lower end
+of the exposed continuation. If the longer neighbor has a convex `pi/2`
+angle there, the two angles sum to `2*pi`.
+
+That angle sum prevents an uncovered sector, but it does not terminate the
+contact.
+
+### ST-M1.N23
+
+Let two polygonal disk occurrences `Y,Z` have disjoint interiors, share a
+nondegenerate boundary segment ending at `Q`, and together cover a
+neighborhood of `Q`. If no third occurrence contains `Q`, then their common
+boundary continues through `Q` along another nondegenerate segment. Hence a
+single complete cap side cannot absorb the unequal-stem defect at its lower
+endpoint.
+
+### Proof
+
+Choose a disk around `Q` containing no other polygon vertex except `Q` and,
+by local finiteness and the hypothesis, no other tile occurrence. The two
+tile interiors are disjoint open subsets whose closures cover the disk. Their
+common boundary is therefore the local separator between the two sides.
+
+The incoming shared segment supplies one branch of that separator ending at
+`Q`. A separator cannot end in the interior of the disk: a sufficiently small
+circle about `Q` would otherwise contain one transition between the two open
+interiors, whereas transitions on a circle occur in pairs. Polygonality then
+supplies a second straight branch of positive length leaving `Q`, and that
+branch belongs to both boundaries. □
+
+For the `pi/2 + 3*pi/2` endpoint, N23 says exactly that the cap and longer
+neighbor turn together and share their next sides. If those sides have
+unequal lengths, N22 recurs at their first unequal endpoint. If they have
+equal lengths, the common interface merely advances to the next pair of
+vertices. Absorption requires an explicit finite multi-edge interface whose
+two branches return to the original shorter occurrence. No such interface is
+implied by K8U or by the angle sum.
+
+## 7. HC-17 disposition
+
+HC-17 produces a sharp positive/negative boundary:
+
+- N22 proves that unequal stems necessarily introduce the secondary cap;
+- K8U gives the unique uniform directed mismatch family; and
+- N23 proves that the natural one-edge cap cannot terminate the mismatch.
+
+No finite multi-edge cap cycle closing both interface branches back onto the
+original shorter occurrence was derived. Introducing another occurrence at
+the lower endpoint violates the one-cap route; following an unspecified
+sequence of equal sides is precisely the unbounded contact atlas excluded at
+admission.
+
+The predeclared HC-17 stop therefore fires after session 108. This is not a
+no-go theorem for all unequal-stem mechanisms: a future exact polygon might
+contain a finite, recognizable multi-edge cap cycle. Reopening requires that
+complete cyclic boundary word and its placement isometries before any
+coordinate search. N22/K8U/N23 remain exact admission filters for such a
+proposal.

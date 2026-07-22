@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 107)
+**Last updated:** 2026-07-22 (session 108)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | 🔬 HC-17 on-paper geometry: N22 forces a cap and K8U uniquely classifies the uniform excess; the finite lower contact cycle remains open (D-0111--D-0118) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ frozen after HC-17: N22/K8U classify unequal-stem caps, but N23 shows a one-edge cap only transports the defect and no finite cycle exists (D-0111--D-0119) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -312,6 +312,12 @@
   and both used left stems are `s+Delta`. Each selected word then has two
   identical right-angle sockets with a complete cap side of length `Delta`.
   The lower finite contact cycle remains unproved (K8U/D-0118).
+- **ST-M1 one-edge cap no-go:** a `pi/2+3*pi/2` lower endpoint fills the
+  angle but cannot terminate a two-tile interface. With no third occurrence,
+  the common boundary must continue through the vertex. Unequal next sides
+  recreate N22 and equal sides transport the obligation. No finite cyclic
+  cap word was derived, so HC-17 freezes without a polygon; multi-edge cycles
+  are not refuted (N23/D-0119).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -613,7 +619,7 @@
   lines remain unknown. The completed blind hierarchy
   screen retained two non-unique first-composition rules out of 22,094 but no
   stationary recognizable recursion. Artifact: `e1-overnight-recovered.json`.
-- Test suite: **222 fast passed** (17 deselected, 146.39 s, session 105);
+- Test suite: **222 fast passed** (17 deselected, 145.53 s, session 108);
   **17 slow passed** previously (192 deselected, 389.36 s).
   Vendored Rust: **5 passed**.
 
@@ -783,5 +789,7 @@ Research is under the 2026-07-21 reset recorded in
 12. The user authorized HC-17 after review. Session 106 applies ERR-007,
     removes the zero-byte Conway--Lagarias fetch remnant and proves N22.
     Session 107 proves the uniform mismatch classification K8U. Session 108
-    may only close the cap's lower endpoint by a finite exact contact cycle;
-    failure freezes the route without coordinates or computation.
+    may only close the cap's lower endpoint by a finite exact contact cycle.
+    N23 proves the one-edge cap merely transports the mismatch; no finite
+    cycle is derived. HC-17 is exhausted at 3 of 3 sessions and freezes
+    without coordinates or computation.

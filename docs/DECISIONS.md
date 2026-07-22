@@ -2600,3 +2600,20 @@ among the admitted occurrences; otherwise N22 recurs and the forbidden
 participant cascade begins. Session 108 is the final HC-17 session and may
 not replace that missing cycle with coordinates, search or an unspecified
 atlas.
+
+## D-0119 (2026-07-22) — One cap side transports the mismatch; fire HC-17
+
+At the lower endpoint of the K8U socket, a cap can pair its K7A reflex
+`3*pi/2` endpoint with a convex `pi/2` endpoint of the longer neighbor. The
+angles fill `2*pi`, but N23 proves that this does not end their contact. With
+only those two occurrences covering a neighborhood, their common polygonal
+boundary must continue through the vertex along another positive-length
+side. Unequal next sides recreate N22; equal next sides only move the same
+obligation forward.
+
+No finite multi-edge interface returning both cap branches to the original
+shorter occurrence was derived. HC-17 is exhausted at session 108, so its
+stop fires without coordinates, enumeration, SVG or candidate promotion.
+This closes only the one-edge/unserialized-cap route. An exact finite cyclic
+boundary word supplied before computation may reopen unequal stems; arbitrary
+unequal-stem carriers are not refuted.
