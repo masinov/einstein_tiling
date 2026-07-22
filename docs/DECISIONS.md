@@ -3160,3 +3160,20 @@ and nonintersection predicate.
 HC-26 therefore remains open for two sessions. They must couple both hook
 cones through the bridge variables and closure and reach the existing exact
 trichotomy; the local cone is not a successful terminal result.
+
+## D-0146 (2026-07-22) — Retain prefix and closure eliminations without promotion
+
+K19P derives the complete first-corner cone and the necessary bound
+`a>u/sqrt(2)`. K19E independently eliminates all three endpoint phases from
+host closure: the relaxed equation is exactly an annulus/circle radial-
+interval intersection. Both derivations handle continuous bridge angles
+without sampling.
+
+Exact unequal-leg controls show that neither relaxation is contradictory.
+The tuple `(u,v,a)=(1,2,1)` with first direction `(24/25,7/25)` passes K19P;
+adding `b=c=1/10` passes K19E. The tuple is not asserted to pass the two
+rigid-hook cones or simultaneous containment and is not a K16W witness.
+
+HC-26 has one session left. The prefix and closure results do not satisfy the
+terminal trichotomy; only a complete exact simple witness or scoped K16B
+incompatibility theorem prevents the predeclared freeze.

@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 131)
+**Last updated:** 2026-07-22 (session 132)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-26 session 1/3: exact rigid-hook cone survives; reflected and degenerate closure branches handled; K16W coupling remains (D-0111--D-0145) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-26 session 2/3: exact hook, prefix and closure relaxations survive separately; simultaneous K16W system remains (D-0111--D-0146) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -994,3 +994,9 @@ Research is under the 2026-07-21 reset recorded in
     identically-satisfied closure line and K18R treats the reflected global
     turn orientation isometrically. Two sessions remain to couple the hooks
     through the bridges and closure; partial analysis is not success.
+22. Session 132 derives K19P, the complete first-corner prefix cone and
+    `a>u/sqrt(2)`, and K19E, the exact three-rotor annulus criterion for host
+    closure after containment is relaxed. Exact unequal-leg controls pass
+    both separate tests. They are not K16W witnesses and do not satisfy the
+    checkpoint trichotomy. One session remains to settle the simultaneous
+    system or fire the predeclared freeze.

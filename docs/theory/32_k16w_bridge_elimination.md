@@ -204,3 +204,163 @@ terminal outcome.  If neither a complete exact simple witness nor a scoped
 K16B incompatibility theorem is proved, K16W freezes and the proposed next
 checkpoint pivots to `gamma!=pi/2`.
 
+## 7. K19P: the rigid corner prefix
+
+The hook cones omit the first two edges `A,u`, which leave the guard-lens
+corner `R`.  In physical coordinates let the first unit direction be
+`r_0=(x,y)`.  Strict containment of the first two vertices is exactly
+
+```text
+x^2+y^2=1,
+0 < a*x < v,                  0 < a*y < u,
+0 < a*x-u*(x+y)/sqrt(2) < v,
+0 < a*y+u*(x-y)/sqrt(2) < u.               (7.1)
+```
+
+### ST-M1.K19P
+
+Every K17S spine satisfies (7.1).  In particular,
+
+```text
+a > u/sqrt(2).                              (7.2)
+```
+
+### Proof
+
+The first vertex is `a*r_0`.  The next edge is obtained by the fixed
+`3*pi/4` turn, so the second vertex is
+
+```text
+(a*x-u*(x+y)/sqrt(2),
+ a*y+u*(x-y)/sqrt(2)).                       (7.3)
+```
+
+This proves (7.1).  Its first two lower bounds give `x,y>0`; the lower bound
+on the first coordinate of (7.3) then gives
+
+```text
+a > (u/sqrt(2))*(1+y/x) > u/sqrt(2).
+```
+
+□
+
+The prefix cone is nonempty for unequal lens dimensions.  For
+
+```text
+u=1,       v=2,       a=1,       r_0=(24/25,7/25),  (7.4)
+```
+
+the second vertex is
+
+```text
+(24/25-31/(25*sqrt(2)),
+ 7/25+17/(25*sqrt(2))).                       (7.5)
+```
+
+It lies strictly in `(0,2) x (0,1)`: the close lower comparison is
+`24*sqrt(2)>31`, and the close upper comparison is
+`17<18*sqrt(2)`.  Both follow after squaring positive integers.  Thus the
+corner prefix also supplies no stand-alone K16B no-go.
+
+## 8. K19E: exact three-rotor closure relaxation
+
+Put
+
+```text
+F   = a+u*q,
+H_w = v+w*q+u*q^2,             w in {b,c}.          (8.1)
+```
+
+In physical coordinates define the unit directions
+
+```text
+r_0 = Z,
+r_b = Z*q*z_1,
+r_c = Z*q^3*z_1*z_2.                              (8.2)
+```
+
+Then the complete first-half endpoint has the exact block form
+
+```text
+p_8 = F*r_0 + H_b*r_b + H_c*r_c.                  (8.3)
+```
+
+Conversely, the three phases in (8.2) are independent before the finite
+irredundancy exclusions, since
+
+```text
+z_1=r_b/(q*r_0),        z_2=r_c/(q^2*r_b).         (8.4)
+```
+
+Let
+
+```text
+L_0=|F|,       L_b=|H_b|,       L_c=|H_c|,
+L_+=L_0+L_b+L_c,
+L_-=max(0, 2*max(L_0,L_b,L_c)-L_+),
+d=sqrt(u^2+v^2).                                  (8.5)
+```
+
+### ST-M1.K19E
+
+After dropping strict intermediate containment, bridge irredundancy and
+simplicity, the K16B central closure equation has a solution if and only if
+
+```text
+[L_-,L_+] intersects
+[|d-h|/2,(d+h)/2].                                (8.6)
+```
+
+### Proof
+
+The sum of three independently rotatable vectors of fixed lengths
+`L_0,L_b,L_c` fills exactly the closed annulus of radial coordinates
+`[L_-,L_+]`; this is the ordinary polygon inequality in both directions.
+Central closure is
+
+```text
+|D-2*p_8|=h,
+```
+
+so `p_8` lies on the circle centered at `D/2` with radius `h/2`.  The radial
+coordinates attained by that circle form exactly the second interval in
+(8.6).  The annulus is rotationally symmetric, so the two loci meet exactly
+when their radial intervals meet.  □
+
+K19E is a complete elimination of the bridge phases for closure alone.  It
+is deliberately a relaxation: it proves neither K17S containment nor a
+nondegenerate bridge realization at an isolated endpoint case.
+
+## 9. Closure alone also survives exactly
+
+Take
+
+```text
+u=1,       v=2,       a=1,       b=c=1/10,
+h=a+b+c=6/5.                                      (9.1)
+```
+
+The two hook-block lengths are equal.  Also `L_0=|1+q|<2`, while
+
+```text
+Re(H_b)=2-1/(10*sqrt(2)) > 19/10,
+```
+
+so `L_b=L_c>19/10`.  Thus every one of the three lengths is below the sum of
+the other two, `L_-=0`, and `L_+>L_b>19/10`.  On the other hand
+
+```text
+(d+h)/2=(sqrt(5)+6/5)/2 < (9/4+6/5)/2 < 19/10.   (9.2)
+```
+
+Thus the entire closure-circle radial interval lies inside `[L_-,L_+]`, and
+K19E passes exactly.  The same tuple passes the prefix cone by (7.4)--(7.5).
+It is not asserted to pass either rigid-hook cone or simultaneous
+containment, and is not a K16W witness.
+
+The result of session 132 is therefore negative but sharp: neither the
+corner prefix nor complete bridge-phase elimination of host closure refutes
+K16B.  Only the simultaneous system—both K18H cones placed after the prefix,
+the nondegenerate closure line and all segment intersections—can decide the
+checkpoint.  One session remains; these relaxation results do not count as
+a terminal success.
