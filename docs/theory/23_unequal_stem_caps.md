@@ -68,3 +68,73 @@ The next task is finite algebra, not coordinates: assign directed first-stem
 lengths to `A,B,C` so all four primary adjacencies in `ABC,ACB` create the
 same recognizable excess and cap orientation. If that system has no
 nontrivial solution, the route closes before any polygon is considered.
+
+## 4. K8U: the uniform directed mismatch family
+
+Write `r_X` for the first stem length leaving the right endpoint of role `X`
+and `l_X` for the analogous left length. The four directed adjacencies in the
+two selected words are
+
+```text
+E = {(A,B), (B,C), (A,C), (C,B)}.                    (4.1)
+```
+
+A **uniform left-short signature** has one `s>0` and one `Delta>0` such that,
+at every `(X,Y) in E`, the stem from the spatially left occurrence `X` ends
+at `s` while the stem of `Y` continues to `s+Delta`. The right-short
+signature is its mirror.
+
+### ST-M1.K8U
+
+All four adjacencies have one uniform left-short signature if and only if
+
+```text
+r_A = r_B = r_C = s,
+l_B = l_C = s+Delta.                                (4.2)
+```
+
+Up to reflection, (4.2) is the unique directed one-cap length assignment.
+
+### Proof
+
+The two adjacencies beginning with `A` give
+
+```text
+r_A=s,       l_B=l_C=s+Delta.
+```
+
+The adjacency `(B,C)` then gives `r_B=s`, and `(C,B)` gives `r_C=s`.
+This proves necessity. Substitution in all four pairs proves sufficiency.
+Reversing the complete patch interchanges left and right and gives the only
+other uniform orientation. □
+
+The unused `l_A` remains outside both selected words, exactly as in K7A. It
+does not alter the mismatch sockets.
+
+## 5. The exact socket left for geometry
+
+With (4.2), each of the two internal divisions in either word has the same
+local form:
+
+1. a shared orthogonal stem of length `s`;
+2. a secondary right-angle T-junction where the left occurrence turns;
+3. an exposed straight continuation of the right occurrence of length
+   exactly `Delta`; and
+4. one cap occurrence entering that sector with angle `pi/2`.
+
+If the cap uses one complete side along the exposed continuation, that side
+must have intrinsic length `Delta`. This is necessary for the bounded socket
+specified by HC-17; using only a proper subsegment would create another
+T-junction before the longer stem ends and would already violate the
+one-secondary-cap route.
+
+K8U therefore removes all state-dependent length choices. Every admitted
+host word creates two copies of one socket type. K7A still carries the binary
+state; the cap is structural rather than another label.
+
+What remains open is the lower endpoint of the cap side. When the longer
+stem and the cap side end together, their next boundary pieces must close
+using only the same local occurrences. If they separate and expose another
+sector, N22 applies again and starts a tertiary cascade. Session 108 must
+either provide a finite exact contact cycle closing this endpoint or fire the
+HC-17 stop. An assertion that the cap “turns the corner” is not such a cycle.

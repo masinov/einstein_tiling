@@ -2583,3 +2583,20 @@ gives its angle equation. Sessions 107--108 may solve the finite length/cap
 closure and either exhibit an exact finite contact complex or freeze the
 route. Contextual handedness, unbounded junction cascades, a contact atlas,
 coordinate search and candidate promotion are not authorized.
+
+## D-0118 (2026-07-22) — Uniform unequal stems have one exact length family
+
+K8U solves the HC-17 length algebra. Up to reflecting the complete patch,
+every used right stem has one length `s` and the used left stems of `B,C`
+have length `s+Delta`. These equalities are necessary and sufficient for all
+four adjacencies in `ABC,ACB` to expose the same directed excess `Delta`.
+The unused left stem of `A` remains free.
+
+Thus each selected word creates two identical secondary sockets, and a cap
+that occupies the complete exposed segment needs a side of length `Delta`
+and a right-angle entry. This is a finite symbolic/contact result, not a
+polygon. The lower endpoint must close through a finite exact contact cycle
+among the admitted occurrences; otherwise N22 recurs and the forbidden
+participant cascade begins. Session 108 is the final HC-17 session and may
+not replace that missing cycle with coordinates, search or an unspecified
+atlas.
