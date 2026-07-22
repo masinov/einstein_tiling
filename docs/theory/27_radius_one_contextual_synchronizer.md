@@ -103,3 +103,86 @@ If a fourth locally compatible word survives and no current radius-one
 theorem excludes it, K12C remains open and HC-21 closes radius one.  A larger
 context, a coordinate search, or a new boundary word requires a later human
 checkpoint.
+
+## 5. Forced transition closure
+
+K9A gives
+
+```text
+ell_B=ell_C=theta,
+rho_A=rho_B=rho_C=pi-gamma-theta.                    (5.1)
+```
+
+Therefore the same four-sector equation used for every selected adjacency
+also holds for `B|B`:
+
+```text
+rho_B+gamma+ell_B
+  =(pi-gamma-theta)+gamma+theta
+  =pi.                                               (5.2)
+```
+
+This is not one of the four selected transitions, but it is inseparable from
+them by the existing angle data.  The clean-spoke equations also assign the
+same right and left spoke lengths to every `B` occurrence.  K9T's terminal
+sector classes admit every left role in `{A,B,C}` and every right role in
+`{B,C}`, so they do not distinguish a `B|B` guard complex either.
+
+Transitions into `A` remain forbidden because `ell_A!=theta`.  Hence a
+code-only cover of `H=7` must begin with its sole `A=1`; the remaining length
+six is a word in `B=2,C=4`.  The nonnegative solutions of
+
+```text
+2*n_B+4*n_C=6
+```
+
+give exactly
+
+```text
+[A,B,C],       [A,C,B],       [A,B,B,B].             (5.3)
+```
+
+up to no reordering beyond that displayed.  Covers involving `d` would add
+possibilities for special choices of `d`; they cannot remove (5.3).
+
+## 6. N29: factorized radius-one algebra admits a fourth class
+
+### ST-M1.N29
+
+Any radius-one acceptance proof which factors into:
+
+1. the K10B side-length sum;
+2. independent K9A primary-junction angle and clean-spoke equations; and
+3. the K9T left/right terminal angle classes,
+
+accepts the additional cover word `[A,B,B,B]` whenever it accepts both
+`[A,B,C]` and `[A,C,B]`.
+
+### Proof
+
+The length identity is `1+2+2+2=7`.  Its three directed adjacencies are
+`A|B,B|B,B|B`.  The first is selected, while (5.2) proves the other two have
+the same exact sector sum; the common clean-spoke length equations apply.
+The word begins with allowed left role `A` and ends with allowed right role
+`B`, so the factorized K9T terminal classes also accept it.  Every listed
+factor therefore accepts the word. □
+
+N29 establishes algebraic local compatibility, not a polygonal star.  Full
+occurrences placed at its three subdivision points might still overlap away
+from `H`; such a collision lies inside `Star_1(H)` and could provide the
+non-factorized geometric exclusion K12C needs.  No existing coordinate-free
+lemma proves that collision.
+
+## 7. Exact remaining radius-one alternatives
+
+After N29, a K12C proof must supply at least one new radius-one fact:
+
+- the intrinsic `B|G|B` primary star is geometrically impossible despite its
+  exact sector and spoke equations;
+- two or more individually legal primary complexes in `[A,B,B,B]` force an
+  overlap among their full occurrences; or
+- another feature already visible on `H` couples the subdivision count and
+  permits exactly three code occurrences.
+
+Declaring “three pieces” as a rule is not a geometric proof.  Remote K9T
+terminal contacts are outside the fixed radius and cannot close HC-21.

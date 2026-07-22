@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 118)
+**Last updated:** 2026-07-22 (session 119)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-21 session 1/3: K12C fixes the radius-one `H`-star total-decoder contract; no larger context, coordinates, or run is admitted (D-0111--D-0129) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-21 session 2/3: N29 proves the factorized radius-one algebra admits `[A,B,B,B]`; only a non-factorized geometric exclusion inside the fixed star remains (D-0111--D-0130) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -380,6 +380,12 @@
   for `[H]`, `[A,B,C]`, `[A,C,B]`, disjoint decoding, exact shield/host
   soundness, exclusion of every fourth class, and one lift per class. This is
   a bounded contract, not a K10B decoder (D-0129).
+- **ST-M1 radius-one fourth-word obstruction:** K9A's common endpoint angles
+  force `B|B` to satisfy the same primary equation as the desired
+  transitions. Thus `1+2+2+2=7` gives `[A,B,B,B]`, also accepted by the
+  clean-spoke and K9T terminal algebra. N29 closes every factorized
+  length/sector proof; only a full-occurrence collision or joint part-count
+  feature inside the fixed `H`-star could still prove K12C (D-0130).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -886,3 +892,7 @@ Research is under the 2026-07-21 reset recorded in
     three-class certificate on its full local closure. Sessions 119--120 may
     only derive the cover language from existing exact length/sector algebra.
     A surviving fourth word closes radius one; context escalation is forbidden.
+    Session 119 derives N29: the fixed K9A equations force `B|B`, so
+    `[A,B,B,B]` satisfies every factorized length, primary, spoke and terminal
+    constraint. Session 120 may only seek an already-available non-factorized
+    geometric exclusion inside `Star_1(H)` before applying the stop.

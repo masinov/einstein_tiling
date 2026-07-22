@@ -2833,3 +2833,22 @@ algebra to test this contract. If another locally compatible word survives
 without an already-proved radius-one exclusion, radius one closes. No radius
 escalation, coordinate work, alternative boundary, experiment, atlas
 enumeration or candidate promotion is authorized.
+
+## D-0130 (2026-07-22) — K9A forces a fourth radius-one cover algebraically
+
+The selected K9A transitions force common
+`ell_B=ell_C=theta` and
+`rho_A=rho_B=rho_C=pi-gamma-theta`. Consequently `B|B` satisfies the same
+four-sector equation and clean-spoke lengths as the selected transitions.
+Together with `H=7`, `A=1`, `B=2`, this produces the exact additional cover
+`[A,B,B,B]`. K9T's factorized terminal classes accept its left `A` and right
+`B` roles.
+
+N29 therefore closes every radius-one proof built only from independent
+length, primary-sector, spoke and terminal equations. It does not assert that
+the complete polygonal `ABBB` star is overlap-free. A surviving K12C route
+must prove within the already fixed `Star_1(H)` that the `B|G|B` star is
+geometrically impossible, that several such complexes collide, or that a
+visible joint feature forces exactly three code occurrences. Merely imposing
+the intended part count is not a shape proof, and remote shield contacts are
+outside HC-21's radius.
