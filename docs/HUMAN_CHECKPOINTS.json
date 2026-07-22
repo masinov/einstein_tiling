@@ -9,10 +9,10 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-22-19",
+    "id": "HC-2026-07-22-20",
     "date": "2026-07-22",
-    "through_session": 111,
-    "reason": "Sessions 109--111 completed HC-18: K9A gives a two-state four-sector selector, K9V forces convex guard-role reuse or nonconvexity, N24 excludes a point-only guard, and K9T gives a finite bounded guard-and-shield topology. The user explicitly authorizes HC-19 after independent review. HC-19 must enumerate how one unmarked congruence class exposes recognizable host, A, B, C, guard and shield roles. It tests the tighter convex-reuse branch first and only then one named nonconvex skeleton. Within at most three on-paper sessions it must give one exact polygon and exact placements for both complete shield patches, or close K9T without enumeration, optimization or a widened contact atlas.",
+    "through_session": 114,
+    "reason": "Sessions 112--114 completed HC-19: N25 closes the convex fixed-spoke branch, K10B fixes one conditional nonconvex half-turn spine, and ERR-008/N26 correct its paired sides to intended-convex and auxiliary-reflex contexts. No coordinate or complete patch witness exists. After independent review, the user explicitly authorizes HC-20 with the stale role sentence corrected first. HC-20 asks whether the N26 auxiliary duplication is intrinsically uncontrollable or is controlled by a finite contact-synchronization condition, then applies the answer to the fixed K10B word. Within at most three on-paper sessions it must either reopen K10W with its already required complete exact coordinates and both placement tables, or keep it frozen and state the exact failed synchronization obligation. No experiment, alternative spine, widened contact atlas or approximate polygon is authorized.",
     "artifact_bytes": {
       "docs/notebook/assets": 6756125300,
       "data": 1809060890

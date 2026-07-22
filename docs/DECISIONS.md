@@ -2745,3 +2745,24 @@ polygon, SVG, coordinate search or candidate. N25 and N26 are retained as
 exact filters and K10B as a conditional reduction. K10T/K10W are frozen;
 reopening this exact word requires complete coordinates and both placement
 tables before computation.
+
+## D-0126 (2026-07-22) — Open HC-20 and separate duplication from control
+
+The user authorizes HC-20 after independent review, with correction of the
+stale K10B sentence as a precondition. Theory note 25 now says that paired
+`A,B,C` occurrences share a length class but have distinct intended-convex
+and auxiliary-reflex contexts, consistently with ERR-008/N26.
+
+N27 proves the first control layer exactly. At an internal subdivision of a
+straight host side, the host already contributes angle `pi`; an N26 reflex
+auxiliary endpoint contributes more than `pi`, so the two interiors cannot be
+disjoint. Length plus convex endpoint context therefore recovers the intended
+code role at every primary host junction.
+
+This does not control auxiliary contacts elsewhere. HC-20 has at most three
+on-paper sessions to derive a finite synchronization condition and apply it
+to the fixed K10B word. K10W may reopen only with its pre-existing complete
+exact coordinate list and both placement tables. Otherwise the checkpoint
+must state the failed condition and retain the freeze. No experiment,
+alternative spine, contact-atlas enlargement or approximate geometry is
+admitted.

@@ -169,6 +169,7 @@ Turtle under the production canonicalization.
 | ST-M1.K10B | A simple centrally paired spine inside the right-angle guard lens gives one exact guard/shield docking by half-turn, with disjoint interiors | fixed 15-edge boundary word and lens predicates; not a polygon witness | proof-draft conditional geometric reduction | K9T/N25; equations (5.1)--(6.3) | `25_guard_shield_geometry.md` §§5--8; D-0124 |
 | ST-M1.N26 | Full-spine half-turn docking pairs carrier angles to `2*pi`, so mirrored equal-length sides are reflex auxiliary contexts rather than duplicate code roles | realized K10B lens docking; nonterminal spine vertices | proof-draft exact role-context correction | K10B; disjoint opposite-side sectors | `25_guard_shield_geometry.md` §9; ERR-008/D-0125 |
 | ST-M1.K10W | One exact polygon realizes K10B and both complete `ABC/ACB` guard-and-shield patches with recognizable roles and pairwise-disjoint interiors | fixed 15-edge HC-19 skeleton only | open/frozen after HC-19; no coordinate or placement witness | K10B/N26; all six obligations in §8 | `25_guard_shield_geometry.md` §10; D-0125 |
+| ST-M1.N27 | A reflex N26 auxiliary side cannot replace its convex intended mate at an internal straight-host subdivision | straight host sector; intended endpoints convex; auxiliary endpoints complementary reflex | proof-draft exact local polarity filter; no global contact completeness | sector sum `pi+(2*pi-alpha)>2*pi` | `26_shield_contact_synchronization.md` §3; D-0126 |
 
 ## Preserved Turtle-control evidence (legacy “finalist” identifiers)
 

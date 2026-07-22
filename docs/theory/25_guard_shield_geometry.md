@@ -134,9 +134,10 @@ d, A, d, B, d, C, d, H, d, C, d, B, d, A, d.       (5.2)
 
 The first and last `d` sides meet at the unique guard vertex `Gamma`; the
 middle thirteen sides form the **shield spine** `S`. The unique `H` side
-roots the spine. The two occurrences of each of `A,B,C` are one intrinsic
-role exchanged by reversal. Every used code side has a `d` side on the
-required endpoint, so (2.2) holds with `u=v=d`.
+roots the spine. The two occurrences of each of `A,B,C` belong to one length
+class exchanged by word reversal, but have distinct intended-convex and
+auxiliary-reflex angle contexts by N26. Every used code side has a `d` side
+on the required endpoint, so (2.2) holds with `u=v=d`.
 
 The angle requirements on one half of (5.2) are
 

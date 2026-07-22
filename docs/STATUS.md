@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 114)
+**Last updated:** 2026-07-22 (session 115)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-19 exhausted: N25 closes convexity, N26 corrects half-turn role pairing, and K10B remains conditional without coordinates or either complete patch (D-0111--D-0125) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-20 session 1/3: N27 separates local angle-polarity recovery from global auxiliary-contact control; K10B remains frozen pending a finite synchronization theorem (D-0111--D-0126) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -355,6 +355,12 @@
   type repairs local recognition, but no exact simple lens-contained spine or
   complete `ABC/ACB` placement pair was derived. K10B stays conditional and
   K10W freezes without a candidate (ERR-008/N26/D-0125).
+- **ST-M1 auxiliary polarity filter:** N26 duplication is unavoidable but not
+  automatically uncontrollable. At an internal straight-host subdivision,
+  the host's `pi` sector and any reflex auxiliary endpoint exceed `2pi`, so
+  length plus convex endpoint context recovers the intended code side. N27
+  is local only; a finite full-arc synchronization criterion is the remaining
+  HC-20 question (D-0126).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -844,3 +850,9 @@ Research is under the 2026-07-21 reset recorded in
     ERR-008/N26 and fails to derive a coordinate list satisfying the lens and
     both full host patches. HC-19 is exhausted at 3 of 3 sessions and freezes
     without computation or a candidate.
+15. The user authorized HC-20 after review. Before research, session 115
+    corrects theory note 25's stale same-role sentence and proves N27: angle
+    polarity excludes every reflex auxiliary side from an internal straight-
+    host subdivision. This repairs local decoding only. Sessions 116--117
+    must derive a finite auxiliary-arc synchronization criterion, test K10B,
+    and either meet K10W's existing exact reopening rule or retain the freeze.
