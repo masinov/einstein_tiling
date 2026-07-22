@@ -2704,3 +2704,25 @@ Thus fixed-pose, distinct-length K9T geometry is necessarily nonconvex. This
 is a theorem for the named branch, not a failed coordinate attempt. Sessions
 113--114 may examine one right-angle shield skeleton and must still provide a
 complete polygon and both exact patches or close K9T without search.
+
+## D-0124 (2026-07-22) — Fix one 15-edge nonconvex shield skeleton
+
+K10B is the sole nonconvex geometry admitted after N25. Its cyclic length
+word is
+`d,A,d,B,d,C,d,H,d,C,d,B,d,A,d`, with exact code lengths
+`1,2,4`, host length `7`, a right-angle equal-leg guard tip, and five fixed
+`pi/4` code/spoke endpoints. The thirteen-edge shield spine is centrally
+paired around the unique host side. Half-turn about its midpoint gives the
+shield occurrence and, conditional on simplicity and lens containment,
+proves exact full-spine contact and disjoint interiors.
+
+The role audit is explicit: `H,A,B,C` are recovered by length; `Gamma` by its
+angle, equal incident spokes and opposite rooted word; guard orientation by
+the code progression; and shield by the complete spine rooted at `H`. Paired
+copies of each code side are the same reversal role. Any other occurrence of
+the guard context invalidates recognition.
+
+This is a finite coordinate system and exact relative isometry, not yet a
+polygon. Session 114 must solve all spine coordinates, simplicity/lens
+inequalities and both eight-occurrence shield patches. Failure closes K9T;
+no second boundary word or coordinate search is admitted.

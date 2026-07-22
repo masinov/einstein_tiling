@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 112)
+**Last updated:** 2026-07-22 (session 113)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | 🟡 HC-19 active: the six roles are explicit and N25 closes all convex fixed-spoke realizations; one nonconvex shield skeleton remains (D-0111--D-0123) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | 🟡 HC-19 active: N25 closes convexity; K10B fixes one 15-edge nonconvex spine and exact half-turn shield docking, with coordinates and both patches due in session 114 (D-0111--D-0124) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -343,6 +343,12 @@
   outer guard tip saturates the entire convex turn budget. Any surviving K9T
   carrier is therefore nonconvex under the retained recognition assumptions
   (N25/D-0123).
+- **ST-M1 fixed nonconvex shield skeleton:** the sole retained HC-19 word is
+  `d,A,d,B,d,C,d,H,d,C,d,B,d,A,d` with lengths `1,2,4,7`, a right-angle
+  guard and a centrally paired shield spine. Half-turn gives exact conditional
+  guard/shield docking. No coordinates or full host-word patch yet satisfy
+  the simplicity, lens, recognition and disjointness obligations
+  (K10B/D-0124).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are

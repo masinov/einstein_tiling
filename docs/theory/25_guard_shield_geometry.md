@@ -114,3 +114,121 @@ HC-19 changes none of those silently.
 The remaining two sessions may study one nonconvex right-angle shield
 skeleton, with all six roles retained. Local sector closure alone will not be
 accepted as a polygonal witness.
+
+## 5. K10B: one fixed nonconvex boundary skeleton
+
+The only nonconvex topology admitted for sessions 113--114 fixes
+
+```text
+gamma=pi/2,       theta=rho_X=pi/4,       ell_A!=pi/4,
+a=1,              b=2,                    c=4,
+h=a+b+c=7.                                         (5.1)
+```
+
+Let every complete guard spoke have one further length `d>0`, distinct from
+`1,2,4,7`. The intrinsic cyclic side-length word of the proposed carrier is
+
+```text
+d, A, d, B, d, C, d, H, d, C, d, B, d, A, d.       (5.2)
+```
+
+The first and last `d` sides meet at the unique guard vertex `Gamma`; the
+middle thirteen sides form the **shield spine** `S`. The unique `H` side
+roots the spine. The two occurrences of each of `A,B,C` are one intrinsic
+role exchanged by reversal. Every used code side has a `d` side on the
+required endpoint, so (2.2) holds with `u=v=d`.
+
+The angle requirements on one half of (5.2) are
+
+```text
+angle(Gamma)=pi/2,
+angle(A|d)=angle(d|B)=angle(B|d)
+             =angle(d|C)=angle(C|d)=pi/4,           (5.3)
+```
+
+while the unused guard-leg/`A` endpoint has `ell_A!=pi/4`. The reversed half
+inherits the corresponding reflected roles. Angles at `d|H|d` are free apart
+from simplicity and the polygon angle sum; this is where nonconvex turn must
+occur.
+
+## 6. Exact guard--shield isometry
+
+Place the spine endpoints at `R=-Q` and require vertices
+`p_0=R,...,p_13=Q` with
+
+```text
+p_(13-i) = -p_i.                                    (6.1)
+```
+
+The edge labels from `R` to `Q` are
+
+```text
+A,d,B,d,C,d,H,d,C,d,B,d,A.                          (6.2)
+```
+
+Condition (6.1) makes `S` invariant as a set under the half-turn
+`J(x)=-x`, with its endpoints exchanged. Choose `Gamma` on one side of the
+chord so
+
+```text
+|Gamma-R|=|Gamma-Q|=d,
+angle(R,Gamma,Q)=pi/2.                              (6.3)
+```
+
+Thus `|R-Q|=d*sqrt(2)`. Define the carrier boundary as the two guard sides
+`Gamma--R`, `Q--Gamma` plus `S`. Its half-turned occurrence has guard vertex
+`-Gamma`, shares the complete spine `S`, and uses the opposite side of it.
+
+### ST-M1.K10B
+
+If the spine is simple, meets the two guard sides only at `R,Q`, and lies in
+the closed lens bounded by the upper broken path
+`R--Gamma--Q` and its half-turn, then the carrier and its half-turn have
+disjoint interiors and share exactly `S`. The relative guard--shield
+isometry is the exact half-turn `J`; no docking choice remains.
+
+### Proof
+
+The two broken paths and the simple spine divide the lens into the two closed
+regions bounded respectively by `S` and each broken path. Half-turn `J`
+exchanges the broken paths and reverses `S`, hence exchanges the two regions.
+Their interiors are disjoint and their common boundary is exactly `S`. □
+
+K10B is conditional on the three explicit geometric predicates in its first
+sentence. It is not a coordinate construction.
+
+## 7. Role-recognition audit of the skeleton
+
+The boundary word (5.2) addresses the HC-18 audit burden without silently
+assuming six colors:
+
+- `H` is the unique side of length `7`;
+- `A,B,C` are the length classes `1,2,4`, respectively;
+- `Gamma` is the unique `pi/2` vertex whose two incident sides both have
+  length `d` and whose opposite boundary arc contains the unique `H`;
+- the guard pose is rooted by `Gamma` and the ordered `A,B,C,H` progression;
+- the shield pose is the unique full-spine contact rooted by `H`; and
+- the two occurrences of each code length are declared the same role under
+  reversal, which is already the quotient used by K6O.
+
+This audit assumes every other `d|d` or repeated-angle context is excluded by
+the final coordinate list. If such a context appears, guard recognition
+fails. Likewise, the length word alone does not force another occurrence to
+cover the entire spine; K10B supplies one exact docking, not the all-tilings
+converse.
+
+## 8. The remaining coordinate system
+
+An HC-19 witness is now a finite list `p_0,...,p_13,Gamma` satisfying:
+
+1. the side lengths and central pairing (5.2), (6.1);
+2. the five `pi/4` endpoint angles and `ell_A!=pi/4` in (5.3);
+3. the right-angle equal-leg guard equations (6.3);
+4. simplicity and the K10B lens containment inequalities;
+5. no unlisted repeated guard context; and
+6. exact placements of the remaining host/code/guard occurrences for both
+   `ABC` and `ACB`, with all pairwise interiors disjoint.
+
+Conditions 1--5 construct only the guard/shield pair. Condition 6 is still
+the decisive patch obligation. Session 114 may not replace it with a sketch
+or an optimizer.
