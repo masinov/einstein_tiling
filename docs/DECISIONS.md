@@ -2639,3 +2639,22 @@ exactly when `ell_A!=theta`. Thus the primary selector can be locally convex,
 but no guard occurrence or polygon has yet been realized. HC-18 remains
 on-paper and must close a finite residual topology within three sessions or
 freeze without a shape run.
+
+## D-0121 (2026-07-22) — Curvature forces guard-role reuse or nonconvexity
+
+K9V applies the total exterior-turn budget before any coordinates. Each of
+the `B,C` code sides consumes endpoint turns summing to `pi+gamma`; therefore
+the two sides must be adjacent in every convex carrier. If their common
+interior angle is `alpha`, all remaining vertices receive only
+`pi-alpha-2*gamma` exterior turn. A separate guard vertex alone needs
+`pi-gamma`, which never fits. Thus a convex realization must reuse the guard
+vertex as a `B/C` endpoint, while a carrier with a distinct guard feature is
+necessarily nonconvex. The symmetric three-`pi/3` primary star is eliminated
+convexly.
+
+N24 independently closes the point-plug interpretation. The positive guard
+sector creates two nondegenerate guard--neighbor interfaces, and N23 forces a
+secondary participant at the terminal point of each maximal interface. A
+surviving route must therefore provide a bounded contact complex, not merely
+an extra angle label. Session 111 may state that complex and its complete
+sector algebra; otherwise the HC-18 stop fires.

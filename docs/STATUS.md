@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 109)
+**Last updated:** 2026-07-22 (session 110)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | 🟡 HC-18 active: K9A gives an exact four-participant primary selector; convex curvature and bounded guard closure remain to be decided (D-0111--D-0120) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | 🟡 HC-18 active: K9A selects two word states; K9V/N24 force guard-role reuse or nonconvexity and a secondary junction; bounded closure remains (D-0111--D-0121) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -325,6 +325,12 @@
   exactly the third reversal class. Complete guard spokes require two length
   classes rather than K7C's one. This is angle/contact algebra only; the guard
   occurrence and its remote interfaces remain unrealized (K9A/D-0120).
+- **ST-M1 four-participant curvature/topology filters:** convexity forces
+  `B,C` to be adjacent and leaves only `pi-alpha-2gamma` turn; a distinct
+  guard corner cannot fit, so the guard vertex must be reused or the carrier
+  is nonconvex. The positive guard also sends two real interfaces to
+  secondary junctions and cannot be a point plug. A finite bounded guard
+  topology remains the final HC-18 obligation (K9V/N24/D-0121).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
