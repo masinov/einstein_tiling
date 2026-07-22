@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 103)
+**Last updated:** 2026-07-22 (session 104)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | 🔬 HC-16 on-paper geometry: K7A selects exactly two three-neighbor order states by one reflex endpoint; exact polygonal patches remain open (D-0111--D-0114) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | 🔬 HC-16 on-paper geometry: K7A selects two states and K7C forces a common clean collar; exact tail packings remain open (D-0111--D-0115) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -290,6 +290,12 @@
   `A=(3pi/2,pi/2)`, `B=C=(pi/2,pi/2)` admits precisely those two classes and
   excludes the class with `A` in the middle. This is local feasibility only;
   no polygonal witness exists yet (K7A/D-0114).
+- **ST-M1 common-collar reduction:** requiring complete neighbor stems with
+  no extra participant forces the five used stem lengths in `ABC,ACB` to one
+  depth `d`. Both words are automatically disjoint through that orthogonal
+  collar; the entire unresolved geometry is the exact intersection of three
+  rooted tails at two listed offset triples. No tail or polygon is claimed
+  (K7C/D-0115).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -753,6 +759,7 @@ Research is under the 2026-07-21 reset recorded in
     run, SVG or shape promotion exists. A new checkpoint is required.
 11. The user authorized HC-16. Session 103 fixed the escape route before
     geometry and proved K7A, an exact two-of-three orthogonal angle selector.
-    Sessions 104--105 may only seek hand-verifiable exact coordinates for
-    `ABC` and `ACB`; if none close by session 105, this selected-word route is
-    frozen without computation.
+    Session 104 proves the common clean-collar reduction K7C. Session 105 may
+    only close the two exact rooted-tail packings with hand-verifiable
+    coordinates; if it cannot, this selected-word route is frozen without
+    computation.

@@ -135,3 +135,90 @@ For each patch, coordinate inequalities must prove:
 
 No coordinate search, optimizer, SVG or candidate promotion is admitted by
 this lemma.
+
+## 6. K7C: the common clean-collar reduction
+
+Angle compatibility alone does not prevent the two neighbor copies from
+crossing farther from an internal division point.  The first positive-length
+piece of their common boundary supplies the next exact datum.
+
+For a directed code role `X`, let `s_X^L` and `s_X^R` be the lengths of the
+polygon sides leaving the left and right contact endpoints, measured from the
+code side to their first subsequent vertices.  Call a rooted subdivision
+patch **clean to depth `d>0`** when, at every internal division:
+
+1. the two leaving sides coincide for their complete length `d`;
+2. neither has a vertex before distance `d`; and
+3. no fourth occurrence meets the relative interior of that stem.
+
+The endpoint `L` of `A` is external in both selected words and is omitted.
+
+### ST-M1.K7C
+
+Both `ABC` and `ACB` have a clean collar if and only if the five used stem
+lengths agree:
+
+```text
+s_A^R = s_B^L = s_B^R = s_C^L = s_C^R = d.          (6.1)
+```
+
+In the orthogonal K7A specialization, after normalizing the host to
+`[0,L] x {0}` and placing the neighbors below it, the three occurrence
+interiors in the open strip `-d<y<0` are exactly the three disjoint open
+rectangles under their code intervals.  Their order can be `ABC` or `ACB`
+without any overlap in that strip.
+
+### Proof
+
+At an internal junction the two non-host boundary sides leave along the same
+ray, because their two right-angle sectors fill the exterior host half-disk.
+A clean stem ends at the first vertex of both sides, so its two intrinsic
+lengths are equal.
+
+The word `ABC` gives
+
+```text
+s_A^R=s_B^L,       s_B^R=s_C^L,
+```
+
+and `ACB` gives
+
+```text
+s_A^R=s_C^L,       s_C^R=s_B^L.
+```
+
+Transitivity yields (6.1). Conversely, (6.1) makes every required pair of
+leaving sides coincide completely. In the orthogonal frame these common
+stems are perpendicular to the host. Consecutive stems bound exactly one
+rectangle whose width is the intervening code length and whose depth is `d`.
+The three rectangles have disjoint interiors and cover the host collar. □
+
+If two stem lengths differ, the shorter side ends at a new boundary vertex
+while the longer continues. Closing the resulting region requires another
+partial contact, T-junction or participant. That is a different mechanism,
+not a failure that HC-16 may silently repair by adding geometry.
+
+## 7. Exact tail-packing formulation
+
+Normalize one rooted occurrence for each role so its code interval is
+`[0,lambda_X] x {0}` and its clean collar lies below the line. Remove the
+open collar rectangle and call the remaining closed set the rooted tail
+`Q_X`. With `a=|A|`, `b=|B|`, `c=|C|`, the two neighbor patches below depth
+`d` are exactly
+
+```text
+ABC : Q_A,  Q_B+(a,0),    Q_C+(a+b,0),
+ACB : Q_A,  Q_C+(a,0),    Q_B+(a+c,0).                (7.1)
+```
+
+Thus the coordinate problem has two independent proof layers:
+
+- K7A/K7C already settle the complete strip `-d<y<0`; and
+- exact set-intersection inequalities for the six translated tail pairs in
+  (7.1), together with host-versus-tail inequalities, settle everything
+  below it.
+
+This formulation prevents a picture from hiding an overlap just beneath a
+valid collar. It also shows why an ordinary rectangular tooth is not enough:
+the same rooted tails must pack after the `B,C` offsets change by `c` and
+`b`, respectively.

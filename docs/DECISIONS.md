@@ -2534,3 +2534,19 @@ This is local-angle feasibility only. No polygon, contact patch, all-tilings
 decoder or monotile is claimed. The zero-byte literature-fetch remnant named
 in the review was removed; the verified source PDF and hash-bearing catalog
 entry remain unchanged.
+
+## D-0115 (2026-07-22) — Reduce HC-16 to one common collar and two tail packings
+
+K7C strengthens the selected-word selector without proposing a shape. If an
+internal neighbor--neighbor stem is required to be one complete clean contact
+with no extra participant, the four junction equations for `ABC` and `ACB`
+force all five used leaving sides to have one common length `d`. In the
+orthogonal specialization, both words then have an automatically disjoint
+rectangular collar of depth `d` below the host.
+
+All remaining overlap is captured by six exact intersections among three
+rooted tails at the offsets written in theory note 22. A shorter/longer stem
+mismatch would introduce another partial contact or junction and is outside
+the route fixed at HC-16 admission. This is a reduction, not a polygonal
+witness: the tails and the host-versus-tail inequalities remain open, and no
+coordinate search is authorized.
