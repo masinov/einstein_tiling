@@ -3082,3 +3082,22 @@ The two new `u|v` bridge angles are explicit unknowns. Session 129 must derive
 the full exact rectangular-lens system and test whether those angles are
 geometrically determined or merely reintroduced colors. No angle choice,
 coordinate fitting or added participant is authorized in session 128.
+
+## D-0142 (2026-07-22) — Retain the finite bridge-angle system
+
+K17S gives the complete K16B rectangular-lens model: eight explicit
+first-half partial sums in two bridge-turn units, sixteen strict rectangle
+inequalities, central reversal and one host-length equation. For fixed bridge
+angles and weights, closure is again a line in the terminal unit direction.
+Simplicity remains a separate finite segment-intersection obligation.
+
+K17G establishes that the bridge angles are not symbolic colors. Each lies
+between the ordered unequal intrinsic lengths `(u,v)`, so it is a measurable
+boundary feature fixed once by the polygon. This does not force intended
+contacts, but it permits the angles to remain honest geometric parameters in
+the final HC-25 question.
+
+Session 130 must either give one exact simple open-rectangle spine with fixed
+bridge angles and hand-checkable nonintersection, or prove K16B incompatible.
+Failure closes HC-25. Numerical fitting, angle enumeration, extra edges,
+changed guard angle, SVG and candidate promotion remain forbidden.

@@ -83,8 +83,9 @@ The five retained sharp vertices on the first half are
 A|u,  v|B,  B|u,  v|C,  C|u,                        (3.4)
 ```
 
-each with carrier angle `pi/4`. The new bridge vertices `u|v` have angles
-`delta_1,delta_2 in (0,2*pi)`, to be derived rather than guessed. The
+each with carrier angle `pi/4`. The new bridge vertices `u|v` have
+irredundant angles `delta_1,delta_2 in (0,2*pi)\{pi}`, to be derived rather
+than guessed. The
 `u|H` angle and terminal `v|A` angle remain free under the earlier K10B
 contract, and the paired half has complementary shield contexts.
 
@@ -137,3 +138,130 @@ to (3.1), derive every first-half partial sum, impose central host closure
 and all rectangle inequalities, and determine whether the free bridge angles
 are genuine geometric degrees of freedom or merely unmarked colors. No
 coordinate fitting or angle enumeration is admitted.
+
+## 6. K17S: complete rectangular-lens system
+
+Put
+
+```text
+q=(-1+i)/sqrt(2),
+z_j=cos(sigma_j)+i*sin(sigma_j),       j=1,2.         (6.1)
+```
+
+Before the terminal rotation, the first-half partial sums of (3.1) are
+
+```text
+w_0 = 0,
+w_1 = a,
+w_2 = a+u*q,
+w_3 = a+u*q+v*q*z_1,
+w_4 = w_3+b*q^2*z_1,
+w_5 = w_4+u*q^3*z_1,
+w_6 = w_5+v*q^3*z_1*z_2,
+w_7 = w_6+c*q^4*z_1*z_2,
+w_8 = w_7+u*q^5*z_1*z_2.                         (6.2)
+```
+
+These are exactly the edge directions obtained from (5.2). Let
+
+```text
+Z=C+i*S,       C^2+S^2=1,       C>0, S>0,            (6.3)
+```
+
+and write `D=v+i*u` for the rectangle diagonal. Central pairing gives all
+spine vertices:
+
+```text
+p_k       = Z*w_k,
+p_(17-k)  = D-Z*w_k,                 0<=k<=8.         (6.4)
+```
+
+The central host edge is `D-2*Z*w_8`.
+
+### ST-M1.K17S
+
+The K16B spine has relative interior in the open rectangular lens and central
+edge length `h=a+b+c` if and only if there are unit variables `Z,z_1,z_2`,
+with `z_j notin {1,-1}`, satisfying
+
+```text
+0 < Re(Z*w_k) < v,
+0 < Im(Z*w_k) < u,                    k=1,...,8,       (6.5)
+
+|D-2*Z*w_8|^2 = h^2.                                 (6.6)
+```
+
+The exclusions remove the zero/`2*pi` degenerate angle and the reducible
+straight angle. The opposite global turn orientation is the reflected system.
+
+### Proof
+
+Equation (6.2) is the complete turn recursion. Conditions (6.3) and (6.5)
+put the first edge and every first-half vertex strictly inside the tangent
+rectangle. Equation (6.4) puts the paired vertices inside as well, and
+convexity of the rectangle contains every intervening open segment. Equation
+(6.6) is exactly the prescribed central length. The converse reads the same
+three unit directions from any admitted spine. □
+
+As before, lens containment does not imply spine simplicity. The finite
+nonintersection predicates for the seventeen explicit segments remain a
+separate condition.
+
+## 7. Closure remains a line in the terminal orientation
+
+Write `w_8=X+iY` and `R_8=X^2+Y^2`. Expanding (6.6) gives
+
+```text
+(v*X+u*Y)*C + (u*X-v*Y)*S
+  = (u^2+v^2+4*R_8-h^2)/4.                           (7.1)
+```
+
+Thus fixed weights and bridge angles again leave at most two terminal
+orientations, unless the line degenerates identically. Before the strict
+rectangle inequalities, an orientation exists exactly when the squared
+right side of (7.1) does not exceed
+
+```text
+(v*X+u*Y)^2+(u*X-v*Y)^2=(u^2+v^2)*R_8.              (7.2)
+```
+
+Equations (6.1)--(7.2) are a finite exact semialgebraic system. No angle or
+coordinate grid is being sampled.
+
+## 8. K17G: bridge angles are geometry, not colors
+
+### ST-M1.K17G
+
+For `u!=v`, each K16B bridge angle is locally recoverable from the unmarked
+polygon boundary germ consisting of its ordered incident side lengths
+`(u,v)` and its interior angle. Consequently fixed values
+`delta_1,delta_2` are genuine shape parameters, not per-occurrence symbolic
+states.
+
+### Proof
+
+A Euclidean isometry preserves side lengths, their incidence and the
+interior angle. Since `u!=v`, the ordered pair distinguishes the two rays up
+to the declared reflection. If the two bridge angles differ, their numerical
+values distinguish their intrinsic roles directly. If they agree, the
+neighboring distinct code-side contexts in (3.3) distinguish their boundary
+positions. In either case, one polygon fixes the values once; an occurrence
+cannot choose a different `delta_j` without ceasing to be congruent. □
+
+K17G does not prove that either bridge is forced to participate in an
+intended contact. It proves only that retaining the variables in K17S does
+not smuggle markings into the carrier.
+
+## 9. Session-130 stop
+
+The unequal-spoke relaxation now has one exact bounded question. Session 130
+must eliminate or instantiate the two bridge directions analytically and
+either:
+
+1. give one exact simple open-rectangle spine satisfying K17S, together with
+   its fixed bridge angles and all segment nonintersection proofs; or
+2. prove a scoped incompatibility theorem for K16B.
+
+Failure to do either closes HC-25 without coordinates. A numerical fit,
+angle enumeration, extra bridge edge, changed guard angle, placement-patch
+claim, SVG or candidate promotion is not an accepted outcome.
