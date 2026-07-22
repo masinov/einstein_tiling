@@ -2658,3 +2658,28 @@ secondary participant at the terminal point of each maximal interface. A
 surviving route must therefore provide a bounded contact complex, not merely
 an extra angle label. Session 111 may state that complex and its complete
 sector algebra; otherwise the HC-18 stop fires.
+
+## D-0122 (2026-07-22) — Retain the bounded guard-and-shield topology
+
+K9T supplies the finite residue required by HC-18. The guard's complete
+boundary is divided into three arcs contacted cyclically by the left code
+neighbor, one shield occurrence and the right code neighbor. The host touches
+the guard at the primary point. The two guard interfaces terminate at exact
+three-sector stars with that same shield, so no guard boundary is left to an
+unnamed continuation.
+
+Fixed guard/shield poses force one common terminal angle on left roles
+`A,B,C` and another on right roles `B,C`. Together with K9A these conditions
+are necessary and sufficient for the sector algebra of all four selected
+adjacencies. Restriction to the recognizable host interval preserves the two
+non-reversal word states. An explicit rational-angle example proves local
+consistency but is not a polygon angle list.
+
+HC-18 therefore closes positively at its declared level: a finite
+state-bearing contact topology with bounded residue exists on paper. No
+polygonal support, placement patch, forcing theorem, monotile or method
+novelty is claimed. A later geometry checkpoint must preselect either
+nonconvexity or convex guard/code-vertex reuse, state every intrinsic role
+identification, and give exact coordinates and both complete shield patches
+before any computation. Failure closes this topology; it does not authorize
+a larger atlas.

@@ -201,3 +201,88 @@ This closes the cheapest interpretation of the mechanism. The extra
 occurrence cannot contribute only an angle at the primary point and then
 disappear; its adjacent boundary contacts must be absorbed by a bounded
 contact complex or propagated through the tiling.
+
+## 8. K9T: a bounded shield topology
+
+A finite topology consistent with N24 uses one additional **shield
+occurrence** `W`. Let the two guard interfaces end at distinct points `Q,R`,
+with `W` the third participant at both. Require the complete boundary of `G`
+to be partitioned into three nonempty polygonal arcs contacted in cyclic
+order by `X,W,Y`; the host meets `G` only at the primary point `P`. The guard
+is then completely surrounded by `H,X,W,Y`, with contact-star types
+
+```text
+P : H(pi), X(rho_X), G(gamma), Y(ell_Y),
+Q : G(mu), X(xi), W(sigma),
+R : G(nu), W(tau), Y(upsilon).                       (8.1)
+```
+
+The exact sector equations are
+
+```text
+rho_X + gamma + ell_Y = pi,
+mu + xi + sigma = 2*pi,
+nu + tau + upsilon = 2*pi.                           (8.2)
+```
+
+This is a finite abstract contact complex: the three arcs form the complete
+boundary cycle of `G`, so none of the two interfaces introduced at `P`
+dangles or invokes an unnamed continuation. It says nothing yet about
+whether congruent polygonal occurrences can realize those arcs.
+
+### ST-M1.K9T
+
+Suppose the guard and shield roles and poses in (8.1) are fixed and
+recognizable. The same shield topology satisfies the sector equations for
+all four selected directed adjacencies only if the `Q`-endpoint angle `xi` is
+common to `X in {A,B,C}` and the `R`-endpoint angle `upsilon` is common to
+`Y in {B,C}`. Together with (3.1), these equalities are also sufficient for
+the complete sector algebra of all four shield stars.
+
+### Proof
+
+At `Q`, fixed `mu,sigma` make (8.2) read
+`xi=2*pi-mu-sigma`, independent of `X`; every one of `A,B,C` occurs on the
+left in (2.2). At `R`, fixed `nu,tau` similarly give a common `upsilon` for
+the two right roles `B,C`. This proves necessity. Conversely, substituting
+the common terminal angles and K9A into (8.2) closes every sector sum. □
+
+The equations are nonempty even with locally convex sectors. For example,
+
+```text
+gamma=theta=pi/12,     rho_X=5*pi/6,     ell_A=11*pi/12,
+mu=xi=sigma=nu=tau=upsilon=2*pi/3        (8.3)
+```
+
+closes every selected primary and terminal star while overfilling the
+forbidden `A`-middle primary star. Equation (8.3) is only a local consistency
+witness. It is not a polygon angle list: K9V still requires role reuse or
+nonconvexity when all roles are placed on one support.
+
+Because restriction to the recognizable rooted host interval still reads
+`ABC` or `ACB`, no isometry of a complete shield patch can identify them:
+its induced host word would have to be equal or reversed, and these two words
+are neither. Thus the binary state survives the bounded completion.
+
+## 9. HC-18 disposition
+
+The controlled-extra-participant route survives as a sharply constrained
+topology, not as a candidate tile:
+
+- K9A gives the exact two-state four-sector selector;
+- K9V proves that a convex realization must reuse the guard vertex on the
+  `B/C` boundary block, otherwise nonconvexity is unavoidable;
+- N24 proves that a point-only fourth occurrence is impossible; and
+- K9T closes the guard boundary with one shield occurrence and gives every
+  primary and terminal angle equation.
+
+This meets the checkpoint's predeclared on-paper threshold: there is a finite
+state-bearing contact topology with bounded residue. No coordinates,
+polygon, tiling, all-tilings forcing or novelty claim follows.
+
+Any geometric checkpoint must choose one side of K9V's dichotomy and specify
+the intrinsic role identifications before work begins. It must then provide
+one exact polygon and exact isometries for both `ABC` and `ACB` shield
+patches, prove coverage and pairwise interior disjointness, and show that no
+alternative completion erases the state. Failure closes K9T rather than
+authorizing a larger contact atlas or blind coordinate search.

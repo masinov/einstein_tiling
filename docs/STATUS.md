@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 110)
+**Last updated:** 2026-07-22 (session 111)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | 🟡 HC-18 active: K9A selects two word states; K9V/N24 force guard-role reuse or nonconvexity and a secondary junction; bounded closure remains (D-0111--D-0121) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-18 exhausted: K9A/K9V/N24 reduce the route and K9T gives a bounded guard-and-shield topology; exact geometry remains absent (D-0111--D-0122) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -331,6 +331,12 @@
   is nonconvex. The positive guard also sends two real interfaces to
   secondary junctions and cannot be a point plug. A finite bounded guard
   topology remains the final HC-18 obligation (K9V/N24/D-0121).
+- **ST-M1 bounded shield topology:** one shield occurrence can terminate both
+  guard interfaces and partition the guard's complete boundary into three
+  named contact arcs. Fixed poses force common terminal-angle classes, and
+  the two non-reversal host words remain distinct. This closes HC-18 only as
+  a finite abstract contact complex; no polygon, patch or forcing result is
+  established (K9T/D-0122).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -806,3 +812,10 @@ Research is under the 2026-07-21 reset recorded in
     N23 proves the one-edge cap merely transports the mismatch; no finite
     cycle is derived. HC-17 is exhausted at 3 of 3 sessions and freezes
     without coordinates or computation.
+13. The user authorized HC-18 after review. Session 109 removes all verified
+    zero-byte PDF remnants, classifies three legitimate empty compiled
+    streams, and proves the K9A four-sector selector. Session 110 proves the
+    K9V convex curvature dichotomy and N24 point-plug no-go. Session 111 gives
+    the bounded K9T guard-and-shield topology. HC-18 is exhausted at 3 of 3
+    sessions with no experiment or generated artifact. Exact geometry needs
+    a new checkpoint and predeclared intrinsic role identifications.
