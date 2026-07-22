@@ -2811,3 +2811,25 @@ candidate were produced. Reopening requires either a complete atomic-root
 certificate for another named side together with the existing exact K10W
 geometry, or a stronger finite contextual synchronizer that safely accepts
 the multiplexed `H` cover words.
+
+## D-0129 (2026-07-22) — Fix radius one before contextual synchronization
+
+The user authorizes HC-21 after independent review. Its context radius is
+fixed before work: `Star_1(H)` contains the root occurrence, every occurrence
+meeting any point of its closed `H` side (including point-only subdivision and
+endpoint participants), and only the incidences, sectors and rooted boundary
+germs based at that side. Occurrences meeting those neighbors only away from
+`H` are outside the radius.
+
+K12C states the complete finite certificate required for a contextual
+decoder with values `shield,host_0,host_1`. The three intended cover words are
+`[H]`, `[A,B,C]` and `[A,C,B]`. Totality is on the full unrestricted
+radius-one local closure: partial/sliding covers, other words, symmetries and
+extra point participants must be excluded, and every retained class needs a
+source lift.
+
+Sessions 119--120 may use only the existing exact K9A/K9T length and sector
+algebra to test this contract. If another locally compatible word survives
+without an already-proved radius-one exclusion, radius one closes. No radius
+escalation, coordinate work, alternative boundary, experiment, atlas
+enumeration or candidate promotion is authorized.

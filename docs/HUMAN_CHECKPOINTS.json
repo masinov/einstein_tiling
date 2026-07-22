@@ -9,10 +9,10 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-22-20",
+    "id": "HC-2026-07-22-21",
     "date": "2026-07-22",
-    "through_session": 114,
-    "reason": "Sessions 112--114 completed HC-19: N25 closes the convex fixed-spoke branch, K10B fixes one conditional nonconvex half-turn spine, and ERR-008/N26 correct its paired sides to intended-convex and auxiliary-reflex contexts. No coordinate or complete patch witness exists. After independent review, the user explicitly authorizes HC-20 with the stale role sentence corrected first. HC-20 asks whether the N26 auxiliary duplication is intrinsically uncontrollable or is controlled by a finite contact-synchronization condition, then applies the answer to the fixed K10B word. Within at most three on-paper sessions it must either reopen K10W with its already required complete exact coordinates and both placement tables, or keep it frozen and state the exact failed synchronization obligation. No experiment, alternative spine, widened contact atlas or approximate polygon is authorized.",
+    "through_session": 117,
+    "reason": "Sessions 115--117 completed HC-20: N27 gives a scoped endpoint-polarity filter, K11S proves that one atomic root can synchronize a complete duplicated arc, ERR-009 corrects the terminal A-side scope, and N28 proves K10B's multiplexed H side is not atomic. K10W remains frozen. After independent review, the user explicitly authorizes HC-21 for one finite contextual synchronizer with radius declared before work. The radius is fixed at the closed H-star: the root occurrence, every occurrence meeting any point of its H side, and only incidences/contact sectors based on that side. Within at most three on-paper sessions it must prove a total three-state classification ([H], [A,B,C], [A,C,B]) on that full radius-one local closure or close radius one. No radius escalation, coordinates, alternative boundary, experiment, atlas enumeration or candidate promotion is authorized.",
     "artifact_bytes": {
       "docs/notebook/assets": 6756125300,
       "data": 1809060890

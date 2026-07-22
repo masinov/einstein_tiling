@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 117)
+**Last updated:** 2026-07-22 (session 118)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-20 exhausted: K11S gives a finite auxiliary-control theorem, ERR-009 corrects terminal scope, and N28 proves K10B's multiplexed `H` is not atomic; K10W remains frozen (D-0111--D-0128) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-21 session 1/3: K12C fixes the radius-one `H`-star total-decoder contract; no larger context, coordinates, or run is admitted (D-0111--D-0129) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -374,6 +374,12 @@
   non-atomic because its language requires `[H]`, `[A,B,C]` and `[A,C,B]`.
   No other side has a complete root table; HC-20 ends without reopening
   coordinates or producing a candidate (ERR-009/N28/D-0128).
+- **ST-M1 fixed-radius contextual contract:** `Star_1(H)` contains exactly
+  the root and every occurrence meeting its `H` side, including point-only
+  participants there. K12C requires a complete three-class local language
+  for `[H]`, `[A,B,C]`, `[A,C,B]`, disjoint decoding, exact shield/host
+  soundness, exclusion of every fourth class, and one lift per class. This is
+  a bounded contract, not a K10B decoder (D-0129).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -875,3 +881,8 @@ Research is under the 2026-07-21 reset recorded in
     `A` endpoints. N28 then proves the unique `H` is non-atomic because the
     same language requires full shield and two subdivided host covers. No
     other atomic root is proved, so HC-20 is exhausted and K10W stays frozen.
+16. The user authorized HC-21 after review with radius fixed in advance.
+    Session 118 defines radius one as the closed `H`-star and K12C as a total
+    three-class certificate on its full local closure. Sessions 119--120 may
+    only derive the cover language from existing exact length/sector algebra.
+    A surviving fourth word closes radius one; context escalation is forbidden.
