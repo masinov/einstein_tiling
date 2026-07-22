@@ -186,3 +186,73 @@ After N29, a K12C proof must supply at least one new radius-one fact:
 
 Declaring “three pieces” as a rule is not a geometric proof.  Remote K9T
 terminal contacts are outside the fixed radius and cannot close HC-21.
+
+## 8. N30: the fourth word has an exact boundary collar
+
+### ST-M1.N30
+
+The word `[A,B,B,B]` admits an interior-disjoint polygonal-sector collar of
+the host side using the K9A endpoint and guard angles. Its left endpoint role
+is the same `A` role as both intended words, and its right endpoint role is
+the same `B` role as `[A,C,B]`. Consequently no proof which reads only the
+individual primary sectors and independent endpoint roles can exclude it.
+
+### Proof
+
+Place `H` horizontally and partition it at distances `1,3,5,7`. Put the code
+occurrences on one side and the host on the other. At the three internal
+division points the directed transitions are
+
+```text
+A|B,        B|B,        B|B.
+```
+
+The host occupies the lower `pi` sector. In the upper half-disk, place in
+cyclic order the left code endpoint sector `rho_X`, the guard sector `gamma`
+and the right code endpoint sector `ell_B`. Equations (3.1) and (5.2) give
+
+```text
+rho_X+gamma+ell_B=pi
+```
+
+for `X=A` and `X=B`. Thus every internal neighborhood is covered exactly,
+with disjoint open sectors. The division points are separated by positive
+length, so choose disjoint sufficiently small neighborhoods around them and
+a thinner open rectangular collar along the intervening side interiors.
+Their union is an interior-disjoint collar of `relint(H)`.
+
+The first code occurrence is `A`, exactly as in both desired covers. The last
+is `B`, exactly as in `[A,C,B]`; independent terminal role tests therefore
+accept both ends. □
+
+N30 does not extend the sector germs to complete congruent polygon
+occurrences. It proves that any radius-one rejection of `[A,B,B,B]` must use
+one of the non-factorized geometric facts isolated in §7: a same-role
+collision or a collision/coupling among complete occurrences away from `H`.
+
+## 9. HC-21 disposition
+
+No existing theorem supplies that full-occurrence exclusion. K10B has no
+exact polygon coordinates, so neither the `B|G|B` placement nor the complete
+`ABBB` star exists as an auditable object. Conversely, N29--N30 are not an
+existence proof for that complete star. The honest result is:
+
+```text
+K12C at radius one is open and frozen;
+factorized angle/contact data are insufficient.                    (9.1)
+```
+
+The predeclared HC-21 stop fires. The context is not enlarged. No radius-two
+language, coordinates, alternative boundary, enumeration, SVG or candidate
+is produced.
+
+Reopening radius one requires one of two exact inputs supplied before work:
+
+1. a coordinate-free theorem proving that every complete `B|G|B` or `ABBB`
+   occurrence complex overlaps; or
+2. an exact K10B polygon and complete radius-one placement tables whose cold
+   geometric verification accepts the three intended classes and rejects
+   every fourth class, including `ABBB` and sliding covers.
+
+A radius-two guard--shield correlation is a different mechanism and requires
+a new checkpoint with its own fixed bound.

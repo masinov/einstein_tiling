@@ -2852,3 +2852,25 @@ geometrically impossible, that several such complexes collide, or that a
 visible joint feature forces exactly three code occurrences. Merely imposing
 the intended part count is not a shape proof, and remote shield contacts are
 outside HC-21's radius.
+
+## D-0131 (2026-07-22) — The fourth word survives an exact collar; close HC-21
+
+N30 strengthens N29 without overclaiming a polygonal patch. Partition the
+host at `1,3,5,7`. At its `A|B,B|B,B|B` junctions, the host's lower `pi`
+sector and the upper `rho_X,gamma,ell_B` sectors cover disjoint
+neighborhoods exactly. The junctions are separated, so these neighborhoods
+and thin side collars combine without overlap. The left endpoint is the
+accepted `A` role and the right endpoint is the accepted `B` role.
+
+Thus no independent endpoint or primary-sector argument can reject `ABBB`.
+An exclusion must use complete occurrence geometry away from `H`: a
+`B|G|B` same-role collision or a multi-junction overlap/coupling. No such
+coordinate-free theorem exists in the current chain, and K10B has no exact
+polygon or placement table on which to verify it. N30 is not a complete-star
+existence proof.
+
+HC-21's predeclared stop therefore fires at radius one. K12C remains an open
+frozen contract, and factorized angle/contact synchronization is closed for
+K10B. No radius escalation, coordinates, alternative boundary, experiment,
+SVG or candidate follows. Reopening requires an exact collision theorem or a
+complete K10B polygon and full radius-one tables supplied before work.
