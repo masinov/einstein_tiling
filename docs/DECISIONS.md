@@ -2617,3 +2617,25 @@ stop fires without coordinates, enumeration, SVG or candidate promotion.
 This closes only the one-edge/unserialized-cap route. An exact finite cyclic
 boundary word supplied before computation may reopen unequal stems; arbitrary
 unequal-stem carriers are not refuted.
+
+## D-0120 (2026-07-22) — Admit HC-18 and derive the four-sector selector
+
+The user authorizes HC-18 after independent review. Before research, all five
+zero-byte literature download remnants are removed in one sweep after their
+intact source PDFs are confirmed. Three older empty compiled streams are
+classified rather than deleted: the n=13 A1 certificate stream records zero
+admissible scheduled quotient cases, while the n=9 depth-2 and n=11 depth-3
+positive-witness streams agree with zero-count survivor/exhausted headers and
+the original exact result tables. File emptiness alone is not used as a
+verdict.
+
+HC-18 then admits one mechanism outside J0/K7C/K8U: a fourth congruent
+occurrence contributes a fixed positive angle `gamma` between the two code
+neighbors at every primary host subdivision. K9A solves the four sector
+equations. The selected words `ABC,ACB` require common
+`ell_B=ell_C=theta` and common
+`rho_A=rho_B=rho_C=pi-gamma-theta`; the third reversal class is excluded
+exactly when `ell_A!=theta`. Thus the primary selector can be locally convex,
+but no guard occurrence or polygon has yet been realized. HC-18 remains
+on-paper and must close a finite residual topology within three sessions or
+freeze without a shape run.
