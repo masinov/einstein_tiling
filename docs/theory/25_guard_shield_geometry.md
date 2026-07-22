@@ -135,9 +135,11 @@ d, A, d, B, d, C, d, H, d, C, d, B, d, A, d.       (5.2)
 The first and last `d` sides meet at the unique guard vertex `Gamma`; the
 middle thirteen sides form the **shield spine** `S`. The unique `H` side
 roots the spine. The two occurrences of each of `A,B,C` belong to one length
-class exchanged by word reversal, but have distinct intended-convex and
-auxiliary-reflex angle contexts by N26. Every used code side has a `d` side
-on the required endpoint, so (2.2) holds with `u=v=d`.
+class exchanged by word reversal, but have distinct endpoint contexts. N26,
+as corrected by ERR-009, makes both endpoints of the paired `B,C` sides
+reflex and only the internal endpoint of the terminal `A` side reflex. Every
+used code side has a `d` side on the required endpoint, so (2.2) holds with
+`u=v=d`.
 
 The angle requirements on one half of (5.2) are
 
@@ -210,8 +212,9 @@ assuming six colors:
   length `d` and whose opposite boundary arc contains the unique `H`;
 - the guard pose is rooted by `Gamma` and the ordered `A,B,C,H` progression;
 - the shield pose is the unique full-spine contact rooted by `H`; and
-- the other occurrences of lengths `1,2,4` are reflex auxiliary sides paired
-  by the shield half-turn, as corrected by ERR-008/N26 below.
+- the other occurrences of lengths `2,4` are reflex auxiliary sides paired
+  by the shield half-turn, while the paired terminal `A` side has one reflex
+  internal endpoint and one convex lens-corner endpoint (ERR-009/N26 below).
 
 This audit assumes every other `d|d` or repeated-angle context is excluded by
 the final coordinate list. If such a context appears, guard recognition
@@ -236,16 +239,18 @@ Conditions 1--5 construct only the guard/shield pair. Condition 6 is still
 the decisive patch obligation. Session 114 may not replace it with a sketch
 or an optimizer.
 
-## 9. N26: half-turn docking doubles the side contexts
+## 9. N26: internal half-turn spine vertices complement angles
 
 ### ST-M1.N26
 
-In every realized K10B full-spine docking, paired spine vertices `p,-p` have
-carrier interior angles summing to `2*pi`. Consequently the mirror of an
-intended code side whose two endpoint angles lie in `(0,pi)` has both endpoint
-angles in `(pi,2*pi)` and is not the same directed code role. The intended
-and auxiliary copies can be distinguished by finite angle context, but not by
-side length alone.
+In every realized K10B full-spine docking, paired **nonterminal** spine
+vertices `p,-p` have carrier interior angles summing to `2*pi`. Consequently
+the mirror of an intended `B` or `C` side whose two endpoint angles lie in
+`(0,pi)` has both endpoint angles in `(pi,2*pi)`. Each terminal `A` side has
+only one nonterminal endpoint; its paired internal endpoint is reflex, while
+the two terminal endpoint angles sum to the right-angle lens corner `pi/2`.
+The intended and paired copies therefore have different finite angle
+contexts, but the paired `A` is not reflex at both endpoints.
 
 ### Proof
 
@@ -259,14 +264,23 @@ the carrier to the second sector at `p`, proving
 alpha(p) + alpha(-p) = 2*pi.                         (9.1)
 ```
 
-Apply (9.1) at both endpoints of a paired code-length side. If the intended
+Apply (9.1) at both endpoints of the internal `B,C` sides. If the intended
 angles are strictly between zero and `pi`, the paired angles are strictly
-between `pi` and `2*pi`. □
+between `pi` and `2*pi`.
+
+The `A` sides are the first and last edges of `S`, so one endpoint is `R` or
+`Q` and is not covered by (9.1). Put
+`R=(-d/sqrt(2),0)` and `Gamma=(0,d/sqrt(2))`; the reflected guard tip is
+`-Gamma`. The vectors from `R` to those two tips are proportional to `(1,1)`
+and `(1,-1)`, hence perpendicular. The two carrier sectors at that terminal
+fill only this lens corner and sum to `pi/2`. The other `A` endpoint is
+nonterminal and still obeys (9.1). □
 
 At an internal host subdivision, the host already occupies a straight `pi`
-sector. A reflex auxiliary endpoint cannot participate there without
-overlap, so the K9A primary stars select the convex copy. This repairs local
-role recovery but does not prove global contact completeness.
+sector. Any paired endpoint which is reflex cannot participate there without
+overlap. This filters both endpoints of paired `B,C` and the internal
+endpoint of paired `A`; the terminal `A` context still needs its lens/guard
+data. This is local role evidence, not global contact completeness.
 
 ## 10. HC-19 disposition
 
@@ -277,7 +291,7 @@ satisfies:
 
 - the five sharp endpoint angles;
 - a simple spine inside the right-angle guard lens;
-- the corrected intended/auxiliary role contexts of N26; and
+- the corrected internal/terminal role contexts of N26 and ERR-009; and
 - pairwise interior disjointness for every occurrence in both complete
   `ABC` and `ACB` shield patches.
 

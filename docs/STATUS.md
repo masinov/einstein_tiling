@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 116)
+**Last updated:** 2026-07-22 (session 117)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-20 session 2/3: K11S proves that one finite atomic root controls a duplicated arc; K10B remains frozen while its `H` root cover words are tested (D-0111--D-0127) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-20 exhausted: K11S gives a finite auxiliary-control theorem, ERR-009 corrects terminal scope, and N28 proves K10B's multiplexed `H` is not atomic; K10W remains frozen (D-0111--D-0128) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -349,12 +349,12 @@
   guard/shield docking. No coordinates or full host-word patch yet satisfy
   the simplicity, lens, recognition and disjointness obligations
   (K10B/D-0124).
-- **ST-M1 half-turn role correction and HC-19 stop:** paired spine vertices
-  have angles summing to `2pi`, so mirror sides of lengths `1,2,4` are reflex
-  auxiliary contexts, not duplicate code roles. Length plus convex endpoint
-  type repairs local recognition, but no exact simple lens-contained spine or
-  complete `ABC/ACB` placement pair was derived. K10B stays conditional and
-  K10W freezes without a candidate (ERR-008/N26/D-0125).
+- **ST-M1 half-turn role correction and HC-19 stop:** paired nonterminal
+  spine vertices have angles summing to `2pi`, so the internal mirror-side
+  endpoints are auxiliary contexts, not duplicate code roles. The terminal
+  scope is corrected by ERR-009 below. No exact simple lens-contained spine
+  or complete `ABC/ACB` placement pair was derived. K10B stays conditional
+  and K10W freezes without a candidate (ERR-008/N26/D-0125).
 - **ST-M1 auxiliary polarity filter:** N26 duplication is unavoidable but not
   automatically uncontrollable. At an internal straight-host subdivision,
   the host's `pi` sector and any reflex auxiliary endpoint exceed `2pi`, so
@@ -367,6 +367,13 @@
   every auxiliary side on it is controlled by the same bounded decision.
   K11S shows duplication is not intrinsically uncontrollable, but K10B's
   unique `H` still has to exclude subdivided root covers (D-0127).
+- **ST-M1 terminal-scope correction and K10B root obstruction:** only
+  nonterminal spine vertices have complementary `2pi` carrier angles. The
+  paired terminal `A` angles fill the `pi/2` guard-lens corner, so the
+  shortest-two-reflex-root shortcut is invalid. K10B's `H` is provably
+  non-atomic because its language requires `[H]`, `[A,B,C]` and `[A,C,B]`.
+  No other side has a complete root table; HC-20 ends without reopening
+  coordinates or producing a candidate (ERR-009/N28/D-0128).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -864,4 +871,7 @@ Research is under the 2026-07-21 reset recorded in
     and either meet K10W's existing exact reopening rule or retain the freeze.
     Session 116 proves K11S: a complete finite one-word root cover fixes the
     congruent mate pose and synchronizes the whole selected arc. Session 117
-    must apply this criterion to K10B's unique `H`, with subdivisions included.
+    applies this criterion to K10B. ERR-009 first corrects N26 at the terminal
+    `A` endpoints. N28 then proves the unique `H` is non-atomic because the
+    same language requires full shield and two subdivided host covers. No
+    other atomic root is proved, so HC-20 is exhausted and K10W stays frozen.

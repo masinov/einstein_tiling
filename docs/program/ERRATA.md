@@ -211,3 +211,33 @@ Consequences:
 
 No coordinate or polygon claim depended on the incorrect role sentence.
 The session-114 stop fires before the skeleton is promoted.
+
+## ERR-009 (2026-07-22) — N26 does not apply at terminal spine vertices
+
+ERR-008 and the original N26 proof correctly derive complementary carrier
+angles at every **nonterminal** vertex of the shared K10B spine, where the two
+half-turn occurrences locally fill a disk. They then incorrectly apply that
+identity to both endpoints of all three paired code sides.
+
+The `A` sides are the first and last edges of the spine. At their terminal
+vertices `R,Q`, the two occurrences fill only the corner of the right-angle
+guard lens. With `R=(-d/sqrt(2),0)` and
+`Gamma=(0,d/sqrt(2))`, the vectors from `R` to `Gamma` and `-Gamma` are
+perpendicular, so the paired terminal carrier angles sum to `pi/2`, not
+`2*pi`. The internal endpoint of each paired `A` side still satisfies N26.
+Both endpoints of `B,C` are nonterminal and still satisfy N26.
+
+Consequences:
+
+- K10B's half-turn docking and K11S's general atomic-root theorem survive;
+- paired `B,C` sides are reflex at both endpoints when their intended mates
+  are convex;
+- paired `A` has one reflex internal endpoint and one convex terminal
+  lens-corner endpoint, so it cannot be treated as a two-reflex atomic root;
+- N27 remains valid endpoint by endpoint, but does not by itself settle the
+  terminal `A` context; and
+- K10B must be tested against K11S using complete root-cover data rather than
+  the discarded shortest-reflex-side shortcut.
+
+No polygon, coordinate or tiling claim had been promoted. The error was found
+while applying the synchronization theorem, before any coordinate work.

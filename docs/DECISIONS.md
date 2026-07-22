@@ -2785,3 +2785,29 @@ it does not prove that K10B has an atomic root.
 K10B's only plausible synchronizer is its unique `H` side. Session 117 must
 test every root cover word of `H`, including T-junction subdivisions. A
 unique single-side length does not establish atomicity.
+
+## D-0128 (2026-07-22) — Correct the terminal scope and close HC-20
+
+ERR-009 corrects N26 before K11S is applied. The two half-turn occurrences
+fill a complete disk only at nonterminal spine vertices. At terminal `R,Q`
+they fill the right-angle lens corner, so paired terminal `A` angles sum to
+`pi/2`, not `2*pi`. Paired `B,C` remain reflex at both endpoints; paired `A`
+has one reflex internal endpoint and one convex terminal endpoint. N27 is
+therefore an endpoint-polarity theorem, not a proof for every endpoint of
+every code side.
+
+This also retracts D-0127's sentence calling `H` the only plausible
+synchronizer. It was merely the first proposed root. N28 proves that `H`
+itself cannot be atomic: the shield requires cover `[H]`, while the two
+compiler states require `[A,B,C]` and `[A,C,B]`, with `7=1+2+4`. The other
+intrinsic sides have no complete vertex-alignment and root-cover certificate;
+length alone does not close them.
+
+HC-20 therefore closes at its declared boundary. K11S is retained as a
+general finite sufficient theorem showing that auxiliary duplication is not
+intrinsically uncontrollable. K10B does not yet meet it and K10W remains
+frozen. No coordinates, placement tables, polygon, SVG, experiment or
+candidate were produced. Reopening requires either a complete atomic-root
+certificate for another named side together with the existing exact K10W
+geometry, or a stronger finite contextual synchronizer that safely accepts
+the multiplexed `H` cover words.
