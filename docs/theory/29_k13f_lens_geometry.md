@@ -106,3 +106,94 @@ closes by theorem and no coordinate list is attempted. Only if every
 necessary inequality survives may session 126 give the complete exact vertex
 list and both placement tables. Approximate coordinates or a new value of
 `d` are not admitted.
+
+## 6. N31: square-lens prefix and diameter obstruction
+
+### Theorem N31
+
+Let a K10B spine lie in the square lens (3.2). Suppose its first two edge
+lengths are `a,d>0` and their common polygon interior angle is `pi/4`. If a
+later spine edge has length `h`, then necessarily
+
+```text
+d <= sqrt(2)*a,              h <= sqrt(2)*d.             (6.1)
+```
+
+Consequently, if the later edge is the K10B host side with
+`h=a+b+c`, then
+
+```text
+h <= 2a,                     equivalently b+c <= a.      (6.2)
+```
+
+### Proof
+
+Use the orthonormal square coordinates `u,v` from (3.2), with `R` the
+origin. Let the first edge make angle `x` with `u`. Its nonzero endpoint lies
+in the square, so
+
+```text
+cos(x)>=0,  sin(x)>=0,
+```
+
+and we may take `0<=x<=pi/2`. At the next vertex the boundary direction
+changes by `+3*pi/4` or `-3*pi/4`.
+
+In the positive-turn case, the `u` coordinate after both edges is
+
+```text
+a*cos(x) + d*cos(x+3*pi/4)
+ = a*cos(x) - d*(cos(x)+sin(x))/sqrt(2)
+ <= a-d/sqrt(2).                                      (6.3)
+```
+
+Every point of the spine lies in the square, so this coordinate must be
+nonnegative. Hence `d<=sqrt(2)*a`. In the negative-turn case, the identical
+argument uses the `v` coordinate:
+
+```text
+a*sin(x) + d*sin(x-3*pi/4)
+ <= a-d/sqrt(2),                                      (6.4)
+```
+
+and gives the same bound.
+
+Both endpoints of any later spine edge lie in a square of side `d`, whose
+diameter is `sqrt(2)*d`. Therefore its length is at most that diameter,
+proving the second inequality in (6.1). Combining the two inequalities gives
+`h<=2a`; substituting `h=a+b+c` gives (6.2). QED.
+
+## 7. Consequences for the fixed instance and K13F
+
+For the HC-23 instance,
+
+```text
+(a,b,c,h,d)=(1,4,6,11,12),
+```
+
+the prefix inequality would require `12<=sqrt(2)`, and the combined bound
+would require `11<=2`. Either contradiction closes the fixed geometry.
+
+More generally, every K13F member has
+
+```text
+(a,b,c,h)=(1,n,n+2,2n+3),  n>=4,
+```
+
+so (6.2) would require `2n+2<=1`. Thus **no member of the proved K13F
+arithmetic family can use this unchanged K10B square-lens boundary topology,
+for any choice of `d`**.
+
+This does not refute K13F's arithmetic language, a different boundary word,
+a different guard lens, or an aperiodic monotile. It refutes exactly the
+combination of the K13F weights with K10B's square lens, first `A,d` prefix,
+and `pi/4` first interior angle.
+
+## 8. HC-23 disposition
+
+The predeclared stop fires in session 125, one session early. No coordinate
+list, placement table, computation, SVG, alternative tuple or candidate is
+produced. K14R remains an exact role/cover audit; N31 closes the fixed geometry
+and the whole K13F/K10B pairing. Reopening requires changing a named N31
+hypothesis in a newly authorized checkpoint, not fitting coordinates inside
+the impossible lens.

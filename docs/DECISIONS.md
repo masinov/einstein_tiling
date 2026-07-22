@@ -2954,3 +2954,23 @@ with lengths `a,d` meeting at interior angle `pi/4`. Session 125 must derive
 the exact prefix and central-edge containment inequalities before closure
 coordinates. Failure closes this fixed instance by theorem; no alternative
 tuple, `d`, word, computation, SVG or candidate is admitted.
+
+## D-0136 (2026-07-22) — Close the K13F/K10B square-lens pairing
+
+N31 proves a necessary condition before any coordinate fitting. Put the
+K10B square lens in orthonormal coordinates at its endpoint `R`. The first
+`A` edge lies in the square's tangent quadrant. Turning by the prescribed
+`+/-3*pi/4` into the following `d` edge makes one coordinate at most
+`a-d/sqrt(2)`. Containment therefore requires `d<=sqrt(2)a`. The central
+host edge is a segment in the same square, so `h<=sqrt(2)d`. Together,
+`h<=2a`, or `b+c<=a` when `h=a+b+c`.
+
+The fixed tuple `(1,4,6,11;d=12)` violates both the prefix bound and the
+combined bound. Every K13F member `(1,n,n+2,2n+3)`, `n>=4`, also violates
+`b+c<=a`, independent of `d`. HC-23's predeclared stop therefore fires in
+session 125 without coordinates or computation.
+
+This closes only the unchanged K10B square-lens word/angle topology paired
+with K13F. K13F's arithmetic language remains proved. A different boundary
+word, guard geometry or first-angle assignment requires a new checkpoint and
+must name which N31 hypothesis it changes; no such branch is admitted here.
