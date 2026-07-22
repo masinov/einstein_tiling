@@ -9,13 +9,13 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-22-15",
+    "id": "HC-2026-07-22-16",
     "date": "2026-07-22",
-    "through_session": 99,
-    "reason": "Sessions 97--99 completed the HC-14 prior-art audit and fired the predeclared K5C kill after the N17--N19 fixed-rosette and gapless-port bounds. The user explicitly authorized HC-15. HC-15 first audits intentional T-junction and non-edge-to-edge simulation prior art, then studies one minimal gapless three-neighbor junction class. Within at most three sessions it must prove an exact exclusive-choice realization or a scoped no-go; failure closes that junction class without enumeration.",
+    "through_session": 102,
+    "reason": "Sessions 100--102 completed HC-15: K6O gives exact subdivision-word capacity, J0 gives the ordinary three-participant angle equation, and N21 closes convex complementary-endpoint carriers. The user explicitly authorized HC-16 after independent review. HC-16 fixes one escape route before any geometry: a nonconvex support realizing two selected non-reversal three-neighbor words with at least one non-complementary code-side endpoint pair, fixed directed poses, exactly three participants per internal junction, no contextual handedness and no extra junction participant. It is on-paper only: within at most three sessions provide exact coordinates plus hand-checkable recognition, coverage and disjointness for both patches, or freeze this named route without computation. The review-supplied zero-byte fetch remnant is removed as authorized housekeeping.",
     "artifact_bytes": {
       "docs/notebook/assets": 6756125300,
-      "data": 1806495976
+      "data": 1809060890
     }
   }
 }

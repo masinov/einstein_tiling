@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 102)
+**Last updated:** 2026-07-22 (session 103)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ frozen after HC-15: subdivision order has exact abstract capacity, but the convex complementary-port realization is impossible and no exact nonconvex polygon exists (D-0111--D-0113) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | 🔬 HC-16 on-paper geometry: K7A selects exactly two three-neighbor order states by one reflex endpoint; exact polygonal patches remain open (D-0111--D-0114) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -283,6 +283,13 @@
   realizes the three- or four-neighbor universal order channel. Right-angle
   ports are closed. Nonconvex/contextual carriers remain logically open, but
   no exact witness was derived; HC-15's stop fires (N21/D-0113).
+- **ST-M1 selected-word angle selector:** any two three-neighbor reversal
+  classes normalize to `ABC,ACB`. J0 then forces a shared complementary
+  vocabulary on every internal junction while leaving the exterior endpoint
+  of `A` free. The exact orthogonal choice
+  `A=(3pi/2,pi/2)`, `B=C=(pi/2,pi/2)` admits precisely those two classes and
+  excludes the class with `A` in the middle. This is local feasibility only;
+  no polygonal witness exists yet (K7A/D-0114).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -744,3 +751,8 @@ Research is under the 2026-07-21 reset recorded in
     angle equation. Session 102 proves the convex complementary-port no-go
     N21. HC-15 is exhausted at 3 of 3 sessions; no exact nonconvex witness,
     run, SVG or shape promotion exists. A new checkpoint is required.
+11. The user authorized HC-16. Session 103 fixed the escape route before
+    geometry and proved K7A, an exact two-of-three orthogonal angle selector.
+    Sessions 104--105 may only seek hand-verifiable exact coordinates for
+    `ABC` and `ACB`; if none close by session 105, this selected-word route is
+    frozen without computation.

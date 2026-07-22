@@ -2511,3 +2511,26 @@ at session 102 and its stop rule fires without an experiment. K6O is retained
 only as an exact compiler-aware search primitive. Reopening requires exact
 coordinates and two hand-verifiable non-reversal patches before any contact
 classification run.
+
+## D-0114 (2026-07-22) — Admit HC-16's selected-word route; derive K7A
+
+After independent review of HC-15, the user authorizes one three-session
+on-paper checkpoint. The escape route is fixed in advance: a nonconvex
+support, two selected non-reversal three-neighbor words, fixed directed poses,
+ordinary three-participant internal junctions, no contextual handedness and
+no extra junction participant. Failure to give exact coordinates with
+hand-checkable coverage and disjointness freezes that named route; it does not
+authorize enumeration or an optimizer.
+
+K7A classifies the endpoint equations before any polygon is drawn. Up to
+reversal and relabeling, two classes are `ABC` and `ACB`. J0 forces
+`ell_B=ell_C=theta` and `rho_A=rho_B=rho_C=pi-theta`; only `ell_A` remains
+free. Choosing `ell_A != theta` admits exactly those two classes and excludes
+the third, where `A` would become the middle role. The orthogonal choice
+`theta=pi/2`, `ell_A=3*pi/2` therefore gives an exact two-state selector and
+forces genuine nonconvexity.
+
+This is local-angle feasibility only. No polygon, contact patch, all-tilings
+decoder or monotile is claimed. The zero-byte literature-fetch remnant named
+in the review was removed; the verified source PDF and hash-bearing catalog
+entry remain unchanged.
