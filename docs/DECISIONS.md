@@ -2766,3 +2766,22 @@ exact coordinate list and both placement tables. Otherwise the checkpoint
 must state the failed condition and retain the freeze. No experiment,
 alternative spine, contact-atlas enlargement or approximate geometry is
 admitted.
+
+## D-0127 (2026-07-22) — A finite atomic root controls duplicated shield arcs
+
+K11S answers HC-20's general theorem question positively but conditionally.
+Assume one selected root side has vertex-aligned contacts and its complete
+finite cover table consists of one full intrinsic mate side. Aligning that
+mate across the root fixes the neighboring congruent polygon. If this exact
+pose has disjoint interior and shares the selected complete arc, every
+auxiliary side on the arc belongs to that one forced shield pair.
+
+The certificate is bounded: one root-side cover table, one rooted mate and
+one exact two-copy intersection proof. It is not a full contact atlas. Vertex
+alignment is an explicit hypothesis, so sliding or overhanging contacts are
+not hidden. K11S proves that N26 duplication is not inherently uncontrollable;
+it does not prove that K10B has an atomic root.
+
+K10B's only plausible synchronizer is its unique `H` side. Session 117 must
+test every root cover word of `H`, including T-junction subdivisions. A
+unique single-side length does not establish atomicity.

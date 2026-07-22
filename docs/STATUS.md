@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 115)
+**Last updated:** 2026-07-22 (session 116)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-20 session 1/3: N27 separates local angle-polarity recovery from global auxiliary-contact control; K10B remains frozen pending a finite synchronization theorem (D-0111--D-0126) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-20 session 2/3: K11S proves that one finite atomic root controls a duplicated arc; K10B remains frozen while its `H` root cover words are tested (D-0111--D-0127) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -361,6 +361,12 @@
   length plus convex endpoint context recovers the intended code side. N27
   is local only; a finite full-arc synchronization criterion is the remaining
   HC-20 question (D-0126).
+- **ST-M1 atomic-root synchronization:** under proved vertex alignment, a
+  complete finite root cover table with one full-side mate fixes that
+  neighbor's Euclidean pose. If the exact pose shares the selected full arc,
+  every auxiliary side on it is controlled by the same bounded decision.
+  K11S shows duplication is not intrinsically uncontrollable, but K10B's
+  unique `H` still has to exclude subdivided root covers (D-0127).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -856,3 +862,6 @@ Research is under the 2026-07-21 reset recorded in
     host subdivision. This repairs local decoding only. Sessions 116--117
     must derive a finite auxiliary-arc synchronization criterion, test K10B,
     and either meet K10W's existing exact reopening rule or retain the freeze.
+    Session 116 proves K11S: a complete finite one-word root cover fixes the
+    congruent mate pose and synchronizes the whole selected arc. Session 117
+    must apply this criterion to K10B's unique `H`, with subdivisions included.
