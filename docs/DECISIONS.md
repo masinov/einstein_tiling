@@ -2934,3 +2934,23 @@ repair the original `(1,2,4)` skeleton or establish any polygon, coordinate,
 patch, full local language, tiling, aperiodicity, candidate, or novelty claim.
 Those geometric and literature gates remain explicit. No computation or
 artifact was produced.
+
+## D-0135 (2026-07-22) — Fix HC-23 geometry and redo every length role
+
+The user authorizes HC-23 after independent review for the smallest K13F
+weights `(a,b,c,h)=(1,4,6,11)` with `d=12` and the unchanged K10B word. The
+role audit is redone rather than inherited. `A,B,C` each have intended and
+ERR-008/ERR-009 auxiliary contexts, `H` is intrinsically unique, and eight
+`d` sides require ordered local context.
+
+Beyond `H`, HC-23 explicitly tracks the full-side arithmetic cover tables of
+`A,B,C,d`. K14R records every coefficient solution over lengths
+`{1,4,6,11,12}`; the many coincidences show why length alone cannot prove
+contact completeness. These tables are conditional on cover-side alignment
+and do not enumerate geometric contacts.
+
+The guard and its half-turn bound a square lens of side `d`. The spine starts
+with lengths `a,d` meeting at interior angle `pi/4`. Session 125 must derive
+the exact prefix and central-edge containment inequalities before closure
+coordinates. Failure closes this fixed instance by theorem; no alternative
+tuple, `d`, word, computation, SVG or candidate is admitted.
