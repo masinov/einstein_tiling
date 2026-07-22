@@ -3044,3 +3044,41 @@ This decision does not close K13A, unequal/non-square guards, changed
 boundary prefixes, changed sharp angles or other monotile mechanisms. A
 future checkpoint must name which N33 hypothesis it changes; varying weights
 alone is closed.
+
+## D-0140 (2026-07-22) — Admit unequal right-angle guard spokes
+
+The user explicitly authorizes HC-25 to change the equal-leg hypothesis of
+N33 while retaining K9A/K9T's right-angle guard and complete clean-spoke
+semantics. The first obligation is combinatorial: determine whether K10B's
+old one-edge connectors can simultaneously realize outgoing spoke length
+`u` and incoming spoke length `v` when `u!=v`.
+
+If that is impossible, HC-25 may introduce only the minimal split connector
+needed to place one `u` side and one `v` side between selected code roles. It
+must fix the resulting boundary topology and derive the exact rectangular-
+lens system before any coordinates. At most three sessions may produce a
+viable exact mechanism or a scoped no-go.
+
+No numerical search, approximate fitting, experiment, SVG, larger contact
+atlas, polygon promotion or candidate claim is authorized. Adding further
+junction participants or changing the right angle is outside this checkpoint.
+
+## D-0141 (2026-07-22) — Split the unequal spoke connector minimally
+
+N34 proves that K10B's original one-side connectors cannot carry unequal
+clean-spoke lengths: the same `A--B` side is both `u_A` and `v_B`, and the
+same identity occurs at `B--C`. Thus unequal spokes necessarily change the
+boundary word; relabeling the old `d` sides is invalid.
+
+K16B introduces exactly one new vertex at each incompatible connector and
+its central partner. The first half becomes `A,u,v,B,u,v,C,u`, the complete
+spine is its reversal around `H`, and unequal perpendicular guard legs close
+the 19-edge cyclic word (3.3). Their half-turn lens is a `v`-by-`u`
+rectangle. This is edge-count-minimal only within the declared split of the
+old connectors; it is not a polygonal realization or uniqueness theorem over
+all possible topologies.
+
+The two new `u|v` bridge angles are explicit unknowns. Session 129 must derive
+the full exact rectangular-lens system and test whether those angles are
+geometrically determined or merely reintroduced colors. No angle choice,
+coordinate fitting or added participant is authorized in session 128.

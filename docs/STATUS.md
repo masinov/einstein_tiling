@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 127)
+**Last updated:** 2026-07-22 (session 128)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-24 closed early at session 2/3: N33 proves the complete unchanged K10B square-lens system empty for every positive weight tuple; K13A survives (D-0111--D-0139) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-25 session 1/3: N34 proves the old word forces `u=v`; K16B fixes the minimal 19-side split-spoke word and rectangular lens; exact turn system is next (D-0111--D-0141) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -966,3 +966,15 @@ Research is under the 2026-07-21 reset recorded in
     unchanged K10B square-lens system is empty for all positive weights.
     HC-24 closes one session early without a tuple, coordinates, experiment
     or candidate; changing weights alone is no longer an admissible repair.
+20. The user authorized HC-25 to relax only N33's equal-leg guard assumption
+    while retaining the right-angle K9A/K9T mechanism. The old one-edge
+    connectors must first be checked against unequal outgoing/incoming spoke
+    lengths. Only the minimal split-spoke topology may then be introduced,
+    and its exact rectangular-lens equations precede any coordinates. The
+    checkpoint admits no numerical search, experiment, SVG, larger atlas or
+    candidate promotion and stops within three sessions with an exact
+    mechanism or scoped no-go. Session 128 proves N34: each old one-side
+    connector is both an outgoing `u` and incoming `v`, so it forces `u=v`.
+    K16B replaces exactly the four centrally paired dual-role connectors by
+    `u,v` paths, giving one fixed 19-side word and a `v`-by-`u` rectangular
+    lens. Its two bridge angles remain explicit unknowns for session 129.
