@@ -2550,3 +2550,18 @@ mismatch would introduce another partial contact or junction and is outside
 the route fixed at HC-16 admission. This is a reduction, not a polygonal
 witness: the tails and the host-versus-tail inequalities remain open, and no
 coordinate search is authorized.
+
+## D-0116 (2026-07-22) — Fire the HC-16 stop at exact tail packing
+
+No exact orthogonal polygonal disk was found on paper whose three rooted
+tails satisfy both K7C offset triples and remain disjoint from the host.
+Local angle closure and a valid common collar are not promoted into a patch:
+the unresolved intersections begin immediately below that collar.
+
+HC-16 is exhausted at session 105, so its predeclared stop fires. K7A and
+K7C remain exact proof-draft primitives, but the selected-word polygon route
+is frozen without a coordinate search, optimizer, SVG or candidate. This is
+not a no-go theorem for arbitrary nonconvex carriers. Reopening the same
+route requires an exact polygon and both complete hand-verified placement
+lists before computation; unequal stems, contextual handedness or extra
+participants constitute different routes requiring new admission.

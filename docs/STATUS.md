@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 104)
+**Last updated:** 2026-07-22 (session 105)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | 🔬 HC-16 on-paper geometry: K7A selects two states and K7C forces a common clean collar; exact tail packings remain open (D-0111--D-0115) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ frozen after HC-16: K7A selects two states and K7C forces a common collar, but no exact polygon realizes both tail packings (D-0111--D-0116) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -296,6 +296,11 @@
   collar; the entire unresolved geometry is the exact intersection of three
   rooted tails at two listed offset triples. No tail or polygon is claimed
   (K7C/D-0115).
+- **ST-M1 HC-16 stop:** no exact orthogonal polygon closes both K7C rooted-tail
+  packings and the host intersections. K7A/K7C are retained as an exact local
+  binary contact primitive and reduction, not as a candidate. The route is
+  frozen without computation; arbitrary nonconvex carriers are not refuted
+  (K7W/D-0116).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -597,7 +602,7 @@
   lines remain unknown. The completed blind hierarchy
   screen retained two non-unique first-composition rules out of 22,094 but no
   stationary recognizable recursion. Artifact: `e1-overnight-recovered.json`.
-- Test suite: **222 fast passed** (17 deselected, 153.10 s, session 102);
+- Test suite: **222 fast passed** (17 deselected, 146.39 s, session 105);
   **17 slow passed** previously (192 deselected, 389.36 s).
   Vendored Rust: **5 passed**.
 
@@ -761,5 +766,6 @@ Research is under the 2026-07-21 reset recorded in
     geometry and proved K7A, an exact two-of-three orthogonal angle selector.
     Session 104 proves the common clean-collar reduction K7C. Session 105 may
     only close the two exact rooted-tail packings with hand-verifiable
-    coordinates; if it cannot, this selected-word route is frozen without
-    computation.
+    coordinates. No coordinate set closes them, so session 105 fires the
+    predeclared stop. HC-16 is exhausted at 3 of 3 sessions; the route is
+    frozen without computation and a new checkpoint is required.

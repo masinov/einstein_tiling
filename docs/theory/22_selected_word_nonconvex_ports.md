@@ -222,3 +222,30 @@ This formulation prevents a picture from hiding an overlap just beneath a
 valid collar. It also shows why an ordinary rectangular tooth is not enough:
 the same rooted tails must pack after the `B,C` offsets change by `c` and
 `b`, respectively.
+
+## 8. HC-16 disposition
+
+The checkpoint establishes two exact facts:
+
+- K7A turns the three abstract K6O order classes into an intrinsic binary
+  channel by one named reflex endpoint; and
+- K7C proves the complete common collar and writes the two remaining rooted
+  tail packings explicitly.
+
+No exact orthogonal polygonal disk was derived whose rooted tails satisfy
+both rows of (7.1) and avoid the host occurrence. In particular, valid local
+right-angle sectors and a valid rectangular collar were not treated as
+evidence for global disjointness. No proposed coordinate list passed the
+paper obligation, so none is recorded as a candidate.
+
+HC-16's predeclared stop therefore fires after session 105. The named route
+is frozen at the tail-packing equations. This is not a nonexistence theorem:
+it does not say that a nonconvex selected-word carrier is impossible. It says
+that the branch has an exact symbolic/contact kernel but no geometric witness
+and may not consume a search merely to compensate for that missing idea.
+
+Reopening requires, before computation, one exact irredundant polygon and the
+four placement isometries for each word, followed by hand proofs of every
+intersection in (7.1) and every host-versus-tail intersection. A different
+route using unequal stems, contextual handedness or extra participants needs
+its own checkpoint because it changes the admitted mechanism.
