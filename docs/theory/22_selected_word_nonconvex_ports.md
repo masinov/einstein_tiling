@@ -102,6 +102,12 @@ The class with `A` in the middle would require a
 endpoint in the two admitted words.  It becomes internal exactly in the
 excluded class.
 
+At that host endpoint the reflex sector spills outside the vertical
+projection of the host. If no third occurrence participates there and the
+neighborhood is gaplessly covered, the host corner is forced to have angle
+`2*pi-3*pi/2=pi/2`. This endpoint condition is separate from the two internal
+J0 equations.
+
 This is the smallest exact endpoint vocabulary presently known in the
 branch: it uses only integer-coordinate-compatible orthogonal angles, gives
 a genuine two-state selector under reflections, and escapes N21 through a
@@ -164,9 +170,10 @@ s_A^R = s_B^L = s_B^R = s_C^L = s_C^R = d.          (6.1)
 
 In the orthogonal K7A specialization, after normalizing the host to
 `[0,L] x {0}` and placing the neighbors below it, the three occurrence
-interiors in the open strip `-d<y<0` are exactly the three disjoint open
-rectangles under their code intervals.  Their order can be `ABC` or `ACB`
-without any overlap in that strip.
+interiors inside the open host footprint `(0,L) x (-d,0)` are exactly the
+three disjoint open rectangles under their code intervals. Their order can
+be `ABC` or `ACB` without overlap inside that footprint. The reflex germ of
+`A` at `x<0` is not part of this conclusion and belongs to its rooted tail.
 
 ### Proof
 
@@ -213,7 +220,8 @@ ACB : Q_A,  Q_C+(a,0),    Q_B+(a+c,0).                (7.1)
 
 Thus the coordinate problem has two independent proof layers:
 
-- K7A/K7C already settle the complete strip `-d<y<0`; and
+- K7A/K7C already settle the host-footprint collar
+  `(0,L) x (-d,0)`; and
 - exact set-intersection inequalities for the six translated tail pairs in
   (7.1), together with host-versus-tail inequalities, settle everything
   below it.

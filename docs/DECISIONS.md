@@ -2565,3 +2565,21 @@ not a no-go theorem for arbitrary nonconvex carriers. Reopening the same
 route requires an exact polygon and both complete hand-verified placement
 lists before computation; unequal stems, contextual handedness or extra
 participants constitute different routes requiring new admission.
+
+## D-0117 (2026-07-22) — Correct K7C and admit one unequal-stem cap route
+
+The HC-16 review identifies ERR-007: K7C settles only the open footprint
+below the host, not the whole horizontal strip. The `3*pi/2` endpoint of `A`
+has a third-quadrant spillover germ, which remains in `Q_A`; with no third
+participant there, the host corner is forced to `pi/2`. The theory note is
+corrected before downstream work. The reviewed zero-byte Conway--Lagarias
+fetch remnant is removed while its intact source PDF remains unchanged.
+
+The user authorizes HC-17. It fixes the smallest different mechanism:
+ordinary K7A primary junctions, one deliberate unequal first stem, and
+exactly one secondary congruent cap occurrence per mismatch. N22 proves that
+some secondary participant is necessary in every gapless realization and
+gives its angle equation. Sessions 107--108 may solve the finite length/cap
+closure and either exhibit an exact finite contact complex or freeze the
+route. Contextual handedness, unbounded junction cascades, a contact atlas,
+coordinate search and candidate promotion are not authorized.

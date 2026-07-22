@@ -163,3 +163,24 @@ the centroid formulas give `30,30,2` common-triangle addresses after splitting
 the six embedded `M` rhombi in each large template and the small `M` rhombus.
 This is ST-M1.G0. Complete SAB/vertex-language transport remains open as L0,
 so the withdrawn `18,18,2` proof and S0 closure remain withdrawn.
+
+## ERR-007 (2026-07-22) — K7C settles the host footprint, not the whole strip
+
+Theory note 22 originally claimed that K7C made the three neighbor interiors
+in the entire strip `-d<y<0` exactly the three rectangles below the host.
+That is false at the reflex endpoint of role `A`. With its code side directed
+along positive `x`, interior below, and `ell_A=3*pi/2`, the `A` occurrence
+contains a third-quadrant germ (`x<0,y<0`) outside the host footprint.
+
+K7C proves exactly what the tail reduction needs: inside
+`(0,L) x (-d,0)`, the open footprint below the host, the three interiors are
+the disjoint rectangles below their code intervals. The reflex spillover is
+part of the rooted tail `Q_A` and must be included in the tail-pair and
+host-versus-tail intersection checks. References to the “complete strip” are
+withdrawn and replaced by “host-footprint collar.”
+
+At the same endpoint, if exactly the host and `A` occur and the neighborhood
+is gaplessly covered, angle sum forces the host interior angle to be
+`2*pi-3*pi/2=pi/2`. Any future K7W witness either has that right-angle host
+corner or explicitly admits another participant there. K7A's selector and
+K7C's stem equalities are otherwise unchanged.

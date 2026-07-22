@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 105)
+**Last updated:** 2026-07-22 (session 106)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ frozen after HC-16: K7A selects two states and K7C forces a common collar, but no exact polygon realizes both tail packings (D-0111--D-0116) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | 🔬 HC-17 on-paper geometry: ERR-007 fixes the collar scope; N22 proves unequal stems require a secondary cap, whose finite closure remains open (D-0111--D-0117) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -301,6 +301,12 @@
   binary contact primitive and reduction, not as a candidate. The route is
   frozen without computation; arbitrary nonconvex carriers are not refuted
   (K7W/D-0116).
+- **ST-M1 unequal-stem boundary:** ERR-007 restricts K7C to the host
+  footprint and puts `A`'s reflex spillover back into the tail checks; without
+  a third endpoint participant the host corner is `pi/2`. N22 proves that an
+  unequal first stem necessarily creates a secondary participant. HC-17
+  admits exactly one cap occurrence there; no cap geometry exists yet
+  (D-0117).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -769,3 +775,7 @@ Research is under the 2026-07-21 reset recorded in
     coordinates. No coordinate set closes them, so session 105 fires the
     predeclared stop. HC-16 is exhausted at 3 of 3 sessions; the route is
     frozen without computation and a new checkpoint is required.
+12. The user authorized HC-17 after review. Session 106 applies ERR-007,
+    removes the zero-byte Conway--Lagarias fetch remnant and proves N22.
+    Sessions 107--108 may solve only the finite uniform mismatch/cap closure;
+    failure freezes the route without coordinates or computation.
