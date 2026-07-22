@@ -3019,3 +3019,28 @@ exists exactly when `h-d` is a nonnegative member of `<a,b,c>`.
 Session 126 selects no tuple. The next session must solve K15S, N32, K13A
 and K15D jointly by exact analysis, not parameter enumeration or approximate
 fitting.
+
+## D-0139 (2026-07-22) — Close every unchanged K10B square-lens weight
+
+N33 solves K15S before the K13A arithmetic is needed. Normalize `d=1` and
+write the strict N32 slack as positive margins `alpha,beta,mu`; positivity of
+`c` makes their sum smaller than `1-1/sqrt(2)`. The fourth and sixth exact
+partial sums then impose opposing bounds `beta>L(t)` and `beta<U(t)` on the
+free orientation `t=tan(x)`, with `0<t<1`.
+
+The inequality `L(t)>U(t)` is exact: after clearing the positive denominator
+and squaring positive sides, its difference factors as
+
+```text
+(1-t)*(t^3+5*t^2+5*t+1)/2 > 0.
+```
+
+Thus no positive weights `(a,b,c,d)`, with `h=a+b+c`, satisfy the unchanged
+K10B square-lens system. HC-24 closes one session early without tuple
+selection, coordinate fitting or computation. U1/U2 and K15D remain valid
+arithmetic tools, but their joint K10B feasible set is empty.
+
+This decision does not close K13A, unequal/non-square guards, changed
+boundary prefixes, changed sharp angles or other monotile mechanisms. A
+future checkpoint must name which N33 hypothesis it changes; varying weights
+alone is closed.

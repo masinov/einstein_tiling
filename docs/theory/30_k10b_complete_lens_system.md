@@ -235,3 +235,112 @@ weight cone, and K15D closes the requested arithmetic formulation of the
 `d`-cover burden. No new tuple is selected in session 126. Session 127 must
 solve K13A U1/U2 jointly with (3.1)--(3.3), (5.2) and (6.2), analytically;
 it may not turn this exact system into a numerical parameter search.
+
+## 8. N33: the complete K10B square-lens system is empty
+
+### ST-M1.N33
+
+There are no positive weights `a,b,c,d` with `h=a+b+c` satisfying K15S.
+Equivalently, no unchanged K10B boundary word with its five `pi/4` angles,
+central half-turn pairing and right-angle equal-leg guard has an open-square
+spine, regardless of K13A, U1/U2 or the choice of `d`.
+
+### Proof
+
+Scale `d=1` and put
+
+```text
+r=1/sqrt(2),              g=1-r.                     (8.1)
+```
+
+The strict first two inequalities of N32 and the third inequality give
+positive margins
+
+```text
+alpha = a-r > 0,
+beta  = b-(sqrt(2)-1) > 0,
+mu    = sqrt(2)-h > 0.                               (8.2)
+```
+
+Since `h=a+b+c`, direct substitution yields
+
+```text
+c = g-alpha-beta-mu > 0.                             (8.3)
+```
+
+The two partial sums needed below become
+
+```text
+w_4=(r+alpha, 1-beta),
+w_6=(3*r-1+2*alpha+beta+mu, g-beta).                 (8.4)
+```
+
+Let `t=S/C`. Equation (3.1) gives `t>0`. The positive first coordinate of
+`M*w_4` gives
+
+```text
+t < (r+alpha)/(1-beta) < 1,                          (8.5)
+```
+
+where the second inequality is (8.3):
+`alpha+beta<g=1-r`.
+
+Now use the upper bound on the second coordinate of `M*w_4`. Dividing by
+`C>0` and writing `q=sqrt(1+t^2)=1/C` gives
+
+```text
+beta > 1+r*t-q+alpha*t > L(t),
+L(t)=1+r*t-q.                                        (8.6)
+```
+
+The upper bound on the first coordinate of `M*w_6` similarly gives
+
+```text
+beta < U(t)-(2*alpha+mu)/(1+t) < U(t),
+U(t)=(q-(3*r-1)+g*t)/(1+t).                          (8.7)
+```
+
+But `L(t)>U(t)` throughout the allowed interval `0<t<1`. Indeed, after
+multiplying by `1+t`, this inequality is equivalent to
+
+```text
+r*(t^2+2*t+3) > (t+2)*sqrt(1+t^2).                  (8.8)
+```
+
+Both sides are positive. The difference of their squares is
+
+```text
+((1-t)*(t^3+5*t^2+5*t+1))/2,                        (8.9)
+```
+
+which is strictly positive for `0<t<1`. Equations (8.6)--(8.7) therefore
+require `beta>L(t)>U(t)>beta`, a contradiction. □
+
+## 9. Consequences
+
+N33 subsumes N31's fixed-instance and K13F/K10B exclusions and makes the
+joint U1/U2 question vacuous for this topology: the geometric feasible set
+is already empty. K15D remains a correct reusable arithmetic criterion, but
+no K10B square-lens tuple reaches the point where it is needed.
+
+The proof also explains the failed coordinate intuition. The fourth vertex
+forces enough `b`-margin to keep its rotated second coordinate below the
+square, while the sixth vertex needs the opposite rotation to bring its first
+coordinate below the square. Positivity of `c` and the central host chord
+make those two orientation intervals disjoint.
+
+This is not a no-go for:
+
+- K13A's two-word arithmetic language;
+- a guard lens which is not the right-angle equal-leg square;
+- a boundary word which does not begin `A,d,B,d,C,d`;
+- a different sharp-angle assignment; or
+- an aperiodic monotile by another mechanism.
+
+## 10. HC-24 disposition
+
+HC-24 closes in session 127, one session early, with the scoped
+incompatibility theorem N33. No tuple, role audit, coordinates, simplicity
+test, placement patch, experiment, SVG or candidate is produced. Reopening
+the geometry requires naming and changing at least one N33 hypothesis under
+a new checkpoint; changing only the numerical weights cannot help.
