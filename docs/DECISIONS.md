@@ -3086,8 +3086,8 @@ coordinate fitting or added participant is authorized in session 128.
 ## D-0142 (2026-07-22) — Retain the finite bridge-angle system
 
 K17S gives the complete K16B rectangular-lens model: eight explicit
-first-half partial sums in two bridge-turn units, sixteen strict rectangle
-inequalities, central reversal and one host-length equation. For fixed bridge
+first-half partial sums in two bridge-turn units, sixteen two-sided rectangle
+bounds (32 scalar inequalities), central reversal and one host-length equation. For fixed bridge
 angles and weights, closure is again a line in the terminal unit direction.
 Simplicity remains a separate finite segment-intersection obligation.
 
@@ -3121,3 +3121,42 @@ The branch is frozen. Reopening requires a complete exact K16W witness
 supplied before computation or a theorem eliminating the bridge variables.
 Angle enumeration, numerical fitting, added edges, a larger contact atlas and
 SVG-led promotion are not authorized continuations.
+
+## D-0144 (2026-07-22) — Admit one theorem-only K16W elimination checkpoint
+
+After independent review of HC-24 and HC-25, the user explicitly authorizes
+HC-26 as one theorem-only attempt on K16W. It has exactly three admissible
+terminal outcomes:
+
+1. an exact simple witness satisfying every predicate in (11.1);
+2. a scoped incompatibility theorem for K16B; or
+3. a freeze at K16W, with the next proposed pivot fixed in advance as the
+   non-right guard angle `gamma!=pi/2`.
+
+A partial angle or inequality analysis does not count as success. The first
+mathematical target is the exact necessary cone of the two bridge-independent
+rigid chains `v,B,u` and `v,C,u`. Any subsequent elimination must treat both
+global turn orientations and the exceptional case in which the closure line
+(7.1) is identically satisfied. HC-26 stops within three sessions.
+
+No numerical angle or coordinate search, experiment, SVG, extra edge,
+additional participant, larger contact atlas, polygon promotion or candidate
+claim is authorized.
+
+## D-0145 (2026-07-22) — Retain the exact hook cones; close exceptional cases
+
+K18H classifies each bridge-independent `v,w,u` hook by six explicit pair
+differences and twelve two-sided coordinate-span bounds. Every K17S solution
+must satisfy this cone once for `w=b` and once for `w=c`. The exact control
+`(u,v,w)=(1001/1000,1,1)`, `r=(3/5,4/5)` lies strictly in the cone, so the
+requested first target does not supply a hook-only incompatibility theorem.
+
+N35 proves that the terminal closure line cannot degenerate identically under
+K17S: vanishing of its two coefficients forces `w_8=0`, contradicting strict
+containment at the eighth vertex. K18R handles the opposite global turn sign
+by complex conjugation and reflection, preserving every metric, containment
+and nonintersection predicate.
+
+HC-26 therefore remains open for two sessions. They must couple both hook
+cones through the bridge variables and closure and reach the existing exact
+trichotomy; the local cone is not a successful terminal result.

@@ -9,10 +9,10 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-22-25",
+    "id": "HC-2026-07-22-26",
     "date": "2026-07-22",
-    "through_session": 127,
-    "reason": "Sessions 126--127 completed HC-24 early: K15S derived the complete exact K10B square-lens system, N32 sharpened its necessary cone, and N33 proved that the fourth and sixth containment inequalities are contradictory for every positive weight tuple with h=a+b+c. Changing weights alone is closed. The user explicitly authorizes HC-25 to relax the equal-leg guard assumption identified in the prior handoff while retaining the right-angle K9A/K9T mechanism. It must first determine whether the old one-edge connectors can carry unequal outgoing/incoming spoke lengths; if not, it may define only the minimal split-spoke topology needed to separate them. It must derive the resulting rectangular-lens equations before coordinates and, within at most three sessions, prove a viable exact mechanism or a scoped no-go. No numerical search, experiment, SVG, larger contact atlas, polygon promotion or candidate claim is authorized.",
+    "through_session": 130,
+    "reason": "Sessions 128--130 completed HC-25: N34 proved unequal spokes require a topology change, K16B fixed the minimal split-spoke 19-edge carrier, and K17S/K17G derived its exact rectangular-lens system with intrinsic bridge angles. No exact simple spine or incompatibility theorem emerged, so the predeclared stop fired and K16W froze. After independent audit, the user explicitly authorizes HC-26 as one theorem-only bridge-elimination attempt. Its only terminal outcomes are: an exact simple witness satisfying all K16W predicates; a scoped K16B incompatibility theorem; or a freeze at K16W followed by a future pivot to the non-right guard angle. Partial angle analysis is not success. The rigid v,B,u and v,C,u chains must be analyzed first; reflected global orientation and the identically-satisfied closure-line case must be handled explicitly. No numerical search, experiment, SVG, enlarged topology, polygon promotion or candidate claim is authorized.",
     "artifact_bytes": {
       "docs/notebook/assets": 6756125300,
       "data": 1809060890
