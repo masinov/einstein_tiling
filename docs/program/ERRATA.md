@@ -241,3 +241,43 @@ Consequences:
 
 No polygon, coordinate or tiling claim had been promoted. The error was found
 while applying the synchronization theorem, before any coordinate work.
+
+## ERR-010 (2026-07-22) — K20L's printed hook direction was not a unit vector
+
+Theory note 32 §10 and session 133 originally asserted that
+`(120/121,11/121)` was a unit vector because
+`120^2+11^2=121^2`.  This is false:
+
+```text
+120^2+11^2=14521,       121^2=14641.
+```
+
+The defect is material to that printed control.  Normalizing the vector
+increases its horizontal span past the rectangle width, so equations
+(10.1)--(10.4) in their original form do not prove K18H.  The session-133
+verification line claiming the false Pythagorean identity is withdrawn.
+
+K20L itself survives with the exact replacement
+
+```text
+r=(544/545,33/545),       544^2+33^2=545^2.
+```
+
+For `(u,v,w)=(1,2,1/10)`, the corrected hook has horizontal order
+
+```text
+0 < Re(s_2) < Re(s_3) < Re(s_1)=1088/545 < 2
+```
+
+and vertical span `544/545<1`.  The close comparison
+`Re(s_3)<Re(s_1)` is `330*sqrt(2)<577`, whose squared form is
+`217800<332929`.  Thus the corrected direction proves the same isolated
+K18H control for `b=c=1/10`.
+
+Consequences:
+
+- K20L's separation conclusion survives with corrected exact data;
+- K18H, K19P, K19E and the HC-26 freeze are unchanged;
+- no downstream theorem, polygon or candidate depended on the invalid vector;
+  and
+- the original equations and verification statement must not be cited.

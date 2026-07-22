@@ -371,41 +371,46 @@ The closure-control tuple (9.1) also passes each isolated rigid-hook cone.
 For either `w=b=c=1/10`, take
 
 ```text
-r=(120/121,11/121).                               (10.1)
+r=(544/545,33/545).                               (10.1)
 ```
 
 This is a unit vector.  Formula (1.3), with `u=1` and `v=2`, gives
 
 ```text
-s_1=(240/121,22/121),
-s_2=s_1+(-131/(1210*sqrt(2)),
-          109/(1210*sqrt(2))),
-s_3=s_2+(11/121,-120/121).                        (10.2)
+s_1=(1088/545,66/545),
+s_2=s_1+(-577/(5450*sqrt(2)),
+          511/(5450*sqrt(2))),
+s_3=s_2+(33/545,-544/545).                        (10.2)
 ```
 
 The horizontal order is
 
 ```text
-0 < Re(s_2) < Re(s_1) < Re(s_3) < 2.              (10.3)
+0 < Re(s_2) < Re(s_3) < Re(s_1) < 2.              (10.3)
 ```
 
-The only close last comparison reduces to
+The strict maximum follows immediately from `1088/545<2`.  The close
+comparison `Re(s_3)<Re(s_1)` reduces to
 
 ```text
-90*sqrt(2) < 131,
+330*sqrt(2) < 577,
 ```
 
-whose square is `16200<17161`.  The comparison
-`Re(s_1)<Re(s_3)` follows from `110*sqrt(2)>131`.  Vertically,
+whose square is `217800<332929`.  Vertically,
 
 ```text
 Im(s_3) < 0 < Im(s_1) < Im(s_2),
-Im(s_2)-Im(s_3)=120/121 < 1.                      (10.4)
+Im(s_2)-Im(s_3)=544/545 < 1.                      (10.4)
 ```
 
 Thus the horizontal span is below `2` and the vertical span is below `1`.
 K18H holds exactly.  Since `b=c`, the same construction supplies both
 isolated hook controls.
+
+The originally printed vector `(120/121,11/121)` and its span calculations
+are withdrawn by ERR-010: it was not a unit vector, and normalization broke
+the claimed horizontal bound.  Equations (10.1)--(10.4) above are the
+corrected exact witness.
 
 ### ST-M1.K20L
 

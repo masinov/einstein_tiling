@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 133)
+**Last updated:** 2026-07-22 (session 134 preregistered; exact run pending)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-26 exhausted: exact hook/prefix/closure projections survive separately, but no K16W witness or no-go; non-right guard angle is the proposed pivot (D-0111--D-0147) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-27 session 1/3: ERR-010 repaired; complete 166-constraint K16W QF_NRA instance gated and ready (D-0111--D-0149) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -1006,3 +1006,10 @@ Research is under the 2026-07-21 reset recorded in
     simultaneous spine or all-phase incompatibility theorem is obtained.
     HC-26's third terminal outcome fires. K16W remains open but frozen; a new
     checkpoint is required for the pre-agreed `gamma!=pi/2` pivot.
+24. Independent audit found K20L's printed direction was not unit. ERR-010
+    replaces it with `(544/545,33/545)` and withdraws the false session-133
+    check without changing the freeze. The user authorizes HC-27. Session 134
+    passes the experiment gate and builds K21Q, one complete normalized
+    QF_NRA sentence with every K17S bound and all 120 nonadjacent spine-pair
+    predicates. One fixed exact run is pending; SAT, UNSAT and unknown remain
+    fail-closed under D-0148.

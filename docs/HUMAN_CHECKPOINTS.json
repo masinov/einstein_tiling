@@ -9,10 +9,10 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-22-26",
+    "id": "HC-2026-07-22-27",
     "date": "2026-07-22",
-    "through_session": 130,
-    "reason": "Sessions 128--130 completed HC-25: N34 proved unequal spokes require a topology change, K16B fixed the minimal split-spoke 19-edge carrier, and K17S/K17G derived its exact rectangular-lens system with intrinsic bridge angles. No exact simple spine or incompatibility theorem emerged, so the predeclared stop fired and K16W froze. After independent audit, the user explicitly authorizes HC-26 as one theorem-only bridge-elimination attempt. Its only terminal outcomes are: an exact simple witness satisfying all K16W predicates; a scoped K16B incompatibility theorem; or a freeze at K16W followed by a future pivot to the non-right guard angle. Partial angle analysis is not success. The rigid v,B,u and v,C,u chains must be analyzed first; reflected global orientation and the identically-satisfied closure-line case must be handled explicitly. No numerical search, experiment, SVG, enlarged topology, polygon promotion or candidate claim is authorized.",
+    "through_session": 133,
+    "reason": "Sessions 131--133 completed HC-26: exact hook, prefix and relaxed closure projections were derived, but no simultaneous K16W witness or incompatibility theorem emerged, so its predeclared freeze fired. Independent audit then found K20L's printed direction was not unit and supplied a verified exact repair. The user explicitly authorizes continuation under HC-27: ERR-010 is a mandatory entry precondition, followed by one preregistered exact QF_NRA feasibility decision for the complete normalized K16W sentence, including strict containment, closure, bridge irredundancy and full spine simplicity. A SAT result must cold-verify in exact arithmetic before K16W is reopened; an UNSAT result closes K16B only with a replayable independently checked exact certificate, otherwise it remains solver evidence. Unknown or the fixed resource stop retains the freeze and proposes the symbolic non-right guard-angle family next. No radius, topology or solver-budget escalation is authorized.",
     "artifact_bytes": {
       "docs/notebook/assets": 6756125300,
       "data": 1809060890

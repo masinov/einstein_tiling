@@ -3195,3 +3195,49 @@ candidate promotion follows.
 The next proposed branch is fixed as the non-right guard-angle mechanism
 `gamma!=pi/2`. It changes a named K9A/K9T hypothesis rather than modifying
 K16B again and requires a new human checkpoint before work begins.
+
+## D-0148 (2026-07-22) — Repair K20L and admit one exact K16W decision
+
+Independent audit found that K20L's printed vector was not unit. ERR-010 is
+the controlling correction: `(544/545,33/545)` replaces it and exactly
+restores the isolated-hook control. The false session-133 Pythagorean check is
+withdrawn. No downstream result changes.
+
+The user explicitly authorizes HC-27 to replace the hand-only K16W freeze by
+one preregistered decision of the complete normalized existential-polynomial
+sentence. The formula must include positivity, `u=1` scale normalization,
+`u!=v`, three rationally parameterized unit directions, all K17S strict
+containment bounds, exact host closure, bridge irredundancy and exact
+nonintersection of every nonadjacent spine-segment pair. The latter may use
+existential strict separating lines, which are equivalent for disjoint compact
+segments.
+
+SAT reopens K16W only after a separate exact verifier checks the original
+geometric predicates. UNSAT closes K16B only if accompanied by a replayable,
+independently checked exact certificate; a bare solver answer is solver
+evidence, not a theorem. Unknown or the fixed resource stop retains the
+freeze. No second variable ordering, larger budget, weakened simplicity
+condition, extra edge or topology escalation is authorized. The symbolic
+`gamma!=pi/2` family is the proposed follow-on, not part of this run.
+
+## D-0149 (2026-07-22) — Fix the complete K16W decision sentence
+
+K21Q serializes exactly one scale-normalized K16W formula. Tangent-half-angle
+parameters cover the terminal first-quadrant direction and every admitted
+bridge direction; the omitted bridge point `(-1,0)` is already the forbidden
+reducible case. The formula contains 13 base constraints, 32 scalar strict
+containment bounds, one exact host-closure equation and exact closed-segment
+nonintersection for all 120 nonadjacent pairs among the 17 spine segments.
+Strict interior containment separately keeps the spine off the two guard
+edges.
+
+The generated SMT-LIB formula is therefore equivalent to K16W's carrier
+geometry, not a sufficient monotone or sampled subclass. The separate cold
+verifier does not import the solver formulation: for rational solver models it
+reconstructs the original coordinates over `Q(sqrt(2))`, checks all bounds and
+closure, and recomputes the 120 segment intersections. Non-rational models are
+rejected rather than approximated.
+
+The session-134 experiment gate passes before the runner is written. The
+single fixed run must be launched through `scripts/run_research.py`; D-0148's
+claim boundaries remain controlling.
