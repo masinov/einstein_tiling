@@ -184,3 +184,30 @@ is gaplessly covered, angle sum forces the host interior angle to be
 `2*pi-3*pi/2=pi/2`. Any future K7W witness either has that right-angle host
 corner or explicitly admits another participant there. K7A's selector and
 K7C's stem equalities are otherwise unchanged.
+
+## ERR-008 (2026-07-22) — Half-turn spine copies have complementary angles
+
+Session 113's K10B role audit said that the paired copies of each `A,B,C`
+length on the centrally symmetric shield spine were “the same role under
+reversal.” That is false for the polygonal contact geometry being proposed.
+
+If a carrier and its half-turn share the complete spine with disjoint
+interiors, then at every paired spine vertex `p,-p` their two interior angles
+sum to `2*pi`. Hence a convex intended code endpoint of angle `alpha` is
+paired with a reflex auxiliary endpoint of angle `2*pi-alpha`, not another
+copy of the same directed endpoint type. Length reflection alone therefore
+does not recognize `A,B,C`.
+
+Consequences:
+
+- K10B's conditional half-turn docking lemma remains valid;
+- the three mirror sides are auxiliary same-length sides, not declared code
+  roles;
+- intended code roles require length **and** convex endpoint context;
+- the reflex copies cannot occupy an intended internal host junction because
+  the host already contributes `pi` and their angle exceeds `pi`; and
+- every future contact-completeness proof must nevertheless exclude other
+  uses of those same-length auxiliary sides.
+
+No coordinate or polygon claim depended on the incorrect role sentence.
+The session-114 stop fires before the skeleton is promoted.

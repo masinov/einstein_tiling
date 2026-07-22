@@ -181,8 +181,8 @@ Thus `|R-Q|=d*sqrt(2)`. Define the carrier boundary as the two guard sides
 
 ### ST-M1.K10B
 
-If the spine is simple, meets the two guard sides only at `R,Q`, and lies in
-the closed lens bounded by the upper broken path
+If the spine is simple, its relative interior lies in the open lens bounded
+by the upper broken path
 `R--Gamma--Q` and its half-turn, then the carrier and its half-turn have
 disjoint interiors and share exactly `S`. The relative guard--shield
 isometry is the exact half-turn `J`; no docking choice remains.
@@ -203,19 +203,21 @@ The boundary word (5.2) addresses the HC-18 audit burden without silently
 assuming six colors:
 
 - `H` is the unique side of length `7`;
-- `A,B,C` are the length classes `1,2,4`, respectively;
+- the intended `A,B,C` sides are the length classes `1,2,4` **together with
+  their convex endpoint contexts**;
 - `Gamma` is the unique `pi/2` vertex whose two incident sides both have
   length `d` and whose opposite boundary arc contains the unique `H`;
 - the guard pose is rooted by `Gamma` and the ordered `A,B,C,H` progression;
 - the shield pose is the unique full-spine contact rooted by `H`; and
-- the two occurrences of each code length are declared the same role under
-  reversal, which is already the quotient used by K6O.
+- the other occurrences of lengths `1,2,4` are reflex auxiliary sides paired
+  by the shield half-turn, as corrected by ERR-008/N26 below.
 
 This audit assumes every other `d|d` or repeated-angle context is excluded by
 the final coordinate list. If such a context appears, guard recognition
-fails. Likewise, the length word alone does not force another occurrence to
-cover the entire spine; K10B supplies one exact docking, not the all-tilings
-converse.
+fails. The three auxiliary same-length sides are unavoidable and need their
+own contact-completeness exclusions. Likewise, the length word alone does not
+force another occurrence to cover the entire spine; K10B supplies one exact
+docking, not the all-tilings converse.
 
 ## 8. The remaining coordinate system
 
@@ -232,3 +234,59 @@ An HC-19 witness is now a finite list `p_0,...,p_13,Gamma` satisfying:
 Conditions 1--5 construct only the guard/shield pair. Condition 6 is still
 the decisive patch obligation. Session 114 may not replace it with a sketch
 or an optimizer.
+
+## 9. N26: half-turn docking doubles the side contexts
+
+### ST-M1.N26
+
+In every realized K10B full-spine docking, paired spine vertices `p,-p` have
+carrier interior angles summing to `2*pi`. Consequently the mirror of an
+intended code side whose two endpoint angles lie in `(0,pi)` has both endpoint
+angles in `(pi,2*pi)` and is not the same directed code role. The intended
+and auxiliary copies can be distinguished by finite angle context, but not by
+side length alone.
+
+### Proof
+
+At a nonterminal spine vertex, the carrier and its half-turn occupy opposite
+sides of the same two incident spine segments. K10B's lens hypothesis gives
+disjoint interiors and local coverage by those two regions. Their two sectors
+therefore sum to the full `2*pi`. The half-turn sends the angle at `-p` in
+the carrier to the second sector at `p`, proving
+
+```text
+alpha(p) + alpha(-p) = 2*pi.                         (9.1)
+```
+
+Apply (9.1) at both endpoints of a paired code-length side. If the intended
+angles are strictly between zero and `pi`, the paired angles are strictly
+between `pi` and `2*pi`. □
+
+At an internal host subdivision, the host already occupies a straight `pi`
+sector. A reflex auxiliary endpoint cannot participate there without
+overlap, so the K9A primary stars select the convex copy. This repairs local
+role recovery but does not prove global contact completeness.
+
+## 10. HC-19 disposition
+
+The final coordinate obligation was not closed. The fixed word (5.2) gives
+an exact finite equation system and K10B gives the only admitted shield
+isometry, but no list `p_0,...,p_13,Gamma` was derived that simultaneously
+satisfies:
+
+- the five sharp endpoint angles;
+- a simple spine inside the right-angle guard lens;
+- the corrected intended/auxiliary role contexts of N26; and
+- pairwise interior disjointness for every occurrence in both complete
+  `ABC` and `ACB` shield patches.
+
+In particular, closing the guard/shield pair alone would not close the two
+host patches, and a numerical-looking spine was not accepted in place of
+exact inequalities. HC-19's predeclared stop therefore fires. K10B remains a
+conditional reduction and N25/N26 remain exact filters; K10T has no polygonal
+witness and is frozen.
+
+This is not a nonexistence theorem for nonconvex K9T carriers. Reopening the
+same skeleton requires the complete exact coordinate list and both placement
+tables *before* computation. A different spine, partial guard contact or
+contextual pose is a different mechanism requiring a new admission decision.

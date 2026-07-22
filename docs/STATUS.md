@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 113)
+**Last updated:** 2026-07-22 (session 114)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | 🟡 HC-19 active: N25 closes convexity; K10B fixes one 15-edge nonconvex spine and exact half-turn shield docking, with coordinates and both patches due in session 114 (D-0111--D-0124) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-19 exhausted: N25 closes convexity, N26 corrects half-turn role pairing, and K10B remains conditional without coordinates or either complete patch (D-0111--D-0125) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -349,6 +349,12 @@
   guard/shield docking. No coordinates or full host-word patch yet satisfy
   the simplicity, lens, recognition and disjointness obligations
   (K10B/D-0124).
+- **ST-M1 half-turn role correction and HC-19 stop:** paired spine vertices
+  have angles summing to `2pi`, so mirror sides of lengths `1,2,4` are reflex
+  auxiliary contexts, not duplicate code roles. Length plus convex endpoint
+  type repairs local recognition, but no exact simple lens-contained spine or
+  complete `ABC/ACB` placement pair was derived. K10B stays conditional and
+  K10W freezes without a candidate (ERR-008/N26/D-0125).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -831,3 +837,10 @@ Research is under the 2026-07-21 reset recorded in
     the bounded K9T guard-and-shield topology. HC-18 is exhausted at 3 of 3
     sessions with no experiment or generated artifact. Exact geometry needs
     a new checkpoint and predeclared intrinsic role identifications.
+14. The user authorized HC-19 after review. Session 112 enumerates all six
+    occurrence roles and proves N25, closing the complete convex fixed-spoke
+    branch. Session 113 fixes the sole nonconvex 15-edge K10B word and
+    half-turn shield isometry. Session 114 corrects its paired-role claim by
+    ERR-008/N26 and fails to derive a coordinate list satisfying the lens and
+    both full host patches. HC-19 is exhausted at 3 of 3 sessions and freezes
+    without computation or a candidate.

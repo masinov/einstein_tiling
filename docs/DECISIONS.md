@@ -2726,3 +2726,22 @@ This is a finite coordinate system and exact relative isometry, not yet a
 polygon. Session 114 must solve all spine coordinates, simplicity/lens
 inequalities and both eight-occurrence shield patches. Failure closes K9T;
 no second boundary word or coordinate search is admitted.
+
+## D-0125 (2026-07-22) — Correct K10B role pairing and fire HC-19
+
+ERR-008 corrects the session-113 claim that equal-length sides paired across
+the half-turn spine are the same reversal role. Opposite-side full-spine
+docking makes their carrier angles complementary to `2*pi`; intended convex
+code sides are paired with reflex auxiliary sides. Length plus endpoint
+context recovers the intended role locally, and a reflex endpoint cannot fit
+beside the host's `pi` sector at an internal division. The auxiliary sides
+remain an explicit all-tilings contact-completeness burden.
+
+No exact 15-edge coordinate list closes K10B's simultaneous simplicity,
+lens, recognition and both-patch disjointness obligations. The half-turn
+guard/shield pair is insufficient by itself, and no approximate spine is
+promoted. HC-19 is exhausted at session 114, so its stop fires without a
+polygon, SVG, coordinate search or candidate. N25 and N26 are retained as
+exact filters and K10B as a conditional reduction. K10T/K10W are frozen;
+reopening this exact word requires complete coordinates and both placement
+tables before computation.
