@@ -2454,3 +2454,24 @@ is retained only as a conditional test instance and the cyclic-corridor route
 is frozen. Reopening requires an explicit boundary with complete full-contact
 modes, exclusive bounded closure, non-circular state/holonomy, exclusion of
 partial/sliding/vertex faults and one gapless plane lift before any run.
+
+## D-0111 (2026-07-22) — Admit only the subdivision-order T-junction residue
+
+The HC-15 primary-source audit finds that multi-tile edge patches,
+T-junction atlases and locally consistent contact-complex transport are
+already explicit in the Spectre proof. Hellouin de Menibus--Lutfalla--Vanier
+show that arbitrary symbolic rules can be superimposed on any nonempty FLC
+geometric tiling space, but their construction uses labels and forbidden
+patterns; their purely geometric undecidability theorem uses a finite
+machine-dependent shapeset. Sugimoto's convex edge-to-edge theorem supplies
+only a scope boundary: that class always has a periodic monohedral
+realization.
+
+HC-15 therefore makes no general T-junction, FLC-recoding or compiler-novelty
+claim. It admits one narrower object: a host side fully partitioned by
+unequal complete sides of congruent neighbors, with the order of their
+lengths proposed as a locally visible state. Sessions 101--102 may derive
+exact order-capacity and endpoint-angle lemmas and must either give one exact
+nonoverlapping polygonal contact witness with multiple full-isometry states,
+or close the fixed class by a scoped no-go. No enumeration or candidate
+promotion is authorized.

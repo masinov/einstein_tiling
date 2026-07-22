@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-22 (session 99)
+**Last updated:** 2026-07-22 (session 100)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -40,9 +40,9 @@
 
 ## What exists and is verified
 
-- **Versioned literature subsystem:** 36 source records distinguish
+- **Versioned literature subsystem:** 38 source records distinguish
   peer-reviewed theorems, computational methods, preprints, reviews and
-  secondary evidence; 33 open PDFs plus text extracts are reproducibly cached
+  secondary evidence; 35 open PDFs plus text extracts are reproducibly cached
   outside Git. The state-of-the-art map, methods-to-code matrix, reading queue,
   and novelty protocol make exact shape novelty, tiling-system novelty,
   aperiodicity, and method novelty separate claims. Turtle is now a blinded
@@ -267,6 +267,11 @@
   two-mode holonomy analogy lacks an explicit boundary, bounded-cycle theorem,
   exact eleven-word acceptance and visible state. HC-14's kill fires and K5C
   is frozen with reopening obligations R1--R5 (D-0110).
+- **ST-M1 T-junction audit:** complete edge-patch/T-junction atlases and FLC
+  symbolic recodings are prior art. The audited sources do not erase a
+  finite state into one unrestricted congruence class. HC-15 admits only one
+  fully occupied subdivision-word contact class and requires an exact local
+  realization or scoped no-go by session 102, without enumeration (D-0111).
 - **Primary-source polykite baseline and enforced novelty gate:** the positive
   unequal `Tile(a,b)` continuum is completely classified; it contains
   infinitely many polykites; the three degenerate similarity classes are
@@ -722,3 +727,8 @@ Research is under the 2026-07-21 reset recorded in
 9. The `Tile(a,b)` recognizer remains required infrastructure before any
    future polykite novelty promotion, but is not itself the next research
    result.
+10. The user authorized HC-15. Session 100 completed the mandatory
+    T-junction/non-edge-to-edge prior-art audit. Sessions 101--102 may study
+    only the fixed fully occupied subdivision-word class and must stop with
+    an exact polygonal local witness or a scoped no-go. No run, SVG or shape
+    promotion is admitted.

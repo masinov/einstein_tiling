@@ -9,13 +9,13 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-22-14",
+    "id": "HC-2026-07-22-15",
     "date": "2026-07-22",
-    "through_session": 96,
-    "reason": "Sessions 94--96 and the K5S/K5C inverse-dissection checkpoint were independently reviewed. The user explicitly authorized HC-14 with four mandatory prior-art targets: Greenfeld--Tao translational monotiles, Ollinger's small polyomino simulations, Ammann A2 and Socolar--Taylor marked mechanisms, and the Lagae--Kari--Dutre 44/6 corner source. Audit precedes design. Only if an unoccupied geometric obligation remains may HC-14 propose one exact mechanism for K5C.1--K5C.3; otherwise the cyclic-corridor route closes without enumeration.",
+    "through_session": 99,
+    "reason": "Sessions 97--99 completed the HC-14 prior-art audit and fired the predeclared K5C kill after the N17--N19 fixed-rosette and gapless-port bounds. The user explicitly authorized HC-15. HC-15 first audits intentional T-junction and non-edge-to-edge simulation prior art, then studies one minimal gapless three-neighbor junction class. Within at most three sessions it must prove an exact exclusive-choice realization or a scoped no-go; failure closes that junction class without enumeration.",
     "artifact_bytes": {
       "docs/notebook/assets": 6756125300,
-      "data": 1795586222
+      "data": 1806495976
     }
   }
 }

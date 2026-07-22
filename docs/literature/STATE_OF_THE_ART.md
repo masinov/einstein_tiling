@@ -267,6 +267,20 @@ claim.
 
 ## 6. Open directions supported by this survey
 
+The HC-15 contact-complex audit adds a narrow geometric boundary.  The
+Spectre paper's edge-patch lemma already treats finite multi-tile contacts and
+their locally consistent transport, while
+`hellouin-lutfalla-vanier-geometric-2026` shows that arbitrary finite symbolic
+rules can be layered over any nonempty FLC geometric tiling space.  Those are
+not one-support shape-erasure theorems: the former assumes a complete
+correspondence and the latter uses labels/forbidden patterns (or several
+machine-dependent shapes in its purely geometric construction).  The
+`sugimoto-convex-edge-2015` scope boundary further shows that convex
+edge-to-edge monohedral geometry cannot yield an unmarked aperiodic prototile.
+Intentional non-edge-to-edge subdivision is therefore legitimate territory,
+but T-junction atlases and FLC recodings themselves carry no novelty claim.
+See `reviews/TJUNCTION_CONTACT_COMPLEX.md`.
+
 - On paper first, design a faithful one-shape encoding of the three-prototile
   `sqrt(2)-1` Sturmian system. The decisive lemma must exclude every
   shape-only tiling that fails to decode; an atlas rule or one generated patch

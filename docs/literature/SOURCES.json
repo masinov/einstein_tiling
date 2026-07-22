@@ -615,6 +615,40 @@
       "workstreams": ["C"],
       "review_status": "targeted-mechanism-audit",
       "review_note": "docs/literature/reviews/K5C_SINGLE_TILE_SIMULATION.md"
+    },
+    {
+      "id": "hellouin-lutfalla-vanier-geometric-2026",
+      "title": "Decision Problems on Geometric Tilings: Wang Potatoes and Finite Local Complexity",
+      "authors": ["Benjamin Hellouin de Menibus", "Victor H. Lutfalla", "Pascal Vanier"],
+      "year": 2026,
+      "evidence_class": "peer-reviewed theorem",
+      "venue": "Theoretical Computer Science 1067, 115756",
+      "arxiv": null,
+      "doi": "10.1016/j.tcs.2026.115756",
+      "record_url": "https://doi.org/10.1016/j.tcs.2026.115756",
+      "download_url": "https://lutfalla.fr/documents/.preprints/geomino.pdf",
+      "local_filename": "2026-hellouin-lutfalla-vanier-geometric-tilings.pdf",
+      "themes": ["geometric tilings", "finite local complexity", "symbolic-geometric simulation", "forbidden patterns", "undecidability"],
+      "workstreams": ["C"],
+      "review_status": "targeted-scope-audit",
+      "review_note": "docs/literature/reviews/TJUNCTION_CONTACT_COMPLEX.md"
+    },
+    {
+      "id": "sugimoto-convex-edge-2015",
+      "title": "Tiling Problem: Convex Pentagons for Edge-to-Edge Monohedral Tiling and Convex Polygons for Aperiodic Tiling",
+      "authors": ["Teruhisa Sugimoto"],
+      "year": 2015,
+      "evidence_class": "preprint",
+      "venue": "arXiv:1508.01864",
+      "arxiv": "1508.01864",
+      "doi": null,
+      "record_url": "https://arxiv.org/abs/1508.01864",
+      "download_url": "https://arxiv.org/pdf/1508.01864",
+      "local_filename": "1508.01864-convex-edge-to-edge-tiling.pdf",
+      "themes": ["convex polygons", "edge-to-edge tiling", "periodic tiling", "matching conditions"],
+      "workstreams": ["C"],
+      "review_status": "targeted-scope-audit",
+      "review_note": "docs/literature/reviews/TJUNCTION_CONTACT_COMPLEX.md"
     }
   ]
 }

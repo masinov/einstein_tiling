@@ -61,6 +61,13 @@ assumptions, exact claims used here, and a repository impact decision.
    realization needs at least 11 states and four colors. No rule-set
    enumeration is authorized. See
    `reviews/BINARY_PLAQUETTE_RADIUS.md`.
+10. `hellouin-lutfalla-vanier-geometric-2026`,
+    `sugimoto-convex-edge-2015`, and the edge-patch machinery of
+    `smkgs-chiral-2024` — HC-15 scope audit completed 2026-07-22. General
+    T-junction/edge-patch languages and symbolic rules on FLC geometry are
+    prior art, but no audited theorem erases a subdivision-order state into
+    one unrestricted congruence class. See
+    `reviews/TJUNCTION_CONTACT_COMPLEX.md`.
 
 ## Immediate: research-return decision
 
@@ -72,30 +79,30 @@ proof design.
 
 ## Next: machine representations
 
-10. `labbe-selinger-markov-2026` — reproduce the Hat SFT/toral coding and
+11. `labbe-selinger-markov-2026` — reproduce the Hat SFT/toral coding and
    record its explicit Turtle and Spectre/CASPr open questions.
-11. `tatham-transducers-2026` — reproduce one Hat address/neighbor transducer
+12. `tatham-transducers-2026` — reproduce one Hat address/neighbor transducer
    and test exact random access against our generator.
-12. `james-smith-rhombic-2024` — compare the rhombille coloring game and
+13. `james-smith-rhombic-2024` — compare the rhombille coloring game and
    Fibonacci/Sturmian structure with the Akiyama--Araki route.
-13. `akiyama-hamada-ito-sturmian-2026` — do not reproduce yet; first complete
+14. `akiyama-hamada-ito-sturmian-2026` — do not reproduce yet; first complete
    the ST-M1 congruence/no-spurious-tilings theorem design.
-14. `coulbois-et-al-groups-2026` — use as a cardinality/acting-group boundary,
+15. `coulbois-et-al-groups-2026` — use as a cardinality/acting-group boundary,
    not as a tile-set-to-Euclidean-monotile conversion.
 
 ## Characterization controls
 
-15. `baake-gaehler-sadun-hat-2025` — record the exact deformation,
+16. `baake-gaehler-sadun-hat-2025` — record the exact deformation,
     conjugacy, MLD, cohomology, and model-set statements.
-16. `baake-et-al-spectre-order-2025` — do the analogous CASPr audit.
-17. `baake-et-al-diffraction-2025` — compare explicit Fourier modules and
+17. `baake-et-al-spectre-order-2025` — do the analogous CASPr audit.
+18. `baake-et-al-diffraction-2025` — compare explicit Fourier modules and
     coefficients with the limited outputs of A4.
 
 ## Supporting audits
 
-18. `kaplan-path-review-2025` — retain as author-review evidence only; locate
+19. `kaplan-path-review-2025` — retain as author-review evidence only; locate
     primary artifacts before promoting quantitative search claims.
-19. `jungck-biswas-five-polykites-2025` — use as a secondary pointer only and
+20. `jungck-biswas-five-polykites-2025` — use as a secondary pointer only and
     verify named-tile classifications in primary constructions.
 
 The two SMKGS primary papers are already the controlling full-text audits for
