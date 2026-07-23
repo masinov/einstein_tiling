@@ -3641,3 +3641,28 @@ HC-33 is exhausted at session 150 without a formula or solver.  A later
 decision requires new authorization, serialization and cold equivalence
 tests for exactly these six cells, a passing experiment gate and D-0150
 external supervision.
+
+## D-0172 (2026-07-23) — Admit HC-34 fixed six-cell decision
+
+The user explicitly authorizes HC-34 after the corrected HC-33 disposition.
+The instance list is fixed before implementation:
+
+```text
+S1--, S1-+, S2--, S2-+, S3--, S3-+,
+```
+
+where the first bridge sign is K33C's forced negative sign and the final sign
+is the second bridge chart.  Session 151 must preregister, serialize and
+cold-check those exact cells before launch.  Each formula retains complete
+K21Q, N38/K29O, N41/K31C, corrected N42, its full K32S signs, K32A's bounded
+charts and all 120 pair predicates.
+
+If validation passes, run two printed batches of three cells.  Each cell gets
+one Z3 5.0 QF_NRA ordering, a three-hour internal timeout, an independent
+external 10,800-second supervisor with 60-second kill grace, and a 32-GiB
+process memory parameter.  Maximum solver work is eighteen cell-hours and
+maximum elapsed solver time is six hours.  No alternate ordering, additional
+cell, weakened predicate, sequential fallback, timeout increase or post hoc
+escalation is authorized.  SAT requires exact cold model verification; bare
+UNSAT is solver evidence only; resource stop/unknown/unverifiable output
+leaves the named cell open.

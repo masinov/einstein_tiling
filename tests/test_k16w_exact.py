@@ -2,7 +2,7 @@ from fractions import Fraction
 
 import z3
 
-from einstein.theory.k16w_exact import build_problem
+from einstein.theory.k16w_exact import HC34_CELLS, build_problem
 
 
 def test_complete_k16w_formula_has_every_segment_pair():
@@ -66,3 +66,32 @@ def test_err013_central_pairing_preserves_traversed_edge_vectors():
             original = points[first + 1][axis] - points[first][axis]
             mate = points[paired + 1][axis] - points[paired][axis]
             assert z3.is_true(z3.simplify(mate == original))
+
+
+def test_hc34_exact_six_cells_keep_every_segment_pair():
+    assert HC34_CELLS == (
+        "s1-minus-minus", "s1-minus-plus",
+        "s2-minus-minus", "s2-minus-plus",
+        "s3-minus-minus", "s3-minus-plus",
+    )
+    for cell in HC34_CELLS:
+        problem = build_problem(timeout_ms=1000, hc34_cell=cell)
+        assert len(problem.nonadjacent_pairs) == 120
+        assert problem.hc34_cell == cell
+        assert problem.constraint_counts == {
+            "base": 13,
+            "containment_scalar": 32,
+            "closure": 1,
+            "nonadjacent_segment_pairs": 120,
+            "decomposition": 21,
+            "total_top_level": 187,
+        }
+
+
+def test_hc34_unknown_or_mixed_cell_is_rejected():
+    import pytest
+
+    with pytest.raises(ValueError):
+        build_problem(hc34_cell="s4-minus-minus")
+    with pytest.raises(ValueError):
+        build_problem(cell="plus-minus", hc34_cell=HC34_CELLS[0])

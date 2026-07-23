@@ -81,13 +81,20 @@ class K16WProblem:
     points: tuple[Point, ...]
     nonadjacent_pairs: tuple[tuple[int, int], ...]
     constraint_counts: dict[str, int]
+    hc34_cell: str | None = None
 
 
 CELLS = ("plus-minus", "minus-plus")
+HC34_CELLS = tuple(
+    f"s{strand}-minus-{second}"
+    for strand in (1, 2, 3)
+    for second in ("minus", "plus")
+)
 
 
 def build_problem(*, timeout_ms: int | None = None,
-                  cell: str | None = None) -> K16WProblem:
+                  cell: str | None = None,
+                  hc34_cell: str | None = None) -> K16WProblem:
     """Build the complete normalized K16W QF_NRA sentence.
 
     Scale is fixed by ``u=1``.  Tangent-half-angle charts make the three unit
@@ -97,6 +104,10 @@ def build_problem(*, timeout_ms: int | None = None,
 
     if cell is not None and cell not in CELLS:
         raise ValueError(f"unknown K16W cell: {cell}")
+    if hc34_cell is not None and hc34_cell not in HC34_CELLS:
+        raise ValueError(f"unknown HC34 K16W cell: {hc34_cell}")
+    if cell is not None and hc34_cell is not None:
+        raise ValueError("choose either an HC31 cell or an HC34 cell")
 
     solver = z3.SolverFor("QF_NRA")
     if timeout_ms is not None:
@@ -134,8 +145,13 @@ def build_problem(*, timeout_ms: int | None = None,
     ]
 
     z = tangent_unit(t0)
-    z1 = tangent_unit(t1)
-    z2 = tangent_unit(t2)
+    if hc34_cell is None:
+        z1 = tangent_unit(t1)
+        z2 = tangent_unit(t2)
+    else:
+        second_sign = -1 if hc34_cell.endswith("-minus") else 1
+        z1 = cscale(z3.RealVal(-1), tangent_unit(t1))
+        z2 = cscale(z3.RealVal(second_sign), tangent_unit(t2))
     q = (-k, k)
     q2 = (z3.RealVal(0), z3.RealVal(-1))
     q3 = (k, k)
@@ -193,6 +209,49 @@ def build_problem(*, timeout_ms: int | None = None,
                 r_c[0] > 0, r_c[1] > 0,
             ))
         decomposition.append(aa * rel_y - bb * rel_x > 0)
+    elif hc34_cell is not None:
+        # Corrected HC-33: one surviving polarity, three strand orders and
+        # two bounded second-bridge charts.  Every original K21Q predicate
+        # remains conjunctive below.
+        r_b = cmul(z, qz1)
+        r_c = cmul(z, cmul(q3, z12))
+        rel_x = dot(r_b, r_c)
+        rel_y = orient(zero, r_b, r_c)
+        aa = v - b * k
+        bb = b * k - 1
+        decomposition.extend((
+            t1 >= -1, t1 <= 1,
+            t2 >= -1, t2 <= 1,
+            z1[0] < 0,
+            2 * v * v > 23,
+            b > 2 * k,
+            c > 2 * k,
+            r_b[0] > 0, r_b[1] > 0,
+            r_c[0] < 0, r_c[1] < 0,
+            aa * rel_y - bb * rel_x > 0,
+            v < 13,
+            2 * a < 3,
+            43 * b < 98,
+            43 * c < 98,
+            central[0] > 0,
+        ))
+
+        # Twice x_direction times the signed height above y=1/2.
+        n_b = 2 * r_b[0] * (first_half[2][1] - z3.RealVal(1) / 2) + (
+            v - 2 * first_half[2][0]
+        ) * r_b[1]
+        n_c = 2 * r_c[0] * (first_half[5][1] - z3.RealVal(1) / 2) + (
+            v - 2 * first_half[5][0]
+        ) * r_c[1]
+        diff_num = n_c * r_b[0] - n_b * r_c[0]
+        sum_num = n_b * r_c[0] + n_c * r_b[0]
+        strand = hc34_cell[1]
+        if strand == "1":
+            decomposition.extend((n_b > 0, n_c < 0, diff_num < 0))
+        elif strand == "2":
+            decomposition.extend((n_b < 0, n_c > 0, diff_num < 0))
+        else:
+            decomposition.extend((n_b < 0, n_c < 0, sum_num > 0))
 
     nonadjacent_pairs: list[tuple[int, int]] = []
     simplicity: list[z3.BoolRef] = []
@@ -222,4 +281,5 @@ def build_problem(*, timeout_ms: int | None = None,
                 + len(decomposition)
             ),
         },
+        hc34_cell=hc34_cell,
     )

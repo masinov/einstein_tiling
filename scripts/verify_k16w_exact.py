@@ -145,7 +145,15 @@ def rational_model(payload) -> tuple[dict[str, Fraction] | None, list[str]]:
     return (values if not failures else None), failures
 
 
-def verify(values: dict[str, Fraction], cell: str | None = None) -> dict:
+HC34_CELLS = tuple(
+    f"s{strand}-minus-{second}"
+    for strand in (1, 2, 3)
+    for second in ("minus", "plus")
+)
+
+
+def verify(values: dict[str, Fraction], cell: str | None = None,
+           hc34_cell: str | None = None) -> dict:
     a, b, c, v = (Q2(values[name]) for name in ("a", "b", "c", "v"))
     t0, t1, t2 = (values[name] for name in ("t0", "t1", "t2"))
     h = a + b + c
@@ -160,7 +168,18 @@ def verify(values: dict[str, Fraction], cell: str | None = None) -> dict:
     require(Fraction(0) < t0 < Fraction(1), "terminal first-quadrant chart")
     require(t1 != 0 and t2 != 0, "bridge irredundancy")
 
-    z, z1, z2 = tangent(t0), tangent(t1), tangent(t2)
+    z = tangent(t0)
+    if hc34_cell is None:
+        z1, z2 = tangent(t1), tangent(t2)
+    else:
+        require(hc34_cell in HC34_CELLS, "recognized HC34 cell")
+        require(Fraction(-1) <= t1 <= Fraction(1), "bounded first bridge chart")
+        require(Fraction(-1) <= t2 <= Fraction(1), "bounded second bridge chart")
+        raw1, raw2 = tangent(t1), tangent(t2)
+        z1 = (-raw1[0], -raw1[1])
+        second_sign = -1 if hc34_cell.endswith("-minus") else 1
+        z2 = (second_sign * raw2[0], second_sign * raw2[1])
+        require(z1[0].sign() < 0, "K33C first bridge sign")
     q = (Q2(0, Fraction(-1, 2)), Q2(0, Fraction(1, 2)))
     q2 = (Q2(0), Q2(-1))
     q3 = (Q2(0, Fraction(1, 2)), Q2(0, Fraction(1, 2)))
@@ -215,6 +234,42 @@ def verify(values: dict[str, Fraction], cell: str | None = None) -> dict:
             require(r_c[0].sign() > 0 and r_c[1].sign() > 0,
                     "P_-+ C polarity")
         require((aa * rel_y - bb * rel_x).sign() > 0, "K29O safe cell")
+    if hc34_cell is not None:
+        r_b = cmul(z, cmul(q, z1))
+        r_c = cmul(z, cmul(q3, cmul(z1, z2)))
+        rel_x = dot(r_b, r_c)
+        rel_y = orient(zero, r_b, r_c)
+        aa = v - b * Q2(0, Fraction(1, 2))
+        bb = b * Q2(0, Fraction(1, 2)) - 1
+        require((2 * v * v - 23).sign() > 0, "N38 aspect")
+        require((b - Q2(0, 1)).sign() > 0, "N38 b bound")
+        require((c - Q2(0, 1)).sign() > 0, "N38 c bound")
+        require(r_b[0].sign() > 0 and r_b[1].sign() > 0,
+                "P_+- B polarity")
+        require(r_c[0].sign() < 0 and r_c[1].sign() < 0,
+                "P_+- C polarity")
+        require((aa * rel_y - bb * rel_x).sign() > 0, "K29O safe cell")
+        require((13 - v).sign() > 0, "K31C v bound")
+        require((Q2(Fraction(3, 2)) - a).sign() > 0, "K31C a bound")
+        require((Q2(Fraction(98, 43)) - b).sign() > 0, "K31C b bound")
+        require((Q2(Fraction(98, 43)) - c).sign() > 0, "K31C c bound")
+        require(central[0].sign() > 0, "corrected N42 H-east")
+
+        half = Q2(Fraction(1, 2))
+        n_b = 2 * r_b[0] * (first[2][1] - half) + (v - 2 * first[2][0]) * r_b[1]
+        n_c = 2 * r_c[0] * (first[5][1] - half) + (v - 2 * first[5][0]) * r_c[1]
+        diff_num = n_c * r_b[0] - n_b * r_c[0]
+        sum_num = n_b * r_c[0] + n_c * r_b[0]
+        strand = hc34_cell[1]
+        if strand == "1":
+            require(n_b.sign() > 0 and n_c.sign() < 0 and diff_num.sign() < 0,
+                    "K32S S1 signs")
+        elif strand == "2":
+            require(n_b.sign() < 0 and n_c.sign() > 0 and diff_num.sign() < 0,
+                    "K32S S2 signs")
+        else:
+            require(n_b.sign() < 0 and n_c.sign() < 0 and sum_num.sign() > 0,
+                    "K32S S3 signs")
     return {
         "verified": not failures,
         "failures": failures,
@@ -222,6 +277,7 @@ def verify(values: dict[str, Fraction], cell: str | None = None) -> dict:
         "nonadjacent_pairs_checked": 120,
         "field": "Q(sqrt(2))",
         "cell": cell,
+        "hc34_cell": hc34_cell,
     }
 
 
@@ -231,8 +287,10 @@ def main(argv=None) -> int:
         print("usage: verify_k16w_exact.py <k16w-result.json> [cell]", file=sys.stderr)
         return 2
     source = Path(argv[1])
-    cell = argv[2] if len(argv) == 3 else None
-    out = OUT if cell is None else source.with_name(source.stem + "-verification.json")
+    token = argv[2] if len(argv) == 3 else None
+    hc34_cell = token if token in HC34_CELLS else None
+    cell = token if token is not None and hc34_cell is None else None
+    out = OUT if cell is None and hc34_cell is None else source.with_name(source.stem + "-verification.json")
     payload = json.loads(source.read_text())
     result = {
         "kind": "k16w-exact-cold-verification",
@@ -248,7 +306,7 @@ def main(argv=None) -> int:
         values, failures = rational_model(payload)
         result["failures"].extend(failures)
         if values is not None:
-            result.update(verify(values, cell=cell))
+            result.update(verify(values, cell=cell, hc34_cell=hc34_cell))
     out.write_text(json.dumps(result, indent=1) + "\n")
     print(json.dumps(result, indent=1))
     return 0 if result["verified"] else 1
