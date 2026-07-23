@@ -23,6 +23,7 @@ def test_agent_instructions_make_the_gate_mandatory():
     assert "Human checkpoint cadence" in instructions
     assert "User facts are gates" in instructions
     assert "scripts/run_research.py" in instructions
+    assert "External wall-clock enforcement" in instructions
     assert (ROOT / "AGENTS.md").is_file()
 
 

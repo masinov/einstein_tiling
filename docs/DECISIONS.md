@@ -3241,3 +3241,22 @@ rejected rather than approximated.
 The session-134 experiment gate passes before the runner is written. The
 single fixed run must be launched through `scripts/run_research.py`; D-0148's
 claim boundaries remain controlling.
+
+## D-0150 (2026-07-23) — K16W exact decision reaches the resource stop
+
+The complete fixed K21Q formula ran in screen `k16w_hc27` from 23:04 on July
+22 until host inspection at 08:31 on July 23. It consumed 9h26m33s of CPU and
+emitted no SAT, UNSAT or `unknown` verdict. Z3 5.0.0.0 did not return control
+at its requested eight-hour internal timeout, so the preregistered wall-clock
+stop was enforced externally at 9h27m27s observed wall time.
+
+This is a `resource_stop`, not a mathematical result. K16W remains open and
+frozen; there is no model to cold-verify and no UNSAT certificate. D-0148
+forbids a second ordering, enlarged budget, weakened simplicity condition or
+rerun. The exact 386,654-byte SMT-LIB formula and a result manifest are
+retained for audit.
+
+Future native solver jobs with a wall-clock stop must be launched beneath an
+external process supervisor. An internal solver timeout alone does not satisfy
+the experiment stop rule. The next proposed branch remains the symbolic
+non-right guard-angle family, requiring a new explicit authorization.

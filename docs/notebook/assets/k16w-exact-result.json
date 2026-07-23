@@ -1,0 +1,39 @@
+{
+ "kind": "k16w-exact-qfnra-result",
+ "schema_version": 1,
+ "date": "2026-07-23",
+ "status": "resource_stop",
+ "solver_verdict": null,
+ "model": null,
+ "launch_time": "2026-07-22T23:04:12+02:00",
+ "stop_time": "2026-07-23T08:31:39+02:00",
+ "observed_wall_seconds": 34047,
+ "observed_cpu_time": "09:26:33",
+ "timeout_requested_ms": 28800000,
+ "timeout_enforced_by_solver": false,
+ "external_stop": "screen -S k16w_hc27 -X quit",
+ "z3_version": "5.0.0.0",
+ "code_version": "f375dd941bbd2562b68a98d9e01453c22a71fbf3",
+ "formula": {
+  "path": "docs/notebook/assets/k16w-exact-qfnra.smt2",
+  "sha256": "b3e4c2acf34e3e5fe78feb3ce5b79c6583af77649261f2ee42c805573e6ad301",
+  "bytes": 386654,
+  "constraint_counts": {
+   "base": 13,
+   "containment_scalar": 32,
+   "closure": 1,
+   "nonadjacent_segment_pairs": 120,
+   "total_top_level": 166
+  },
+  "normalization": "u=1",
+  "simplicity": "exact closed-segment nonintersection on all 120 nonadjacent pairs"
+ },
+ "evidence": {
+  "screen": "k16w_hc27",
+  "log": "logs/k16w-hc27.screen.log",
+  "last_log_output": "research gate passed; no solver verdict emitted",
+  "result_file_at_stop": false,
+  "cold_verification_run": false
+ },
+ "conclusion": "The fixed complete K16W sentence received no SAT, UNSAT, or unknown verdict before the preregistered wall-clock stop. K16W remains open and frozen. This is not evidence of satisfiability or unsatisfiability."
+}

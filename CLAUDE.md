@@ -41,6 +41,10 @@ it live in `docs/program/ERRATA.md` — the spec itself is never edited.
   via `scripts/run_research.py <notebook> -- <command>`. A session containing
   an ungated research run is invalid. Unit tests and read-only diagnostics are
   exempt; census/radius/index/SAT/search jobs are not.
+- **External wall-clock enforcement for native solvers** (D-0150). When a
+  preregistration declares a wall-clock stop, wrap native SAT/SMT/CAD/MIP
+  processes in an external supervisor. An internal library timeout alone does
+  not satisfy the stop rule; Z3 NLSAT has been observed not to return at it.
 - **Human checkpoint cadence** (D-0065): stop after at most three numbered
   research sessions or 1 GiB of new artifacts since the checkpoint recorded
   in `docs/HUMAN_CHECKPOINTS.json`, whichever comes first. Present a decision
