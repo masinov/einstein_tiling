@@ -1,0 +1,108 @@
+{
+ "kind": "k16w-hc34-formula-manifest",
+ "schema_version": 1,
+ "date": "2026-07-23",
+ "code_version": "a984181",
+ "cell_order": [
+  "s1-minus-minus",
+  "s1-minus-plus",
+  "s2-minus-minus",
+  "s2-minus-plus",
+  "s3-minus-minus",
+  "s3-minus-plus"
+ ],
+ "records": [
+  {
+   "cell": "s1-minus-minus",
+   "path": "docs/notebook/assets/k16w-hc34-s1-minus-minus.smt2",
+   "sha256": "3c31a232c68e71ede715f47d8308379f2c424ce524ae63e87478268e94250bbd",
+   "bytes": 400755,
+   "constraint_counts": {
+    "base": 13,
+    "containment_scalar": 32,
+    "closure": 1,
+    "nonadjacent_segment_pairs": 120,
+    "decomposition": 21,
+    "total_top_level": 187
+   },
+   "nonadjacent_pairs": 120
+  },
+  {
+   "cell": "s1-minus-plus",
+   "path": "docs/notebook/assets/k16w-hc34-s1-minus-plus.smt2",
+   "sha256": "0513ed45d58c47856375449dceb159a9f7d12b2523c3b9a2b9d4cae1e6d46309",
+   "bytes": 420139,
+   "constraint_counts": {
+    "base": 13,
+    "containment_scalar": 32,
+    "closure": 1,
+    "nonadjacent_segment_pairs": 120,
+    "decomposition": 21,
+    "total_top_level": 187
+   },
+   "nonadjacent_pairs": 120
+  },
+  {
+   "cell": "s2-minus-minus",
+   "path": "docs/notebook/assets/k16w-hc34-s2-minus-minus.smt2",
+   "sha256": "b4bcb4dc4c39cf44721efe20d758ecfc2d424767d1088afc1dfe1a3e1a221359",
+   "bytes": 401516,
+   "constraint_counts": {
+    "base": 13,
+    "containment_scalar": 32,
+    "closure": 1,
+    "nonadjacent_segment_pairs": 120,
+    "decomposition": 21,
+    "total_top_level": 187
+   },
+   "nonadjacent_pairs": 120
+  },
+  {
+   "cell": "s2-minus-plus",
+   "path": "docs/notebook/assets/k16w-hc34-s2-minus-plus.smt2",
+   "sha256": "2c23428703987a6adabc587a03e236b5799d83dfa1dda78d90e8428f5a6209f7",
+   "bytes": 420139,
+   "constraint_counts": {
+    "base": 13,
+    "containment_scalar": 32,
+    "closure": 1,
+    "nonadjacent_segment_pairs": 120,
+    "decomposition": 21,
+    "total_top_level": 187
+   },
+   "nonadjacent_pairs": 120
+  },
+  {
+   "cell": "s3-minus-minus",
+   "path": "docs/notebook/assets/k16w-hc34-s3-minus-minus.smt2",
+   "sha256": "df830a86d2ba58df182a6539260981d659caebc84c41f2b74fc4604760830036",
+   "bytes": 402837,
+   "constraint_counts": {
+    "base": 13,
+    "containment_scalar": 32,
+    "closure": 1,
+    "nonadjacent_segment_pairs": 120,
+    "decomposition": 21,
+    "total_top_level": 187
+   },
+   "nonadjacent_pairs": 120
+  },
+  {
+   "cell": "s3-minus-plus",
+   "path": "docs/notebook/assets/k16w-hc34-s3-minus-plus.smt2",
+   "sha256": "7460c20e5245a10510f8437fc8280ac1de92dfbf814e29becccbd060c73d24e5",
+   "bytes": 420107,
+   "constraint_counts": {
+    "base": 13,
+    "containment_scalar": 32,
+    "closure": 1,
+    "nonadjacent_segment_pairs": 120,
+    "decomposition": 21,
+    "total_top_level": 187
+   },
+   "nonadjacent_pairs": 120
+  }
+ ],
+ "complete": true,
+ "claim_boundary": "serialization only; no solver verdict"
+}

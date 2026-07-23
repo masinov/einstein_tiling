@@ -1,8 +1,14 @@
 from fractions import Fraction
+from hashlib import sha256
+import json
+from pathlib import Path
 
 import z3
 
 from einstein.theory.k16w_exact import HC34_CELLS, build_problem
+
+
+ROOT = Path(__file__).resolve().parent.parent
 
 
 def test_complete_k16w_formula_has_every_segment_pair():
@@ -95,3 +101,21 @@ def test_hc34_unknown_or_mixed_cell_is_rejected():
         build_problem(hc34_cell="s4-minus-minus")
     with pytest.raises(ValueError):
         build_problem(cell="plus-minus", hc34_cell=HC34_CELLS[0])
+
+
+def test_hc34_formula_manifest_pins_all_six_complete_cells():
+    path = ROOT / "docs/notebook/assets/k16w-hc34-formulas.json"
+    payload = json.loads(path.read_text())
+    assert payload["code_version"] == "a984181"
+    assert payload["complete"] is True
+    assert payload["cell_order"] == list(HC34_CELLS)
+    assert len(payload["records"]) == 6
+    for record, cell in zip(payload["records"], HC34_CELLS):
+        formula = ROOT / record["path"]
+        data = formula.read_bytes()
+        assert record["cell"] == cell
+        assert record["sha256"] == sha256(data).hexdigest()
+        assert record["bytes"] == len(data)
+        assert record["nonadjacent_pairs"] == 120
+        assert record["constraint_counts"]["total_top_level"] == 187
+        assert sum(line.startswith(b"(assert") for line in data.splitlines()) == 187

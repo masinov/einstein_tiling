@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-34 active: the six corrected K16W cells are preregistered and the 187-constraint builder/cold verifier pass; formulas must be serialized from a stable commit before the two supervised batches launch (D-0111--D-0172) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-34 active: six 187-assertion formulas are checksummed from `a984181`, cold-pinned and ready for the fixed two-batch supervised launch; no verdict yet (D-0111--D-0173) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).

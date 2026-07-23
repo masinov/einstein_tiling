@@ -3666,3 +3666,18 @@ cell, weakened predicate, sequential fallback, timeout increase or post hoc
 escalation is authorized.  SAT requires exact cold model verification; bare
 UNSAT is solver evidence only; resource stop/unknown/unverifiable output
 leaves the named cell open.
+
+## D-0173 (2026-07-23) — Freeze the six HC-34 formulas before launch
+
+The experiment gate passes before implementation.  From stable revision
+`a984181`, the cold serializer writes exactly the six D-0172 cells.  Every
+formula has 187 top-level assertions: 13 base constraints, 32 containment
+bounds, one closure equation, all 120 nonadjacent-pair predicates and 21
+admitted theorem/chart/strand constraints.
+
+The manifest fixes cell order, SHA-256, byte size, constraint counts and code
+version.  Regression tests recompute all of them independently.  The rational
+model verifier separately reconstructs the selected charts and strand signs
+before checking the original geometry.  The formulas are now immutable for
+the HC-34 launch; any drift, reordering or missing manifest record aborts the
+runner rather than regenerating a different instance.
