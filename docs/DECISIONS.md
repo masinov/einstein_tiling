@@ -3607,3 +3607,18 @@ remain resource stops rather than computational evidence.
 This is not a general monotile, guard-and-shield or unequal-leg no-go.
 Reopening requires changing a named topological or thin-lens hypothesis, not
 increasing a solver budget.
+
+## D-0170 (2026-07-23) — Supersede D-0169; retain only H-east
+
+ERR-013 identifies a directed-edge error in D-0169.  Central pairing preserves
+the traversed C and B vectors because its half-turn and reversed indexing
+contribute two sign changes.  C' is westward, not eastward, so the short
+`p_9`--`p_11` path does not reset between terminal and initial endpoints of
+two eastward segments.  The H-east half of the claimed contradiction is
+invalid.
+
+The H-west branch and every radical comparison survive.  They prove the
+corrected N42: complete K16W forces `v-2*p_(8,x)>0`, so H points east and the
+five long strands are traversed `E,W,E,W,E`.  K16W is open/frozen, all sixteen
+K32S/K32A cells remain, and D-0168's theorem-first HC-33 authorization resumes
+with this exact sign added.  No formula or solver is launched by this repair.

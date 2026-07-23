@@ -1,5 +1,7 @@
 from fractions import Fraction
 
+import z3
+
 from einstein.theory.k16w_exact import build_problem
 
 
@@ -52,3 +54,15 @@ def test_n42_exact_reset_budget_comparisons():
     assert 1690 > 36 * 46
     # sqrt(46)+sqrt(42)>12 makes delta_0<1/6.
     assert 46 > 36 and 42 > 36
+
+
+def test_err013_central_pairing_preserves_traversed_edge_vectors():
+    problem = build_problem(timeout_ms=1000, cell="plus-minus")
+    points = problem.points
+    # C' (segment 11) has the same traversed vector as C (segment 5),
+    # and B' (segment 14) the same as B (segment 2).
+    for first, paired in ((5, 11), (2, 14)):
+        for axis in (0, 1):
+            original = points[first + 1][axis] - points[first][axis]
+            mate = points[paired + 1][axis] - points[paired][axis]
+            assert z3.is_true(z3.simplify(mate == original))

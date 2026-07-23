@@ -2,8 +2,14 @@
 
 **Date:** 2026-07-23
 
-**Status:** HC-33 theorem draft; the complete K16W existential obligation is
-refuted, with no solver, polygon, patch or candidate
+**Status:** corrected HC-33 theorem draft; H-west is refuted and the central
+host must point east, but K16W remains open
+
+> **ERR-013 correction.**  The original version claimed that central pairing
+> reversed the traversed direction of C'.  In fact the half-turn negation and
+> reversed vertex indexing cancel:
+> `p_12-p_11=p_6-p_5`.  Thus C' is westward like C.  The H-east reset argument,
+> the all-cell empty table and the claimed K16W refutation are withdrawn.
 
 **Scope:** the fixed 19-edge K16B unequal-spoke rectangular carrier,
 normalized by `u=1`
@@ -31,40 +37,44 @@ K21Q's segment predicates.
 
 ## 2. The forced neighboring pair
 
-In the sole N41-surviving polarity cell, the length-`v` C strand is westward.
-Its centrally paired mate C' is eastward.  Let the central H strand have
-length
+In the sole N41-surviving polarity cell, the length-`v` B strand is eastward
+and the C strand is westward.  Central pairing preserves their **traversed**
+edge vectors:
 
 ```text
-h=a+b+c.                                          (2.1)
+p_12-p_11=p_6-p_5,       p_15-p_14=p_3-p_2.      (2.1)
+```
+
+The half-turn negates the geometric vector, but the paired vertex indexing
+reverses its order; the two signs cancel.  Hence C' is westward like C and B'
+is eastward like B.  Let the central H strand have length
+
+```text
+h=a+b+c.                                          (2.2)
 ```
 
 Every endpoint is in the open `v`-by-1 rectangle.  Therefore the C/C'
 horizontal span is strictly above
 
 ```text
-L=sqrt(v^2-1),                                    (2.2)
+L=sqrt(v^2-1),                                    (2.3)
 ```
 
 and the H horizontal span is strictly above
 
 ```text
-M=sqrt(h^2-1).                                    (2.3)
+M=sqrt(h^2-1).                                    (2.4)
 ```
 
 The central strand cannot be vertical because `h>5/sqrt(2)>1`, whereas its
 vertical displacement is below `1`.  Hence it points either west or east.
 
-- If H points west, C and H have the same polarity.  The intervening path is
-  exactly the `c,1` path from `p_6` to `p_8`.
-- If H points east, H and C' have the same polarity.  The intervening path is
-  the centrally paired `1,c` path from `p_9` to `p_11`.
-
-Thus (1.1) gives in both exhaustive cases
+If H points west, C and H have the same polarity.  The intervening path is
+exactly the `c,1` path from `p_6` to `p_8`.  Thus (1.1) gives
 
 ```text
 c+1>M+L-v=M-delta(v),
-M<c+1+delta(v),                                  (2.4)
+M<c+1+delta(v),                                  (2.5)
 ```
 
 where `delta(v)=v-sqrt(v^2-1)`.
@@ -114,52 +124,49 @@ c+1+delta(v)<U_0+1+delta_0
                  <13/6+1+1/6=10/3.              (3.6)
 ```
 
-## 4. ST-M1.N42: K16W is empty
+## 4. Corrected ST-M1.N42: H must point east
 
-There is no simple K16W spine in the fixed K16B topology.
+Every simple K16W spine in the fixed K16B topology has eastward central H
+edge:
+
+```text
+Re(p_9-p_8)=v-2*p_(8,x)>0,
+p_(8,x)<v/2.                                      (4.1)
+```
 
 **Admitted form:** necessary-condition implication from complete K16W,
 ending in contradiction.
 
 ### Proof
 
-Section 2 exhausts the two possible horizontal polarities of H and proves
-the necessary reset inequality `M<c+1+delta(v)`.  Sections 3.5--3.6 prove
-the strict reverse chain
+If H were westward, Section 2 would prove the necessary reset inequality
+`M<c+1+delta(v)`.  Sections 3.5--3.6 prove the strict reverse chain
 
 ```text
 M>10/3>c+1+delta(v).
 ```
 
-Contradiction.  The proof uses only complete K16W containment, simplicity,
-the fixed K16B edge order, N38 and the admitted K30W/K31C bounds.  □
+Contradiction.  H is nonvertical, so it must point east.  The proof uses only
+complete K16W containment, simplicity, the fixed K16B edge order, N38 and the
+admitted K30W/K31C bounds.  □
 
-## 5. Exact disposition of the 16 HC-32 cells
+## 5. Corrected disposition of the 16 HC-32 cells
 
 Each K32S strand cell `S_1,...,S_4` and each K32A chart pair
-`(+,+),(+,-),(-,+),(-,-)` inherits (2.4), because neither the reset lemma
-nor the weight budget selects a bridge chart or vertical order.  Hence the
-complete table is
+`(+,+),(+,-),(-,+),(-,-)` inherits only (4.1).  The fixed long-strand
+traversal pattern is
 
 ```text
-             S_1       S_2       S_3       S_4
-(+,+)        empty     empty     empty     empty
-(+,-)        empty     empty     empty     empty
-(-,+)        empty     empty     empty     empty
-(-,-)        empty     empty     empty     empty
+B east, C west, H east, C' west, B' east.         (5.1)
 ```
 
-Every entry is refuted by the same necessary inequality and its exact
-opposite.  No discriminant or strict-boundary stratum survives, so K32R does
-not require computational treatment and no HC-33 formula is warranted.
+No K32S order or K32A chart pair is refuted by N42.  All sixteen cells remain
+open subject to the new exact sign `v-2*p_(8,x)>0`, every original predicate,
+and K32R's discriminant/strict-boundary treatment.
 
 ## 6. Scope boundary
 
-N42 refutes K16W: the exact witness obligation for the minimal 19-edge
-split-spoke rectangular carrier K16B.  It does **not** prove that no
-aperiodic monotile exists, that no guard-and-shield construction exists, or
-that unequal guard legs and other boundary words are impossible.  The
-conditional symbolic compiler and K13F weighted-language family remain
-valid.  Reopening this geometric route requires changing a named N42
-hypothesis, such as the fixed `C,1,H,1,C'` neighboring topology or the unit-
-height thin lens; a longer solver budget is not a change of hypothesis.
+N42 excludes only the H-west half of K16W.  The H-east half, all four vertical
+strand orders, all four bridge-chart pairs and the complete simplicity
+problem remain open.  The reset lemma has no corresponding short
+terminal-to-initial path in the alternating traversal pattern (5.1).

@@ -45,6 +45,7 @@ def test_stm1_source_correction_is_fail_closed():
     assert "ERR-010" in errata
     assert "ERR-011" in errata
     assert "ERR-012" in errata
+    assert "ERR-013" in errata
     assert "12S+6M+6L" in errata
     assert "ST-M1.E∞" in ledger
     assert "proof-draft; G0 support plus L0 symbolic language transport" in ledger

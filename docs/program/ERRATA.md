@@ -346,3 +346,46 @@ Consequences:
   lower branch; and
 - no future theorem or decision run may close the family without covering
   both non-right subintervals.
+
+## ERR-013 (2026-07-23) — N42 reversed a centrally paired traversal vector
+
+Theory note 41 and session 148 originally claimed that the centrally paired
+mate C' of the westward C strand was traversed eastward.  This is false.
+Central pairing is
+
+```text
+p_(17-k)=D-p_k.
+```
+
+For the paired C and B edges this gives exactly
+
+```text
+p_12-p_11=p_6-p_5,
+p_15-p_14=p_3-p_2.
+```
+
+The half-turn negates an undirected geometric vector, but reversing the paired
+vertex indices negates it again.  Thus C' is westward like C and B' is
+eastward like B.  The original H-east branch joined the terminal endpoint of
+H to the **terminal**, not initial, endpoint of C'; the directed reset lemma
+does not apply.
+
+The arithmetic budget in note 41 is correct and the H-west branch survives.
+It proves only the corrected N42:
+
+```text
+v-2*p_(8,x)>0,
+```
+
+so every K16W central H edge must point east.  The long-strand traversal is
+therefore `E,W,E,W,E`.  No K32S strand order or K32A chart pair is eliminated
+by this result.
+
+Consequences:
+
+- the all-cell empty table and the K16W refutation are withdrawn;
+- D-0169 is superseded by D-0170;
+- K16W returns to open/frozen with the H-east sign added;
+- session 148's terminal-outcome statement is withdrawn; and
+- directed-strand claims must henceforth be pinned by exact symbolic edge-
+  vector identities, not inferred from the carrier's half-turn alone.
