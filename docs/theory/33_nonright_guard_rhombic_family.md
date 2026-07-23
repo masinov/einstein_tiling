@@ -238,3 +238,164 @@ N33 specialization control.  They are a reduction, not a terminal HC-28
 outcome.  The remaining sessions must either prove this entire non-right
 family empty, exhibit exact data satisfying K22S including all 66 simplicity
 predicates, or fire the predeclared freeze at one named surviving obligation.
+
+## 8. K23I: three full spokes force one angle interval
+
+Write
+
+```text
+phi=pi-gamma                                             (8.1)
+```
+
+for the angle between the two rhombus basis vectors.  Normalize `d=1`.
+If a unit displacement is
+
+```text
+u=r+s*exp(i*phi),                                       (8.2)
+```
+
+then a translate of its closed segment has both endpoints strictly inside
+the unit rhombus only if
+
+```text
+|r|<1,       |s|<1.                                    (8.3)
+```
+
+Indeed the two endpoint differences in oblique coordinates are exactly
+`(r,s)`.  Conversely, (8.3) lets the isolated segment be translated into the
+open unit square in oblique coordinates.  Thus (8.3) is exact for an isolated
+spoke, although it does not couple the three spokes into one spine.
+
+Modulo an unoriented angle `pi`, successive spoke directions differ by
+
+```text
+2*tau=pi+gamma=-phi (mod pi).                          (8.4)
+```
+
+### ST-M1.K23I
+
+If all three `d` spokes of a K22S spine have their endpoints in the open
+rhombus, then, up to reflection,
+
+```text
+pi/3 < gamma <= pi/2.                                  (8.5)
+```
+
+For the non-right HC-28 family this sharpens to
+
+```text
+pi/3 < gamma < pi/2.                                   (8.6)
+```
+
+Moreover, write the first `A` direction as
+
+```text
+delta=phi/2-epsilon.
+```
+
+The three isolated-spoke conditions force
+
+```text
+0 < epsilon < min(3*gamma-pi, phi/2).                 (8.7)
+```
+
+### Proof
+
+For a unit vector at projective angle `psi`, its oblique coefficients are
+
+```text
+r=sin(phi-psi)/sin(phi),
+s=sin(psi)/sin(phi).                                  (8.8)
+```
+
+If `0<phi<pi/2`, conditions (8.3) put the projective direction strictly
+between the two rhombus sides.  The three spoke directions are translates of
+one another by the interval length `phi`, so three distinct translates cannot
+all lie in that one open interval.  Hence `phi>=pi/2`, or
+`gamma<=pi/2`.
+
+Now take the obtuse-lens range `0<gamma<pi/2`.  Formula (8.8) shows that the
+complete set of projective directions satisfying (8.3) is
+
+```text
+(-gamma,0) union (pi-2*gamma,gamma),                  (8.9)
+```
+
+where empty intervals are discarded and angles are read modulo `pi`.  Three
+directions separated by `gamma` fit in (8.9) only if
+`3*gamma>pi`; equality puts one of them on a rhombus side and violates the
+strict inequality.  This proves the lower bound in (8.5).
+
+The first code edge leaves `R` into the lens, so `0<delta<phi`.  Reflection
+about the rhombus bisector changes `delta-phi/2` to its negative; choose the
+representative `delta-phi/2=-epsilon`.  The first spoke line then has angle
+`-epsilon`, and the other two have projective angles
+`gamma-epsilon` and `2*gamma-epsilon`.  Membership in (8.9) gives
+`epsilon<3*gamma-pi`; `delta>0` gives `epsilon<phi/2`.
+All inequalities reverse directly to show these are the exact isolated-spoke
+orientation conditions.  □
+
+K23I is a necessary family reduction.  It does not prove that the three
+translated segments share compatible intermediate code edges.
+
+## 9. Exact rational containment control
+
+The surviving interval is not vacuous at the level of the 24 containment
+inequalities.  Choose
+
+```text
+cos(gamma/2)=4/5,       sin(gamma/2)=3/5,
+z=(4+3*i)/5,            d=1,
+(a,b,c)=(19/20,17/20,1/2).                           (9.1)
+```
+
+Then
+
+```text
+cos(gamma)=7/25,        sin(gamma)=24/25,
+q=(-3+4*i)/5,           g=(-7+24*i)/25.              (9.2)
+```
+
+In the rhombic basis `(1,g)`, the six unit direction increments
+`z*q^j`, `0<=j<=5`, are
+
+```text
+( 39/40,          5/8),
+(-527/600,        7/24),
+( 79/1000,      -39/40),
+(11753/15000,   527/600),
+(-25481/25000,  -79/1000),
+(164833/375000,-11753/15000).                        (9.3)
+```
+
+After multiplying alternately by `a,1,b,1,c,1`, the six partial sums are
+
+```text
+(741/800,              19/32),
+(23/480,               85/96),
+(863/7500,             17/300),
+(4493/5000,           187/200),
+(19449/50000,        1791/2000),
+(621401/750000,      3359/30000).                    (9.4)
+```
+
+Every numerator in (9.4) is strictly between `0` and its denominator, so all
+first-half and centrally paired vertices satisfy (4.1) exactly.  This control
+does **not** satisfy closure: `h=23/10`, while the rhombus diameter is
+
+```text
+2*cos(gamma/2)=8/5.                                  (9.5)
+```
+
+It proves only that containment is nonempty inside K23I's surviving interval.
+Consequently a family closure must couple containment to the host chord; it
+cannot dismiss the interval as an isolated-spoke or prefix artifact.
+
+## 10. Session-136 disposition
+
+K23I closes every non-right guard angle outside
+`pi/3<gamma<pi/2`.  The exact rational control (9.1)--(9.5) shows why that
+remaining open interval is a real coupled problem.  HC-28 is at session 2 of
+3.  Session 137 must either produce a complete exact simple K22S witness,
+prove that containment in this interval forces `h` above the rhombus
+diameter, or fire the predeclared freeze at that precise implication.

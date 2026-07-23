@@ -3282,3 +3282,21 @@ freeze at one explicitly named surviving obligation. Merely writing the
 family is not success. No numerical angle sweep, QE/CAD/SMT run, topology
 change, extra participant, SVG, placement-patch claim or candidate promotion
 is authorized.
+
+## D-0152 (2026-07-23) — Reduce the non-right family to one open interval
+
+K23I applies exact rhombic-coordinate chord conditions to the three full
+`d` spokes. Up to reflection, they can all fit only when
+`pi/3<gamma<=pi/2`, with the global first-edge direction in the explicit
+interval (8.7). Since HC-28 excludes the right angle already closed by N33,
+only `pi/3<gamma<pi/2` survives.
+
+This necessary reduction is not a family no-go. K23C gives one exact rational
+angle, orientation and positive weight tuple whose six first-half vertices
+all lie strictly inside the rhombus. Its host length exceeds the rhombus
+diameter, so it is deliberately not a closure or candidate claim. The final
+HC-28 obligation is now exact: decide whether complete containment anywhere
+in the surviving interval can coexist with `h` below the rhombus diameter
+and the central host equation. If neither a proof nor a complete simple
+witness is obtained in session 137, freeze at that implication without a
+search or solver run.
