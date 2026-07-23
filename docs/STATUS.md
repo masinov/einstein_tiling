@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-23 (session 137 HC-28 frozen at simplicity)
+**Last updated:** 2026-07-23 (session 138 HC-29 closes K24W by N37)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-28 exhausted 3/3: exact K24C proves lower-branch containment+closure exists, N36 rejects it by a transverse crossing; ERR-012 widens open/frozen K24W to both non-right branches `(pi/3,2*pi/3) minus {pi/2}` (D-0111--D-0154) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-29 closed: N37 refutes the complete K22S equal-spoke non-right rhombic family by a forced transverse crossing; no solver run and no tile (D-0111--D-0156) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -1032,3 +1032,14 @@ Research is under the 2026-07-21 reset recorded in
     transient floating-angle diagnostic outside the authorized method; no
     theorem or exact control depends on it. No polygon, patch, decoder,
     aperiodicity result or candidate is claimed.
+26. The user authorized HC-29 after ERR-012. Session 138 derives K25X: the
+    N36 spoke pair has exact intersection parameters
+    `u=b/(2*d*sin(gamma/2))` and `1-u`. On the upper corrected branch, strict
+    containment bounds `b` by the long rhombus diagonal; on the lower branch,
+    the corrected K23I orientation window and an oblique-coordinate chord
+    bound give the same strict inequality `b<2*d*sin(gamma/2)`. N37 therefore
+    forces a transverse crossing everywhere in K24W's domain. K23I excludes
+    both endpoints, and the diameter proof also covers the right angle. K24W
+    is closed by theorem, so D-0155's decomposed solver branch is not
+    activated. No research command, artifact, polygon, patch, decoder,
+    aperiodicity result or candidate was produced.

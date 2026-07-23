@@ -9,10 +9,10 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-23-28",
+    "id": "HC-2026-07-23-29",
     "date": "2026-07-23",
-    "through_session": 134,
-    "reason": "Session 134 completed HC-27: the complete fixed K16W QF_NRA sentence reached its externally enforced resource stop after 9h27m without a solver verdict, so K16W remains frozen and no rerun or budget escalation is authorized. The user explicitly authorizes HC-28 to study the symbolic non-right guard-angle family. This is theorem-first and fixes the equal-spoke 15-edge K10B topology, symmetric sharp endpoints theta=rho=(pi-gamma)/2, equal guard legs and a rhombic half-turn lens while allowing 0<gamma<pi with gamma!=pi/2. The complete exact semialgebraic family and its right-angle specialization must be derived before any witness claim. Terminal outcomes are: one exact simple non-right carrier witness; a scoped incompatibility theorem for this whole family; or a freeze at one precisely named surviving obligation. Family formulation alone is not success. No numerical angle sweep, quantifier-elimination run, topology change, extra participant, SVG or candidate promotion is authorized.",
+    "through_session": 137,
+    "reason": "Sessions 135--137 completed HC-28 and ERR-012 corrected its material interval defect: K24W is open/frozen over both non-right branches (pi/3,2*pi/3) minus {pi/2}; K24C remains an exact lower-branch containment-and-closure control rejected by N36's transverse spoke crossing. The user explicitly authorizes HC-29. Session 138 must first derive the exact intersection criterion for the N36 spoke pair and apply it analytically across both corrected angle branches. If that closes K24W, no solver run follows. Only if a domain survives may later HC-29 sessions preregister one decomposed exact decision covering every surviving subinterval/crossing pattern from the outset, with external wall-clock supervision and no monolithic fallback or post hoc budget escalation.",
     "artifact_bytes": {
       "docs/notebook/assets": 6756513353,
       "data": 1809060890

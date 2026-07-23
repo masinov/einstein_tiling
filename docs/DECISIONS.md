@@ -3344,3 +3344,41 @@ lower branch and their arithmetic has been independently recomputed. No
 HC-29 theorem or experiment is admitted by this correction. Any future
 decomposition or decision procedure must cover both non-right subintervals
 from the outset.
+
+## D-0155 (2026-07-23) — Admit HC-29 crossing analysis before any decision run
+
+The user explicitly authorizes HC-29 after ERR-012 widens K24W. The first
+question is theorem-only: derive the exact intersection parameters of the
+two nonadjacent `d` spokes that cross in N36, then determine whether complete
+rhombus containment forces those parameters into the open unit interval on
+each of the lower and upper non-right guard-angle branches.
+
+If this proves a family-wide crossing, K24W closes and no exact-decision run
+is logically admissible. If a domain survives, a later HC-29 session may
+preregister a decomposition by subinterval and crossing pattern before any
+runner is written. Such a run must cover every surviving cell, use an
+external wall-clock supervisor from launch, and retain the exact-verification
+boundaries of D-0148. A monolithic fallback, missing branch, second ordering,
+or post hoc budget increase is not authorized.
+
+## D-0156 (2026-07-23) — Close K24W by a family-wide spoke crossing
+
+K25X solves exactly the intersection of the two nonadjacent full-length
+spokes already seen in N36. Their segment parameters are `u` and `1-u`, with
+
+```text
+u = b/(2*d*sin(gamma/2)).
+```
+
+On the corrected upper K23I branch, the rhombus diameter and strict interior
+containment force `b<2*d*sin(gamma/2)`. On the lower branch, the corrected
+orientation window (8.7) and one exact oblique-coordinate chord bound force
+the same strict inequality. Thus `0<u<1` in both cases and the nonadjacent
+spokes cross transversely. The interval endpoints violate K23I strict
+containment; the same diameter argument also covers the right-angle point.
+
+N37 therefore refutes K24W throughout its complete ERR-012 domain. HC-29
+closes after one theorem session. D-0155's solver branch is not activated:
+there is no surviving semialgebraic cell to decide, so no runner, solver or
+artifact is written. This closes only the K22R/K22S equal-spoke rhombic
+topology and does not close K16W or the wider monotile program.

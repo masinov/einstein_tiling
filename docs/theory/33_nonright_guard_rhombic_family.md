@@ -562,3 +562,10 @@ non-right subintervals.
 
 No polygon, two-patch placement, all-tilings decoder, aperiodicity theorem or
 candidate has been obtained.
+
+### HC-29 supersession
+
+The freeze above is the historical HC-28 disposition. K25X and N37 in
+`34_nonright_spoke_crossing.md` subsequently prove that `p_1p_2` and
+`p_3p_4` cross throughout the complete corrected K23I domain. K24W is
+therefore closed/refuted for this fixed family; no decision run was needed.

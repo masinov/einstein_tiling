@@ -107,6 +107,10 @@ reviewable proof or certificate.
   two-neighbor bit under full isometry, and J0 gives the exact endpoint-angle
   equations. No congruent polygonal witness or whole-plane forcing theorem is
   claimed.
+- `34_nonright_spoke_crossing.md` — K25X gives the exact intersection
+  parameters for the N36 spoke pair, and N37 combines them with the corrected
+  K23I branches to close the entire equal-spoke non-right rhombic family by a
+  forced transverse crossing.
 - `W1_TRANSFER_SPEC.md` — the soundness/completeness contract for the exact
   cylinder transfer engine and its certificates.
 - `PROOF_LEDGER.md` — stable IDs, scope, status, dependencies, and artifacts.
