@@ -3300,3 +3300,25 @@ in the surviving interval can coexist with `h` below the rhombus diameter
 and the central host equation. If neither a proof nor a complete simple
 witness is obtained in session 137, freeze at that implication without a
 search or solver run.
+
+## D-0153 (2026-07-23) — Non-right closure exists; freeze at simplicity
+
+K24C refutes the proposed containment-to-diameter obstruction by exact
+construction. At the rational non-right angle
+`(cos(gamma/2),sin(gamma/2))=(4/5,3/5)`, rational orientation
+`z=(24+7i)/25`, weights `a=3/4`, `b=1/2`, and the explicit smaller quadratic
+root (11.3), all twelve oblique coordinate pairs are strictly internal and
+the central edge has length `h=a+b+c` exactly.
+
+The control is not a carrier. N36 proves two nonadjacent spoke segments cross
+transversely at the exact oblique point `(5/12,7/12)`. Therefore the
+non-right angle genuinely escapes N33's containment/closure obstruction, but
+no simple polygonal spine has been constructed.
+
+HC-28's third terminal outcome fires at K24W: existence of a point satisfying
+all 66 simplicity predicates in `pi/3<gamma<pi/2` remains open and frozen.
+The three-session budget is exhausted. ERR-011 separately records and
+discards one transient floating-angle diagnostic that violated the
+checkpoint's method restriction; no theorem or exact control depends on it.
+No polygon, placement patch, decoder, aperiodicity result or candidate is
+claimed.

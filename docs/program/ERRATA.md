@@ -281,3 +281,27 @@ Consequences:
 - no downstream theorem, polygon or candidate depended on the invalid vector;
   and
 - the original equations and verification statement must not be cited.
+
+## ERR-011 (2026-07-23) — HC-28 used one forbidden transient angle diagnostic
+
+HC-28 was explicitly authorized as theorem-first with no numerical angle
+sweep. During session 137, while testing whether a proposed analytic lower
+bound could hold, a transient read-only Python diagnostic evaluated that
+lower-bound expression at a small table of floating-point angle pairs. This
+was outside D-0151's admitted method even though it created no file, runner,
+certificate or governed artifact.
+
+The diagnostic output is discarded and is not evidence for any ledger row.
+K23I predates it and is an exact symbolic interval proof. K24C and N36 are
+rederived independently from the single exact rational choice
+`cos(gamma/2)=4/5`, `sin(gamma/2)=3/5`, using rational arithmetic and one
+explicit quadratic root. Their statements and verifications do not cite or
+depend on the sampled table.
+
+Consequences:
+
+- no empirical claim about the family is permitted;
+- HC-28 consumes its final session and closes immediately at K24W;
+- no further angle, orientation or coordinate exploration is authorized; and
+- any future family decision must receive a new checkpoint and, if
+  computational, pass the experiment gate before implementation.

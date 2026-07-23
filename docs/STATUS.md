@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-23 (session 136 non-right family reduced to one interval)
+**Last updated:** 2026-07-23 (session 137 HC-28 frozen at simplicity)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-28 session 2/3: K23I leaves only `pi/3<gamma<pi/2`; exact K23C proves containment alone nonempty, coupled closure/no-go remains (D-0111--D-0152) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-28 exhausted 3/3: exact K24C proves non-right containment+closure exists, N36 rejects it by a transverse crossing; simple-family existence K24W is open/frozen (D-0111--D-0153, ERR-011) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -1016,3 +1016,17 @@ Research is under the 2026-07-21 reset recorded in
     externally enforced at 9h27m27s. K16W remains frozen. No rerun, alternate
     ordering or weakened formula is authorized; the symbolic non-right guard
     family is the next proposed checkpoint.
+25. The user authorized HC-28 as a theorem-first change to N33's guard-angle
+    hypothesis. Session 135 derives K22R/K22S, the complete equal-spoke
+    rhombic family, and recovers K15S exactly at `gamma=pi/2`. Session 136
+    proves K23I: three full spokes leave only
+    `pi/3<gamma<pi/2`; exact K23C shows containment alone is nonempty there.
+    Session 137 proves K24C, an exact quadratic-algebraic point satisfying
+    every containment and host-closure equation, so the non-right family
+    genuinely escapes N33 at that level. N36 then rejects this point because
+    two nonadjacent segments cross transversely at `(5/12,7/12)`. HC-28 is
+    exhausted and K24W freezes the remaining existence of a simple point
+    satisfying all 66 segment predicates. ERR-011 records and discards one
+    transient floating-angle diagnostic outside the authorized method; no
+    theorem or exact control depends on it. No polygon, patch, decoder,
+    aperiodicity result or candidate is claimed.

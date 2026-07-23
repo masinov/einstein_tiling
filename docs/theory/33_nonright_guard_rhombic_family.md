@@ -399,3 +399,137 @@ remaining open interval is a real coupled problem.  HC-28 is at session 2 of
 3.  Session 137 must either produce a complete exact simple K22S witness,
 prove that containment in this interval forces `h` above the rhombus
 diameter, or fire the predeclared freeze at that precise implication.
+
+## 11. K24C: exact containment and closure coexist
+
+The proposed containment-to-diameter implication is false.  Retain the exact
+non-right angle and turn from (9.2), but choose
+
+```text
+z=(24+7*i)/25,        d=1,
+a=3/4,                b=1/2.                        (11.1)
+```
+
+The six unit increments in rhombic coordinates are now
+
+```text
+( 25/24,    7/24),
+( -5/8,      5/8),
+( -7/24,  -25/24),
+( 39/40,     5/8),
+(-527/600,  7/24),
+( 79/1000, -39/40).                                  (11.2)
+```
+
+Let
+
+```text
+c_* = 11377/7500 - 2*sqrt(1586086)/1875.            (11.3)
+```
+
+The exact comparison
+
+```text
+1/6 < c_* < 7/40                                      (11.4)
+```
+
+follows equivalently from the sign change below.  The six partial sums are
+
+```text
+p_1 = (25/32, 7/32),
+p_2 = ( 5/32,27/32),
+p_3 = ( 1/96,31/96),
+p_4 = (473/480,91/96),
+p_5 = (473/480-527*c_*/600, 91/96+7*c_*/24),
+p_6 = (12773/12000-527*c_*/600, -13/480+7*c_*/24).
+                                                               (11.5)
+```
+
+Every coordinate in (11.5) lies strictly between zero and one.  For the last
+two points this follows directly from (11.4); the closest endpoint checks are
+
+```text
+91/96+(7/24)*(7/40)=959/960<1,
+-13/480+(7/24)*(1/6)=31/1440>0.                     (11.6)
+```
+
+The other bounds are weaker rational comparisons.
+
+For variable `c`, direct exact expansion of the central-edge condition gives
+
+```text
+|Q-2*z*w_6|^2-(a+b+c)^2
+  = (150000*c^2-455080*c+74471)/50000.              (11.7)
+```
+
+Its values at the two rational endpoints are
+
+```text
+F(1/6)=2791/50000>0,
+F(7/40)=-2297/200000<0.                              (11.8)
+```
+
+The smaller quadratic root is exactly (11.3), while the other root exceeds
+`2`.  Hence (11.4) holds and `F(c_*)=0`.
+
+### ST-M1.K24C
+
+The exact data (9.2), (11.1), and (11.3) satisfy every K22S open-rhombus
+containment inequality and the exact host closure equation, with
+
+```text
+h=5/4+c_* < 57/40 < 8/5.                             (11.9)
+```
+
+Thus changing the guard angle genuinely escapes N33 at the coupled
+containment-and-closure level.  This is still not a carrier witness because
+simplicity has not been imposed.
+
+## 12. N36: the exact closed control self-intersects
+
+The failure of simplicity is exact and occurs before the algebraic coordinate
+`c_*` enters.  In oblique coordinates, segment `p_1 p_2` and the nonadjacent
+segment `p_3 p_4` meet because
+
+```text
+p_1+(7/12)*(p_2-p_1)
+ = p_3+(5/12)*(p_4-p_3)
+ = (5/12,7/12).                                     (12.1)
+```
+
+Both parameters lie strictly between zero and one.  The four orientation
+determinants, in the same order, are
+
+```text
+5/12, -7/12, -7/12, 5/12,                           (12.2)
+```
+
+so this is a transverse interior crossing.  The rhombic coordinate map is
+invertible, hence the physical spine crosses at the corresponding physical
+point as well.
+
+### ST-M1.N36
+
+K24C is an exact self-crossing containment-and-closure control, not a simple
+K22S carrier.  It disproves the proposed family-wide diameter obstruction but
+proves neither existence nor nonexistence of another simple point in the same
+semialgebraic family.
+
+## 13. HC-28 disposition
+
+The three sessions have produced a complete family, the sharp necessary angle
+interval, and an exact proof that non-right geometry escapes N33 through
+closure.  They have not produced a simple spine or a family-wide simplicity
+obstruction.  HC-28's third terminal outcome therefore fires:
+
+### ST-M1.K24W
+
+Determine whether the K22S family has a point in
+`pi/3<gamma<pi/2` satisfying all 66 nonadjacent-segment predicates.  This is
+open and **frozen**.  Reopening requires either complete exact simple data or
+a separately authorized decision procedure for this already serialized
+family; another angle sample, guessed central direction, or weakened
+intersection list is not admissible.
+
+No polygon, two-patch placement, all-tilings decoder, aperiodicity theorem or
+candidate has been obtained.
