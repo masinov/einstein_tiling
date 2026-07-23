@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-23 (session 147 HC-32 bounded 16-cell atlas)
+**Last updated:** 2026-07-23 (session 148 HC-33 K16W reset no-go)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-32 complete: N41/K31C leave one bounded K16W cell; K32S/K32A give an exact 16-cell strand/chart cover and K32R isolates tangent closure. HC-33 decision awaits authorization (D-0111--D-0167) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-33 closes/refutes the fixed K16W 19-edge carrier: N42's thin-lens reset contradiction kills all 16 K32S/K32A cells without computation. No monotile or broader guard-and-shield no-go follows; a new hypothesis and checkpoint are required (D-0111--D-0169) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -1095,3 +1095,12 @@ Research is under the 2026-07-21 reset recorded in
     and transverse closure strata.  The remaining obligation is an exact
     16-cell bounded cover retaining all 120 pair predicates.  HC-32 closes
     without a run; a certified all-cell decision requires a new checkpoint.
+33. The user authorizes theorem-first HC-33 after independent verification.
+    Session 148 proves N42 before formula construction: H must point either
+    west with C or east with C', so a same-polarity long-strand pair is always
+    separated by exactly the `c,1` path.  Strip containment requires
+    `sqrt(h^2-1)<c+1+delta(v)`, while K30W/K31C give the strict reverse chain
+    `sqrt(h^2-1)>10/3>c+1+delta(v)`.  Every one of the sixteen K32S/K32A
+    cells is empty.  K16W is closed/refuted for the fixed K16B topology; the
+    planned serialization and solver branch are not activated.  No polygon,
+    patch, decoder, aperiodicity result or candidate is claimed.

@@ -9,10 +9,10 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-23-32",
+    "id": "HC-2026-07-23-33",
     "date": "2026-07-23",
-    "through_session": 144,
-    "reason": "Sessions 142--144 completed HC-31. N39 and K29O reduce K16W to two exact opposite-polarity cells, but both externally supervised four-hour QF_NRA processes reach resource_stop with no SAT, UNSAT, unknown, model or certificate. The checksummed formulas and manifest are preserved; no timeout, ordering or weakened-formula rerun is authorized. The user explicitly authorizes theorem-only HC-32 after reviewing a conservative five-part plan. Each reduction must be ledgered as either a necessary-condition implication from complete K16W or an exact bijection/equisatisfiable substitution. The objectives are exact host/weight budgets, orientation and mirror equivalences with degree accounting, lambda=1/v compactification including limiting self-contact strata, and an exhaustive strand-order theorem only if justified. No solver run, coordinate fit, angle sample, polygon, SVG or candidate promotion is authorized.",
+    "through_session": 147,
+    "reason": "Sessions 145--147 completed theorem-only HC-32. N41 refutes one HC-31 polarity cell; K31C bounds the remaining weights; K32S and K32A give an exact 16-cell strand/chart cover with every original predicate retained; K32R isolates tangent closure. After independent review, the user explicitly authorizes HC-33. Session one must derive exact per-cell strand inequalities and attempt theorem eliminations. Only surviving cells may be serialized, equivalence-checked, preregistered and submitted to externally supervised exact decisions. Every added condition must cite an admitted necessary implication or exact equivalence. The tangent and strict-boundary strata require explicit exact treatment. No dropped pair predicate, selected ordering, heuristic sample, timeout increase, polygon, SVG or candidate promotion is authorized.",
     "artifact_bytes": {
       "docs/notebook/assets": 6757298033,
       "data": 1809060890

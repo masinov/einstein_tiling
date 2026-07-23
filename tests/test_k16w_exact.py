@@ -39,3 +39,16 @@ def test_err010_replacement_is_an_exact_unit_direction():
     assert x * x + y * y == 1
     assert 2 * x < 2
     assert x < 1
+
+
+def test_n42_exact_reset_budget_comparisons():
+    # sqrt(23/2) > 10/3.
+    assert Fraction(23, 2) > Fraction(100, 9)
+    # sqrt(42) < 13/2 makes
+    # [13(sqrt(21)-sqrt(2))]^2 > 1690 > (6sqrt(46))^2,
+    # hence U_0 < 13/6.
+    assert Fraction(42) < Fraction(169, 4)
+    assert 3887 - 338 * Fraction(13, 2) == 1690
+    assert 1690 > 36 * 46
+    # sqrt(46)+sqrt(42)>12 makes delta_0<1/6.
+    assert 46 > 36 and 42 > 36

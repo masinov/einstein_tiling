@@ -129,6 +129,10 @@ reviewable proof or certificate.
 - `40_k16w_finite_strand_atlas.md` — K32S gives four exhaustive midline
   strand orders, K32A gives four bounded bridge-chart pairs, and K32R isolates
   tangent versus transverse closure strata for a later exact decision.
+- `41_k16w_thin_lens_reset_no_go.md` — N42 proves that the central host must
+  share a horizontal polarity with C or C', while their intervening `c,1`
+  reset is shorter than containment requires.  This refutes all sixteen
+  K32S/K32A cells and closes the fixed K16W topology without a solver.
 - `W1_TRANSFER_SPEC.md` — the soundness/completeness contract for the exact
   cylinder transfer engine and its certificates.
 - `PROOF_LEDGER.md` — stable IDs, scope, status, dependencies, and artifacts.

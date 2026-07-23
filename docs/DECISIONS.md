@@ -3568,3 +3568,42 @@ by 16 bounded cells, each retaining all original predicates.  HC-32 is
 exhausted at three theorem sessions with no artifact growth or solver run.
 A later decision requires separate authorization and an exact certificate
 contract for all cells and boundary strata.
+
+## D-0168 (2026-07-23) — Admit HC-33 theorem-first all-cell decision
+
+After independent verification of HC-32, the user explicitly authorizes
+HC-33.  The first session must derive exact inequalities for each of K32S's
+four strand orders across all four K32A bridge-chart pairs and attempt
+theorem-level eliminations.  A cell may be removed only by a proved necessary
+condition from complete K16W or by an exact equivalence recorded in the proof
+ledger.
+
+Only cells that survive that pass may enter a serialized decision package.
+Before any solver launch, the package must retain closure, all 32 containment
+bounds and all 120 nonadjacent-pair predicates; cold construction tests must
+establish equivalence to the admitted cells; and a notebook preregistration
+must pass `scripts/check_experiment_gate.py`.  D-0150 external supervision
+applies.  Negative-discriminant, tangent and transverse closure strata and
+all strict-boundary cases must receive explicit exact dispositions.  No
+dropped predicate, chosen strand order, heuristic angle/coordinate sample,
+alternate ordering, timeout increase, polygon, SVG or candidate promotion is
+authorized.
+
+## D-0169 (2026-07-23) — Refute K16W by the thin-lens reset theorem
+
+N42 observes that the central H strand must point either west with C or east
+with C'.  In either case two same-polarity segments of horizontal spans above
+`sqrt(v^2-1)` and `sqrt(h^2-1)` are separated by exactly the `c,1` path.
+Open-strip containment forces that path to have length above
+`sqrt(h^2-1)-delta(v)`.
+
+K30W/K31C give the opposite exact budget:
+`sqrt(h^2-1)>10/3`, while
+`c+1+delta(v)<13/6+1+1/6=10/3`.  Thus every one of the sixteen K32S/K32A
+cells is empty.  K16W is closed/refuted for the fixed K16B 19-edge topology.
+No HC-33 formula or solver run is activated, and the prior resource stops
+remain resource stops rather than computational evidence.
+
+This is not a general monotile, guard-and-shield or unequal-leg no-go.
+Reopening requires changing a named topological or thin-lens hypothesis, not
+increasing a solver budget.
