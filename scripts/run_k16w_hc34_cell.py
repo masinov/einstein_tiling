@@ -13,7 +13,7 @@ import time
 import z3
 
 from einstein.db import code_version
-from einstein.theory.k16w_exact import HC34_CELLS, build_problem
+from einstein.theory.k16w_exact import HC34_CELLS
 from run_k16w_cell import exact_value
 
 
@@ -21,6 +21,41 @@ ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "docs/notebook/assets"
 TIMEOUT_MS = 3 * 60 * 60 * 1000
 MEMORY_MIB = 32 * 1024
+FORMULA_MANIFEST = ASSETS / "k16w-hc34-formulas.json"
+
+
+def load_frozen_solver(cell: str) -> tuple[z3.Solver, dict]:
+    """Load and authenticate the frozen formula without rebuilding it.
+
+    Z3's generated ``let`` identifiers depend on construction history, so two
+    equivalent calls to the Python builder need not be byte-identical.  The
+    launch contract is the opposite: solve the exact bytes pinned in the cold
+    manifest.  Authenticate those bytes, parse them, then attach resource
+    parameters to the parsed solver.
+    """
+
+    formula_path = ASSETS / f"k16w-hc34-{cell}.smt2"
+    manifest = json.loads(FORMULA_MANIFEST.read_text())
+    records = {record["cell"]: record for record in manifest.get("records", [])}
+    if not manifest.get("complete") or manifest.get("cell_order") != list(HC34_CELLS):
+        raise RuntimeError("cold formula manifest is incomplete or reordered")
+    if cell not in records:
+        raise RuntimeError(f"cold formula record missing for {cell}")
+    record = records[cell]
+    data = formula_path.read_bytes()
+    if record.get("path") != str(formula_path.relative_to(ROOT)):
+        raise RuntimeError(f"formula path drift for {cell}")
+    if record.get("bytes") != len(data):
+        raise RuntimeError(f"formula byte-count drift for {cell}")
+    if record.get("sha256") != sha256(data).hexdigest():
+        raise RuntimeError(f"formula hash drift for {cell}")
+
+    solver = z3.SolverFor("QF_NRA")
+    solver.from_file(str(formula_path))
+    if len(solver.assertions()) != 187:
+        raise RuntimeError(f"formula assertion-count drift for {cell}")
+    solver.set(timeout=TIMEOUT_MS)
+    return solver, record
 
 
 def main(argv=None) -> int:
@@ -35,13 +70,10 @@ def main(argv=None) -> int:
     verify_path = ASSETS / f"{stem}-result-verification.json"
 
     z3.set_param("memory_max_size", MEMORY_MIB)
-    problem = build_problem(timeout_ms=TIMEOUT_MS, hc34_cell=cell)
-    serialized = problem.solver.to_smt2()
-    if not formula_path.exists() or formula_path.read_text() != serialized:
-        raise RuntimeError(f"formula drift for {cell}; cold serialization no longer matches")
+    solver, formula_record = load_frozen_solver(cell)
 
     started = time.monotonic()
-    answer = problem.solver.check()
+    answer = solver.check()
     elapsed = time.monotonic() - started
     status = str(answer)
     payload = {
@@ -58,7 +90,7 @@ def main(argv=None) -> int:
         "formula": {
             "path": str(formula_path.relative_to(ROOT)),
             "sha256": sha256(formula_path.read_bytes()).hexdigest(),
-            "constraint_counts": problem.constraint_counts,
+            "constraint_counts": formula_record["constraint_counts"],
             "normalization": "u=1",
             "cell_theorems": "N38/K29O + K31C + corrected N42 + K32S/K32A + N43/K33C",
             "simplicity": "all 120 exact closed-segment predicates retained",
@@ -69,14 +101,14 @@ def main(argv=None) -> int:
             "unknown": "cell remains open/frozen; no rerun or escalation",
         },
         "model": None,
-        "statistics": str(problem.solver.statistics()),
-        "reason_unknown": problem.solver.reason_unknown() if status == "unknown" else None,
+        "statistics": str(solver.statistics()),
+        "reason_unknown": solver.reason_unknown() if status == "unknown" else None,
     }
     if status == "sat":
-        model = problem.solver.model()
+        model = solver.model()
         payload["model"] = {
-            name: exact_value(model.eval(variable, model_completion=True))
-            for name, variable in problem.variables.items()
+            name: exact_value(model.eval(z3.Real(name), model_completion=True))
+            for name in ("a", "b", "c", "v", "t0", "t1", "t2", "sqrt_half")
         }
     result_path.write_text(json.dumps(payload, indent=1) + "\n")
     print(json.dumps({

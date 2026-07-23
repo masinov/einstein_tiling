@@ -1,7 +1,9 @@
 from fractions import Fraction
 from hashlib import sha256
 import json
+import importlib.util
 from pathlib import Path
+import sys
 
 import z3
 
@@ -119,3 +121,19 @@ def test_hc34_formula_manifest_pins_all_six_complete_cells():
         assert record["nonadjacent_pairs"] == 120
         assert record["constraint_counts"]["total_top_level"] == 187
         assert sum(line.startswith(b"(assert") for line in data.splitlines()) == 187
+
+
+def test_hc34_runner_loads_the_frozen_bytes_instead_of_reserializing():
+    path = ROOT / "scripts/run_k16w_hc34_cell.py"
+    spec = importlib.util.spec_from_file_location("run_k16w_hc34_cell", path)
+    module = importlib.util.module_from_spec(spec)
+    sys.path.insert(0, str(path.parent))
+    try:
+        spec.loader.exec_module(module)
+    finally:
+        sys.path.pop(0)
+
+    for cell in HC34_CELLS:
+        solver, record = module.load_frozen_solver(cell)
+        assert record["cell"] == cell
+        assert len(solver.assertions()) == 187

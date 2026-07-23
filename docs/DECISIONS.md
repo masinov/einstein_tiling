@@ -3681,3 +3681,27 @@ model verifier separately reconstructs the selected charts and strand signs
 before checking the original geometry.  The formulas are now immutable for
 the HC-34 launch; any drift, reordering or missing manifest record aborts the
 runner rather than regenerating a different instance.
+
+## D-0174 (2026-07-23) — Record the failed HC-34 launch; forbid silent retry
+
+The first fixed-batch launch passed the research gate, then failed before a
+solver verdict.  The single-cell runner rebuilt a semantically identical Z3
+formula and compared its generated SMT-LIB text byte-for-byte with the frozen
+file.  Z3's internal `let` identifiers depend on construction history, so two
+cells correctly aborted on textual drift even though no mathematical
+constraint had changed.  The first cell matched by construction order and
+entered `check()`, but the enclosing screen process died immediately; no
+solver or supervisor process survived and no result file was written.
+
+This is a launch-wrapper failure, not SAT, UNSAT, `unknown`, or mathematical
+evidence.  The six formulas and their hashes remain exactly those frozen by
+D-0173.  The runner is repaired to authenticate the manifest path, byte count
+and SHA-256, parse those frozen bytes directly, verify 187 assertions, and
+only then attach the pre-registered resource parameters.  It no longer
+reconstructs a formula at launch.
+
+D-0172's stop rule explicitly says a killed process leaves its cell open and
+does not authorize a rerun.  Therefore HC-34 closes as a failed launch with
+all six cells open.  A retry requires a new explicit human checkpoint that
+names the same six immutable formulas and resources; neither this repair nor
+the unused HC-34 session allowance silently grants it.
