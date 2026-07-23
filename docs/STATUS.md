@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-23 (session 149 ERR-013 K16W correction)
+**Last updated:** 2026-07-23 (session 150 HC-33 corrected six-cell atlas)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-33 corrected by ERR-013: N42 excludes H-west and forces traversal `E,W,E,W,E`, but all 16 bounded K32S/K32A cells remain open/frozen. Session 150 may resume theorem-first vertical-order analysis under D-0168 (D-0111--D-0170) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-33 exhausted after ERR-013 correction: N42 forces `E,W,E,W,E`; K33M/N43 eliminate S4; K33C fixes the first bridge semicircle. Six bounded complete K16W cells remain open/frozen. A new checkpoint is required before serialization or solving (D-0111--D-0171) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -1104,3 +1104,11 @@ Research is under the 2026-07-21 reset recorded in
     with that sign added.  A symbolic regression now pins the paired-edge
     identities.  No formula or solver was launched; HC-33 has one session
     remaining under D-0168.
+34. Session 150 uses the corrected `E,W,E,W,E` traversal.  K33M proves that
+    no short connector touches the symmetry line, so the five long strands
+    are its complete crossing list.  N43 eliminates S4 by alternating
+    right-half-plane chord endpoints.  K33C proves `Re(z_1)<0`, eliminating
+    both positive-first bridge charts.  Exactly six bounded complete cells
+    remain (`S1--S3` times second-bridge sign), with all 120 pair predicates
+    and all boundary strata retained.  HC-33 is exhausted without a run;
+    serialization and any exact decision require a new checkpoint.

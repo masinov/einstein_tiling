@@ -3622,3 +3622,22 @@ corrected N42: complete K16W forces `v-2*p_(8,x)>0`, so H points east and the
 five long strands are traversed `E,W,E,W,E`.  K16W is open/frozen, all sixteen
 K32S/K32A cells remain, and D-0168's theorem-first HC-33 authorization resumes
 with this exact sign added.  No formula or solver is launched by this repair.
+
+## D-0171 (2026-07-23) — Close HC-33 with six corrected K16W cells
+
+K33M combines the N39 connector margin, corrected N42 and K31C budgets to
+prove that none of the six short spine subpaths touches `x=v/2`.  The five
+long strands are therefore the complete ordered crossing list.  N43 applies
+Jordan separation to this exact list and refutes K32S order S4: its B--C and
+H--C' right-half-plane arcs have alternating boundary endpoints.
+
+Independently, K33C rewrites the first bridge as
+`z_1=conj(Z*q)*r_b`.  The first-quadrant frame and N38 component bounds force
+`Re(z_1)<0`, so K32A's two positive-first chart pairs are empty.  The exact
+remaining cover has three strand orders times two chart pairs, or six cells.
+
+Every original closure, containment and nonintersection predicate remains.
+HC-33 is exhausted at session 150 without a formula or solver.  A later
+decision requires new authorization, serialization and cold equivalence
+tests for exactly these six cells, a passing experiment gate and D-0150
+external supervision.

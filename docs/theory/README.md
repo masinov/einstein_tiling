@@ -133,6 +133,10 @@ reviewable proof or certificate.
   point west with C, hence the central host points east.  ERR-013 withdraws
   the original C'-direction claim and all-cell refutation; all sixteen
   K32S/K32A cells remain open with traversal pattern `E,W,E,W,E`.
+- `42_k16w_corrected_six_cell_atlas.md` — K33M proves that only the five long
+  strands cross the symmetry line; N43 eliminates the alternating S4 order;
+  K33C fixes the first bridge to the left semicircle.  Six bounded complete
+  K16W cells remain, with every original predicate retained.
 - `W1_TRANSFER_SPEC.md` — the soundness/completeness contract for the exact
   cylinder transfer engine and its certificates.
 - `PROOF_LEDGER.md` — stable IDs, scope, status, dependencies, and artifacts.
