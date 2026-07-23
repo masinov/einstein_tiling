@@ -117,6 +117,9 @@ reviewable proof or certificate.
 - `36_unequal_guard_parallelogram.md` — the unequal-guard transfer: K28G is
   the complete conditional parallelogram-lens system, K28T proves N37's
   squeeze no longer transfers, and K28W freezes geometry at contact roles.
+- `37_k16w_polarity_elimination.md` — N39 rules out equal-polarity long
+  spokes by a width-reset inequality, and K29O collapses the surviving K16W
+  critical-pair domain to two exact opposite-polarity cells.
 - `W1_TRANSFER_SPEC.md` — the soundness/completeness contract for the exact
   cylinder transfer engine and its certificates.
 - `PROOF_LEDGER.md` — stable IDs, scope, status, dependencies, and artifacts.

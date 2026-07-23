@@ -145,7 +145,7 @@ def rational_model(payload) -> tuple[dict[str, Fraction] | None, list[str]]:
     return (values if not failures else None), failures
 
 
-def verify(values: dict[str, Fraction]) -> dict:
+def verify(values: dict[str, Fraction], cell: str | None = None) -> dict:
     a, b, c, v = (Q2(values[name]) for name in ("a", "b", "c", "v"))
     t0, t1, t2 = (values[name] for name in ("t0", "t1", "t2"))
     h = a + b + c
@@ -193,21 +193,46 @@ def verify(values: dict[str, Fraction]) -> dict:
             if intersects(points[i], points[i + 1], points[j], points[j + 1]):
                 intersections.append([i, j])
     require(not intersections, "nonadjacent spine intersections")
+    if cell is not None:
+        require(cell in ("plus-minus", "minus-plus"), "recognized HC31 cell")
+        r_b = cmul(z, cmul(q, z1))
+        r_c = cmul(z, cmul(q3, z12))
+        rel_x = dot(r_b, r_c)
+        rel_y = orient(zero, r_b, r_c)
+        aa = v - b * Q2(0, Fraction(1, 2))
+        bb = b * Q2(0, Fraction(1, 2)) - 1
+        require((2 * v * v - 23).sign() > 0, "N38 aspect")
+        require((b - Q2(0, 1)).sign() > 0, "N38 b bound")
+        require((c - Q2(0, 1)).sign() > 0, "N38 c bound")
+        if cell == "plus-minus":
+            require(r_b[0].sign() > 0 and r_b[1].sign() > 0,
+                    "P_+- B polarity")
+            require(r_c[0].sign() < 0 and r_c[1].sign() < 0,
+                    "P_+- C polarity")
+        elif cell == "minus-plus":
+            require(r_b[0].sign() < 0 and r_b[1].sign() < 0,
+                    "P_-+ B polarity")
+            require(r_c[0].sign() > 0 and r_c[1].sign() > 0,
+                    "P_-+ C polarity")
+        require((aa * rel_y - bb * rel_x).sign() > 0, "K29O safe cell")
     return {
         "verified": not failures,
         "failures": failures,
         "nonadjacent_segment_intersections": intersections,
         "nonadjacent_pairs_checked": 120,
         "field": "Q(sqrt(2))",
+        "cell": cell,
     }
 
 
 def main(argv=None) -> int:
     argv = sys.argv if argv is None else argv
-    if len(argv) != 2:
-        print("usage: verify_k16w_exact.py <k16w-result.json>", file=sys.stderr)
+    if len(argv) not in (2, 3):
+        print("usage: verify_k16w_exact.py <k16w-result.json> [cell]", file=sys.stderr)
         return 2
     source = Path(argv[1])
+    cell = argv[2] if len(argv) == 3 else None
+    out = OUT if cell is None else source.with_name(source.stem + "-verification.json")
     payload = json.loads(source.read_text())
     result = {
         "kind": "k16w-exact-cold-verification",
@@ -223,12 +248,11 @@ def main(argv=None) -> int:
         values, failures = rational_model(payload)
         result["failures"].extend(failures)
         if values is not None:
-            result.update(verify(values))
-    OUT.write_text(json.dumps(result, indent=1) + "\n")
+            result.update(verify(values, cell=cell))
+    out.write_text(json.dumps(result, indent=1) + "\n")
     print(json.dumps(result, indent=1))
     return 0 if result["verified"] else 1
 
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

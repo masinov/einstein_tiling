@@ -3451,3 +3451,36 @@ tables. K28W therefore freezes the family upstream of coordinates: a full-
 local-closure role/recognizability theorem is required before any solver,
 angle sample, drawing or candidate claim. HC-30 is exhausted at three
 theorem sessions with no artifact growth.
+
+## D-0161 (2026-07-23) — Admit HC-31 theorem-first K16W cell elimination
+
+The user explicitly authorizes the independent-review recommendation for
+HC-31. Session 142 must first apply exact segment-intersection and span
+arguments to the remaining K16W cells inside N38. No solver or runner is
+admitted until that theorem session reaches either a family no-go or a fixed
+surviving-cell list.
+
+If cells survive, a later session may preregister one decomposed exact
+decision whose complete cell list, formula options, outcome branches and
+wall/memory stops are fixed before the runner is written. D-0150 external
+supervision applies from launch. A monolithic fallback, added cell, alternate
+ordering, relaxed predicate, second budget or post hoc escalation is not
+authorized. K28W remains secondary and may be touched only after a terminal
+K16W outcome and with checkpoint capacity remaining.
+
+## D-0162 (2026-07-23) — Reduce K16W to two cells and preregister both
+
+N39 proves that two same-polarity length-`v` spokes cannot fit inside the
+N38 rectangle. Each spans horizontally more than
+`sqrt(v^2-u^2)`, forcing the intervening `b,u` path to reset by more than its
+strict host-derived length budget. K29O then shows that on either remaining
+opposite-polarity cell, K27X's complete closed-intersection conjunction is
+equivalent to the single sign `AY-BX<=0`. Simplicity is `AY-BX>0`.
+
+Thus exactly two cells remain: `P_+-` and `P_-+`. Session 143 preregisters
+those two complete K21Q subinstances, passes the experiment gate, and fixes
+their order and resources before the runner is written: four internal and
+externally supervised wall hours per cell, 96 GiB, one ordering, maximum
+eight solver-hours. All 120 segment predicates remain. No monolithic
+fallback, third cell, alternate ordering, weakened formula or budget
+increase is authorized.

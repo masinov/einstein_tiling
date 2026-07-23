@@ -9,10 +9,10 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-23-30",
+    "id": "HC-2026-07-23-31",
     "date": "2026-07-23",
-    "through_session": 138,
-    "reason": "Session 138 completed HC-29 in one theorem session: K25X gives the exact N36 spoke-intersection parameters and N37 uses containment to force that crossing throughout both corrected K23I branches, closing K24W without a solver run or artifact growth. The user explicitly authorizes HC-30 following independent review. Its primary theorem-only objective is to apply the same exact intersection method to critical nonadjacent pairs in the frozen K16B 19-edge unequal-spoke rectangle. Terminal outcomes are a family no-go or an exact finite semialgebraic decomposition of every surviving crossing pattern; no solver/search is authorized in advance. Only after a genuine primary terminal result, and only with checkpoint capacity remaining, may the nearest unequal-guard parallelogram transfer be assessed. No new topology, coordinate fit, SVG, candidate promotion, or inconclusive analysis relabeled as success is admitted.",
+    "through_session": 141,
+    "reason": "Sessions 139--141 completed HC-30: K26X/K26P/N38 reduce every simple K16W spine to v/u>sqrt(23/2) and four narrow bridge-polarity cells; K27X partitions the bridge-dependent long-spoke pair into three exact safe cells, leaving at most twelve critical-pair cells but no K16W verdict. The secondary unequal-guard transfer survives N37 only conditionally and freezes at K28W contact-role recognizability. The user explicitly authorizes HC-31 following independent review. Session 142 is theorem-only and must attack remaining K16W H/code/spoke pairs inside N38 before any run. If cells survive, a later session may preregister one fixed decomposed exact decision covering every surviving cell from the outset, with D-0150 external wall-clock supervision; no monolithic fallback, post hoc cell addition, alternate ordering, or budget escalation is authorized. K28W is secondary only if capacity remains after a terminal K16W outcome.",
     "artifact_bytes": {
       "docs/notebook/assets": 6756513353,
       "data": 1809060890

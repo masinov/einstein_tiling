@@ -83,13 +83,20 @@ class K16WProblem:
     constraint_counts: dict[str, int]
 
 
-def build_problem(*, timeout_ms: int | None = None) -> K16WProblem:
+CELLS = ("plus-minus", "minus-plus")
+
+
+def build_problem(*, timeout_ms: int | None = None,
+                  cell: str | None = None) -> K16WProblem:
     """Build the complete normalized K16W QF_NRA sentence.
 
     Scale is fixed by ``u=1``.  Tangent-half-angle charts make the three unit
     directions rational functions.  Because bridge directions ``+1`` and
     ``-1`` are both forbidden, the bridge chart loses no admitted point.
     """
+
+    if cell is not None and cell not in CELLS:
+        raise ValueError(f"unknown K16W cell: {cell}")
 
     solver = z3.SolverFor("QF_NRA")
     if timeout_ms is not None:
@@ -161,6 +168,32 @@ def build_problem(*, timeout_ms: int | None = None) -> K16WProblem:
     central = csub(points[9], points[8])
     closure = central[0] * central[0] + central[1] * central[1] == h * h
 
+    decomposition: list[z3.BoolRef] = []
+    if cell is not None:
+        # N38 and K29O: the two cells left after the theorem-only HC-31 pass.
+        r_b = cmul(z, qz1)
+        r_c = cmul(z, cmul(q3, z12))
+        rel_x = dot(r_b, r_c)
+        rel_y = orient(zero, r_b, r_c)
+        aa = v - b * k
+        bb = b * k - 1
+        decomposition.extend((
+            2 * v * v > 23,
+            b > 2 * k,
+            c > 2 * k,
+        ))
+        if cell == "plus-minus":
+            decomposition.extend((
+                r_b[0] > 0, r_b[1] > 0,
+                r_c[0] < 0, r_c[1] < 0,
+            ))
+        else:
+            decomposition.extend((
+                r_b[0] < 0, r_b[1] < 0,
+                r_c[0] > 0, r_c[1] > 0,
+            ))
+        decomposition.append(aa * rel_y - bb * rel_x > 0)
+
     nonadjacent_pairs: list[tuple[int, int]] = []
     simplicity: list[z3.BoolRef] = []
     for i in range(17):
@@ -171,7 +204,7 @@ def build_problem(*, timeout_ms: int | None = None) -> K16WProblem:
             )
     assert len(nonadjacent_pairs) == 120
 
-    solver.add(*(base + containment + [closure] + simplicity))
+    solver.add(*(base + containment + [closure] + simplicity + decomposition))
     return K16WProblem(
         solver=solver,
         variables=variables,
@@ -183,7 +216,10 @@ def build_problem(*, timeout_ms: int | None = None) -> K16WProblem:
             "containment_scalar": len(containment),
             "closure": 1,
             "nonadjacent_segment_pairs": len(simplicity),
-            "total_top_level": len(base) + len(containment) + 1 + len(simplicity),
+            "decomposition": len(decomposition),
+            "total_top_level": (
+                len(base) + len(containment) + 1 + len(simplicity)
+                + len(decomposition)
+            ),
         },
     )
-
