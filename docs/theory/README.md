@@ -120,6 +120,9 @@ reviewable proof or certificate.
 - `37_k16w_polarity_elimination.md` — N39 rules out equal-polarity long
   spokes by a width-reset inequality, and K29O collapses the surviving K16W
   critical-pair domain to two exact opposite-polarity cells.
+- `38_k16w_budget_and_encoding_audit.md` — K30W gives the exact shrinking
+  `b,c` window, K30B exposes host component budgets, N40 rejects a mirror
+  quotient, and K30E audits then rejects high-degree terminal elimination.
 - `W1_TRANSFER_SPEC.md` — the soundness/completeness contract for the exact
   cylinder transfer engine and its certificates.
 - `PROOF_LEDGER.md` — stable IDs, scope, status, dependencies, and artifacts.

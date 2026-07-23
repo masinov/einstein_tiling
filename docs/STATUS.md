@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-23 (session 144 HC-31 resource stop; HC-32 admitted)
+**Last updated:** 2026-07-23 (session 145 HC-32 budget/encoding audit)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-32 admitted after HC-31: both exact K16W cells reached their four-hour resource stops with no verdict; theorem-only compactification and exact-equivalence work is next (D-0111--D-0164) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-32 session 1/3: K30W gives the shrinking `b,c` window; N40 rejects a mirror quotient and K30E rejects radical terminal elimination; compactification is next (D-0111--D-0165) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -1074,3 +1074,10 @@ Research is under the 2026-07-21 reset recorded in
     compactification including limiting self-contact, and an exhaustive
     strand-order theorem if the preceding analysis supports one.  No solver
     run, angle sample, coordinate fit, polygon or candidate is authorized.
+30. Session 145 proves K30W's exact shrinking window for both code-edge
+    weights and K30B's equivalent host component budgets.  N40 rules out the
+    proposed mirror quotient because the intrinsic cyclic word has no
+    nonidentity dihedral automorphism.  K30E derives the exact line--circle
+    substitution but rejects it: relative to the live tangent chart it saves
+    no variable and raises the cleared degree ceiling from 28 to 84.  These
+    are implication/equivalence audits only; no formula or solver is run.

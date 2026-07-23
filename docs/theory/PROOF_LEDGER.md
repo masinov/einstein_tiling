@@ -217,6 +217,15 @@ Turtle under the production canonicalization.
 | ST-M1.K29O | On either opposite-polarity cell, K27X's three intersection signs are equivalent to `AY-BX<=0`; simplicity is the reverse strict sign | N38 and N39; fixed B/C long-spoke pair | proof-draft exact two-cell reduction; 117 other pair predicates retained | angular bound `-X>A/v` and K27X | `37_k16w_polarity_elimination.md` §§2--3; D-0162 |
 | ST-M1.K31R | The two N39/K29O K16W cells are each submitted once to the fixed externally supervised four-hour QF_NRA decision | complete 174-assertion cells; one Z3 ordering; 96-GiB parameter | resource-stop evidence only for both cells; no solver verdict, model or certificate; K16W remains open | checksummed SMT-LIB formulas, result records and aggregate manifest | `k16w-hc31-{plus-minus,minus-plus}.smt2`; `k16w-hc31-manifest.json`; session 144; D-0163 |
 
+### HC-32 conservative reduction ledger
+
+| ID | Statement | Scope | Status | Admitted form | Dependencies | Proof |
+|---|---|---|---|---|---|---|
+| ST-M1.K30W | Both code weights lie in the exact shrinking interval (1.3) | complete K16W inside N38; `u=1` | proof-draft strict bound; does not bound `v` | necessary-condition implication | K26X/N38 and hook containment | `38_k16w_budget_and_encoding_audit.md` §1; D-0165 |
+| ST-M1.K30B | Host closure is equivalent to two component budgets plus one host unit direction | K17S central edge; `h>0` | proof-draft identity; retained analytically, not serialized | exact definitional equivalence | K17S/K19E block form | `38_k16w_budget_and_encoding_audit.md` §2; D-0165 |
+| ST-M1.N40 | The intrinsic K16B boundary word has no nonidentity dihedral automorphism and supplies no mirror quotient of the two cells | fixed 19-role cyclic word; `u!=v` | proof-draft negative equivalence audit; both cells retained | exact-bijection audit (negative) | K16B/K17G role recognition | `38_k16w_budget_and_encoding_audit.md` §3; D-0165 |
+| ST-M1.K30E | Terminal line--circle elimination is exactly two radical branches but leaves K21Q at eight variables and raises its cleared degree ceiling from 28 to 84 | actual tangent-chart K21Q versus exact radical substitution | proof-draft equivalence and structural cost audit; substitution rejected | exact equisatisfiable substitution (not adopted) | N35; positive tangent denominators | `38_k16w_budget_and_encoding_audit.md` §4; D-0165 |
+
 ## Preserved Turtle-control evidence (legacy “finalist” identifiers)
 
 | ID | Exact finite claim | Status | Artifact | Logical use |

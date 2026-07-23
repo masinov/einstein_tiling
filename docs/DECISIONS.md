@@ -3515,3 +3515,20 @@ ordinary interval subdivision as a complete decision method.  A later run
 would require exact CAD/NLSAT certificates, a certified finite cover, or a
 proved regularity condition such as an interval-Newton/Krawczyk criterion,
 and belongs to a later checkpoint.
+
+## D-0165 (2026-07-23) — Carry only conservative session-145 reductions
+
+K30W proves the strict K16W window
+`sqrt(2)<b,c<sqrt(2)/(sqrt(1-v^-2)-v^-1)`, whose endpoint decreases to
+`sqrt(2)`.  K30B rewrites host closure as two exact component budgets plus a
+unit direction, but is analytic only because serializing that direction adds
+variables.
+
+The proposed cheap cell quotient fails: N40 proves the intrinsic K16B cyclic
+word has trivial dihedral automorphism group, with the anchored reflection
+first mismatching `u` and `v`.  K30E gives the exact two-branch line--circle
+elimination but rejects it computationally.  K21Q already uses one terminal
+tangent variable; the radical form leaves the variable count at eight and
+raises the cleared degree ceiling from 28 to 84.  HC-32 therefore carries
+K30W/K30B into compactification, retains both cells, and does not rewrite or
+run the formula.
