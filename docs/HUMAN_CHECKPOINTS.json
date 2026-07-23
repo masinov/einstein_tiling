@@ -9,10 +9,10 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-23-29",
+    "id": "HC-2026-07-23-30",
     "date": "2026-07-23",
-    "through_session": 137,
-    "reason": "Sessions 135--137 completed HC-28 and ERR-012 corrected its material interval defect: K24W is open/frozen over both non-right branches (pi/3,2*pi/3) minus {pi/2}; K24C remains an exact lower-branch containment-and-closure control rejected by N36's transverse spoke crossing. The user explicitly authorizes HC-29. Session 138 must first derive the exact intersection criterion for the N36 spoke pair and apply it analytically across both corrected angle branches. If that closes K24W, no solver run follows. Only if a domain survives may later HC-29 sessions preregister one decomposed exact decision covering every surviving subinterval/crossing pattern from the outset, with external wall-clock supervision and no monolithic fallback or post hoc budget escalation.",
+    "through_session": 138,
+    "reason": "Session 138 completed HC-29 in one theorem session: K25X gives the exact N36 spoke-intersection parameters and N37 uses containment to force that crossing throughout both corrected K23I branches, closing K24W without a solver run or artifact growth. The user explicitly authorizes HC-30 following independent review. Its primary theorem-only objective is to apply the same exact intersection method to critical nonadjacent pairs in the frozen K16B 19-edge unequal-spoke rectangle. Terminal outcomes are a family no-go or an exact finite semialgebraic decomposition of every surviving crossing pattern; no solver/search is authorized in advance. Only after a genuine primary terminal result, and only with checkpoint capacity remaining, may the nearest unequal-guard parallelogram transfer be assessed. No new topology, coordinate fit, SVG, candidate promotion, or inconclusive analysis relabeled as success is admitted.",
     "artifact_bytes": {
       "docs/notebook/assets": 6756513353,
       "data": 1809060890

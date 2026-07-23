@@ -3382,3 +3382,72 @@ closes after one theorem session. D-0155's solver branch is not activated:
 there is no surviving semialgebraic cell to decide, so no runner, solver or
 artifact is written. This closes only the K22R/K22S equal-spoke rhombic
 topology and does not close K16W or the wider monotile program.
+
+## D-0157 (2026-07-23) — Admit HC-30 K16W crossing analysis
+
+The user explicitly authorizes the independent-review recommendation for
+HC-30. The primary question is theorem-only: apply K25X's exact line-
+intersection method to the critical nonadjacent segment pairs of K16B's
+fixed 19-edge unequal-spoke rectangle, retaining both bridge angles as
+symbolic variables.
+
+The admitted primary outcomes are either a scoped incompatibility theorem
+closing K16W, or an exact finite semialgebraic decomposition of every
+surviving crossing pattern suitable for a later, separately preregistered
+decision. A partial angle calculation is not success. No solver, search,
+sampling, coordinate fit, new edge, extra participant, SVG or candidate
+promotion is authorized. The unequal-guard parallelogram transfer is
+secondary: it may be assessed only after the K16W analysis reaches one of
+the two terminal outcomes and only within the three-session HC-30 budget.
+
+## D-0158 (2026-07-23) — Reduce K16W to one extreme aspect cone
+
+K26X transfers K25X's line-intersection method to each fixed K16B
+`v,w,u` hook. Simplicity forces `w>sqrt(2)*min(u,v)` for both `w=b,c`.
+K26P sharpens the first-corner constraint to `v>u/sqrt(2)`. Together with
+the strict host-chord diameter bound, N38 eliminates `v<u` and leaves only
+
+```text
+v/u>sqrt(23/2),   b,c>sqrt(2)*u.
+```
+
+In that cone, both long-spoke directions have equal-sign coordinates,
+vertical square below `2/23`, and horizontal square above `21/23`. Thus four
+explicit bridge-polarity cells remain. This is a strict family reduction,
+not a K16W decision or witness.
+
+## D-0159 (2026-07-23) — Partition the bridge-dependent long-spoke pair
+
+K27X solves the intersection of K16B's two length-`v` spokes using only their
+relative bridge phase `R=X+iY`. The exact closed intersection region is the
+conjunction (5.5); its complement is the disjoint three-cell union C0--C2.
+Together with K26X's complete treatment of both rigid-hook pairs, every
+critical spoke-pair pattern is now assigned to at most twelve named
+semialgebraic cells: one N38 aspect cone, four polarity choices and three
+long-spoke safe cells.
+
+This satisfies HC-30's admitted primary decomposition outcome but does not
+decide K16W. The remaining 117 segment predicates, containment and closure
+stay conjunctive. K16W therefore remains open/frozen; any future decision
+must start from N38/K27X rather than rerunning the monolithic K21Q instance.
+No solver or research artifact was produced.
+
+## D-0160 (2026-07-23) — Unequal guard legs survive only conditionally
+
+With HC-30's primary K16W decomposition complete, the final authorized
+session assesses independent guard-lens lengths `e,f`. K28G gives the exact
+parallelogram version of K22R/K22S: the relative spine and K25X intersection
+formula are unchanged, while containment coordinates scale independently by
+`e` and `f`.
+
+K28T proves that N37 does not transfer. An exact non-right local control has
+`(cos(gamma/2),sin(gamma/2))=(4/5,3/5)` and
+`(d,b,e,f)=(1,2,10,11)`: all isolated spoke/code displacements fit strictly
+in oblique coordinates, while `b>2d sin(gamma/2)` avoids the K25X crossing.
+This is not a complete carrier witness.
+
+The new lengths also create new intrinsic boundary roles and contact cover
+tables. K28W therefore freezes the family upstream of coordinates: a full-
+local-closure role/recognizability theorem is required before any solver,
+angle sample, drawing or candidate claim. HC-30 is exhausted at three
+theorem sessions with no artifact growth.

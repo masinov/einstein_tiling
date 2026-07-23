@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-23 (session 138 HC-29 closes K24W by N37)
+**Last updated:** 2026-07-23 (session 141 HC-30 complete)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-29 closed: N37 refutes the complete K22S equal-spoke non-right rhombic family by a forced transverse crossing; no solver run and no tile (D-0111--D-0156) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-30 exhausted 3/3: K16W's three critical spoke pairs reduce to at most twelve exact cells but remain open; unequal guard legs escape N37 only conditionally and freeze at K28W contact roles; no tile/run (D-0111--D-0160) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -1043,3 +1043,20 @@ Research is under the 2026-07-21 reset recorded in
     is closed by theorem, so D-0155's decomposed solver branch is not
     activated. No research command, artifact, polygon, patch, decoder,
     aperiodicity result or candidate was produced.
+27. The user authorized HC-30 to aim K25X's exact intersection method at the
+    frozen K16W rectangle before opening another family. Session 139 derives
+    K26X for both rigid `v,w,u` hooks and sharpens K19P to K26P. N38 combines
+    those crossings with host-chord containment to force the extreme aspect
+    cone `v/u>sqrt(23/2)`, `b,c>sqrt(2)u`; both long-spoke directions lie in
+    four narrow horizontal polarity cells. Session 140 derives K27X for the
+    two bridge-dependent length-`v` spokes. Its closed intersection region is
+    three linear sign conditions in the relative phase, and its complement
+    is the exact disjoint union C0--C2. Thus the three critical spoke pairs
+    reduce to at most twelve named semialgebraic cells. This is a strict
+    decomposition, not a K16W decision; the other 117 pairs remain exact
+    conjuncts. Session 141 assesses unequal guard sides `e,f`: K28G gives the
+    conditional parallelogram system and K28T proves N37's squeeze no longer
+    transfers because lens and spoke scales decouple. K28W freezes that
+    family at the missing full-local-closure guard-role theorem. HC-30 is
+    exhausted with no run, artifact, polygon, patch, decoder, aperiodicity
+    result or candidate.

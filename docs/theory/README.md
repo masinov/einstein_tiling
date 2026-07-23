@@ -111,6 +111,12 @@ reviewable proof or certificate.
   parameters for the N36 spoke pair, and N37 combines them with the corrected
   K23I branches to close the entire equal-spoke non-right rhombic family by a
   forced transverse crossing.
+- `35_k16w_crossing_cells.md` — K26X/N38 reduce the frozen unequal-spoke
+  rectangle to one extreme aspect cone and four phase-polarity cells; K27X
+  partitions the remaining long-spoke pair into three exact safe cells.
+- `36_unequal_guard_parallelogram.md` — the unequal-guard transfer: K28G is
+  the complete conditional parallelogram-lens system, K28T proves N37's
+  squeeze no longer transfers, and K28W freezes geometry at contact roles.
 - `W1_TRANSFER_SPEC.md` — the soundness/completeness contract for the exact
   cylinder transfer engine and its certificates.
 - `PROOF_LEDGER.md` — stable IDs, scope, status, dependencies, and artifacts.
