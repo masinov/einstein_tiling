@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-23 (session 143 HC-31 two-cell run preregistered)
+**Last updated:** 2026-07-23 (session 144 HC-31 resource stop; HC-32 admitted)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-31 session 2/3: N39/K29O leave exactly two K16W cells; gate passed for one fixed externally supervised four-hour run per cell, pending committed screen launch (D-0111--D-0162) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-32 admitted after HC-31: both exact K16W cells reached their four-hour resource stops with no verdict; theorem-only compactification and exact-equivalence work is next (D-0111--D-0164) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -1060,3 +1060,17 @@ Research is under the 2026-07-21 reset recorded in
     family at the missing full-local-closure guard-role theorem. HC-30 is
     exhausted with no run, artifact, polygon, patch, decoder, aperiodicity
     result or candidate.
+28. HC-31 first proves N39/K29O, reducing the twelve K16W critical cells to
+    exactly two opposite-polarity cells while retaining all 120 pair
+    predicates.  The gated sequential decision then runs each 174-assertion
+    formula under an external four-hour wall stop.  Both return only
+    `resource_stop` (return code 124), with no SAT, UNSAT, `unknown`, model or
+    certificate.  The formulas and manifest are checksummed and tied to
+    `d30342f`; K16W remains open/frozen and no timeout/order rerun is allowed.
+29. The user authorizes theorem-only HC-32.  Every reduction must be recorded
+    as an implication from complete K16W or an exact equivalence.  The work
+    targets the exact `b,c` window and host budgets, orientation elimination
+    with degree accounting, the proposed cell mirror, `lambda=1/v`
+    compactification including limiting self-contact, and an exhaustive
+    strand-order theorem if the preceding analysis supports one.  No solver
+    run, angle sample, coordinate fit, polygon or candidate is authorized.

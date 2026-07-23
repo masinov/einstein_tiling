@@ -3484,3 +3484,34 @@ externally supervised wall hours per cell, 96 GiB, one ordering, maximum
 eight solver-hours. All 120 segment predicates remain. No monolithic
 fallback, third cell, alternate ordering, weakened formula or budget
 increase is authorized.
+
+## D-0163 (2026-07-23) — Both HC-31 cells reach the external resource stop
+
+The supervised `P_+-` and `P_-+` processes each run for exactly the fixed
+four-hour wall budget and exit through GNU `timeout` with return code 124.
+Neither returns SAT, UNSAT, `unknown` or a model.  Both 174-assertion formulas
+and their SHA-256 values are preserved with one complete manifest tied to
+code version `d30342f`.
+
+This is a resource stop, not evidence for feasibility or infeasibility.
+K16W remains open/frozen.  The two formulas may not be rerun with another
+ordering, timeout or weakened predicate set.  HC-31 is exhausted at session
+144 with 784,680 bytes of artifact growth.
+
+## D-0164 (2026-07-23) — Admit theorem-only HC-32 conservative reduction
+
+After reviewing the HC-31 duration, the user explicitly authorizes HC-32.
+Its three-session budget contains no solver or coordinate search.  It must
+adjudicate five conservative reductions: exact host-component budgets and
+the `b,c` window; terminal-orientation elimination with actual
+variable/degree accounting; a proof or no-go for a two-cell isometry; the
+`lambda=1/v` boundary system including limiting self-contacts; and only then
+an exhaustive strand-order decomposition if justified.
+
+Every new ledger row must label its admitted form: either a necessary
+condition proved from the complete K16W system, or an exact
+bijection/equisatisfiable substitution.  Compactness alone does not license
+ordinary interval subdivision as a complete decision method.  A later run
+would require exact CAD/NLSAT certificates, a certified finite cover, or a
+proved regularity condition such as an interval-Newton/Krawczyk criterion,
+and belongs to a later checkpoint.

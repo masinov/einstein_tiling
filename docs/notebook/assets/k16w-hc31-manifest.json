@@ -1,0 +1,31 @@
+{
+ "kind": "k16w-hc31-decomposed-manifest",
+ "schema_version": 1,
+ "date": "2026-07-23",
+ "code_version": "d30342f",
+ "cell_order": [
+  "plus-minus",
+  "minus-plus"
+ ],
+ "external_seconds_per_cell": 14400,
+ "kill_grace_seconds": 60,
+ "records": [
+  {
+   "cell": "plus-minus",
+   "status": "resource_stop",
+   "elapsed_seconds": 14400.050474520001,
+   "external_returncode": 124,
+   "result": "docs/notebook/assets/k16w-hc31-plus-minus-result.json",
+   "log": "logs/k16w-hc31-plus-minus.log"
+  },
+  {
+   "cell": "minus-plus",
+   "status": "resource_stop",
+   "elapsed_seconds": 14400.062070380998,
+   "external_returncode": 124,
+   "result": "docs/notebook/assets/k16w-hc31-minus-plus-result.json",
+   "log": "logs/k16w-hc31-minus-plus.log"
+  }
+ ],
+ "complete": true
+}
