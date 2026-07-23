@@ -3260,3 +3260,25 @@ Future native solver jobs with a wall-clock stop must be launched beneath an
 external process supervisor. An internal solver timeout alone does not satisfy
 the experiment stop rule. The next proposed branch remains the symbolic
 non-right guard-angle family, requiring a new explicit authorization.
+
+## D-0151 (2026-07-23) — Admit the symbolic non-right rhombic family
+
+The user explicitly authorizes HC-28 after the K16W resource stop. The new
+question changes one named hypothesis upstream of the closed square-lens
+theorem N33: the guard angle is symbolic, with `0<gamma<pi` and
+`gamma!=pi/2`. It does not rerun or relax K16W.
+
+The topology is fixed before derivation. Retain K10B's equal-spoke 15-edge
+centrally paired word, use equal guard legs and the corresponding rhombic
+half-turn lens, and take the symmetric sharp-endpoint specialization
+`theta=rho=(pi-gamma)/2`. The five fixed spine turns are therefore
+`(pi+gamma)/2`. The first session must derive the complete exact containment,
+closure and simplicity obligations and recover the N33 square system at
+`gamma=pi/2` as an internal control.
+
+HC-28 has exactly three terminal outcomes: an exact simple non-right carrier
+witness, a scoped incompatibility theorem for the entire fixed family, or a
+freeze at one explicitly named surviving obligation. Merely writing the
+family is not success. No numerical angle sweep, QE/CAD/SMT run, topology
+change, extra participant, SVG, placement-patch claim or candidate promotion
+is authorized.
