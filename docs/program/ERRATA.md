@@ -305,3 +305,44 @@ Consequences:
 - no further angle, orientation or coordinate exploration is authorized; and
 - any future family decision must receive a new checkpoint and, if
   computational, pass the experiment gate before implementation.
+
+## ERR-012 (2026-07-23) — K23I omitted the acute-lens direction band
+
+Theory note 33 §8 originally asserted that, when
+`phi=pi-gamma<pi/2`, the isolated unit-spoke conditions `|r|<1,|s|<1`
+confine the projective direction to `(0,phi)`. This is false. Solving both
+sine inequalities in (8.8) gives
+
+```text
+(0,phi) union (pi-phi,2*phi).
+```
+
+The second band is nonempty exactly for `phi>pi/3`. An exact control is
+`gamma=3*pi/5`, `phi=2*pi/5`: the three required projective directions can be
+taken as `pi/10,3*pi/10,7*pi/10`, and every oblique coefficient has absolute
+value either `sin(pi/10)/sin(2*pi/5)` or
+`sin(3*pi/10)/sin(2*pi/5)`, both strictly below one.
+
+Consequently the correct necessary isolated-spoke interval is
+
+```text
+pi/3 < gamma < 2*pi/3,
+```
+
+not `pi/3<gamma<pi/2`. The orientation window (8.7) remains correct only on
+the lower branch `pi/3<gamma<pi/2`.
+
+Consequences:
+
+- K23I is replaced by its corrected two-branch statement;
+- ERR-011's description of the pre-existing K23I interval proof as exact is
+  itself superseded here; ERR-011's process correction remains valid;
+- K24W is widened to
+  `(pi/3,2*pi/3) minus {pi/2}`;
+- D-0152 and D-0153's narrower interval statements are superseded by
+  D-0154;
+- sessions 136--137 and STATUS carry explicit correction notices;
+- K23C, K24C and N36 are unchanged because their exact angle lies in the
+  lower branch; and
+- no future theorem or decision run may close the family without covering
+  both non-right subintervals.

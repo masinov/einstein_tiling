@@ -272,22 +272,23 @@ Modulo an unoriented angle `pi`, successive spoke directions differ by
 2*tau=pi+gamma=-phi (mod pi).                          (8.4)
 ```
 
-### ST-M1.K23I
+### ST-M1.K23I (corrected by ERR-012)
 
 If all three `d` spokes of a K22S spine have their endpoints in the open
-rhombus, then, up to reflection,
+rhombus, then
 
 ```text
-pi/3 < gamma <= pi/2.                                  (8.5)
+pi/3 < gamma < 2*pi/3.                                 (8.5)
 ```
 
-For the non-right HC-28 family this sharpens to
+For the non-right HC-28 family the right-angle point is treated separately by
+N33, so the surviving domain is
 
 ```text
-pi/3 < gamma < pi/2.                                   (8.6)
+(pi/3,2*pi/3) minus {pi/2}.                            (8.6)
 ```
 
-Moreover, write the first `A` direction as
+On the lower branch `pi/3<gamma<pi/2`, write the first `A` direction as
 
 ```text
 delta=phi/2-epsilon.
@@ -308,13 +309,7 @@ r=sin(phi-psi)/sin(phi),
 s=sin(psi)/sin(phi).                                  (8.8)
 ```
 
-If `0<phi<pi/2`, conditions (8.3) put the projective direction strictly
-between the two rhombus sides.  The three spoke directions are translates of
-one another by the interval length `phi`, so three distinct translates cannot
-all lie in that one open interval.  Hence `phi>=pi/2`, or
-`gamma<=pi/2`.
-
-Now take the obtuse-lens range `0<gamma<pi/2`.  Formula (8.8) shows that the
+First take the obtuse-lens range `0<gamma<pi/2`. Formula (8.8) shows that the
 complete set of projective directions satisfying (8.3) is
 
 ```text
@@ -333,7 +328,35 @@ representative `delta-phi/2=-epsilon`.  The first spoke line then has angle
 `gamma-epsilon` and `2*gamma-epsilon`.  Membership in (8.9) gives
 `epsilon<3*gamma-pi`; `delta>0` gives `epsilon<phi/2`.
 All inequalities reverse directly to show these are the exact isolated-spoke
-orientation conditions.  □
+orientation conditions on this lower branch.
+
+Now take the acute-lens range `0<phi<pi/2`, equivalently
+`pi/2<gamma<pi`. Solving both strict sine inequalities in (8.8) gives the
+complete projective direction set
+
+```text
+(0,phi) union (pi-phi,2*phi),                         (8.10)
+```
+
+where the second interval is nonempty exactly when `phi>pi/3`. The three
+spoke directions differ by `phi` up to reversal in projective angle. If
+`phi<=pi/3`, only the first interval survives and three successive directions
+cannot all fit strictly. Thus `phi>pi/3`, or `gamma<2*pi/3`.
+
+The omitted band is real. At `gamma=3*pi/5` and `phi=2*pi/5`, take the three
+projective directions `pi/10`, `3*pi/10`, and `7*pi/10` (the same set as
+the reflected-turn progression `54,126,198` degrees). Their six
+oblique coefficients have absolute values
+
+```text
+sin(pi/10)/sin(2*pi/5)
+or
+sin(3*pi/10)/sin(2*pi/5),                             (8.11)
+```
+
+both strictly below one because
+`0<pi/10<3*pi/10<2*pi/5<pi/2`. Hence the upper branch cannot be discarded.
+Combining the two branches proves (8.5). □
 
 K23I is a necessary family reduction.  It does not prove that the three
 translated segments share compatible intermediate code edges.
@@ -394,11 +417,11 @@ cannot dismiss the interval as an isolated-spoke or prefix artifact.
 ## 10. Session-136 disposition
 
 K23I closes every non-right guard angle outside
-`pi/3<gamma<pi/2`.  The exact rational control (9.1)--(9.5) shows why that
-remaining open interval is a real coupled problem.  HC-28 is at session 2 of
-3.  Session 137 must either produce a complete exact simple K22S witness,
-prove that containment in this interval forces `h` above the rhombus
-diameter, or fire the predeclared freeze at that precise implication.
+`(pi/3,2*pi/3) minus {pi/2}`. The exact rational control (9.1)--(9.5) lies on
+the lower branch and shows why the surviving domain is a real coupled
+problem. The original session-136 text incorrectly omitted the acute-lens
+band; ERR-012 is controlling. HC-28's later exact controls remain on the
+lower branch and are unaffected.
 
 ## 11. K24C: exact containment and closure coexist
 
@@ -525,11 +548,17 @@ obstruction.  HC-28's third terminal outcome therefore fires:
 ### ST-M1.K24W
 
 Determine whether the K22S family has a point in
-`pi/3<gamma<pi/2` satisfying all 66 nonadjacent-segment predicates.  This is
-open and **frozen**.  Reopening requires either complete exact simple data or
-a separately authorized decision procedure for this already serialized
-family; another angle sample, guessed central direction, or weakened
-intersection list is not admissible.
+
+```text
+(pi/3,2*pi/3) minus {pi/2}                            (13.1)
+```
+
+satisfying all 66 nonadjacent-segment predicates. This is open and
+**frozen**. Reopening requires either complete exact simple data or a
+separately authorized decision procedure for this already serialized family;
+another angle sample, guessed central direction, or weakened intersection
+list is not admissible. Any decomposition must cover both connected
+non-right subintervals.
 
 No polygon, two-patch placement, all-tilings decoder, aperiodicity theorem or
 candidate has been obtained.

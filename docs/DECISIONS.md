@@ -3322,3 +3322,25 @@ discards one transient floating-angle diagnostic that violated the
 checkpoint's method restriction; no theorem or exact control depends on it.
 No polygon, placement patch, decoder, aperiodicity result or candidate is
 claimed.
+
+## D-0154 (2026-07-23) — Correct K23I and widen K24W
+
+Independent audit found that K23I's acute-lens proof omitted a second
+projective direction band. ERR-012 is controlling. The correct necessary
+isolated-spoke interval is
+
+```text
+pi/3 < gamma < 2*pi/3.
+```
+
+The right angle remains separately closed by N33 for the unchanged square
+topology, so the frozen simplicity obligation K24W now ranges over
+`(pi/3,2*pi/3) minus {pi/2}`. Equation (8.7) parameterizes only the lower
+branch. D-0152 and D-0153 remain historical records but their narrower
+interval language is superseded here.
+
+K23C, K24C and N36 survive unchanged: their exact guard angle lies in the
+lower branch and their arithmetic has been independently recomputed. No
+HC-29 theorem or experiment is admitted by this correction. Any future
+decomposition or decision procedure must cover both non-right subintervals
+from the outset.
