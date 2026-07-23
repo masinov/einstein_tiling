@@ -3730,3 +3730,23 @@ inside a parent that was coded to wait for every sibling.  No screen exit
 status survived, so the exact signal is unavailable.  A harmless transient
 user-service probe persisted and exited successfully, validating the
 replacement ownership boundary before research launch.
+
+## D-0176 (2026-07-24) — Supersede D-0174/D-0175; HC-34 is still live
+
+ERR-014 corrects the process-visibility premise.  Host-level `screen` and
+process inspection finds the original HC-34 supervisor and S1-- solver alive
+under the original external timeout.  The sandbox had reported only that it
+could not see the host process; it did not establish process death.
+
+HC-35 is therefore cancelled before launch.  Its preregistration, tested
+fail-isolated runner and transient-service probe remain infrastructure, not
+research evidence.  No HC-35 solver unit, screen viewport or result manifest
+was started.
+
+The original HC-34 process is left undisturbed.  Its two textual-drift
+failures remain failures and are not retried.  When S1-- finishes, the same
+supervisor may launch its pre-registered second batch.  Those children will
+consume the D-0173 frozen bytes through the repaired loader; no formula,
+ordering, cell, timeout or memory parameter changes.  Final disposition waits
+for that original supervisor.  Any work after its manifest is known requires
+a new human decision based on the actual per-cell outcomes.

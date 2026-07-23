@@ -389,3 +389,36 @@ Consequences:
 - session 148's terminal-outcome statement is withdrawn; and
 - directed-strand claims must henceforth be pinned by exact symbolic edge-
   vector identities, not inferred from the carrier's half-turn alone.
+
+## ERR-014 (2026-07-24) — Sandbox process visibility falsely closed HC-34
+
+Session 152 and D-0174 asserted that the HC-34 screen and its first solver
+process had died.  That conclusion was false.  The diagnostic `screen -ls`
+and `ps` calls ran inside a managed process namespace that could not see or
+contact the host-owned screen process, reporting `Dead ???` and no matching
+PID.  A host-level check on 2026-07-24 showed the original screen detached and
+the complete process chain still live:
+
+```text
+SCREEN -> run_research.py -> run_k16w_hc34.py
+       -> timeout 10800 -> run_k16w_hc34_cell.py S1--
+```
+
+The S1-- cell had been consuming CPU continuously since the original launch.
+The two other first-batch cells did abort before solving on the textual-drift
+guard, as their logs state.  Thus HC-34 produced no verdict *yet*, but it was
+not a completed failed launch and its active cell was never killed.
+
+Consequences:
+
+- D-0174's claims that screen died, no solver survived and HC-34 closed are
+  withdrawn;
+- D-0175/HC-35's premise of zero active HC-34 work is withdrawn, and HC-35 is
+  halted before any research launch;
+- the original HC-34 supervisor remains the only authorized solver process;
+- after S1-- terminates, the original supervisor may continue its untouched
+  second batch under D-0172; the repaired loader changes provenance handling,
+  not formula bytes, constraints, ordering or budgets;
+- S1-+ and S2-- remain pre-solver failures and are not retried; and
+- no future screen/process conclusion may rely solely on the sandbox
+  namespace when the process was launched into the host namespace.
