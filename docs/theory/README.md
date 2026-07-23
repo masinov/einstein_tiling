@@ -123,6 +123,12 @@ reviewable proof or certificate.
 - `38_k16w_budget_and_encoding_audit.md` — K30W gives the exact shrinking
   `b,c` window, K30B exposes host component budgets, N40 rejects a mirror
   quotient, and K30E audits then rejects high-degree terminal elimination.
+- `39_k16w_exact_compactification.md` — N41 refutes the west--east polarity
+  cell and K31C bounds the surviving east--west cell by `v<V_*<13`, while
+  retaining the finite strict-boundary obligations for any later decision.
+- `40_k16w_finite_strand_atlas.md` — K32S gives four exhaustive midline
+  strand orders, K32A gives four bounded bridge-chart pairs, and K32R isolates
+  tangent versus transverse closure strata for a later exact decision.
 - `W1_TRANSFER_SPEC.md` — the soundness/completeness contract for the exact
   cylinder transfer engine and its certificates.
 - `PROOF_LEDGER.md` — stable IDs, scope, status, dependencies, and artifacts.

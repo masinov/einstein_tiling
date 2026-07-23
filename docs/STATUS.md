@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-23 (session 145 HC-32 budget/encoding audit)
+**Last updated:** 2026-07-23 (session 147 HC-32 bounded 16-cell atlas)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ HC-32 session 1/3: K30W gives the shrinking `b,c` window; N40 rejects a mirror quotient and K30E rejects radical terminal elimination; compactification is next (D-0111--D-0165) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-32 complete: N41/K31C leave one bounded K16W cell; K32S/K32A give an exact 16-cell strand/chart cover and K32R isolates tangent closure. HC-33 decision awaits authorization (D-0111--D-0167) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -1081,3 +1081,17 @@ Research is under the 2026-07-21 reset recorded in
     substitution but rejects it: relative to the live tangent chart it saves
     no variable and raises the cleared degree ceiling from 28 to 84.  These
     are implication/equivalence audits only; no formula or solver is run.
+31. Session 146 proves N41: the `P_-+` K16W cell is empty.  K31C then uses
+    exact long-spoke endpoint margins and host closure to bound every point
+    in the remaining `P_+-` cell by `v<V_*<13`, `a<3/2`, and
+    `b,c<98/43`.  This replaces the planned asymptotic blow-up with a strict
+    finite theorem, so self-contact at infinity cannot escape.  The bounded
+    feasible set remains open at straight-bridge, containment, tangency and
+    singular-closure boundaries; no complete interval decision is inferred.
+32. Session 147 proves K32S: all four long spokes and the host cross the
+    symmetry line, their C/B order is forced, and exactly four strict
+    central-symmetric strand orders remain.  K32A covers both bridge circles
+    with four bounded chart pairs, while K32R separates impossible, tangent
+    and transverse closure strata.  The remaining obligation is an exact
+    16-cell bounded cover retaining all 120 pair predicates.  HC-32 closes
+    without a run; a certified all-cell decision requires a new checkpoint.

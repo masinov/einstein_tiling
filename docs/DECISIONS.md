@@ -3532,3 +3532,39 @@ tangent variable; the radical form leaves the variable count at eight and
 raises the cleared degree ceiling from 28 to 84.  HC-32 therefore carries
 K30W/K30B into compactification, retains both cells, and does not rewrite or
 run the formula.
+
+## D-0166 (2026-07-23) — Replace asymptotic blow-up by an explicit bound
+
+N41 proves the `P_-+` cell empty: its westward first length-`v` spoke forces
+the prefix endpoint beyond `sqrt(v^2-1)`, while host diameter and
+`b,c>sqrt(2)` put the complete prefix norm strictly below that value.
+
+For `P_+-`, K31C applies the same endpoint margin
+`delta=v-sqrt(v^2-1)` at both long spokes.  It bounds `a` from the first
+prefix, bounds `p_8` after the second spoke, and combines that with the host
+component budget.  Every surviving point has
+`sqrt(23/2)<v<V_*<13`, `a<3/2`, and `b,c<98/43`.
+
+This is stronger than the planned `lambda=1/v` analysis and blocks limiting
+self-contact at infinity by strict finite inequalities.  It compactifies the
+weights but does not close the open boundary strata or prove interval
+subdivision complete.  No formula or solver run is authorized.
+
+## D-0167 (2026-07-23) — Close HC-32 with a 16-cell bounded exact atlas
+
+K32S uses the fixed symmetry line, central half-turn and the positive K27X
+hook offset to prove `y_C>y_B`.  The five long-strand heights therefore have
+exactly four possible strict central-symmetric orders.  This is an exhaustive
+partition, not a selected isotopy class.
+
+K32A replaces each unbounded bridge tangent parameter by two bounded
+semicircle charts.  The four chart pairs are an exact cover of both bridge
+directions and preserve variable count and degree.  K32R separately partitions
+closure into negative-discriminant, tangent and transverse strata; it names
+where interval Newton may apply but does not claim interval completeness.
+
+Together with N41/K31C, the one surviving K16W obligation has an exact cover
+by 16 bounded cells, each retaining all original predicates.  HC-32 is
+exhausted at three theorem sessions with no artifact growth or solver run.
+A later decision requires separate authorization and an exact certificate
+contract for all cells and boundary strata.
