@@ -9,13 +9,13 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-23-34",
-    "date": "2026-07-23",
-    "through_session": 150,
-    "reason": "Sessions 148--150 completed HC-33 after ERR-013 corrected the invalid N42 closure. Corrected N42 forces H east; K33M proves only the five long strands cross the symmetry line; N43 removes S4; K33C fixes the first bridge to the negative semicircle. Exactly six bounded complete cells remain, each retaining closure, all 32 containment bounds, all 120 nonadjacent-pair predicates and every strict-boundary/discriminant obligation. The user explicitly authorizes HC-34 to serialize and cold-validate exactly those six cells before any run, preregister the finite decision, and launch only the validated formulas under D-0150 external supervision. No extra cell, dropped predicate, alternate ordering, timeout increase, polygon, SVG or candidate promotion is authorized.",
+    "id": "HC-2026-07-24-35",
+    "date": "2026-07-24",
+    "through_session": 152,
+    "reason": "Sessions 151--152 serialized the six complete K16W cells, then fail-closed HC-34 after the launcher reconstructed nondeterministically named SMT-LIB and its screen process died. No SAT, UNSAT, unknown, model or partial solver evidence was produced. The formulas remain byte-identical to D-0173 and the loader now authenticates and parses those exact bytes. After independent review, the user explicitly authorizes HC-35 to run those same six files once with unchanged formula order and budgets, provided cells are fail-isolated and the prior screen death receives a recorded infrastructure disposition. A host-native transient user service owns the supervisor; cell Popen groups are session-isolated; screen is only an independently hosted log viewport. No formula regeneration, alternate ordering, additional cell, timeout increase, fallback, polygon, SVG or candidate promotion is authorized.",
     "artifact_bytes": {
-      "docs/notebook/assets": 6757298033,
-      "data": 1809060890
+      "docs/notebook/assets": 6759577960,
+      "data": 1809024026
     }
   }
 }

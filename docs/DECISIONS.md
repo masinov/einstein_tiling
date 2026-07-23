@@ -3705,3 +3705,28 @@ does not authorize a rerun.  Therefore HC-34 closes as a failed launch with
 all six cells open.  A retry requires a new explicit human checkpoint that
 names the same six immutable formulas and resources; neither this repair nor
 the unused HC-34 session allowance silently grants it.
+
+## D-0175 (2026-07-24) — Admit HC-35 as the first effective six-cell run
+
+After independent review of corrected HC-33 and failed HC-34, the user
+explicitly authorizes one HC-35 run of the same six D-0173 files.  This does
+not waive the prior stop rule retroactively: it is a new checkpoint decision,
+made after disclosure that zero solver evidence existed.  Formula hashes,
+cell order, two batches, Z3 ordering, three-hour internal and external limits,
+60-second kill grace, 32-GiB per-cell parameter and all claim boundaries are
+unchanged.
+
+The launch must be fail-isolated.  The research supervisor runs as a
+host-native transient user service rather than as a child of screen.  Every
+cell process starts a new session, so a cell exception cannot signal siblings.
+Screen runs independently and is only a viewport on append-only logs; losing
+it cannot terminate the supervisor or cells.
+
+The prior screen death is classified as an infrastructure-lifecycle failure,
+not a batch exception cascade.  The managed command returned while the screen
+daemon and its still-running solver were descendants of that launch scope;
+all were reaped, while the two pre-solver exceptions merely returned nonzero
+inside a parent that was coded to wait for every sibling.  No screen exit
+status survived, so the exact signal is unavailable.  A harmless transient
+user-service probe persisted and exited successfully, validating the
+replacement ownership boundary before research launch.

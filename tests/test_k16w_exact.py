@@ -137,3 +137,27 @@ def test_hc34_runner_loads_the_frozen_bytes_instead_of_reserializing():
         solver, record = module.load_frozen_solver(cell)
         assert record["cell"] == cell
         assert len(solver.assertions()) == 187
+
+
+def test_hc35_launcher_isolates_cell_sessions(monkeypatch, tmp_path):
+    path = ROOT / "scripts/run_k16w_hc35.py"
+    spec = importlib.util.spec_from_file_location("run_k16w_hc35", path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    captured = {}
+
+    class Process:
+        pid = 12345
+
+    def fake_popen(command, **kwargs):
+        captured["command"] = command
+        captured.update(kwargs)
+        return Process()
+
+    monkeypatch.setattr(module.subprocess, "Popen", fake_popen)
+    with (tmp_path / "cell.log").open("wb") as log:
+        process = module.launch_cell(HC34_CELLS[0], log)
+    assert process.pid == 12345
+    assert captured["start_new_session"] is True
+    assert captured["command"][0] == "/usr/bin/timeout"
+    assert captured["command"][-1] == HC34_CELLS[0]
