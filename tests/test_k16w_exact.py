@@ -56,6 +56,50 @@ def test_hc38_qsqrt2_model_recognizer_is_exact():
     assert payload["sqrt2_denominator"] == 1
 
 
+def test_hc38_formula_manifest_pins_complete_tangent_cells():
+    path = ROOT / "docs/notebook/assets/k16w-hc38-tangent-formulas.json"
+    payload = json.loads(path.read_text())
+    assert payload["code_version"] == "fa0c190"
+    assert payload["cvc5_version"] == "1.3.4"
+    assert payload["cvc5_options"] == {
+        "produce-models": "true",
+        "produce-proofs": "false",
+        "nl-cov": "true",
+        "nl-cov-var-elim": "true",
+    }
+    assert payload["complete"] is True
+    assert payload["cell_order"] == list(HC34_CELLS)
+    for record, cell in zip(payload["records"], HC34_CELLS):
+        formula = ROOT / record["path"]
+        data = formula.read_bytes()
+        assert record["cell"] == cell
+        assert record["sha256"] == sha256(data).hexdigest()
+        assert record["bytes"] == len(data)
+        assert record["solver_variables"] == [
+            "a", "b", "c", "v", "t1", "t2", "sqrt_half",
+        ]
+        assert record["nonadjacent_pairs"] == 120
+        assert record["constraint_counts"]["total_top_level"] == 190
+        assert data.startswith(b"(set-logic QF_NRA)\n")
+        assert sum(line.startswith(b"(assert") for line in data.splitlines()) == 190
+
+
+def test_hc38_cvc5_loader_parses_only_frozen_authenticated_bytes():
+    path = ROOT / "scripts/run_k16w_hc38_cell.py"
+    spec = importlib.util.spec_from_file_location("run_k16w_hc38_cell", path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    for cell in HC34_CELLS:
+        solver, terms, record = module.load_frozen_solver(cell)
+        assert record["cell"] == cell
+        assert len(solver.getAssertions()) == 190
+        assert set(terms) == {
+            "a", "b", "c", "v", "t1", "t2", "sqrt_half",
+        }
+        assert solver.getOption("nl-cov") == "true"
+        assert solver.getOption("nl-cov-var-elim") == "true"
+
+
 def test_complete_k16w_formula_has_every_segment_pair():
     problem = build_problem(timeout_ms=1000)
     assert len(problem.first_half) == 9

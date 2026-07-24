@@ -1,0 +1,181 @@
+{
+ "kind": "k16w-hc38-tangent-formula-manifest",
+ "schema_version": 1,
+ "date": "2026-07-24",
+ "code_version": "fa0c190",
+ "cvc5_version": "1.3.4",
+ "cvc5_options": {
+  "produce-models": "true",
+  "produce-proofs": "false",
+  "nl-cov": "true",
+  "nl-cov-var-elim": "true"
+ },
+ "cell_order": [
+  "s1-minus-minus",
+  "s1-minus-plus",
+  "s2-minus-minus",
+  "s2-minus-plus",
+  "s3-minus-minus",
+  "s3-minus-plus"
+ ],
+ "records": [
+  {
+   "cell": "s1-minus-minus",
+   "path": "docs/notebook/assets/k16w-hc38-tangent-s1-minus-minus.smt2",
+   "sha256": "a29e6fd8772d87c7cdfdfb61d1a1204fe9706839e8cd96a707f025b32c08a359",
+   "bytes": 493314,
+   "solver_variables": [
+    "a",
+    "b",
+    "c",
+    "v",
+    "t1",
+    "t2",
+    "sqrt_half"
+   ],
+   "constraint_counts": {
+    "base": 11,
+    "tangent_substitution": 5,
+    "containment_scalar": 32,
+    "closure": 1,
+    "nonadjacent_segment_pairs": 120,
+    "decomposition": 21,
+    "total_top_level": 190
+   },
+   "nonadjacent_pairs": 120,
+   "positive_homothety": "all physical coordinates multiplied by K35T T>0"
+  },
+  {
+   "cell": "s1-minus-plus",
+   "path": "docs/notebook/assets/k16w-hc38-tangent-s1-minus-plus.smt2",
+   "sha256": "ce9884f58d5a155fe69e5e5f1c5d8a5901c27114d282099072880d80c3d16bf5",
+   "bytes": 545731,
+   "solver_variables": [
+    "a",
+    "b",
+    "c",
+    "v",
+    "t1",
+    "t2",
+    "sqrt_half"
+   ],
+   "constraint_counts": {
+    "base": 11,
+    "tangent_substitution": 5,
+    "containment_scalar": 32,
+    "closure": 1,
+    "nonadjacent_segment_pairs": 120,
+    "decomposition": 21,
+    "total_top_level": 190
+   },
+   "nonadjacent_pairs": 120,
+   "positive_homothety": "all physical coordinates multiplied by K35T T>0"
+  },
+  {
+   "cell": "s2-minus-minus",
+   "path": "docs/notebook/assets/k16w-hc38-tangent-s2-minus-minus.smt2",
+   "sha256": "3b38c576b88f7b4504c3053d611b341dca709aca092d2f96fb020441d38fb321",
+   "bytes": 495573,
+   "solver_variables": [
+    "a",
+    "b",
+    "c",
+    "v",
+    "t1",
+    "t2",
+    "sqrt_half"
+   ],
+   "constraint_counts": {
+    "base": 11,
+    "tangent_substitution": 5,
+    "containment_scalar": 32,
+    "closure": 1,
+    "nonadjacent_segment_pairs": 120,
+    "decomposition": 21,
+    "total_top_level": 190
+   },
+   "nonadjacent_pairs": 120,
+   "positive_homothety": "all physical coordinates multiplied by K35T T>0"
+  },
+  {
+   "cell": "s2-minus-plus",
+   "path": "docs/notebook/assets/k16w-hc38-tangent-s2-minus-plus.smt2",
+   "sha256": "2cf5b5de3091e4c6e3aa43ed98c465848673ad86e38c2ed31e1cbed7f43af6a4",
+   "bytes": 545731,
+   "solver_variables": [
+    "a",
+    "b",
+    "c",
+    "v",
+    "t1",
+    "t2",
+    "sqrt_half"
+   ],
+   "constraint_counts": {
+    "base": 11,
+    "tangent_substitution": 5,
+    "containment_scalar": 32,
+    "closure": 1,
+    "nonadjacent_segment_pairs": 120,
+    "decomposition": 21,
+    "total_top_level": 190
+   },
+   "nonadjacent_pairs": 120,
+   "positive_homothety": "all physical coordinates multiplied by K35T T>0"
+  },
+  {
+   "cell": "s3-minus-minus",
+   "path": "docs/notebook/assets/k16w-hc38-tangent-s3-minus-minus.smt2",
+   "sha256": "1379317de61255c7577aaa1d51c04abfbea9c9bf33428df0093f1fa4bae7f412",
+   "bytes": 500652,
+   "solver_variables": [
+    "a",
+    "b",
+    "c",
+    "v",
+    "t1",
+    "t2",
+    "sqrt_half"
+   ],
+   "constraint_counts": {
+    "base": 11,
+    "tangent_substitution": 5,
+    "containment_scalar": 32,
+    "closure": 1,
+    "nonadjacent_segment_pairs": 120,
+    "decomposition": 21,
+    "total_top_level": 190
+   },
+   "nonadjacent_pairs": 120,
+   "positive_homothety": "all physical coordinates multiplied by K35T T>0"
+  },
+  {
+   "cell": "s3-minus-plus",
+   "path": "docs/notebook/assets/k16w-hc38-tangent-s3-minus-plus.smt2",
+   "sha256": "4d3bd7ca1209e8eb0ad4ae634db8bd838a0e129a39e9719e25e8c99d405386fc",
+   "bytes": 545709,
+   "solver_variables": [
+    "a",
+    "b",
+    "c",
+    "v",
+    "t1",
+    "t2",
+    "sqrt_half"
+   ],
+   "constraint_counts": {
+    "base": 11,
+    "tangent_substitution": 5,
+    "containment_scalar": 32,
+    "closure": 1,
+    "nonadjacent_segment_pairs": 120,
+    "decomposition": 21,
+    "total_top_level": 190
+   },
+   "nonadjacent_pairs": 120,
+   "positive_homothety": "all physical coordinates multiplied by K35T T>0"
+  }
+ ],
+ "complete": true,
+ "claim_boundary": "serialization only; no solver verdict"
+}
