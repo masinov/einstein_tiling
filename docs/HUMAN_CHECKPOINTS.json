@@ -9,10 +9,10 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-24-37",
+    "id": "HC-2026-07-24-38",
     "date": "2026-07-24",
-    "through_session": 158,
-    "reason": "After independent line-by-line verification of HC-36, the user says to continue. HC-37 follows the review's first recommendation and targets K36P's named selector polynomials using the cell-specific bridge-chart signs: sigma_1=-1 and sigma_2 in {-1,+1}. Sessions 159--161 are theorem-only. No solver, CAS, numerical reconnaissance, experiment runner, coordinate search, polygon, SVG or candidate promotion is authorized. Success requires a proved uniform selector sign on a complete cell, an exact cell/root elimination, or a strict variable/degree reduction recorded in the ledger. Conditional formulas, sampled points and a smaller informal search region do not count. If no admitted count decreases by session 161, freeze the thin-lens carrier and return for a new decision; a tangent cvc5/CAD run is a separate future checkpoint.",
+    "through_session": 161,
+    "reason": "After independent verification of the HC-37 freeze, the user explicitly rejects sacrificing K16W without a feasible/infeasible theorem and authorizes a 48-hour tangent computation while pivot work proceeds in parallel. Session 162 preregisters, serializes, cold-checks and launches exactly the six K35T seven-variable tangent cells under one version-pinned cvc5/CAC configuration, concurrent external 172800-second supervision and 16-GiB per-process caps. SAT is promoted only for a rational or structurally recognized Q(sqrt(2)) model that cold-verifies the original geometry; unsupported algebraic SAT, bare UNSAT, unknown or resource stop leaves the cell open. Sessions 163--164 are theorem-first work on the unequal-guard K28W parallelogram pivot, beginning with role recognizability and an explicit proof that the family escapes the thin-lens hypotheses. No Z3 rerun, timeout extension, option retry, weakened predicate, polygon or candidate promotion is authorized.",
     "artifact_bytes": {
       "docs/notebook/assets": 6759771649,
       "data": 1809060890

@@ -3955,3 +3955,36 @@ refinement of the same thin-lens selectors is frozen.  No solver run, timeout
 increase, polygon or candidate is authorized.  Reopening requires a new human
 decision for either a separately preregistered certified decision of K35T's
 seven-variable tangent stratum or a pivot to a different carrier geometry.
+
+## D-0186 (2026-07-24) — Admit parallel tangent decision and carrier pivot
+
+After independent verification of HC-37, the user explicitly declines to
+discard K16W without a feasible/infeasible theorem.  HC-38 therefore has two
+authorized tracks:
+
+1. session 162 performs one preregistered cvc5/CAC attempt on each of the six
+   exact K35T tangent cells, with a 48-hour external limit and fixed memory
+   cap; and
+2. sessions 163--164 develop the unequal-guard K28W parallelogram pivot on
+   paper while those processes run.
+
+The tangent formulas must eliminate `t_0` exactly, retain every K34Q
+containment, strand and 120 nonadjacent-pair predicate, be frozen and
+checksummed before launch, and use one recorded cvc5 version/option set.  The
+six cells may run concurrently.  Each gets exactly one external 172,800-second
+wall limit with 60-second kill grace and a 16-GiB address-space cap, for at
+most 288 cell-hours and 48 hours elapsed.  No retry, alternative ordering,
+second solver configuration, weakened formula or larger budget is authorized.
+
+SAT becomes an exact K16W spine result only if a cold verifier accepts every
+model value as rational or structurally represented in `Q(sqrt(2))` and then
+rechecks the original, unsubstituted geometry including `Delta=0`.  Any other
+real-algebraic SAT model is preserved but leaves the cell open.  Bare UNSAT is
+solver evidence only because the selected cvc5 variable-elimination/CAC path
+does not produce an independently replayable proof; `unknown`, resource stop,
+malformed output or failed verification also leaves the cell open.
+
+The pivot is primary research, not contingent on solver output.  Before any
+coordinates it must state exactly how K28W's new guard roles are intrinsic and
+why unequal guard sides escape the hypotheses of N37/N41/K40E.  No polygon,
+SVG or candidate claim is authorized in HC-38.
