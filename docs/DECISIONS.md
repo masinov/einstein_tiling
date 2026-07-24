@@ -3825,3 +3825,21 @@ K35F separately proves that closure, first-quadrant terminal pose, strict
 any root elimination in the remaining sessions must consume a genuine strand
 or nonintersection predicate; treating the cheap filters as a selector is
 forbidden.
+
+## D-0180 (2026-07-24) — Reduce transverse root selection to exact strand signs
+
+K36W rotates the two transverse closure roots into the fixed relative spine
+frame.  K36M then rewrites each B/C midline-order test as the sign of
+`F_j-epsilon*sqrt(Delta)*Q_j`; no endpoint or strand predicate is dropped.
+The conjugate product
+
+```text
+F_j^2-Delta*Q_j^2
+```
+
+is therefore an exact root selector: if it is negative throughout a complete
+cell, that strand's required K32S sign retains at most one of the two closure
+roots.  No such uniform cell sign is proved in session 157, so the conditional
+`2 -> <=1` count is not booked as an HC-36 reduction and all six transverse
+cells remain two-root obligations.  Evaluated points, sampled angles or a
+replacement of the full simplicity table by this condition remain forbidden.
