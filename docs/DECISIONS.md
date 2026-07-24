@@ -3988,3 +3988,20 @@ The pivot is primary research, not contingent on solver output.  Before any
 coordinates it must state exactly how K28W's new guard roles are intrinsic and
 why unequal guard sides escape the hypotheses of N37/N41/K40E.  No polygon,
 SVG or candidate claim is authorized in HC-38.
+
+## D-0187 (2026-07-24) — Freeze and launch the six K35T tangent cells
+
+Session 162's gate passed before implementation.  cvc5 `1.3.4` is pinned and
+the tangent presentation is polynomial: multiplying all physical coordinates
+by `T>0` eliminates variable denominators while preserving every incidence
+predicate.  Each frozen cell has seven variables, 190 top-level assertions
+and all 120 nonadjacent closed-segment predicates.  The six formulas and their
+SHA-256 regression pins were pushed at `b38a4e0` before execution.
+
+The single authorized launch is screen `hc38_k16w_tangent`.  All six cells
+started concurrently under isolated `/usr/bin/timeout` supervisors with the
+preregistered 172,800-second wall, 60-second grace and 16-GiB address-space
+limit.  Host-visible process inspection and the mutable live manifest confirm
+all six entered cvc5/CAC.  There is no solver or mathematical verdict at
+launch.  Sessions 163--164 proceed with K28W theory without altering this
+experiment.
