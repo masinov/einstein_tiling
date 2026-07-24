@@ -3934,3 +3934,24 @@ can still be negative.  This `12 -> 6` bookkeeping reduction removes no live
 root or cell and is not booked under D-0182's success rule.  Session 161 gets
 one final theorem attempt on those six expressions and the S3 sum; absent an
 admitted count reduction, the thin-lens carrier freezes.
+
+## D-0185 (2026-07-24) — Freeze the thin-lens selector route
+
+K40E shows that K39O's six residual attacks are exactly the three possible
+same-cell conjugate-root transitions `S1->S1`, `S2->S2`, and `S3->S3`.
+K40H derives a separate affine-radical expression for S3's sum sign and the
+radical-free conjugate selector `H_0^2-Delta*H_1^2`.
+
+No complete cell forces any of `P_B`, `P_C`, or the S3 sum selector negative.
+Consequently HC-37 reduces only auxiliary bookkeeping (`12 -> 6 -> 3`), not
+an admitted metric:
+
+```text
+variables unchanged; degree unchanged; six cells; two transverse roots.
+```
+
+The predeclared stop fires after sessions 159--161.  Further algebraic
+refinement of the same thin-lens selectors is frozen.  No solver run, timeout
+increase, polygon or candidate is authorized.  Reopening requires a new human
+decision for either a separately preregistered certified decision of K35T's
+seven-variable tangent stratum or a pivot to a different carrier geometry.
