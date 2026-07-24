@@ -49,6 +49,18 @@ class Q2:
 
     __rmul__ = __mul__
 
+    def __pow__(self, exponent: int):
+        if exponent < 0:
+            return Q2(1) / (self ** (-exponent))
+        out = Q2(1)
+        base = self
+        while exponent:
+            if exponent & 1:
+                out *= base
+            base *= base
+            exponent //= 2
+        return out
+
     def __truediv__(self, other):
         other = as_q2(other)
         norm = other.a * other.a - 2 * other.b * other.b
@@ -102,9 +114,10 @@ def cscale(s: Q2, x: Point) -> Point:
     return s * x[0], s * x[1]
 
 
-def tangent(t: Fraction) -> Point:
+def tangent(t: Fraction | Q2) -> Point:
+    t = as_q2(t)
     den = 1 + t * t
-    return Q2((1 - t * t) / den), Q2(2 * t / den)
+    return (1 - t * t) / den, 2 * t / den
 
 
 def orient(a: Point, b: Point, c: Point) -> Q2:
@@ -145,6 +158,51 @@ def rational_model(payload) -> tuple[dict[str, Fraction] | None, list[str]]:
     return (values if not failures else None), failures
 
 
+def q2_entry(entry, name: str) -> tuple[Q2 | None, str | None]:
+    if not entry:
+        return None, f"{name}: model value is missing"
+    if entry.get("kind") == "rational":
+        return Q2(Fraction(entry["numerator"], entry["denominator"])), None
+    if entry.get("kind") == "q_sqrt2":
+        value = Q2(
+            Fraction(entry["rational_numerator"], entry["rational_denominator"]),
+            Fraction(entry["sqrt2_numerator"], entry["sqrt2_denominator"]),
+        )
+        polynomial = {
+            int(power): Fraction(coefficient["numerator"], coefficient["denominator"])
+            for power, coefficient in entry.get("defining_polynomial", {}).items()
+        }
+        total = Q2(0)
+        for power, coefficient in polynomial.items():
+            total += coefficient * (value ** power)
+        if not polynomial or not total.is_zero():
+            return None, f"{name}: Q(sqrt(2)) value fails its defining polynomial"
+        isolation = entry.get("isolation", {})
+        try:
+            lower_entry = isolation["lower"]
+            upper_entry = isolation["upper"]
+            lower = Fraction(lower_entry["numerator"], lower_entry["denominator"])
+            upper = Fraction(upper_entry["numerator"], upper_entry["denominator"])
+        except (KeyError, TypeError, ZeroDivisionError):
+            return None, f"{name}: malformed algebraic isolation interval"
+        if (value - lower).sign() <= 0 or (upper - value).sign() <= 0:
+            return None, f"{name}: Q(sqrt(2)) value lies outside its isolation interval"
+        return value, None
+    return None, f"{name}: model value is outside the admitted Q(sqrt(2)) field"
+
+
+def tangent_q2_model(payload) -> tuple[dict[str, Q2] | None, list[str]]:
+    failures = []
+    values = {}
+    for name in ("a", "b", "c", "v", "t1", "t2", "sqrt_half"):
+        value, failure = q2_entry(payload["model"].get(name), name)
+        if failure:
+            failures.append(failure)
+        else:
+            values[name] = value
+    return (values if not failures else None), failures
+
+
 HC34_CELLS = tuple(
     f"s{strand}-minus-{second}"
     for strand in (1, 2, 3)
@@ -152,10 +210,10 @@ HC34_CELLS = tuple(
 )
 
 
-def verify(values: dict[str, Fraction], cell: str | None = None,
+def verify(values: dict[str, Fraction | Q2], cell: str | None = None,
            hc34_cell: str | None = None) -> dict:
-    a, b, c, v = (Q2(values[name]) for name in ("a", "b", "c", "v"))
-    t0, t1, t2 = (values[name] for name in ("t0", "t1", "t2"))
+    a, b, c, v = (as_q2(values[name]) for name in ("a", "b", "c", "v"))
+    t0, t1, t2 = (as_q2(values[name]) for name in ("t0", "t1", "t2"))
     h = a + b + c
     failures = []
 
@@ -165,16 +223,19 @@ def verify(values: dict[str, Fraction], cell: str | None = None,
 
     require(a.sign() > 0 and b.sign() > 0 and c.sign() > 0 and v.sign() > 0, "positive weights")
     require((v - 1).sign() != 0, "unequal guard legs")
-    require(Fraction(0) < t0 < Fraction(1), "terminal first-quadrant chart")
-    require(t1 != 0 and t2 != 0, "bridge irredundancy")
+    require(t0.sign() > 0 and (1 - t0).sign() > 0,
+            "terminal first-quadrant chart")
+    require(t1.sign() != 0 and t2.sign() != 0, "bridge irredundancy")
 
     z = tangent(t0)
     if hc34_cell is None:
         z1, z2 = tangent(t1), tangent(t2)
     else:
         require(hc34_cell in HC34_CELLS, "recognized HC34 cell")
-        require(Fraction(-1) <= t1 <= Fraction(1), "bounded first bridge chart")
-        require(Fraction(-1) <= t2 <= Fraction(1), "bounded second bridge chart")
+        require((t1 + 1).sign() >= 0 and (1 - t1).sign() >= 0,
+                "bounded first bridge chart")
+        require((t2 + 1).sign() >= 0 and (1 - t2).sign() >= 0,
+                "bounded second bridge chart")
         raw1, raw2 = tangent(t1), tangent(t2)
         z1 = (-raw1[0], -raw1[1])
         second_sign = -1 if hc34_cell.endswith("-minus") else 1
@@ -281,6 +342,61 @@ def verify(values: dict[str, Fraction], cell: str | None = None,
     }
 
 
+def reconstruct_tangent(values: dict[str, Q2], cell: str) -> tuple[dict[str, Q2], list[str]]:
+    """Coldly reconstruct K35T's eliminated terminal chart and Delta."""
+
+    failures = []
+    a, b, c, v = (values[name] for name in ("a", "b", "c", "v"))
+    t1, t2 = values["t1"], values["t2"]
+    k = values["sqrt_half"]
+    if k != Q2(Fraction(0), Fraction(1, 2)):
+        failures.append("sqrt_half is not the positive sqrt(2)/2 root")
+
+    raw1, raw2 = tangent(t1), tangent(t2)
+    z1 = (-raw1[0], -raw1[1])
+    second_sign = -1 if cell.endswith("-minus") else 1
+    z2 = (second_sign * raw2[0], second_sign * raw2[1])
+    q = (-k, k)
+    q2 = (Q2(0), Q2(-1))
+    q3 = (k, k)
+    q4 = (Q2(-1), Q2(0))
+    q5 = (k, -k)
+    zero = (Q2(0), Q2(0))
+    w = [zero, (a, Q2(0))]
+    w.append(cadd(w[-1], q))
+    qz1 = cmul(q, z1)
+    w.append(cadd(w[-1], cscale(v, qz1)))
+    w.append(cadd(w[-1], cscale(b, cmul(q2, z1))))
+    w.append(cadd(w[-1], cmul(q3, z1)))
+    z12 = cmul(z1, z2)
+    w.append(cadd(w[-1], cscale(v, cmul(q3, z12))))
+    w.append(cadd(w[-1], cscale(c, cmul(q4, z12))))
+    w.append(cadd(w[-1], cmul(q5, z12)))
+
+    x8, y8 = w[8]
+    h = a + b + c
+    d2 = v * v + 1
+    r2 = x8 * x8 + y8 * y8
+    aa = v * x8 + y8
+    bb = x8 - v * y8
+    tangent_t = (d2 + 4 * r2 - h * h) / 4
+    delta = aa * aa + bb * bb - tangent_t * tangent_t
+    if not delta.is_zero():
+        failures.append("K35T Delta is not zero")
+    if tangent_t.sign() <= 0:
+        failures.append("K35T T is not positive")
+    if aa.sign() <= 0 or bb.sign() <= 0:
+        failures.append("K35T terminal numerator is not first-quadrant")
+    if (d2 - 2 * tangent_t).sign() <= 0:
+        failures.append("K35T H-east inequality fails")
+    if (tangent_t + aa).is_zero():
+        failures.append("K35T terminal chart denominator is zero")
+        return values, failures
+    out = dict(values)
+    out["t0"] = bb / (tangent_t + aa)
+    return out, failures
+
+
 def main(argv=None) -> int:
     argv = sys.argv if argv is None else argv
     if len(argv) not in (2, 3):
@@ -302,6 +418,16 @@ def main(argv=None) -> int:
     }
     if payload.get("status") != "sat" or not payload.get("model"):
         result["failures"].append("source does not contain a SAT model")
+    elif payload.get("kind") == "k16w-hc38-tangent-cell-result":
+        values, failures = tangent_q2_model(payload)
+        result["failures"].extend(failures)
+        if values is not None:
+            values, failures = reconstruct_tangent(values, hc34_cell)
+            result["failures"].extend(failures)
+            if not failures:
+                checked = verify(values, hc34_cell=hc34_cell)
+                checked["tangent_reconstructed"] = True
+                result.update(checked)
     else:
         values, failures = rational_model(payload)
         result["failures"].extend(failures)

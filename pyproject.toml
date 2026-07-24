@@ -12,6 +12,7 @@ dependencies = [
     "networkx==3.6.1",  # finite conflict-graph clique enumeration probes
     "scipy==1.18.0",  # small continuous masters paired with HiGHS MIP probes
     "z3-solver==5.0.0.0",  # exact QF_NRA decision for K16W (D-0148)
+    "cvc5==1.3.4",  # HC-38 tangent-stratum cylindrical algebraic coverings
 ]
 
 [build-system]

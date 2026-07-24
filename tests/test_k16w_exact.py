@@ -7,10 +7,53 @@ import sys
 
 import z3
 
+from einstein.theory.cvc5_models import exact_real_payload
 from einstein.theory.k16w_exact import HC34_CELLS, build_problem
+from einstein.theory.k16w_tangent import build_tangent_problem
 
 
 ROOT = Path(__file__).resolve().parent.parent
+
+
+def test_hc38_tangent_cells_are_polynomial_seven_variable_presentations():
+    for cell in HC34_CELLS:
+        problem = build_tangent_problem(cell)
+        assert set(problem.variables) == {
+            "a", "b", "c", "v", "t1", "t2", "sqrt_half",
+        }
+        assert "t0" not in problem.variables
+        assert len(problem.nonadjacent_pairs) == 120
+        assert problem.constraint_counts == {
+            "base": 11,
+            "tangent_substitution": 5,
+            "containment_scalar": 32,
+            "closure": 1,
+            "nonadjacent_segment_pairs": 120,
+            "decomposition": 21,
+            "total_top_level": 190,
+        }
+        assert len(problem.solver.assertions()) == 190
+
+
+def test_hc38_qsqrt2_model_recognizer_is_exact():
+    import cvc5
+
+    solver = cvc5.Solver()
+    solver.setLogic("QF_NRA")
+    solver.setOption("produce-models", "true")
+    value = solver.mkConst(solver.getRealSort(), "value")
+    solver.assertFormula(solver.mkTerm(
+        cvc5.Kind.EQUAL,
+        solver.mkTerm(cvc5.Kind.MULT, value, value),
+        solver.mkReal(2),
+    ))
+    solver.assertFormula(solver.mkTerm(cvc5.Kind.GT, value, solver.mkReal(0)))
+    assert str(solver.checkSat()) == "sat"
+    payload = exact_real_payload(solver, solver.getValue(value))
+    assert payload["kind"] == "q_sqrt2"
+    assert payload["rational_numerator"] == 0
+    assert payload["sqrt2_numerator"] == 1
+    assert payload["sqrt2_denominator"] == 1
 
 
 def test_complete_k16w_formula_has_every_segment_pair():
