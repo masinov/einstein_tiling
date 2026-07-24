@@ -237,6 +237,14 @@ Turtle under the production canonicalization.
 | ST-M1.K34Q | The corrected K16W obligation is serialized as exactly six bounded 187-assertion QF_NRA cells, each retaining all 120 pair predicates | N41/K31C, corrected N42, K32S/K32A, N43/K33C | machine-serialized exact decision package; no solver verdict yet | exact finite equisatisfiable cover | cold hash/count/order regression and independent rational-model verifier | `k16w-hc34-formulas.json`; session 151; D-0173 |
 | ST-M1.K34R | The first HC-34 fixed-batch launch produces solver dispositions | exact K34Q files; D-0150 supervision | complete negative-computational outcome: four resource stops, two pre-solver failures, no solver verdict/model/certificate | no admitted mathematical result; all six cells remain open | cold hash/count/order/status replay; external return codes and preserved exception logs | `k16w-hc34-results.json`; session 155; ERR-014/015; D-0177 |
 
+### HC-36 closure-discriminant ledger
+
+| ID | Statement | Scope | Status | Admitted form | Quantified reduction | Dependencies | Proof |
+|---|---|---|---|---|---|---|---|
+| ST-M1.K35D | The closure roots put `p_8` on the two sides of the rectangle diagonal with signed determinant `epsilon*sqrt(Delta)` | complete K32R closure geometry; `Delta>=0` | proof-draft exact physical root formula; no cell removed | exact definitional equivalence | none | K30E/K32R and N35 | `43_k16w_closure_discriminant.md` §1; D-0179 |
+| ST-M1.K35T | On `Delta=0`, `p_8` and H lie on the main diagonal and the unique terminal chart is `t_0=B/(T+A)` | each complete K34Q cell restricted to the tangent stratum; all original predicates retained | proof-draft exact tangent presentation; no tangent cell claimed empty | exact equisatisfiable substitution | solver variables `8 -> 7`; geometric variables `7 -> 6`; roots/cells unchanged; no degree reduction claimed | K35D, corrected N42, positive terminal chart | `43_k16w_closure_discriminant.md` §2; D-0179 |
+| ST-M1.K35F | Closure, first-quadrant terminal pose, strict `p_8` containment and H-east can admit both transverse roots | closure/filter subsystem only; bridge recursion and full K16W predicates deliberately omitted | exact separation control; forbids root selection from these filters alone | negative implication audit, not a K16W feasibility claim | none | K35D | `43_k16w_closure_discriminant.md` §3; D-0179 |
+
 ## Preserved Turtle-control evidence (legacy “finalist” identifiers)
 
 | ID | Exact finite claim | Status | Artifact | Logical use |

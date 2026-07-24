@@ -9,13 +9,13 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-24-35",
+    "id": "HC-2026-07-24-36",
     "date": "2026-07-24",
-    "through_session": 152,
-    "reason": "Sessions 151--155 serialize and run the six complete K16W cells, while ERR-014 corrects sandbox-only host process visibility. The original HC-34 supervisor completes: S1--, S2-+, S3-- and S3-+ reach exact external three-hour resource stops; S1-+ and S2-- are preserved pre-solver formula-drift failures. No SAT, UNSAT, unknown, model or certificate exists, so every cell remains open/frozen. HC-35 was authorized but cancelled before launch after the still-live HC-34 process was found. Its three-session allowance is exhausted. No concurrent duplicate, formula regeneration, alternate ordering, additional cell, timeout increase, fallback, polygon, SVG or candidate promotion is authorized; further work needs a new human checkpoint and a method change.",
+    "through_session": 155,
+    "reason": "The user explicitly authorizes HC-36 after independent review of the cvc5/CAC certificate boundary and the HC-34/35 no-verdict closure. Sessions 156--158 are theorem-only: split K32R by the exact closure discriminant, analyze the tangent stratum, test exact root selection on the transverse stratum, then apply per-cell chord/intersection squeezes. No solver, CAS, numerical reconnaissance, experiment runner, coordinate search, polygon, SVG or candidate promotion is authorized. Success requires either an exact cell elimination or a quantified reduction recorded in the proof ledger's admitted-form column: a strict decrease in continuous variables, closure roots, live cells or maximum polynomial degree. If neither occurs within three sessions, the theorem attempt stops and K16W remains frozen pending a new checkpoint.",
     "artifact_bytes": {
-      "docs/notebook/assets": 6759577960,
-      "data": 1809024026
+      "docs/notebook/assets": 6759771649,
+      "data": 1809060890
     }
   }
 }

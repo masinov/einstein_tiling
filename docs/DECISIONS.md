@@ -3780,3 +3780,48 @@ HC-35 was cancelled before launch and contributes no solver output.  Sessions
 153--155 exhaust its checkpoint allowance.  Further K16W work requires a new
 human checkpoint and a method change justified against these resource stops,
 not another timeout extension.
+
+## D-0178 (2026-07-24) — Admit HC-36 exact discriminant theory
+
+After independent review of the HC-34/35 closure and the certificate boundary
+of alternative real-algebraic solvers, the user explicitly authorizes one
+three-session theorem-only checkpoint.  HC-36 must analyze K32R's exact
+closure discriminant before any new decision procedure is considered:
+
+1. split every surviving K16W cell into `Delta=0` and `Delta>0` strata;
+2. on `Delta=0`, either derive a simplicity obstruction or an exact
+   lower-dimensional presentation;
+3. on `Delta>0`, test whether first-quadrant terminal orientation and N42's
+   eastward host select one of the two closure roots; and
+4. apply K25X-style chord/intersection identities inside the retained strand
+   cells.
+
+No solver, CAS, floating-point reconnaissance, experiment runner, coordinate
+search, polygon, SVG or candidate promotion is authorized.  A successful
+reduction must be measured, not described impressionistically: the proof
+ledger must record a strict decrease in continuous variables, closure roots,
+live cells or cleared polynomial degree, together with its admitted form
+(necessary implication or exact equivalence).  If neither an exact cell
+elimination nor such a quantified reduction is proved by session 158, the
+checkpoint stops and K16W remains frozen.  A solver pivot or another carrier
+family requires a new human decision.
+
+## D-0179 (2026-07-24) — Reduce the K16W tangent stratum exactly
+
+K35D identifies K32R's radical sign with the side of the rectangle diagonal
+containing `p_8`.  On `Delta=0`, corrected N42 selects the internal tangency:
+`p_8=lambda*(v,1)` with `0<lambda<1/2`, and the central host is the remaining
+diagonal segment.  K35T reconstructs the unique terminal direction by
+`(C,S)=(A/T,B/T)` and its tangent chart by `t_0=B/(T+A)`.
+
+Substituting these identities while retaining every K34Q predicate gives an
+exact tangent presentation with seven rather than eight solver real variables
+(six rather than seven geometric variables, plus the fixed `sqrt_half`
+auxiliary).  This is HC-36's first measured success.  No degree reduction or
+tangent-cell emptiness is claimed.
+
+K35F separately proves that closure, first-quadrant terminal pose, strict
+`p_8` containment and H-east alone can admit both transverse roots.  Therefore
+any root elimination in the remaining sessions must consume a genuine strand
+or nonintersection predicate; treating the cheap filters as a selector is
+forbidden.
