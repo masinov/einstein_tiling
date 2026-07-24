@@ -4021,3 +4021,28 @@ named change to the side word, full-side spoke hypothesis, contextual guard
 pose or selector. Merely changing `e,f` values is forbidden. Session 164
 may design a new topology outside N44, while the HC-38 tangent run continues
 unchanged.
+
+## D-0189 (2026-07-24) — Classify edge-minimal clean-spoke half-turn words
+
+K42P propagates directed endpoint port lengths before geometry. Under the
+fixed `A-B-C-H-C-B-A` shield order, a one-edge `X--Y` gap forces equal
+outgoing/incoming port lengths; unequal ports minimally require `u,v` and one
+bridge vertex. Central pairing doubles the two forced first-half bridges.
+
+K42M therefore gives an exhaustive dichotomy up to reversal: the equal-port
+branch is the 15-edge K10B word, and the unequal-port branch is the 19-edge
+K16B word. N46 rules out a third edge-minimal family in this architecture.
+This is an exact topology-synthesis filter, not a geometry or novelty claim.
+
+HC-38's three theory/experiment sessions are exhausted. Another numerical
+thin-lens variation is forbidden. A fresh carrier must change at least one
+named hypothesis: full-side contact, shield role order, half-turn docking, or
+single-guard topology. The recommended next theorem question is reflection-
+based two-copy docking; it requires new human authorization. The six tangent
+processes remain the sole active HC-38 experiment and continue under their
+original stop rule.
+
+Because the live supervisor observes the shared worktree, its mutable
+`code_version` diagnostic may advance or acquire `-dirty` during parallel
+theory commits. It is not launch provenance. Launch is pinned to `b38a4e0`
+and every solved formula to the immutable `fa0c190` manifest and SHA-256.

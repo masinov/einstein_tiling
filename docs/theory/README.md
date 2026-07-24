@@ -121,6 +121,11 @@ reviewable proof or certificate.
   are boundary-intrinsic, but selected complete clean-spoke contacts force
   `e=f=d`; the collapse is K22S and N37 closes it. Partial/contextual guard
   interfaces and different side words remain outside the no-go.
+- `50_clean_spoke_topology_classification.md` — K42P/K42M classify the
+  edge-minimal full-side/half-turn incidence words: K10B is the equal-port
+  branch and K16B the unique unequal-port branch. N46 forces any fresh
+  carrier to change contact type, role order, docking involution or guard
+  topology rather than another numerical lens parameter.
 - `37_k16w_polarity_elimination.md` — N39 rules out equal-polarity long
   spokes by a width-reset inequality, and K29O collapses the surviving K16W
   critical-pair domain to two exact opposite-polarity cells.
