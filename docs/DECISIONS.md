@@ -3843,3 +3843,27 @@ roots.  No such uniform cell sign is proved in session 157, so the conditional
 `2 -> <=1` count is not booked as an HC-36 reduction and all six transverse
 cells remain two-root obligations.  Evaluated points, sampled angles or a
 replacement of the full simplicity table by this condition remain forbidden.
+
+## D-0181 (2026-07-24) — Close HC-36 with tangent reduction only
+
+K37O orders the two transverse terminal directions counterclockwise.  K37Q
+proves `Q_B>0>Q_C`, so K36M's B and C strand tests can only move from below H
+to above H as the radical sign changes from minus to plus.  If both roots are
+complete, K37S reduces their abstract ordered strand-cell transitions from
+nine to six.
+
+This transition-table reduction is not one of HC-36's admitted complexity
+metrics: it removes no live K34Q cell or closure root and lowers no variable or
+degree count.  Neither conjugate selector product is proved negative on a
+complete cell.  Therefore the only booked HC-36 success is K35T's exact
+tangent presentation:
+
+```text
+solver variables 8 -> 7; geometric variables 7 -> 6.
+```
+
+All six cells and both transverse roots remain open; no tangent cell is proved
+empty.  Sessions 156--158 exhaust HC-36.  No result licenses a solver run,
+timeout increase, predicate deletion, polygon or candidate claim.  A certified
+stratified decision, another named-pair theorem, or a carrier pivot requires a
+new human checkpoint.
