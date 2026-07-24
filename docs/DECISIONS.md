@@ -3913,3 +3913,24 @@ scoped shortcut obstruction, not a counterexample to complete K16W and not a
 claim that `P_B` changes sign inside a live strand cell.  Session 160 must add
 the complete cell constraints and the second bridge chart; no sampled point
 or chart-only argument counts as HC-37 progress.
+
+## D-0184 (2026-07-24) — Narrow, but do not promote, selector attacks
+
+K39C expresses the C support-line offset as `dot(z_2,U)`.  Each fixed second
+bridge semicircle contains both offset signs whenever `U_y` is nonzero; in the
+exceptional `U_y=0` slice, the vertical seams have zero offset.  Therefore the
+second chart sign alone no more forces `P_C` than the first chart forces
+`P_B`.
+
+K39O combines the exact root order with the complete S1--S3 signs.  Six of
+twelve root-labelled strand attacks have selector product strictly positive;
+only
+
+```text
+S1+: B,C;  S2-: B,C;  S3-: B;  S3+: C
+```
+
+can still be negative.  This `12 -> 6` bookkeeping reduction removes no live
+root or cell and is not booked under D-0182's success rule.  Session 161 gets
+one final theorem attempt on those six expressions and the S3 sum; absent an
+admitted count reduction, the thin-lens carrier freezes.

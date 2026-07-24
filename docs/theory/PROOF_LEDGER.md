@@ -257,6 +257,8 @@ Turtle under the production canonicalization.
 |---|---|---|---|---|---|---|---|
 | ST-M1.K38N | `P_j=r^2((T-2nm)^2-s^2(d^2-4m^2))`, so a selector is exactly a root-chord/support-line crossing | either B or C in a complete transverse K34Q cell | proof-draft exact normal form; no uniform sign | exact definitional equivalence | none | K36P and `Delta=d^2r^2-T^2` | `46_k16w_selector_normal_form.md` §1; D-0183 |
 | ST-M1.K38B | In the fixed `sigma_1=-1` chart, the exact B-line offset is (2.2) and its sign is not uniform over admitted `a,t_1` | first bridge chart and K31C weight range only; full K16W predicates omitted | proof-draft exact shortcut obstruction; not a cell feasibility result | negative scope audit | none | K33C and K38N coordinates | `46_k16w_selector_normal_form.md` §2; D-0183 |
+| ST-M1.K39C | `m_C=dot(z_2,U)` in the B frame, and either second-bridge semicircle contains both offset signs unless `U_y=0` | one K32A second-bridge chart; full K16W predicates omitted | proof-draft exact shortcut obstruction; not a cell feasibility result | negative scope audit | none | K32A/K38N | `47_k16w_selector_attack_table.md` §1; D-0184 |
+| ST-M1.K39O | Monotonicity makes six of twelve root-labelled B/C selector attacks strictly positive, leaving only S1+:B,C; S2-:B,C; S3-:B; S3+:C | complete transverse root-labelled strand signs; no claim that the remaining attacks are negative | proof-draft exact attack classification; no root/cell removed | necessary-condition implication | selector attacks `12 -> 6`, explicitly not an admitted HC-37 metric | K36M/K37Q | `47_k16w_selector_attack_table.md` §2; D-0184 |
 
 ## Preserved Turtle-control evidence (legacy “finalist” identifiers)
 
