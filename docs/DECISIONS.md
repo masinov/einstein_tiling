@@ -3867,3 +3867,49 @@ empty.  Sessions 156--158 exhaust HC-36.  No result licenses a solver run,
 timeout increase, predicate deletion, polygon or candidate claim.  A certified
 stratified decision, another named-pair theorem, or a carrier pivot requires a
 new human checkpoint.
+
+## D-0182 (2026-07-24) — Admit HC-37 selector-polynomial theory
+
+Following independent verification of every HC-36 identity, the user directs
+the work to continue.  HC-37 takes the review's first recommendation: attack
+K36P's two named polynomials
+
+```text
+P_B=F_B^2-Delta*Q_B^2,
+P_C=F_C^2-Delta*Q_C^2
+```
+
+with the cell-specific information not consumed by HC-36, especially
+K33C's `sigma_1=-1` and the two exact `sigma_2` bridge charts.  The admitted
+outcomes are a uniform negative selector on a complete cell, an exact
+cell/root elimination, or a strict decrease in continuous variables or
+cleared polynomial degree.  Every result must keep its implication/equivalence
+form explicit in the proof ledger.
+
+Sessions 159--161 are theorem-only.  No solver, CAS, floating-point
+reconnaissance, experiment runner, coordinate search, polygon, SVG or
+candidate promotion is authorized.  A conditional selector, evaluated point,
+heuristic sign or smaller unmeasured region does not satisfy the stop.  If no
+admitted count decreases by session 161, the thin-lens carrier freezes and a
+new human decision chooses between a separately preregistered tangent
+cvc5/CAD attempt and a carrier pivot.
+
+## D-0183 (2026-07-24) — Put the selector in line--chord normal form
+
+K38N factors each K36P polynomial as
+
+```text
+P_j=|w_8|^2*((T-2*n_j*m_j)^2
+             -Q_j^2*(d^2-4*m_j^2)).
+```
+
+This is the exact condition that K36W's two-center root chord crosses the
+named B or C supporting line.  The reformulation changes no admitted count.
+
+For B, K38B expands the line offset throughout K33C's fixed left-semicircle
+chart.  Except on the slice `a=sqrt(2)`, its sign changes within that one
+chart; therefore `sigma_1=-1` alone cannot force the selector.  This is a
+scoped shortcut obstruction, not a counterexample to complete K16W and not a
+claim that `P_B` changes sign inside a live strand cell.  Session 160 must add
+the complete cell constraints and the second bridge chart; no sampled point
+or chart-only argument counts as HC-37 progress.

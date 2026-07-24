@@ -9,10 +9,10 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-24-36",
+    "id": "HC-2026-07-24-37",
     "date": "2026-07-24",
-    "through_session": 155,
-    "reason": "The user explicitly authorizes HC-36 after independent review of the cvc5/CAC certificate boundary and the HC-34/35 no-verdict closure. Sessions 156--158 are theorem-only: split K32R by the exact closure discriminant, analyze the tangent stratum, test exact root selection on the transverse stratum, then apply per-cell chord/intersection squeezes. No solver, CAS, numerical reconnaissance, experiment runner, coordinate search, polygon, SVG or candidate promotion is authorized. Success requires either an exact cell elimination or a quantified reduction recorded in the proof ledger's admitted-form column: a strict decrease in continuous variables, closure roots, live cells or maximum polynomial degree. If neither occurs within three sessions, the theorem attempt stops and K16W remains frozen pending a new checkpoint.",
+    "through_session": 158,
+    "reason": "After independent line-by-line verification of HC-36, the user says to continue. HC-37 follows the review's first recommendation and targets K36P's named selector polynomials using the cell-specific bridge-chart signs: sigma_1=-1 and sigma_2 in {-1,+1}. Sessions 159--161 are theorem-only. No solver, CAS, numerical reconnaissance, experiment runner, coordinate search, polygon, SVG or candidate promotion is authorized. Success requires a proved uniform selector sign on a complete cell, an exact cell/root elimination, or a strict variable/degree reduction recorded in the ledger. Conditional formulas, sampled points and a smaller informal search region do not count. If no admitted count decreases by session 161, freeze the thin-lens carrier and return for a new decision; a tangent cvc5/CAD run is a separate future checkpoint.",
     "artifact_bytes": {
       "docs/notebook/assets": 6759771649,
       "data": 1809060890

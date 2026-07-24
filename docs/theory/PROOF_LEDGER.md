@@ -251,6 +251,13 @@ Turtle under the production canonicalization.
 | ST-M1.K37Q | The B selector slope is positive and the C selector slope negative: `Q_B>0>Q_C` | any intrinsic point possessing one complete K16W root in the surviving polarity cell | proof-draft exact selector ordering; conjugate products remain unsigned | necessary-condition implication | none | N38/N39, strict `p_8` containment and K36M | `45_k16w_root_order_and_hc36_close.md` §2; D-0181 |
 | ST-M1.K37S | If both transverse roots are complete, their strand cells can transition only `S2->S2/S3/S1`, `S3->S3/S1`, or `S1->S1` | one intrinsic point with two complete roots; N43 excludes S4 | proof-draft exact transition partial order; no live K34Q cell/root removed | necessary-condition implication | abstract root-pair transitions `9 -> 6`, explicitly not an admitted HC-36 metric | K36M/K37Q/N43 | `45_k16w_root_order_and_hc36_close.md` §3; D-0181 |
 
+### HC-37 selector-polynomial ledger
+
+| ID | Statement | Scope | Status | Admitted form | Quantified reduction | Dependencies | Proof |
+|---|---|---|---|---|---|---|---|
+| ST-M1.K38N | `P_j=r^2((T-2nm)^2-s^2(d^2-4m^2))`, so a selector is exactly a root-chord/support-line crossing | either B or C in a complete transverse K34Q cell | proof-draft exact normal form; no uniform sign | exact definitional equivalence | none | K36P and `Delta=d^2r^2-T^2` | `46_k16w_selector_normal_form.md` §1; D-0183 |
+| ST-M1.K38B | In the fixed `sigma_1=-1` chart, the exact B-line offset is (2.2) and its sign is not uniform over admitted `a,t_1` | first bridge chart and K31C weight range only; full K16W predicates omitted | proof-draft exact shortcut obstruction; not a cell feasibility result | negative scope audit | none | K33C and K38N coordinates | `46_k16w_selector_normal_form.md` §2; D-0183 |
+
 ## Preserved Turtle-control evidence (legacy “finalist” identifiers)
 
 | ID | Exact finite claim | Status | Artifact | Logical use |
