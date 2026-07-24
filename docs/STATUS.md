@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-24 (session 154 ERR-014: original HC-34 is live)
+**Last updated:** 2026-07-24 (session 155 HC-34/35 closed without verdict)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ original HC-34 active: host inspection found S1-- still solving under its original three-hour supervisor; S1-+/S2-- failed pre-solver and will not retry; HC-35 was halted before launch, and the untouched second batch may follow under the repaired frozen-byte loader (ERR-014/D-0176) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ K16W frozen: HC-34 finishes with four exact external resource stops and two pre-solver failures, zero verdicts/models/certificates; HC-35 was cancelled before launch and its checkpoint is exhausted. Further work requires a new method, not a larger timeout (ERR-014/015, D-0177) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).

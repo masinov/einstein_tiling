@@ -1,0 +1,17 @@
+{
+ "kind": "k16w-hc34-cell-result",
+ "schema_version": 1,
+ "date": "2026-07-23",
+ "cell": "s2-minus-plus",
+ "status": "resource_stop",
+ "elapsed_seconds": 10800.055851985991,
+ "external_returncode": 124,
+ "external_wall_seconds": 10800,
+ "external_kill_grace_seconds": 60,
+ "formula": {
+  "path": "docs/notebook/assets/k16w-hc34-s2-minus-plus.smt2",
+  "sha256": "2c23428703987a6adabc587a03e236b5799d83dfa1dda78d90e8428f5a6209f7"
+ },
+ "claim_boundary": "no solver verdict; cell remains open/frozen",
+ "model": null
+}

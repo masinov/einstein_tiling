@@ -161,3 +161,30 @@ def test_hc35_launcher_isolates_cell_sessions(monkeypatch, tmp_path):
     assert captured["start_new_session"] is True
     assert captured["command"][0] == "/usr/bin/timeout"
     assert captured["command"][-1] == HC34_CELLS[0]
+
+
+def test_hc34_result_manifest_is_fail_closed_and_hash_pinned():
+    assets = ROOT / "docs/notebook/assets"
+    formulas = json.loads((assets / "k16w-hc34-formulas.json").read_text())
+    results = json.loads((assets / "k16w-hc34-results.json").read_text())
+    formula_records = {record["cell"]: record for record in formulas["records"]}
+    expected = {
+        "s1-minus-minus": "resource_stop",
+        "s1-minus-plus": "no_result",
+        "s2-minus-minus": "no_result",
+        "s2-minus-plus": "resource_stop",
+        "s3-minus-minus": "resource_stop",
+        "s3-minus-plus": "resource_stop",
+    }
+    assert results["complete"] is True
+    assert results["cell_order"] == list(HC34_CELLS)
+    assert {record["cell"]: record["status"] for record in results["records"]} == expected
+    for record in results["records"]:
+        cell = record["cell"]
+        payload = json.loads((ROOT / record["result"]).read_text())
+        formula = ROOT / formula_records[cell]["path"]
+        assert payload["cell"] == cell
+        assert payload["status"] == expected[cell]
+        assert payload["model"] is None
+        assert payload["formula"]["sha256"] == sha256(formula.read_bytes()).hexdigest()
+        assert payload["external_returncode"] == (124 if expected[cell] == "resource_stop" else 1)

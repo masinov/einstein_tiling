@@ -3750,3 +3750,33 @@ consume the D-0173 frozen bytes through the repaired loader; no formula,
 ordering, cell, timeout or memory parameter changes.  Final disposition waits
 for that original supervisor.  Any work after its manifest is known requires
 a new human decision based on the actual per-cell outcomes.
+
+## D-0177 (2026-07-24) — Close HC-34/HC-35 with no solver verdict
+
+The original HC-34 supervisor completed at 05:55:22 Europe/Madrid.  Cold
+manifest replay authenticates all six D-0173 formula hashes, cell order,
+187-assertion counts, batch membership, result links and null models.
+
+The exact disposition is:
+
+```text
+S1--  resource_stop       S1-+  no_result
+S2--  no_result           S2-+  resource_stop
+S3--  resource_stop       S3-+  resource_stop
+```
+
+Every resource stop has external return code 124 after the fixed 10,800
+seconds.  The two `no_result` cells have return code 1 and preserved
+pre-solver formula-drift exceptions.  ERR-015 clarifies that their displayed
+10,800-second elapsed values are batch recording time, not solver time.
+
+There is no SAT, UNSAT, `unknown`, model, exact witness or replayable
+infeasibility certificate.  K16W and all six cells remain open/frozen.  The
+run shows that the current single Z3/NLSAT ordering does not decide even the
+theorem-bounded cells at this budget; it supplies no geometric evidence.
+No cell may be rerun, reordered or given a larger budget under HC-34/35.
+
+HC-35 was cancelled before launch and contributes no solver output.  Sessions
+153--155 exhaust its checkpoint allowance.  Further K16W work requires a new
+human checkpoint and a method change justified against these resource stops,
+not another timeout extension.

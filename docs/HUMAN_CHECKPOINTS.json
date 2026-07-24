@@ -12,7 +12,7 @@
     "id": "HC-2026-07-24-35",
     "date": "2026-07-24",
     "through_session": 152,
-    "reason": "Sessions 151--152 serialized the six complete K16W cells and initially misclassified the HC-34 screen as dead from inside a restricted process namespace. The user then authorized HC-35 with fail isolation, but host-level inspection before launch proved HC-34 and S1-- were still live. ERR-014/D-0176 halt HC-35 before any solver launch and leave the original HC-34 supervisor undisturbed. Its two first-batch textual-drift failures are not retried; it may complete S1-- and its untouched second batch with unchanged formulas and budgets through the repaired frozen-byte loader. No concurrent duplicate, formula regeneration, alternate ordering, additional cell, timeout increase, fallback, polygon, SVG or candidate promotion is authorized.",
+    "reason": "Sessions 151--155 serialize and run the six complete K16W cells, while ERR-014 corrects sandbox-only host process visibility. The original HC-34 supervisor completes: S1--, S2-+, S3-- and S3-+ reach exact external three-hour resource stops; S1-+ and S2-- are preserved pre-solver formula-drift failures. No SAT, UNSAT, unknown, model or certificate exists, so every cell remains open/frozen. HC-35 was authorized but cancelled before launch after the still-live HC-34 process was found. Its three-session allowance is exhausted. No concurrent duplicate, formula regeneration, alternate ordering, additional cell, timeout increase, fallback, polygon, SVG or candidate promotion is authorized; further work needs a new human checkpoint and a method change.",
     "artifact_bytes": {
       "docs/notebook/assets": 6759577960,
       "data": 1809024026

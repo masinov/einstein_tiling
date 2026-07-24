@@ -422,3 +422,17 @@ Consequences:
 - S1-+ and S2-- remain pre-solver failures and are not retried; and
 - no future screen/process conclusion may rely solely on the sandbox
   namespace when the process was launched into the host namespace.
+
+## ERR-015 (2026-07-24) — HC-34 pre-solver failures inherit batch wall time
+
+The HC-34 aggregate records `elapsed_seconds` near 10,800 for the two cells
+that failed immediately on formula-text drift.  This is not solver time.  The
+supervisor launched all three first-batch children together, then waited for
+S1-- before it reaped and recorded its already-exited siblings.  The field is
+therefore elapsed wall time from batch launch to result recording.
+
+The exception logs and return code 1 establish that S1-+ and S2-- never
+entered Z3.  Their disposition is `no_result`, not `resource_stop`.  No timing
+comparison or resource-consumption claim may use their recorded elapsed
+values.  The four return-code-124 cells are genuine externally supervised
+three-hour resource stops.

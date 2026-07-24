@@ -1,0 +1,86 @@
+{
+ "kind": "k16w-hc34-decomposed-manifest",
+ "schema_version": 1,
+ "date": "2026-07-23",
+ "code_version": "cde1e3a",
+ "cell_order": [
+  "s1-minus-minus",
+  "s1-minus-plus",
+  "s2-minus-minus",
+  "s2-minus-plus",
+  "s3-minus-minus",
+  "s3-minus-plus"
+ ],
+ "batches": [
+  [
+   "s1-minus-minus",
+   "s1-minus-plus",
+   "s2-minus-minus"
+  ],
+  [
+   "s2-minus-plus",
+   "s3-minus-minus",
+   "s3-minus-plus"
+  ]
+ ],
+ "external_seconds_per_cell": 10800,
+ "kill_grace_seconds": 60,
+ "memory_limit_mib_per_cell": 32768,
+ "records": [
+  {
+   "batch": 1,
+   "cell": "s1-minus-minus",
+   "status": "resource_stop",
+   "elapsed_seconds": 10800.050875982997,
+   "external_returncode": 124,
+   "result": "docs/notebook/assets/k16w-hc34-s1-minus-minus-result.json",
+   "log": "logs/k16w-hc34-s1-minus-minus.log"
+  },
+  {
+   "batch": 1,
+   "cell": "s1-minus-plus",
+   "status": "no_result",
+   "elapsed_seconds": 10800.051431407017,
+   "external_returncode": 1,
+   "result": "docs/notebook/assets/k16w-hc34-s1-minus-plus-result.json",
+   "log": "logs/k16w-hc34-s1-minus-plus.log"
+  },
+  {
+   "batch": 1,
+   "cell": "s2-minus-minus",
+   "status": "no_result",
+   "elapsed_seconds": 10800.051757595007,
+   "external_returncode": 1,
+   "result": "docs/notebook/assets/k16w-hc34-s2-minus-minus-result.json",
+   "log": "logs/k16w-hc34-s2-minus-minus.log"
+  },
+  {
+   "batch": 2,
+   "cell": "s2-minus-plus",
+   "status": "resource_stop",
+   "elapsed_seconds": 10800.055851985991,
+   "external_returncode": 124,
+   "result": "docs/notebook/assets/k16w-hc34-s2-minus-plus-result.json",
+   "log": "logs/k16w-hc34-s2-minus-plus.log"
+  },
+  {
+   "batch": 2,
+   "cell": "s3-minus-minus",
+   "status": "resource_stop",
+   "elapsed_seconds": 10800.058605116006,
+   "external_returncode": 124,
+   "result": "docs/notebook/assets/k16w-hc34-s3-minus-minus-result.json",
+   "log": "logs/k16w-hc34-s3-minus-minus.log"
+  },
+  {
+   "batch": 2,
+   "cell": "s3-minus-plus",
+   "status": "resource_stop",
+   "elapsed_seconds": 10800.058847478998,
+   "external_returncode": 124,
+   "result": "docs/notebook/assets/k16w-hc34-s3-minus-plus-result.json",
+   "log": "logs/k16w-hc34-s3-minus-plus.log"
+  }
+ ],
+ "complete": true
+}
