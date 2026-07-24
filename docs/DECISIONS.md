@@ -4005,3 +4005,19 @@ limit.  Host-visible process inspection and the mutable live manifest confirm
 all six entered cvc5/CAC.  There is no solver or mathematical verdict at
 launch.  Sessions 163--164 proceed with K28W theory without altering this
 experiment.
+
+## D-0188 (2026-07-24) — Close K28W by guard-role collapse
+
+K28W's exact cyclic word is
+`e,A,d,B,d,C,d,H,d,C,d,B,d,A,f`. Pairwise-distinct `e,f` can be recovered
+intrinsically from this rooted boundary, but every `B,C` endpoint is flanked
+by a side of length `d`. The selected `(B,C)` and `(C,B)` primary stars plus
+K9A/K9T's complete clean-spoke equations therefore force both guard sides to
+equal `d`. Genuinely unequal guards are incompatible with the language; the
+only collapse `e=f=d` is exactly K22S and is refuted by N37.
+
+This closes K28W without coordinates or computation. Reopening requires a
+named change to the side word, full-side spoke hypothesis, contextual guard
+pose or selector. Merely changing `e,f` values is forbidden. Session 164
+may design a new topology outside N44, while the HC-38 tangent run continues
+unchanged.

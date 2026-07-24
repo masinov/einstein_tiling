@@ -117,6 +117,10 @@ reviewable proof or certificate.
 - `36_unequal_guard_parallelogram.md` — the unequal-guard transfer: K28G is
   the complete conditional parallelogram-lens system, K28T proves N37's
   squeeze no longer transfers, and K28W freezes geometry at contact roles.
+- `49_k28w_guard_role_collapse.md` — the K28W role audit: distinct `e,f`
+  are boundary-intrinsic, but selected complete clean-spoke contacts force
+  `e=f=d`; the collapse is K22S and N37 closes it. Partial/contextual guard
+  interfaces and different side words remain outside the no-go.
 - `37_k16w_polarity_elimination.md` — N39 rules out equal-polarity long
   spokes by a width-reset inequality, and K29O collapses the surviving K16W
   critical-pair domain to two exact opposite-polarity cells.

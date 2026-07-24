@@ -154,3 +154,13 @@ closure. Only then derive or decide the complete K28G system (1.5).
 K28W is open and frozen. A solver run on (1.5), an angle sample or a drawing
 before the role/cover-table theorem would repeat the color-as-geometry error
 that the earlier K2J/K3G gates prohibit.
+
+## HC-38 supersession
+
+Theory note 49 supplies the missing upstream role theorem and refutes the
+route. In the unchanged boundary word, every `B,C` endpoint is flanked by an
+internal side of length `d`. The selected `(B,C)` and `(C,B)` primary stars
+therefore force both complete guard sides to equal `d` (N44). Genuinely
+unequal `e,f` cannot enter K9A/K9T; the collapsed case `e=f=d` is K22S and is
+already refuted by N37 (N45). Thus K28W is closed for complete clean spokes.
+Partial, multi-edge or contextual guard contacts are not silently included.
