@@ -4132,3 +4132,15 @@ and arbitrary polygon generation is reduced to two residual arcs. No support,
 placement patch or candidate exists yet. A later checkpoint may study the
 eight-side `|P|=|Q|=1` template only after deriving its complete turn and
 closure equations on paper.
+
+## D-0196 (2026-07-27) — Admit the role-safe octagon closure system
+
+The user authorizes theorem-only HC-41 under quantified outcomes and an early
+intrinsic-role gate. K48R proves the eight-side word recovers `H,D,P,Q,X,Y`
+from unmarked lengths, adjacencies and the unequal root angles. N51 shows the
+root turns already spend the full `2*pi` curvature, forcing balanced residual
+turn and nonconvexity. K48C gives the complete exact complex closure equation.
+
+The octagon survives session 170 only as a role-safe closed-chain system.
+Sessions 171--172 must prove a simple exact support, prove a no-go forcing a
+longer residual arc, or freeze. No placement or candidate claim is authorized.

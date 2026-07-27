@@ -142,6 +142,9 @@ reviewable proof or certificate.
 - `55_full_side_hinge_compiler.md` — K47P gives the exact two-state port
   cross-match, K47T proves sector-level totality, and K47B reduces carrier
   generation to one rooted word with two residual arcs.
+- `56_hinge_octagon_roles_and_closure.md` — K48R closes intrinsic role
+  recovery for the smallest template; N51 gives its forced nonconvex turn
+  budget and K48C its complete exact complex closure equation.
 - `37_k16w_polarity_elimination.md` — N39 rules out equal-polarity long
   spokes by a width-reset inequality, and K29O collapses the surviving K16W
   critical-pair domain to two exact opposite-polarity cells.
