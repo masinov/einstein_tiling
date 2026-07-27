@@ -4260,3 +4260,33 @@ the exact three-source-tile system into one polygon. Longer edge words and
 the K53E cell-level contextual compiler remain open; no numerical variation
 of the same center-spoke construction is a substitute for this complete
 result.
+
+## D-0205 (2026-07-27) — Use the exact 17-rhombus retiling kernel only through source-native regrouping
+
+The exact maximum overlap of the two fifteen-rhombus large AHI macros is
+thirteen rhombi.  No one-rhombus equalizer exists.  Four symmetry-equivalent
+two-rhombus equalizers give one 17-rhombus disk, but their role differences
+are `M+S` versus `L+S`, not two copies of the source's singleton `M` tile.
+
+This closes arbitrary small padding as a compiler.  The equality remains a
+constructive kernel only if a legal source regrouping supplies the missing
+roles.  The next object is therefore the primary paper's published local
+interchangeable pair, not a larger anonymous overlap search.
+
+## D-0206 (2026-07-27) — Admit the two published flips only as contextual kernels
+
+Exact vector transcription of Figure 45 gives same-support physical source
+relations of 51 rhombi (`3A+6M`) and 49 rhombi (`2A+B+4M`).  Both paired
+decompositions are exchanged by a full isometry of their common support.
+
+They are therefore legal source-native retiling kernels, but neither supplies
+an intrinsic unmarked binary state.  Any construction using them must exhibit
+a bounded external contact context that fixes the root on every tiling.
+
+## D-0207 (2026-07-27) — Keep the 49/51 supports open after the translation-only gate
+
+The complete HNF quotient tests at forced indices 49 and 51 find no one-tile
+translation fundamental domain.  This forbids no other periodic tiling and
+does not establish global tilability.  The supports are neither retired nor
+promoted; their next admissible use is as rooted compiler kernels under a
+proved total contact language.

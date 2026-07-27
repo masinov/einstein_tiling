@@ -1,0 +1,769 @@
+{
+  "best_alignments": [
+    {
+      "A_only_rhombus_count": 2,
+      "A_only_triangle_count": 4,
+      "B_only_rhombus_count": 2,
+      "B_only_triangle_count": 4,
+      "primitive_triangle_overlap": 26,
+      "reflected": false,
+      "rhombus_overlap": 13,
+      "rotation": 0,
+      "translation_uv": [
+        1,
+        1
+      ]
+    },
+    {
+      "A_only_rhombus_count": 2,
+      "A_only_triangle_count": 4,
+      "B_only_rhombus_count": 2,
+      "B_only_triangle_count": 4,
+      "primitive_triangle_overlap": 26,
+      "reflected": false,
+      "rhombus_overlap": 13,
+      "rotation": 3,
+      "translation_uv": [
+        4,
+        -2
+      ]
+    },
+    {
+      "A_only_rhombus_count": 2,
+      "A_only_triangle_count": 4,
+      "B_only_rhombus_count": 2,
+      "B_only_triangle_count": 4,
+      "primitive_triangle_overlap": 26,
+      "reflected": true,
+      "rhombus_overlap": 13,
+      "rotation": 2,
+      "translation_uv": [
+        4,
+        -2
+      ]
+    },
+    {
+      "A_only_rhombus_count": 2,
+      "A_only_triangle_count": 4,
+      "B_only_rhombus_count": 2,
+      "B_only_triangle_count": 4,
+      "primitive_triangle_overlap": 26,
+      "reflected": true,
+      "rhombus_overlap": 13,
+      "rotation": 5,
+      "translation_uv": [
+        1,
+        1
+      ]
+    }
+  ],
+  "best_primitive_triangle_overlap": 26,
+  "best_rhombus_overlap_at_that_support_overlap": 13,
+  "one_rhombus_equalizer_count": 0,
+  "one_rhombus_equalizers": [],
+  "schema": "ahi-sturmian-common-support-kernel-v1",
+  "source_atlas_sha256": "50f2d948623c7f6d1c802a7606892e463932a66560882dad65910c1816d53afd",
+  "two_rhombus_equalizer_count": 4,
+  "two_rhombus_equalizers": [
+    {
+      "A_only_components": [
+        {
+          "address": 3,
+          "role": "M",
+          "vertices_uv": [
+            [
+              0,
+              -1
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "address": 10,
+          "role": "S",
+          "vertices_uv": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        }
+      ],
+      "A_only_rhombus_count": 2,
+      "A_only_triangle_count": 4,
+      "B_only_components": [
+        {
+          "address": 0,
+          "role": "L",
+          "vertices_uv": [
+            [
+              0,
+              -2
+            ],
+            [
+              0,
+              -1
+            ],
+            [
+              1,
+              -2
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "address": 13,
+          "role": "S",
+          "vertices_uv": [
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ]
+        }
+      ],
+      "B_only_rhombus_count": 2,
+      "B_only_triangle_count": 4,
+      "common_support_boundary_cycle_uv": [
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          -1
+        ],
+        [
+          4,
+          -2
+        ],
+        [
+          3,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "common_support_boundary_edge_count": 16,
+      "common_support_is_topological_disk": true,
+      "common_support_triangle_count": 34,
+      "primitive_triangle_overlap": 26,
+      "reflected": false,
+      "rhombus_overlap": 13,
+      "rotation": 0,
+      "translation_uv": [
+        1,
+        1
+      ]
+    },
+    {
+      "A_only_components": [
+        {
+          "address": 6,
+          "role": "M",
+          "vertices_uv": [
+            [
+              2,
+              -3
+            ],
+            [
+              3,
+              -3
+            ],
+            [
+              3,
+              -2
+            ],
+            [
+              4,
+              -2
+            ]
+          ]
+        },
+        {
+          "address": 14,
+          "role": "S",
+          "vertices_uv": [
+            [
+              4,
+              -2
+            ],
+            [
+              4,
+              -1
+            ],
+            [
+              5,
+              -1
+            ],
+            [
+              5,
+              0
+            ]
+          ]
+        }
+      ],
+      "A_only_rhombus_count": 2,
+      "A_only_triangle_count": 4,
+      "B_only_components": [
+        {
+          "address": 13,
+          "role": "S",
+          "vertices_uv": [
+            [
+              1,
+              -3
+            ],
+            [
+              1,
+              -2
+            ],
+            [
+              2,
+              -3
+            ],
+            [
+              2,
+              -2
+            ]
+          ]
+        },
+        {
+          "address": 0,
+          "role": "L",
+          "vertices_uv": [
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        }
+      ],
+      "B_only_rhombus_count": 2,
+      "B_only_triangle_count": 4,
+      "common_support_boundary_cycle_uv": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          -1
+        ],
+        [
+          4,
+          -2
+        ],
+        [
+          3,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          1,
+          -3
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "common_support_boundary_edge_count": 16,
+      "common_support_is_topological_disk": true,
+      "common_support_triangle_count": 34,
+      "primitive_triangle_overlap": 26,
+      "reflected": false,
+      "rhombus_overlap": 13,
+      "rotation": 3,
+      "translation_uv": [
+        4,
+        -2
+      ]
+    },
+    {
+      "A_only_components": [
+        {
+          "address": 6,
+          "role": "M",
+          "vertices_uv": [
+            [
+              2,
+              -3
+            ],
+            [
+              3,
+              -3
+            ],
+            [
+              3,
+              -2
+            ],
+            [
+              4,
+              -2
+            ]
+          ]
+        },
+        {
+          "address": 14,
+          "role": "S",
+          "vertices_uv": [
+            [
+              4,
+              -2
+            ],
+            [
+              4,
+              -1
+            ],
+            [
+              5,
+              -1
+            ],
+            [
+              5,
+              0
+            ]
+          ]
+        }
+      ],
+      "A_only_rhombus_count": 2,
+      "A_only_triangle_count": 4,
+      "B_only_components": [
+        {
+          "address": 0,
+          "role": "L",
+          "vertices_uv": [
+            [
+              1,
+              -3
+            ],
+            [
+              1,
+              -2
+            ],
+            [
+              2,
+              -3
+            ],
+            [
+              2,
+              -2
+            ]
+          ]
+        },
+        {
+          "address": 13,
+          "role": "S",
+          "vertices_uv": [
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        }
+      ],
+      "B_only_rhombus_count": 2,
+      "B_only_triangle_count": 4,
+      "common_support_boundary_cycle_uv": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          -1
+        ],
+        [
+          4,
+          -2
+        ],
+        [
+          3,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          1,
+          -3
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "common_support_boundary_edge_count": 16,
+      "common_support_is_topological_disk": true,
+      "common_support_triangle_count": 34,
+      "primitive_triangle_overlap": 26,
+      "reflected": true,
+      "rhombus_overlap": 13,
+      "rotation": 2,
+      "translation_uv": [
+        4,
+        -2
+      ]
+    },
+    {
+      "A_only_components": [
+        {
+          "address": 3,
+          "role": "M",
+          "vertices_uv": [
+            [
+              0,
+              -1
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "address": 10,
+          "role": "S",
+          "vertices_uv": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        }
+      ],
+      "A_only_rhombus_count": 2,
+      "A_only_triangle_count": 4,
+      "B_only_components": [
+        {
+          "address": 13,
+          "role": "S",
+          "vertices_uv": [
+            [
+              0,
+              -2
+            ],
+            [
+              0,
+              -1
+            ],
+            [
+              1,
+              -2
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "address": 0,
+          "role": "L",
+          "vertices_uv": [
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ]
+        }
+      ],
+      "B_only_rhombus_count": 2,
+      "B_only_triangle_count": 4,
+      "common_support_boundary_cycle_uv": [
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          -1
+        ],
+        [
+          4,
+          -2
+        ],
+        [
+          3,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "common_support_boundary_edge_count": 16,
+      "common_support_is_topological_disk": true,
+      "common_support_triangle_count": 34,
+      "primitive_triangle_overlap": 26,
+      "reflected": true,
+      "rhombus_overlap": 13,
+      "rotation": 5,
+      "translation_uv": [
+        1,
+        1
+      ]
+    }
+  ]
+}

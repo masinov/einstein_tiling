@@ -240,6 +240,19 @@
   by the two large source macros. Direct one-notch hole elimination is closed;
   the active constructive burden remains the cell-level K52E/K53E compiler
   (D-0204).
+- **Exact common-support kernel:** the two large macros overlap in at most
+  `13/15` rhombi.  There is no one-rhombus equalizer, but four
+  symmetry-equivalent two-rhombus alignments form a 17-rhombus disk.  Its role
+  difference is `M+S` versus `L+S`, so the published singleton `M` tile cannot
+  directly complete both decompositions.  The constructive route now targets
+  the paper's own same-support interchangeable patches (D-0205).
+- **Source-native contextual flips:** exact Figure 45 transcription gives
+  51-rhombus `3A+6M` and 49-rhombus `2A+B+4M` same-support pairs.  Each pair is
+  exchanged by a symmetry of its common support, so it carries no intrinsic
+  radius-zero unmarked bit; a surrounding contact frame must root it.  Neither
+  support is a translation fundamental domain (complete index-51/index-49 HNF
+  tests), but other periodic tilings and global tilability remain open
+  (D-0206--D-0207).
 - **ST-M1 consolidated dossier:** theory note 14 now gives the complete
   P0/S0/Q0/K1T/K1P/N5--N9/K2C/K2V chain and conditional K2J-to-monotile
   argument in one self-contained proof draft. It makes no novelty or monotile

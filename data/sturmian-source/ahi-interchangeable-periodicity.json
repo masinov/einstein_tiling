@@ -1,0 +1,22 @@
+{
+  "interchangeable_pairs_sha256": "3be14d425f625a49006ca5e911a79ab6fdcd1b57ab8dd436155f54a4e422b9c7",
+  "results": [
+    {
+      "forced_translation_index": 51,
+      "hnf_count_tested": 72,
+      "pair_index": 0,
+      "rhombus_count": 51,
+      "translation_fundamental_domain_count": 0,
+      "translation_fundamental_domains": []
+    },
+    {
+      "forced_translation_index": 49,
+      "hnf_count_tested": 57,
+      "pair_index": 1,
+      "rhombus_count": 49,
+      "translation_fundamental_domain_count": 0,
+      "translation_fundamental_domains": []
+    }
+  ],
+  "schema": "ahi-sturmian-interchangeable-periodicity-v1"
+}
