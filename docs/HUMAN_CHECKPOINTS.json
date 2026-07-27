@@ -9,10 +9,10 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-27-39",
+    "id": "HC-2026-07-27-40",
     "date": "2026-07-27",
-    "through_session": 164,
-    "reason": "After HC-38 completed with six address-space failures and no mathematical verdict, the user explicitly directs the research to continue. HC-39 is theorem-only and audits the remaining two-copy docking involution J identified by K42M/N46: reflection. Sessions 165--167 must (1) classify copy-exchanging Euclidean isometries for a symmetry-free carrier, (2) derive the complete clean reflection-spine normal form and test whether ABC/ACB state survives the full Euclidean group, and (3) either produce a finite exact reflection-carrier admission contract with a nonempty local angle system or close the route by theorem. Every result must distinguish conditional contact geometry from an all-tilings converse. No experiment, solver, coordinate fit, polygon, SVG or candidate promotion is authorized. If no exact normal form or scoped no-go is obtained within three sessions, freeze reflection docking rather than widening the contact atlas.",
+    "through_session": 166,
+    "reason": "After independent audit of HC-38/39, the user explicitly authorizes Claude's recommended HC-40 fixed-vertex reflection-hinge question. This checkpoint is theorem-only. Sessions 167--169 must begin with ERR-016's local sector/half-plane disjointness test and then produce one of three quantified outcomes: an exact hinge normal form, a scoped no-go, or a finite admission contract with proved-nonempty angle equations; otherwise the route freezes after three sessions. The primary question is whether a mirror-axis fixed vertex plus the minimum additional congruent occurrences can replace N48's fatal fixed side and carry a binary state under the full Euclidean group. If reflection symmetry forces a fourth rather than third occurrence, deriving and auditing that minimal orbit topology is within scope. No experiment, coordinate fit, polygon, SVG, candidate promotion or enlarged contact atlas is authorized before a later checkpoint.",
     "artifact_bytes": {
       "docs/notebook/assets": 6762911101,
       "data": 1809060890

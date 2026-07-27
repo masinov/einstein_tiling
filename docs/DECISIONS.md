@@ -4092,3 +4092,16 @@ fixed complete full-side architecture. Reopening reflection requires a named
 third participant, T-junction, disconnected interface or contextual partial
 contact—all changes to `F`. No coordinate or experiment is authorized by
 this result.
+
+## D-0193 (2026-07-27) — Replace the three-participant hinge by its forced four-star
+
+The user authorizes theorem-only HC-40 with ERR-016's local test first. K45O
+shows that reflection acts freely on occurrences of a symmetry-free carrier,
+so N49 refutes the proposed singleton third participant. The minimum invariant
+hinge has two occurrence orbits and four participants.
+
+K45H classifies that minimum exactly: the mirror axis is a pair of opposite
+contact rays, the sectors are `alpha,beta,beta,alpha`, and local coverage is
+equivalent to `alpha+beta=pi`. The system is nonempty at sector level. Session
+168 may test state capacity only; no polygon or coordinate realization is
+inferred.

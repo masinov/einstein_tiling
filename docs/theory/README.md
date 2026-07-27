@@ -133,6 +133,9 @@ reviewable proof or certificate.
 - `52_reflection_clean_interface_no_go.md` — concise disposition of N48 and
   the exact scope boundary: reflection can reopen only through partial,
   disconnected or third-participant contact topology.
+- `53_reflection_hinge_orbits.md` — K45O/N49 prove that a symmetry-free
+  reflection hinge has an even number of participants; K45H classifies the
+  minimum four-sector star and its exact nonempty angle equation.
 - `37_k16w_polarity_elimination.md` — N39 rules out equal-polarity long
   spokes by a width-reset inequality, and K29O collapses the surviving K16W
   critical-pair domain to two exact opposite-polarity cells.

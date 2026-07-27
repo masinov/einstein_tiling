@@ -136,7 +136,7 @@ them with disjoint interiors.  They may be reused only if a future topology
 adds a third participant at the fixed locus or abandons the clean full-side
 interface.
 
-## 4. Boundary of the result
+## 5. Boundary of the result
 
 K43I--K43V do not establish that a polygon with such a spine exists, that
 the intended reflection is forced, or that all other contacts are excluded.
