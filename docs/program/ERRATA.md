@@ -462,3 +462,28 @@ Consequences:
   and
 - future docking audits must check the action on local side half-planes, not
   only edge vectors and angle sums.
+
+## ERR-017 (2026-07-27) — Source roles were mistaken for singleton support types
+
+K54S and D-0205 claimed that a minimum 17-rhombus equalizer could not be
+completed as `large_A+2M` and `large_B+2M`, because the two large-macro role
+differences were `M+S` versus `L+S`.  This was false.  Those labels describe
+the markings of rhombi inside the alternative large macro.  Every missing
+geometric rhombus is nevertheless congruent to the source singleton `M`
+support and may carry an allowed reflected `M` state.
+
+The exact endpoint and vector-germ reconstruction proves that all four
+equalizers have legal `A+2M` and `B+2M` decompositions under the stated AHI
+matching rule, with the same exposed SAB endpoints.  Published macro
+contacts realize all odd tangent differences, so exact tangent equality is
+not an additional boundary color.
+
+Consequences:
+
+- K54R remains correct;
+- K54S's role-only obstruction and D-0205's corresponding closure are
+  withdrawn;
+- the fixed 17-rhombus support becomes K60L, an exact finite local compiler;
+- no whole-plane tiling or total decoder follows from the correction; and
+- the source-frequency obstruction N60C now controls which collections of
+  local compiler states could possibly extend globally.

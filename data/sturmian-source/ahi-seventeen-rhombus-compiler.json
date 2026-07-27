@@ -1,0 +1,1112 @@
+{
+  "common_support_kernel_sha256": "a73757632d69ee4babd2c50b1153fbd70ef8e5ac1d21f56c380e74736b1d1a1d",
+  "equalizer_count": 4,
+  "equalizers": [
+    {
+      "added_singleton_count_per_side": 2,
+      "all_A_plus_2M_contacts_continue": true,
+      "all_B_plus_2M_contacts_continue": true,
+      "common_rhombus_count": 17,
+      "failing_A_contacts": [],
+      "failing_B_contacts": [],
+      "grouping_isometries": [],
+      "groupings_same_full_isometry_orbit": false,
+      "internal_contact_count": 26,
+      "outer_sab_signature": [
+        {
+          "edge_uv": [
+            [
+              0,
+              -2
+            ],
+            [
+              0,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            0,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              0,
+              -2
+            ],
+            [
+              1,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              0,
+              -1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            0,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              -2
+            ],
+            [
+              2,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              -3
+            ],
+            [
+              2,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -3
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              -3
+            ],
+            [
+              3,
+              -3
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -3
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              -3
+            ],
+            [
+              4,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              4,
+              -2
+            ],
+            [
+              5,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            5,
+            0
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              5,
+              -1
+            ],
+            [
+              5,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            5,
+            0
+          ]
+        }
+      ],
+      "outer_sab_signatures_equal": true,
+      "reflected": false,
+      "rotation": 0,
+      "translation_uv": [
+        1,
+        1
+      ]
+    },
+    {
+      "added_singleton_count_per_side": 2,
+      "all_A_plus_2M_contacts_continue": true,
+      "all_B_plus_2M_contacts_continue": true,
+      "common_rhombus_count": 17,
+      "failing_A_contacts": [],
+      "failing_B_contacts": [],
+      "grouping_isometries": [],
+      "groupings_same_full_isometry_orbit": false,
+      "internal_contact_count": 26,
+      "outer_sab_signature": [
+        {
+          "edge_uv": [
+            [
+              0,
+              -1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            0,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              0,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            0,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              -3
+            ],
+            [
+              1,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              -3
+            ],
+            [
+              2,
+              -3
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -3
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              -2
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              -3
+            ],
+            [
+              3,
+              -3
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -3
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              -3
+            ],
+            [
+              4,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              4,
+              -2
+            ],
+            [
+              5,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              5,
+              -1
+            ],
+            [
+              5,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            5,
+            0
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            5,
+            0
+          ]
+        }
+      ],
+      "outer_sab_signatures_equal": true,
+      "reflected": false,
+      "rotation": 3,
+      "translation_uv": [
+        4,
+        -2
+      ]
+    },
+    {
+      "added_singleton_count_per_side": 2,
+      "all_A_plus_2M_contacts_continue": true,
+      "all_B_plus_2M_contacts_continue": true,
+      "common_rhombus_count": 17,
+      "failing_A_contacts": [],
+      "failing_B_contacts": [],
+      "grouping_isometries": [],
+      "groupings_same_full_isometry_orbit": false,
+      "internal_contact_count": 26,
+      "outer_sab_signature": [
+        {
+          "edge_uv": [
+            [
+              0,
+              -1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            0,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              0,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            0,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              -3
+            ],
+            [
+              1,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              -3
+            ],
+            [
+              2,
+              -3
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -3
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              -2
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              -3
+            ],
+            [
+              3,
+              -3
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -3
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              -3
+            ],
+            [
+              4,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              4,
+              -2
+            ],
+            [
+              5,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              5,
+              -1
+            ],
+            [
+              5,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            5,
+            0
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            5,
+            0
+          ]
+        }
+      ],
+      "outer_sab_signatures_equal": true,
+      "reflected": true,
+      "rotation": 2,
+      "translation_uv": [
+        4,
+        -2
+      ]
+    },
+    {
+      "added_singleton_count_per_side": 2,
+      "all_A_plus_2M_contacts_continue": true,
+      "all_B_plus_2M_contacts_continue": true,
+      "common_rhombus_count": 17,
+      "failing_A_contacts": [],
+      "failing_B_contacts": [],
+      "grouping_isometries": [],
+      "groupings_same_full_isometry_orbit": false,
+      "internal_contact_count": 26,
+      "outer_sab_signature": [
+        {
+          "edge_uv": [
+            [
+              0,
+              -2
+            ],
+            [
+              0,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            0,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              0,
+              -2
+            ],
+            [
+              1,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              0,
+              -1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            0,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              -2
+            ],
+            [
+              2,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              -3
+            ],
+            [
+              2,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -3
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              -3
+            ],
+            [
+              3,
+              -3
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -3
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              -3
+            ],
+            [
+              4,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              4,
+              -2
+            ],
+            [
+              5,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            5,
+            0
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              5,
+              -1
+            ],
+            [
+              5,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            5,
+            0
+          ]
+        }
+      ],
+      "outer_sab_signatures_equal": true,
+      "reflected": true,
+      "rotation": 5,
+      "translation_uv": [
+        1,
+        1
+      ]
+    }
+  ],
+  "schema": "ahi-sturmian-seventeen-rhombus-compiler-v1",
+  "source_atlas_sha256": "50f2d948623c7f6d1c802a7606892e463932a66560882dad65910c1816d53afd"
+}

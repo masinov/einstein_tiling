@@ -32,8 +32,8 @@ def test_checkpoint_policy_is_bounded_and_current():
     assert data["schema_version"] == 1
     assert 1 <= data["policy"]["max_research_sessions"] <= 3
     assert data["policy"]["max_new_artifact_bytes"] <= 1024**3
-    assert data["latest"]["id"] == "HC-2026-07-27-45"
-    assert data["latest"]["through_session"] == 180
+    assert data["latest"]["id"] == "HC-2026-07-27-47"
+    assert data["latest"]["through_session"] == 185
 
 
 def test_stm1_source_correction_is_fail_closed():
@@ -48,6 +48,7 @@ def test_stm1_source_correction_is_fail_closed():
     assert "ERR-012" in errata
     assert "ERR-013" in errata
     assert "ERR-016" in errata
+    assert "ERR-017" in errata
     assert "12S+6M+6L" in errata
     assert "ST-M1.E∞" in ledger
     assert "exact support/SAB specialization; all-tilings equivalence remains proof-draft" in ledger

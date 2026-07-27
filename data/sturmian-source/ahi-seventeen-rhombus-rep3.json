@@ -1,0 +1,93 @@
+{
+  "common_support_kernel_sha256": "a73757632d69ee4babd2c50b1153fbd70ef8e5ac1d21f56c380e74736b1d1a1d",
+  "inflated_rhombus_count": 51,
+  "interchangeable_pairs_sha256": "3be14d425f625a49006ca5e911a79ab6fdcd1b57ab8dd436155f54a4e422b9c7",
+  "panels": [
+    {
+      "admissible_group_counts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "panel": 0,
+      "similarity_witness_count": 0,
+      "similarity_witnesses": [],
+      "three_tile_partition_count": 1,
+      "three_tile_partitions": [
+        [
+          {
+            "large_A_tile_index": 0,
+            "small_M_tile_indices": [
+              4,
+              5
+            ]
+          },
+          {
+            "large_A_tile_index": 1,
+            "small_M_tile_indices": [
+              6,
+              7
+            ]
+          },
+          {
+            "large_A_tile_index": 2,
+            "small_M_tile_indices": [
+              3,
+              8
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "admissible_group_counts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "panel": 1,
+      "similarity_witness_count": 0,
+      "similarity_witnesses": [],
+      "three_tile_partition_count": 1,
+      "three_tile_partitions": [
+        [
+          {
+            "large_A_tile_index": 0,
+            "small_M_tile_indices": [
+              4,
+              5
+            ]
+          },
+          {
+            "large_A_tile_index": 1,
+            "small_M_tile_indices": [
+              6,
+              7
+            ]
+          },
+          {
+            "large_A_tile_index": 2,
+            "small_M_tile_indices": [
+              3,
+              8
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "schema": "ahi-sturmian-seventeen-rhombus-rep3-v1",
+  "similarity_determinant": 3,
+  "similarity_matrix_uv": [
+    [
+      1,
+      1
+    ],
+    [
+      -1,
+      2
+    ]
+  ],
+  "small_rhombus_count": 17,
+  "source_atlas_sha256": "50f2d948623c7f6d1c802a7606892e463932a66560882dad65910c1816d53afd"
+}

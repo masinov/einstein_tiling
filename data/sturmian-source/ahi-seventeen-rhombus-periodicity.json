@@ -1,0 +1,18 @@
+{
+  "common_support_kernel_sha256": "a73757632d69ee4babd2c50b1153fbd70ef8e5ac1d21f56c380e74736b1d1a1d",
+  "one_copy": {
+    "forced_index": 17,
+    "hnf_count_tested": 18,
+    "translation_fundamental_domain_count": 0,
+    "translation_fundamental_domains": []
+  },
+  "schema": "ahi-sturmian-seventeen-rhombus-periodicity-v1",
+  "source_atlas_sha256": "50f2d948623c7f6d1c802a7606892e463932a66560882dad65910c1816d53afd",
+  "two_copy": {
+    "edge_connected_union_count": 132,
+    "forced_index": 34,
+    "hnf_tests_across_unions": 7128,
+    "translation_fundamental_domain_count": 0,
+    "translation_fundamental_domains": []
+  }
+}

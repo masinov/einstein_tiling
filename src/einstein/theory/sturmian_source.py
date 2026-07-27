@@ -1316,6 +1316,117 @@ def _corridor_state_embeddings(paths, cells, serialized_components):
     return solutions
 
 
+def _corridor_germ_embeddings(paths, cells, serialized_components):
+    """Lift source paths to endpoint-specific bent-SAB direction germs.
+
+    The two germs are stored at the lexicographically ordered endpoints of
+    the limiting long diagonal.  A germ direction points from the collapsed
+    boundary endpoint into the marked SAB path.  Unlike the corridor quotient,
+    this record retains exactly the boundary data needed to test continuation
+    across an edge of two source cells.
+    """
+
+    graph_points, graph_edges, roles = _source_sab_graph(paths)
+    bits = tuple(_sab_corridor_bits(path) for path in paths)
+    source_germs = tuple(
+        (
+            _sab_screen_direction(
+                path[1][0] - path[0][0], path[1][1] - path[0][1]
+            ),
+            (
+                _sab_screen_direction(
+                    path[3][0] - path[2][0], path[3][1] - path[2][1]
+                )
+                + 3
+            )
+            % 6,
+        )
+        for path in paths
+    )
+    support_vertices = set().union(
+        *(set(_triangle_vertices(cell)) for cell in cells)
+    )
+    target = frozenset(
+        (
+            component["role"],
+            _edge(*(tuple(tuple(point) for point in component["diagonal_uv"]))),
+        )
+        for component in serialized_components
+    )
+    solutions = set()
+    for reflected in (False, True):
+        for rotation in range(6):
+            transform_direction = lambda index: (
+                (rotation - index) % 6
+                if reflected
+                else (index + rotation) % 6
+            )
+            adjacency = {index: [] for index in range(len(graph_points))}
+            for first, second in graph_edges:
+                delta = (
+                    graph_points[second][0] - graph_points[first][0],
+                    graph_points[second][1] - graph_points[first][1],
+                )
+                step = LONG_DIAGONALS[transform_direction(DIRECTIONS.index(delta))]
+                adjacency[first].append((second, step))
+                adjacency[second].append((first, (-step[0], -step[1])))
+            embedded = {0: (0, 0)}
+            queue = deque([0])
+            consistent = True
+            while queue and consistent:
+                first = queue.popleft()
+                for second, step in adjacency[first]:
+                    point = (
+                        embedded[first][0] + step[0],
+                        embedded[first][1] + step[1],
+                    )
+                    if second in embedded and embedded[second] != point:
+                        consistent = False
+                        break
+                    if second not in embedded:
+                        embedded[second] = point
+                        queue.append(second)
+            if not consistent:
+                continue
+            points = tuple(embedded[index] for index in range(len(graph_points)))
+            for target_vertex in support_vertices:
+                translation = (
+                    target_vertex[0] - points[0][0],
+                    target_vertex[1] - points[0][1],
+                )
+                placed = tuple(
+                    (point[0] + translation[0], point[1] + translation[1])
+                    for point in points
+                )
+                selected = tuple(
+                    _edge(placed[first], placed[second])
+                    for first, second in graph_edges
+                )
+                if frozenset(zip(roles, selected)) != target:
+                    continue
+                records = []
+                for index, (first, second) in enumerate(graph_edges):
+                    start, end = placed[first], placed[second]
+                    start_germ, end_germ = (
+                        transform_direction(source_germs[index][0]),
+                        transform_direction(source_germs[index][1]),
+                    )
+                    if start > end:
+                        start_germ, end_germ = end_germ, start_germ
+                    records.append(
+                        (
+                            selected[index],
+                            tuple(reversed(bits[index])) if reflected else bits[index],
+                            (start_germ, end_germ),
+                            roles[index],
+                        )
+                    )
+                solutions.add(frozenset(records))
+    if not solutions:
+        raise ValueError("the fixed source atlas has no endpoint-germ lift")
+    return solutions
+
+
 def build_corridor_quotient(archive_path: Path, atlas: dict) -> dict:
     """Build the 12-state axis/corridor quotient of the exact source atlas."""
 
@@ -2549,6 +2660,1128 @@ def verify_interchangeable_pair_periodicity(data: dict, pairs: dict) -> None:
     expected = build_interchangeable_pair_periodicity(pairs)
     if data != expected:
         raise ValueError("serialized local-pair periodicity census differs from rebuild")
+
+
+def _rhombus_long_diagonal(rhombus):
+    candidates = []
+    points = tuple(rhombus)
+    for first_index in range(len(points)):
+        for second_index in range(first_index + 1, len(points)):
+            first, second = points[first_index], points[second_index]
+            delta = (second[0] - first[0], second[1] - first[1])
+            if any(
+                delta == direction or delta == (-direction[0], -direction[1])
+                for direction in LONG_DIAGONALS
+            ):
+                candidates.append(_edge(first, second))
+    if len(candidates) != 1:
+        raise ValueError("common rhombus has no unique long diagonal")
+    return candidates[0]
+
+
+def _rhombus_contact_signature(rhombi):
+    contacts = []
+    for first_index, first in enumerate(rhombi):
+        for second_index in range(first_index):
+            second = rhombi[second_index]
+            shared = first & second
+            if len(shared) != 2:
+                continue
+            edge = _edge(*shared)
+            delta = (
+                edge[1][0] - edge[0][0], edge[1][1] - edge[0][1]
+            )
+            if not any(
+                delta == direction or delta == (-direction[0], -direction[1])
+                for direction in DIRECTIONS
+            ):
+                continue
+            first_endpoint = next(
+                point for point in edge if point in _rhombus_long_diagonal(first)
+            )
+            second_endpoint = next(
+                point for point in edge if point in _rhombus_long_diagonal(second)
+            )
+            contacts.append({
+                "edge_uv": [list(point) for point in edge],
+                "sab_endpoint_uv": list(first_endpoint),
+                "continues": first_endpoint == second_endpoint,
+            })
+    return sorted(
+        contacts,
+        key=lambda item: (item["edge_uv"], item["sab_endpoint_uv"]),
+    )
+
+
+def _outer_sab_signature(rhombi):
+    edge_owners = {}
+    for rhombus in rhombi:
+        points = tuple(rhombus)
+        diagonal = _rhombus_long_diagonal(rhombus)
+        for first_index in range(len(points)):
+            for second_index in range(first_index + 1, len(points)):
+                edge = _edge(points[first_index], points[second_index])
+                delta = (
+                    edge[1][0] - edge[0][0], edge[1][1] - edge[0][1]
+                )
+                if not any(
+                    delta == direction
+                    or delta == (-direction[0], -direction[1])
+                    for direction in DIRECTIONS
+                ):
+                    continue
+                # The other unit segment in a 60/120 rhombus is its short
+                # internal diagonal.  A boundary side has exactly one long-
+                # diagonal endpoint.
+                if sum(point in diagonal for point in edge) != 1:
+                    continue
+                edge_owners.setdefault(edge, []).append(rhombus)
+    signature = []
+    for edge, owners in edge_owners.items():
+        if len(owners) != 1:
+            continue
+        endpoint = next(
+            point for point in edge
+            if point in _rhombus_long_diagonal(owners[0])
+        )
+        signature.append({
+            "edge_uv": [list(point) for point in edge],
+            "sab_endpoint_uv": list(endpoint),
+        })
+    return sorted(signature, key=lambda item: item["edge_uv"])
+
+
+def _grouping_isometries(common_rhombi, first_macro, second_macro):
+    common_vertices = set().union(*common_rhombi)
+    anchor = min(common_vertices)
+    witnesses = []
+    for reflected in (False, True):
+        for rotation in range(6):
+            transformed_anchor = _linear_isometry(anchor, rotation, reflected)
+            for target in common_vertices:
+                translation = (
+                    target[0] - transformed_anchor[0],
+                    target[1] - transformed_anchor[1],
+                )
+                transformed_common = _transform_rhombi(
+                    common_rhombi, rotation, reflected, translation
+                )
+                if transformed_common != common_rhombi:
+                    continue
+                transformed_macro = _transform_rhombi(
+                    first_macro, rotation, reflected, translation
+                )
+                if transformed_macro != second_macro:
+                    continue
+                witnesses.append({
+                    "rotation": rotation,
+                    "reflected": reflected,
+                    "translation_uv": list(translation),
+                })
+    return sorted(
+        witnesses,
+        key=lambda item: (
+            item["reflected"], item["rotation"], item["translation_uv"]
+        ),
+    )
+
+
+def build_seventeen_rhombus_source_compiler(atlas: dict, kernel: dict) -> dict:
+    """Test K54R as the legal source relation A+2M <-> B+2M."""
+
+    verify_atlas(atlas)
+    verify_common_support_kernel(kernel, atlas)
+    rhombi_a = _component_rhombi(atlas["supports"]["large_A"])
+    rhombi_b_zero = _component_rhombi(atlas["supports"]["large_B"])
+    records = []
+    for equalizer in kernel["two_rhombus_equalizers"]:
+        rotation = equalizer["rotation"]
+        reflected = equalizer["reflected"]
+        translation = tuple(equalizer["translation_uv"])
+        rhombi_b = _transform_rhombi(
+            rhombi_b_zero, rotation, reflected, translation
+        )
+        common = rhombi_a | rhombi_b
+        added_to_a = rhombi_b - rhombi_a
+        added_to_b = rhombi_a - rhombi_b
+        if len(common) != 17 or len(added_to_a) != 2 or len(added_to_b) != 2:
+            raise ValueError("K54R equalizer no longer has 17/2/2 census")
+        decomposition_a = tuple(sorted(
+            rhombi_a | added_to_a, key=lambda item: tuple(sorted(item))
+        ))
+        decomposition_b = tuple(sorted(
+            rhombi_b | added_to_b, key=lambda item: tuple(sorted(item))
+        ))
+        contacts_a = _rhombus_contact_signature(decomposition_a)
+        contacts_b = _rhombus_contact_signature(decomposition_b)
+        outer_a = _outer_sab_signature(decomposition_a)
+        outer_b = _outer_sab_signature(decomposition_b)
+        grouping_witnesses = _grouping_isometries(
+            common, rhombi_a, rhombi_b
+        )
+        records.append({
+            "rotation": rotation,
+            "reflected": reflected,
+            "translation_uv": list(translation),
+            "common_rhombus_count": len(common),
+            "added_singleton_count_per_side": 2,
+            "internal_contact_count": len(contacts_a),
+            "all_A_plus_2M_contacts_continue": all(
+                item["continues"] for item in contacts_a
+            ),
+            "all_B_plus_2M_contacts_continue": all(
+                item["continues"] for item in contacts_b
+            ),
+            "outer_sab_signatures_equal": outer_a == outer_b,
+            "outer_sab_signature": outer_a if outer_a == outer_b else None,
+            "groupings_same_full_isometry_orbit": bool(grouping_witnesses),
+            "grouping_isometries": grouping_witnesses,
+            "failing_A_contacts": [
+                item for item in contacts_a if not item["continues"]
+            ],
+            "failing_B_contacts": [
+                item for item in contacts_b if not item["continues"]
+            ],
+        })
+    return {
+        "schema": "ahi-sturmian-seventeen-rhombus-compiler-v1",
+        "source_atlas_sha256": hashlib.sha256(
+            (json.dumps(atlas, indent=2, sort_keys=True) + "\n").encode()
+        ).hexdigest(),
+        "common_support_kernel_sha256": hashlib.sha256(
+            (json.dumps(kernel, indent=2, sort_keys=True) + "\n").encode()
+        ).hexdigest(),
+        "equalizer_count": len(records),
+        "equalizers": records,
+    }
+
+
+def verify_seventeen_rhombus_source_compiler(
+    data: dict, atlas: dict, kernel: dict
+) -> None:
+    expected = build_seventeen_rhombus_source_compiler(atlas, kernel)
+    if data != expected:
+        raise ValueError("serialized 17-rhombus source compiler differs from rebuild")
+
+
+def _component_rhombus(component):
+    vertices = set()
+    for raw_cell in component["primitive_cells"]:
+        vertices.update(_triangle_vertices(tuple(raw_cell)))
+    if len(vertices) != 4:
+        raise ValueError("a source component does not form one rhombus")
+    return frozenset(vertices)
+
+
+def _germ_solution_by_rhombus(solution, support):
+    by_diagonal = {record[0]: record for record in solution}
+    result = {}
+    for component in support["sab_components"]:
+        diagonal = _edge(*(
+            tuple(point) for point in component["diagonal_uv"]
+        ))
+        record = by_diagonal[diagonal]
+        rhombus = _component_rhombus(component)
+        result[rhombus] = {
+            "diagonal": record[0],
+            "corridor_bits": record[1],
+            "endpoint_germs": record[2],
+            "role": record[3],
+        }
+    return result
+
+
+def _transform_germ_state(state, rotation, reflected, translation):
+    transform_direction = lambda index: (
+        (rotation - index) % 6 if reflected else (index + rotation) % 6
+    )
+    old_diagonal = state["diagonal"]
+    mapped_endpoints = tuple(
+        (
+            _linear_isometry(point, rotation, reflected)[0] + translation[0],
+            _linear_isometry(point, rotation, reflected)[1] + translation[1],
+        )
+        for point in old_diagonal
+    )
+    mapped_germs = tuple(
+        transform_direction(germ) for germ in state["endpoint_germs"]
+    )
+    if mapped_endpoints[0] > mapped_endpoints[1]:
+        mapped_germs = tuple(reversed(mapped_germs))
+    return {
+        "diagonal": _edge(*mapped_endpoints),
+        "corridor_bits": (
+            tuple(reversed(state["corridor_bits"]))
+            if reflected
+            else state["corridor_bits"]
+        ),
+        "endpoint_germs": mapped_germs,
+        "role": state["role"],
+    }
+
+
+def _transform_germ_macro(states, rotation, reflected, translation):
+    return {
+        frozenset(
+            (
+                _linear_isometry(point, rotation, reflected)[0] + translation[0],
+                _linear_isometry(point, rotation, reflected)[1] + translation[1],
+            )
+            for point in rhombus
+        ): _transform_germ_state(state, rotation, reflected, translation)
+        for rhombus, state in states.items()
+    }
+
+
+def _singleton_germ_states_on_rhombus(native_solutions, native_support, target):
+    native_rhombus = next(iter(native_support))
+    anchor = min(native_rhombus)
+    result = {}
+    for solution in native_solutions:
+        native_state = next(iter(solution.values()))
+        for reflected in (False, True):
+            for rotation in range(6):
+                transformed_anchor = _linear_isometry(anchor, rotation, reflected)
+                for target_anchor in target:
+                    translation = (
+                        target_anchor[0] - transformed_anchor[0],
+                        target_anchor[1] - transformed_anchor[1],
+                    )
+                    transformed_rhombus = frozenset(
+                        (
+                            _linear_isometry(point, rotation, reflected)[0]
+                            + translation[0],
+                            _linear_isometry(point, rotation, reflected)[1]
+                            + translation[1],
+                        )
+                        for point in native_rhombus
+                    )
+                    if transformed_rhombus != target:
+                        continue
+                    state = _transform_germ_state(
+                        native_state, rotation, reflected, translation
+                    )
+                    key = (
+                        state["diagonal"],
+                        state["corridor_bits"],
+                        state["endpoint_germs"],
+                    )
+                    result[key] = state
+    return tuple(result[key] for key in sorted(result))
+
+
+def _full_germ_contacts(states):
+    contacts = []
+    rhombi = tuple(states)
+    for first_index, first in enumerate(rhombi):
+        for second_index in range(first_index):
+            second = rhombi[second_index]
+            shared = first & second
+            if len(shared) != 2:
+                continue
+            edge = _edge(*shared)
+            delta = (edge[1][0] - edge[0][0], edge[1][1] - edge[0][1])
+            if delta not in DIRECTIONS and (-delta[0], -delta[1]) not in DIRECTIONS:
+                continue
+            first_state, second_state = states[first], states[second]
+            first_endpoint = next(
+                point for point in edge if point in first_state["diagonal"]
+            )
+            second_endpoint = next(
+                point for point in edge if point in second_state["diagonal"]
+            )
+
+            def germ_at(state, endpoint):
+                return state["endpoint_germs"][state["diagonal"].index(endpoint)]
+
+            contacts.append({
+                "edge_uv": tuple(edge),
+                "first_endpoint": first_endpoint,
+                "second_endpoint": second_endpoint,
+                "first_germ": germ_at(first_state, first_endpoint),
+                "second_germ": germ_at(second_state, second_endpoint),
+                "germ_difference_mod_6": (
+                    germ_at(second_state, second_endpoint)
+                    - germ_at(first_state, first_endpoint)
+                )
+                % 6,
+            })
+    return tuple(sorted(
+        contacts,
+        key=lambda item: (
+            item["edge_uv"], item["first_endpoint"], item["second_endpoint"]
+        ),
+    ))
+
+
+def _full_outer_germ_signature(states):
+    edge_owners = {}
+    for rhombus, state in states.items():
+        points = tuple(rhombus)
+        for first_index in range(len(points)):
+            for second_index in range(first_index + 1, len(points)):
+                edge = _edge(points[first_index], points[second_index])
+                delta = (edge[1][0] - edge[0][0], edge[1][1] - edge[0][1])
+                if delta not in DIRECTIONS and (-delta[0], -delta[1]) not in DIRECTIONS:
+                    continue
+                if sum(point in state["diagonal"] for point in edge) != 1:
+                    continue
+                edge_owners.setdefault(edge, []).append((rhombus, state))
+    signature = []
+    for edge, owners in edge_owners.items():
+        if len(owners) != 1:
+            continue
+        _, state = owners[0]
+        endpoint = next(point for point in edge if point in state["diagonal"])
+        germ = state["endpoint_germs"][state["diagonal"].index(endpoint)]
+        signature.append((edge, endpoint, germ))
+    return tuple(sorted(signature))
+
+
+def _outer_germ_compatibility_signature(states, allowed_differences):
+    """Return the exterior germs compatible with each exposed SAB endpoint."""
+
+    signature = []
+    for edge, endpoint, interior_germ in _full_outer_germ_signature(states):
+        exterior = tuple(
+            direction
+            for direction in range(6)
+            if (direction - interior_germ) % 6 in allowed_differences
+        )
+        signature.append((edge, endpoint, exterior))
+    return tuple(sorted(signature))
+
+
+def build_seventeen_rhombus_full_germs(
+    archive_path: Path, atlas: dict, kernel: dict
+) -> dict:
+    """Decide the fixed 17-rhombus relation under full SAB endpoint germs."""
+
+    verify_atlas(atlas)
+    verify_common_support_kernel(kernel, atlas)
+    if sha256_path(archive_path) != SOURCE_ARCHIVE_SHA256:
+        raise ValueError("source archive hash mismatch")
+    with tempfile.TemporaryDirectory(prefix="ahi-full-germs-") as directory:
+        root = Path(directory)
+        with tarfile.open(archive_path, "r:gz") as archive:
+            member = archive.getmember("Example1.pdf")
+            archive.extract(member, root, filter="data")
+        pdf_path = root / "Example1.pdf"
+        if sha256_path(pdf_path) != EXAMPLE1_SHA256:
+            raise ValueError("Example1.pdf member hash mismatch")
+        svg_path = root / "example1-page1.svg"
+        subprocess.run(
+            [
+                "pdftocairo", "-svg", "-f", "1", "-l", "1",
+                str(pdf_path), str(svg_path),
+            ],
+            check=True,
+        )
+        paths = extract_sab_polylines(svg_path)
+
+    macro_states = {}
+    embedding_counts = {}
+    for macro_name in ("large_A", "large_B"):
+        support = atlas["supports"][macro_name]
+        solutions = _corridor_germ_embeddings(
+            paths[macro_name],
+            tuple(tuple(cell) for cell in support["cells"]),
+            support["sab_components"],
+        )
+        embedding_counts[macro_name] = len(solutions)
+        if len(solutions) != 1:
+            raise ValueError("published macro has a non-unique endpoint-germ lift")
+        macro_states[macro_name] = _germ_solution_by_rhombus(
+            next(iter(solutions)), support
+        )
+
+    small_support = atlas["supports"]["small_M"]
+    small_solutions_raw = _corridor_germ_embeddings(
+        paths["small_M"],
+        tuple(tuple(cell) for cell in small_support["cells"]),
+        small_support["sab_components"],
+    )
+    small_solutions = tuple(
+        _germ_solution_by_rhombus(solution, small_support)
+        for solution in small_solutions_raw
+    )
+    embedding_counts["small_M"] = len(small_solutions)
+
+    calibration_contacts = {
+        name: _full_germ_contacts(states)
+        for name, states in macro_states.items()
+    }
+    calibration_differences = sorted({
+        contact["germ_difference_mod_6"]
+        for contacts in calibration_contacts.values()
+        for contact in contacts
+        if contact["first_endpoint"] == contact["second_endpoint"]
+    })
+    if any(
+        contact["first_endpoint"] != contact["second_endpoint"]
+        for contacts in calibration_contacts.values()
+        for contact in contacts
+    ):
+        raise ValueError("published macro contains a discontinuous SAB endpoint")
+    if not calibration_differences:
+        raise ValueError("published macros provide no SAB contact calibration")
+
+    rhombi_a = frozenset(macro_states["large_A"])
+    rhombi_b_zero = frozenset(macro_states["large_B"])
+    equalizer_results = []
+    for equalizer in kernel["two_rhombus_equalizers"]:
+        rotation = equalizer["rotation"]
+        reflected = equalizer["reflected"]
+        translation = tuple(equalizer["translation_uv"])
+        states_a = macro_states["large_A"]
+        states_b = _transform_germ_macro(
+            macro_states["large_B"], rotation, reflected, translation
+        )
+        rhombi_b = frozenset(states_b)
+        added_to_a = tuple(sorted(
+            rhombi_b - rhombi_a, key=lambda item: tuple(sorted(item))
+        ))
+        added_to_b = tuple(sorted(
+            rhombi_a - rhombi_b, key=lambda item: tuple(sorted(item))
+        ))
+        endpoint_signature_a = _outer_sab_signature(
+            tuple(rhombi_a | set(added_to_a))
+        )
+        endpoint_signature_b = _outer_sab_signature(
+            tuple(rhombi_b | set(added_to_b))
+        )
+        choices_a = [
+            _singleton_germ_states_on_rhombus(
+                small_solutions, frozenset(next(iter(item)) for item in small_solutions),
+                rhombus,
+            )
+            for rhombus in added_to_a
+        ]
+        choices_b = [
+            _singleton_germ_states_on_rhombus(
+                small_solutions, frozenset(next(iter(item)) for item in small_solutions),
+                rhombus,
+            )
+            for rhombus in added_to_b
+        ]
+        if any(not choices for choices in choices_a + choices_b):
+            raise ValueError("singleton M has no state on an equalizer rhombus")
+
+        def legal_assignments(base_states, targets, choices):
+            assignments = []
+
+            def extend(position, states, selected):
+                if position == len(targets):
+                    contacts = _full_germ_contacts(states)
+                    legal = all(
+                        contact["first_endpoint"] == contact["second_endpoint"]
+                        and contact["germ_difference_mod_6"]
+                        in calibration_differences
+                        for contact in contacts
+                    )
+                    if legal:
+                        assignments.append({
+                            "states": states,
+                            "selected": tuple(selected),
+                            "outer_exact": _full_outer_germ_signature(states),
+                            "outer_compatibility": (
+                                _outer_germ_compatibility_signature(
+                                    states, calibration_differences
+                                )
+                            ),
+                        })
+                    return
+                rhombus = targets[position]
+                for state in choices[position]:
+                    extend(
+                        position + 1,
+                        {**states, rhombus: state},
+                        selected + [state],
+                    )
+
+            extend(0, dict(base_states), [])
+            return assignments
+
+        legal_a = legal_assignments(states_a, added_to_a, choices_a)
+        legal_b = legal_assignments(states_b, added_to_b, choices_b)
+        exact_matching_pairs = []
+        compatibility_matching_pairs = []
+        for first_index, first in enumerate(legal_a):
+            for second_index, second in enumerate(legal_b):
+                if first["outer_exact"] == second["outer_exact"]:
+                    exact_matching_pairs.append([first_index, second_index])
+                if (
+                    first["outer_compatibility"]
+                    == second["outer_compatibility"]
+                ):
+                    compatibility_matching_pairs.append(
+                        [first_index, second_index]
+                    )
+
+        def serialized_assignment(item):
+            return [
+                {
+                    "diagonal_uv": [list(point) for point in state["diagonal"]],
+                    "corridor_bits": list(state["corridor_bits"]),
+                    "endpoint_germs": list(state["endpoint_germs"]),
+                }
+                for state in item["selected"]
+            ]
+
+        equalizer_results.append({
+            "rotation": rotation,
+            "reflected": reflected,
+            "translation_uv": list(translation),
+            "singleton_state_counts_A": [len(item) for item in choices_a],
+            "singleton_state_counts_B": [len(item) for item in choices_b],
+            "legal_assignment_count_A": len(legal_a),
+            "legal_assignment_count_B": len(legal_b),
+            "source_endpoint_signature_equal": (
+                endpoint_signature_a == endpoint_signature_b
+            ),
+            "source_endpoint_signature_is_support_determined": True,
+            "exact_tangent_signature_pair_count": len(exact_matching_pairs),
+            "exact_tangent_signature_pairs": exact_matching_pairs,
+            "matching_compatibility_pair_count": len(
+                compatibility_matching_pairs
+            ),
+            "matching_compatibility_pairs": compatibility_matching_pairs,
+            "legal_singleton_assignments_A": [
+                serialized_assignment(item) for item in legal_a
+            ],
+            "legal_singleton_assignments_B": [
+                serialized_assignment(item) for item in legal_b
+            ],
+        })
+
+    return {
+        "schema": "ahi-sturmian-seventeen-rhombus-full-germs-v1",
+        "source_archive_sha256": SOURCE_ARCHIVE_SHA256,
+        "source_atlas_sha256": hashlib.sha256(
+            (json.dumps(atlas, indent=2, sort_keys=True) + "\n").encode()
+        ).hexdigest(),
+        "common_support_kernel_sha256": hashlib.sha256(
+            (json.dumps(kernel, indent=2, sort_keys=True) + "\n").encode()
+        ).hexdigest(),
+        "embedding_counts": embedding_counts,
+        "published_macro_contact_counts": {
+            name: len(contacts) for name, contacts in calibration_contacts.items()
+        },
+        "calibrated_germ_differences_mod_6": calibration_differences,
+        "boundary_rule_interpretation": (
+            "published contacts realize every odd germ difference; exact "
+            "tangent is not a boundary color in the stated AHI matching rule; "
+            "the source rule requires edge-to-edge endpoint continuation"
+        ),
+        "tangent_compatibility_diagnostic_scope": (
+            "matching_compatibility_pair_count applies to the stricter "
+            "inferred odd-difference relation only; it is not the source rule"
+        ),
+        "equalizers": equalizer_results,
+    }
+
+
+def verify_seventeen_rhombus_full_germs(
+    data: dict, archive_path: Path, atlas: dict, kernel: dict
+) -> None:
+    expected = build_seventeen_rhombus_full_germs(archive_path, atlas, kernel)
+    if data != expected:
+        raise ValueError("serialized full SAB-germ test differs from exact rebuild")
+
+
+def _cell_from_triangle_vertices(triangle):
+    minimum_u = min(point[0] for point in triangle)
+    minimum_v = min(point[1] for point in triangle)
+    for u in range(minimum_u - 1, minimum_u + 2):
+        for v in range(minimum_v - 1, minimum_v + 2):
+            for orientation in ("U", "D"):
+                cell = (u, v, orientation)
+                if frozenset(_triangle_vertices(cell)) == triangle:
+                    return cell
+    raise ValueError("triangle vertex set is not a primitive lattice cell")
+
+
+def _translation_fundamental_domains(cells):
+    by_orientation = {
+        orientation: [(u, v) for u, v, cell_orientation in cells
+                      if cell_orientation == orientation]
+        for orientation in ("U", "D")
+    }
+    if len(by_orientation["U"]) != len(by_orientation["D"]):
+        return 0, []
+    index = len(by_orientation["U"])
+    certificates = []
+    tested = 0
+    for horizontal, shear, vertical in _hnf_sublattices(index):
+        tested += 1
+        if all(
+            len({
+                _hnf_residue(u, v, horizontal, shear, vertical)
+                for u, v in by_orientation[orientation]
+            }) == index
+            for orientation in ("U", "D")
+        ):
+            certificates.append({
+                "basis_uv": [[horizontal, 0], [shear, vertical]],
+                "determinant": index,
+            })
+    return tested, certificates
+
+
+def build_seventeen_rhombus_periodicity(atlas: dict, kernel: dict) -> dict:
+    """Test one/two-copy translation fundamental domains for K56C."""
+
+    verify_atlas(atlas)
+    verify_common_support_kernel(kernel, atlas)
+    equalizer = kernel["two_rhombus_equalizers"][0]
+    cells_a = _transform_cell_set(
+        atlas["supports"]["large_A"]["cells"], 0, False, (0, 0)
+    )
+    cells_b = _transform_cell_set(
+        atlas["supports"]["large_B"]["cells"],
+        equalizer["rotation"],
+        equalizer["reflected"],
+        tuple(equalizer["translation_uv"]),
+    )
+    support = cells_a | cells_b
+    if len(support) != 34:
+        raise ValueError("17-rhombus support must have 34 primitive triangles")
+    one_cells = tuple(sorted(_cell_from_triangle_vertices(cell) for cell in support))
+    one_tested, one_certificates = _translation_fundamental_domains(one_cells)
+
+    _, _, base_boundary = _triangle_union_boundary(support)
+    unions = {}
+    for reflected in (False, True):
+        for rotation in range(6):
+            transformed_zero = frozenset(
+                frozenset(
+                    _linear_isometry(point, rotation, reflected)
+                    for point in triangle
+                )
+                for triangle in support
+            )
+            _, _, transformed_boundary = _triangle_union_boundary(transformed_zero)
+            for base_edge in base_boundary:
+                for moving_edge in transformed_boundary:
+                    for moving_anchor in moving_edge:
+                        translation = (
+                            base_edge[0][0] - moving_anchor[0],
+                            base_edge[0][1] - moving_anchor[1],
+                        )
+                        translated_edge = _edge(*(
+                            (
+                                point[0] + translation[0],
+                                point[1] + translation[1],
+                            )
+                            for point in moving_edge
+                        ))
+                        if translated_edge != base_edge:
+                            continue
+                        transformed = frozenset(
+                            frozenset(
+                                (
+                                    point[0] + translation[0],
+                                    point[1] + translation[1],
+                                )
+                                for point in triangle
+                            )
+                            for triangle in transformed_zero
+                        )
+                        if support & transformed:
+                            continue
+                        union = support | transformed
+                        key = tuple(sorted(tuple(sorted(cell)) for cell in union))
+                        unions.setdefault(key, {
+                            "rotation": rotation,
+                            "reflected": reflected,
+                            "translation_uv": list(translation),
+                            "triangles": union,
+                        })
+
+    two_certificates = []
+    hnf_tests = 0
+    for item in unions.values():
+        union_cells = tuple(sorted(
+            _cell_from_triangle_vertices(cell) for cell in item["triangles"]
+        ))
+        tested, certificates = _translation_fundamental_domains(union_cells)
+        hnf_tests += tested
+        for certificate in certificates:
+            two_certificates.append({
+                "copy_pose": {
+                    key: value for key, value in item.items() if key != "triangles"
+                },
+                "translation_lattice": certificate,
+            })
+    return {
+        "schema": "ahi-sturmian-seventeen-rhombus-periodicity-v1",
+        "source_atlas_sha256": hashlib.sha256(
+            (json.dumps(atlas, indent=2, sort_keys=True) + "\n").encode()
+        ).hexdigest(),
+        "common_support_kernel_sha256": hashlib.sha256(
+            (json.dumps(kernel, indent=2, sort_keys=True) + "\n").encode()
+        ).hexdigest(),
+        "one_copy": {
+            "forced_index": 17,
+            "hnf_count_tested": one_tested,
+            "translation_fundamental_domain_count": len(one_certificates),
+            "translation_fundamental_domains": one_certificates,
+        },
+        "two_copy": {
+            "edge_connected_union_count": len(unions),
+            "forced_index": 34,
+            "hnf_tests_across_unions": hnf_tests,
+            "translation_fundamental_domain_count": len(two_certificates),
+            "translation_fundamental_domains": sorted(
+                two_certificates,
+                key=lambda item: (
+                    item["copy_pose"]["reflected"],
+                    item["copy_pose"]["rotation"],
+                    item["copy_pose"]["translation_uv"],
+                    item["translation_lattice"]["basis_uv"],
+                ),
+            ),
+        },
+    }
+
+
+def verify_seventeen_rhombus_periodicity(
+    data: dict, atlas: dict, kernel: dict
+) -> None:
+    expected = build_seventeen_rhombus_periodicity(atlas, kernel)
+    if data != expected:
+        raise ValueError("serialized 17-rhombus periodicity census differs from rebuild")
+
+
+def _determinant_three_similarity(point):
+    """Multiply the Eisenstein coordinate by 1-omega (norm three)."""
+
+    u, v = point
+    return (u + v, -u + 2 * v)
+
+
+def _tile_triangles_from_serialized_assembly(assembly: dict):
+    result = []
+    for tile_index, tile in enumerate(assembly["tiles"]):
+        vertices = [(0, 0)]
+        for direction_index in tile["boundary_directions"]:
+            direction = DIRECTIONS[direction_index]
+            vertices.append((
+                vertices[-1][0] + direction[0],
+                vertices[-1][1] + direction[1],
+            ))
+        translation = tile["translation_uv"]
+        triangles = frozenset(
+            frozenset(
+                (point[0] + translation[0], point[1] + translation[1])
+                for point in _triangle_vertices(cell)
+            )
+            for cell in triangle_cells(tuple(vertices[:-1]))
+        )
+        result.append({
+            "tile_index": tile_index,
+            "source_type": tile["source_type"],
+            "triangles": triangles,
+        })
+    return result
+
+
+def _support_mapping_witnesses(first, second):
+    first_vertices = set().union(*first)
+    second_vertices = set().union(*second)
+    anchor = min(first_vertices)
+    witnesses = []
+    for reflected in (False, True):
+        for rotation in range(6):
+            transformed_anchor = _linear_isometry(anchor, rotation, reflected)
+            for target in second_vertices:
+                translation = (
+                    target[0] - transformed_anchor[0],
+                    target[1] - transformed_anchor[1],
+                )
+                transformed = frozenset(
+                    frozenset(
+                        (
+                            _linear_isometry(point, rotation, reflected)[0]
+                            + translation[0],
+                            _linear_isometry(point, rotation, reflected)[1]
+                            + translation[1],
+                        )
+                        for point in triangle
+                    )
+                    for triangle in first
+                )
+                if transformed == second:
+                    witnesses.append({
+                        "rotation": rotation,
+                        "reflected": reflected,
+                        "translation_uv": list(translation),
+                    })
+    return sorted(
+        witnesses,
+        key=lambda item: (
+            item["reflected"], item["rotation"], item["translation_uv"]
+        ),
+    )
+
+
+def build_seventeen_rhombus_rep3(
+    atlas: dict, kernel: dict, pairs: dict
+) -> dict:
+    """Test whether the 51-rhombus source flip is an inflated K56C tile."""
+
+    verify_atlas(atlas)
+    verify_common_support_kernel(kernel, atlas)
+    if pairs.get("schema") != "ahi-sturmian-interchangeable-pairs-v1":
+        raise ValueError("unsupported interchangeable-pair schema")
+    equalizer = kernel["two_rhombus_equalizers"][0]
+    small_support = _transform_cell_set(
+        atlas["supports"]["large_A"]["cells"], 0, False, (0, 0)
+    ) | _transform_cell_set(
+        atlas["supports"]["large_B"]["cells"],
+        equalizer["rotation"],
+        equalizer["reflected"],
+        tuple(equalizer["translation_uv"]),
+    )
+    is_disk, small_boundary_cycle, _ = _triangle_union_boundary(small_support)
+    if not is_disk or len(small_support) != 34:
+        raise ValueError("K56C support is not the expected 17-rhombus disk")
+    scaled_boundary = tuple(
+        _determinant_three_similarity(point) for point in small_boundary_cycle
+    )
+    scaled_cells = triangle_cells(scaled_boundary)
+    scaled_support = frozenset(
+        frozenset(_triangle_vertices(cell)) for cell in scaled_cells
+    )
+    if len(scaled_support) != 102:
+        raise ValueError("determinant-three image does not have triple area")
+
+    panel_results = []
+    for panel in (0, 1):
+        assembly = pairs["assemblies"][panel]
+        tiles = _tile_triangles_from_serialized_assembly(assembly)
+        assembly_support = frozenset().union(
+            *(tile["triangles"] for tile in tiles)
+        )
+        similarity_witnesses = _support_mapping_witnesses(
+            scaled_support, assembly_support
+        )
+        large_tiles = [
+            tile for tile in tiles if tile["source_type"] == "large_A"
+        ]
+        small_tiles = [
+            tile for tile in tiles if tile["source_type"] == "small_M"
+        ]
+        admissible_groups = {tile["tile_index"]: [] for tile in large_tiles}
+        for large in large_tiles:
+            for first_index in range(len(small_tiles)):
+                for second_index in range(first_index + 1, len(small_tiles)):
+                    first = small_tiles[first_index]
+                    second = small_tiles[second_index]
+                    group_support = (
+                        large["triangles"] | first["triangles"] | second["triangles"]
+                    )
+                    if len(group_support) != 34:
+                        continue
+                    if _canonical_triangle_support(group_support) != (
+                        _canonical_triangle_support(small_support)
+                    ):
+                        continue
+                    admissible_groups[large["tile_index"]].append(
+                        tuple(sorted((first["tile_index"], second["tile_index"])))
+                    )
+
+        partitions = []
+        ordered_large = sorted(admissible_groups)
+
+        def extend(position, used_small, selected):
+            if position == len(ordered_large):
+                if len(used_small) == len(small_tiles):
+                    partitions.append([
+                        {
+                            "large_A_tile_index": large_index,
+                            "small_M_tile_indices": list(pair),
+                        }
+                        for large_index, pair in selected
+                    ])
+                return
+            large_index = ordered_large[position]
+            for pair in admissible_groups[large_index]:
+                if set(pair) & used_small:
+                    continue
+                extend(
+                    position + 1,
+                    used_small | set(pair),
+                    selected + [(large_index, pair)],
+                )
+
+        extend(0, set(), [])
+        panel_results.append({
+            "panel": panel,
+            "similarity_witness_count": len(similarity_witnesses),
+            "similarity_witnesses": similarity_witnesses,
+            "admissible_group_counts": {
+                str(key): len(value) for key, value in sorted(admissible_groups.items())
+            },
+            "three_tile_partition_count": len(partitions),
+            "three_tile_partitions": sorted(
+                partitions,
+                key=lambda partition: tuple(
+                    (item["large_A_tile_index"], item["small_M_tile_indices"])
+                    for item in partition
+                ),
+            ),
+        })
+    return {
+        "schema": "ahi-sturmian-seventeen-rhombus-rep3-v1",
+        "source_atlas_sha256": hashlib.sha256(
+            (json.dumps(atlas, indent=2, sort_keys=True) + "\n").encode()
+        ).hexdigest(),
+        "common_support_kernel_sha256": hashlib.sha256(
+            (json.dumps(kernel, indent=2, sort_keys=True) + "\n").encode()
+        ).hexdigest(),
+        "interchangeable_pairs_sha256": hashlib.sha256(
+            (json.dumps(pairs, indent=2, sort_keys=True) + "\n").encode()
+        ).hexdigest(),
+        "small_rhombus_count": 17,
+        "inflated_rhombus_count": 51,
+        "similarity_matrix_uv": [[1, 1], [-1, 2]],
+        "similarity_determinant": 3,
+        "panels": panel_results,
+    }
+
+
+def verify_seventeen_rhombus_rep3(
+    data: dict, atlas: dict, kernel: dict, pairs: dict
+) -> None:
+    expected = build_seventeen_rhombus_rep3(atlas, kernel, pairs)
+    if data != expected:
+        raise ValueError("serialized 17-rhombus rep-3 result differs from rebuild")
+
+
+def _one_two_copy_translation_census(support):
+    one_cells = tuple(sorted(_cell_from_triangle_vertices(cell) for cell in support))
+    one_tested, one_certificates = _translation_fundamental_domains(one_cells)
+    _, _, base_boundary = _triangle_union_boundary(support)
+    unions = {}
+    for reflected in (False, True):
+        for rotation in range(6):
+            transformed_zero = frozenset(
+                frozenset(
+                    _linear_isometry(point, rotation, reflected)
+                    for point in triangle
+                )
+                for triangle in support
+            )
+            _, _, moving_boundary = _triangle_union_boundary(transformed_zero)
+            for base_edge in base_boundary:
+                for moving_edge in moving_boundary:
+                    for moving_anchor in moving_edge:
+                        translation = (
+                            base_edge[0][0] - moving_anchor[0],
+                            base_edge[0][1] - moving_anchor[1],
+                        )
+                        translated_edge = _edge(*(
+                            (
+                                point[0] + translation[0],
+                                point[1] + translation[1],
+                            )
+                            for point in moving_edge
+                        ))
+                        if translated_edge != base_edge:
+                            continue
+                        transformed = frozenset(
+                            frozenset(
+                                (
+                                    point[0] + translation[0],
+                                    point[1] + translation[1],
+                                )
+                                for point in triangle
+                            )
+                            for triangle in transformed_zero
+                        )
+                        if support & transformed:
+                            continue
+                        union = support | transformed
+                        key = tuple(sorted(tuple(sorted(cell)) for cell in union))
+                        unions.setdefault(key, {
+                            "rotation": rotation,
+                            "reflected": reflected,
+                            "translation_uv": list(translation),
+                            "triangles": union,
+                        })
+    two_certificates = []
+    two_hnf_tests = 0
+    for item in unions.values():
+        union_cells = tuple(sorted(
+            _cell_from_triangle_vertices(cell) for cell in item["triangles"]
+        ))
+        tested, certificates = _translation_fundamental_domains(union_cells)
+        two_hnf_tests += tested
+        for certificate in certificates:
+            two_certificates.append({
+                "copy_pose": {
+                    key: value for key, value in item.items() if key != "triangles"
+                },
+                "translation_lattice": certificate,
+            })
+    return {
+        "one_copy": {
+            "forced_index": len(support) // 2,
+            "hnf_count_tested": one_tested,
+            "translation_fundamental_domain_count": len(one_certificates),
+            "translation_fundamental_domains": one_certificates,
+        },
+        "two_copy": {
+            "edge_connected_union_count": len(unions),
+            "forced_index": len(support),
+            "hnf_tests_across_unions": two_hnf_tests,
+            "translation_fundamental_domain_count": len(two_certificates),
+            "translation_fundamental_domains": sorted(
+                two_certificates,
+                key=lambda item: (
+                    item["copy_pose"]["reflected"],
+                    item["copy_pose"]["rotation"],
+                    item["copy_pose"]["translation_uv"],
+                    item["translation_lattice"]["basis_uv"],
+                ),
+            ),
+        },
+    }
+
+
+def build_fiftyone_envelope_periodicity(pairs: dict, rep3: dict) -> dict:
+    """Test the Figure 45 51-rhombus envelope as a periodic P macro."""
+
+    if pairs.get("schema") != "ahi-sturmian-interchangeable-pairs-v1":
+        raise ValueError("unsupported interchangeable-pair schema")
+    if rep3.get("schema") != "ahi-sturmian-seventeen-rhombus-rep3-v1":
+        raise ValueError("unsupported 17-rhombus three-tile schema")
+    if not all(panel["three_tile_partition_count"] for panel in rep3["panels"]):
+        raise ValueError("51-rhombus envelope lacks a proved three-tile partition")
+    cells = _serialized_assembly_cells(pairs["assemblies"][0])
+    support = frozenset(
+        frozenset(_triangle_vertices(cell)) for cell in cells
+    )
+    result = _one_two_copy_translation_census(support)
+    return {
+        "schema": "ahi-sturmian-fiftyone-envelope-periodicity-v1",
+        "interchangeable_pairs_sha256": hashlib.sha256(
+            (json.dumps(pairs, indent=2, sort_keys=True) + "\n").encode()
+        ).hexdigest(),
+        "rep3_artifact_sha256": hashlib.sha256(
+            (json.dumps(rep3, indent=2, sort_keys=True) + "\n").encode()
+        ).hexdigest(),
+        **result,
+    }
+
+
+def verify_fiftyone_envelope_periodicity(
+    data: dict, pairs: dict, rep3: dict
+) -> None:
+    expected = build_fiftyone_envelope_periodicity(pairs, rep3)
+    if data != expected:
+        raise ValueError("serialized 51-rhombus macro periodicity differs from rebuild")
 
 
 def dump_atlas(data: dict, output: Path) -> None:

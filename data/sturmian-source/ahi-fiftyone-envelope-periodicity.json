@@ -1,0 +1,18 @@
+{
+  "interchangeable_pairs_sha256": "3be14d425f625a49006ca5e911a79ab6fdcd1b57ab8dd436155f54a4e422b9c7",
+  "one_copy": {
+    "forced_index": 51,
+    "hnf_count_tested": 72,
+    "translation_fundamental_domain_count": 0,
+    "translation_fundamental_domains": []
+  },
+  "rep3_artifact_sha256": "4032ff41b2d12909abcaa0324d2a1f716899c050fde2f4032dc296ed15a4de15",
+  "schema": "ahi-sturmian-fiftyone-envelope-periodicity-v1",
+  "two_copy": {
+    "edge_connected_union_count": 84,
+    "forced_index": 102,
+    "hnf_tests_across_unions": 18144,
+    "translation_fundamental_domain_count": 0,
+    "translation_fundamental_domains": []
+  }
+}
