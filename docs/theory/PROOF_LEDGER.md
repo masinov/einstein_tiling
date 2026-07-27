@@ -269,6 +269,14 @@ Turtle under the production canonicalization.
 | ST-M1.K40E | The remaining individual selector attacks are exactly the obstruction to conjugate roots staying in the same coarse strand cell | one intrinsic point with two complete transverse roots | proof-draft exact interpretation; three same-cell transitions remain | necessary-and-sufficient interpretation of K39O | none | K37S/K39O | `48_k16w_same_cell_obstruction.md` §1; D-0185 |
 | ST-M1.K40H | `H_0^2-Delta*H_1^2` is the exact conjugate selector for S3's additional `d_B+d_C<0` sign | two transverse roots with S3 individual B/C signs | proof-draft exact conditional selector; no uniform cell sign | exact conditional necessary implication | conditional roots `2 -> <=1`, not booked for a live cell | K36M/K37O and positive long-strand denominators | `48_k16w_same_cell_obstruction.md` §2; D-0185 |
 
+### HC-39 reflection-docking ledger
+
+| ID | Statement | Scope | Status | Admitted form | Quantified reduction | Dependencies | Proof |
+|---|---|---|---|---|---|---|---|
+| ST-M1.K43I | A nontrivial Euclidean isometry exchanging two copies of a symmetry-free polygonal disk is a half-turn or reflection | `g(P)=P'`, `g(P')=P`, trivial symmetry group | proof-draft exact isometry classification | necessary-condition implication | docking classes reduce to the two involutions | elementary plane-isometry classification and K42M/N46 | `51_reflection_docking_normal_form.md` §1; D-0191 |
+| ST-M1.K43R | A clean connected non-axis reflection spine has a unique central perpendicular side, palindromic word and complementary paired angles | two-copy reflection interface with disjoint interiors and complete local coverage | proof-draft exact interface normal form; no existence claimed | necessary-condition implication | infinite geometric descriptions reduce to one finite palindromic half-word plus angle complements | K43I and N23/N24 endpoint boundary | `51_reflection_docking_normal_form.md` §2; D-0191 |
+| ST-M1.K43V | Reflection-paired noncentral vertices have intrinsic convex/reflex polarity and paired traversal vectors `e'=-R(e)` | K43R clean spine | proof-draft exact polarity/vector law; not a realization | necessary-condition implication | excludes reuse of all half-turn equal-vector no-gos | K43R and irredundancy | `51_reflection_docking_normal_form.md` §3; D-0191 |
+
 ## Preserved Turtle-control evidence (legacy “finalist” identifiers)
 
 | ID | Exact finite claim | Status | Artifact | Logical use |

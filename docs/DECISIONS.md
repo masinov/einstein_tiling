@@ -4060,3 +4060,20 @@ mathematical inference. Every result has a null model and the frozen formula
 hash; all six cells and K16W remain open/frozen. D-0186 forbids a retry,
 larger cap, changed option set or alternative solver call, and none occurred.
 The completed manifests are preserved as negative solver-method evidence only.
+
+## D-0191 (2026-07-27) — Admit and retain reflection docking
+
+The user's continuation authorizes theorem-only HC-39 after HC-38. K43I
+proves that a symmetry-free carrier exchanged with a second copy has only two
+possible involutive docking maps: half-turn or line reflection. K42M/N46
+already classify the half-turn route, so reflection is the unique remaining
+copy-exchanging involution rather than another numerical lens variation.
+
+Under a clean connected non-axis interface, K43R forces a palindromic spine,
+a unique central side perpendicular to the mirror, and complementary paired
+angles. K43V makes the resulting convex/reflex contexts intrinsic and replaces
+the half-turn vector identity `e'=e` by `e'=-R(e)`. Thus the route is outside
+the hypotheses of the thin-lens no-gos and survives session 165. This is a
+conditional topology theorem only. Sessions 166--167 must test the selected
+state language and close a finite admission contract; no geometry search or
+candidate is authorized.

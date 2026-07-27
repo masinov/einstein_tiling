@@ -9,12 +9,12 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-24-38",
-    "date": "2026-07-24",
-    "through_session": 161,
-    "reason": "After independent verification of the HC-37 freeze, the user explicitly rejects sacrificing K16W without a feasible/infeasible theorem and authorizes a 48-hour tangent computation while pivot work proceeds in parallel. Session 162 preregisters, serializes, cold-checks and launches exactly the six K35T seven-variable tangent cells under one version-pinned cvc5/CAC configuration, concurrent external 172800-second supervision and 16-GiB per-process caps. SAT is promoted only for a rational or structurally recognized Q(sqrt(2)) model that cold-verifies the original geometry; unsupported algebraic SAT, bare UNSAT, unknown or resource stop leaves the cell open. Sessions 163--164 are theorem-first work on the unequal-guard K28W parallelogram pivot, beginning with role recognizability and an explicit proof that the family escapes the thin-lens hypotheses. No Z3 rerun, timeout extension, option retry, weakened predicate, polygon or candidate promotion is authorized.",
+    "id": "HC-2026-07-27-39",
+    "date": "2026-07-27",
+    "through_session": 164,
+    "reason": "After HC-38 completed with six address-space failures and no mathematical verdict, the user explicitly directs the research to continue. HC-39 is theorem-only and audits the remaining two-copy docking involution J identified by K42M/N46: reflection. Sessions 165--167 must (1) classify copy-exchanging Euclidean isometries for a symmetry-free carrier, (2) derive the complete clean reflection-spine normal form and test whether ABC/ACB state survives the full Euclidean group, and (3) either produce a finite exact reflection-carrier admission contract with a nonempty local angle system or close the route by theorem. Every result must distinguish conditional contact geometry from an all-tilings converse. No experiment, solver, coordinate fit, polygon, SVG or candidate promotion is authorized. If no exact normal form or scoped no-go is obtained within three sessions, freeze reflection docking rather than widening the contact atlas.",
     "artifact_bytes": {
-      "docs/notebook/assets": 6759771649,
+      "docs/notebook/assets": 6762911101,
       "data": 1809060890
     }
   }

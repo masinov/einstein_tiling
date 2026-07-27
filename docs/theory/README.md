@@ -126,6 +126,10 @@ reviewable proof or certificate.
   branch and K16B the unique unequal-port branch. N46 forces any fresh
   carrier to change contact type, role order, docking involution or guard
   topology rather than another numerical lens parameter.
+- `51_reflection_docking_normal_form.md` — K43I reduces copy-exchanging
+  docking to half-turn or reflection; K43R/K43V give the exact clean
+  reflection-spine normal form, complementary angle polarity and the vector
+  law that escapes the half-turn thin-lens hypotheses.
 - `37_k16w_polarity_elimination.md` — N39 rules out equal-polarity long
   spokes by a width-reset inequality, and K29O collapses the surviving K16W
   critical-pair domain to two exact opposite-polarity cells.
