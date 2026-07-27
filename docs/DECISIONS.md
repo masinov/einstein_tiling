@@ -4189,3 +4189,74 @@ construction must realize this exact 31-state system with one unmarked polygon
 and prove total decoding on every unrestricted tiling.  Free-standing carrier
 families that do not compile this atlas are no longer part of the active
 research path.
+
+## D-0200 (2026-07-27) — Make theorem distance, not checkpoint closure, the unit of work
+
+The user explicitly directs that checkpoint capacity remain background
+governance rather than the research agenda. Work now counts only when it
+constructs the fixed 31-state source carrier, closes a named realization
+family, or establishes the precise undecidable boundary. Notebook and cold
+verification records remain mandatory, but no carrier variation is admitted
+merely because it fits a session-sized deliverable.
+
+## D-0201 (2026-07-27) — Retire pose-local source erasures
+
+The exact 31-state contact kernel has 44 internal contacts. The addresses
+`large_A:0,1,2` form an internal triangle, so every compiler that requires a
+binary handedness change across every macro-internal contact is impossible.
+All internal contacts change long-diagonal axis, but an exhaustive exact
+affine-modulo-three analysis proves that the only affine perfect matchings of
+the triangular cells are the three constant-axis periodic matchings; neither
+large source template belongs to one.
+
+The constructive path therefore moves to the actual source corridor-width
+and contact-star state. Binary domain walls, affine lattice residues, and
+root-deterministic full-side propagation are not reopened. The general
+symbolic compiler problem is undecidable by product with an arbitrary Wang
+SFT, but this does not establish undecidability for one connected unmarked
+polygon; that geometrization boundary remains explicit.
+
+## D-0202 (2026-07-27) — Fix the source-native twelve-state compiler
+
+The pinned vector source uniquely lifts both large templates from role and
+SAB axis to ordered transverse corridor bits. The local alphabet is exactly
+`Z/3 x {0,1}^2`: `S=00`, `L=11`, and the signed bend of each `M` SAB gives
+`01` or `10`. Both large lifts are unique; the singleton `M` has exactly its
+two reflected lifts; all twelve states occur.
+
+Pure pose is closed: the source action has three orbits of sizes `3,6,3`,
+whereas the pose orbit of one symmetry-free carrier is transitive. The active
+geometric architecture is therefore K52E: orientation recovers the SAB axis,
+two rooted contact stars recover the ordered bits, and the complete twelve-
+state field must force the exact 31-address macro cover on its full local
+closure. No polygon boundary is synthesized until that macro-totality
+question is resolved.
+
+## D-0203 (2026-07-27) — Replace 31 address colors by one binary `L`-anchor cover
+
+The exact role-induced contact graph proves that each large source macro is
+one regular three-rhombus `L` hexagon, two regular three-rhombus `S` hexagons,
+and six `M` connector rhombi.  Rooting at the `L` center gives exactly two
+full-isometry classes, one for each published large template.  The complete
+address partition and rooted center vectors are cold-verified.
+
+The active all-tilings burden is consequently not a 31-color boundary code.
+It is the conjunction of the twelve-state corridor decoder and a binary
+`L`-rooted exact cover by the two serialized 15-rhombus stencils, with the
+remaining source `M` cells singleton.  This reduction does not assert that an
+arbitrary twelve-state local field has such a cover and does not yet provide
+an unmarked polygon.
+
+## D-0204 (2026-07-27) — Close direct Turtle-style hole elimination
+
+The exact James-Smith/Turtle center-spoke edge substitution collapses the
+singleton `M` source rhombus as intended. Exhausting every independent
+inward/outward assignment on the sixteen unit patch edges of both large AHI
+supports leaves 20,736 and 15,552 simple polygons respectively, but zero
+common full-isometry support classes.
+
+Thus the published one-notch hole-elimination mechanism cannot directly turn
+the exact three-source-tile system into one polygon. Longer edge words and
+the K53E cell-level contextual compiler remain open; no numerical variation
+of the same center-spoke construction is a substitute for this complete
+result.

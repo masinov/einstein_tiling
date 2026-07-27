@@ -1,0 +1,61 @@
+{
+  "common_simple_support_count": 0,
+  "common_simple_supports": [],
+  "macros": {
+    "large_A": {
+      "binary_word_count": 65536,
+      "boundary_edge_count": 16,
+      "simple_word_count": 20736
+    },
+    "large_B": {
+      "binary_word_count": 65536,
+      "boundary_edge_count": 16,
+      "simple_word_count": 15552
+    }
+  },
+  "schema": "ahi-sturmian-unit-apex-compiler-v1",
+  "small_M_all_inward": {
+    "cycle_uv": [
+      [
+        0,
+        0
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        -2,
+        0
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        -2,
+        2
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    "distinct_vertex_count": 5,
+    "doubled_area": 0
+  },
+  "source_atlas_sha256": "50f2d948623c7f6d1c802a7606892e463932a66560882dad65910c1816d53afd",
+  "substitution": {
+    "0": "inward through the center of the incident source rhombus",
+    "1": "outward through its reflection across the boundary edge",
+    "coordinate_scale": 2
+  }
+}

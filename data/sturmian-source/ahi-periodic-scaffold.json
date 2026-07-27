@@ -1,0 +1,74 @@
+{
+  "common_linear_parts": [],
+  "global_affine_perfect_matching_models": [
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      2
+    ]
+  ],
+  "macro_models": {
+    "large_A": [],
+    "large_B": [],
+    "small_M": [
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "partner_offsets": {
+    "D": {
+      "0": [
+        0,
+        0,
+        "U"
+      ],
+      "1": [
+        -1,
+        0,
+        "U"
+      ],
+      "2": [
+        0,
+        1,
+        "U"
+      ]
+    },
+    "U": {
+      "0": [
+        0,
+        0,
+        "D"
+      ],
+      "1": [
+        1,
+        0,
+        "D"
+      ],
+      "2": [
+        0,
+        -1,
+        "D"
+      ]
+    }
+  },
+  "periodic_witness": null,
+  "schema": "ahi-sturmian-periodic-scaffold-v1",
+  "source_atlas_sha256": "50f2d948623c7f6d1c802a7606892e463932a66560882dad65910c1816d53afd"
+}

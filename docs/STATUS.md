@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active at the exact source-to-unmarked compiler. The HC-41 octagon is periodic and retired. SER1 reconstructs the actual Section 10.1 source as connected `15,15,1` common-rhombus templates, giving a 31-address colored source. The remaining theorem is geometric color erasure with a total all-tilings decoder, or a family-level impossibility/undecidability result (D-0198--D-0199). |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active at K52E/K53E. The exact source quotient is `Z/3 x {0,1}^2`; the 31-address cover further collapses to one binary `L`-rooted choice between two exact 15-rhombus stencils. The remaining theorem is geometric totality: one connected unmarked polygon must force both the twelve-state decoder and this exact cover on every tiling (D-0198--D-0203). |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -215,6 +215,31 @@
   orbit, and the connected common-rhombus compiler has 31 addresses. This
   closes finite SER0 transcription, not unmarked color erasure or ST-M1
   (D-0199).
+- **ST-M1 exact contact kernel and compiler boundary:** the 31 addresses have
+  44 internal contacts and an exact three-cycle obstruction to every binary
+  domain wall. All internal contacts change diagonal axis, but no affine
+  mod-three axis law contains either large template. More generally, any
+  root-deterministic finite carrier is periodic, while unrestricted symbolic
+  factor synthesis is domino-problem hard. The latter does not establish
+  undecidability for one connected unmarked polygon (D-0201).
+- **ST-M1 twelve-state source quotient:** exact signed bends of the published
+  SABs lift the 31 addresses to `axis x two ordered corridor bits`; both large
+  macro lifts are unique, the singleton has its reflected pair, and all
+  twelve states occur. The source action has orbits `3+6+3`, proving pure pose
+  insufficient and fixing the K52E endpoint-contact architecture (D-0202).
+- **ST-M1 binary macro normal form:** the role-induced exact contact graph
+  partitions each large macro into one regular `L` hexagon, two regular `S`
+  hexagons and six `M` connectors.  Relative to its unique `L` anchor, the two
+  published macros are exactly two full-isometry classes.  The addressed
+  source is therefore equivalent to the twelve-state field plus one binary
+  rooted exact cover, but geometric totality of that cover remains open
+  (D-0203).
+- **Direct Turtle-mechanism no-go:** the singleton `M` collapses under the
+  published rhomb-center edge substitution, but an exhaustive exact census of
+  both sixteen-edge polarity spaces finds no congruent simple support shared
+  by the two large source macros. Direct one-notch hole elimination is closed;
+  the active constructive burden remains the cell-level K52E/K53E compiler
+  (D-0204).
 - **ST-M1 consolidated dossier:** theory note 14 now gives the complete
   P0/S0/Q0/K1T/K1P/N5--N9/K2C/K2V chain and conditional K2J-to-monotile
   argument in one self-contained proof draft. It makes no novelty or monotile

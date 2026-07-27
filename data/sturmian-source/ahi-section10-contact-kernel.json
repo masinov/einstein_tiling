@@ -1,0 +1,4043 @@
+{
+  "binary_domain_wall": {
+    "conflict": {
+      "closing_constraint": {
+        "left": "large_A:0",
+        "reason": "common-exposed-channel",
+        "right": "large_A:1",
+        "xor": 0
+      },
+      "left": "large_A:0",
+      "observed_xor": 1,
+      "required_xor": 0,
+      "right": "large_A:1"
+    },
+    "family": "one handedness bit; internal contacts require unlike bits; all exposed contacts use one like-bit channel",
+    "labels": null,
+    "satisfiable": false
+  },
+  "exposed_state_ids": [
+    "large_A:0",
+    "large_A:1",
+    "large_A:10",
+    "large_A:11",
+    "large_A:13",
+    "large_A:14",
+    "large_A:3",
+    "large_A:4",
+    "large_A:5",
+    "large_A:6",
+    "large_A:7",
+    "large_A:8",
+    "large_B:0",
+    "large_B:1",
+    "large_B:12",
+    "large_B:13",
+    "large_B:14",
+    "large_B:3",
+    "large_B:4",
+    "large_B:5",
+    "large_B:6",
+    "large_B:8",
+    "large_B:9",
+    "small_M:0"
+  ],
+  "internal_axis_relation_counts": {
+    "different": 44
+  },
+  "internal_contacts": [
+    {
+      "edge_uv": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_A",
+      "required_xor": 1,
+      "states": [
+        "large_A:3",
+        "large_A:4"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -1
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_A",
+      "required_xor": 1,
+      "states": [
+        "large_A:0",
+        "large_A:1"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_A",
+      "required_xor": 1,
+      "states": [
+        "large_A:0",
+        "large_A:4"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_A",
+      "required_xor": 1,
+      "states": [
+        "large_A:3",
+        "large_A:9"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_A",
+      "required_xor": 1,
+      "states": [
+        "large_A:4",
+        "large_A:9"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_A",
+      "required_xor": 1,
+      "states": [
+        "large_A:9",
+        "large_A:10"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          2,
+          -3
+        ],
+        [
+          3,
+          -2
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_A",
+      "required_xor": 1,
+      "states": [
+        "large_A:5",
+        "large_A:6"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          2,
+          -2
+        ],
+        [
+          3,
+          -1
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_A",
+      "required_xor": 1,
+      "states": [
+        "large_A:1",
+        "large_A:5"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          2,
+          -1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_A",
+      "required_xor": 1,
+      "states": [
+        "large_A:0",
+        "large_A:2"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          -1
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_A",
+      "required_xor": 1,
+      "states": [
+        "large_A:1",
+        "large_A:2"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_A",
+      "required_xor": 1,
+      "states": [
+        "large_A:9",
+        "large_A:11"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_A",
+      "required_xor": 1,
+      "states": [
+        "large_A:2",
+        "large_A:7"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_A",
+      "required_xor": 1,
+      "states": [
+        "large_A:7",
+        "large_A:11"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_A",
+      "required_xor": 1,
+      "states": [
+        "large_A:10",
+        "large_A:11"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          3,
+          -2
+        ],
+        [
+          3,
+          -1
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_A",
+      "required_xor": 1,
+      "states": [
+        "large_A:5",
+        "large_A:12"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          3,
+          -2
+        ],
+        [
+          4,
+          -2
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_A",
+      "required_xor": 1,
+      "states": [
+        "large_A:6",
+        "large_A:12"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          3,
+          -1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_A",
+      "required_xor": 1,
+      "states": [
+        "large_A:2",
+        "large_A:8"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          3,
+          -1
+        ],
+        [
+          4,
+          -1
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_A",
+      "required_xor": 1,
+      "states": [
+        "large_A:12",
+        "large_A:13"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          3,
+          -1
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_A",
+      "required_xor": 1,
+      "states": [
+        "large_A:8",
+        "large_A:13"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_A",
+      "required_xor": 1,
+      "states": [
+        "large_A:7",
+        "large_A:8"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          4,
+          -2
+        ],
+        [
+          4,
+          -1
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_A",
+      "required_xor": 1,
+      "states": [
+        "large_A:12",
+        "large_A:14"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          4,
+          -1
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_A",
+      "required_xor": 1,
+      "states": [
+        "large_A:13",
+        "large_A:14"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_B",
+      "required_xor": 1,
+      "states": [
+        "large_B:0",
+        "large_B:1"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          0,
+          -3
+        ],
+        [
+          0,
+          -2
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_B",
+      "required_xor": 1,
+      "states": [
+        "large_B:0",
+        "large_B:2"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          0,
+          -3
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_B",
+      "required_xor": 1,
+      "states": [
+        "large_B:2",
+        "large_B:3"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_B",
+      "required_xor": 1,
+      "states": [
+        "large_B:1",
+        "large_B:2"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_B",
+      "required_xor": 1,
+      "states": [
+        "large_B:1",
+        "large_B:4"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          1,
+          -4
+        ],
+        [
+          2,
+          -3
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_B",
+      "required_xor": 1,
+      "states": [
+        "large_B:5",
+        "large_B:6"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          1,
+          -3
+        ],
+        [
+          2,
+          -2
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_B",
+      "required_xor": 1,
+      "states": [
+        "large_B:3",
+        "large_B:5"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_B",
+      "required_xor": 1,
+      "states": [
+        "large_B:2",
+        "large_B:7"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -2
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_B",
+      "required_xor": 1,
+      "states": [
+        "large_B:3",
+        "large_B:7"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_B",
+      "required_xor": 1,
+      "states": [
+        "large_B:4",
+        "large_B:9"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -1
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_B",
+      "required_xor": 1,
+      "states": [
+        "large_B:7",
+        "large_B:10"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_B",
+      "required_xor": 1,
+      "states": [
+        "large_B:9",
+        "large_B:10"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          -2
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_B",
+      "required_xor": 1,
+      "states": [
+        "large_B:5",
+        "large_B:11"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          2,
+          -3
+        ],
+        [
+          3,
+          -3
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_B",
+      "required_xor": 1,
+      "states": [
+        "large_B:6",
+        "large_B:11"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          2,
+          -2
+        ],
+        [
+          2,
+          -1
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_B",
+      "required_xor": 1,
+      "states": [
+        "large_B:7",
+        "large_B:8"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          2,
+          -2
+        ],
+        [
+          3,
+          -2
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_B",
+      "required_xor": 1,
+      "states": [
+        "large_B:11",
+        "large_B:12"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          2,
+          -2
+        ],
+        [
+          3,
+          -1
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_B",
+      "required_xor": 1,
+      "states": [
+        "large_B:8",
+        "large_B:12"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_B",
+      "required_xor": 1,
+      "states": [
+        "large_B:8",
+        "large_B:10"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_B",
+      "required_xor": 1,
+      "states": [
+        "large_B:9",
+        "large_B:13"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_B",
+      "required_xor": 1,
+      "states": [
+        "large_B:10",
+        "large_B:13"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          3,
+          -3
+        ],
+        [
+          3,
+          -2
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_B",
+      "required_xor": 1,
+      "states": [
+        "large_B:11",
+        "large_B:14"
+      ]
+    },
+    {
+      "edge_uv": [
+        [
+          3,
+          -2
+        ],
+        [
+          4,
+          -1
+        ]
+      ],
+      "kind": "internal",
+      "macro": "large_B",
+      "required_xor": 1,
+      "states": [
+        "large_B:12",
+        "large_B:14"
+      ]
+    }
+  ],
+  "internal_opposite_handedness": {
+    "conflict": {
+      "closing_constraint": {
+        "left": "large_A:1",
+        "reason": "internal:large_A:9",
+        "right": "large_A:2",
+        "xor": 1
+      },
+      "left": "large_A:1",
+      "observed_xor": 0,
+      "required_xor": 1,
+      "right": "large_A:2"
+    },
+    "family": "every macro-internal contact joins opposite handedness bits",
+    "labels": null,
+    "odd_triangle_certificate": [
+      "large_A:0",
+      "large_A:1",
+      "large_A:2"
+    ],
+    "satisfiable": false
+  },
+  "schema": "ahi-sturmian-contact-kernel-v1",
+  "source_atlas_sha256": "50f2d948623c7f6d1c802a7606892e463932a66560882dad65910c1816d53afd",
+  "states": [
+    {
+      "address": 0,
+      "diagonal_axis": 2,
+      "diagonal_uv": [
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "id": "large_A:0",
+      "macro": "large_A",
+      "role": "L",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              1,
+              -2
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              -2
+            ],
+            [
+              2,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              -1
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            0
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              -1
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            0
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "address": 1,
+      "diagonal_axis": 1,
+      "diagonal_uv": [
+        [
+          1,
+          -2
+        ],
+        [
+          3,
+          -1
+        ]
+      ],
+      "id": "large_A:1",
+      "macro": "large_A",
+      "role": "L",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              1,
+              -2
+            ],
+            [
+              2,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              -2
+            ],
+            [
+              2,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              -2
+            ],
+            [
+              3,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              -1
+            ],
+            [
+              3,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            -1
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          -1
+        ]
+      ]
+    },
+    {
+      "address": 2,
+      "diagonal_axis": 0,
+      "diagonal_uv": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          -1
+        ]
+      ],
+      "id": "large_A:2",
+      "macro": "large_A",
+      "role": "L",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              2,
+              -1
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            0
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              -1
+            ],
+            [
+              3,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            0
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              -1
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            -1
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          2,
+          -1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          3,
+          0
+        ]
+      ]
+    },
+    {
+      "address": 3,
+      "diagonal_axis": 2,
+      "diagonal_uv": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "id": "large_A:3",
+      "macro": "large_A",
+      "role": "M",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              0,
+              -1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            0,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              0,
+              -1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            0,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            1
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "address": 4,
+      "diagonal_axis": 1,
+      "diagonal_uv": [
+        [
+          0,
+          -1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "id": "large_A:4",
+      "macro": "large_A",
+      "role": "M",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              0,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            0,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              0,
+              -1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            0,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              -1
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            0
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            0
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "address": 5,
+      "diagonal_axis": 2,
+      "diagonal_uv": [
+        [
+          2,
+          -3
+        ],
+        [
+          3,
+          -1
+        ]
+      ],
+      "id": "large_A:5",
+      "macro": "large_A",
+      "role": "M",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              2,
+              -3
+            ],
+            [
+              2,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -3
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              -3
+            ],
+            [
+              3,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -3
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              -2
+            ],
+            [
+              3,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              -2
+            ],
+            [
+              3,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            -1
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          3,
+          -2
+        ],
+        [
+          3,
+          -1
+        ]
+      ]
+    },
+    {
+      "address": 6,
+      "diagonal_axis": 1,
+      "diagonal_uv": [
+        [
+          2,
+          -3
+        ],
+        [
+          4,
+          -2
+        ]
+      ],
+      "id": "large_A:6",
+      "macro": "large_A",
+      "role": "M",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              2,
+              -3
+            ],
+            [
+              3,
+              -3
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -3
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              -3
+            ],
+            [
+              3,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -3
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              -3
+            ],
+            [
+              4,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              -2
+            ],
+            [
+              4,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            -2
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          2,
+          -3
+        ],
+        [
+          3,
+          -3
+        ],
+        [
+          3,
+          -2
+        ],
+        [
+          4,
+          -2
+        ]
+      ]
+    },
+    {
+      "address": 7,
+      "diagonal_axis": 1,
+      "diagonal_uv": [
+        [
+          2,
+          0
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "id": "large_A:7",
+      "macro": "large_A",
+      "role": "M",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            0
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            0
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            1
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ]
+    },
+    {
+      "address": 8,
+      "diagonal_axis": 2,
+      "diagonal_uv": [
+        [
+          3,
+          -1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "id": "large_A:8",
+      "macro": "large_A",
+      "role": "M",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              3,
+              -1
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              -1
+            ],
+            [
+              4,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            1
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          3,
+          -1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ]
+      ]
+    },
+    {
+      "address": 9,
+      "diagonal_axis": 0,
+      "diagonal_uv": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "id": "large_A:9",
+      "macro": "large_A",
+      "role": "S",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            0
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            0
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "address": 10,
+      "diagonal_axis": 1,
+      "diagonal_uv": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "id": "large_A:10",
+      "macro": "large_A",
+      "role": "S",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            2
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "address": 11,
+      "diagonal_axis": 2,
+      "diagonal_uv": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "id": "large_A:11",
+      "macro": "large_A",
+      "role": "S",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            0
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            0
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            2
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "address": 12,
+      "diagonal_axis": 0,
+      "diagonal_uv": [
+        [
+          3,
+          -1
+        ],
+        [
+          4,
+          -2
+        ]
+      ],
+      "id": "large_A:12",
+      "macro": "large_A",
+      "role": "S",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              3,
+              -2
+            ],
+            [
+              3,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              -2
+            ],
+            [
+              4,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              -1
+            ],
+            [
+              4,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              4,
+              -2
+            ],
+            [
+              4,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            -2
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          3,
+          -2
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          4,
+          -2
+        ],
+        [
+          4,
+          -1
+        ]
+      ]
+    },
+    {
+      "address": 13,
+      "diagonal_axis": 1,
+      "diagonal_uv": [
+        [
+          3,
+          -1
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "id": "large_A:13",
+      "macro": "large_A",
+      "role": "S",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              3,
+              -1
+            ],
+            [
+              4,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              -1
+            ],
+            [
+              4,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              4,
+              -1
+            ],
+            [
+              5,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            5,
+            0
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            5,
+            0
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          3,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ]
+      ]
+    },
+    {
+      "address": 14,
+      "diagonal_axis": 2,
+      "diagonal_uv": [
+        [
+          4,
+          -2
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "id": "large_A:14",
+      "macro": "large_A",
+      "role": "S",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              4,
+              -2
+            ],
+            [
+              4,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              4,
+              -2
+            ],
+            [
+              5,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              4,
+              -1
+            ],
+            [
+              5,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            5,
+            0
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              5,
+              -1
+            ],
+            [
+              5,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            5,
+            0
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          4,
+          -2
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          5,
+          -1
+        ],
+        [
+          5,
+          0
+        ]
+      ]
+    },
+    {
+      "address": 0,
+      "diagonal_axis": 0,
+      "diagonal_uv": [
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "id": "large_B:0",
+      "macro": "large_B",
+      "role": "L",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              -1,
+              -3
+            ],
+            [
+              -1,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            -1,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              -1,
+              -3
+            ],
+            [
+              0,
+              -3
+            ]
+          ],
+          "sab_endpoint_uv": [
+            0,
+            -3
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              -1,
+              -2
+            ],
+            [
+              0,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            -1,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              0,
+              -3
+            ],
+            [
+              0,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            0,
+            -3
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          -1,
+          -3
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          0,
+          -2
+        ]
+      ]
+    },
+    {
+      "address": 1,
+      "diagonal_axis": 1,
+      "diagonal_uv": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "id": "large_B:1",
+      "macro": "large_B",
+      "role": "L",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              -1,
+              -2
+            ],
+            [
+              0,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            -1,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              -1,
+              -2
+            ],
+            [
+              0,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            -1,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              0,
+              -2
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              0,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -1
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    },
+    {
+      "address": 2,
+      "diagonal_axis": 2,
+      "diagonal_uv": [
+        [
+          0,
+          -3
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "id": "large_B:2",
+      "macro": "large_B",
+      "role": "L",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              0,
+              -3
+            ],
+            [
+              0,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            0,
+            -3
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              0,
+              -3
+            ],
+            [
+              1,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            0,
+            -3
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              0,
+              -2
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              -2
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -1
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          0,
+          -3
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    },
+    {
+      "address": 3,
+      "diagonal_axis": 1,
+      "diagonal_uv": [
+        [
+          0,
+          -3
+        ],
+        [
+          2,
+          -2
+        ]
+      ],
+      "id": "large_B:3",
+      "macro": "large_B",
+      "role": "M",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              0,
+              -3
+            ],
+            [
+              1,
+              -3
+            ]
+          ],
+          "sab_endpoint_uv": [
+            0,
+            -3
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              0,
+              -3
+            ],
+            [
+              1,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            0,
+            -3
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              -3
+            ],
+            [
+              2,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              -2
+            ],
+            [
+              2,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -2
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          0,
+          -3
+        ],
+        [
+          1,
+          -3
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -2
+        ]
+      ]
+    },
+    {
+      "address": 4,
+      "diagonal_axis": 0,
+      "diagonal_uv": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "id": "large_B:4",
+      "macro": "large_B",
+      "role": "M",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              0,
+              -1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            0,
+            0
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              0,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            0,
+            0
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -1
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "address": 5,
+      "diagonal_axis": 2,
+      "diagonal_uv": [
+        [
+          1,
+          -4
+        ],
+        [
+          2,
+          -2
+        ]
+      ],
+      "id": "large_B:5",
+      "macro": "large_B",
+      "role": "M",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              1,
+              -4
+            ],
+            [
+              1,
+              -3
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -4
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              -4
+            ],
+            [
+              2,
+              -3
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -4
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              -3
+            ],
+            [
+              2,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              -3
+            ],
+            [
+              2,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -2
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          1,
+          -4
+        ],
+        [
+          1,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          -2
+        ]
+      ]
+    },
+    {
+      "address": 6,
+      "diagonal_axis": 1,
+      "diagonal_uv": [
+        [
+          1,
+          -4
+        ],
+        [
+          3,
+          -3
+        ]
+      ],
+      "id": "large_B:6",
+      "macro": "large_B",
+      "role": "M",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              1,
+              -4
+            ],
+            [
+              2,
+              -4
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -4
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              -4
+            ],
+            [
+              2,
+              -3
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -4
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              -4
+            ],
+            [
+              3,
+              -3
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            -3
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              -3
+            ],
+            [
+              3,
+              -3
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            -3
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          1,
+          -4
+        ],
+        [
+          2,
+          -4
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3,
+          -3
+        ]
+      ]
+    },
+    {
+      "address": 7,
+      "diagonal_axis": 0,
+      "diagonal_uv": [
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -2
+        ]
+      ],
+      "id": "large_B:7",
+      "macro": "large_B",
+      "role": "M",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              1,
+              -2
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              -2
+            ],
+            [
+              2,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              -1
+            ],
+            [
+              2,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              -2
+            ],
+            [
+              2,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -2
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          2,
+          -1
+        ]
+      ]
+    },
+    {
+      "address": 8,
+      "diagonal_axis": 2,
+      "diagonal_uv": [
+        [
+          2,
+          -2
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "id": "large_B:8",
+      "macro": "large_B",
+      "role": "M",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              2,
+              -2
+            ],
+            [
+              2,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              -2
+            ],
+            [
+              3,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              -1
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            0
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              -1
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            0
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          2,
+          -2
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          3,
+          0
+        ]
+      ]
+    },
+    {
+      "address": 9,
+      "diagonal_axis": 2,
+      "diagonal_uv": [
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "id": "large_B:9",
+      "macro": "large_B",
+      "role": "S",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              -1
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            1
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "address": 10,
+      "diagonal_axis": 1,
+      "diagonal_uv": [
+        [
+          1,
+          -1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "id": "large_B:10",
+      "macro": "large_B",
+      "role": "S",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              1,
+              -1
+            ],
+            [
+              2,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              1,
+              -1
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            1,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              -1
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            0
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            0
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ]
+    },
+    {
+      "address": 11,
+      "diagonal_axis": 0,
+      "diagonal_uv": [
+        [
+          2,
+          -2
+        ],
+        [
+          3,
+          -3
+        ]
+      ],
+      "id": "large_B:11",
+      "macro": "large_B",
+      "role": "S",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              2,
+              -3
+            ],
+            [
+              2,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              -3
+            ],
+            [
+              3,
+              -3
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            -3
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              -2
+            ],
+            [
+              3,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              -3
+            ],
+            [
+              3,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            -3
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          3,
+          -3
+        ],
+        [
+          3,
+          -2
+        ]
+      ]
+    },
+    {
+      "address": 12,
+      "diagonal_axis": 1,
+      "diagonal_uv": [
+        [
+          2,
+          -2
+        ],
+        [
+          4,
+          -1
+        ]
+      ],
+      "id": "large_B:12",
+      "macro": "large_B",
+      "role": "S",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              2,
+              -2
+            ],
+            [
+              3,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              -2
+            ],
+            [
+              3,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            -2
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              -2
+            ],
+            [
+              4,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              -1
+            ],
+            [
+              4,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            -1
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          2,
+          -2
+        ],
+        [
+          3,
+          -2
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          4,
+          -1
+        ]
+      ]
+    },
+    {
+      "address": 13,
+      "diagonal_axis": 0,
+      "diagonal_uv": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "id": "large_B:13",
+      "macro": "large_B",
+      "role": "S",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            0
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            2,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              0
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            0
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ]
+    },
+    {
+      "address": 14,
+      "diagonal_axis": 2,
+      "diagonal_uv": [
+        [
+          3,
+          -3
+        ],
+        [
+          4,
+          -1
+        ]
+      ],
+      "id": "large_B:14",
+      "macro": "large_B",
+      "role": "S",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              3,
+              -3
+            ],
+            [
+              3,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            -3
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              -3
+            ],
+            [
+              4,
+              -2
+            ]
+          ],
+          "sab_endpoint_uv": [
+            3,
+            -3
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              3,
+              -2
+            ],
+            [
+              4,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            -1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              4,
+              -2
+            ],
+            [
+              4,
+              -1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            4,
+            -1
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          3,
+          -3
+        ],
+        [
+          3,
+          -2
+        ],
+        [
+          4,
+          -2
+        ],
+        [
+          4,
+          -1
+        ]
+      ]
+    },
+    {
+      "address": 0,
+      "diagonal_axis": 0,
+      "diagonal_uv": [
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "id": "small_M:0",
+      "macro": "small_M",
+      "role": "M",
+      "sides": [
+        {
+          "edge_uv": [
+            [
+              -1,
+              0
+            ],
+            [
+              -1,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            -1,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              -1,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "sab_endpoint_uv": [
+            0,
+            0
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              -1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            -1,
+            1
+          ]
+        },
+        {
+          "edge_uv": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "sab_endpoint_uv": [
+            0,
+            0
+          ]
+        }
+      ],
+      "vertices_uv": [
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    }
+  ]
+}

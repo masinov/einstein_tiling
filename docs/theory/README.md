@@ -152,6 +152,19 @@ reviewable proof or certificate.
   periodic fundamental domain; SER1 reconstructs the actual Section 10.1
   supports and SABs as connected `15,15,1` common-rhombus templates, giving
   the 31-address colored source for the active ST-M1 theorem.
+- `59_exact_contact_kernel_and_pose_nogos.md` — the extensional 31-state
+  contact graph and exact binary/affine pose-local obstructions.
+- `60_compiler_determinism_and_undecidability.md` — the periodicity theorem
+  for deterministic carriers and the precise undecidable boundary for
+  symbolic Sturmian compiler systems.
+- `61_twelve_state_corridor_compiler.md` — the exact `3 x 2 x 2` source
+  quotient, pure-pose obstruction, and source-native one-polygon contract.
+- `62_binary_l_anchor_exact_cover.md` — the 31 addresses collapse to one
+  `L` hexagon, two `S` hexagons and six `M` connectors in exactly two rooted
+  full-isometry classes; macro ownership is a binary exact-cover obligation.
+- `63_turtle_center_spoke_no_go.md` — exhaustive exact proof that the direct
+  Turtle/James-Smith center-spoke hole elimination cannot make the two AHI
+  large supports congruent, even with every unit-edge polarity independent.
 - `37_k16w_polarity_elimination.md` — N39 rules out equal-polarity long
   spokes by a width-reset inequality, and K29O collapses the surviving K16W
   critical-pair domain to two exact opposite-polarity cells.

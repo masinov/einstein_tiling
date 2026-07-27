@@ -1,0 +1,2781 @@
+{
+  "alphabet": [
+    {
+      "axis": 0,
+      "corridor_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "axis": 0,
+      "corridor_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "axis": 0,
+      "corridor_bits": [
+        1,
+        0
+      ]
+    },
+    {
+      "axis": 0,
+      "corridor_bits": [
+        1,
+        1
+      ]
+    },
+    {
+      "axis": 1,
+      "corridor_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "axis": 1,
+      "corridor_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "axis": 1,
+      "corridor_bits": [
+        1,
+        0
+      ]
+    },
+    {
+      "axis": 1,
+      "corridor_bits": [
+        1,
+        1
+      ]
+    },
+    {
+      "axis": 2,
+      "corridor_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "axis": 2,
+      "corridor_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "axis": 2,
+      "corridor_bits": [
+        1,
+        0
+      ]
+    },
+    {
+      "axis": 2,
+      "corridor_bits": [
+        1,
+        1
+      ]
+    }
+  ],
+  "euclidean_frame_action": [
+    {
+      "images": [
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        }
+      ],
+      "reflected": false,
+      "rotation": 0
+    },
+    {
+      "images": [
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        }
+      ],
+      "reflected": false,
+      "rotation": 1
+    },
+    {
+      "images": [
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        }
+      ],
+      "reflected": false,
+      "rotation": 2
+    },
+    {
+      "images": [
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        }
+      ],
+      "reflected": false,
+      "rotation": 3
+    },
+    {
+      "images": [
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        }
+      ],
+      "reflected": false,
+      "rotation": 4
+    },
+    {
+      "images": [
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        }
+      ],
+      "reflected": false,
+      "rotation": 5
+    },
+    {
+      "images": [
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        }
+      ],
+      "reflected": true,
+      "rotation": 0
+    },
+    {
+      "images": [
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        }
+      ],
+      "reflected": true,
+      "rotation": 1
+    },
+    {
+      "images": [
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        }
+      ],
+      "reflected": true,
+      "rotation": 2
+    },
+    {
+      "images": [
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        }
+      ],
+      "reflected": true,
+      "rotation": 3
+    },
+    {
+      "images": [
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        }
+      ],
+      "reflected": true,
+      "rotation": 4
+    },
+    {
+      "images": [
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "from": {
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          },
+          "to": {
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ]
+          }
+        }
+      ],
+      "reflected": true,
+      "rotation": 5
+    }
+  ],
+  "macros": {
+    "large_A": {
+      "corridor_embedding_count": 1,
+      "embeddings": [
+        [
+          {
+            "address": 0,
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ],
+            "role": "L"
+          },
+          {
+            "address": 1,
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ],
+            "role": "L"
+          },
+          {
+            "address": 2,
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ],
+            "role": "L"
+          },
+          {
+            "address": 3,
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ],
+            "role": "M"
+          },
+          {
+            "address": 4,
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ],
+            "role": "M"
+          },
+          {
+            "address": 5,
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ],
+            "role": "M"
+          },
+          {
+            "address": 6,
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ],
+            "role": "M"
+          },
+          {
+            "address": 7,
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              1
+            ],
+            "role": "M"
+          },
+          {
+            "address": 8,
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ],
+            "role": "M"
+          },
+          {
+            "address": 9,
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ],
+            "role": "S"
+          },
+          {
+            "address": 10,
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ],
+            "role": "S"
+          },
+          {
+            "address": 11,
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ],
+            "role": "S"
+          },
+          {
+            "address": 12,
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ],
+            "role": "S"
+          },
+          {
+            "address": 13,
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ],
+            "role": "S"
+          },
+          {
+            "address": 14,
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ],
+            "role": "S"
+          }
+        ]
+      ]
+    },
+    "large_B": {
+      "corridor_embedding_count": 1,
+      "embeddings": [
+        [
+          {
+            "address": 0,
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              1
+            ],
+            "role": "L"
+          },
+          {
+            "address": 1,
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              1
+            ],
+            "role": "L"
+          },
+          {
+            "address": 2,
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              1
+            ],
+            "role": "L"
+          },
+          {
+            "address": 3,
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ],
+            "role": "M"
+          },
+          {
+            "address": 4,
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ],
+            "role": "M"
+          },
+          {
+            "address": 5,
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              1
+            ],
+            "role": "M"
+          },
+          {
+            "address": 6,
+            "axis": 1,
+            "corridor_bits": [
+              1,
+              0
+            ],
+            "role": "M"
+          },
+          {
+            "address": 7,
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ],
+            "role": "M"
+          },
+          {
+            "address": 8,
+            "axis": 2,
+            "corridor_bits": [
+              1,
+              0
+            ],
+            "role": "M"
+          },
+          {
+            "address": 9,
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ],
+            "role": "S"
+          },
+          {
+            "address": 10,
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ],
+            "role": "S"
+          },
+          {
+            "address": 11,
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ],
+            "role": "S"
+          },
+          {
+            "address": 12,
+            "axis": 1,
+            "corridor_bits": [
+              0,
+              0
+            ],
+            "role": "S"
+          },
+          {
+            "address": 13,
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              0
+            ],
+            "role": "S"
+          },
+          {
+            "address": 14,
+            "axis": 2,
+            "corridor_bits": [
+              0,
+              0
+            ],
+            "role": "S"
+          }
+        ]
+      ]
+    },
+    "small_M": {
+      "corridor_embedding_count": 2,
+      "embeddings": [
+        [
+          {
+            "address": 0,
+            "axis": 0,
+            "corridor_bits": [
+              0,
+              1
+            ],
+            "role": "M"
+          }
+        ],
+        [
+          {
+            "address": 0,
+            "axis": 0,
+            "corridor_bits": [
+              1,
+              0
+            ],
+            "role": "M"
+          }
+        ]
+      ]
+    }
+  },
+  "schema": "ahi-sturmian-corridor-quotient-v1",
+  "source_atlas_sha256": "50f2d948623c7f6d1c802a7606892e463932a66560882dad65910c1816d53afd"
+}
