@@ -1,0 +1,81 @@
+{
+ "kind": "k16w-hc38-tangent-result-manifest",
+ "schema_version": 1,
+ "date": "2026-07-24",
+ "code_version": "31d04b8-dirty",
+ "cvc5_version": "1.3.4",
+ "cvc5_options": {
+  "produce-models": "true",
+  "produce-proofs": "false",
+  "nl-cov": "true",
+  "nl-cov-var-elim": "true"
+ },
+ "cell_order": [
+  "s1-minus-minus",
+  "s1-minus-plus",
+  "s2-minus-minus",
+  "s2-minus-plus",
+  "s3-minus-minus",
+  "s3-minus-plus"
+ ],
+ "external_seconds_per_cell": 172800,
+ "kill_grace_seconds": 60,
+ "memory_limit_mib_per_cell": 16384,
+ "records": [
+  {
+   "cell": "s1-minus-minus",
+   "status": "no_result",
+   "elapsed_seconds": 5814.190745092026,
+   "external_returncode": -6,
+   "result": "docs/notebook/assets/k16w-hc38-tangent-s1-minus-minus-result.json",
+   "stdout": "logs/k16w-hc38-tangent-s1-minus-minus.stdout.log",
+   "stderr": "logs/k16w-hc38-tangent-s1-minus-minus.stderr.log"
+  },
+  {
+   "cell": "s1-minus-plus",
+   "status": "no_result",
+   "elapsed_seconds": 5799.179468830989,
+   "external_returncode": -6,
+   "result": "docs/notebook/assets/k16w-hc38-tangent-s1-minus-plus-result.json",
+   "stdout": "logs/k16w-hc38-tangent-s1-minus-plus.stdout.log",
+   "stderr": "logs/k16w-hc38-tangent-s1-minus-plus.stderr.log"
+  },
+  {
+   "cell": "s2-minus-minus",
+   "status": "no_result",
+   "elapsed_seconds": 5794.175387814001,
+   "external_returncode": -6,
+   "result": "docs/notebook/assets/k16w-hc38-tangent-s2-minus-minus-result.json",
+   "stdout": "logs/k16w-hc38-tangent-s2-minus-minus.stdout.log",
+   "stderr": "logs/k16w-hc38-tangent-s2-minus-minus.stderr.log"
+  },
+  {
+   "cell": "s2-minus-plus",
+   "status": "no_result",
+   "elapsed_seconds": 5804.182700639998,
+   "external_returncode": -6,
+   "result": "docs/notebook/assets/k16w-hc38-tangent-s2-minus-plus-result.json",
+   "stdout": "logs/k16w-hc38-tangent-s2-minus-plus.stdout.log",
+   "stderr": "logs/k16w-hc38-tangent-s2-minus-plus.stderr.log"
+  },
+  {
+   "cell": "s3-minus-minus",
+   "status": "no_result",
+   "elapsed_seconds": 5784.167181041994,
+   "external_returncode": -6,
+   "result": "docs/notebook/assets/k16w-hc38-tangent-s3-minus-minus-result.json",
+   "stdout": "logs/k16w-hc38-tangent-s3-minus-minus.stdout.log",
+   "stderr": "logs/k16w-hc38-tangent-s3-minus-minus.stderr.log"
+  },
+  {
+   "cell": "s3-minus-plus",
+   "status": "no_result",
+   "elapsed_seconds": 5814.190921174013,
+   "external_returncode": -6,
+   "result": "docs/notebook/assets/k16w-hc38-tangent-s3-minus-plus-result.json",
+   "stdout": "logs/k16w-hc38-tangent-s3-minus-plus.stdout.log",
+   "stderr": "logs/k16w-hc38-tangent-s3-minus-plus.stderr.log"
+  }
+ ],
+ "complete": true
+}

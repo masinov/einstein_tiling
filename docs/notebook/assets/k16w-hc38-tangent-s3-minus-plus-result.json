@@ -1,0 +1,18 @@
+{
+ "kind": "k16w-hc38-tangent-cell-result",
+ "schema_version": 1,
+ "date": "2026-07-24",
+ "cell": "s3-minus-plus",
+ "status": "no_result",
+ "elapsed_seconds": 5814.190921174013,
+ "external_returncode": -6,
+ "external_wall_seconds": 172800,
+ "external_kill_grace_seconds": 60,
+ "memory_limit_mib": 16384,
+ "formula": {
+  "path": "docs/notebook/assets/k16w-hc38-tangent-s3-minus-plus.smt2",
+  "sha256": "4d3bd7ca1209e8eb0ad4ae634db8bd838a0e129a39e9719e25e8c99d405386fc"
+ },
+ "claim_boundary": "no solver verdict; cell remains open/frozen",
+ "model": null
+}

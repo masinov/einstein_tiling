@@ -4046,3 +4046,17 @@ Because the live supervisor observes the shared worktree, its mutable
 `code_version` diagnostic may advance or acquire `-dirty` during parallel
 theory commits. It is not launch provenance. Launch is pinned to `b38a4e0`
 and every solved formula to the immutable `fa0c190` manifest and SHA-256.
+
+## D-0190 (2026-07-27) — Close HC-38 computation with no verdict
+
+All six cvc5/CAC tangent workers terminated after approximately 96 minutes
+with return code `-6`. Their byte-identical stderr streams record
+`MemoryError: std::bad_alloc` inside `solver.checkSat()` followed by a native
+`std::bad_alloc` abort. The fixed 16-GiB address-space limit was reached before
+the 48-hour wall limit.
+
+This is a governed `no_result`, not SAT, UNSAT, `unknown` or a resource-based
+mathematical inference. Every result has a null model and the frozen formula
+hash; all six cells and K16W remain open/frozen. D-0186 forbids a retry,
+larger cap, changed option set or alternative solver call, and none occurred.
+The completed manifests are preserved as negative solver-method evidence only.

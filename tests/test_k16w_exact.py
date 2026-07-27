@@ -275,3 +275,25 @@ def test_hc34_result_manifest_is_fail_closed_and_hash_pinned():
         assert payload["model"] is None
         assert payload["formula"]["sha256"] == sha256(formula.read_bytes()).hexdigest()
         assert payload["external_returncode"] == (124 if expected[cell] == "resource_stop" else 1)
+
+
+def test_hc38_tangent_result_manifest_is_fail_closed_and_hash_pinned():
+    assets = ROOT / "docs/notebook/assets"
+    formulas = json.loads((assets / "k16w-hc38-tangent-formulas.json").read_text())
+    results = json.loads((assets / "k16w-hc38-tangent-results.json").read_text())
+    formula_records = {record["cell"]: record for record in formulas["records"]}
+    assert results["complete"] is True
+    assert results["cell_order"] == list(HC34_CELLS)
+    assert {record["cell"]: record["status"] for record in results["records"]} == {
+        cell: "no_result" for cell in HC34_CELLS
+    }
+    for record in results["records"]:
+        cell = record["cell"]
+        payload = json.loads((ROOT / record["result"]).read_text())
+        formula = ROOT / formula_records[cell]["path"]
+        assert payload["cell"] == cell
+        assert payload["status"] == "no_result"
+        assert payload["model"] is None
+        assert payload["formula"]["sha256"] == sha256(formula.read_bytes()).hexdigest()
+        assert payload["external_returncode"] == -6
+        assert payload["memory_limit_mib"] == 16384

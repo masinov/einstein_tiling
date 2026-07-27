@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-24 (session 164 HC-38 topology classification)
+**Last updated:** 2026-07-27 (HC-38 solver disposition after session 164)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶/⏸ HC-38: six exact seven-variable K35T tangent cells continue under cvc5/CAC. The theorem branch closes K28W and classifies all edge-minimal full-side/half-turn words as K10B or K16B. A fresh carrier must change contact type, role order, docking involution or guard topology; checkpoint theory allowance is exhausted (D-0186--D-0189) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ⏸ HC-38 closed with no tangent verdict: all six cvc5/CAC cells exhausted the fixed 16-GiB address space and aborted, so K16W remains open. The theorem branch closes K28W and classifies all edge-minimal full-side/half-turn words as K10B or K16B. A fresh carrier must change contact type, role order, docking involution or guard topology (D-0186--D-0190) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
