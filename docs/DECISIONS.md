@@ -4105,3 +4105,30 @@ contact rays, the sectors are `alpha,beta,beta,alpha`, and local coverage is
 equivalent to `alpha+beta=pi`. The system is nonempty at sector level. Session
 168 may test state capacity only; no polygon or coordinate realization is
 inferred.
+
+## D-0194 (2026-07-27) — Root the four-star to obtain exactly two states
+
+N50 proves that K45H's unrooted angle assignments are one Euclidean orbit, so
+angle sectors alone do not encode a bit. K46S supplies the exact missing
+asymmetry: two intrinsically distinct opposite axis germs `H,D`. With
+`alpha!=beta`, the angle pair adjacent to `H` gives exactly two states that
+remain distinct under all Euclidean motions and are each reflection-stable.
+
+K46J records six finite obligations before this symbolic capacity becomes a
+geometric junction. Session 169 may audit only the cheapest full-side
+port-incidence realization of those obligations. Labels, an unrooted wedge,
+or one of the two placements alone do not satisfy the checkpoint.
+
+## D-0195 (2026-07-27) — Admit one rooted full-side hinge template
+
+K47P proves the exact cross-matching law for both K46S states. K47T excludes
+the two mixed sector stars whenever `alpha!=beta`, discharging local sector
+totality within the hinge topology. K47B then forces every complete full-side
+carrier into the rooted template `H,Y,P,Y,D,X,Q,X`.
+
+HC-40 closes successfully after sessions 167--169: the literal third
+participant is impossible, the forced four-star has exactly two rooted states,
+and arbitrary polygon generation is reduced to two residual arcs. No support,
+placement patch or candidate exists yet. A later checkpoint may study the
+eight-side `|P|=|Q|=1` template only after deriving its complete turn and
+closure equations on paper.

@@ -136,6 +136,12 @@ reviewable proof or certificate.
 - `53_reflection_hinge_orbits.md` — K45O/N49 prove that a symmetry-free
   reflection hinge has an even number of participants; K45H classifies the
   minimum four-sector star and its exact nonempty angle equation.
+- `54_rooted_binary_reflection_hinge.md` — N50 shows the unrooted four-star
+  is state-neutral; K46S proves distinct opposite roots create exactly two
+  reflection-stable states, and K46J states the finite geometric contract.
+- `55_full_side_hinge_compiler.md` — K47P gives the exact two-state port
+  cross-match, K47T proves sector-level totality, and K47B reduces carrier
+  generation to one rooted word with two residual arcs.
 - `37_k16w_polarity_elimination.md` — N39 rules out equal-polarity long
   spokes by a width-reset inequality, and K29O collapses the surviving K16W
   critical-pair domain to two exact opposite-polarity cells.
