@@ -4077,3 +4077,18 @@ the hypotheses of the thin-lens no-gos and survives session 165. This is a
 conditional topology theorem only. Sessions 166--167 must test the selected
 state language and close a finite admission contract; no geometry search or
 candidate is authorized.
+
+## D-0192 (2026-07-27) — Close clean reflection docking
+
+ERR-016 supersedes D-0191's survival disposition. N48 applies the missing
+local half-plane test at K43R's forced central perpendicular side and proves
+that the two reflected interiors overlap. A clean reflection interface on the
+mirror axis is at most one irredundant maximal side and cannot carry the
+compiler role word.
+
+HC-39 therefore closes after two sessions with a scoped theorem. Together,
+K42M/N46 and N48 exhaust half-turn and clean-reflection docking under the
+fixed complete full-side architecture. Reopening reflection requires a named
+third participant, T-junction, disconnected interface or contextual partial
+contact—all changes to `F`. No coordinate or experiment is authorized by
+this result.

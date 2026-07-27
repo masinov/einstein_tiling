@@ -436,3 +436,29 @@ entered Z3.  Their disposition is `no_result`, not `resource_stop`.  No timing
 comparison or resource-consumption claim may use their recorded elapsed
 values.  The four return-code-124 cells are genuine externally supervised
 three-hour resource stops.
+
+## ERR-016 (2026-07-27) — Reflection normal form omitted its fixed-side overlap
+
+Session 165 and D-0191 initially concluded that the clean reflection-docking
+route survived because paired traversal vectors obey `e'=-R(e)` rather than
+the half-turn law `e'=e`. K43R itself forces the unique reflection-fixed point
+of a non-axis interface into the interior of a side perpendicular to the
+mirror. The original disposition failed to test the two local half-planes at
+that side.
+
+Reflection preserves both half-planes of a perpendicular line. Thus the
+carrier and its reflected copy occupy the same local side and their interiors
+overlap. N48 closes the non-axis clean interface. A shared side lying on the
+mirror axis can separate the copies, but cannot carry an irredundant multi-role
+spine without partial contacts or third participants.
+
+Consequences:
+
+- K43I and K43R's conditional derivation remain correct;
+- K43V is retained only as a conditional identity inside an unrealizable
+  clean non-axis normal form;
+- D-0191's survival disposition is superseded by D-0192;
+- no coordinate or experiment was performed under the invalid disposition;
+  and
+- future docking audits must check the action on local side half-planes, not
+  only edge vectors and angle sums.

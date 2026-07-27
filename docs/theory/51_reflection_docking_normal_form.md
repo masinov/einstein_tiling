@@ -2,8 +2,8 @@
 
 **Date:** 2026-07-27
 
-**Status:** HC-39 theorem draft; exact two-copy topology, no polygonal
-realization, placement patch, all-tilings converse or monotile claim
+**Status:** HC-39 corrected theorem draft; K43I and K43R retained, original
+survival disposition withdrawn by ERR-016/N48
 
 **Scope:** one symmetry-free irredundant polygonal disk, two congruent copies,
 and a clean connected two-copy interface
@@ -81,7 +81,34 @@ the sector of `P` and the reflected sector coming from `R(p)` disjoint and
 collectively equal to the full disk.  Their angles sum to `2*pi`, which is
 (2.1). □
 
-## 3. Intrinsic polarity and directed vectors
+## 3. N48: the forced central side makes the non-axis spine impossible
+
+### ST-M1.N48
+
+No two polygonal disks satisfy all four clean reflection-spine hypotheses
+with `W` outside the mirror axis.
+
+### Proof
+
+K43R puts the unique fixed point in the relative interior of a shared side
+`H` perpendicular to the mirror `L`.  Choose coordinates in which `L` is the
+vertical axis and `H` is locally horizontal.  Reflection across `L` preserves
+each of the two open half-planes above and below the line containing `H`.
+
+At an interior point of a polygon side, the interior of `P` occupies one of
+those half-planes locally.  The interior of `R(P)` occupies the reflection of
+that same half-plane, which is the same half-plane.  Hence the two interiors
+overlap in every sufficiently small neighborhood of the fixed point,
+contradicting hypothesis 1. □
+
+If instead a clean shared arc is contained in `L`, reflection swaps its two
+local sides and disjointness is possible.  But an irredundant polygonal arc
+contained in one line is a single maximal side: internal `pi` vertices merge.
+It cannot carry the multi-role `A-B-C-H-C-B-A` spine.  Adding T-junctions or
+third participants changes the full-side contact hypothesis `F`, not merely
+the docking involution `J`.
+
+## 4. Conditional polarity and directed vectors
 
 ### ST-M1.K43V
 
@@ -103,16 +130,16 @@ angle lies on each side of `pi`.  If first-half vertices are traversed toward
 unoriented edge by `R` and reversal contributes the minus sign, giving (3.1).
 □
 
-The polarity is measurable unmarked geometry, not a color.  Equation (3.1)
-is also the precise escape from N33/N37/N38/N41: those thin-lens arguments
-use centrally paired equal traversal vectors and a common long axis.  No
-existence follows from dropping that hypothesis, but the reflection route is
-not already covered by the half-turn no-gos.
+The polarity and vector statements are valid conditional consequences of the
+K43R normal form, but N48 proves that no clean non-axis interface realizes
+them with disjoint interiors.  They may be reused only if a future topology
+adds a third participant at the fixed locus or abandons the clean full-side
+interface.
 
 ## 4. Boundary of the result
 
 K43I--K43V do not establish that a polygon with such a spine exists, that
 the intended reflection is forced, or that all other contacts are excluded.
-They classify the only surviving involution and state the exact local
-geometry any realization must satisfy.  Mixed-handed occurrences are
-explicitly admitted, as ordinary Euclidean monotiling requires.
+They classify the remaining involution and then close its clean non-axis
+interface by N48.  Mixed-handed occurrences are explicitly admitted, as
+ordinary Euclidean monotiling requires; the no-go is geometric, not chiral.

@@ -127,9 +127,12 @@ reviewable proof or certificate.
   carrier to change contact type, role order, docking involution or guard
   topology rather than another numerical lens parameter.
 - `51_reflection_docking_normal_form.md` — K43I reduces copy-exchanging
-  docking to half-turn or reflection; K43R/K43V give the exact clean
-  reflection-spine normal form, complementary angle polarity and the vector
-  law that escapes the half-turn thin-lens hypotheses.
+  docking to half-turn or reflection; K43R derives the conditional non-axis
+  normal form and N48 closes it by the fixed-side half-plane overlap missed
+  in session 165 (ERR-016).
+- `52_reflection_clean_interface_no_go.md` — concise disposition of N48 and
+  the exact scope boundary: reflection can reopen only through partial,
+  disconnected or third-participant contact topology.
 - `37_k16w_polarity_elimination.md` — N39 rules out equal-polarity long
   spokes by a width-reset inequality, and K29O collapses the surviving K16W
   critical-pair domain to two exact opposite-polarity cells.
