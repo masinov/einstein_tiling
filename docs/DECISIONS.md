@@ -4325,3 +4325,22 @@ carrier family: prove it tiles, classify every tiling into the `G/Z` source
 language, and run the periodicity gate immediately on any counterexample or
 constructed tiling.  Local decompositions alone do not count as progress on
 totality.
+
+## D-0211 (2026-07-27) — Close every carrier-local P17 decoder
+
+D-0210's apparent `Z=(0,17)` escape fails the complete source vertex rule.
+The P17 support has exactly 60 lozenge subdivisions.  Every one contains a
+three-rhombus hexagon with all three SAB axes, so an all-singleton state would
+force three incident binary corridor gaps to be pairwise unequal.  The exact
+enumeration leaves zero bipartite long-diagonal graphs.
+
+Area leaves no third carrier-local composition: a 17-rhombus carrier contains
+either one 15-rhombus large patch plus two singleton cells, or seventeen
+singletons.  The latter is locally impossible and the former has fixed ratio
+two, contradicting the required `6*(sqrt(2)-1)`.  Hence no carrier-local
+fusion decoder from P17 to the exact AHI source exists.
+
+P17 is retired as a carrier-local Sturmian monotile route.  Reopening this
+shape requires a concrete bounded decoder whose source macros cross P17
+boundaries; a new carrier must pass the composition cone and source-vertex
+legality before any boundary or periodicity work.

@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active on the explicit unmarked 17-rhombus polygon `P17`. It is an exact local `A+2M/B+2M` source compiler, but source composition proves that state alone cannot extend globally. Any carrier-local total decoder must also use the all-singleton state `Z=(0,17)` at `freq(Z)/freq(G)=(6sqrt(2)-8)/17`. Whole-plane tilability and total `G/Z` grouping remain open (ERR-017/D-0208--D-0210). |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active beyond the now-closed P17 carrier-local family. P17 is an exact local `A+2M/B+2M` compiler, but its only possible second carrier-local composition `(0,17)` violates the three-axis binary vertex rule; the remaining fixed composition has ratio 2 instead of `6(sqrt(2)-1)`. Any continuation must give a concrete cross-boundary decoder or a different carrier passing both composition and vertex gates (ERR-017/D-0208--D-0211). |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -253,7 +253,7 @@
   support is a translation fundamental domain (complete index-51/index-49 HNF
   tests), but other periodic tilings and global tilability remain open
   (D-0206--D-0207).
-- **Explicit P17 carrier and global admission theorem:** ERR-017 corrects the
+- **Explicit P17 carrier and carrier-local impossibility theorem:** ERR-017 corrects the
   role/support conflation in K54S.  The exact 17-rhombus 16-gon is a genuine
   local `large_A+2M <-> large_B+2M` compiler under the source's endpoint-
   continuation rule.  Its one-/two-copy translation gates and the induced
@@ -261,8 +261,13 @@
   The new composition-cone theorem proves that the large state alone cannot
   realize the source ratio `6(sqrt(2)-1)`: a carrier-local decoder must use
   the local all-singleton state `Z=(0,17)` with exact relative frequency
-  `(6sqrt(2)-8)/17`.  Proving plane tilability and total `G/Z` grouping for
-  every P17 tiling is now the sole constructive burden (D-0208--D-0210).
+  `(6sqrt(2)-8)/17`.  The apparent all-singleton state is locally impossible:
+  one three-axis hexagon would require three binary corridor bits to be
+  pairwise unequal.  Area leaves no third state, so the complete
+  carrier-local P17 family is refuted.  Cross-boundary decoding and different
+  carriers remain outside this theorem.  The all-M quantifier is exhaustive:
+  all 60 lozenge subdivisions contain the three-axis obstruction and cold-
+  verify from the fixed support (D-0208--D-0211).
 - **ST-M1 consolidated dossier:** theory note 14 now gives the complete
   P0/S0/Q0/K1T/K1P/N5--N9/K2C/K2V chain and conditional K2J-to-monotile
   argument in one self-contained proof draft. It makes no novelty or monotile
@@ -861,18 +866,18 @@ Research is under the 2026-07-21 reset recorded in
 
 The controlling 2026-07-27 target supersedes the chronological archive below:
 
-1. Work only on the explicit P17 polygon and the exact two-state source
-   target `G=(1,2)`, `Z=(0,17)`.  Prove a whole-plane tiling and a total
-   finite-radius decoder for every tiling, or prove that this clearly defined
-   carrier-local realization family is impossible.
-2. The source-composition cone is mandatory before any new state or carrier:
-   the `Z/G` ratio must be `(6sqrt(2)-8)/17`.  A local patch or another
-   fixed-composition state does not advance totality.
-3. Any explicit P17 tiling or counterexample hits the exact periodicity gate
-   immediately.  The existing one-/two-copy negative results are not a reason
-   to run a larger bounded ladder.
+1. P17 is closed for carrier-local decoding by N60P.  Do not run more P17
+   periodicity or patch searches.  It reopens only for a specified bounded
+   decoder whose 15-rhombus source patches cross carrier boundaries.
+2. The source-composition cone and the three-axis binary vertex test are
+   mandatory admission gates for any different carrier.  A local same-support
+   flip that fails either gate is not a compiler candidate.
+3. The live theorem question is whether a bounded cross-boundary quotient of
+   the exact 31-state rhombus system can be carried by one support, or whether
+   a source-level obstruction rules out that family.  State the decoder radius
+   and ownership rule before geometry.
 4. Do not reopen the hinge/thin-lens families, the classified polykite range,
-   or generic carrier invention while P17 totality is unresolved.
+   or generic ungated carrier invention.
 
 The remaining numbered material is retained as the historical decision log.
 

@@ -11,11 +11,11 @@
   "latest": {
     "id": "HC-2026-07-27-47",
     "date": "2026-07-27",
-    "through_session": 185,
-    "reason": "The user's direct compile-or-impossibility instruction remains the controlling authorization; checkpoint accounting is background only. Sessions 181--185 establish the explicit P17 local compiler, its exact finite periodicity gates and three-tile Figure 45 dissection, correct K54S by ERR-017, and derive the source-composition admission theorem. Continuation is restricted to whole-plane tilability and a total G/Z decoder for this fixed polygon, or a theorem refuting that realization family.",
+    "through_session": 186,
+    "reason": "The user's direct compile-or-impossibility instruction remains the controlling authorization; checkpoint accounting is background only. Sessions 181--186 establish the explicit P17 local compiler, its exact finite periodicity gates and three-tile Figure 45 dissection, correct K54S by ERR-017, and prove N60P: every carrier-local P17 decoder is impossible by the source composition cone plus an exhaustive three-axis binary vertex obstruction over all 60 lozenge subdivisions. Continuation requires an explicit cross-boundary decoder family or a different carrier passing both gates.",
     "artifact_bytes": {
       "docs/notebook/assets": 6762911101,
-      "data": 1809292340
+      "data": 1809293211
     }
   }
 }

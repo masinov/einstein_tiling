@@ -3289,6 +3289,186 @@ def verify_seventeen_rhombus_full_germs(
         raise ValueError("serialized full SAB-germ test differs from exact rebuild")
 
 
+def _odd_cycle(edges):
+    adjacency = {}
+    for first, second in edges:
+        adjacency.setdefault(first, []).append(second)
+        adjacency.setdefault(second, []).append(first)
+    color = {}
+    parent = {}
+    depth = {}
+    for root in sorted(adjacency):
+        if root in color:
+            continue
+        color[root] = 0
+        parent[root] = None
+        depth[root] = 0
+        queue = deque([root])
+        while queue:
+            first = queue.popleft()
+            for second in adjacency[first]:
+                if second not in color:
+                    color[second] = 1 - color[first]
+                    parent[second] = first
+                    depth[second] = depth[first] + 1
+                    queue.append(second)
+                    continue
+                if color[second] != color[first]:
+                    continue
+                left, right = first, second
+                left_path, right_path = [left], [right]
+                while depth[left] > depth[right]:
+                    left = parent[left]
+                    left_path.append(left)
+                while depth[right] > depth[left]:
+                    right = parent[right]
+                    right_path.append(right)
+                while left != right:
+                    left, right = parent[left], parent[right]
+                    left_path.append(left)
+                    right_path.append(right)
+                cycle = left_path + list(reversed(right_path[:-1]))
+                return tuple(cycle)
+    return None
+
+
+def build_p17_all_m_obstruction(atlas: dict, kernel: dict) -> dict:
+    """Exhaust every lozenge subdivision of P17 and test all-M parity."""
+
+    verify_atlas(atlas)
+    verify_common_support_kernel(kernel, atlas)
+    equalizer = kernel["two_rhombus_equalizers"][0]
+    support = _transform_cell_set(
+        atlas["supports"]["large_A"]["cells"], 0, False, (0, 0)
+    ) | _transform_cell_set(
+        atlas["supports"]["large_B"]["cells"],
+        equalizer["rotation"],
+        equalizer["reflected"],
+        tuple(equalizer["translation_uv"]),
+    )
+    triangles = tuple(sorted(support, key=lambda item: tuple(sorted(item))))
+    adjacency = {index: [] for index in range(len(triangles))}
+    for first_index, first in enumerate(triangles):
+        for second_index in range(first_index):
+            if len(first & triangles[second_index]) == 2:
+                adjacency[first_index].append(second_index)
+                adjacency[second_index].append(first_index)
+    if any(not neighbors for neighbors in adjacency.values()):
+        raise ValueError("P17 contains an unmatched primitive triangle")
+
+    matching_count = 0
+    bipartite_count = 0
+    three_axis_vertex_count = 0
+    first_bipartite = None
+    shortest_odd_cycle = None
+
+    def visit(unmatched, pairs):
+        nonlocal matching_count, bipartite_count, three_axis_vertex_count
+        nonlocal first_bipartite, shortest_odd_cycle
+        if not unmatched:
+            matching_count += 1
+            rhombi = tuple(
+                frozenset(triangles[first] | triangles[second])
+                for first, second in pairs
+            )
+            diagonals = tuple(_rhombus_long_diagonal(rhombus) for rhombus in rhombi)
+            cycle = _odd_cycle(diagonals)
+            if cycle is None:
+                bipartite_count += 1
+                if first_bipartite is None:
+                    first_bipartite = tuple(diagonals)
+            elif shortest_odd_cycle is None or len(cycle) < len(shortest_odd_cycle):
+                shortest_odd_cycle = cycle
+
+            vertices = set().union(*rhombi)
+            has_three_axis_vertex = False
+            for vertex in vertices:
+                incident = [
+                    (rhombus, diagonal)
+                    for rhombus, diagonal in zip(rhombi, diagonals)
+                    if vertex in rhombus
+                ]
+                if len(incident) != 3:
+                    continue
+                covered_triangles = [
+                    triangle
+                    for triangle in triangles
+                    if vertex in triangle
+                ]
+                if len(covered_triangles) != 6:
+                    continue
+                axes = {
+                    _component_axis({
+                        "diagonal_uv": [list(point) for point in diagonal]
+                    })
+                    for _, diagonal in incident
+                }
+                if axes == {0, 1, 2}:
+                    has_three_axis_vertex = True
+                    break
+            if has_three_axis_vertex:
+                three_axis_vertex_count += 1
+            return
+
+        first = min(
+            unmatched,
+            key=lambda index: sum(
+                neighbor in unmatched for neighbor in adjacency[index]
+            ),
+        )
+        choices = [
+            neighbor for neighbor in adjacency[first] if neighbor in unmatched
+        ]
+        for second in sorted(choices):
+            visit(
+                unmatched - {first, second},
+                pairs + [(min(first, second), max(first, second))],
+            )
+
+    visit(frozenset(range(len(triangles))), [])
+    if not matching_count:
+        raise ValueError("P17 has no lozenge subdivision")
+
+    def serialize_edges(edges):
+        if edges is None:
+            return None
+        return [
+            [list(first), list(second)] for first, second in edges
+        ]
+
+    return {
+        "schema": "ahi-sturmian-p17-all-m-obstruction-v1",
+        "source_atlas_sha256": hashlib.sha256(
+            (json.dumps(atlas, indent=2, sort_keys=True) + "\n").encode()
+        ).hexdigest(),
+        "common_support_kernel_sha256": hashlib.sha256(
+            (json.dumps(kernel, indent=2, sort_keys=True) + "\n").encode()
+        ).hexdigest(),
+        "primitive_triangle_count": len(triangles),
+        "lozenge_count": len(triangles) // 2,
+        "perfect_matching_count": matching_count,
+        "matching_count_with_three_axis_vertex": three_axis_vertex_count,
+        "nonbipartite_long_diagonal_graph_count": matching_count - bipartite_count,
+        "bipartite_long_diagonal_graph_count": bipartite_count,
+        "shortest_odd_cycle_edges_uv": serialize_edges(
+            tuple(
+                (shortest_odd_cycle[index], shortest_odd_cycle[(index + 1) % len(shortest_odd_cycle)])
+                for index in range(len(shortest_odd_cycle))
+            )
+            if shortest_odd_cycle is not None
+            else None
+        ),
+        "first_bipartite_subdivision_diagonals_uv": serialize_edges(first_bipartite),
+        "all_m_state_exists": bool(bipartite_count),
+    }
+
+
+def verify_p17_all_m_obstruction(data: dict, atlas: dict, kernel: dict) -> None:
+    expected = build_p17_all_m_obstruction(atlas, kernel)
+    if data != expected:
+        raise ValueError("serialized P17 all-M obstruction differs from exact rebuild")
+
+
 def _cell_from_triangle_vertices(triangle):
     minimum_u = min(point[0] for point in triangle)
     minimum_v = min(point[1] for point in triangle)
