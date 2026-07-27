@@ -145,6 +145,9 @@ reviewable proof or certificate.
 - `56_hinge_octagon_roles_and_closure.md` — K48R closes intrinsic role
   recovery for the smallest template; N51 gives its forced nonconvex turn
   budget and K48C its complete exact complex closure equation.
+- `57_exact_hinge_octagon_support.md` — K49W gives exact `Q(sqrt(3))`
+  coordinates for a simple role-safe support attaining the eight-side bound;
+  all four-copy placement and termination obligations remain open.
 - `37_k16w_polarity_elimination.md` — N39 rules out equal-polarity long
   spokes by a width-reset inequality, and K29O collapses the surviving K16W
   critical-pair domain to two exact opposite-polarity cells.

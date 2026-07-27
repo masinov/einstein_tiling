@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-27 (session 169 HC-40 rooted hinge compiler)
+**Last updated:** 2026-07-27 (session 171 HC-41 exact hinge support)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶/⏸ HC-40 refutes a three-participant reflection hinge but derives its forced four-star: two intrinsic axis roots create exactly two states, and complete full-side geometry is reduced to `H,Y,P,Y,D,X,Q,X`. No polygon exists yet; the smallest eight-side residual-arc template is the next theorem question. K16W separately remains open after HC-38's memory failures (D-0186--D-0195) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶/⏸ HC-41 constructs an exact simple symmetry-free octagon support for `H,Y,P,Y,D,X,Q,X`, attaining the eight-side bound. It is not a candidate tile: complete four-copy hinge placements, remote termination and the local contact atlas remain open. K16W separately remains open after HC-38's memory failures (D-0186--D-0197) |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).

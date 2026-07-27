@@ -4144,3 +4144,15 @@ turn and nonconvexity. K48C gives the complete exact complex closure equation.
 The octagon survives session 170 only as a role-safe closed-chain system.
 Sessions 171--172 must prove a simple exact support, prove a no-go forcing a
 longer residual arc, or freeze. No placement or candidate claim is authorized.
+
+## D-0197 (2026-07-27) — Close HC-41 with an exact simple support
+
+K49W supplies a simple role-safe octagon in `Q(sqrt(3))^2` satisfying the
+smallest K47B template. Its six length classes are distinct, its signed turns
+are exact, K48C closes identically, and exact bounding boxes separate every
+nonadjacent edge pair.
+
+HC-41 therefore meets its preregistered simple-support outcome after sessions
+170--171 and stops one session early. The octagon is not promoted to a tile
+candidate: K46J's complete four-copy placement, contact termination and local
+atlas remain open. No computation, SVG or search was performed.
