@@ -148,6 +148,10 @@ reviewable proof or certificate.
 - `57_exact_hinge_octagon_support.md` — K49W gives exact `Q(sqrt(3))`
   coordinates for a simple role-safe support attaining the eight-side bound;
   all four-copy placement and termination obligations remain open.
+- `58_exact_sturmian_source_atlas.md` — N52 retires the octagon with an exact
+  periodic fundamental domain; SER1 reconstructs the actual Section 10.1
+  supports and SABs as connected `15,15,1` common-rhombus templates, giving
+  the 31-address colored source for the active ST-M1 theorem.
 - `37_k16w_polarity_elimination.md` — N39 rules out equal-polarity long
   spokes by a width-reset inequality, and K29O collapses the surviving K16W
   critical-pair domain to two exact opposite-polarity cells.

@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-27 (session 171 HC-41 exact hinge support)
+**Last updated:** 2026-07-27 (session 172 exact Sturmian source atlas)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶/⏸ HC-41 constructs an exact simple symmetry-free octagon support for `H,Y,P,Y,D,X,Q,X`, attaining the eight-side bound. It is not a candidate tile: complete four-copy hinge placements, remote termination and the local contact atlas remain open. K16W separately remains open after HC-38's memory failures (D-0186--D-0197) |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active at the exact source-to-unmarked compiler. The HC-41 octagon is periodic and retired. SER1 reconstructs the actual Section 10.1 source as connected `15,15,1` common-rhombus templates, giving a 31-address colored source. The remaining theorem is geometric color erasure with a total all-tilings decoder, or a family-level impossibility/undecidability result (D-0198--D-0199). |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -206,9 +206,15 @@
 - **ST-M1 serialization audit:** SER0 defines the extensional `30,30,2`
   templates, rules, decoder and K1P certificate a cold checker would need.
   The primary arXiv source contains exact prose/formulas but only Illustrator
-  PDFs for the construction figures, not address/SAB/vertex tables. Direct
-  serialization is blocked; figure digitization would be a separately
-  validated reconstruction (D-0095).
+  PDFs for the construction figures, not address/SAB/vertex tables. SER1 now
+  supplies the separately validated reconstruction (D-0095/D-0199).
+- **ST-M1 exact source atlas:** the pinned Section 10.1 vector figure
+  cold-verifies as exact `30,30,2` primitive supports with `15,15,1` SAB
+  components. Each component pairs two adjacent triangles; the role census is
+  `6S+6M+3L` per large template, all embeddings form one support-isometry
+  orbit, and the connected common-rhombus compiler has 31 addresses. This
+  closes finite SER0 transcription, not unmarked color erasure or ST-M1
+  (D-0199).
 - **ST-M1 consolidated dossier:** theory note 14 now gives the complete
   P0/S0/Q0/K1T/K1P/N5--N9/K2C/K2V chain and conditional K2J-to-monotile
   argument in one self-contained proof draft. It makes no novelty or monotile

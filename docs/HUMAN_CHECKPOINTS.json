@@ -9,10 +9,10 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-27-41",
+    "id": "HC-2026-07-27-42",
     "date": "2026-07-27",
-    "through_session": 169,
-    "reason": "After independent verification of HC-40, the user explicitly authorizes HC-41 with Claude's two conditions verbatim: quantified outcomes only (an exact simple-support witness at boundary-germ level, a no-go forcing |P|+|Q|>=3, or freeze after three sessions), exact arithmetic, and no polygon/SVG/candidate promotion before K46J placement and termination; intrinsic H/D/X/Y role recovery must be tested before geometry rather than assumed. Sessions 170--172 study only the smallest rooted template H,Y,P,Y,D,X,Q,X with one side in each residual arc. They must derive the complete turn/closure equations on paper, audit full-Euclidean role recovery, and then either prove an exact simple irredundant support exists or prove at least one residual arc needs more sides. No experiment, optimizer, coordinate fitting, SVG, placement-patch claim or candidate promotion is authorized.",
+    "through_session": 171,
+    "reason": "The user replaces local carrier-family work with the controlling theorem-level goal: construct a Sturmian-derived aperiodic monotile; prove nonexistence in an explicitly defined Sturmian carrier family; or prove undecidability for an explicitly defined effective family and isolate decidable subfamilies. The periodic HC-41 hinge is retired. Work must close a source, construction/lift, total-decoder, scoped nonexistence, or formal undecidability obligation; solver failure and bounded family searches do not count. The immediate task is the finite exact reconstruction of the Akiyama--Hamada--Ito Section 10.1 source atlas from its analytic definitions and pinned vector figures. No new carrier family is authorized before that source exists.",
     "artifact_bytes": {
       "docs/notebook/assets": 6762911101,
       "data": 1809060890

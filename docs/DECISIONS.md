@@ -4156,3 +4156,36 @@ HC-41 therefore meets its preregistered simple-support outcome after sessions
 170--171 and stops one session early. The octagon is not promoted to a tile
 candidate: K46J's complete four-copy placement, contact termination and local
 atlas remain open. No computation, SVG or search was performed.
+
+## D-0198 (2026-07-27) — Restore the theorem-level Sturmian objective
+
+The user fixes the controlling objective to one of three rigorous terminal
+outcomes: construct a Sturmian-derived aperiodic monotile; prove nonexistence
+in an explicitly defined Sturmian carrier/encoding family; or prove
+undecidability for an explicitly defined effective family and characterize
+meaningful decidable subfamilies. Bounded negative searches, solver resource
+stops and no-gos for unnamed or architecture-specific variants are not any of
+these outcomes.
+
+The HC-41 octagon admits the exact two-tile periodic macro described by N52
+and is retired. The hinge and thin-lens family loops are frozen. The active
+construction path returns to the missing Akiyama--Hamada--Ito source atlas:
+no new carrier geometry is admitted before that finite source is reconstructed
+and validated against the primary paper.
+
+## D-0199 (2026-07-27) — Replace the inferred source by the exact 31-rhombus atlas
+
+The pinned Akiyama--Hamada--Ito vector source reconstructs exactly to supports
+of `30,30,2` primitive triangles and SAB-component counts `15,15,1`.  In each
+large support the role-labelled components are `6 S-pairs + 6 M + 3 L-pairs`,
+partition all primitive triangles into congruent `60/120` rhombi, and form a
+connected macro address graph.  All source-consistent embeddings comprise one
+support-isometry orbit.  The resulting common-support colored compiler has 31
+addresses, not the earlier conservative 62-triangle alphabet.
+
+This closes the finite SER0 transcription and supplies the extensional input
+for S0C.  It does not close geometric color erasure or ST-M1: the remaining
+construction must realize this exact 31-state system with one unmarked polygon
+and prove total decoding on every unrestricted tiling.  Free-standing carrier
+families that do not compile this atlas are no longer part of the active
+research path.
