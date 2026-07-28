@@ -9,13 +9,13 @@
     ]
   },
   "latest": {
-    "id": "HC-2026-07-27-47",
-    "date": "2026-07-27",
-    "through_session": 187,
-    "reason": "The persistent goal is the controlling authorization; checkpoint accounting remains background only. Session 187 proves the exact computability boundary: a factor-preserving product plus Stade's all-tilings weave construction makes one-connected-polygon Sturmian realization undecidable with finite edge rules, while graph and fixed-cylinder auxiliaries are decidable. The edge relation is not erased; unmarked continuation is restricted to a self-stapling theorem or a family-level obstruction.",
+    "id": "HC-2026-07-28-48",
+    "date": "2026-07-28",
+    "through_session": 190,
+    "reason": "The user's explicit instruction to proceed fully along this route renews the persistent theorem-level authorization under D-0200. Sessions 188--190 replace arbitrary source pruning by a finite minimal-hull component reduction and close every carrier-local AHI compiler below area 30 with a cold-verified complete support/subdivision classification. Continuation is restricted to the exact area-30 normal form or a theorem about cross-carrier/nonseparable decoding; no unrelated carrier family is authorized.",
     "artifact_bytes": {
       "docs/notebook/assets": 6762911101,
-      "data": 1810816030
+      "data": 1816516138
     }
   }
 }

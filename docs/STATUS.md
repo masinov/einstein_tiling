@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-28 (session 190 sub-30 carrier-local impossibility)
+**Last updated:** 2026-07-28 (session 192 all-area carrier-trade reduction)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active at the cross-carrier/nonseparable boundary. Minimality eliminates proper lattice-factor pruning; rail-separable schemes are periodic. Every carrier-local common-rhombus compiler below area 30 is impossible by a complete 997-support/29,443-subdivision parity classification. The marked family is undecidable and contact-complete separable Stade erasures are periodic. The live routes are area 30+ carrier-local structure, source macros crossing carrier boundaries, or genuinely nonseparable multi-carrier decoding (ERR-017/D-0208--D-0217). |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active at one all-area trade question plus the cross-carrier/nonseparable boundary. Minimality eliminates proper lattice-factor pruning; rail-separable schemes are periodic. Complete exact classifications close every carrier-local compiler through area 30. K66A/K66T replace the area ladder: every carrier-local solution at any size requires a same-support cut-admissible trade changing the large-macro count. The marked family is undecidable and contact-complete separable Stade erasures are periodic (ERR-017/D-0208--D-0219). |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -302,6 +302,15 @@
   with an odd continuation cycle.  Thus the minimum carrier-local area is at
   least 30; cross-carrier and nonseparable decoders remain open
   (K63M/K63D/N63R/K64A--K64C/N64S, D-0216--D-0217).
+- **Area-30 closure and all-area trade reduction:** the 65 possible
+  two-large supports have 52,042 exact `G/Z` alternative subdivisions and
+  zero parity survivors, closing area 30.  For arbitrary `A=15q+s`, the
+  composition cone is feasible exactly when
+  `s/q<6*(sqrt(2)-1)` and every viable library straddles one explicit
+  large-count threshold.  Hence every carrier-local solution at any area
+  contains a count-changing same-support AHI trade.  The infinite carrier
+  problem is now one cut-admissible exact-cover/height-charge question, not an
+  area census (K65A/K65C/N65S/K66A/K66T/K66C, D-0218--D-0219).
 - **ST-M1 consolidated dossier:** theory note 14 now gives the complete
   P0/S0/Q0/K1T/K1P/N5--N9/K2C/K2V chain and conditional K2J-to-monotile
   argument in one self-contained proof draft. It makes no novelty or monotile
@@ -900,15 +909,17 @@ Research is under the 2026-07-21 reset recorded in
 
 The controlling 2026-07-28 target supersedes the chronological archive below:
 
-1. Treat N64S as the completed base case: no carrier-local boundary synthesis
-   below area 30 and no return to P17 or arbitrary small carriers.
-2. Derive the complete area-30 composition/state normal form before any new
-   geometry.  Decide whether its finite support problem has a theorem-level
-   obstruction or supplies the first exact source-state library.
+1. Treat N64S/N65S as completed base cases: no carrier-local synthesis through
+   area 30 and no return to P17 or an integer-by-integer carrier census.
+2. Attack N66R directly.  Seek a conserved AHI corridor/height charge that
+   forbids every count-changing cut-admissible exact-cover trade.  A proposed
+   charge must allow contextual marked boundaries; otherwise it does not
+   close the unmarked carrier family.  If a trade is found instead, serialize
+   it and apply the complete source vertex/SAB rules before geometry.
 3. In parallel, formalize the cross-carrier alternative: bound how a fixed
    source macro can intersect neighboring carriers and state the finite local
    data required for a total decoder.  This is the only way to escape the
-   area-30 carrier-local frontier without inventing an unrelated gadget.
+   carrier-trade frontier without inventing an unrelated gadget.
 4. Use K63D/K63E to reject source-pruning proposals unless they identify an
    explicit joint multi-rail fiber component and prove it covers the whole
    minimal lattice hull.  Rail-local or boundary-neutral entropy choices are

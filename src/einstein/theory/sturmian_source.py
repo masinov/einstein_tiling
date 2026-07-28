@@ -3699,6 +3699,245 @@ def verify_sub30_carrier_classification(data: dict, atlas: dict) -> None:
         )
 
 
+def _attached_support_extensions(triangles, native_cells):
+    """Every disk attachment of one fixed lattice-cell support."""
+
+    triangles = frozenset(triangles)
+    disk, _, boundary = _triangle_union_boundary(triangles)
+    if not disk:
+        raise ValueError("attachment base is not a triangle disk")
+    boundary_vertices = sorted(set().union(*boundary))
+    extensions = {}
+    for reflected in (False, True):
+        for rotation in range(6):
+            rotated = _transform_cell_set(native_cells, rotation, reflected, (0, 0))
+            rotated_vertices = sorted(set().union(*rotated))
+            for source_vertex in rotated_vertices:
+                for target_vertex in boundary_vertices:
+                    translation = (
+                        target_vertex[0] - source_vertex[0],
+                        target_vertex[1] - source_vertex[1],
+                    )
+                    candidate = frozenset(
+                        frozenset(
+                            (
+                                point[0] + translation[0],
+                                point[1] + translation[1],
+                            )
+                            for point in cell
+                        )
+                        for cell in rotated
+                    )
+                    if candidate & triangles:
+                        continue
+                    candidate_disk, _, candidate_boundary = (
+                        _triangle_union_boundary(candidate)
+                    )
+                    if not candidate_disk or not (boundary & candidate_boundary):
+                        continue
+                    union = triangles | candidate
+                    union_disk, _, _ = _triangle_union_boundary(union)
+                    if not union_disk:
+                        continue
+                    key = tuple(sorted(
+                        _cell_from_triangle_vertices(cell) for cell in candidate
+                    ))
+                    extensions[key] = candidate
+    return tuple(extensions[key] for key in sorted(extensions))
+
+
+def _contained_support_embeddings(container, native_cells):
+    """Every full-isometry image of native_cells contained in container."""
+
+    container = frozenset(container)
+    container_vertices = sorted(set().union(*container))
+    embeddings = {}
+    for reflected in (False, True):
+        for rotation in range(6):
+            rotated = _transform_cell_set(native_cells, rotation, reflected, (0, 0))
+            rotated_vertices = sorted(set().union(*rotated))
+            for source_vertex in rotated_vertices:
+                for target_vertex in container_vertices:
+                    translation = (
+                        target_vertex[0] - source_vertex[0],
+                        target_vertex[1] - source_vertex[1],
+                    )
+                    candidate = frozenset(
+                        frozenset(
+                            (
+                                point[0] + translation[0],
+                                point[1] + translation[1],
+                            )
+                            for point in cell
+                        )
+                        for cell in rotated
+                    )
+                    if not candidate <= container:
+                        continue
+                    key = tuple(sorted(
+                        _cell_from_triangle_vertices(cell) for cell in candidate
+                    ))
+                    embeddings[key] = candidate
+    return tuple(embeddings[key] for key in sorted(embeddings))
+
+
+def build_area30_carrier_classification(atlas: dict) -> dict:
+    """Classify the exact K65A two-large area-30 carrier superset."""
+
+    verify_atlas(atlas)
+    macro_cells = {
+        name: tuple(tuple(cell) for cell in atlas["supports"][name]["cells"])
+        for name in ("large_A", "large_B")
+    }
+
+    support_sources = {}
+    for first_name in ("large_A", "large_B"):
+        first = _transform_cell_set(
+            macro_cells[first_name], 0, False, (0, 0)
+        )
+        for second_name in ("large_A", "large_B"):
+            for second in _attached_support_extensions(
+                first, macro_cells[second_name]
+            ):
+                union = first | second
+                canonical = _canonical_triangle_support(union)
+                support_sources.setdefault(canonical, set()).add(
+                    (first_name, second_name)
+                )
+
+    supports = []
+    matching_cache = {}
+    total_z_matchings = 0
+    total_z_bipartite = 0
+    total_g_embeddings = 0
+    total_g_matchings = 0
+    total_g_bipartite = 0
+
+    def matching_data(triangles):
+        canonical = _canonical_triangle_support(triangles)
+        if canonical not in matching_cache:
+            representative = frozenset(
+                frozenset(point for point in triangle) for triangle in canonical
+            )
+            matching_cache[canonical] = _all_singleton_subdivisions(representative)
+        return matching_cache[canonical]
+
+    for canonical in sorted(support_sources):
+        support = frozenset(
+            frozenset(point for point in triangle) for triangle in canonical
+        )
+        disk, boundary_cycle, _ = _triangle_union_boundary(support)
+        if not disk or len(support) != 60:
+            raise ValueError("area-30 two-large support is not a 60-triangle disk")
+
+        z_count, z_bipartite, z_cycle = matching_data(support)
+        total_z_matchings += z_count
+        total_z_bipartite += len(z_bipartite)
+
+        g_records = []
+        for macro_name in ("large_A", "large_B"):
+            for embedding in _contained_support_embeddings(
+                support, macro_cells[macro_name]
+            ):
+                residual = support - embedding
+                if len(residual) != 30:
+                    raise ValueError("area-30 G residual is not 30 triangles")
+                residual_disk, _, _ = _triangle_union_boundary(residual)
+                count, bipartite, cycle = matching_data(residual)
+                total_g_embeddings += 1
+                total_g_matchings += count
+                total_g_bipartite += len(bipartite)
+                g_records.append({
+                    "macro": macro_name,
+                    "macro_primitive_cells": [
+                        list(cell) for cell in sorted(
+                            _cell_from_triangle_vertices(item)
+                            for item in embedding
+                        )
+                    ],
+                    "residual_is_disk": residual_disk,
+                    "perfect_matching_count": count,
+                    "bipartite_matching_count": len(bipartite),
+                    "bipartite_subdivisions_diagonals_uv": [
+                        _serialized_diagonals(item) for item in bipartite
+                    ],
+                    "shortest_odd_cycle_edges_uv": _serialized_diagonals(
+                        tuple(
+                            (cycle[index], cycle[(index + 1) % len(cycle)])
+                            for index in range(len(cycle))
+                        )
+                        if cycle is not None
+                        else None
+                    ),
+                })
+
+        supports.append({
+            "source_macro_type_pairs": [
+                list(item) for item in sorted(support_sources[canonical])
+            ],
+            "primitive_cells": [
+                list(_cell_from_triangle_vertices(item))
+                for item in sorted(support, key=lambda cell: tuple(sorted(cell)))
+            ],
+            "boundary_vertices_uv": [list(point) for point in boundary_cycle],
+            "Z": {
+                "perfect_matching_count": z_count,
+                "bipartite_matching_count": len(z_bipartite),
+                "bipartite_subdivisions_diagonals_uv": [
+                    _serialized_diagonals(item) for item in z_bipartite
+                ],
+                "shortest_odd_cycle_edges_uv": _serialized_diagonals(
+                    tuple(
+                        (z_cycle[index], z_cycle[(index + 1) % len(z_cycle)])
+                        for index in range(len(z_cycle))
+                    )
+                    if z_cycle is not None
+                    else None
+                ),
+            },
+            "G_embedding_count": len(g_records),
+            "G": g_records,
+        })
+
+    return {
+        "schema": "ahi-sturmian-area30-carrier-classification-v1",
+        "source_atlas_sha256": hashlib.sha256(
+            (json.dumps(atlas, indent=2, sort_keys=True) + "\n").encode()
+        ).hexdigest(),
+        "scope": {
+            "H_state": "two exact published large macros in a disk union",
+            "G_state": "one contained exact large macro plus 15 singleton rhombi",
+            "Z_state": "30 singleton rhombi",
+            "source_rule_filter": (
+                "singleton long-diagonal bipartiteness only; all supports "
+                "and embeddings form a geometric superset"
+            ),
+        },
+        "support_count": len(supports),
+        "matching_cache_class_count": len(matching_cache),
+        "Z_perfect_matching_count": total_z_matchings,
+        "Z_bipartite_matching_count": total_z_bipartite,
+        "G_embedding_count": total_g_embeddings,
+        "G_perfect_matching_count": total_g_matchings,
+        "G_bipartite_matching_count": total_g_bipartite,
+        "area30_parity_survivor_count": (
+            total_z_bipartite + total_g_bipartite
+        ),
+        "area30_fails_parity": (
+            total_z_bipartite + total_g_bipartite == 0
+        ),
+        "supports": supports,
+    }
+
+
+def verify_area30_carrier_classification(data: dict, atlas: dict) -> None:
+    expected = build_area30_carrier_classification(atlas)
+    if data != expected:
+        raise ValueError(
+            "serialized area-30 carrier classification differs from exact rebuild"
+        )
+
+
 def _cell_from_triangle_vertices(triangle):
     minimum_u = min(point[0] for point in triangle)
     minimum_v = min(point[1] for point in triangle)

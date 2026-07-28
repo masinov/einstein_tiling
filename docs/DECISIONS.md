@@ -4452,3 +4452,37 @@ exact AHI source while keeping decoded source macrotiles inside each carrier.
 The theorem raises the minimum possible area in this realization family to
 30.  It does not close area 30+, cross-carrier decoding, or nonseparable
 multi-carrier mechanisms.
+
+## D-0218 (2026-07-28) — Close carrier-local area 30 completely
+
+At area 30 the only compositions are `Z=(0,30)`, `G=(1,15)`, and `H=(2,0)`.
+The target ratio below three forces every viable library to contain `H` and at
+least one of `G` or `Z`.  Thus every carrier support is a disk union of two
+published large macros and its alternatives are finite exact-cover problems.
+
+The gated geometric-superset classification has 65 full-isometry support
+classes, 164 contained-large embeddings, 3,390 residual `G` matchings and
+48,652 whole-support `Z` matchings.  None has a bipartite singleton
+continuation graph.  The cold verifier reproduces all counts; no source-rule
+filter, residual-connectivity assumption, or candidate ranking is involved.
+
+Hence no area-30 carrier-local AHI compiler exists.  Together with N64S the
+minimum carrier-local area is strictly greater than 30.  No area-31 census is
+authorized merely as the next integer.
+
+## D-0219 (2026-07-28) — Replace the carrier-area ladder by one all-area trade problem
+
+For every area `A=15q+s`, the exact composition cone is nonempty precisely
+when `s/q<6*(sqrt(2)-1)`.  Every viable state library contains large-macro
+counts on both sides of the explicit cut `floor(A/(15+r))`.  Therefore every
+carrier-local compiler at any area contains two same-support source patches
+with different large-macro counts, exchanging exactly 15 singleton cells per
+large macro.
+
+The local corridor rule turns `S/L/M=00/11/{01,10}` into a binary cut
+condition on the exact endpoint-continuation graph.  The infinite carrier
+branch is now the fixed problem of existence of a count-changing,
+cut-admissible AHI exact-cover trade, followed by the remaining source
+vertex/SAB rules.  A conserved source charge would close all carrier-local
+areas; one exact trade would open the constructive route.  Sequential area
+enumeration is retired.
