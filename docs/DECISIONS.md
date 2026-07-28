@@ -4486,3 +4486,25 @@ cut-admissible AHI exact-cover trade, followed by the remaining source
 vertex/SAB rules.  A conserved source charge would close all carrier-local
 areas; one exact trade would open the constructive route.  Sequential area
 enumeration is retired.
+
+## D-0220 (2026-07-28) — Separate directional flux from hidden transition pairs
+
+Lozenge/dimer flux fixes the three rhombus-orientation counts of a carrier
+support. The exact source atlas contributes two `S` and one `L` cell on each
+axis per large macro, so every state satisfies `M_j=N_j-3k`. A
+count-changing trade must therefore change all three directional mixed-cell
+counts by the same multiple of three.
+
+SAB continuation further gives `M_j=chi_j+2p_j`, where `chi_j` is exposed
+binary boundary flux and `p_j` counts transition pairs invisible to that
+flux. Hence an odd trade must change all three boundary charges, while a
+marked-boundary-neutral trade has even large-count difference. This is the
+strongest conclusion available from the independent corridor paths: fixed
+endpoints support both zero and two internal transitions, so endpoint charges
+contain no information beyond parity.
+
+Do not escalate per-axis parity or infer all-area impossibility from it. The
+remaining all-area question is whether the **coupled three-rail AHI vertex
+language** permits the synchronized transition-pair defect required by an
+even count-changing trade. A proof either way must consume the full vertex
+rule; another area census is not authorized by this decision.

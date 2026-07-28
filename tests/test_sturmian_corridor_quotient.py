@@ -1,4 +1,5 @@
 import json
+from collections import Counter
 from pathlib import Path
 
 
@@ -24,3 +25,25 @@ def test_corridor_roles_are_exactly_the_gap_pairs():
                     assert bits == role_bits[state["role"]]
                 else:
                     assert sorted(bits) == [0, 1]
+
+
+def test_each_large_macro_has_two_s_and_one_l_on_every_axis():
+    quotient = json.loads(QUOTIENT.read_text())
+    m_distributions = {}
+    for name in ("large_A", "large_B"):
+        [embedding] = quotient["macros"][name]["embeddings"]
+        by_axis = {
+            axis: Counter(
+                state["role"] for state in embedding if state["axis"] == axis
+            )
+            for axis in range(3)
+        }
+        assert all(
+            counts["S"] == 2 and counts["L"] == 1
+            for counts in by_axis.values()
+        )
+        m_distributions[name] = sorted(by_axis[axis]["M"] for axis in range(3))
+    assert m_distributions == {
+        "large_A": [0, 3, 3],
+        "large_B": [2, 2, 2],
+    }

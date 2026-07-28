@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-28 (session 192 all-area carrier-trade reduction)
+**Last updated:** 2026-07-28 (session 193 directional corridor-charge theorem)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active at one all-area trade question plus the cross-carrier/nonseparable boundary. Minimality eliminates proper lattice-factor pruning; rail-separable schemes are periodic. Complete exact classifications close every carrier-local compiler through area 30. K66A/K66T replace the area ladder: every carrier-local solution at any size requires a same-support cut-admissible trade changing the large-macro count. The marked family is undecidable and contact-complete separable Stade erasures are periodic (ERR-017/D-0208--D-0219). |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active at one coupled three-rail trade question plus the cross-carrier/nonseparable boundary. Minimality eliminates proper lattice-factor pruning; rail-separable schemes are periodic. Complete exact classifications close every carrier-local compiler through area 30. K66A/K66T require a same-support count-changing trade at every area; K67D/K67G show that odd trades carry boundary flux in all three directions and that even trades are exactly the hidden transition-pair escape invisible to corridor parity. The marked family is undecidable and contact-complete separable Stade erasures are periodic (ERR-017/D-0208--D-0220). |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -911,11 +911,13 @@ The controlling 2026-07-28 target supersedes the chronological archive below:
 
 1. Treat N64S/N65S as completed base cases: no carrier-local synthesis through
    area 30 and no return to P17 or an integer-by-integer carrier census.
-2. Attack N66R directly.  Seek a conserved AHI corridor/height charge that
-   forbids every count-changing cut-admissible exact-cover trade.  A proposed
-   charge must allow contextual marked boundaries; otherwise it does not
-   close the unmarked carrier family.  If a trade is found instead, serialize
-   it and apply the complete source vertex/SAB rules before geometry.
+2. Attack N66R only at the coupled three-rail vertex layer. K67O/K67D fix the
+   directional composition law and K67G proves that endpoint charges see only
+   parity: odd trades carry flux in all three axes, while an even trade creates
+   synchronized hidden transition pairs. Determine whether the complete AHI
+   six-cell vertex/SAB language forbids that synchronized defect or build one
+   exact legal trade. Per-axis parity escalation and sequential carrier areas
+   are retired.
 3. In parallel, formalize the cross-carrier alternative: bound how a fixed
    source macro can intersect neighboring carriers and state the finite local
    data required for a total decoder.  This is the only way to escape the
