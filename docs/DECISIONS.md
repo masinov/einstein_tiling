@@ -4413,3 +4413,42 @@ This result uses only the pinned source rule table and not Stade's unrefereed
 weave-converse lemma.  It does not close a language-pruned compiler that
 retains only a globally sufficient aperiodic subsystem, nor any genuinely
 nonseparable third-participant, multi-port, or fusion construction.
+
+## D-0216 (2026-07-28) — Replace arbitrary source pruning by minimal component schemes
+
+The undecorated irrational AHI lattice hull is minimal.  Therefore the image
+of any nonempty total local decoder is automatically the whole lattice hull;
+one cannot rescue a separable erasure by selecting a proper nonempty closed
+lattice subsystem.  K62P reduces every finite separable presentation to
+finitely many biclique component schemes, and each viable scheme must cover
+the whole minimal target.  Rail-local schemes fail because the three required
+Sturmian bigrams are connected and their biclique completion adds the missing
+constant periodic rail.
+
+Only contact choices inside a fiber of the lattice factor can still be
+pruned.  The published same-support entropy flips are boundary-invisible and
+do not provide such a new component split.  Classification of arbitrary
+finite marked extensions is undecidable by a standard fixed-source product
+with the domino problem; this is not an undecidability result for one unmarked
+polygon.  The fixed AHI source, not arbitrary extension synthesis, controls
+the remaining question.
+
+## D-0217 (2026-07-28) — Close every carrier-local AHI compiler below area 30
+
+The exact source ratio `#M/#large=6*(sqrt(2)-1)` and macro areas `15/1`
+restrict every carrier-local compiler of area below 30 to areas 15, 16 or 17.
+At each area it must contain both a large-containing state and an all-
+singleton state.
+
+The gated exact classification retains a geometric superset of all such
+supports: both published large macros with every zero-, one-, or two-rhombus
+edge attachment that forms a disk.  Across 997 supports it exhausts 29,443
+lozenge subdivisions.  Every long-diagonal continuation graph has an odd
+cycle; zero all-singleton states pass the necessary AHI parity rule.  A cold
+rebuild reproduces the census and the independent P17 `60 -> 0` control.
+
+Hence no connected common-rhombus carrier of area below 30 can compile the
+exact AHI source while keeping decoded source macrotiles inside each carrier.
+The theorem raises the minimum possible area in this realization family to
+30.  It does not close area 30+, cross-carrier decoding, or nonseparable
+multi-carrier mechanisms.

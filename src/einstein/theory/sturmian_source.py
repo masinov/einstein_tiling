@@ -3469,6 +3469,236 @@ def verify_p17_all_m_obstruction(data: dict, atlas: dict, kernel: dict) -> None:
         raise ValueError("serialized P17 all-M obstruction differs from exact rebuild")
 
 
+def _attached_singleton_extensions(triangles, native_small_cells):
+    """All common rhombi attached edge-to-edge outside a triangle disk.
+
+    The singleton is moved by every full lattice isometry.  Aligning every
+    transformed singleton vertex with every current boundary vertex is a
+    finite exhaustive way to find every placement sharing a boundary edge.
+    Candidate interiors are primitive lattice triangles, so disjoint cell
+    sets are exactly the required interior-disjointness test.
+    """
+
+    triangles = frozenset(triangles)
+    disk, _, boundary = _triangle_union_boundary(triangles)
+    if not disk:
+        raise ValueError("attachment base is not a triangle disk")
+    boundary_vertices = sorted(set().union(*boundary))
+    extensions = {}
+    for reflected in (False, True):
+        for rotation in range(6):
+            rotated = _transform_cell_set(
+                native_small_cells, rotation, reflected, (0, 0)
+            )
+            rotated_vertices = sorted(set().union(*rotated))
+            for source_vertex in rotated_vertices:
+                for target_vertex in boundary_vertices:
+                    translation = (
+                        target_vertex[0] - source_vertex[0],
+                        target_vertex[1] - source_vertex[1],
+                    )
+                    candidate = frozenset(
+                        frozenset(
+                            (
+                                point[0] + translation[0],
+                                point[1] + translation[1],
+                            )
+                            for point in cell
+                        )
+                        for cell in rotated
+                    )
+                    if candidate & triangles:
+                        continue
+                    candidate_disk, _, candidate_boundary = (
+                        _triangle_union_boundary(candidate)
+                    )
+                    if not candidate_disk or not (boundary & candidate_boundary):
+                        continue
+                    union = triangles | candidate
+                    union_disk, _, _ = _triangle_union_boundary(union)
+                    if not union_disk:
+                        continue
+                    key = tuple(sorted(
+                        _cell_from_triangle_vertices(cell) for cell in candidate
+                    ))
+                    extensions[key] = candidate
+    return tuple(extensions[key] for key in sorted(extensions))
+
+
+def _all_singleton_subdivisions(triangles):
+    """Exhaust the lozenge perfect matchings of one primitive-triangle disk."""
+
+    triangles = tuple(sorted(triangles, key=lambda item: tuple(sorted(item))))
+    adjacency = {index: [] for index in range(len(triangles))}
+    for first_index, first in enumerate(triangles):
+        for second_index in range(first_index):
+            second = triangles[second_index]
+            if len(first & second) != 2:
+                continue
+            if not _two_triangles_form_rhombus((first, second)):
+                continue
+            adjacency[first_index].append(second_index)
+            adjacency[second_index].append(first_index)
+
+    matching_count = 0
+    bipartite = []
+    shortest_cycle = None
+
+    def visit(unmatched, pairs):
+        nonlocal matching_count, shortest_cycle
+        if not unmatched:
+            matching_count += 1
+            rhombi = tuple(
+                frozenset(triangles[first] | triangles[second])
+                for first, second in pairs
+            )
+            diagonals = tuple(sorted(
+                _rhombus_long_diagonal(rhombus) for rhombus in rhombi
+            ))
+            cycle = _odd_cycle(diagonals)
+            if cycle is None:
+                bipartite.append(diagonals)
+            elif shortest_cycle is None or len(cycle) < len(shortest_cycle):
+                shortest_cycle = cycle
+            return
+
+        first = min(
+            unmatched,
+            key=lambda index: sum(
+                neighbor in unmatched for neighbor in adjacency[index]
+            ),
+        )
+        for second in sorted(
+            neighbor for neighbor in adjacency[first] if neighbor in unmatched
+        ):
+            visit(
+                unmatched - {first, second},
+                pairs + ((min(first, second), max(first, second)),),
+            )
+
+    visit(frozenset(range(len(triangles))), tuple())
+    return matching_count, tuple(bipartite), shortest_cycle
+
+
+def _serialized_diagonals(diagonals):
+    if diagonals is None:
+        return None
+    return [
+        [list(first), list(second)] for first, second in diagonals
+    ]
+
+
+def build_sub30_carrier_classification(atlas: dict) -> dict:
+    """Classify the K64A area-15/16/17 carrier-local support superset."""
+
+    verify_atlas(atlas)
+    native_small_cells = tuple(
+        tuple(cell) for cell in atlas["supports"]["small_M"]["cells"]
+    )
+    classes = []
+    total_supports = 0
+    total_matchings = 0
+    total_bipartite = 0
+
+    for macro_name in ("large_A", "large_B"):
+        macro = _transform_cell_set(
+            atlas["supports"][macro_name]["cells"], 0, False, (0, 0)
+        )
+        support_level = {tuple(sorted(
+            _cell_from_triangle_vertices(cell) for cell in macro
+        )): macro}
+        for attachment_count in range(3):
+            support_records = []
+            for support_key in sorted(support_level):
+                support = support_level[support_key]
+                disk, boundary_cycle, _ = _triangle_union_boundary(support)
+                if not disk:
+                    raise ValueError("generated carrier support is not a disk")
+                matching_count, bipartite, shortest_cycle = (
+                    _all_singleton_subdivisions(support)
+                )
+                support_records.append({
+                    "primitive_cells": [list(cell) for cell in support_key],
+                    "boundary_vertices_uv": [list(point) for point in boundary_cycle],
+                    "perfect_matching_count": matching_count,
+                    "bipartite_matching_count": len(bipartite),
+                    "bipartite_subdivisions_diagonals_uv": [
+                        _serialized_diagonals(item) for item in bipartite
+                    ],
+                    "shortest_odd_cycle_edges_uv": _serialized_diagonals(
+                        tuple(
+                            (
+                                shortest_cycle[index],
+                                shortest_cycle[(index + 1) % len(shortest_cycle)],
+                            )
+                            for index in range(len(shortest_cycle))
+                        )
+                        if shortest_cycle is not None
+                        else None
+                    ),
+                })
+                total_matchings += matching_count
+                total_bipartite += len(bipartite)
+
+            classes.append({
+                "macro": macro_name,
+                "attachment_count": attachment_count,
+                "carrier_area_rhombi": 15 + attachment_count,
+                "support_count": len(support_records),
+                "supports": support_records,
+            })
+            total_supports += len(support_records)
+
+            if attachment_count == 2:
+                continue
+            next_level = {}
+            for support in support_level.values():
+                for extension in _attached_singleton_extensions(
+                    support, native_small_cells
+                ):
+                    union = support | extension
+                    key = tuple(sorted(
+                        _cell_from_triangle_vertices(cell) for cell in union
+                    ))
+                    next_level[key] = union
+            support_level = next_level
+
+    return {
+        "schema": "ahi-sturmian-sub30-carrier-classification-v1",
+        "source_atlas_sha256": hashlib.sha256(
+            (json.dumps(atlas, indent=2, sort_keys=True) + "\n").encode()
+        ).hexdigest(),
+        "scope": {
+            "macro_supports": ["large_A", "large_B"],
+            "attachment_counts": [0, 1, 2],
+            "carrier_areas_rhombi": [15, 16, 17],
+            "attachment_rule": (
+                "every full-isometry singleton placement with disjoint "
+                "primitive-triangle interior sharing a unit boundary edge; "
+                "retain connected topological disks"
+            ),
+            "source_rule_filter": (
+                "none: this is a geometric superset, so zero parity "
+                "survivors is a valid source-language obstruction"
+            ),
+        },
+        "class_count": len(classes),
+        "support_count": total_supports,
+        "perfect_matching_count": total_matchings,
+        "bipartite_matching_count": total_bipartite,
+        "all_sub30_supports_fail_parity": total_bipartite == 0,
+        "classes": classes,
+    }
+
+
+def verify_sub30_carrier_classification(data: dict, atlas: dict) -> None:
+    expected = build_sub30_carrier_classification(atlas)
+    if data != expected:
+        raise ValueError(
+            "serialized sub-30 carrier classification differs from exact rebuild"
+        )
+
+
 def _cell_from_triangle_vertices(triangle):
     minimum_u = min(point[0] for point in triangle)
     minimum_v = min(point[1] for point in triangle)
