@@ -1,0 +1,32 @@
+{
+  "schema": "stade-stick-rule-anchor-v1",
+  "source_id": "stade-two-tiling-2025",
+  "arxiv": "2506.11628",
+  "pdf_sha256": "765aa26361a2f1026333972e710b5ff2760401e5c1c0791ff374862bb66ecf2a",
+  "source_pages": {
+    "fixed_rules": 4,
+    "input_dependent_rules": 15
+  },
+  "fixed_rule_9": {
+    "left": "z1",
+    "right_family": "b_i",
+    "index_range": "1 <= i <= n-1",
+    "status": "forbidden"
+  },
+  "stable_rectangle": {
+    "allowed": [
+      ["z1", "a2"],
+      ["a1", "a2"],
+      ["a1", "b1"]
+    ],
+    "forbidden": [
+      ["z1", "b1"]
+    ]
+  },
+  "later_forbidden_type_families": [
+    ["a", "y"],
+    ["c", "y"],
+    ["a", "x1"],
+    ["b", "z2"]
+  ]
+}

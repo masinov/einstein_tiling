@@ -6,6 +6,12 @@
 **Cached PDF SHA-256:**
 `765aa26361a2f1026333972e710b5ff2760401e5c1c0791ff374862bb66ecf2a`
 
+**Evidence qualification:** the source is an unrefereed preprint.  U2 and
+N61S remain conditional on its all-tilings weave converse (especially Lemma
+4) until that proof chain receives an independent verification or a refereed
+version appears.  The finite rule facts used by N61S are pinned separately in
+`docs/literature/anchors/stade-stick-rules.json`.
+
 ## Question
 
 Does the published one-prototile construction preserve enough of the

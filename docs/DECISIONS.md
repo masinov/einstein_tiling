@@ -4379,3 +4379,37 @@ is outside the complete separable two-body erasure family.  Any unmarked
 continuation must name a genuinely nonseparable mechanism: a third
 participant/T-junction, multi-port contextual state, carrier/verifier fusion,
 or an all-whole-plane proof that locally allowed missing corners never occur.
+
+## D-0214 (2026-07-28) — Replace relation-exactness by the physical graph sandwich
+
+The old N61S forbidden rectangle does not survive the physical carrier
+quotient: its `a1-b1` corner overlaps.  For independent two-participant
+endpoint-preserving collars, the exact weaker criterion is instead the
+biclique completion of the physically possible required-contact graph.  A
+safe profile relation exists exactly when this completion contains no
+physically possible forbidden pair.
+
+The preregistered exact reconstruction for `5<=n<=12` leaves one allowed
+component at every length, and its completion hits every physical fixed-rule
+forbidden pair.  The result is a finite control only; the next decision records
+the separate all-`n` proof.
+
+## D-0215 (2026-07-28) — Close contact-complete Stade erasure by periodicity
+
+For every `n>=5`, five explicit contact families and their reversals form a
+spanning graph after all fixed rules and every possible later `a-y`, `c-y`,
+`a-x1`, and `b-z2` deletion.  Exact axial placement formulas put each second
+stick wholly outside the first, so this is an all-length theorem rather than
+finite extrapolation.
+
+Profile equality therefore propagates to every directed port.  All physical
+full-edge contacts become compatible, and the ordinary periodic partition of
+the hexagonal cellulation by length-`n` sticks lifts unchanged, with periods
+`(n,0)` and `(0,1)`.  Thus no contact-complete separable two-body erasure of
+Stade's stick can be an aperiodic monotile, even when arbitrary extra marked-
+forbidden contacts are tolerated.
+
+This result uses only the pinned source rule table and not Stade's unrefereed
+weave-converse lemma.  It does not close a language-pruned compiler that
+retains only a globally sufficient aperiodic subsystem, nor any genuinely
+nonseparable third-participant, multi-port, or fusion construction.

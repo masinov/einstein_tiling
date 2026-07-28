@@ -177,6 +177,10 @@ reviewable proof or certificate.
   biclique classification of independent two-body jigsaw erasure, and the
   uniform forbidden rectangle proving that Stade's complete stick relation
   cannot be self-stapled in this entire family.
+- `69_physical_contact_periodicity_obstruction.md` — replaces relation-
+  exactness by the correct physical graph sandwich, proves an all-length
+  spanning contact theorem after every later rule deletion, and lifts the
+  stick's periodic row partition to close contact-complete separable erasure.
 - `37_k16w_polarity_elimination.md` — N39 rules out equal-polarity long
   spokes by a width-reset inequality, and K29O collapses the surviving K16W
   critical-pair domain to two exact opposite-polarity cells.

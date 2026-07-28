@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-28 (session 188 separable-erasure classification)
+**Last updated:** 2026-07-28 (session 189 physical-contact periodicity theorem)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active at the nonseparable marked/unmarked boundary. P17 is closed carrier-locally; the marked family is undecidable. Independent two-body collar erasure is now completely classified and uniformly impossible for Stade's stick relation. Any unmarked continuation must use third-party contacts, joint multi-port state, carrier/verifier fusion, or a whole-plane global-redundancy theorem (ERR-017/D-0208--D-0213). |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active at the language-pruned/nonseparable marked--unmarked boundary. P17 is closed carrier-locally; the marked family is undecidable. Even after quotienting by physical overlap and permitting extra matches, every contact-complete separable Stade erasure is forced to tile periodically. Any continuation must prove an aperiodic language-pruned subsystem with total decoding, or use third-party contacts, joint multi-port state, or carrier/verifier fusion (ERR-017/D-0208--D-0215). |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -283,6 +283,16 @@
   `3-of-4` rectangle, so no polygonal profile choice in this entire family can
   erase the U2 relation.  The staple's third-party role is structurally
   necessary within this class (D-0213).
+- **Physical-contact periodicity obstruction:** the old N61S forbidden
+  rectangle is partly nonphysical, but the exact replacement is stronger.
+  Biclique completion is the minimum two-body compatibility relation after
+  physical filtering.  Five explicit all-`n` contact families still connect
+  every directed Stade port after every possible input-dependent deletion,
+  forcing universal profile compatibility.  The ordinary axial row partition
+  then lifts to a periodic tiling with periods `(n,0)` and `(0,1)`.  Hence
+  contact-complete separable erasure is impossible as an aperiodic monotile
+  even when extra marked-forbidden matches are allowed (K62P/K62C/N62S,
+  D-0214--D-0215).
 - **ST-M1 consolidated dossier:** theory note 14 now gives the complete
   P0/S0/Q0/K1T/K1P/N5--N9/K2C/K2V chain and conditional K2J-to-monotile
   argument in one self-contained proof draft. It makes no novelty or monotile
@@ -881,17 +891,23 @@ Research is under the 2026-07-21 reset recorded in
 
 The controlling 2026-07-28 target supersedes the chronological archive below:
 
-1. Do not invent another isolated carrier.  Separable two-body self-stapling
-   is closed by K61R/N61S.  The live target is a nonseparable color-erasure
-   theorem for the fixed AHI source.
+1. Do not invent another isolated carrier or another independent profile word.
+   K62P/K62C/N62S close every contact-complete separable Stade erasure even
+   after physical filtering: the resulting tile is periodic.
 2. U2 licenses no unmarked claim.  Stade's finite edge relation is external;
    its geometric erasure uses a second noncongruent staple.  A valid advance
    must remove that support while preserving the all-tilings local decoder.
-3. Use the source's twelve-state corridor quotient and binary L-rooted macro
-   cover as the structured target.  A construction must say which K61R
-   hypothesis it violates and prove the corresponding third-participant,
-   multi-port, fusion or global-redundancy mechanism on every tiling.
-4. P17, hinge/thin-lens families, the classified polykite range and generic
+3. Resolve the only separable loophole at theorem level: determine whether a
+   nonempty aperiodic AHI/Sturmian subsystem can be selected whose globally
+   occurring required-contact graph avoids K62C's connected completion, while
+   still admitting a total decoder on every unmarked tiling.  If not, record a
+   source-language no-go rather than returning to profile synthesis.
+4. In parallel mathematics, formulate the smallest nonseparable admission
+   theorem using the source's twelve-state corridor quotient and binary
+   L-rooted macro cover.  It must explicitly use a third participant, joint
+   multi-port state, or carrier--verifier fusion and prove totality before any
+   polygon is promoted.
+5. P17, hinge/thin-lens families, the classified polykite range and generic
    marked/symbolic synthesis remain closed.
 
 The remaining numbered material is retained as the historical decision log.

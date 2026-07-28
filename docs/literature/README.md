@@ -16,6 +16,8 @@ work. It is deliberately split into four layers:
   system.
 - [`reviews/`](reviews/) contains theorem-level notes for sources that have
   actually completed a full-text audit.
+- [`anchors/`](anchors/) contains small tracked, machine-readable source facts
+  used by proofs and tests when the full cached primary text is Git-ignored.
 
 The narrower [`POLYKITE_BASELINE.md`](POLYKITE_BASELINE.md) is controlling for
 Hat--Turtle family identity and the finite polykite census. The

@@ -146,3 +146,14 @@ The fourth option still needs an all-tilings theorem; checking only intended
 weave tilings is insufficient.  Thus the next constructive target is no
 longer an unspecified boundary profile.  It is a nonseparable, multi-port or
 multi-participant self-stapling theorem with a total decoder.
+
+## 5. Physical-contact follow-up
+
+Theory note 69 resolves the immediate physical-language weakening.  The
+specific N61S corner `a1-b1` is not a nonoverlapping carrier placement, so the
+rectangle above does not by itself survive quotienting by physical contacts.
+However, a different all-`n` spanning graph remains after that quotient and
+after every input-dependent rule family is deleted.  Profile equality then
+forces every port into one compatibility class and lifts the stick's ordinary
+periodic row tiling.  Thus N62S closes contact-complete separable erasure by an
+explicit periodicity theorem rather than relation-exactness.
