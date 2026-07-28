@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-27 (session 185 P17 compiler and composition gate)
+**Last updated:** 2026-07-28 (session 187 marked/unmarked Sturmian boundary)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active beyond the now-closed P17 carrier-local family. P17 is an exact local `A+2M/B+2M` compiler, but its only possible second carrier-local composition `(0,17)` violates the three-axis binary vertex rule; the remaining fixed composition has ratio 2 instead of `6(sqrt(2)-1)`. Any continuation must give a concrete cross-boundary decoder or a different carrier passing both composition and vertex gates (ERR-017/D-0208--D-0211). |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active at the exact marked/unmarked boundary. P17 is closed carrier-locally. For one connected polygon with finite edge matching rules, existence with a total factor to the fixed AHI source is undecidable; graph and fixed-cylinder auxiliaries are decidable. The remaining geometric theorem is unmarked self-stapling: erase the edge relation without Stade's second support, or prove an obstruction for a stated family (ERR-017/D-0208--D-0212). |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -268,6 +268,14 @@
   carriers remain outside this theorem.  The all-M quantifier is exhaustive:
   all 60 lozenge subdivisions contain the three-axis obstruction and cold-
   verify from the fixed support (D-0208--D-0211).
+- **Marked geometric undecidability boundary:** for arbitrary Wang `W`, the
+  product of `W` with the fixed AHI source followed by Stade's local
+  Wang-to-AB-to-weave construction yields one connected polygon with finite
+  edge rules.  Every valid tiling locally decodes to the AHI source, and a
+  tiling exists exactly when `W` does.  This proves undecidability for the
+  marked one-polygon family and gives decidable directed-graph and
+  fixed-cylinder subfamilies.  It does not remove the edge rules: the audited
+  geometric conversion uses a second staple polygon (D-0212).
 - **ST-M1 consolidated dossier:** theory note 14 now gives the complete
   P0/S0/Q0/K1T/K1P/N5--N9/K2C/K2V chain and conditional K2J-to-monotile
   argument in one self-contained proof draft. It makes no novelty or monotile
@@ -864,20 +872,19 @@ that separation is finite benchmark evidence, not a novelty claim.
 Research is under the 2026-07-21 reset recorded in
 `docs/literature/RESEARCH_RETURN_AUDIT.md`.
 
-The controlling 2026-07-27 target supersedes the chronological archive below:
+The controlling 2026-07-28 target supersedes the chronological archive below:
 
-1. P17 is closed for carrier-local decoding by N60P.  Do not run more P17
-   periodicity or patch searches.  It reopens only for a specified bounded
-   decoder whose 15-rhombus source patches cross carrier boundaries.
-2. The source-composition cone and the three-axis binary vertex test are
-   mandatory admission gates for any different carrier.  A local same-support
-   flip that fails either gate is not a compiler candidate.
-3. The live theorem question is whether a bounded cross-boundary quotient of
-   the exact 31-state rhombus system can be carried by one support, or whether
-   a source-level obstruction rules out that family.  State the decoder radius
-   and ownership rule before geometry.
-4. Do not reopen the hinge/thin-lens families, the classified polykite range,
-   or generic ungated carrier invention.
+1. Do not invent another isolated carrier.  The live general target is a
+   self-stapling color-erasure theorem for the fixed AHI source, or a no-go for
+   an explicitly defined self-stapling family.
+2. U2 licenses no unmarked claim.  Stade's finite edge relation is external;
+   its geometric erasure uses a second noncongruent staple.  A valid advance
+   must remove that support while preserving the all-tilings local decoder.
+3. Use the source's twelve-state corridor quotient and binary L-rooted macro
+   cover as the structured target.  Composition cone, vertex legality,
+   periodicity, reflections and unintended contacts remain mandatory gates.
+4. P17, hinge/thin-lens families, the classified polykite range and generic
+   marked/symbolic synthesis remain closed.
 
 The remaining numbered material is retained as the historical decision log.
 

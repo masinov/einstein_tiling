@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "snapshot_date": "2026-07-22",
+  "snapshot_date": "2026-07-28",
   "evidence_classes": [
     "peer-reviewed theorem",
     "peer-reviewed computational method",
@@ -615,6 +615,23 @@
       "workstreams": ["C"],
       "review_status": "targeted-mechanism-audit",
       "review_note": "docs/literature/reviews/K5C_SINGLE_TILE_SIMULATION.md"
+    },
+    {
+      "id": "stade-two-tiling-2025",
+      "title": "Two Tiling is Undecidable",
+      "authors": ["Jack Stade"],
+      "year": 2025,
+      "evidence_class": "preprint",
+      "venue": "arXiv preprint",
+      "arxiv": "2506.11628",
+      "doi": null,
+      "record_url": "https://arxiv.org/abs/2506.11628",
+      "download_url": "https://arxiv.org/pdf/2506.11628",
+      "local_filename": "2506.11628-two-tiling-undecidable.pdf",
+      "themes": ["one marked prototile", "edge-to-edge matching rules", "weave simulation", "undecidability", "two polygons"],
+      "workstreams": ["C"],
+      "review_status": "targeted-factor-preservation-audit",
+      "review_note": "docs/literature/reviews/MARKED_STURMIAN_UNDECIDABILITY.md"
     },
     {
       "id": "hellouin-lutfalla-vanier-geometric-2026",

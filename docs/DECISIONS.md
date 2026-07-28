@@ -4344,3 +4344,21 @@ P17 is retired as a carrier-local Sturmian monotile route.  Reopening this
 shape requires a concrete bounded decoder whose source macros cross P17
 boundaries; a new carrier must pass the composition cone and source-vertex
 legality before any boundary or periodicity work.
+
+## D-0212 (2026-07-28) — Replace universal synthesis by the exact marked/unmarked boundary
+
+For the fixed nonempty AHI source `Y` and arbitrary Wang system `W`, the
+product `Y x W` followed by Stade's Wang-to-AB-to-weave construction gives
+one connected polygon with finite edge-to-edge matching rules.  Stade's
+all-tilings converse is local: every valid stick tiling recovers the product
+Wang tiling and hence has a total finite-radius factor to `Y`.  The instance
+tiles exactly when `W` does.  The corresponding marked one-polygon Sturmian
+realization problem is therefore undecidable.
+
+This is a standard factor-preserving corollary, not a novelty claim.  It does
+not prove undecidability for one unmarked polygon: the primary construction
+needs a second staple support to geometrize its edge rules.  Directed-graph
+and fixed-width-cylinder auxiliary layers remain decidable by finite cycle
+tests.  The active general problem is now the exact boundary theorem: erase
+the finite edge relation with the same connected support (self-stapling), or
+prove an obstruction for an explicitly stated self-stapling family.

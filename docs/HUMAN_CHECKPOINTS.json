@@ -11,11 +11,11 @@
   "latest": {
     "id": "HC-2026-07-27-47",
     "date": "2026-07-27",
-    "through_session": 186,
-    "reason": "The user's direct compile-or-impossibility instruction remains the controlling authorization; checkpoint accounting is background only. Sessions 181--186 establish the explicit P17 local compiler, its exact finite periodicity gates and three-tile Figure 45 dissection, correct K54S by ERR-017, and prove N60P: every carrier-local P17 decoder is impossible by the source composition cone plus an exhaustive three-axis binary vertex obstruction over all 60 lozenge subdivisions. Continuation requires an explicit cross-boundary decoder family or a different carrier passing both gates.",
+    "through_session": 187,
+    "reason": "The persistent goal is the controlling authorization; checkpoint accounting remains background only. Session 187 proves the exact computability boundary: a factor-preserving product plus Stade's all-tilings weave construction makes one-connected-polygon Sturmian realization undecidable with finite edge rules, while graph and fixed-cylinder auxiliaries are decidable. The edge relation is not erased; unmarked continuation is restricted to a self-stapling theorem or a family-level obstruction.",
     "artifact_bytes": {
       "docs/notebook/assets": 6762911101,
-      "data": 1809293211
+      "data": 1810816030
     }
   }
 }

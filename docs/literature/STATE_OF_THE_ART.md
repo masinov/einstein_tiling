@@ -1,6 +1,6 @@
 # State of the art: planar aperiodic monotiles
 
-**Snapshot:** 2026-07-21
+**Snapshot:** 2026-07-28
 **Scope:** connected, unmarked tiles in the Euclidean plane, with emphasis on
 polykites, Hat--Turtle--Spectre systems, and methods usable by this repository.
 
@@ -267,6 +267,16 @@ claim.
 
 ## 6. Open directions supported by this survey
 
+The marked/unmarked computability boundary is now explicit.  Stade proves
+that tileability by one connected polygon with finite edge-to-edge matching
+rules is undecidable, with an all-tilings weave decoder; adding one staple
+polygon converts those rules to bare geometry.  Taking the simulated Wang
+system to be the product of the fixed AHI source with an arbitrary Wang shift
+preserves a total local Sturmian factor, so the marked one-polygon Sturmian
+realization problem is undecidable.  This does not transfer to one unmarked
+polygon: removing the staple is exactly the unresolved color-erasure step.
+See `reviews/MARKED_STURMIAN_UNDECIDABILITY.md` and theory note 67.
+
 The HC-15 contact-complex audit adds a narrow geometric boundary.  The
 Spectre paper's edge-patch lemma already treats finite multi-tile contacts and
 their locally consistent transport, while
@@ -284,10 +294,10 @@ refuted the natural convex complementary-port realization; no nonconvex
 polygon was constructed. See `reviews/TJUNCTION_CONTACT_COMPLEX.md` and
 theory note 21.
 
-- On paper first, design a faithful one-shape encoding of the three-prototile
-  `sqrt(2)-1` Sturmian system. The decisive lemma must exclude every
-  shape-only tiling that fails to decode; an atlas rule or one generated patch
-  is insufficient.
+- Attack self-stapling color erasure as a theorem, not another isolated
+  carrier: replace the finite edge relation in the marked one-polygon
+  compiler without Stade's second support, while retaining its all-tilings
+  decoder.  A no-go must name the self-stapling family it closes.
 - Preserve the W3 Spectre certificates as controls. Reopen them only for a
   generic, on-paper certificate theorem satisfying D-0070, not to eliminate
   another finite context frontier.

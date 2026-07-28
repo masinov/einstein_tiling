@@ -165,6 +165,14 @@ reviewable proof or certificate.
 - `63_turtle_center_spoke_no_go.md` — exhaustive exact proof that the direct
   Turtle/James-Smith center-spoke hole elimination cannot make the two AHI
   large supports congruent, even with every unit-edge polarity independent.
+- `64_exact_common_support_kernel.md` through
+  `66_seventeen_rhombus_sturmian_carrier.md` — source-native equal-support
+  kernels, the explicit P17 local compiler, and the complete carrier-local
+  P17 impossibility theorem.
+- `67_marked_sturmian_realization_boundary.md` — a factor-preserving product
+  reduction proves undecidability for one connected polygon with finite edge
+  rules, gives graph/cylinder decidable subfamilies, and isolates unmarked
+  self-stapling as the exact unresolved geometrization boundary.
 - `37_k16w_polarity_elimination.md` — N39 rules out equal-polarity long
   spokes by a width-reset inequality, and K29O collapses the surviving K16W
   critical-pair domain to two exact opposite-polarity cells.
