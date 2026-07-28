@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-28 (session 187 marked/unmarked Sturmian boundary)
+**Last updated:** 2026-07-28 (session 188 separable-erasure classification)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active at the exact marked/unmarked boundary. P17 is closed carrier-locally. For one connected polygon with finite edge matching rules, existence with a total factor to the fixed AHI source is undecidable; graph and fixed-cylinder auxiliaries are decidable. The remaining geometric theorem is unmarked self-stapling: erase the edge relation without Stade's second support, or prove an obstruction for a stated family (ERR-017/D-0208--D-0212). |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active at the nonseparable marked/unmarked boundary. P17 is closed carrier-locally; the marked family is undecidable. Independent two-body collar erasure is now completely classified and uniformly impossible for Stade's stick relation. Any unmarked continuation must use third-party contacts, joint multi-port state, carrier/verifier fusion, or a whole-plane global-redundancy theorem (ERR-017/D-0208--D-0213). |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -276,6 +276,13 @@
   marked one-polygon family and gives decidable directed-graph and
   fixed-cylinder subfamilies.  It does not remove the edge rules: the audited
   geometric conversion uses a second staple polygon (D-0212).
+- **Separable color-erasure classification:** independent complete-port
+  profiles with exactly two participants realize precisely the finite
+  compatibility relations whose bipartite graphs are disjoint unions of
+  bicliques.  Stade's fixed weave rules contain a permanent forbidden
+  `3-of-4` rectangle, so no polygonal profile choice in this entire family can
+  erase the U2 relation.  The staple's third-party role is structurally
+  necessary within this class (D-0213).
 - **ST-M1 consolidated dossier:** theory note 14 now gives the complete
   P0/S0/Q0/K1T/K1P/N5--N9/K2C/K2V chain and conditional K2J-to-monotile
   argument in one self-contained proof draft. It makes no novelty or monotile
@@ -874,15 +881,16 @@ Research is under the 2026-07-21 reset recorded in
 
 The controlling 2026-07-28 target supersedes the chronological archive below:
 
-1. Do not invent another isolated carrier.  The live general target is a
-   self-stapling color-erasure theorem for the fixed AHI source, or a no-go for
-   an explicitly defined self-stapling family.
+1. Do not invent another isolated carrier.  Separable two-body self-stapling
+   is closed by K61R/N61S.  The live target is a nonseparable color-erasure
+   theorem for the fixed AHI source.
 2. U2 licenses no unmarked claim.  Stade's finite edge relation is external;
    its geometric erasure uses a second noncongruent staple.  A valid advance
    must remove that support while preserving the all-tilings local decoder.
 3. Use the source's twelve-state corridor quotient and binary L-rooted macro
-   cover as the structured target.  Composition cone, vertex legality,
-   periodicity, reflections and unintended contacts remain mandatory gates.
+   cover as the structured target.  A construction must say which K61R
+   hypothesis it violates and prove the corresponding third-participant,
+   multi-port, fusion or global-redundancy mechanism on every tiling.
 4. P17, hinge/thin-lens families, the classified polykite range and generic
    marked/symbolic synthesis remain closed.
 

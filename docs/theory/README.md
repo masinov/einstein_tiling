@@ -173,6 +173,10 @@ reviewable proof or certificate.
   reduction proves undecidability for one connected polygon with finite edge
   rules, gives graph/cylinder decidable subfamilies, and isolates unmarked
   self-stapling as the exact unresolved geometrization boundary.
+- `68_separable_color_erasure_classification.md` — necessary-and-sufficient
+  biclique classification of independent two-body jigsaw erasure, and the
+  uniform forbidden rectangle proving that Stade's complete stick relation
+  cannot be self-stapled in this entire family.
 - `37_k16w_polarity_elimination.md` — N39 rules out equal-polarity long
   spokes by a width-reset inequality, and K29O collapses the surviving K16W
   critical-pair domain to two exact opposite-polarity cells.

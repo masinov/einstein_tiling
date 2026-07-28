@@ -4362,3 +4362,20 @@ and fixed-width-cylinder auxiliary layers remain decidable by finite cycle
 tests.  The active general problem is now the exact boundary theorem: erase
 the finite edge relation with the same connected support (self-stapling), or
 prove an obstruction for an explicitly stated self-stapling family.
+
+## D-0213 (2026-07-28) — Close separable two-body self-stapling completely
+
+Independent polygonal collar profiles can erase a finite directed edge
+relation exactly if and only if its bipartite compatibility graph is a
+disjoint union of complete bipartite components.  The proof is profile
+uniqueness in one direction and distinct rational complementary zigzags in
+the other, so it covers arbitrary polygonal complexity rather than one
+candidate boundary word.
+
+Stade's fixed weave rules contain the forbidden rectangle
+`z1-a2, a1-a2, a1-b1` allowed but `z1-b1` forbidden.  Later input-specific
+rules do not alter those four pairs.  Therefore every U2 marked Sturmian stick
+is outside the complete separable two-body erasure family.  Any unmarked
+continuation must name a genuinely nonseparable mechanism: a third
+participant/T-junction, multi-port contextual state, carrier/verifier fusion,
+or an all-whole-plane proof that locally allowed missing corners never occur.
