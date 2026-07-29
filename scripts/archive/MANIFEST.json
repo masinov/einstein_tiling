@@ -1,0 +1,560 @@
+{
+  "schema_version": 1,
+  "migration_date": "2026-07-29",
+  "semantics": "Frozen scripts with no live Python import, caller, or test-path contract. Hashes differ only where repository-root or self-usage paths were adjusted.",
+  "script_count": 92,
+  "scripts": [
+    {
+      "old_path": "scripts/probe_theory_w2_layer_d_v4_circuit_dual.py",
+      "new_path": "scripts/archive/probe_theory_w2_layer_d_v4_circuit_dual.py",
+      "sha256_before_root_adjustment": "44ce0245fd231c0d56c20d642f5172baefa085f231b1a60b378f9858b74cff2d",
+      "sha256_archived": "2c524e1579d2003db7d3ab0b3762e9304fa280ce874740e0c3d6fd9162abfe21"
+    },
+    {
+      "old_path": "scripts/probe_theory_w2_layer_d_v4_density_cegar.py",
+      "new_path": "scripts/archive/probe_theory_w2_layer_d_v4_density_cegar.py",
+      "sha256_before_root_adjustment": "44c5419940971d08e38d6429b642c05fd9f734ecc2869aa66a22c56a50fca060",
+      "sha256_archived": "0c3a695f1f2ea036939cdc44a1cc9715a1f52bbf9d679551ee918b1d2fa3bd17"
+    },
+    {
+      "old_path": "scripts/probe_theory_w2_layer_d_v4_density_mip.py",
+      "new_path": "scripts/archive/probe_theory_w2_layer_d_v4_density_mip.py",
+      "sha256_before_root_adjustment": "e8a9f5fb7d7dc1db6ada75986e1df062ab176b4fabb5a34bd7525c7458febb86",
+      "sha256_archived": "b51b13b5f3de9e31efaf0cae845ed54d089fc4ae1398f9b11bda5982e0c48169"
+    },
+    {
+      "old_path": "scripts/probe_theory_w2_layer_d_v4_fractional_marking.py",
+      "new_path": "scripts/archive/probe_theory_w2_layer_d_v4_fractional_marking.py",
+      "sha256_before_root_adjustment": "240c128686df3ba908d3632a1630f96dd0420365d2e38ef5c283bd00d3f31595",
+      "sha256_archived": "6315e10f47c0102ad698278d0dea350c8c4ab3db15e3850ee82bfdc5f8dc382c"
+    },
+    {
+      "old_path": "scripts/probe_theory_w2_layer_d_v4_hall_cegar.py",
+      "new_path": "scripts/archive/probe_theory_w2_layer_d_v4_hall_cegar.py",
+      "sha256_before_root_adjustment": "50f0018086e6f7b12f16f0aa9985df7c13af5f756825383ff61573fa1828490f",
+      "sha256_archived": "65c41af7973b8483493bb05856d550189ad4e36e5aeb3615d1deceb6ae010a94"
+    },
+    {
+      "old_path": "scripts/probe_theory_w2_layer_d_v4_lifted_cliques.py",
+      "new_path": "scripts/archive/probe_theory_w2_layer_d_v4_lifted_cliques.py",
+      "sha256_before_root_adjustment": "455800a8cbb46faabac464904cd870095aa4dae9453d82bcd6821c1cc86e7e31",
+      "sha256_archived": "f6fbe1b7c831f5fdcb3bed2f2a2885f420b5f7533b0c9b88d5ed70d36604b17f"
+    },
+    {
+      "old_path": "scripts/probe_theory_w2_layer_d_v4_local_density.py",
+      "new_path": "scripts/archive/probe_theory_w2_layer_d_v4_local_density.py",
+      "sha256_before_root_adjustment": "3f6117f45c78fcadfd9c6523f2519c27ab7bb4e0607d0ed32a7f6fb247a5ddfc",
+      "sha256_archived": "eb23dd928db9741f50107a96c4db9a0b43c9df13ea66c2077009a3af761d0992"
+    },
+    {
+      "old_path": "scripts/probe_theory_w2_layer_d_v4_local_incidence_rank.py",
+      "new_path": "scripts/archive/probe_theory_w2_layer_d_v4_local_incidence_rank.py",
+      "sha256_before_root_adjustment": "f997d7523c03a5dcb7ccb451f20402824ecb5c2ccb2ef31bd8c44fe1dc7a5e64",
+      "sha256_archived": "c4f07cbb5c4028e832857064ce04adc0a55a04beaa1d46b6a9951ca78ea892f1"
+    },
+    {
+      "old_path": "scripts/probe_theory_w2_layer_d_v4_marking.py",
+      "new_path": "scripts/archive/probe_theory_w2_layer_d_v4_marking.py",
+      "sha256_before_root_adjustment": "31a81e13ad77b2fcaf6f22b1ecbebfceb50bffaa02c885a4cc336aae2d7e8f4f",
+      "sha256_archived": "f944c86830ac9e38422a9e5e982f91d0135c0cc340adfe49e48f8ba3c8650978"
+    },
+    {
+      "old_path": "scripts/probe_theory_w2_layer_d_v4_pair_graph.py",
+      "new_path": "scripts/archive/probe_theory_w2_layer_d_v4_pair_graph.py",
+      "sha256_before_root_adjustment": "675610ed4d66f7711299ac3ad8510590ff23cb6e411899f8f4209fa6c0e73032",
+      "sha256_archived": "3c681f97b79e8c408d274186d4c08bfea8f3ebae8f5e853a34e3bebe43b410e8"
+    },
+    {
+      "old_path": "scripts/probe_theory_w2_layer_d_v4_periodic_hall_catalog.py",
+      "new_path": "scripts/archive/probe_theory_w2_layer_d_v4_periodic_hall_catalog.py",
+      "sha256_before_root_adjustment": "7eba17e09323211696de553a3f34b7a66dbb522198ef76cb31511e0786a10a19",
+      "sha256_archived": "62b74f0c0f4caa9d9cd900156e2b15ba0334825f4204d2cf30ed4c9bff6a31b3"
+    },
+    {
+      "old_path": "scripts/probe_theory_w2_layer_d_v4_periodic_hall_lift.py",
+      "new_path": "scripts/archive/probe_theory_w2_layer_d_v4_periodic_hall_lift.py",
+      "sha256_before_root_adjustment": "055ae5d4c2a4d34bb480405fc491433d667bdceee07280ff8e54f41e85ea88af",
+      "sha256_archived": "b8ffb50b4941c966e4448335ec0d911c56bb659e3d264019658b2f86f0b2f04f"
+    },
+    {
+      "old_path": "scripts/probe_theory_w2_layer_d_v4_planar_minimal.py",
+      "new_path": "scripts/archive/probe_theory_w2_layer_d_v4_planar_minimal.py",
+      "sha256_before_root_adjustment": "68f4065e2991840f5bf81bcd4fddc56633f8c1f1f621598d39ab43599468b9ad",
+      "sha256_archived": "c88f81b4efed7130129f77fedf7405d9de14a3853e43959982a71fd753aebfe5"
+    },
+    {
+      "old_path": "scripts/probe_theory_w2_layer_d_v4_plane_hall.py",
+      "new_path": "scripts/archive/probe_theory_w2_layer_d_v4_plane_hall.py",
+      "sha256_before_root_adjustment": "86502ab2095d1191fdc423dc1b10de9c4f2f9d68f4ebe1c79566601e80c61a93",
+      "sha256_archived": "abd626b0d3961ec6949358c0d41052dfe541aabc804eb977d2ab0f8ee7a32a44"
+    },
+    {
+      "old_path": "scripts/probe_theory_w2_layer_d_v4_taper_dual.py",
+      "new_path": "scripts/archive/probe_theory_w2_layer_d_v4_taper_dual.py",
+      "sha256_before_root_adjustment": "b8bc215662094382159910da5105508a2b71e40895afe62f67e85df6e133cace",
+      "sha256_archived": "896edd8ce18ea5a03112680abcf6640c964c2e9232860419f3252ffecef1ef86"
+    },
+    {
+      "old_path": "scripts/probe_theory_w3_spectre_d1_physical.py",
+      "new_path": "scripts/archive/probe_theory_w3_spectre_d1_physical.py",
+      "sha256_before_root_adjustment": "fa19027e690d3b4f8b625b3bc361765de91f747dc30ff003e83af28595a7e9a6",
+      "sha256_archived": "a42903eb89dc22d1fdaf51551263bfcc0a3d1475844f8cd497f19a5eafa0f6ba"
+    },
+    {
+      "old_path": "scripts/record_e1_finalist_nested.py",
+      "new_path": "scripts/archive/record_e1_finalist_nested.py",
+      "sha256_before_root_adjustment": "bbcef6db2d1f50b7998f88bb9c08b498697157f4490b2e88d28902e160f07aa3",
+      "sha256_archived": "7413a660bfac57a74c6240a5f8c4c1a72f8fdaed6e200d6de4026792a74ec6c8"
+    },
+    {
+      "old_path": "scripts/recover_e1_overnight.py",
+      "new_path": "scripts/archive/recover_e1_overnight.py",
+      "sha256_before_root_adjustment": "2c763a30dcf53cf6e0c87cdd83ae62065ce5e6a3701486cd00c116828e10b394",
+      "sha256_archived": "34f50ad6155ac01609aa7dbfca8fd29983ae9edbbd8acaf7f23c6b87179cd5d5"
+    },
+    {
+      "old_path": "scripts/run_a0_fast.py",
+      "new_path": "scripts/archive/run_a0_fast.py",
+      "sha256_before_root_adjustment": "7c8772fe5d039808e8146036c3538d39cbf2b689da7f056c6d99e0b69fb94663",
+      "sha256_archived": "6f607b7f02574b8e085432ffbc1b4b42b20f932188616e2effc01678ed3971ce"
+    },
+    {
+      "old_path": "scripts/run_a1.py",
+      "new_path": "scripts/archive/run_a1.py",
+      "sha256_before_root_adjustment": "acc6613311a4ba5cb5652f805115e2ad2529da729ccaf718d8c761aa2af9434a",
+      "sha256_archived": "606bfab2bf5397463c1f07494b8265b84781867a8d79f87c5690b72d37215b83"
+    },
+    {
+      "old_path": "scripts/run_a1_candidates.py",
+      "new_path": "scripts/archive/run_a1_candidates.py",
+      "sha256_before_root_adjustment": "ec1eaeaf05c2cbc2957ae8b18b5ddac00b682212eddb6909ad431b979d631106",
+      "sha256_archived": "9c482e87f86c98072d5c344c6fb8f63538e9480427e569ef4e5fa92cb74b9dc8"
+    },
+    {
+      "old_path": "scripts/run_a1_fast.py",
+      "new_path": "scripts/archive/run_a1_fast.py",
+      "sha256_before_root_adjustment": "034431e4c4c09592acedbd259feb71b4784c2e7a18d9677cdfeec18bd6829007",
+      "sha256_archived": "3f90bb39d474991dadabf527a9a5ca9c76d47cf35ce2647d329e1cc425a8e9ba"
+    },
+    {
+      "old_path": "scripts/run_a1_isohedral_control.py",
+      "new_path": "scripts/archive/run_a1_isohedral_control.py",
+      "sha256_before_root_adjustment": "11bccb85ee8901821afa6b1fc789f49f0ce7bf5d9246cef93ff0ef0501837cdf",
+      "sha256_archived": "28e009df82662333c4aec2af323277acd262eaa47a0a24e0e0a76a0b948c5494"
+    },
+    {
+      "old_path": "scripts/run_a2.py",
+      "new_path": "scripts/archive/run_a2.py",
+      "sha256_before_root_adjustment": "0393ca10c77a0a3030954f431b1de23c6e684783a525d3405ec67518576419b7",
+      "sha256_archived": "cff78418c4bfb6bc2e3221e6f740e815d67535808c12891ac34aec9bff6e5a1d"
+    },
+    {
+      "old_path": "scripts/run_a2_fast.py",
+      "new_path": "scripts/archive/run_a2_fast.py",
+      "sha256_before_root_adjustment": "89d6898d583cef59ac77012f1ba62760cdb6b642b5661160f2d31644634a9935",
+      "sha256_archived": "41d5a1184c5c4a7c5d0f097697eadc31fc8d868af856c2c31dbc4001b460a17e"
+    },
+    {
+      "old_path": "scripts/run_a3.py",
+      "new_path": "scripts/archive/run_a3.py",
+      "sha256_before_root_adjustment": "6bf05991a88c7071ea20b1988c3d5ae5cc2f8f9f6f8ef912016d573c91239033",
+      "sha256_archived": "fd23246c88dd566079e909917dd61faba7b4245dd33862df59800344752c6bcb"
+    },
+    {
+      "old_path": "scripts/run_a3_candidates.py",
+      "new_path": "scripts/archive/run_a3_candidates.py",
+      "sha256_before_root_adjustment": "2cf40c403bc0ea0f1d7a84e0e779c159de01bfc22016285f700045f586dc5d9c",
+      "sha256_archived": "89283ea32b5f604737aab5d051c197f962d01d210a5a0762f77ef46da816a1df"
+    },
+    {
+      "old_path": "scripts/run_a4_candidates.py",
+      "new_path": "scripts/archive/run_a4_candidates.py",
+      "sha256_before_root_adjustment": "3722d479dca702ff6914cf0bccc87e4988f4b13dcd6f52a0a32518dbb0b3385e",
+      "sha256_archived": "ae77e198f6991b71648b17cddbbfb86c8ec5b68dcb6844c0331242158adb1fb9"
+    },
+    {
+      "old_path": "scripts/run_a6_hat.py",
+      "new_path": "scripts/archive/run_a6_hat.py",
+      "sha256_before_root_adjustment": "270f5f0891f6b588d0f6f03336093100182621021e639fbf315409ff65c75ce6",
+      "sha256_archived": "f9d44421c5891fb9ff7f5cfdd10bd6f54bbc72e479599c8652c16c7f92f8201c"
+    },
+    {
+      "old_path": "scripts/run_a6_spectre.py",
+      "new_path": "scripts/archive/run_a6_spectre.py",
+      "sha256_before_root_adjustment": "3f7671bbc79e8dcba2194f94bb4872c1bbca9552395140267e79bbfbba131997",
+      "sha256_archived": "50416e9e27ed0d0f19989dec41917fed2747885248d09a2161702db492f0ab9e"
+    },
+    {
+      "old_path": "scripts/run_e1_finalist.py",
+      "new_path": "scripts/archive/run_e1_finalist.py",
+      "sha256_before_root_adjustment": "b34f62e85e6b58b0260bd60f147e404d67cb774ed69553cedcbbd683ea7ebc52",
+      "sha256_archived": "2322beaa50b50e78217e60964ebc8ad5cee03482f2e8d26e39a441dfb8c3fc99"
+    },
+    {
+      "old_path": "scripts/run_e1_finalist_hierarchy.py",
+      "new_path": "scripts/archive/run_e1_finalist_hierarchy.py",
+      "sha256_before_root_adjustment": "7727df2dc18b839db557579cb843825e4162b17395be8763a80405a81c9fc3a1",
+      "sha256_archived": "b843e2f75c597b9aae97633255221cdbed2317120df88342c17f59bc604a77ab"
+    },
+    {
+      "old_path": "scripts/run_e1_finalist_period47.py",
+      "new_path": "scripts/archive/run_e1_finalist_period47.py",
+      "sha256_before_root_adjustment": "b2f9a7c192209e221401f5d6b1ecc49684a5931f4afd022caabcbdfd33edbdeb",
+      "sha256_archived": "a798f93303cec6b637227ddaafa80c3adf13dcc14565334966300e4291e23f1c"
+    },
+    {
+      "old_path": "scripts/run_e1_finalist_periodicity.py",
+      "new_path": "scripts/archive/run_e1_finalist_periodicity.py",
+      "sha256_before_root_adjustment": "7aac84972f6f67669222d9722abd57b806d4bc0f16a136d55265fee0ba8f1570",
+      "sha256_archived": "c44fd6e544830c25f50aa008c575f9926db124405032653cc03689a510c62f12"
+    },
+    {
+      "old_path": "scripts/run_e1_finalist_robustness.py",
+      "new_path": "scripts/archive/run_e1_finalist_robustness.py",
+      "sha256_before_root_adjustment": "4d7b60fd2d44f03f7482b707917fe03e8935f1923116d3d31fd591116676a42f",
+      "sha256_archived": "a9bfe52f518c24fee80d2ebf3bbbd7c9d8adcfbdcd86d484c744495a73d16471"
+    },
+    {
+      "old_path": "scripts/run_e1_finalist_translation_lattices.py",
+      "new_path": "scripts/archive/run_e1_finalist_translation_lattices.py",
+      "sha256_before_root_adjustment": "924aafc80ff24680be6380de9bec1ef798245c0bc6dcf4e4bae0ae86f06bdf60",
+      "sha256_archived": "29f790a7533d32d80ee58ff67d1844a4cae0cd6d98ebd0057216675c706aa6b8"
+    },
+    {
+      "old_path": "scripts/run_e4_wide.py",
+      "new_path": "scripts/archive/run_e4_wide.py",
+      "sha256_before_root_adjustment": "384c78afe814f0d8006b9fa5982a954657df51812d41ac5c597e66a30db41962",
+      "sha256_archived": "384c78afe814f0d8006b9fa5982a954657df51812d41ac5c597e66a30db41962"
+    },
+    {
+      "old_path": "scripts/run_k16w_hc31.py",
+      "new_path": "scripts/archive/run_k16w_hc31.py",
+      "sha256_before_root_adjustment": "f1a0bf766bd48ca139c97169b6db8f17b3555c8a875820ae8bf3f50605dbffb4",
+      "sha256_archived": "5738fc4af0e066e1c28700b17ba33296ad4fba3877a8eae732d83501dbafd244"
+    },
+    {
+      "old_path": "scripts/run_k16w_hc34.py",
+      "new_path": "scripts/archive/run_k16w_hc34.py",
+      "sha256_before_root_adjustment": "fb72c14a0f6ffc932f6ce31bfcd34f1a58de60bc7c685048ee86e29841817c61",
+      "sha256_archived": "6eebaa8924c56e871126bfd476875d7fb47e2046e06bc7c2426cc406f93d93a7"
+    },
+    {
+      "old_path": "scripts/run_k16w_hc38.py",
+      "new_path": "scripts/archive/run_k16w_hc38.py",
+      "sha256_before_root_adjustment": "6be03cda239febfc4b086ad8b54c65858a97591fef60f0dceedfca316e3dbcba",
+      "sha256_archived": "c2c8f75b43505d335c0eb0038de41972d742b9ba8768400f618fd3767e1e01b1"
+    },
+    {
+      "old_path": "scripts/run_theory_w1_controls.py",
+      "new_path": "scripts/archive/run_theory_w1_controls.py",
+      "sha256_before_root_adjustment": "a3f4bf9d817fdf95f093430c7c031b9ad0417dd11cffddaef204e4046ca7ae27",
+      "sha256_archived": "2e621b2cfb595acae0994d188b6a4add7a8ab8cf8fd100c0cb622b882695117c"
+    },
+    {
+      "old_path": "scripts/run_theory_w1_finalist.py",
+      "new_path": "scripts/archive/run_theory_w1_finalist.py",
+      "sha256_before_root_adjustment": "84875d1db54187d553c22ae55e6f40732c9021c1bfe9fdf31d6391378457e205",
+      "sha256_archived": "981f88da690aca18c4327a966a346742f92a1d984e55ca5df8f677d43ace3b59"
+    },
+    {
+      "old_path": "scripts/run_theory_w1_negative_certificates.py",
+      "new_path": "scripts/archive/run_theory_w1_negative_certificates.py",
+      "sha256_before_root_adjustment": "f383f59e6565cf16ee490deabe310e407bf319d2e41654263a9e4f54dfa76efc",
+      "sha256_archived": "93a73ad07b2cc5c72ffe8f3a09ab906d4c1f40c06a807b9dc028eb9accb7fcda"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_binary_families.py",
+      "new_path": "scripts/archive/run_theory_w2_binary_families.py",
+      "sha256_before_root_adjustment": "0cbd2bb9f8969a6547017d3530b3199d3bd8fc28b34f9bc7275cfe2f6a4f8f66",
+      "sha256_archived": "fa33dfb9f3960d4b38b25b719c48cc8f7b0fc31ab5069da0849bbecc83c07383"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_a.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_a.py",
+      "sha256_before_root_adjustment": "6b342d43b6f8b07cd14ff4827756207fda56fe1d5707fb7e0d6e9147d3b252ce",
+      "sha256_archived": "d851f65d6e2af108dd40841248f6d74990954b66e83e795de4ed38bf636ffda9"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_c.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_c.py",
+      "sha256_before_root_adjustment": "4b0c7be3dad368e860e2da6fe1be709bc560a469e9ea03e8f092a18d2cfdc790",
+      "sha256_archived": "1c2a595d19eba3cb2a4d30cf4cd4e50618c1cbd23f5101dbdc199108150dec76"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_c_nonnegative.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_c_nonnegative.py",
+      "sha256_before_root_adjustment": "67e5b6f6debe5a19fceaa7c811e351db3eec470f01ac2ba4660e4de007cf36dc",
+      "sha256_archived": "13a3a395f0f6e605c12ad96fd03dc8e3c4ad934c41df25d3810e9caa20faef54"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_c_snf.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_c_snf.py",
+      "sha256_before_root_adjustment": "fe77df1a3e8f0cb4ec27f5e9909bc6ce775f40654dca456ad02529699b535bc0",
+      "sha256_archived": "7287e6ce421fbc7071ee4b6762a22e7381a622b4ebd6469578057488150f73c5"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d.py",
+      "sha256_before_root_adjustment": "d232083e9b60321d8b8276eb3e3f8102f36bea5dd2d3d2b1e6fef556a6f5e6a1",
+      "sha256_archived": "111a2242aa9da68227d7845f6f79c239d54e2d87e10a16dded548b74a8562b0b"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_a4_factor.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_a4_factor.py",
+      "sha256_before_root_adjustment": "c9a6984e2accf738660ae604953a69a39b22c7cef5bd2236f33206d5faea8730",
+      "sha256_archived": "9044dd2bae6f04e742b8032c3b50e5bd51af9e394cc7fe7929653a6aac61b14c"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_a4_index50.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_a4_index50.py",
+      "sha256_before_root_adjustment": "a1e0a5a88f4c960c638933d26537b817276db6cebb7d8a3a7b7530445d88a064",
+      "sha256_archived": "725e7ed877e743a47c9b3cb45fe339abb6aa59af07be48971a4fe33eae57aa99"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_a4_proofs_index50.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_a4_proofs_index50.py",
+      "sha256_before_root_adjustment": "9a8e2134493f49ee78c260ef67c51e0fd8cf2f44dde98ddf313c83bde9fb0a10",
+      "sha256_archived": "c1c52723894ad8b0f502c28ea967967aa5c3b4241b7f222b76cb1205dc7f5eec"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_a4_proofs_index55.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_a4_proofs_index55.py",
+      "sha256_before_root_adjustment": "de702755c128b0f38a0374307e5978b4ab419eb7f838e4c2cd50e69a19064972",
+      "sha256_archived": "eba6dd200694496f9901aa7ae961a7cd2c7e9d49f7c0b68ba8f3cebf7c1fb5f7"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_a4_sat_index50.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_a4_sat_index50.py",
+      "sha256_before_root_adjustment": "b04345511209adfdffe4286999747707bdbc7d01719e1603c1a5eb806276acd8",
+      "sha256_archived": "7f8a199255de20a1e677c60fd297bf8ca61f3a4d2f71a09cb16db37e127ad306"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_a4_signature.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_a4_signature.py",
+      "sha256_before_root_adjustment": "90a10812949e0971efce5fda8f22a6a23c450b9f7883fcade8d1a361e3bb2b7c",
+      "sha256_archived": "7edf1b26cfbe0269ed01c2cbdd48be104c4269ceeaef859aeb777aa16cbc009e"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_a4_signature_index55.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_a4_signature_index55.py",
+      "sha256_before_root_adjustment": "5cc2752e197758d492747102f758e8298114231208c3e33607d1102cf8a6650f",
+      "sha256_archived": "3c05aecb78ef1203397ebdf642f2bca0607e4f35635cc1d6ccf25b4128347270"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_coupled.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_coupled.py",
+      "sha256_before_root_adjustment": "3562f9b96af086afa0ce3328e95ea850b1190abcd757f1dc1f3c658ee2b35223",
+      "sha256_archived": "8955f5f18dd68363a94e5d2a52d81591d27d2a577205241eb513f0579cecc327"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_index45.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_index45.py",
+      "sha256_before_root_adjustment": "e96dd00bb6f1ba7e33e441d5abb6676c27d7fd430fc7ab7416761c435aa225b5",
+      "sha256_archived": "435a16ca96bf88a3e570f132d5bf9d3456c84e83b4db481108316b45d538c860"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_index50.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_index50.py",
+      "sha256_before_root_adjustment": "5f8d6aedaf95e801067014326ba5086337e3716739f7eb763f32d44558d440d7",
+      "sha256_archived": "c2439510ddb068b0b1dad65bb5e91268a8f57d89b8990eed1d2cca25290a00a1"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_index50_model_analysis.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_index50_model_analysis.py",
+      "sha256_before_root_adjustment": "73242ee23e980bcd242c690b3c1a49b3d153519798fbb7a103c580039c1c4dfc",
+      "sha256_archived": "258ce6dd667d23f28589bcc444d0626f4b28b4f9f4182ec78920e7537cd0b2a2"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_index50_overlap2.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_index50_overlap2.py",
+      "sha256_before_root_adjustment": "6e5f4e6cc828c380b14a998484590180b3d46b69a017a034ccfaf3256756b21d",
+      "sha256_archived": "9ca4621239ebb5b539eb72426c3de46770ebe307cd353d82c57b34f9a4531b26"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_index50_overlap2_sat.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_index50_overlap2_sat.py",
+      "sha256_before_root_adjustment": "4b0f932f1d8afd1992cba10351fc12baae230b8ce9d5b9174b3a9a8f1018abf4",
+      "sha256_archived": "e8c8beeb83a74bdd3a17fc2b4412bf65be9036ef3bc602576461f052bedda3ab"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_index50_sat.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_index50_sat.py",
+      "sha256_before_root_adjustment": "4ddff068da4dca9ba2ecbbd6130807a2ae20f724976ee9bb39d9dde56a5a8027",
+      "sha256_archived": "484df8836041842bbeb1c540a2f16b725e2cc1786f51f52c7491b302f5e73467"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_proofs_index45.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_proofs_index45.py",
+      "sha256_before_root_adjustment": "94fd4feaa4f2096dc28d9e0bc942f14c764c242e2b5ed88e8e23ca63f89fa1cb",
+      "sha256_archived": "046ad78e581d2837355d1316828e2fd9642cb14552ef20c1f0b110e189479eb3"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_proofs_index50.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_proofs_index50.py",
+      "sha256_before_root_adjustment": "5ca48e2348dca46e9ffa72cd23392d851aed42e15088c241faee54676628a2a9",
+      "sha256_archived": "276b02139f90fdf0f70b02fb006554b51a340b46957230f3dda55cd0345e6d55"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_s3_classes.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_s3_classes.py",
+      "sha256_before_root_adjustment": "79f206b233329f7a75b0c70f625beca38a12c4b15004ba96f485191934537051",
+      "sha256_archived": "dcbb274057a26257b1e0095e0f9f26d51c6056b3d617649846d4b33d08323e1c"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_small_groups.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_small_groups.py",
+      "sha256_before_root_adjustment": "6587fe5497c693cd768dde6dfcd1aa682815e963c106e5f2b8064d08b611de1b",
+      "sha256_archived": "5c578747d85eb0600ad41a8029b7985097e2e4a945f77580c641ee7ee48d147c"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_symmetry.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_symmetry.py",
+      "sha256_before_root_adjustment": "2defd343b0c067dd1966f4a43b233b7b17579b9c1ea08530b00dc2d5dda23a58",
+      "sha256_archived": "ce6d867cbf8ae0a63fb070fc8ec6690c7ce51fbdade653f22d9943e3ead645a3"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_v4_2lambda.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_v4_2lambda.py",
+      "sha256_before_root_adjustment": "6cb280b7c287943a34744892db1d9811a467a4652a087b1455ee37de27946039",
+      "sha256_archived": "89d7696976b05ab3466016ece569e75a2e2ec6825848b617584ad7a2713f4ec6"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_v4_density.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_v4_density.py",
+      "sha256_before_root_adjustment": "5d4439ced96b9f82c6d2cca2c8dd0b9876e39ad1b32db268629e519ad7e0b124",
+      "sha256_archived": "e20d67742ec233528a2d7925ca451c8cab50c49cc848a0efd185450a03f0f345"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_v4_packing.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_v4_packing.py",
+      "sha256_before_root_adjustment": "435da00fdedd25f7bb5a78545ba48081a054f94305ab6cb72cef51b9e23c79a3",
+      "sha256_archived": "3eacc017ba44125ed6390f3cbd6ec43d33b0a54ad747235bc04431ab3c9683b8"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_v4_packing_family.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_v4_packing_family.py",
+      "sha256_before_root_adjustment": "ea17fb3b8e3b95b81eb2316c18738ad081c7975bf1939ddbbbeaaa2e8e5ba399",
+      "sha256_archived": "41dd9e92bea97825ec828aad5035821dcb16b47e83b7d81aa73f4d8d008a2236"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_v4_packing_signature_family.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_v4_packing_signature_family.py",
+      "sha256_before_root_adjustment": "e7f9c11482bc7961a1fd2721e19a9ae143bb2aaec8b30d4af0d55df66fbad281",
+      "sha256_archived": "3599ae65705cfda620a4570b99f2dc01b7df589633fdf22f0f1c59abd26d09aa"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_v4_product.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_v4_product.py",
+      "sha256_before_root_adjustment": "2515bcd08e6fb75d0780052da21b7524f1446825929e3a6c06e5ac8088471b6e",
+      "sha256_archived": "55cffed3abdf15dfab2b0df738eb59990bdacd97d3fe953e0e5fd9b8208b1563"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_v4_proofs_index60.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_v4_proofs_index60.py",
+      "sha256_before_root_adjustment": "a13e3ba962f9cc6bf9a21ae0eb25a7d3e73b5640cc378cf129ae84583b1e9dba",
+      "sha256_archived": "1ec13eb38ef7c726256b8e0c7dc2def19a4a3514d4d0630f339088fbb2841f84"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_v4_sft.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_v4_sft.py",
+      "sha256_before_root_adjustment": "5f4cdc25868072e5d9ddcd8d1f4e2fb158f45c531de1c521fe7d9c529eacb709",
+      "sha256_archived": "b39405b10cd0bd20f53a61b48d59e814b4498b8ee9054d3e2a31be062ebc8852"
+    },
+    {
+      "old_path": "scripts/run_theory_w2_layer_d_v4_signature_index60.py",
+      "new_path": "scripts/archive/run_theory_w2_layer_d_v4_signature_index60.py",
+      "sha256_before_root_adjustment": "07086b627551e73dd060e06f6325b4dcb330bd29840a6cc2f5df14fa42981e89",
+      "sha256_archived": "aa88f94d7b7af164ebd4b20ca369d51822e722945b5e54e3ffbabe79262b48dc"
+    },
+    {
+      "old_path": "scripts/run_theory_w3_spectre_certificate_audit.py",
+      "new_path": "scripts/archive/run_theory_w3_spectre_certificate_audit.py",
+      "sha256_before_root_adjustment": "a9fe7eaa2302178a1849644ebd2e07be587e33e37a651dba642e4494271b87a6",
+      "sha256_archived": "393b1acc349960169fda9c0adcd0da4e4a4c8819f37e2bed48529dfeb3e420a4"
+    },
+    {
+      "old_path": "scripts/run_theory_w3_spectre_colored_interface.py",
+      "new_path": "scripts/archive/run_theory_w3_spectre_colored_interface.py",
+      "sha256_before_root_adjustment": "5c87ee96fe12eb8c3bd30ec5c65ad2d5fb39e8c4fae2e4306063316083c99519",
+      "sha256_archived": "c464caa527af5477d86e448185f4cc003f79abc52e5145c3434d145bd4de7a96"
+    },
+    {
+      "old_path": "scripts/run_theory_w3_spectre_colored_overlap.py",
+      "new_path": "scripts/archive/run_theory_w3_spectre_colored_overlap.py",
+      "sha256_before_root_adjustment": "f3f6e63d63f80e448012ad4185d589d47475f8a2004c2f9f6f85a5186457b1a2",
+      "sha256_archived": "67157b48628777203b0076fec2368dac315f8444c115a4a103706c38a7aac6ee"
+    },
+    {
+      "old_path": "scripts/run_theory_w3_spectre_component_language.py",
+      "new_path": "scripts/archive/run_theory_w3_spectre_component_language.py",
+      "sha256_before_root_adjustment": "ce12c08bbed3ff84cc7aaae9a0990f03586faefba5703e23a7a89183bfbb2fd7",
+      "sha256_archived": "ce12c08bbed3ff84cc7aaae9a0990f03586faefba5703e23a7a89183bfbb2fd7"
+    },
+    {
+      "old_path": "scripts/run_theory_w3_spectre_d1_entry.py",
+      "new_path": "scripts/archive/run_theory_w3_spectre_d1_entry.py",
+      "sha256_before_root_adjustment": "7c0279d69a5368b2162a48227afb8619d4af945ef84dc1ca3ad2894c14f75a26",
+      "sha256_archived": "4fe948be313edb30c85207fdbf59f5833eb4fbbb882ef057307994a9be46fc6b"
+    },
+    {
+      "old_path": "scripts/run_theory_w3_spectre_d4_equivalence.py",
+      "new_path": "scripts/archive/run_theory_w3_spectre_d4_equivalence.py",
+      "sha256_before_root_adjustment": "4e2492f2be2d70f2ab0d1100360d2d83395bb6b0e16f16cb271114bf895e8c72",
+      "sha256_archived": "512ecc53badd823075742fe854f35368256bfef587ea3528be8dfb29a5f6158d"
+    },
+    {
+      "old_path": "scripts/run_theory_w3_spectre_defect_propagation.py",
+      "new_path": "scripts/archive/run_theory_w3_spectre_defect_propagation.py",
+      "sha256_before_root_adjustment": "8497c805696d647daf6e1040057a007259bab3d85b3e0cd4e3bc75accfd865f2",
+      "sha256_archived": "f808e638a4a89fe0781c60ccf61d05636401160aae3f023f1059f8010ef1c96d"
+    },
+    {
+      "old_path": "scripts/run_theory_w3_spectre_edge_patch_bridge.py",
+      "new_path": "scripts/archive/run_theory_w3_spectre_edge_patch_bridge.py",
+      "sha256_before_root_adjustment": "3bd2ce4e27a04897e4e30de27783294f4efe2e06c9e98a9c901b59a24cbec25a",
+      "sha256_archived": "83fb0dbd3eec5e72b80c216f1b821ec7394ba0880e8979094becf457958bcb28"
+    },
+    {
+      "old_path": "scripts/run_theory_w3_spectre_parent_interface.py",
+      "new_path": "scripts/archive/run_theory_w3_spectre_parent_interface.py",
+      "sha256_before_root_adjustment": "ff59b9292345b1e352e680fa29e3357f8bb30a112e72783b986e0b317f934d5a",
+      "sha256_archived": "86c188bc4ce1f35f95dfc2233335c55f70bb3f01c7462ba685a856a53482dbff"
+    },
+    {
+      "old_path": "scripts/run_theory_w3_spectre_parent_overlap.py",
+      "new_path": "scripts/archive/run_theory_w3_spectre_parent_overlap.py",
+      "sha256_before_root_adjustment": "1c9a1d4585982d893ff75e29194d4a406d98f2fdfb3f4e2ddb398a314fc47201",
+      "sha256_archived": "9088b66af7edb61b0fce6d08138fdfb1e3d7a9d1397ee2885b22592426c454ba"
+    },
+    {
+      "old_path": "scripts/run_theory_w3_spectre_patch_language.py",
+      "new_path": "scripts/archive/run_theory_w3_spectre_patch_language.py",
+      "sha256_before_root_adjustment": "459ed7236fd3f6b099787caa000c05d060c8be360b0443e83e6a8701723a1d83",
+      "sha256_archived": "4e0c5551248c37effa2fd3de8b4864f4369a06def67e3861917277b4c26959fd"
+    },
+    {
+      "old_path": "scripts/run_theory_w3_spectre_radius2_defect.py",
+      "new_path": "scripts/archive/run_theory_w3_spectre_radius2_defect.py",
+      "sha256_before_root_adjustment": "c636214392cc5ff5e661cc13fa475ed0e32ef247ce34d6e7b7f4d013c71e3144",
+      "sha256_archived": "2988754d875b703fea7729637faebc80212e248c2fc99a6508858e82e08d9125"
+    },
+    {
+      "old_path": "scripts/run_theory_w3_spectre_radius3_defect.py",
+      "new_path": "scripts/archive/run_theory_w3_spectre_radius3_defect.py",
+      "sha256_before_root_adjustment": "dbd25ab2d8e1eae3940920e417810ef57199f2820c7823def311533af271d4ca",
+      "sha256_archived": "76cea2861604325f9245df5f7d5fbe058c4bffad5242e33ca685c7dde0a648fa"
+    },
+    {
+      "old_path": "scripts/run_theory_w3_spectre_two_sided_overlap.py",
+      "new_path": "scripts/archive/run_theory_w3_spectre_two_sided_overlap.py",
+      "sha256_before_root_adjustment": "a3d4e01db328ea3ea3891cf5b80f059ba3b2ff4dc0e1d51f408c159e9d887d70",
+      "sha256_archived": "2630cc8bd99692b68bd1482214c04c5e1b664442e7757d7a6d2d3715dd279778"
+    },
+    {
+      "old_path": "scripts/run_theory_w3_turtle_sturmian_control.py",
+      "new_path": "scripts/archive/run_theory_w3_turtle_sturmian_control.py",
+      "sha256_before_root_adjustment": "52b352cea045f9c225b53a9894ad4139596782dccb9e2d3220829db7ddbdeb34",
+      "sha256_archived": "292829822b14175208bbe4ebe33e8c3579d59790b0b2b3305a9d85c94bbd96e0"
+    }
+  ]
+}

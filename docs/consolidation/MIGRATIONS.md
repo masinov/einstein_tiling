@@ -55,3 +55,13 @@ deleted or rewritten.
   module-size boundaries.
 - Preserved every repository import through the compatibility facade and kept
   all exact certificate artifacts unchanged.
+
+## 2026-07-29 — script archive and certificate interface
+
+- Relocated 92 frozen runners and probes with no live caller, import or test
+  path contract to `scripts/archive/`.
+- Hash-pinned every old/new path and both file versions in the archive
+  manifest; repository-root calculations were adjusted for the new depth.
+- Left nine coupled historical scripts at their stable paths.
+- Added one registry and dispatcher for eighteen retained exact AHI/Stade
+  certificate families, without changing their builders or cold verifiers.

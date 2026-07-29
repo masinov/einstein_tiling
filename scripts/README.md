@@ -11,8 +11,20 @@ per-file classification is in `docs/consolidation/FILE_DISPOSITIONS.json`.
   their schemas, builders and verifiers can be exposed through a coherent
   certificate interface.
 - most `run_*` and `probe_*` programs are frozen session-specific research
-  history.  Their presence is provenance, not an invitation to resume their
-  parameter ladders.
+  history. Ninety-two uncoupled programs now live under `archive/`, with old
+  and new paths hash-pinned in `archive/MANIFEST.json`.
+
+The retained AHI and Stade certificate families are discoverable through one
+interface:
+
+```bash
+venv/bin/python scripts/certificates.py list
+venv/bin/python scripts/certificates.py describe contact-kernel
+venv/bin/python scripts/certificates.py run contact-kernel verify -- ATLAS KERNEL
+```
+
+The dispatcher invokes the existing builder or cold verifier; it does not
+weaken their exact checks or promote their source-specific conclusions.
 
 New reusable behavior belongs in `src/einstein/` with tests.  A new nontrivial
 research runner still requires the admission and launcher rules in
