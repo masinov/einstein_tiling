@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "consolidated_on": "2026-07-29",
+  "purpose": "Complete coverage map for the former chronological theory notes. Canonical documents provide the reader-facing synthesis; source documents preserve complete proofs and corrections.",
+  "groups": [
+    {
+      "id": "foundations-periodicity",
+      "canonical_documents": [
+        "docs/theory/foundations/periodic_completion.md",
+        "docs/theory/realization/general_theory.md"
+      ],
+      "source_documents": [
+        "docs/theory/foundations/periodic_completion.md"
+      ],
+      "former_note_numbers": [1]
+    },
+    {
+      "id": "turtle-certificate-controls",
+      "canonical_documents": [
+        "docs/theory/controls/turtle/README.md"
+      ],
+      "source_documents": [
+        "docs/theory/controls/turtle/transfer_certificates.md",
+        "docs/theory/controls/turtle/invariants.md",
+        "docs/theory/controls/turtle/cokernel.md",
+        "docs/theory/controls/turtle/holonomy.md"
+      ],
+      "former_note_numbers": [2, 3, 4, 5]
+    },
+    {
+      "id": "spectre-certificate-control",
+      "canonical_documents": [
+        "docs/theory/controls/spectre/reconstruction.md"
+      ],
+      "source_documents": [
+        "docs/theory/controls/spectre/reconstruction.md"
+      ],
+      "former_note_numbers": [6]
+    },
+    {
+      "id": "early-sturmian-symbolic-chain",
+      "canonical_documents": [
+        "docs/theory/realization/general_theory.md",
+        "docs/theory/sturmian/ahi_source_and_carriers.md",
+        "docs/theory/case_studies/ahi_realization.md"
+      ],
+      "source_documents": [
+        "docs/archive/theory_sources/07_stm1_sturmian_monotile_design.md",
+        "docs/archive/theory_sources/08_stm1_equal_support_compiler.md",
+        "docs/archive/theory_sources/09_stm1_symbolic_quotient.md",
+        "docs/archive/theory_sources/10_stm1_limit_language.md",
+        "docs/archive/theory_sources/11_stm1_contact_kernel.md",
+        "docs/archive/theory_sources/12_stm1_geometric_carrier.md",
+        "docs/archive/theory_sources/13_stm1_serialization_contract.md",
+        "docs/archive/theory_sources/14_stm1_symbolic_chain.md"
+      ],
+      "former_note_numbers": [7, 8, 9, 10, 11, 12, 13, 14]
+    },
+    {
+      "id": "geometric-carrier-ladder",
+      "canonical_documents": [
+        "docs/theory/case_studies/geometric_carriers.md",
+        "docs/theory/realization/general_theory.md"
+      ],
+      "source_documents": [
+        "docs/archive/theory_sources/15_stm1_flag_carrier.md",
+        "docs/archive/theory_sources/16_stm1_retiling_compiler.md",
+        "docs/archive/theory_sources/17_stm1_binary_retiling_kernel.md",
+        "docs/archive/theory_sources/18_retiling_wang_compiler.md",
+        "docs/archive/theory_sources/19_synchronizing_retiling_topology.md",
+        "docs/archive/theory_sources/20_k5c_boundary_forcing.md",
+        "docs/archive/theory_sources/21_subdivision_word_contacts.md",
+        "docs/archive/theory_sources/22_selected_word_nonconvex_ports.md",
+        "docs/archive/theory_sources/23_unequal_stem_caps.md",
+        "docs/archive/theory_sources/24_four_participant_ports.md",
+        "docs/archive/theory_sources/25_guard_shield_geometry.md",
+        "docs/archive/theory_sources/26_shield_contact_synchronization.md",
+        "docs/archive/theory_sources/27_radius_one_contextual_synchronizer.md",
+        "docs/archive/theory_sources/28_weighted_host_language.md",
+        "docs/archive/theory_sources/29_k13f_lens_geometry.md",
+        "docs/archive/theory_sources/30_k10b_complete_lens_system.md",
+        "docs/archive/theory_sources/31_unequal_spoke_rectangular_lens.md",
+        "docs/archive/theory_sources/32_k16w_bridge_elimination.md",
+        "docs/archive/theory_sources/33_nonright_guard_rhombic_family.md",
+        "docs/archive/theory_sources/34_nonright_spoke_crossing.md",
+        "docs/archive/theory_sources/35_k16w_crossing_cells.md",
+        "docs/archive/theory_sources/36_unequal_guard_parallelogram.md",
+        "docs/archive/theory_sources/37_k16w_polarity_elimination.md",
+        "docs/archive/theory_sources/38_k16w_budget_and_encoding_audit.md",
+        "docs/archive/theory_sources/39_k16w_exact_compactification.md",
+        "docs/archive/theory_sources/40_k16w_finite_strand_atlas.md",
+        "docs/archive/theory_sources/41_k16w_thin_lens_reset_no_go.md",
+        "docs/archive/theory_sources/42_k16w_corrected_six_cell_atlas.md",
+        "docs/archive/theory_sources/43_k16w_closure_discriminant.md",
+        "docs/archive/theory_sources/44_k16w_transverse_strand_law.md",
+        "docs/archive/theory_sources/45_k16w_root_order_and_hc36_close.md",
+        "docs/archive/theory_sources/46_k16w_selector_normal_form.md",
+        "docs/archive/theory_sources/47_k16w_selector_attack_table.md",
+        "docs/archive/theory_sources/48_k16w_same_cell_obstruction.md",
+        "docs/archive/theory_sources/49_k28w_guard_role_collapse.md",
+        "docs/archive/theory_sources/50_clean_spoke_topology_classification.md",
+        "docs/archive/theory_sources/51_reflection_docking_normal_form.md",
+        "docs/archive/theory_sources/52_reflection_clean_interface_no_go.md",
+        "docs/archive/theory_sources/53_reflection_hinge_orbits.md",
+        "docs/archive/theory_sources/54_rooted_binary_reflection_hinge.md",
+        "docs/archive/theory_sources/55_full_side_hinge_compiler.md",
+        "docs/archive/theory_sources/56_hinge_octagon_roles_and_closure.md",
+        "docs/archive/theory_sources/57_exact_hinge_octagon_support.md"
+      ],
+      "former_note_numbers": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57]
+    },
+    {
+      "id": "exact-ahi-source-and-first-carriers",
+      "canonical_documents": [
+        "docs/theory/sturmian/ahi_source_and_carriers.md",
+        "docs/theory/case_studies/ahi_realization.md"
+      ],
+      "source_documents": [
+        "docs/archive/theory_sources/58_exact_sturmian_source_atlas.md",
+        "docs/archive/theory_sources/59_exact_contact_kernel_and_pose_nogos.md",
+        "docs/archive/theory_sources/60_compiler_determinism_and_undecidability.md",
+        "docs/archive/theory_sources/61_twelve_state_corridor_compiler.md",
+        "docs/archive/theory_sources/62_binary_l_anchor_exact_cover.md",
+        "docs/archive/theory_sources/63_turtle_center_spoke_no_go.md",
+        "docs/archive/theory_sources/64_exact_common_support_kernel.md",
+        "docs/archive/theory_sources/65_source_native_interchangeable_kernels.md",
+        "docs/archive/theory_sources/66_seventeen_rhombus_sturmian_carrier.md"
+      ],
+      "former_note_numbers": [58, 59, 60, 61, 62, 63, 64, 65, 66]
+    },
+    {
+      "id": "realization-boundary-and-carrier-local-reduction",
+      "canonical_documents": [
+        "docs/theory/realization/general_theory.md",
+        "docs/theory/sturmian/ahi_source_and_carriers.md",
+        "docs/theory/research/sturmian_realization.md"
+      ],
+      "source_documents": [
+        "docs/archive/theory_sources/67_marked_sturmian_realization_boundary.md",
+        "docs/archive/theory_sources/68_separable_color_erasure_classification.md",
+        "docs/archive/theory_sources/69_physical_contact_periodicity_obstruction.md",
+        "docs/archive/theory_sources/70_minimal_sturmian_component_decomposition.md",
+        "docs/archive/theory_sources/71_minimum_carrier_local_sturmian_states.md",
+        "docs/archive/theory_sources/72_sub30_carrier_local_no_go.md",
+        "docs/archive/theory_sources/73_area30_carrier_normal_form.md",
+        "docs/archive/theory_sources/74_all_area_trade_reduction.md",
+        "docs/archive/theory_sources/75_directional_corridor_charge.md",
+        "docs/archive/theory_sources/76_coupled_vertex_and_boundary_active_reduction.md",
+        "docs/archive/theory_sources/77_ordinary_vertex_parity_no_go.md",
+        "docs/archive/theory_sources/78_torsion_free_no_go_and_exact_parity_zipper.md"
+      ],
+      "former_note_numbers": [67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78]
+    },
+    {
+      "id": "zipper-geometry-and-general-automaton-compiler",
+      "canonical_documents": [
+        "docs/theory/realization/general_theory.md",
+        "docs/theory/case_studies/geometric_carriers.md"
+      ],
+      "source_documents": [
+        "docs/archive/theory_sources/79_geometric_terminal_erasure.md",
+        "docs/archive/theory_sources/80_bent_parity_zipper_packing_cone.md",
+        "docs/archive/theory_sources/81_outward_zipper_and_port_curvature.md",
+        "docs/archive/theory_sources/82_finite_automaton_contact_compiler.md"
+      ],
+      "former_note_numbers": [79, 80, 81, 82]
+    },
+    {
+      "id": "ahi-branch-synthesis",
+      "canonical_documents": [
+        "docs/theory/case_studies/ahi_realization.md"
+      ],
+      "source_documents": [
+        "docs/theory/case_studies/ahi_realization.md"
+      ],
+      "former_note_numbers": [83]
+    }
+  ]
+}

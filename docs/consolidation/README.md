@@ -19,6 +19,10 @@ The files have distinct roles:
 - `MIGRATIONS.md` records layout changes independently of the historical
   research decisions and notebooks.
 
+The mathematical coverage map is separate:
+`docs/theory/reference/SOURCE_MAP.json` proves that every former numbered
+theory note has a canonical destination and a preserved proof source.
+
 Regenerate the two inventories with:
 
 ```bash

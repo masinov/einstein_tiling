@@ -592,7 +592,8 @@ def finalist_thin_gf2_support(index: int) -> list[int]:
 
     Cell indices use TorusInstance's order ``(u=0, v, sector)``. The formula
     has odd support and annihilates both legal thin-cylinder placement types
-    for every ``index >= 4``; see T2.C1 in ``docs/theory/04_w2_cokernel.md``.
+    for every ``index >= 4``; see T2.C1 in
+    ``docs/theory/controls/turtle/cokernel.md``.
     """
     if index < 4:
         raise ValueError("thin-family formula requires index >= 4")

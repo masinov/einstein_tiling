@@ -16,7 +16,7 @@ and argued.
 ## Required mathematical model
 
 1. Encode tile anchors and orientations as the finite-range SFT described in
-   `01_periodic_completion.md`.
+   `../../foundations/periodic_completion.md`.
 2. Write \(v=g p\) with \(p\) primitive, and choose a transverse basis vector
    \(u\). A cylinder column contains the \(g\) torsion positions parallel to
    \(p\); implementations must preserve this torsion when \(g>1\).
@@ -138,7 +138,7 @@ Only after controls pass:
 - `tests/test_theory_transfer.py` — controls and certificate verification.
 - `tools/transfer.rs` — optional compiled port after the reference gates.
 - `docs/notebook/assets/theory-w1-*.json` — versioned run artifacts.
-- `docs/theory/PROOF_LEDGER.md` — status transitions only after gates pass.
+- `docs/theory/reference/proof_ledger.md` — row-level status provenance.
 
 ## Phase-0 implementation status (2026-07-17)
 

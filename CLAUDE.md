@@ -1,8 +1,8 @@
 # Einstein tiling research — repository contract
 
 The current research goal is stated in
-`docs/theory/STURMIAN_REALIZATION_BOUNDARY.md`. Reusable mathematics is
-summarized in `docs/theory/GENERAL_REALIZATION_THEOREMS.md`. The original
+`docs/theory/research/sturmian_realization.md`. Reusable mathematics is
+integrated in `docs/theory/realization/general_theory.md`. The original
 search specification and chronological status files are historical sources,
 not current navigation authorities.
 
@@ -12,8 +12,8 @@ not current navigation authorities.
 
 Before proposing research work, read:
 
-1. `docs/theory/STURMIAN_REALIZATION_BOUNDARY.md`;
-2. `docs/theory/GENERAL_REALIZATION_THEOREMS.md`;
+1. `docs/theory/research/sturmian_realization.md`;
+2. `docs/theory/realization/general_theory.md`;
 3. `docs/literature/RESEARCH_RETURN_AUDIT.md`; and
 4. `docs/literature/NOVELTY_PROTOCOL.md`.
 

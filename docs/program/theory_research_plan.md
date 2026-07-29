@@ -416,7 +416,7 @@ Cheap, exact, and every one of them prunes A1's enumeration immediately.
 > constant torus target is zero, so each such projected linear system is
 > homogeneous and has the zero solution. The trivial character reduces to
 > Layer A. Character decomposition may still accelerate Layer C, but is not an
-> obstruction by itself. See `docs/theory/03_w2_invariants.md`.
+> obstruction by itself. See `docs/theory/controls/turtle/invariants.md`.
 
 **Original v0.2 proposal, retained for audit provenance (not active):** Cells
 of the quotient form a free Λ/L-set of rank 6. For each character
@@ -440,7 +440,8 @@ the finalist is a concrete, bounded first experiment.
 > area-admissible finalist HNFs through index 60. A uniform witness proves the
 > thin family HNF (1,0,k) impossible for all k≥4 (proof draft T2.C1). This is
 > genuine Layer C information but not full SNF; odd/prime-power torsion and
-> integer lattice membership remain open. See `docs/theory/04_w2_cokernel.md`.
+> integer lattice membership remain open. See
+> `docs/theory/controls/turtle/cokernel.md`.
 
 > **Phase-2 result (session 24, D-0032).** Pinned FLINT/SymPy exact backends
 > now implement the full integer membership test. Canonical row HNF classifies

@@ -1,14 +1,15 @@
 # General realization theorems for planar tiling compilers
 
 **Status:** canonical internal synthesis, 2026-07-29
-**Scope:** source-independent statements extracted from the chronological
-theory notes 01, 60, 67--69, 77--78 and 82
+**Scope:** source-independent statements extracted across the chronological
+theory corpus; exact note coverage is recorded in
+`../reference/SOURCE_MAP.json`
 **Novelty:** no general method-novelty claim is made
 
 This document consolidates the reusable mathematics produced by the project.
 It deliberately excludes the geometry and address tables of the particular
 Akiyama--Hamada--Ito (AHI) source.  Those appear only as applications in
-`STURMIAN_REALIZATION_BOUNDARY.md`.
+`../research/sturmian_realization.md`.
 
 The central distinction is between two problems:
 
@@ -154,6 +155,50 @@ Consequently weak and strong translational aperiodicity coincide for fixed
 grid-aligned finite polykites.  The upgrade from arbitrary Euclidean periodic
 polykite tilings to aligned periodic tilings is external, supplied by Appendix
 A of Smith--Myers--Kaplan--Goodman-Strauss.
+
+### Theorem 2.4 — common-support colored compiler (S0C)
+
+Let a finite macrotiling system consist of connected patches of one congruent
+periodic cell.  Assume every exposed cell edge has one of finitely many
+matching roles and every internal cell address is unique within its macro.
+Then the macrotiling system is mutually locally derivable with a finite
+colored tileset whose members all have the one cell support.
+
+#### Proof
+
+Color each cell by its macro type, internal address and exposed-edge roles.
+Adjacent address colors enforce the internal macro adjacency graph; exposed
+roles enforce the macro matching rule.  Connectedness makes every legal
+colored component one complete macro, and unique addresses make grouping
+local and unique.  Forgetting the internal subdivisions recovers the macro
+tiling, while subdividing a macro gives the colored tiling. ∎
+
+The theorem compiles finite macro structure into colors, not into unmarked
+shape.
+
+### Theorem 2.5 — lossless incidence recoding and compact inverse (K1C/K1R)
+
+Every finite edge-and-vertex SFT has a finite contact-incidence presentation:
+directed half-contacts name both endpoint states and their directed edge, all
+half-contacts incident to one cell agree on its center state, and cyclic
+corner words enforce the old vertex rule.  Encoding and decoding are inverse
+radius-one maps on the complete rule space.
+
+For any finite quotient of this presentation, a finite-radius inverse exists
+on the intended image exactly when the quotient map is injective on
+whole-plane configurations.
+
+#### Proof
+
+The incidence presentation explicitly retains every datum needed by the old
+rule, so its radius-one inverse is immediate.  For the quotient statement,
+injectivity gives a continuous bijection from a compact shift space to its
+Hausdorff image, hence a homeomorphism.  Continuity of the inverse at the
+finitely many center cylinders gives one uniform finite decoding radius.
+The converse is immediate. ∎
+
+Neither image injectivity nor lossless recoding supplies Contract 2.2 on
+additional configurations admitted by a coarser quotient.
 
 ## 3. Determinism and undecidability
 
@@ -457,7 +502,123 @@ word order, alignment, participant count, delimiter roles and reflected
 semantics are hypotheses.  Nothing here proves that one unmarked polygon
 forces them.
 
-## 7. Consolidated expressivity boundary
+## 7. Finite weighted subdivision languages
+
+Let a finite directed graph have an initial set `I`, terminal set `F`, exact
+positive vertex weights `w`, and target host length `h`.
+
+### Theorem 7.1 — finite weighted-path criterion (K13W)
+
+Put `delta=min w(v)`.  The complete accepted host language is the finite set
+of `I`--`F` paths with at most `floor(h/delta)` vertices and total weight
+`h`.  Therefore equality with a proposed finite word set is decidable by
+exact finite path enumeration, even when the transition graph has cycles.
+
+#### Proof
+
+An accepted path of `k` vertices has weight at least `k delta`, so
+`k<=floor(h/delta)`.  A finite graph has finitely many paths at bounded
+length.  Exact endpoint, transition and weight checks are necessary and
+sufficient. ∎
+
+The transition graph must be the closure forced by the geometry, not the
+adjacency list one hoped to realize.  The theorem detects repetition and
+alternative subdivision words before coordinate synthesis.
+
+## 8. Topology of polygonal contact interfaces
+
+These results concern arbitrary compact polygonal disks and do not depend on
+a source alphabet.
+
+### Theorem 8.1 — two-participant interfaces cannot terminate alone (N23)
+
+Let two polygonal disk occurrences have disjoint interiors, share a
+nondegenerate boundary segment ending at `q`, and together cover a
+neighborhood of `q`.  If no third occurrence contains `q`, their common
+boundary continues through `q` along a second nondegenerate segment.
+
+#### Proof
+
+In a sufficiently small circle around `q`, the two open interiors are the
+only regions.  Transitions between two regions on a circle occur in pairs.
+The incoming shared segment gives one separator branch; hence another branch
+must leave `q`.  Polygonality makes it a straight segment of positive
+length. ∎
+
+### Corollary 8.2 — positive point participants propagate (N24)
+
+A maximal two-participant polygonal contact arc terminates at a third
+participant.  It cannot close as a common Jordan boundary component of two
+compact disks with disjoint interiors, because one complementary side is
+unbounded.  Thus a positive sector introduced at one contact cannot be
+treated as a point decoration; its adjacent boundary interfaces require a
+bounded completion or propagate through the tiling.
+
+### Theorem 8.3 — copy-exchanging involutions and reflection parity
+
+Let a polygonal disk have trivial Euclidean symmetry.
+
+1. An isometry exchanging two occurrences has order two and is therefore a
+   half-turn or a reflection.
+2. Reflection acts freely on the occurrences of every invariant finite local
+   star.  Hence the number of participants is even.
+3. A reflection-invariant star with two occurrence orbits has sector order
+   `alpha,beta,beta,alpha` and fills a neighborhood exactly when
+   `alpha+beta=pi`.
+
+#### Proof
+
+For (1), exchanging twice stabilizes the support; trivial symmetry makes the
+square of the isometry the identity.  For (2), a fixed occurrence would give
+the support a reflection symmetry.  The orbit count follows.  The mirror has
+two opposite fixed rays; freeness forces both to be sector boundaries, giving
+the stated order, and the angle equation follows by summing sectors. ∎
+
+### Theorem 8.4 — clean off-axis reflection docking is impossible (N48)
+
+Two symmetry-free polygon occurrences exchanged by reflection cannot have
+disjoint interiors and one clean invariant two-copy interface arc outside
+the mirror axis.
+
+#### Proof
+
+Reflection reverses the interface interval and has one fixed point.  A fixed
+irredundant vertex would require angle `pi`, so the point lies inside a
+central side perpendicular to the mirror.  Reflection preserves each local
+half-plane of that side.  The two reflected interiors therefore occupy the
+same half-plane and overlap. ∎
+
+The theorem deliberately excludes an axis-contained side, T-junctions and
+third participants.
+
+## 9. Boundary alphabets versus simultaneous realization
+
+### Theorem 9.1 — finite convex side-germ embedding (K71B)
+
+Any finite collection of triples
+
+```text
+(positive side length, left convex angle, right convex angle)
+```
+
+can occur as pairwise nonadjacent, intrinsically distinguishable directed
+boundary germs of one connected symmetry-free simple polygon.  Algebraic
+input data can be realized over the same ordered algebraic field.
+
+#### Proof
+
+Make every prescribed side the outer edge of a shallow trapezoidal tab with
+the required flank directions.  Put the finitely many tabs in disjoint boxes
+along a large carrier and join their bases with short polygonal chains.
+Choose distinct spacings and one unique asymmetric marker.  Shallow disjoint
+tabs ensure simplicity; the marker destroys every nontrivial symmetry. ∎
+
+The theorem isolates an important boundary: storing finitely many local
+roles on one polygon is easy.  Proving simultaneous congruent packing,
+complete contact termination and the absence of unintended tilings is the
+hard part.
+
+## 10. Consolidated expressivity boundary
 
 The source-independent local hierarchy is now:
 
@@ -475,7 +636,7 @@ question is whether one connected unmarked support can force the required
 roles and topology, exclude all alternative contacts and admit a total
 whole-plane decoder.
 
-## 8. Claim and literature boundary
+## 11. Claim and literature boundary
 
 All proofs above are internal proof drafts unless explicitly marked external
 or conditional.  Their general ideas lie in standard symbolic dynamics,
@@ -493,11 +654,11 @@ The audited literature does not supply the conjunction required for one
 connected unmarked Euclidean polygon in unrestricted gapless tilings.  That
 is a dated absence report, not a novelty or impossibility theorem.
 
-## 9. Provenance
+## 12. Provenance
 
 The row-level IDs, qualifications and dependencies remain in
-`PROOF_LEDGER.md`.  The extracted source notes remain available as proof
-history.  Controlling reviews are:
+`../reference/proof_ledger.md`.  The extracted source notes remain available
+under `docs/archive/theory_sources/`.  Controlling reviews are:
 
 - `docs/literature/reviews/MARKED_STURMIAN_UNDECIDABILITY.md`;
 - `docs/literature/reviews/FINITE_AUTOMATON_CONTACT_COMPILER.md`;

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "snapshot_date": "2026-07-29",
-  "purpose": "Goal-level registry of durable results and open obligations. Row-level proof details remain authoritative in docs/theory/PROOF_LEDGER.md.",
+  "purpose": "Goal-level registry of durable results and open obligations. Row-level proof details remain authoritative in docs/theory/reference/proof_ledger.md.",
   "status_vocabulary": [
     "open",
     "conditional",
@@ -41,8 +41,8 @@
       "ledger_ids": [],
       "dependencies": [],
       "source_documents": [
-        "docs/theory/STURMIAN_REALIZATION_BOUNDARY.md",
-        "docs/theory/83_ahi_branch_closure.md",
+        "docs/theory/research/sturmian_realization.md",
+        "docs/theory/case_studies/ahi_realization.md",
         "docs/literature/reviews/STURMIAN_MONOTILE_ENCODING.md"
       ],
       "artifact_paths": [],
@@ -60,10 +60,10 @@
       "ledger_ids": ["ST-M1.Q0", "ST-M1.K1T"],
       "dependencies": [],
       "source_documents": [
-        "docs/theory/GENERAL_REALIZATION_THEOREMS.md",
-        "docs/theory/09_stm1_symbolic_quotient.md",
-        "docs/theory/11_stm1_contact_kernel.md",
-        "docs/theory/83_ahi_branch_closure.md"
+        "docs/theory/realization/general_theory.md",
+        "docs/archive/theory_sources/09_stm1_symbolic_quotient.md",
+        "docs/archive/theory_sources/11_stm1_contact_kernel.md",
+        "docs/theory/case_studies/ahi_realization.md"
       ],
       "artifact_paths": [],
       "literature_source_ids": []
@@ -80,9 +80,9 @@
       "ledger_ids": ["ST-M1.N55"],
       "dependencies": [],
       "source_documents": [
-        "docs/theory/GENERAL_REALIZATION_THEOREMS.md",
-        "docs/theory/60_compiler_determinism_and_undecidability.md",
-        "docs/theory/83_ahi_branch_closure.md"
+        "docs/theory/realization/general_theory.md",
+        "docs/archive/theory_sources/60_compiler_determinism_and_undecidability.md",
+        "docs/theory/case_studies/ahi_realization.md"
       ],
       "artifact_paths": [],
       "literature_source_ids": []
@@ -100,11 +100,11 @@
       "ledger_ids": ["ST-M1.U2", "ST-M1.D3"],
       "dependencies": ["GEN.TOTAL_DECODER_PERIOD_DESCENT"],
       "source_documents": [
-        "docs/theory/GENERAL_REALIZATION_THEOREMS.md",
-        "docs/theory/STURMIAN_REALIZATION_BOUNDARY.md",
-        "docs/theory/67_marked_sturmian_realization_boundary.md",
+        "docs/theory/realization/general_theory.md",
+        "docs/theory/research/sturmian_realization.md",
+        "docs/archive/theory_sources/67_marked_sturmian_realization_boundary.md",
         "docs/literature/reviews/MARKED_STURMIAN_UNDECIDABILITY.md",
-        "docs/theory/83_ahi_branch_closure.md"
+        "docs/theory/case_studies/ahi_realization.md"
       ],
       "artifact_paths": ["docs/literature/anchors/stade-stick-rules.json"],
       "literature_source_ids": ["stade-two-tiling-2025"]
@@ -121,9 +121,9 @@
       "ledger_ids": ["ST-M1.K61R"],
       "dependencies": [],
       "source_documents": [
-        "docs/theory/GENERAL_REALIZATION_THEOREMS.md",
-        "docs/theory/68_separable_color_erasure_classification.md",
-        "docs/theory/83_ahi_branch_closure.md"
+        "docs/theory/realization/general_theory.md",
+        "docs/archive/theory_sources/68_separable_color_erasure_classification.md",
+        "docs/theory/case_studies/ahi_realization.md"
       ],
       "artifact_paths": [],
       "literature_source_ids": []
@@ -140,10 +140,10 @@
       "ledger_ids": ["ST-M1.K69A", "ST-M1.K70A", "ST-M1.N70T"],
       "dependencies": [],
       "source_documents": [
-        "docs/theory/GENERAL_REALIZATION_THEOREMS.md",
-        "docs/theory/77_ordinary_vertex_parity_no_go.md",
-        "docs/theory/78_torsion_free_no_go_and_exact_parity_zipper.md",
-        "docs/theory/83_ahi_branch_closure.md"
+        "docs/theory/realization/general_theory.md",
+        "docs/archive/theory_sources/77_ordinary_vertex_parity_no_go.md",
+        "docs/archive/theory_sources/78_torsion_free_no_go_and_exact_parity_zipper.md",
+        "docs/theory/case_studies/ahi_realization.md"
       ],
       "artifact_paths": [],
       "literature_source_ids": []
@@ -160,10 +160,10 @@
       "ledger_ids": ["GEN.K74A", "GEN.K74R", "GEN.K74G"],
       "dependencies": [],
       "source_documents": [
-        "docs/theory/GENERAL_REALIZATION_THEOREMS.md",
-        "docs/theory/82_finite_automaton_contact_compiler.md",
+        "docs/theory/realization/general_theory.md",
+        "docs/archive/theory_sources/82_finite_automaton_contact_compiler.md",
         "docs/literature/reviews/FINITE_AUTOMATON_CONTACT_COMPILER.md",
-        "docs/theory/83_ahi_branch_closure.md"
+        "docs/theory/case_studies/ahi_realization.md"
       ],
       "artifact_paths": [],
       "literature_source_ids": []
@@ -202,10 +202,10 @@
       "ledger_ids": ["T1.2-36", "T2.D2-60"],
       "dependencies": [],
       "source_documents": [
-        "docs/theory/02_transfer_certificates.md",
-        "docs/theory/03_w2_invariants.md",
-        "docs/theory/04_w2_cokernel.md",
-        "docs/theory/05_w2_binary_holonomy.md",
+        "docs/theory/controls/turtle/transfer_certificates.md",
+        "docs/theory/controls/turtle/invariants.md",
+        "docs/theory/controls/turtle/cokernel.md",
+        "docs/theory/controls/turtle/holonomy.md",
         "docs/literature/reviews/W2_ABELIAN_INVARIANTS.md"
       ],
       "artifact_paths": [
@@ -226,7 +226,7 @@
       "ledger_ids": ["T3.0", "T3.0P", "T3.0M"],
       "dependencies": [],
       "source_documents": [
-        "docs/theory/06_w3_substitution_certificates.md",
+        "docs/theory/controls/spectre/reconstruction.md",
         "docs/literature/reviews/W3_CERTIFICATE_METHOD.md"
       ],
       "artifact_paths": [
@@ -247,12 +247,13 @@
       "ledger_ids": ["ST-M1.K50C", "ST-M1.K52Q", "ST-M1.K53H", "ST-M1.K53B"],
       "dependencies": [],
       "source_documents": [
-        "docs/theory/STURMIAN_REALIZATION_BOUNDARY.md",
-        "docs/theory/58_exact_sturmian_source_atlas.md",
-        "docs/theory/59_exact_contact_kernel_and_pose_nogos.md",
-        "docs/theory/61_twelve_state_corridor_compiler.md",
-        "docs/theory/62_binary_l_anchor_exact_cover.md",
-        "docs/theory/83_ahi_branch_closure.md"
+        "docs/theory/research/sturmian_realization.md",
+        "docs/theory/sturmian/ahi_source_and_carriers.md",
+        "docs/archive/theory_sources/58_exact_sturmian_source_atlas.md",
+        "docs/archive/theory_sources/59_exact_contact_kernel_and_pose_nogos.md",
+        "docs/archive/theory_sources/61_twelve_state_corridor_compiler.md",
+        "docs/archive/theory_sources/62_binary_l_anchor_exact_cover.md",
+        "docs/theory/case_studies/ahi_realization.md"
       ],
       "artifact_paths": [
         "data/sturmian-source/ahi-section10-supports.json",
@@ -274,12 +275,13 @@
       "ledger_ids": ["ST-M1.N60P", "ST-M1.N64S", "ST-M1.N65S", "ST-M1.N68H"],
       "dependencies": ["BENCH.AHI_EXACT_SOURCE"],
       "source_documents": [
-        "docs/theory/STURMIAN_REALIZATION_BOUNDARY.md",
-        "docs/theory/66_seventeen_rhombus_sturmian_carrier.md",
-        "docs/theory/72_sub30_carrier_local_no_go.md",
-        "docs/theory/73_area30_carrier_normal_form.md",
-        "docs/theory/76_coupled_vertex_and_boundary_active_reduction.md",
-        "docs/theory/83_ahi_branch_closure.md"
+        "docs/theory/research/sturmian_realization.md",
+        "docs/theory/sturmian/ahi_source_and_carriers.md",
+        "docs/archive/theory_sources/66_seventeen_rhombus_sturmian_carrier.md",
+        "docs/archive/theory_sources/72_sub30_carrier_local_no_go.md",
+        "docs/archive/theory_sources/73_area30_carrier_normal_form.md",
+        "docs/archive/theory_sources/76_coupled_vertex_and_boundary_active_reduction.md",
+        "docs/theory/case_studies/ahi_realization.md"
       ],
       "artifact_paths": [
         "data/sturmian-source/ahi-p17-all-m-obstruction.json",
@@ -301,12 +303,12 @@
       "ledger_ids": ["ST-M1.N61S", "ST-M1.K62P", "ST-M1.N62S", "ST-M1.K69A", "ST-M1.K70A"],
       "dependencies": ["GEN.TWO_BODY_BICLIQUE_CLASSIFICATION", "GEN.ADDITIVE_PARITY_OBSTRUCTION"],
       "source_documents": [
-        "docs/theory/GENERAL_REALIZATION_THEOREMS.md",
-        "docs/theory/STURMIAN_REALIZATION_BOUNDARY.md",
-        "docs/theory/68_separable_color_erasure_classification.md",
-        "docs/theory/69_physical_contact_periodicity_obstruction.md",
-        "docs/theory/77_ordinary_vertex_parity_no_go.md",
-        "docs/theory/78_torsion_free_no_go_and_exact_parity_zipper.md"
+        "docs/theory/realization/general_theory.md",
+        "docs/theory/research/sturmian_realization.md",
+        "docs/archive/theory_sources/68_separable_color_erasure_classification.md",
+        "docs/archive/theory_sources/69_physical_contact_periodicity_obstruction.md",
+        "docs/archive/theory_sources/77_ordinary_vertex_parity_no_go.md",
+        "docs/archive/theory_sources/78_torsion_free_no_go_and_exact_parity_zipper.md"
       ],
       "artifact_paths": [
         "data/sturmian-source/stade-physical-contact-quotient.json",
@@ -326,12 +328,13 @@
       "ledger_ids": ["ST-M1.K70Z", "ST-M1.K71T", "ST-M1.K72F", "ST-M1.K73F", "ST-M1.K73R"],
       "dependencies": ["GEN.TJUNCTION_FINITE_RELATION_COMPILER"],
       "source_documents": [
-        "docs/theory/STURMIAN_REALIZATION_BOUNDARY.md",
-        "docs/theory/78_torsion_free_no_go_and_exact_parity_zipper.md",
-        "docs/theory/79_geometric_terminal_erasure.md",
-        "docs/theory/80_bent_parity_zipper_packing_cone.md",
-        "docs/theory/81_outward_zipper_and_port_curvature.md",
-        "docs/theory/83_ahi_branch_closure.md"
+        "docs/theory/research/sturmian_realization.md",
+        "docs/theory/case_studies/geometric_carriers.md",
+        "docs/archive/theory_sources/78_torsion_free_no_go_and_exact_parity_zipper.md",
+        "docs/archive/theory_sources/79_geometric_terminal_erasure.md",
+        "docs/archive/theory_sources/80_bent_parity_zipper_packing_cone.md",
+        "docs/archive/theory_sources/81_outward_zipper_and_port_curvature.md",
+        "docs/theory/case_studies/ahi_realization.md"
       ],
       "artifact_paths": [],
       "literature_source_ids": []

@@ -42,7 +42,9 @@ def test_retired_checkpoint_record_remains_intact():
 
 def test_stm1_source_correction_is_fail_closed():
     errata = (ROOT / "docs" / "program" / "ERRATA.md").read_text()
-    ledger = (ROOT / "docs" / "theory" / "PROOF_LEDGER.md").read_text()
+    ledger = (
+        ROOT / "docs" / "theory" / "reference" / "proof_ledger.md"
+    ).read_text()
     assert "ERR-006" in errata
     assert "ERR-007" in errata
     assert "ERR-008" in errata

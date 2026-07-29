@@ -3,6 +3,12 @@
 **Snapshot:** 2026-07-29
 **Scope:** non-destructive classification before any move, rewrite or deletion
 
+> Historical snapshot. This assessment records the repository before the
+> domain migration. The current theory layout is documented in
+> [`../theory/README.md`](../theory/README.md), while the exact old-to-new
+> provenance mapping is maintained in
+> [`../theory/reference/SOURCE_MAP.json`](../theory/reference/SOURCE_MAP.json).
+
 The generated catalogs currently cover 993 repository files, including all
 files tracked at the start of the consolidation branch and the new canonical,
 navigation and control-layer files.  No file remains in the catch-all
@@ -69,9 +75,9 @@ because its compact result summary is tracked.
 
 The semantic part of the first tranche is complete:
 
-- `GENERAL_REALIZATION_THEOREMS.md` extracts the eight reusable proof sources;
-- `STURMIAN_REALIZATION_BOUNDARY.md` separates the open problem from the AHI
-  benchmark; and
+- `theory/realization/general_theory.md` extracts the reusable proof sources;
+- `theory/research/sturmian_realization.md` separates the open problem from
+  the AHI benchmark; and
 - the root and theory READMEs now enter through those documents.
 
 The first physical separation is also complete:

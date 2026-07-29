@@ -1,5 +1,11 @@
 # Proof and certificate ledger
 
+> This is the exhaustive claim-level provenance register. Filenames in old
+> rows are preserved as historical citations; resolve them through
+> [`SOURCE_MAP.json`](SOURCE_MAP.json), which maps every former numbered theory
+> note to its canonical synthesis and preserved proof source. Notes 07--82 are
+> byte-identical in the chronological archive.
+
 This is the claim-status authority for the theory track. Evidence does not
 become a theorem by accumulation; each row closes only through its stated
 proof or certificate route.

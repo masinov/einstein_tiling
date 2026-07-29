@@ -234,7 +234,7 @@ the branch without computation.
 ## Design follow-up (session 63)
 
 The requested on-paper design is now recorded in
-`docs/theory/07_stm1_sturmian_monotile_design.md`. It selects minimal ST-M1
+`docs/archive/theory_sources/07_stm1_sturmian_monotile_design.md`. It selects minimal ST-M1
 before the surjective positive-entropy strengthening and makes the full
 Euclidean motion convention explicit. Reflected and mixed-handed placements
 cannot be omitted: the proposed carrier would need a geometric chirality
@@ -264,7 +264,7 @@ calculations; the later one-support suggestion occurs in the Turtle
 subsection. The paper does not give a transported alphabet or an all-tilings
 equivalence with the Section 10.1 three-prototile system.
 
-`docs/theory/08_stm1_equal_support_compiler.md` proves the conditional part:
+`docs/archive/theory_sources/08_stm1_equal_support_compiler.md` proves the conditional part:
 connected macrotiles over one congruent cell can be compiled into finitely
 colored copies of that cell with unique local regrouping. The remaining
 source-specific statement E-infinity must construct the common cell and prove
@@ -290,7 +290,7 @@ every slope, so rational periodic configurations return. Independent finite
 corridor rails also fail by the elementary sofic-product obstruction. These
 are conditional no-go statements and survive ERR-006.
 
-The safe criterion in `docs/theory/09_stm1_symbolic_quotient.md` requires a
+The safe criterion in `docs/archive/theory_sources/09_stm1_symbolic_quotient.md` requires a
 total irrational-corridor decoder on the quotient's **entire finite local
 closure**. At the end of session 66 no valid equal-support S0 alphabet was
 established, so there was no address table to minimize. Boundary geometry

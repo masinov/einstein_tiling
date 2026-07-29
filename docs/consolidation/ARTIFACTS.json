@@ -36,7 +36,7 @@
       "kind": "source-reconstruction-certificate",
       "disposition": "retained-evidence",
       "category": "ahi-certificate",
-      "reference_count": 17
+      "reference_count": 19
     },
     {
       "path": "data/sturmian-source/ahi-common-support-kernel.json",
@@ -56,7 +56,7 @@
       "kind": "source-reconstruction-certificate",
       "disposition": "retained-evidence",
       "category": "ahi-certificate",
-      "reference_count": 14
+      "reference_count": 16
     },
     {
       "path": "data/sturmian-source/ahi-fiftyone-envelope-periodicity.json",
@@ -96,7 +96,7 @@
       "kind": "source-reconstruction-certificate",
       "disposition": "retained-evidence",
       "category": "ahi-certificate",
-      "reference_count": 13
+      "reference_count": 15
     },
     {
       "path": "data/sturmian-source/ahi-p17-all-m-obstruction.json",
@@ -106,7 +106,7 @@
       "kind": "source-reconstruction-certificate",
       "disposition": "retained-evidence",
       "category": "ahi-certificate",
-      "reference_count": 19
+      "reference_count": 21
     },
     {
       "path": "data/sturmian-source/ahi-periodic-scaffold.json",
@@ -126,7 +126,7 @@
       "kind": "source-reconstruction-certificate",
       "disposition": "retained-evidence",
       "category": "ahi-certificate",
-      "reference_count": 16
+      "reference_count": 18
     },
     {
       "path": "data/sturmian-source/ahi-section10-supports.json",
@@ -136,7 +136,7 @@
       "kind": "source-reconstruction-certificate",
       "disposition": "retained-evidence",
       "category": "ahi-certificate",
-      "reference_count": 24
+      "reference_count": 26
     },
     {
       "path": "data/sturmian-source/ahi-seventeen-rhombus-compiler.json",
@@ -186,7 +186,7 @@
       "kind": "source-reconstruction-certificate",
       "disposition": "retained-evidence",
       "category": "ahi-certificate",
-      "reference_count": 17
+      "reference_count": 19
     },
     {
       "path": "data/sturmian-source/ahi-unit-apex-compiler.json",

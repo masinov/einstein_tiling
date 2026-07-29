@@ -4,14 +4,33 @@ This log records repository-layout changes separately from the append-only
 research decision and session histories. A migration changes navigation or
 storage responsibility; it does not create a mathematical claim.
 
+## 2026-07-29 — theory and documentation architecture
+
+- Replaced the flat chronological `docs/theory/01...83` surface with
+  dependency-oriented domains: `foundations`, `realization`, `research`,
+  `sturmian`, `case_studies`, `controls`, and `reference`.
+- Preserved notes `07`--`82` byte-for-byte under
+  `docs/archive/theory_sources/`; moved the general, goal, control and AHI
+  synthesis documents into their canonical domains.
+- Added `docs/theory/reference/SOURCE_MAP.json` as an exact source-coverage
+  registry and `result_catalog.md` as the integrated theorem index.
+- Extracted source-independent interface, weighted-language, involution and
+  boundary-germ theorems into the general realization chapter.
+- Integrated the exact AHI source, carrier-local phase diagram and all-area
+  boundary-active reduction into one benchmark chapter.
+- Condensed the retiling, thin-lens, docking, hinge and zipper ladders into a
+  mathematical case study while retaining every original proof and erratum.
+- Marked the old program specifications as historical. Append-only decisions,
+  sessions, experiments, status and errata were not rewritten.
+
 ## 2026-07-29 — canonical theory and repository map
 
 - Added the goal-level claim registry, per-file disposition map and artifact
   inventory.
 - Extracted architecture-independent results into
-  `docs/theory/GENERAL_REALIZATION_THEOREMS.md`.
+  `docs/theory/realization/general_theory.md`.
 - Re-stated the live problem and proof boundary in
-  `docs/theory/STURMIAN_REALIZATION_BOUNDARY.md`.
+  `docs/theory/research/sturmian_realization.md`.
 - Rewrote the root and theory entry points.
 - Preserved the decisions, status and session files unchanged.
 

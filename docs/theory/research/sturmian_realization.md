@@ -25,7 +25,7 @@ such that:
    is defined on every tiling by `P`; and
 3. the output of every tiling is a legal point of `X(S)`.
 
-By Theorem 2.1 of `GENERAL_REALIZATION_THEOREMS.md`, these conditions make `P`
+By Theorem 2.1 of `../realization/general_theory.md`, these conditions make `P`
 an aperiodic monotile.  Injectivity and surjectivity are unnecessary for
 aperiodicity.
 
@@ -60,7 +60,7 @@ rules and Ammann-bar-like data do not become an unmarked monotile by forgetting
 the colors.
 
 More generally, every finite colored local system already has routine Wang,
-atlas and finite-state presentations.  `GENERAL_REALIZATION_THEOREMS.md`
+atlas and finite-state presentations.  `../realization/general_theory.md`
 shows that rooted T-junction chains can express every finite local relation.
 Thus source alphabet size and local rule expressivity are not the bottleneck.
 
@@ -273,5 +273,6 @@ establishes:
 - surjectivity onto the positive-entropy AHI hull; or
 - novelty of the finite-state contact compiler.
 
-The detailed AHI branch provenance remains in `83_ahi_branch_closure.md` and
-the row-level statuses remain in `PROOF_LEDGER.md`.
+The detailed AHI branch synthesis remains in
+`../case_studies/ahi_realization.md`, and row-level statuses remain in
+`../reference/proof_ledger.md`.

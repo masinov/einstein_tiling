@@ -1,68 +1,56 @@
-# Theory
+# Mathematical theory
 
-The reader-facing theory now has two canonical entry points:
+This directory is organized by mathematical dependency, not by the order in
+which results were discovered.  It is the reader-facing theory layer of the
+repository.
 
-1. [General realization theorems](GENERAL_REALIZATION_THEOREMS.md) collects
-   the architecture-independent results: period descent, deterministic
-   periodicity, the marked undecidability boundary, two-body erasure,
-   additive parity obstructions and finite-state T-junction compilation.
-2. [The Sturmian realization boundary](STURMIAN_REALIZATION_BOUNDARY.md)
-   states the actual open problem, the exact AHI benchmark, the known
-   marked/unmarked boundary, and the proof contract for construction,
-   impossibility or undecidability.
+## Reading order
 
-For provenance rather than first reading:
+1. [Sturmian realization problem](research/sturmian_realization.md) states the
+   open construction, nonexistence and undecidability targets and the exact
+   all-tilings proof contract.
+2. [Periodic completion](foundations/periodic_completion.md) gives the basic
+   finite-type and period-completion theorem.
+3. [General realization theory](realization/general_theory.md) integrates the
+   source-independent results on total local factors, symbolic quotients,
+   undecidability, two-body erasure, additive obstructions, contact topology
+   and finite-state T-junction compilation.
+4. [AHI source and carrier theory](sturmian/ahi_source_and_carriers.md) records
+   the exact Section 10.1 benchmark and the complete carrier-local reduction.
+5. [AHI realization case study](case_studies/ahi_realization.md) explains what
+   that branch establishes, what it refutes, and what remains open.
+6. [Geometric carrier case studies](case_studies/geometric_carriers.md)
+   condenses the retiling, lens, docking, hinge and parity-zipper work into
+   reusable lemmas and scoped family results.
 
-- [AHI branch closure](83_ahi_branch_closure.md) classifies the source-specific
-  work and explains why the carrier/zipper ladder is frozen.
-- [Proof ledger](PROOF_LEDGER.md) retains row-level IDs, scopes, statuses,
-  dependencies and evidence.
-- Notes `01`--`82` are chronological proof sources, controls and worked case
-  studies. They are not eighty-two independent active research directions.
+The [control theory](controls/README.md) retains exact Turtle periodicity and
+Spectre hierarchy reconstructions.  They validate methods against published
+tiles; they are not new einstein proofs.
 
-## Current mathematical boundary
+## Status and provenance
 
-The project has not found a new monotile and has not proved general
-nonexistence or undecidability for one connected unmarked polygon.
+- [Result catalog](reference/result_catalog.md) is the compact status index.
+- [Proof ledger](reference/proof_ledger.md) retains every historical result
+  identifier, exact scope, dependency and evidence path.
+- [Source map](reference/SOURCE_MAP.json) maps every former numbered note to a
+  canonical synthesis and to its preserved proof source. Notes 07--82 are
+  byte-identical in the chronological archive; moved canonical sources retain
+  their mathematics and may contain repaired navigation links.
+- [Chronological theory sources](../archive/theory_sources/README.md) contain
+  the original derivations.  They are proof provenance, not eighty-two active
+  research directions.
 
-What is established at proof-draft or machine-verified level is:
+## Evidence vocabulary
 
-- a total local factor to an aperiodic target is a sufficient aperiodicity
-  mechanism;
-- finite root-deterministic carriers are necessarily periodic;
-- unrestricted symbolic and marked connected-polygon compiler families are
-  undecidable, the latter conditionally on Stade's preprint;
-- independent two-participant boundary erasure realizes exactly biclique
-  compatibility components;
-- ordinary and torsion-free additive participant tests cannot realize ternary
-  parity; and
-- rooted hidden-state T-junctions realize every finite local relation.
+- **Theorem / proof draft:** a complete internal argument at its stated scope.
+- **Machine-verified finite result:** a finite claim with a preserved artifact
+  and independent cold verifier.
+- **External theorem:** authority rests on a cited primary source.
+- **Conditional theorem:** a logically complete implication with an explicit
+  unresolved hypothesis or external preprint dependency.
+- **Control / benchmark:** exact work on a known system.
+- **Open obligation:** neither proved nor refuted.
 
-Therefore local finite-state expressivity is not the remaining problem. The
-open step is forcing a complete role/contact/grouping language with one
-unmarked support and proving a total decoder on every unrestricted tiling.
-
-## Evidence levels
-
-- **Canonical synthesis:** the two documents above.
-- **Proof source:** a complete internal argument with exact hypotheses, still
-  subject to external literature and adversarial review.
-- **Machine-verified finite claim:** a checked proposition with a preserved
-  artifact and cold verifier.
-- **External theorem:** a claim whose proof authority is a cited primary
-  source.
-- **Control or benchmark:** exact work on a known or source-specific system;
-  not a discovery claim.
-- **Historical derivation:** correct or corrected work retained for
-  provenance but not an active research route.
-
-No finite patch, solver resource stop, local compiler gadget or generated
-tiling upgrades the global monotile claim.
-
-## Repository provenance
-
-The [consolidation registry](../consolidation/README.md) records the current
-claim groups, file dispositions and artifact hashes. Literature evidence and
-novelty permissions live under [docs/literature](../literature/README.md).
-Chronological notebooks and decisions remain historical records, not theory
-entry points.
+Archiving a derivation never retracts its mathematics.  Conversely, a correct
+local lemma does not become relevant to the monotile problem unless its
+hypotheses connect to the unrestricted all-tilings quantifier.

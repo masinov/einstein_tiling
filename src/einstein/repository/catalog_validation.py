@@ -20,7 +20,7 @@ def load(name: str) -> dict:
 
 
 def ledger_ids() -> set[str]:
-    text = (ROOT / "docs/theory/PROOF_LEDGER.md").read_text()
+    text = (ROOT / "docs/theory/reference/proof_ledger.md").read_text()
     return {
         match.group(1).strip()
         for match in re.finditer(r"^\|\s*([^|]+?)\s*\|", text, re.MULTILINE)

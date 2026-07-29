@@ -83,7 +83,7 @@ certificate that no tiling has period \(v\).
 
 The theorem does not prove that the transfer graph is computationally small.
 That engineering and certificate contract is specified in
-`W1_TRANSFER_SPEC.md`.
+`../controls/turtle/transfer_spec.md`.
 
 ## Scope and review obligations
 

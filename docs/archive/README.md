@@ -1,8 +1,9 @@
 # Historical research archive
 
-This is the navigation layer for frozen and provenance-only material.  The
-underlying files remain at their original paths so hashes and citations stay
-valid.
+This is the navigation layer for frozen and provenance-only material.
+Append-only records remain at their original paths. Chronological theory
+sources were moved intact to `theory_sources/`; their old-to-new coverage is
+machine-readable in `../theory/reference/SOURCE_MAP.json`.
 
 The archive has two distinct classes:
 

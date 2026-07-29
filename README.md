@@ -13,9 +13,9 @@ polykite computations are retained as exact controls and reproductions.
 
 ## Start here
 
-- [General realization theorems](docs/theory/GENERAL_REALIZATION_THEOREMS.md)
+- [General realization theory](docs/theory/realization/general_theory.md)
   — the reusable mathematics independent of one source construction.
-- [Sturmian realization boundary](docs/theory/STURMIAN_REALIZATION_BOUNDARY.md)
+- [Sturmian realization boundary](docs/theory/research/sturmian_realization.md)
   — the open problem, known boundary, exact AHI benchmark and future proof
   obligations.
 - [Theory guide](docs/theory/README.md) — evidence levels and provenance.

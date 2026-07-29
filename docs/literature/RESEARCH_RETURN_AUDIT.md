@@ -109,7 +109,9 @@ not polished as a novelty claim. W2 escalation is closed. See
 1. The first outside-horizon audit and on-paper ST-M1 design branch are
    complete through their current boundary. The colored equal-support source,
    safe parity compiler, scoped no-gos and boundary-cocycle factorization are
-   consolidated as proof drafts in `docs/theory/14_stm1_symbolic_chain.md`.
+   consolidated in `docs/theory/sturmian/ahi_source_and_carriers.md`; the
+   original proof draft is preserved at
+   `docs/archive/theory_sources/14_stm1_symbolic_chain.md`.
    This is not a monotile result. SER0 is blocked by absent extensional source
    tables, and K2J is blocked by the absence of an exact unmarked carrier.
    No run or shape search is authorized.
