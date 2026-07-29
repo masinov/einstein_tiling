@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-29 (session 199 outward zipper and port curvature)
+**Last updated:** 2026-07-29 (session 202 AHI branch closure)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | ▶ active at one exact reflex-reset comb, followed by the all-contact/source-lift obligations. N68H closes boundary-neutral carriers; N69O/N70T close ordinary and additive interfaces. K70Z/K71T give an exact terminal-free `Z/2` zipper. K73F selects its outward-divergent `30`-degree branch. N73W proves that the six port germs cannot all use unbroken convex flanks. K73R forces four reflex resets in the retained nonadjacent alphabet and at least three even after the sole compatible adjacency. No common polygon is yet proved (ERR-017/D-0208--D-0226). |
+| ST-M1 — Sturmian monotile encoding | ⏸ AHI-specific branch closed/frozen. Note 83 is the dependency-oriented dossier. K74A/K74R prove that rooted three-participant T-junctions compile every finite automaton and every finite fixed-arity relation; K70Z is only the `Z/2`, length-three instance. This abstracts the useful local content and proves that relation expressivity is not the bottleneck. No common unmarked polygon, total decoder or monotile is established. Further AHI zipper/comb/reset variants are prohibited; reopening requires a source-independent one-support theorem, scoped unmarked undecidability, or a complete all-tilings construction (D-0227--D-0229). |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -359,6 +359,14 @@
   unbroken-flank cone carrier exists.  That alphabet has residual signed turn
   `-19pi/6` and needs four reflex resets; the only compatible port adjacency
   still leaves a three-reset lower bound (K73F/N73W/K73R, D-0226).
+- **Finite-state contact abstraction:** distinct endpoint state angles turn a
+  rooted three-participant T-junction chain into an exact finite automaton.
+  Prefix tries therefore realize every finite fixed-arity relation, and
+  finite group products give the previous parity zipper as the special case
+  `G=Z/2`. This is a standard coloured contact-complex construction, not a
+  one-polygon theorem. It closes local relation expressivity and freezes the
+  AHI-specific carrier ladder at the actual unsolved boundary: total
+  same-support erasure in every tiling (K74A/K74R/K74G, D-0227).
 - **ST-M1 consolidated dossier:** theory note 14 now gives the complete
   P0/S0/Q0/K1T/K1P/N5--N9/K2C/K2V chain and conditional K2J-to-monotile
   argument in one self-contained proof draft. It makes no novelty or monotile
@@ -957,25 +965,19 @@ Research is under the 2026-07-21 reset recorded in
 
 The controlling 2026-07-28 target supersedes the chronological archive below:
 
-1. Treat N64S/N65S/N68H as completed carrier-local base cases: no synthesis
-   through area 30, no boundary-neutral count-changing state at any area, and
-   no return to P17 or an integer-by-integer carrier census.
-2. Construct or refute one exact K73R reflex-reset comb on the outward K73F
-   fan.  A positive result requires a complete cyclic boundary, exact
-   coordinates and all four disjoint placement tables.  The convex-cap and
-   unbroken port-wedge families are closed; arbitrary cone rhetoric is not a
-   substitute for the reset topology.  Only a positive common-polygon lemma
-   opens the complete unintended-contact atlas.
-3. In parallel, formalize the cross-carrier alternative: bound how a fixed
-   source macro can intersect neighboring carriers and state the finite local
-   data required for a total decoder.  This is the only way to escape the
-   carrier-trade frontier without inventing an unrelated gadget.
-4. Use K63D/K63E to reject source-pruning proposals unless they identify an
-   explicit joint multi-rail fiber component and prove it covers the whole
-   minimal lattice hull.  Rail-local or boundary-neutral entropy choices are
-   closed.
-5. U2 licenses no unmarked claim.  Any nonseparable self-stapling route must
-   give a total all-tilings decoder and hit the periodicity gate immediately.
+1. Treat theory note 83 as the terminal entry point for the closed AHI branch:
+   exact source presentation and local finite-relation compilation are
+   separated from the still-open one-support and total-decoder obligations.
+2. Do not resume P17, zipper geometry, reflex-reset combs, carrier-size
+   censuses, or another invented contact family. Reopening needs a
+   source-independent one-support theorem, a clearly defined unmarked
+   undecidability reduction, or a complete construction satisfying the total
+   decoder contract.
+3. Perform the separately authorized repository-wide
+   consolidation: abstract reusable theorems and tools, retain compact
+   certificates/fixtures, archive or discard redundant artifacts only under
+   explicit scope, and replace chronological sprawl with goal-oriented entry
+   points.
 
 The remaining numbered material is retained as the historical decision log.
 

@@ -4633,3 +4633,57 @@ closes the naive convex port-wedge implementation, not K70P.  Any positive
 continuation must give a single reflex-reset comb, its exact cyclic boundary,
 and all four placement tables; an unspecified narrow-body or convex-cap
 argument is no longer admissible.
+
+## D-0227 (2026-07-29) — Abstract the zipper and stop the AHI carrier ladder
+
+The user identified that continuing from K73R by choosing three, four, five,
+or more reflex resets would repeat the project's family-by-family drift. That
+fact is a halt condition, not background context.
+
+K74A now extracts the source-independent content: a rooted
+three-participant T-junction contact complex can compile every finite
+automaton. K74R gives every finite fixed-arity relation by a prefix trie, and
+K74G identifies the K70Z parity zipper as only the `Z/2`, length-three
+instance. The construction is finite-state semantics in geometric notation;
+no novelty is claimed.
+
+Consequently the local relation language is not the bottleneck. The missing
+problem is total same-support erasure: one connected unmarked polygon must
+force the prescribed roles, order and contact topology in every tiling and
+decode to the source. The AHI reconstruction remains a benchmark, while the
+K70--K73 geometry remains worked evidence and scoped no-go results. No new
+AHI-specific zipper carrier, comb, reset count or boundary word is authorized.
+Reopening requires a source-independent one-support theorem, a clearly scoped
+unmarked undecidability result, or a complete all-tilings construction.
+
+## D-0228 (2026-07-29) — K74A is a normal form, not a novelty claim
+
+The dated primary-source audit places K74A/K74R inside established finite
+matching-rule, Wang/jigsaw, atlas, edge-patch and geometric-simulation
+machinery. Its elementary angle assignment is retained as a compact normal
+form and verifier fixture. It may not be claimed as a new simulation method.
+
+The audited constructions retain decorations, forbidden-pattern atlases,
+several supports, prescribed lattice sites, gaps or auxiliary fibres. They do
+not supply the conjunction needed here: one connected unmarked planar support,
+ordinary gapless unrestricted tilings, and a total finite-radius decoder on
+every tiling. This is a dated absence report, not a claim that no such theorem
+exists.
+
+## D-0229 (2026-07-29) — Close the AHI-specific Sturmian branch
+
+Theory note 83 is the branch-closing dependency dossier. It records, without
+promotion, that the exact AHI benchmark presentation and the coloured local
+compiler layers are closed, while one-support unmarked erasure and a total
+decoder on every tiling remain open. The branch found no monotile and proved
+no general Sturmian-monotile impossibility or undecidability theorem.
+
+The transferable results are Q0/K1T, N55, the preprint-conditional marked U2
+boundary, K61R, the ordinary/additive no-gos, and K74A/K74R. Source-specific
+censuses and carrier exclusions remain benchmark facts. K70Z--K73R remain
+worked local geometry and are retired as a research direction.
+
+The branch is frozen under the reopening rule in note 83 §8. The next
+authorized work is the user's separate repository-wide theory/tool
+consolidation and pruning pass; it must preserve meaningful exact results and
+requires explicit care before moving or deleting artifacts.
