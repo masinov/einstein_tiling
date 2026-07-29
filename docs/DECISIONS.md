@@ -4574,3 +4574,22 @@ all four disjoint patches, the full unintended-contact atlas, and a total AHI
 lift with periodicity rejection.  Coordinate work is relevant only when it
 addresses this fixed contract; a local zipper drawing alone is not progress
 on the monotile theorem.
+
+## D-0224 (2026-07-29) — Erase the zipper terminals with asymmetric delimiters
+
+The rooted phase-zero conditions of K70Z are not necessary.  Use an
+eleven-unit host, two directed length-four delimiters, and three intervening
+unit code sides.  Exact endpoint angles make the left delimiter force
+incoming phase zero, the right delimiter force outgoing phase zero, and each
+internal T-junction force phase continuity.  Fixed terminal stars with host
+angle `5pi/6`, delimiter angle `pi/2`, and cap angle `2pi/3` distinguish the
+outer delimiter germs.  The resulting bounded contact complex admits exactly
+the four ternary even-parity words.
+
+K71B separately proves that the host, both delimiters, all four code roles,
+and a rooted cap germ can coexist on one connected asymmetric simple polygon.
+This closes boundary-alphabet existence and painted-terminal erasure, not
+patch packing or totality.  The next obligation is simultaneous exact
+placement of congruent copies for all four parity patches with disjoint
+interiors, followed by the complete unintended-contact atlas.  No arbitrary
+new boundary word is authorized in place of this fixed mechanism.

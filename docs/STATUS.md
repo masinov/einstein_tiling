@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-29 (session 196 exact parity-zipper kernel)
+**Last updated:** 2026-07-29 (session 197 geometric zipper-terminal erasure)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active at the fixed K70P parity-zipper realization contract plus the cross-carrier boundary. Minimality eliminates proper lattice-factor pruning; rail-separable schemes are periodic. N68H closes boundary-neutral carriers at every area, N69O closes ordinary multi-tile vertices, and K70A/N70T close every fixed-topology interface based only on real additive budgets. K70Z gives an exact positive `Z/2` T-junction contact kernel; one unmarked support, geometric terminals, full local closure and the source lift remain open. The marked family is undecidable and contact-complete separable Stade erasures are periodic (ERR-017/D-0208--D-0223). |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active at K70P's simultaneous congruent-packing and all-contact obligations. N68H closes boundary-neutral carriers at every area; N69O and N70T close ordinary vertices and torsion-free additive interfaces. K70Z gives an exact `Z/2` T-junction parity kernel. K71T removes its painted terminals with asymmetric delimiters, and K71B proves all required rooted side germs coexist on one connected asymmetric polygon. The four disjoint congruent patches, unintended-contact atlas, and total 31-state source lift remain open (ERR-017/D-0208--D-0224). |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -337,6 +337,14 @@
   exactly to the four AHI even-parity states.  K70Z is a positive rooted
   contact complex, not a polygon.  K70P lists the six one-support/all-tilings
   obligations now controlling construction (K70A/N70T/K70Z/K70P, D-0223).
+- **Geometric zipper terminals:** an eleven-unit host covered by directed
+  length-four delimiters and three unit code sides forces both hidden endpoint
+  phases to zero.  Terminal stars use the exact angle sum
+  `5pi/6+pi/2+2pi/3=2pi`; internal T-junctions retain K70Z's phase equations.
+  A general separated-tab lemma proves one connected asymmetric polygon can
+  carry the host, delimiter, four code, and cap germs simultaneously.  The
+  remaining constructive burden is simultaneous congruent packing of all
+  four parity patches and the complete contact atlas (K71T/K71B, D-0224).
 - **ST-M1 consolidated dossier:** theory note 14 now gives the complete
   P0/S0/Q0/K1T/K1P/N5--N9/K2C/K2V chain and conditional K2J-to-monotile
   argument in one self-contained proof draft. It makes no novelty or monotile
@@ -938,11 +946,11 @@ The controlling 2026-07-28 target supersedes the chronological archive below:
 1. Treat N64S/N65S/N68H as completed carrier-local base cases: no synthesis
    through area 30, no boundary-neutral count-changing state at any area, and
    no return to P17 or an integer-by-integer carrier census.
-2. Realize or refute the fixed K70P zipper contract.  First derive a connected
-   polygonal boundary word satisfying the host/four-code endpoint angles and
-   force the two phase-zero terminals geometrically; then prove all four
-   exact patches and the complete unintended-contact atlas before promotion.
-   Fixed additive variants are closed by N70T and must not be revisited.
+2. Realize or refute the fixed K70P zipper contract.  K71T/K71B close
+   terminal erasure and boundary-alphabet coexistence.  Now prove one common
+   simple polygon admits all four complete host/delimiter/code/cap patches
+   with pairwise-disjoint congruent occurrences, or derive a family no-go.
+   Only after that may the complete unintended-contact atlas be attempted.
 3. In parallel, formalize the cross-carrier alternative: bound how a fixed
    source macro can intersect neighboring carriers and state the finite local
    data required for a total decoder.  This is the only way to escape the
