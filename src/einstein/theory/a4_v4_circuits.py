@@ -17,6 +17,7 @@ from dataclasses import dataclass
 
 from einstein.theory.a4_semidirect import c3_action, canonical_a4_semidirect
 from einstein.theory.a4_v4_sft import _deck_v4, _signed_coordinate
+from einstein.theory.finite_obstructions import deletion_minimal_obstruction
 from einstein.theory.holonomy_csp import quotient_boundary_data
 
 
@@ -116,19 +117,10 @@ def affine_compatible(system: V4EquationSystem, placement_variables) -> bool:
 
 def minimal_affine_circuit(system: V4EquationSystem, placement_variables):
     """Return a deterministic deletion-minimal inconsistent subset."""
-    core = sorted(set(placement_variables))
-    if affine_compatible(system, core):
-        return ()
-    changed = True
-    while changed:
-        changed = False
-        for variable in tuple(core):
-            trial = [item for item in core if item != variable]
-            if not affine_compatible(system, trial):
-                core = trial
-                changed = True
-                break
-    return tuple(core)
+    return deletion_minimal_obstruction(
+        sorted(set(placement_variables)),
+        lambda selected: not affine_compatible(system, selected),
+    )
 
 
 def translate_placement(placement, hnf, shift):

@@ -8,6 +8,16 @@ entry points.
 post-relocation SHA-256. Script bodies were not refactored; only repository-root
 and self-usage paths were adjusted for the extra directory level.
 
+`SEMANTIC_INVENTORY.json` answers the separate question that filesystem
+coupling cannot answer: what intellectual value each script retains and where
+its reusable implementation lives.  It covers every manifest entry exactly
+once.  In particular, archiving does **not** mean that a script was judged to
+contain no reusable idea.  The common exact Hall/CEGAR kernel identified by
+that audit now lives in `src/einstein/theory/finite_obstructions.py`; other
+scripts are mapped to already-extracted modules or retained explicitly as
+worked controls, certificate orchestration or source-specific extraction
+candidates.
+
 Ninety-two scripts with no live Python caller, import or test-path contract
 were moved here. Nine coupled historical scripts remain at `scripts/` until
 their consumers are removed or redirected. Do not resume a parameter ladder

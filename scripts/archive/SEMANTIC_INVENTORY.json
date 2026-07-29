@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "scope": "All Python files listed in scripts/archive/MANIFEST.json",
+  "interpretation": "A semantic disposition records where reusable value lives. It is not deletion permission and it does not alter the archived file's evidentiary scope.",
+  "dispositions": {
+    "extraction-source-and-worked-example": "Contains a reusable kernel now consumed by live library code; retains source-specific orchestration as a worked example.",
+    "already-extracted-worked-example": "Durable algorithms already live in tested library modules; the script documents their composition in one historical application.",
+    "certificate-orchestration": "Builds or verifies a source-specific certificate using live library code; retain for reproducibility, not as a general API.",
+    "historical-orchestration": "Owns scheduling, artifact formatting, rendering or parameter selection rather than a stranded mathematical algorithm.",
+    "known-system-control": "A reproducible calibration or negative control whose value is methodological rather than a new general theorem.",
+    "provenance-repair": "Repairs or normalizes a historical run record; reusable only as provenance for that record.",
+    "solver-supervision-provenance": "Pins a particular governed solver launch; generic supervision belongs to run_research.py.",
+    "source-specific-probe": "Contains substantial reasoning tied to one closed source system; retain as a possible future extraction source, but do not present it as a general tool."
+  },
+  "promoted_abstractions": [
+    {
+      "id": "uniform-demand-matching-and-minimal-obstructions",
+      "status": "extracted-and-adopted",
+      "target": "src/einstein/theory/finite_obstructions.py",
+      "adopted_by": [
+        "src/einstein/theory/a4_v4_hall.py",
+        "src/einstein/theory/a4_v4_circuits.py"
+      ],
+      "sources": [
+        "scripts/archive/probe_theory_w2_layer_d_v4_density_cegar.py",
+        "scripts/archive/probe_theory_w2_layer_d_v4_hall_cegar.py",
+        "scripts/archive/probe_theory_w2_layer_d_v4_planar_minimal.py",
+        "scripts/archive/probe_theory_w2_layer_d_v4_plane_hall.py",
+        "scripts/archive/probe_theory_w2_layer_d_v4_taper_dual.py"
+      ],
+      "boundary": "Only the exact matching and deletion-minimization kernel is architecture-independent. The MIP/SAT masters, translation actions and taper dual are V4-specific worked applications."
+    },
+    {
+      "id": "period-lattice-hnf",
+      "status": "already-extracted",
+      "target": "src/einstein/theory/transfer.py:lattice_hnf",
+      "sources": [
+        "scripts/archive/run_e1_finalist_translation_lattices.py"
+      ],
+      "boundary": "Proposal ranking from observed patch returns remains a historical candidate-specific heuristic."
+    },
+    {
+      "id": "spectre-exact-kernels",
+      "status": "already-extracted",
+      "target": "src/einstein/theory/spectre_*.py",
+      "sources": [
+        "scripts/archive/run_theory_w3_spectre_d4_equivalence.py"
+      ],
+      "boundary": "The large runner composes exact component, parent, contact and equivalence modules; its level choices and artifact schema are a worked Spectre control."
+    },
+    {
+      "id": "diffraction-calibration",
+      "status": "retained-control-not-promoted",
+      "target": "src/einstein/funnel/a4_diffraction.py",
+      "sources": [
+        "scripts/archive/run_e4_wide.py"
+      ],
+      "boundary": "Reference generation and spectrum primitives are reusable. The numerical thresholds and false-positive campaign are historical calibration, not an exact certificate or general theorem."
+    }
+  ],
+  "clusters": [
+    {
+      "id": "v4-finite-obstruction-applications",
+      "disposition": "extraction-source-and-worked-example",
+      "rationale": "Five independent solver formulations share exact deletion-minimal obstruction and demand-matching logic. That kernel is now a tested general API; the remaining masters and symmetry actions are specific to the Layer-D V4 system.",
+      "scripts": [
+        "scripts/archive/probe_theory_w2_layer_d_v4_density_cegar.py",
+        "scripts/archive/probe_theory_w2_layer_d_v4_hall_cegar.py",
+        "scripts/archive/probe_theory_w2_layer_d_v4_planar_minimal.py",
+        "scripts/archive/probe_theory_w2_layer_d_v4_plane_hall.py",
+        "scripts/archive/probe_theory_w2_layer_d_v4_taper_dual.py"
+      ]
+    },
+    {
+      "id": "v4-diagnostic-probes",
+      "disposition": "source-specific-probe",
+      "rationale": "These scripts compare LP/MIP, conflict-graph, marking, local-density and torus-to-plane formulations for one V4 obstruction problem. Core affine, packing, marking and orbit operations already live in src/einstein/theory/a4_v4_*.py; the remaining logic is formulation-specific and is retained for future theorem-guided extraction.",
+      "scripts": [
+        "scripts/archive/probe_theory_w2_layer_d_v4_circuit_dual.py",
+        "scripts/archive/probe_theory_w2_layer_d_v4_density_mip.py",
+        "scripts/archive/probe_theory_w2_layer_d_v4_fractional_marking.py",
+        "scripts/archive/probe_theory_w2_layer_d_v4_lifted_cliques.py",
+        "scripts/archive/probe_theory_w2_layer_d_v4_local_density.py",
+        "scripts/archive/probe_theory_w2_layer_d_v4_local_incidence_rank.py",
+        "scripts/archive/probe_theory_w2_layer_d_v4_marking.py",
+        "scripts/archive/probe_theory_w2_layer_d_v4_pair_graph.py",
+        "scripts/archive/probe_theory_w2_layer_d_v4_periodic_hall_catalog.py",
+        "scripts/archive/probe_theory_w2_layer_d_v4_periodic_hall_lift.py"
+      ]
+    },
+    {
+      "id": "compiled-funnel-runners",
+      "disposition": "historical-orchestration",
+      "rationale": "These select census levels, merge streams, render outputs or schedule the A0-A6 funnel. Enumeration, torus, Heesch, patch, diffraction and hierarchy algorithms are already library modules or compiled engines. The scripts preserve the exact historical campaign but are not the reusable implementation boundary.",
+      "scripts": [
+        "scripts/archive/run_a0_fast.py",
+        "scripts/archive/run_a1.py",
+        "scripts/archive/run_a1_candidates.py",
+        "scripts/archive/run_a1_fast.py",
+        "scripts/archive/run_a1_isohedral_control.py",
+        "scripts/archive/run_a2.py",
+        "scripts/archive/run_a2_fast.py",
+        "scripts/archive/run_a3.py",
+        "scripts/archive/run_a3_candidates.py",
+        "scripts/archive/run_a4_candidates.py",
+        "scripts/archive/run_a6_hat.py",
+        "scripts/archive/run_a6_spectre.py"
+      ]
+    },
+    {
+      "id": "turtle-rediscovery-controls",
+      "disposition": "known-system-control",
+      "rationale": "These reproduce and stress-test the known Turtle finalist. Exact torus, patch, diffraction and hierarchy routines are library code; the candidate choice, escalation schedule and galleries remain a historically useful negative control, not a discovery route.",
+      "scripts": [
+        "scripts/archive/record_e1_finalist_nested.py",
+        "scripts/archive/run_e1_finalist.py",
+        "scripts/archive/run_e1_finalist_hierarchy.py",
+        "scripts/archive/run_e1_finalist_period47.py",
+        "scripts/archive/run_e1_finalist_periodicity.py",
+        "scripts/archive/run_e1_finalist_robustness.py",
+        "scripts/archive/run_e1_finalist_translation_lattices.py"
+      ]
+    },
+    {
+      "id": "historical-run-recovery",
+      "disposition": "provenance-repair",
+      "rationale": "This normalizes one interrupted campaign's logs and has no mathematical API to promote.",
+      "scripts": [
+        "scripts/archive/recover_e1_overnight.py"
+      ]
+    },
+    {
+      "id": "numerical-diffraction-control",
+      "disposition": "known-system-control",
+      "rationale": "This is a broad calibration and false-positive study around reusable spectrum/reference modules. Its floats, thresholds and campaign sizes deliberately remain outside the exact certificate path.",
+      "scripts": [
+        "scripts/archive/run_e4_wide.py"
+      ]
+    },
+    {
+      "id": "k16w-supervised-launches",
+      "disposition": "solver-supervision-provenance",
+      "rationale": "The formulas and exact cold checks live in k16w_exact.py and k16w_tangent.py. These three files pin particular cell batches, limits and failure records; generic governed launch responsibility now belongs to scripts/run_research.py.",
+      "scripts": [
+        "scripts/archive/run_k16w_hc31.py",
+        "scripts/archive/run_k16w_hc34.py",
+        "scripts/archive/run_k16w_hc38.py"
+      ]
+    },
+    {
+      "id": "w1-w2-certificate-campaigns",
+      "disposition": "certificate-orchestration",
+      "rationale": "These serialize bounded quotient, invariant, holonomy and proof campaigns. The reusable transfer, invariant, finite-group, holonomy, symmetry and cold-verifier implementations are live modules. Index choices and artifact layouts remain certificate provenance.",
+      "scripts": [
+        "scripts/archive/run_theory_w1_controls.py",
+        "scripts/archive/run_theory_w1_finalist.py",
+        "scripts/archive/run_theory_w1_negative_certificates.py",
+        "scripts/archive/run_theory_w2_binary_families.py",
+        "scripts/archive/run_theory_w2_layer_a.py",
+        "scripts/archive/run_theory_w2_layer_c.py",
+        "scripts/archive/run_theory_w2_layer_c_nonnegative.py",
+        "scripts/archive/run_theory_w2_layer_c_snf.py",
+        "scripts/archive/run_theory_w2_layer_d.py",
+        "scripts/archive/run_theory_w2_layer_d_a4_factor.py",
+        "scripts/archive/run_theory_w2_layer_d_a4_index50.py",
+        "scripts/archive/run_theory_w2_layer_d_a4_proofs_index50.py",
+        "scripts/archive/run_theory_w2_layer_d_a4_proofs_index55.py",
+        "scripts/archive/run_theory_w2_layer_d_a4_sat_index50.py",
+        "scripts/archive/run_theory_w2_layer_d_a4_signature.py",
+        "scripts/archive/run_theory_w2_layer_d_a4_signature_index55.py",
+        "scripts/archive/run_theory_w2_layer_d_coupled.py",
+        "scripts/archive/run_theory_w2_layer_d_index45.py",
+        "scripts/archive/run_theory_w2_layer_d_index50.py",
+        "scripts/archive/run_theory_w2_layer_d_index50_model_analysis.py",
+        "scripts/archive/run_theory_w2_layer_d_index50_overlap2.py",
+        "scripts/archive/run_theory_w2_layer_d_index50_overlap2_sat.py",
+        "scripts/archive/run_theory_w2_layer_d_index50_sat.py",
+        "scripts/archive/run_theory_w2_layer_d_proofs_index45.py",
+        "scripts/archive/run_theory_w2_layer_d_proofs_index50.py",
+        "scripts/archive/run_theory_w2_layer_d_s3_classes.py",
+        "scripts/archive/run_theory_w2_layer_d_small_groups.py",
+        "scripts/archive/run_theory_w2_layer_d_symmetry.py"
+      ]
+    },
+    {
+      "id": "v4-certificate-campaigns",
+      "disposition": "certificate-orchestration",
+      "rationale": "These apply the live V4 SFT, lift, packing, product and density modules to fixed quotient families and package witnesses or proof artifacts. Their durable algorithms are already extracted; their value here is exact reproducibility.",
+      "scripts": [
+        "scripts/archive/run_theory_w2_layer_d_v4_2lambda.py",
+        "scripts/archive/run_theory_w2_layer_d_v4_density.py",
+        "scripts/archive/run_theory_w2_layer_d_v4_packing.py",
+        "scripts/archive/run_theory_w2_layer_d_v4_packing_family.py",
+        "scripts/archive/run_theory_w2_layer_d_v4_packing_signature_family.py",
+        "scripts/archive/run_theory_w2_layer_d_v4_product.py",
+        "scripts/archive/run_theory_w2_layer_d_v4_proofs_index60.py",
+        "scripts/archive/run_theory_w2_layer_d_v4_sft.py",
+        "scripts/archive/run_theory_w2_layer_d_v4_signature_index60.py"
+      ]
+    },
+    {
+      "id": "spectre-certificate-compositions",
+      "disposition": "already-extracted-worked-example",
+      "rationale": "The scripts compose tested Spectre geometry, contact, component, parent, CSP and equivalence modules into specific radius and hierarchy artifacts. Their substantial value is preserved as reproducible applications; the live spectre_*.py modules are the reusable boundary.",
+      "scripts": [
+        "scripts/archive/probe_theory_w3_spectre_d1_physical.py",
+        "scripts/archive/run_theory_w3_spectre_certificate_audit.py",
+        "scripts/archive/run_theory_w3_spectre_colored_interface.py",
+        "scripts/archive/run_theory_w3_spectre_colored_overlap.py",
+        "scripts/archive/run_theory_w3_spectre_component_language.py",
+        "scripts/archive/run_theory_w3_spectre_d1_entry.py",
+        "scripts/archive/run_theory_w3_spectre_d4_equivalence.py",
+        "scripts/archive/run_theory_w3_spectre_defect_propagation.py",
+        "scripts/archive/run_theory_w3_spectre_edge_patch_bridge.py",
+        "scripts/archive/run_theory_w3_spectre_parent_interface.py",
+        "scripts/archive/run_theory_w3_spectre_parent_overlap.py",
+        "scripts/archive/run_theory_w3_spectre_patch_language.py",
+        "scripts/archive/run_theory_w3_spectre_radius2_defect.py",
+        "scripts/archive/run_theory_w3_spectre_radius3_defect.py",
+        "scripts/archive/run_theory_w3_spectre_two_sided_overlap.py"
+      ]
+    },
+    {
+      "id": "turtle-sturmian-anchor",
+      "disposition": "known-system-control",
+      "rationale": "This packages the exact Golden/Sturmian Turtle anchor implemented in turtle_sturmian.py. It remains an external-method calibration and does not define the active Sturmian realization problem.",
+      "scripts": [
+        "scripts/archive/run_theory_w3_turtle_sturmian_control.py"
+      ]
+    }
+  ]
+}

@@ -65,3 +65,18 @@ deleted or rewritten.
 - Left nine coupled historical scripts at their stable paths.
 - Added one registry and dispatcher for eighteen retained exact AHI/Stade
   certificate families, without changing their builders or cold verifiers.
+
+## 2026-07-29 — semantic script mining
+
+- Classified all 92 archived scripts by intellectual disposition, separately
+  from their lack of live callers.
+- Mapped historical orchestration and worked controls to the tested modules
+  that already own their reusable algorithms.
+- Extracted exact uniform-demand matching, cold Hall witnesses and generic
+  deletion-minimal obstruction reduction into
+  `src/einstein/theory/finite_obstructions.py`.
+- Adopted the extracted primitives in both the V4 Hall and affine-circuit
+  implementations and added architecture-independent regression controls.
+- Kept source-specific CEGAR, MIP, taper and symmetry formulations as worked
+  examples or future extraction sources; no archived script or evidence was
+  deleted.

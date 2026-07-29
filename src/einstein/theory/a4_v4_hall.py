@@ -18,6 +18,10 @@ from dataclasses import dataclass
 from collections import Counter
 
 from einstein.theory.a4_v4_packing import placement_lattice_cells
+from einstein.theory.finite_obstructions import (
+    deletion_minimal_obstruction,
+    uniform_demand_matching,
+)
 
 
 Center = tuple[int, int]
@@ -90,80 +94,16 @@ def two_center_matching(supports, selected) -> TwoMatchingResult:
     are reachable or neither is; the witness therefore descends from copies
     to whole tiles and satisfies ``|N(S)| < 2|S|``.
     """
-    chosen = tuple(sorted(set(selected)))
-    for variable in chosen:
-        if not 1 <= variable <= len(supports):
-            raise ValueError("placement variable out of range")
-
-    left = tuple((variable, copy) for variable in chosen for copy in (0, 1))
-    right_match: dict[Center, tuple[int, int]] = {}
-    left_match: dict[tuple[int, int], Center] = {}
-
-    def augment(node, visited: set[Center]) -> bool:
-        variable, _copy = node
-        for center in sorted(supports[variable - 1]):
-            if center in visited:
-                continue
-            visited.add(center)
-            incumbent = right_match.get(center)
-            if incumbent is None or augment(incumbent, visited):
-                right_match[center] = node
-                left_match[node] = center
-                return True
-        return False
-
-    for node in left:
-        augment(node, set())
-
-    by_tile: dict[int, list[Center]] = {variable: [] for variable in chosen}
-    for (variable, _copy), center in left_match.items():
-        by_tile[variable].append(center)
-    assignment = tuple(
-        (variable, *sorted(centers))
-        for variable, centers in sorted(by_tile.items())
-        if len(centers) == 2
-    )
-
-    if len(left_match) == len(left):
-        return TwoMatchingResult(
-            selected=chosen,
-            matched=len(left_match),
-            assignment=assignment,
-            deficient_tiles=(),
-            deficient_centers=(),
-        )
-
-    # Alternating reachability: unmatched edges left->right, matched edges
-    # right->left.  Starting at every unmatched copy produces the min-cut
-    # side and thus an explicit Hall-deficient set.
-    reachable_left = {node for node in left if node not in left_match}
-    reachable_right: set[Center] = set()
-    queue = list(sorted(reachable_left))
-    while queue:
-        node = queue.pop()
-        variable, _copy = node
-        matched_center = left_match.get(node)
-        for center in supports[variable - 1]:
-            if center == matched_center or center in reachable_right:
-                continue
-            reachable_right.add(center)
-            incumbent = right_match.get(center)
-            if incumbent is not None and incumbent not in reachable_left:
-                reachable_left.add(incumbent)
-                queue.append(incumbent)
-
-    deficient_tiles = tuple(sorted({variable for variable, _ in reachable_left}))
-    deficient_centers = tuple(sorted(set().union(*(
-        supports[variable - 1] for variable in deficient_tiles
-    ))))
-    if not len(deficient_centers) < 2 * len(deficient_tiles):
-        raise AssertionError("alternating search did not yield a Hall witness")
+    generic = uniform_demand_matching(supports, selected, demand=2)
     return TwoMatchingResult(
-        selected=chosen,
-        matched=len(left_match),
-        assignment=assignment,
-        deficient_tiles=deficient_tiles,
-        deficient_centers=deficient_centers,
+        selected=generic.selected,
+        matched=generic.matched,
+        assignment=tuple(
+            (variable, centers[0], centers[1])
+            for variable, centers in generic.assignment
+        ),
+        deficient_tiles=generic.deficient_items,
+        deficient_centers=generic.deficient_resources,
     )
 
 
@@ -180,19 +120,10 @@ def minimal_hall_witness(supports, selected) -> TwoMatchingResult:
     result = two_center_matching(supports, selected)
     if result.saturated:
         raise ValueError("selection has no Hall-deficient subset")
-    core = result.deficient_tiles
-    while True:
-        reduced = False
-        for variable in core:
-            trial = tuple(item for item in core if item != variable)
-            candidate = two_center_matching(supports, trial)
-            if candidate.saturated:
-                continue
-            core = candidate.deficient_tiles
-            reduced = True
-            break
-        if not reduced:
-            break
+    core = deletion_minimal_obstruction(
+        result.deficient_tiles,
+        lambda trial: not two_center_matching(supports, trial).saturated,
+    )
     result = two_center_matching(supports, core)
     if result.saturated or result.deficient_tiles != core:
         raise AssertionError("Hall witness minimization did not reach a core")

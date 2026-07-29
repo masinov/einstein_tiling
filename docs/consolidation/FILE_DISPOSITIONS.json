@@ -5,20 +5,21 @@
   "source_rules": "docs/consolidation/DISPOSITION_RULES.json",
   "semantics": "Non-destructive per-file planning map. A disposition does not authorize moving or deleting the file.",
   "summary": {
-    "file_count": 993,
+    "file_count": 997,
     "tracked_file_count": 993,
-    "untracked_nonignored_file_count": 0,
-    "size_bytes": 227904726,
+    "untracked_nonignored_file_count": 4,
+    "size_bytes": 227929170,
     "dynamic_generated_catalog_count": 2,
     "by_disposition": {
       "archive-history": 247,
       "archive-provenance": 207,
       "canonical": 51,
-      "retained-control": 269,
+      "retained-control": 270,
       "retained-evidence": 32,
       "retained-toolbox": 78,
+      "review-required": 1,
       "rewrite-entrypoint": 2,
-      "split-required": 107
+      "split-required": 109
     },
     "by_category": {
       "ahi-benchmark-theory": 13,
@@ -78,6 +79,7 @@
       "render-tool": 8,
       "repository-config": 1,
       "repository-license": 1,
+      "script": 1,
       "session-log": 202,
       "source-cache-policy": 1,
       "source-tool": 2,
@@ -86,11 +88,11 @@
       "stale-entrypoint": 1,
       "status-history": 1,
       "superseded-sturmian-design": 8,
-      "test": 85,
+      "test": 87,
       "test-configuration": 3,
       "test-navigation": 1,
       "theory-entrypoint": 2,
-      "theory-implementation": 28,
+      "theory-implementation": 29,
       "toolbox-navigation": 1,
       "turtle-control-artifact": 157,
       "vendored-reference": 14,
@@ -506,13 +508,13 @@
     {
       "path": "docs/consolidation/MIGRATIONS.md",
       "tracked": true,
-      "size_bytes": 3136,
+      "size_bytes": 3894,
       "rule_index": 0,
       "rule_glob": "docs/consolidation/*",
       "category": "consolidation-control",
       "disposition": "canonical",
       "rationale": "Control layer for the migration itself.",
-      "line_count": 67
+      "line_count": 82
     },
     {
       "path": "docs/consolidation/README.md",
@@ -6868,13 +6870,24 @@
     {
       "path": "scripts/archive/README.md",
       "tracked": true,
-      "size_bytes": 706,
+      "size_bytes": 1321,
       "rule_index": 55,
       "rule_glob": "scripts/archive/README.md",
       "category": "archive-navigation",
       "disposition": "canonical",
       "rationale": "Reader-facing boundary for frozen executable provenance.",
-      "line_count": 14
+      "line_count": 24
+    },
+    {
+      "path": "scripts/archive/SEMANTIC_INVENTORY.json",
+      "tracked": false,
+      "size_bytes": 13589,
+      "rule_index": 71,
+      "rule_glob": "scripts/*",
+      "category": "script",
+      "disposition": "review-required",
+      "rationale": "Script needs explicit builder/verifier/runner classification.",
+      "line_count": 232
     },
     {
       "path": "scripts/archive/probe_theory_w2_layer_d_v4_circuit_dual.py",
@@ -9145,13 +9158,13 @@
     {
       "path": "src/einstein/theory/README.md",
       "tracked": true,
-      "size_bytes": 1338,
+      "size_bytes": 1839,
       "rule_index": 77,
       "rule_glob": "src/einstein/theory/README.md",
       "category": "implementation-navigation",
       "disposition": "canonical",
       "rationale": "Reader-facing map from exact implementations to their mathematical scope.",
-      "line_count": 29
+      "line_count": 38
     },
     {
       "path": "src/einstein/theory/__init__.py",
@@ -9189,13 +9202,13 @@
     {
       "path": "src/einstein/theory/a4_v4_circuits.py",
       "tracked": true,
-      "size_bytes": 6209,
+      "size_bytes": 6018,
       "rule_index": 88,
       "rule_glob": "src/einstein/theory/*",
       "category": "theory-implementation",
       "disposition": "retained-control",
       "rationale": "Known-system or finite-control implementation pending extraction of reusable certificate primitives.",
-      "line_count": 167
+      "line_count": 159
     },
     {
       "path": "src/einstein/theory/a4_v4_density.py",
@@ -9211,13 +9224,13 @@
     {
       "path": "src/einstein/theory/a4_v4_hall.py",
       "tracked": true,
-      "size_bytes": 11620,
+      "size_bytes": 8983,
       "rule_index": 88,
       "rule_glob": "src/einstein/theory/*",
       "category": "theory-implementation",
       "disposition": "retained-control",
       "rationale": "Known-system or finite-control implementation pending extraction of reusable certificate primitives.",
-      "line_count": 295
+      "line_count": 226
     },
     {
       "path": "src/einstein/theory/a4_v4_lift.py",
@@ -9339,6 +9352,17 @@
       "disposition": "retained-control",
       "rationale": "Known-system or finite-control implementation pending extraction of reusable certificate primitives.",
       "line_count": 133
+    },
+    {
+      "path": "src/einstein/theory/finite_obstructions.py",
+      "tracked": false,
+      "size_bytes": 7750,
+      "rule_index": 88,
+      "rule_glob": "src/einstein/theory/*",
+      "category": "theory-implementation",
+      "disposition": "retained-control",
+      "rationale": "Known-system or finite-control implementation pending extraction of reusable certificate primitives.",
+      "line_count": 209
     },
     {
       "path": "src/einstein/theory/holonomy.py",
@@ -9898,6 +9922,17 @@
       "disposition": "split-required",
       "rationale": "Assertions are retained in place while executable tiering exposes unit, certificate, control and provenance suites.",
       "line_count": 209
+    },
+    {
+      "path": "tests/test_archive_semantic_inventory.py",
+      "tracked": false,
+      "size_bytes": 1367,
+      "rule_index": 98,
+      "rule_glob": "tests/*",
+      "category": "test",
+      "disposition": "split-required",
+      "rationale": "Assertions are retained in place while executable tiering exposes unit, certificate, control and provenance suites.",
+      "line_count": 33
     },
     {
       "path": "tests/test_certificate_registry.py",
@@ -10536,6 +10571,17 @@
       "disposition": "split-required",
       "rationale": "Assertions are retained in place while executable tiering exposes unit, certificate, control and provenance suites.",
       "line_count": 41
+    },
+    {
+      "path": "tests/test_theory_finite_obstructions.py",
+      "tracked": false,
+      "size_bytes": 2692,
+      "rule_index": 98,
+      "rule_glob": "tests/*",
+      "category": "test",
+      "disposition": "split-required",
+      "rationale": "Assertions are retained in place while executable tiering exposes unit, certificate, control and provenance suites.",
+      "line_count": 76
     },
     {
       "path": "tests/test_theory_holonomy.py",
