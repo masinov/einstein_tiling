@@ -1,31 +1,41 @@
-# Script boundary
+# Command boundary
 
-The script directory contains four different kinds of program.  Their exact
-per-file classification is in `docs/consolidation/FILE_DISPOSITIONS.json`.
+`scripts/` contains operator-facing entry points, not the reusable
+implementation. Shared algorithms, parsers, repository discovery and
+certificate construction live in `src/einstein/` and are tested there.
 
-- `check_*`, `fetch_*`, `extract_*` and `run_research.py` are reusable
-  governance or source tools.
-- `verify_*` programs are cold certificate verifiers and remain part of the
-  retained toolbox.
-- `build_*` programs construct particular artifacts.  They are retained until
-  their schemas, builders and verifiers can be exposed through a coherent
-  certificate interface.
-- most `run_*` and `probe_*` programs are frozen session-specific research
-  history. Ninety-two uncoupled programs now live under `archive/`, with old
-  and new paths hash-pinned in `archive/MANIFEST.json`.
+The five root commands are the stable public surface:
 
-The retained AHI and Stade certificate families are discoverable through one
-interface:
+- `certificates.py` discovers, builds and cold-verifies retained exact
+  certificate families;
+- `check_experiment_gate.py` validates research preregistrations;
+- `run_research.py` launches admitted research commands;
+- `fetch_literature.py` maintains the pinned primary-source cache; and
+- this `README.md` documents the boundary.
+
+Commands below the root are grouped by responsibility:
+
+- `maintenance/` rebuilds and validates repository catalogs;
+- `analysis/` runs retained numerical diagnostics outside certificate paths;
+- `benchmarks/` cross-checks implementations against external controls;
+- `certificate_tools/` contains older evidence-format-specific cold
+  verifiers that have not yet been absorbed by the generic registry;
+- `visualize/` renders retained control artifacts; and
+- `historical/` contains coupled runners for frozen research systems.
+
+The retained AHI and Stade JSON certificate families use one interface:
 
 ```bash
 venv/bin/python scripts/certificates.py list
 venv/bin/python scripts/certificates.py describe contact-kernel
-venv/bin/python scripts/certificates.py run contact-kernel verify -- ATLAS KERNEL
+venv/bin/python scripts/certificates.py build contact-kernel
+venv/bin/python scripts/certificates.py verify contact-kernel
 ```
 
-The dispatcher invokes the existing builder or cold verifier; it does not
-weaken their exact checks or promote their source-specific conclusions.
+The CLI only parses arguments. Dependency resolution, deterministic JSON
+writing and callable dispatch are implemented by
+`einstein.certificates`; family mathematics stays in the named tiling module.
 
-New reusable behavior belongs in `src/einstein/` with tests.  A new nontrivial
-research runner still requires the admission and launcher rules in
-`CLAUDE.md`.
+Ninety-two uncoupled one-off runners remain byte/hash-pinned in `archive/`.
+They are provenance, not examples to copy. A new nontrivial research runner
+still requires the admission and launcher rules in `CLAUDE.md`.

@@ -31,4 +31,4 @@ markers = [
     "tier_control: known-system and historical-pipeline controls",
     "tier_provenance: governance, literature, catalog and external-anchor integrity",
 ]
-addopts = "-m 'not slow'"
+addopts = "--import-mode=importlib -m 'not slow'"

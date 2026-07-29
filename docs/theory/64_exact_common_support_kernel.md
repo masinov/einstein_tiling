@@ -35,4 +35,4 @@ language.
 
 The exact census and boundary certificates are serialized in
 `data/sturmian-source/ahi-common-support-kernel.json` and independently
-reconstructed by `scripts/verify_sturmian_common_support_kernel.py`.
+reconstructed by `scripts/certificates.py verify common-support-kernel`.

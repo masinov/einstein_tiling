@@ -102,7 +102,7 @@ arithmetic:
 
 The artifact is
 `data/sturmian-source/ahi-section10-supports.json` and its cold verifier is
-`scripts/verify_sturmian_source.py`.
+`scripts/certificates.py verify source-atlas`.
 
 ## 4. Research boundary
 

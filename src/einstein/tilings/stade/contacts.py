@@ -9,6 +9,8 @@ from __future__ import annotations
 
 from collections import deque
 from dataclasses import dataclass
+import hashlib
+from pathlib import Path
 
 
 Axial = tuple[int, int]
@@ -307,4 +309,54 @@ def analyze_length(n: int) -> dict:
         "forced_forbidden_hits": hits,
         "separable_erasure_possible": not hits,
         "n61s_rectangle": n61s,
+    }
+
+
+def build_contact_quotient(source_anchor: Path) -> dict:
+    """Build the exact physical-contact quotient for lengths 5 through 12."""
+
+    anchor_bytes = source_anchor.read_bytes()
+    lengths = [analyze_length(n) for n in range(5, 13)]
+    return {
+        "schema": "stade-physical-contact-quotient-v1",
+        "arithmetic": "integer axial hex-cell coordinates",
+        "motion_group": "orientation-preserving Euclidean isometries",
+        "source_anchor_sha256": hashlib.sha256(anchor_bytes).hexdigest(),
+        "tested_lengths": list(range(5, 13)),
+        "lengths": lengths,
+        "summary": {
+            "separable_possible_lengths": [
+                item["n"] for item in lengths if item["separable_erasure_possible"]
+            ],
+            "separable_impossible_lengths": [
+                item["n"] for item in lengths if not item["separable_erasure_possible"]
+            ],
+        },
+    }
+
+
+def verify_contact_quotient(stored: dict, source_anchor: Path) -> None:
+    """Cold-rebuild and verify a Stade physical-contact quotient."""
+
+    assert stored["schema"] == "stade-physical-contact-quotient-v1"
+    assert stored["source_anchor_sha256"] == hashlib.sha256(
+        source_anchor.read_bytes()
+    ).hexdigest()
+    assert stored["tested_lengths"] == list(range(5, 13))
+    rebuilt = [analyze_length(n) for n in stored["tested_lengths"]]
+    assert stored["lengths"] == rebuilt
+    for n in stored["tested_lengths"]:
+        ports = stick_ports(n)
+        for left in ports:
+            for right in ports:
+                assert physical_contact(n, left, right) == polygonal_physical_contact(
+                    n, left, right
+                )
+    possible = [item["n"] for item in rebuilt if item["separable_erasure_possible"]]
+    impossible = [
+        item["n"] for item in rebuilt if not item["separable_erasure_possible"]
+    ]
+    assert stored["summary"] == {
+        "separable_possible_lengths": possible,
+        "separable_impossible_lengths": impossible,
     }

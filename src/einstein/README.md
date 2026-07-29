@@ -33,6 +33,10 @@ in historical notebooks and certificate metadata, not in the canonical API.
 - `visualization/` — output-only drawing helpers.  `kite_svg` specifically
   renders kite-grid cells and outlines; it is not a universal tiling renderer.
 - `solvers/` — exact adapters for external algebraic solvers.
+- `literature/` — primary-source catalog/cache synchronization behind the
+  thin fetch command.
+- `repository/` — location-independent paths, research admission primitives,
+  and deterministic consolidation catalog construction/validation.
 - `historical/` — executable implementations retained from closed research
   branches.  Code here is not a current construction API.
 
@@ -73,6 +77,9 @@ named tiling systems
           ↓
 analysis / visualization / certificate commands
 ```
+
+`repository/` and `literature/` are infrastructure side layers; neither is a
+mathematical dependency of the geometry or combinatorics cores.
 
 Named systems may use general mathematics; general mathematics must not
 import a named tiling system.  Historical code may depend on canonical code,

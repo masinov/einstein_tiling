@@ -19,5 +19,9 @@ def tier_for(filename: str) -> str:
 def pytest_collection_modifyitems(items):
     for item in items:
         path = Path(str(item.path))
-        if path.parent == TESTS and path.name.startswith("test_"):
-            item.add_marker(tier_for(path.name))
+        try:
+            relative = path.resolve().relative_to(TESTS).as_posix()
+        except ValueError:
+            continue
+        if path.name.startswith("test_"):
+            item.add_marker(tier_for(relative))

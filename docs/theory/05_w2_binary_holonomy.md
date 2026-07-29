@@ -222,7 +222,7 @@ logically possible.
 Artifacts: `theory-w2-layer-d-coupled.json`,
 `theory-w2-layer-d-s3-classes.json`, and
 `theory-w2-layer-d-proof-index40.json` plus its 54 compressed certificate
-pairs. Replay: `scripts/verify_theory_w2_layer_d_proofs.py`.
+pairs. Replay: `scripts/certificate_tools/holonomy/verify_index40_drat.py`.
 
 ## D-W2-D2 — index 45 and the three quotient-map signatures
 
@@ -388,7 +388,7 @@ Artifacts: `theory-w2-layer-d-small-groups.json`,
 `theory-w2-layer-d-a4-signature.json`,
 `theory-w2-layer-d-a4-sat-index50.json`, and
 `theory-w2-layer-d-a4-proof-index50.json` plus its 576 compressed certificate
-pairs. Replay: `scripts/verify_theory_w2_layer_d_a4_proofs.py`.
+pairs. Replay: `scripts/certificate_tools/holonomy/verify_a4_index50_drat.py`.
 
 ## T2.D4 — A4 semidirect coordinates and geometric twist reduction
 
@@ -484,7 +484,7 @@ not substitute for that derivation.
 Artifacts: `theory-w2-layer-d-a4-signature-index55.json` and
 `theory-w2-layer-d-a4-proof-index55.json` plus 336 ignored local CNF/DRAT
 pairs. Cold replay:
-`scripts/verify_theory_w2_layer_d_a4_proofs_index55.py`.
+`scripts/certificate_tools/holonomy/verify_a4_index55_drat.py`.
 
 ## T2.D5 — local V4 SFT and the 2-Lambda saturation theorem
 
@@ -594,7 +594,7 @@ been produced. It also remains finite and therefore does not settle O1.
 Artifacts: `theory-w2-layer-d-a4-proof-index60-packing.json`, its three local
 compressed proof pairs, and the representative drawing
 `theory-w2-layer-d-v4-packing-overlap6.svg`. Cold replay:
-`scripts/verify_theory_w2_layer_d_v4_packing.py`.
+`scripts/certificate_tools/holonomy/verify_v4_packing_drat.py`.
 
 ## T2.D2-60 — complete certified quotient prefix through index 60
 
@@ -636,7 +636,7 @@ of finite prefixes will be presented as a proof of aperiodicity.
 
 Artifact: `theory-w2-layer-d-a4-proof-index60-map7.json` plus its 42 ignored
 local compressed certificate pairs. Cold replay:
-`scripts/verify_theory_w2_layer_d_v4_proofs_index60.py`.
+`scripts/certificate_tools/holonomy/verify_v4_index60_drat.py`.
 
 ## T2.D7 candidate — an affine packing-density theorem
 

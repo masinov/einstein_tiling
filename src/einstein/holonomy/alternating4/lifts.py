@@ -8,6 +8,9 @@ therefore pulls back without another SAT solve.
 
 from __future__ import annotations
 
+from hashlib import sha256
+import json
+
 from einstein.holonomy.constraints import quotient_boundary_data
 
 
@@ -79,3 +82,49 @@ def unsatisfied_clauses(cnf, values):
         index for index, clause in enumerate(cnf.clauses)
         if not any(values[abs(literal)] == (literal > 0) for literal in clause)
     )
+
+
+def even_hnfs(maximum_index: int):
+    """Enumerate every HNF sublattice of ``2 Lambda`` through an index."""
+
+    return tuple(
+        (a, b, d)
+        for a in range(2, maximum_index + 1, 2)
+        for d in range(2, maximum_index // a + 1, 2)
+        for b in range(0, a, 2)
+    )
+
+
+def aggregate_rows(rows) -> str:
+    """Stable digest of a sequence of JSON certificate rows."""
+
+    digest = sha256()
+    for row in rows:
+        digest.update(
+            json.dumps(row, sort_keys=True, separators=(",", ":")).encode()
+        )
+        digest.update(b"\n")
+    return digest.hexdigest()
+
+
+def verify_finite_lift(arguments):
+    """Replay one finite pullback row for process-pool verification."""
+
+    from einstein.holonomy.alternating4.local_system import (
+        build_v4_coverability_cnf,
+    )
+    from einstein.holonomy.constraints import _cnf_sha256
+
+    shape, hnf, mapping_index, images, base_twists, selected, colors = arguments
+    twists, values = lift_2lambda_witness(
+        shape, hnf, base_twists, selected, colors
+    )
+    cnf, _ = build_v4_coverability_cnf(shape, hnf, images, twists)
+    if unsatisfied_clauses(cnf, values):
+        raise AssertionError(f"finite pullback failed: {hnf}")
+    return {
+        "hnf": list(hnf),
+        "mapping_index": mapping_index,
+        "twists": list(twists),
+        "cnf_sha256": _cnf_sha256(cnf),
+    }

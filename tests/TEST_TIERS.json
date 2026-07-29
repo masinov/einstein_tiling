@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "semantics": "First matching glob assigns one primary executable tier to each test module.",
+  "semantics": "Each test module's path relative to tests/ matches exactly one evidence-role directory glob.",
   "tiers": {
     "tier_unit": "Reusable exact primitives with no dependence on historical research artifacts.",
     "tier_certificate": "Cold verification of retained certificates and source reconstructions.",
@@ -8,26 +8,9 @@
     "tier_provenance": "Governance, literature, catalog and external-anchor integrity."
   },
   "rules": [
-    {"glob": "test_consolidation_catalog.py", "tier": "tier_provenance"},
-    {"glob": "test_archive_semantic_inventory.py", "tier": "tier_provenance"},
-    {"glob": "test_package_architecture.py", "tier": "tier_provenance"},
-    {"glob": "test_certificate_registry.py", "tier": "tier_provenance"},
-    {"glob": "test_literature_catalog.py", "tier": "tier_provenance"},
-    {"glob": "test_research_governance.py", "tier": "tier_provenance"},
-    {"glob": "test_stade_source_anchor.py", "tier": "tier_provenance"},
-    {"glob": "test_kaplan_8kite_crosswalk.py", "tier": "tier_provenance"},
-    {"glob": "test_test_tiers.py", "tier": "tier_provenance"},
-    {"glob": "test_sturmian_*.py", "tier": "tier_certificate"},
-    {"glob": "test_stade_contacts.py", "tier": "tier_certificate"},
-    {"glob": "test_db.py", "tier": "tier_unit"},
-    {"glob": "test_enumeration.py", "tier": "tier_unit"},
-    {"glob": "test_kitegrid.py", "tier": "tier_unit"},
-    {"glob": "test_a*.py", "tier": "tier_control"},
-    {"glob": "test_e1_*.py", "tier": "tier_control"},
-    {"glob": "test_hat.py", "tier": "tier_control"},
-    {"glob": "test_turtle.py", "tier": "tier_control"},
-    {"glob": "test_k16w_exact.py", "tier": "tier_control"},
-    {"glob": "test_spectre_*.py", "tier": "tier_control"},
-    {"glob": "test_theory_*.py", "tier": "tier_control"}
+    {"glob": "unit/**/test_*.py", "tier": "tier_unit"},
+    {"glob": "certificates/**/test_*.py", "tier": "tier_certificate"},
+    {"glob": "controls/**/test_*.py", "tier": "tier_control"},
+    {"glob": "provenance/test_*.py", "tier": "tier_provenance"}
   ]
 }

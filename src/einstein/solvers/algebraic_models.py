@@ -11,9 +11,30 @@ from fractions import Fraction
 from math import isqrt
 
 import cvc5
+import z3
 
 
 Polynomial = dict[int, Fraction]
+
+
+def exact_z3_payload(value) -> dict:
+    """Serialize one Z3 real value without treating a decimal as evidence."""
+
+    value = z3.simplify(value)
+    if z3.is_rational_value(value):
+        return {
+            "kind": "rational",
+            "numerator": value.numerator_as_long(),
+            "denominator": value.denominator_as_long(),
+            "smt2": value.sexpr(),
+        }
+    if z3.is_algebraic_value(value):
+        return {
+            "kind": "algebraic",
+            "smt2": value.sexpr(),
+            "decimal_80": value.as_decimal(80),
+        }
+    return {"kind": "expression", "smt2": value.sexpr()}
 
 
 def _add(left: Polynomial, right: Polynomial) -> Polynomial:

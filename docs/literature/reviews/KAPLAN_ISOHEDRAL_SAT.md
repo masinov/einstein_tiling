@@ -98,8 +98,8 @@ Artifacts:
 
 - `docs/notebook/assets/a1-isohedral-control.json`;
 - `docs/notebook/assets/a1-isohedral-control.svg`;
-- `scripts/run_a1_isohedral_control.py`;
-- `scripts/verify_a1_isohedral_control.py`;
+- the frozen historical runner recorded in `scripts/archive/MANIFEST.json`;
+- `scripts/benchmarks/polykites/verify_isohedral_witnesses.py`;
 - `tests/test_a1_isohedral.py`.
 
 ## Role and limit

@@ -1,7 +1,8 @@
 """Exact QF_NRA formulation of the frozen K16W carrier obligation.
 
 This module constructs one normalized existential formula.  It performs no
-search by itself; the gated runner in ``scripts/run_k16w_exact.py`` owns the
+search by itself; the frozen runner in
+``scripts/historical/thin_lens/solve_full_system.py`` owns the
 single HC-27 solver invocation.
 """
 

@@ -109,5 +109,5 @@ bytes  4779407
 ```
 
 The producer and cold verifier are respectively
-`scripts/build_sturmian_sub30_carriers.py` and
-`scripts/verify_sturmian_sub30_carriers.py`.
+`scripts/certificates.py build sub30-carriers` and
+`scripts/certificates.py verify sub30-carriers`.

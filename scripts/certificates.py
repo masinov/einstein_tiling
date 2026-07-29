@@ -1,62 +1,103 @@
 #!/usr/bin/env python3
-"""Discover and dispatch retained exact certificate operations."""
+"""Discover, build and cold-verify retained exact certificate families."""
 
 from __future__ import annotations
 
 import argparse
 import json
 from pathlib import Path
-import shlex
-import subprocess
-import sys
 
-from einstein.certificates import FAMILIES, family, validate_registry
+from einstein.repository import repository_root
 
-
-ROOT = Path(__file__).resolve().parents[1]
+from einstein.certificates import FAMILIES, execute, family, validate_registry
 
 
-def command(item, operation: str, arguments: list[str]) -> list[str]:
-    script = item.builder if operation == "build" else item.verifier
-    return [sys.executable, str(ROOT / script), *arguments]
+ROOT = repository_root(Path(__file__))
+
+
+def _operation_parser(
+    subparsers, operation: str, family_name: str
+) -> argparse.ArgumentParser:
+    item = family(family_name)
+    command = subparsers.add_parser(family_name, help=item.description)
+    artifact_flag = "--output" if operation == "build" else "--input"
+    command.add_argument(
+        artifact_flag,
+        dest="artifact",
+        type=Path,
+        default=ROOT / item.artifact,
+        help=f"artifact path (default: {item.artifact})",
+    )
+    specification = item.build if operation == "build" else item.verify
+    seen = set()
+    for input_item in specification.inputs:
+        if input_item.source == "artifact" or input_item.name in seen:
+            continue
+        seen.add(input_item.name)
+        option = f"--{input_item.name.replace('_', '-')}"
+        kwargs = {"type": Path}
+        if input_item.source == "dependency":
+            dependency = family(input_item.family)
+            kwargs["help"] = (
+                f"override {input_item.name} dependency "
+                f"(default: {dependency.artifact})"
+            )
+        elif input_item.default is not None:
+            kwargs["default"] = ROOT / input_item.default
+            kwargs["help"] = f"external input (default: {input_item.default})"
+        else:
+            kwargs["required"] = True
+            kwargs["help"] = "required external input"
+        command.add_argument(option, dest=input_item.name, **kwargs)
+    command.set_defaults(operation=operation, family=family_name)
+    return command
+
+
+def parser() -> argparse.ArgumentParser:
+    result = argparse.ArgumentParser(description=__doc__)
+    commands = result.add_subparsers(dest="command", required=True)
+    commands.add_parser("list", help="list registered certificate families")
+    describe = commands.add_parser("describe", help="show one family contract")
+    describe.add_argument("family", choices=tuple(item.name for item in FAMILIES))
+    for operation in ("build", "verify"):
+        operation_parser = commands.add_parser(
+            operation, help=f"{operation} one registered family"
+        )
+        families = operation_parser.add_subparsers(required=True)
+        for item in FAMILIES:
+            _operation_parser(families, operation, item.name)
+    return result
 
 
 def main() -> None:
-    raw_arguments = sys.argv[1:]
-    if "--" in raw_arguments:
-        separator = raw_arguments.index("--")
-        cli_arguments = raw_arguments[:separator]
-        forwarded_arguments = raw_arguments[separator + 1 :]
-    else:
-        cli_arguments = raw_arguments
-        forwarded_arguments = []
-
-    parser = argparse.ArgumentParser()
-    subparsers = parser.add_subparsers(dest="command", required=True)
-    subparsers.add_parser("list")
-    describe = subparsers.add_parser("describe")
-    describe.add_argument("family")
-    run = subparsers.add_parser("run")
-    run.add_argument("family")
-    run.add_argument("operation", choices=("build", "verify"))
-    run.add_argument("--dry-run", action="store_true")
-    args = parser.parse_args(cli_arguments)
-
+    args = parser().parse_args()
     validate_registry(ROOT)
     if args.command == "list":
         for item in FAMILIES:
             print(f"{item.name:30} {item.artifact}")
         return
-
-    item = family(args.family)
     if args.command == "describe":
-        print(json.dumps(item.as_dict(), indent=2))
+        print(json.dumps(family(args.family).as_dict(), indent=2))
         return
 
-    invocation = command(item, args.operation, forwarded_arguments)
-    print(shlex.join(invocation))
-    if not args.dry_run:
-        subprocess.run(invocation, cwd=ROOT, check=True)
+    item = family(args.family)
+    specification = item.build if args.operation == "build" else item.verify
+    overrides = {
+        input_item.name: getattr(args, input_item.name)
+        for input_item in specification.inputs
+        if input_item.source != "artifact"
+        and hasattr(args, input_item.name)
+        and getattr(args, input_item.name) is not None
+    }
+    execute(
+        ROOT,
+        args.family,
+        args.operation,
+        artifact_path=args.artifact,
+        overrides=overrides,
+    )
+    verb = "built" if args.operation == "build" else "verified"
+    print(f"{verb} {args.family}: {args.artifact}")
 
 
 if __name__ == "__main__":

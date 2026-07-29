@@ -78,4 +78,4 @@ explicit review.
 - Exact coordinate cores: `src/einstein/geometry/`
 - Python architecture map: `src/einstein/README.md`
 - Consolidation validation:
-  `venv/bin/python scripts/check_consolidation_catalog.py`
+  `venv/bin/python scripts/maintenance/check_catalog.py`

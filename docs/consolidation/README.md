@@ -22,13 +22,13 @@ The files have distinct roles:
 Regenerate the two inventories with:
 
 ```bash
-venv/bin/python scripts/build_consolidation_catalog.py
+venv/bin/python scripts/maintenance/build_catalog.py
 ```
 
 Validate all four documents and their path/claim coverage with:
 
 ```bash
-venv/bin/python scripts/check_consolidation_catalog.py
+venv/bin/python scripts/maintenance/check_catalog.py
 ```
 
 Both commands are read-only with respect to research data.  The builder only

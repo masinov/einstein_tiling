@@ -96,3 +96,18 @@ deleted or rewritten.
 - Migrated repository and archived-script imports mechanically and retained
   both pre-migration and current hashes in the archive manifest.
 - Added `src/einstein/README.md` as the canonical package and dependency map.
+
+## 2026-07-29 — command and test architecture
+
+- Reduced the script root to stable governance, literature and certificate
+  commands; grouped maintenance, benchmarks, visualization, legacy
+  certificate tools and coupled historical runners by responsibility.
+- Replaced eighteen pairs of source-specific AHI/Stade certificate wrappers
+  with one declarative build/verify interface in `einstein.certificates`.
+- Moved reusable Stade contact construction and repository catalog logic into
+  `src/einstein/`; the corresponding scripts are now thin argument parsers or
+  entry points.
+- Organized tests by evidence role (`unit`, `certificates`, `controls`, and
+  `provenance`) and then by mathematical domain, with location-independent
+  repository paths and executable tier coverage.
+- Preserved the hash-pinned script archive and research provenance unchanged.

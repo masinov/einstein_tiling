@@ -73,6 +73,48 @@ def build_signature_packing_cnf(shape, hnf, signature_rows):
     return cnf, metadata
 
 
+def build_single_orbit_packing_cnf(shape, witness, lift):
+    """Rebuild the historical index-60 single-collision-orbit refinement.
+
+    Unlike ``build_signature_packing_cnf``, ``witness`` already stores its
+    layer images and ``lift`` stores each induced twist. The function is kept
+    here because both artifact construction and cold verification use the
+    same exact mathematical refinement.
+    """
+
+    hnf = tuple(lift["hnf"])
+    layers = tuple(
+        (tuple(images), tuple(twists))
+        for images, twists in zip(witness["images"], lift["induced_twists"])
+    )
+    cnf, metadata = build_v4_product_coverability_cnf(shape, hnf, layers)
+    instance, _, _ = quotient_boundary_data(shape, hnf)
+    target = canonical_collision_type(
+        placement_lattice_cells(shape, PACKING_COLLISION_SEED[0]),
+        placement_lattice_cells(shape, PACKING_COLLISION_SEED[1]),
+    )
+    clauses = collision_orbit_clauses(shape, hnf, instance, target)
+    if len(clauses) != 12 * hnf[0] * hnf[2]:
+        raise AssertionError("collision orbit is not free under translation and D6")
+    if any(
+        not (
+            instance.placements[-left - 1][1]
+            & instance.placements[-right - 1][1]
+        )
+        for left, right in clauses
+    ):
+        raise AssertionError("packing orbit contains a non-collision")
+    cnf.extend(clauses)
+    packing = {
+        "kind": "single-D6-collision-orbit-nonoverlap",
+        "seed_placements": [list(row) for row in PACKING_COLLISION_SEED],
+        "overlap_cells": collision_overlap(target),
+        "orbit_clauses": len(clauses),
+        "is_subset_of_exact_nonoverlap": True,
+    }
+    return cnf, metadata, packing
+
+
 def coverage_summary(shape, hnf, true_variables):
     """Selected-placement count and cell multiplicities of a SAT assignment."""
     instance, _, _ = quotient_boundary_data(shape, tuple(hnf))

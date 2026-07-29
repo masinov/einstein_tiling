@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "snapshot_date": "2026-07-29",
-  "generated_by": "scripts/build_consolidation_catalog.py",
+  "generated_by": "scripts/maintenance/build_catalog.py",
   "semantics": "Tracked evidence is hash-pinned individually. Ignored stores are storage inventories only and are not promoted to mathematical evidence.",
   "summary": {
     "tracked_or_nonignored_artifact_count": 290,
@@ -126,7 +126,7 @@
       "kind": "source-reconstruction-certificate",
       "disposition": "retained-evidence",
       "category": "ahi-certificate",
-      "reference_count": 14
+      "reference_count": 16
     },
     {
       "path": "data/sturmian-source/ahi-section10-supports.json",
@@ -136,7 +136,7 @@
       "kind": "source-reconstruction-certificate",
       "disposition": "retained-evidence",
       "category": "ahi-certificate",
-      "reference_count": 32
+      "reference_count": 24
     },
     {
       "path": "data/sturmian-source/ahi-seventeen-rhombus-compiler.json",
@@ -216,7 +216,7 @@
       "kind": "literature-anchor",
       "disposition": "canonical",
       "category": "literature",
-      "reference_count": 18
+      "reference_count": 16
     },
     {
       "path": "docs/notebook/assets/PROOF_PAYLOADS.md",
@@ -226,7 +226,7 @@
       "kind": "artifact-policy",
       "disposition": "canonical",
       "category": "artifact-policy",
-      "reference_count": 8
+      "reference_count": 10
     },
     {
       "path": "docs/notebook/assets/a1-extended-small-candidate-results.json",
@@ -446,7 +446,7 @@
       "kind": "certificate-or-result",
       "disposition": "archive-history",
       "category": "legacy-experiment-artifact",
-      "reference_count": 65
+      "reference_count": 71
     },
     {
       "path": "docs/notebook/assets/deep-heesch-id1080-h2.svg",
@@ -2816,7 +2816,7 @@
       "kind": "certificate-or-result",
       "disposition": "retained-control",
       "category": "spectre-control-artifact",
-      "reference_count": 15
+      "reference_count": 17
     },
     {
       "path": "docs/notebook/assets/theory-w3-spectre-parent-overlap.json",
@@ -2846,7 +2846,7 @@
       "kind": "certificate-or-result",
       "disposition": "retained-control",
       "category": "spectre-control-artifact",
-      "reference_count": 37
+      "reference_count": 39
     },
     {
       "path": "docs/notebook/assets/theory-w3-spectre-physical-language.svg",

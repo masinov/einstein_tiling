@@ -9,17 +9,12 @@ import subprocess
 import sys
 from pathlib import Path
 
-from check_experiment_gate import validate
+from einstein.repository import repository_root
+from einstein.repository.research import tree_bytes, validate_preregistration
 
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = repository_root(Path(__file__))
 CHECKPOINTS = ROOT / "docs" / "HUMAN_CHECKPOINTS.json"
-
-
-def tree_bytes(path: Path) -> int:
-    if not path.exists():
-        return 0
-    return sum(item.stat().st_size for item in path.rglob("*") if item.is_file())
 
 
 def main(argv: list[str]) -> int:
@@ -30,7 +25,7 @@ def main(argv: list[str]) -> int:
     notebook = Path(argv[1])
     if not notebook.is_absolute():
         notebook = ROOT / notebook
-    errors = validate(notebook)
+    errors = validate_preregistration(notebook)
     if errors:
         for error in errors:
             print(f"gate: {error}", file=sys.stderr)
