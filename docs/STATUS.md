@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-29 (session 198 bent zipper packing cone)
+**Last updated:** 2026-07-29 (session 199 outward zipper and port curvature)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active at one common-polygon port-cone embedding, followed by the all-contact/source-lift obligations. N68H closes boundary-neutral carriers; N69O/N70T close ordinary and additive interfaces. K70Z/K71T give an exact terminal-free `Z/2` zipper. K72F bends it without changing its language, and K72S gives a simple algebraic `30`-degree fan so repeated roles are no longer translates. K72C reduces four collision-free patches to one uniform cone-containment problem. No polygon satisfying it is yet proved (ERR-017/D-0208--D-0225). |
+| ST-M1 — Sturmian monotile encoding | ▶ active at one exact reflex-reset comb, followed by the all-contact/source-lift obligations. N68H closes boundary-neutral carriers; N69O/N70T close ordinary and additive interfaces. K70Z/K71T give an exact terminal-free `Z/2` zipper. K73F selects its outward-divergent `30`-degree branch. N73W proves that the six port germs cannot all use unbroken convex flanks. K73R forces four reflex resets in the retained nonadjacent alphabet and at least three even after the sole compatible adjacency. No common polygon is yet proved (ERR-017/D-0208--D-0226). |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -352,6 +352,13 @@
   parity patches.  The sole packing question is now whether one polygon can
   carry every required side germ while its canonical remainder stays in the
   corresponding narrow cone (K72F/K72S/K72C, D-0225).
+- **Outward zipper and curvature filter:** the useful conjugate bend
+  `C=7pi/6` gives a convex host arc with five divergent exterior normal
+  directions.  The six code/delimiter port germs already contribute
+  `31pi/6` of positive turn when nonadjacent, so no all-convex or
+  unbroken-flank cone carrier exists.  That alphabet has residual signed turn
+  `-19pi/6` and needs four reflex resets; the only compatible port adjacency
+  still leaves a three-reset lower bound (K73F/N73W/K73R, D-0226).
 - **ST-M1 consolidated dossier:** theory note 14 now gives the complete
   P0/S0/Q0/K1T/K1P/N5--N9/K2C/K2V chain and conditional K2J-to-monotile
   argument in one self-contained proof draft. It makes no novelty or monotile
@@ -953,11 +960,12 @@ The controlling 2026-07-28 target supersedes the chronological archive below:
 1. Treat N64S/N65S/N68H as completed carrier-local base cases: no synthesis
    through area 30, no boundary-neutral count-changing state at any area, and
    no return to P17 or an integer-by-integer carrier census.
-2. Realize or refute the K72C common-polygon cone embedding.  Strengthen the
-   separated-tab lemma to a narrow multi-tip carrier containing the bent host
-   chain, or prove the host/delimiter lengths make uniform cone containment
-   impossible.  Only a positive common-polygon lemma opens the complete
-   unintended-contact atlas.
+2. Construct or refute one exact K73R reflex-reset comb on the outward K73F
+   fan.  A positive result requires a complete cyclic boundary, exact
+   coordinates and all four disjoint placement tables.  The convex-cap and
+   unbroken port-wedge families are closed; arbitrary cone rhetoric is not a
+   substitute for the reset topology.  Only a positive common-polygon lemma
+   opens the complete unintended-contact atlas.
 3. In parallel, formalize the cross-carrier alternative: bound how a fixed
    source macro can intersect neighboring carriers and state the finite local
    data required for a total decoder.  This is the only way to escape the

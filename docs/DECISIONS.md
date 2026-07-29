@@ -4613,3 +4613,23 @@ the K72F side germs and host chain.  K71B's arbitrary separated tabs do not
 prove this stronger property.  No coordinate search or candidate promotion
 is justified until the cone embedding is proved or the cone family is closed
 by theorem.
+
+## D-0226 (2026-07-29) — Use the outward bend and require reflex resets
+
+The `C=5pi/6` K72S chain is a valid exact local zipper, but its host is reflex
+and its exterior normal rays converge; simplicity alone did not make it a
+packing fan.  The conjugate K72F choice `C=7pi/6` preserves the exact parity
+language and yields a convex `30`-degree host arc with divergent exterior
+normal order.  It is the retained packing branch.
+
+The six required outward-branch port germs contribute total positive
+exterior turn `31pi/6` when nonadjacent.  The endpoint table permits at most
+one port--port identification, leaving at least `14pi/3`.  They therefore
+cannot all be unbroken convex-flank ports: distinct convex-hull turns cannot
+exceed `2pi`.  On the retained nonadjacent carrier, the remaining boundary
+must contribute exactly `-19pi/6`, so at least four reflex vertices are
+compulsory; even the sole adjacency relaxation needs at least three.  This
+closes the naive convex port-wedge implementation, not K70P.  Any positive
+continuation must give a single reflex-reset comb, its exact cyclic boundary,
+and all four placement tables; an unspecified narrow-body or convex-cap
+argument is no longer admissible.
