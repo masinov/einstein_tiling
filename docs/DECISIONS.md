@@ -4531,3 +4531,22 @@ must therefore be boundary-active, joint multi-rail and contextual.  The next
 object is its finite phase-transport relation, not another carrier area,
 polygon, or additive local charge.  N66R remains open for that precisely
 named residual class.
+
+## D-0222 (2026-07-29) — Retire ordinary vertices as the joint rail coupler
+
+An ordinary polygon vertex supplies pairwise boundary-germ compatibility and
+one joint equation: the incident sector angles sum to `2*pi`.  For three
+binary active roles, accepting the four AHI even-parity states forces all
+three state-dependent angle differences to vanish.  Since the even-parity
+relation has full unary and binary projections, every pairwise check must
+also accept every pair.  The four odd states are therefore unavoidable.
+
+This closes every boundary-active realization whose only joint mechanism is
+an ordinary punctured-disk sector star, including arbitrary fixed guard
+participants and state-dependent nonconvex angles.  Combined with D-0221,
+any carrier-local unmarked compiler must instead exhibit a locally visible
+auxiliary star state, a genuine non-ordinary contact hyperedge (T-junction,
+side subdivision, multi-arc fusion), or a proved larger-radius exclusion on
+all tilings.  Pure pose and unanchored lattice phase remain unavailable by
+N7--N9.  No new carrier geometry is justified before one of these mechanisms
+is specified exactly.

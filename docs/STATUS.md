@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-29 (session 194 coupled-vertex and boundary-active reduction)
+**Last updated:** 2026-07-29 (session 195 ordinary-vertex parity no-go)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active at the boundary-active joint phase-transport class plus the cross-carrier/nonseparable boundary. Minimality eliminates proper lattice-factor pruning; rail-separable schemes are periodic. Complete exact classifications close every carrier-local compiler through area 30. K68V proves the coupled local vertex algebra has no charge beyond parity, while N68H closes every boundary-neutral count-changing carrier at all areas. Hence any survivor must export joint multi-rail state through its boundary. The marked family is undecidable and contact-complete separable Stade erasures are periodic (ERR-017/D-0208--D-0221). |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active at one non-ordinary contact-hyperedge/visible-star problem plus the cross-carrier boundary. Minimality eliminates proper lattice-factor pruning; rail-separable schemes are periodic. K68V proves the local vertex algebra has no charge beyond parity, N68H closes boundary-neutral carriers at every area, and K69A/N69O close ordinary multi-tile sector vertices as the joint coupler. Any survivor must export joint rail state through a visible auxiliary completion, T-junction/fusion hyperedge, or proved larger-radius exclusion. The marked family is undecidable and contact-complete separable Stade erasures are periodic (ERR-017/D-0208--D-0222). |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -320,6 +320,14 @@
   large-macro count.  All boundary-neutral carrier trades are closed at every
   area.  The sole carrier-local residue is boundary-active, joint multi-rail
   phase transport (K68V/N68H/K68R, D-0221).
+- **Ordinary-vertex parity no-go:** the even AHI relation has full unary and
+  binary projections.  At an ordinary multi-tile vertex, accepting its four
+  even states makes the four sector-angle equations force every active angle
+  difference to zero, so all four odd states survive too.  Fixed guards and
+  nonconvexity away from the vertex do not help.  Any boundary-active compiler
+  therefore needs a visible auxiliary star state, a genuine T-junction or
+  fusion hyperedge, or a proved larger-radius exclusion (K69A/N69O/K69F,
+  D-0222).
 - **ST-M1 consolidated dossier:** theory note 14 now gives the complete
   P0/S0/Q0/K1T/K1P/N5--N9/K2C/K2V chain and conditional K2J-to-monotile
   argument in one self-contained proof draft. It makes no novelty or monotile
@@ -921,11 +929,12 @@ The controlling 2026-07-28 target supersedes the chronological archive below:
 1. Treat N64S/N65S/N68H as completed carrier-local base cases: no synthesis
    through area 30, no boundary-neutral count-changing state at any area, and
    no return to P17 or an integer-by-integer carrier census.
-2. Classify the remaining boundary-active joint phase-transport relation.
-   State its finite carrier-interface variables and decide whether all such
-   relations in a clearly defined contact family force a periodic factor,
-   admit one total AHI relation, or have an undecidable nonemptiness problem.
-   Local additive charges are exhausted by K68V and are not to be escalated.
+2. Classify the minimal non-ordinary joint interface: a host boundary arc
+   partitioned by congruent neighbors or an equivalent carrier--verifier
+   fusion.  Decide its full local-closure relation and whether it realizes
+   the AHI even-parity hyperedge without odd words or periodic faults.
+   Ordinary sector vertices are closed by N69O; local additive charges are
+   exhausted by K68V.
 3. In parallel, formalize the cross-carrier alternative: bound how a fixed
    source macro can intersect neighboring carriers and state the finite local
    data required for a total decoder.  This is the only way to escape the
