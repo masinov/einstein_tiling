@@ -4593,3 +4593,23 @@ patch packing or totality.  The next obligation is simultaneous exact
 placement of congruent copies for all four parity patches with disjoint
 interiors, followed by the complete unintended-contact atlas.  No arbitrary
 new boundary word is authorized in place of this fixed mechanism.
+
+## D-0225 (2026-07-29) — Bend the zipper before attempting body packing
+
+Phase matching requires a constant endpoint-sector sum, not a straight host.
+K72F introduces the exact parameter `C`: equal hidden phases contribute
+endpoint sum `C`, while the host contributes `2pi-C`.  The visible parity
+language and terminal erasure remain unchanged.
+
+The specialization `C=5pi/6` turns successive host slots by `pi/6`.  Its
+length sequence `4,1,1,1,4` has an explicit simple coordinate chain in
+`Q(sqrt(3))`; even the three `E_00` occurrences of word `000` now have
+distinct fan poses rather than being translates.  K72C records a sufficient
+collision-free packing condition: every placed copy lies in one of finitely
+many disjoint exterior port cones.
+
+The next construction problem is one common-polygon cone embedding carrying
+the K72F side germs and host chain.  K71B's arbitrary separated tabs do not
+prove this stronger property.  No coordinate search or candidate promotion
+is justified until the cone embedding is proved or the cone family is closed
+by theorem.

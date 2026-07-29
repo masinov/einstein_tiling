@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-29 (session 197 geometric zipper-terminal erasure)
+**Last updated:** 2026-07-29 (session 198 bent zipper packing cone)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active at K70P's simultaneous congruent-packing and all-contact obligations. N68H closes boundary-neutral carriers at every area; N69O and N70T close ordinary vertices and torsion-free additive interfaces. K70Z gives an exact `Z/2` T-junction parity kernel. K71T removes its painted terminals with asymmetric delimiters, and K71B proves all required rooted side germs coexist on one connected asymmetric polygon. The four disjoint congruent patches, unintended-contact atlas, and total 31-state source lift remain open (ERR-017/D-0208--D-0224). |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active at one common-polygon port-cone embedding, followed by the all-contact/source-lift obligations. N68H closes boundary-neutral carriers; N69O/N70T close ordinary and additive interfaces. K70Z/K71T give an exact terminal-free `Z/2` zipper. K72F bends it without changing its language, and K72S gives a simple algebraic `30`-degree fan so repeated roles are no longer translates. K72C reduces four collision-free patches to one uniform cone-containment problem. No polygon satisfying it is yet proved (ERR-017/D-0208--D-0225). |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -345,6 +345,13 @@
   carry the host, delimiter, four code, and cap germs simultaneously.  The
   remaining constructive burden is simultaneous congruent packing of all
   four parity patches and the complete contact atlas (K71T/K71B, D-0224).
+- **Bent zipper packing reduction:** phase equality survives a constant bend
+  `gamma=2pi-C`.  At `C=5pi/6`, the exact `4,1,1,1,4` host chain is simple
+  over `Q(sqrt(3))` and its three active slots fan by `30` degrees.  A uniform
+  set of disjoint exterior port cones is sufficient for all four congruent
+  parity patches.  The sole packing question is now whether one polygon can
+  carry every required side germ while its canonical remainder stays in the
+  corresponding narrow cone (K72F/K72S/K72C, D-0225).
 - **ST-M1 consolidated dossier:** theory note 14 now gives the complete
   P0/S0/Q0/K1T/K1P/N5--N9/K2C/K2V chain and conditional K2J-to-monotile
   argument in one self-contained proof draft. It makes no novelty or monotile
@@ -946,11 +953,11 @@ The controlling 2026-07-28 target supersedes the chronological archive below:
 1. Treat N64S/N65S/N68H as completed carrier-local base cases: no synthesis
    through area 30, no boundary-neutral count-changing state at any area, and
    no return to P17 or an integer-by-integer carrier census.
-2. Realize or refute the fixed K70P zipper contract.  K71T/K71B close
-   terminal erasure and boundary-alphabet coexistence.  Now prove one common
-   simple polygon admits all four complete host/delimiter/code/cap patches
-   with pairwise-disjoint congruent occurrences, or derive a family no-go.
-   Only after that may the complete unintended-contact atlas be attempted.
+2. Realize or refute the K72C common-polygon cone embedding.  Strengthen the
+   separated-tab lemma to a narrow multi-tip carrier containing the bent host
+   chain, or prove the host/delimiter lengths make uniform cone containment
+   impossible.  Only a positive common-polygon lemma opens the complete
+   unintended-contact atlas.
 3. In parallel, formalize the cross-carrier alternative: bound how a fixed
    source macro can intersect neighboring carriers and state the finite local
    data required for a total decoder.  This is the only way to escape the
