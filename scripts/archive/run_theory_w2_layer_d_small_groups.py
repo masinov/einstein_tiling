@@ -8,9 +8,9 @@ import json
 from pathlib import Path
 from time import perf_counter
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.finite_groups import SMALL_NONABELIAN_TARGETS, symmetric_group
-from einstein.theory.holonomy_quotients import boundary_quotient_census
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.combinatorics.finite_groups import SMALL_NONABELIAN_TARGETS, symmetric_group
+from einstein.holonomy.quotients import boundary_quotient_census
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -36,8 +36,8 @@ def main():
             flush=True,
         )
     sources = (
-        ROOT / "src/einstein/theory/finite_groups.py",
-        ROOT / "src/einstein/theory/holonomy_quotients.py",
+        ROOT / "src/einstein/combinatorics/finite_groups.py",
+        ROOT / "src/einstein/holonomy/quotients.py",
         Path(__file__),
     )
     payload = {

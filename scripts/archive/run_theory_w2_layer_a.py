@@ -7,9 +7,9 @@ from hashlib import sha256
 import json
 from pathlib import Path
 
-from einstein.db import code_version
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.invariants import (
+from einstein.polykites.database import code_version
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.periodicity.invariants import (
     area_obstruction,
     prime_sector_obstruction,
     verify_area_obstruction,

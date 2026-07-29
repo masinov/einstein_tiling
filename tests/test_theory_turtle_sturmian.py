@@ -2,7 +2,7 @@
 
 from fractions import Fraction
 
-from einstein.theory.turtle_sturmian import (
+from einstein.tilings.sturmian.turtle import (
     central_word,
     golden_density_root_residual,
     lower_density_side,

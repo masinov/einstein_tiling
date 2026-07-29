@@ -12,15 +12,15 @@ from time import perf_counter
 
 from pysat.solvers import Cadical195
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.finite_groups import alternating_group
-from einstein.theory.holonomy_csp import _cnf_sha256
-from einstein.theory.holonomy_finite_csp import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.combinatorics.finite_groups import alternating_group
+from einstein.holonomy.constraints import _cnf_sha256
+from einstein.holonomy.finite_constraints import (
     build_finite_boundary_holonomy_cnf,
     commuting_pairs,
 )
-from einstein.theory.holonomy_quotients import pullback_images
-from einstein.theory.holonomy_symmetry import hnf_d6_image
+from einstein.holonomy.quotients import pullback_images
+from einstein.holonomy.symmetry import hnf_d6_image
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -168,9 +168,9 @@ def main():
             "verdict": "holonomy-obstructed" if killers else "not-obstructed",
         })
     sources = (
-        ROOT / "src/einstein/theory/finite_groups.py",
-        ROOT / "src/einstein/theory/holonomy_quotients.py",
-        ROOT / "src/einstein/theory/holonomy_finite_csp.py",
+        ROOT / "src/einstein/combinatorics/finite_groups.py",
+        ROOT / "src/einstein/holonomy/quotients.py",
+        ROOT / "src/einstein/holonomy/finite_constraints.py",
         Path(__file__),
     )
     payload = {

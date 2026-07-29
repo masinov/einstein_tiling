@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from einstein.theory.sturmian_source import (
+from einstein.tilings.sturmian import (
     build_contact_kernel,
     verify_contact_kernel,
 )

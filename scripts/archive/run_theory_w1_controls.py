@@ -14,10 +14,10 @@ import json
 from pathlib import Path
 import sqlite3
 
-from einstein.db import code_version, deserialize_cells, serialize_cells
-from einstein.enumeration.polyform import enumerate_free_polykites
-from einstein.funnel.a1_torus import solve_torus_sat, verify_certificate
-from einstein.theory.transfer import (
+from einstein.polykites.database import code_version, deserialize_cells, serialize_cells
+from einstein.polykites.enumeration import enumerate_free_polykites
+from einstein.polykites.periodic_quotients import solve_torus_sat, verify_certificate
+from einstein.periodicity.transfer import (
     cylinder_basis,
     decide_period_vector,
     lattice_hnf,

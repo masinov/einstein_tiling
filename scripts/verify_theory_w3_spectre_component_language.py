@@ -8,13 +8,13 @@ import json
 from collections import deque
 from pathlib import Path
 
-from einstein.theory.spectre_component_language import patch_obeys_language
-from einstein.theory.spectre_patch_language import (
+from einstein.tilings.spectre.components import patch_obeys_language
+from einstein.tilings.spectre.patches import (
     IDENTITY,
     patch_edge_incidence,
     poses_overlap,
 )
-from einstein.theory.substitution_certificate import file_sha256
+from einstein.tilings.spectre.certificates import file_sha256
 try:
     from scripts.probe_theory_w3_spectre_component_language import (
         generated_parent_coronas, language, source,

@@ -8,20 +8,20 @@ from hashlib import sha256
 import json
 from pathlib import Path
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_v4_lift import induced_v4_twists
-from einstein.theory.a4_v4_packing import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.lifts import induced_v4_twists
+from einstein.holonomy.alternating4.packing import (
     canonical_collision_type,
     collision_orbit_clauses,
     placement_lattice_cells,
 )
-from einstein.theory.a4_v4_packing_family import (
+from einstein.holonomy.alternating4.packing_families import (
     PACKING_COLLISION_SEED,
     area_admissible_2lambda_hnfs,
     coverage_summary,
 )
-from einstein.theory.a4_v4_sft import build_v4_coverability_cnf
-from einstein.theory.holonomy_csp import _cnf_sha256, quotient_boundary_data
+from einstein.holonomy.alternating4.local_system import build_v4_coverability_cnf
+from einstein.holonomy.constraints import _cnf_sha256, quotient_boundary_data
 
 
 ROOT = Path(__file__).resolve().parents[1]

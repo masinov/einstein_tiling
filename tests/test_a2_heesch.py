@@ -5,20 +5,20 @@ the hat -- aperiodic but a tiler, so its coronas never stop); the unique
 non-tiling 2-kite must get a small exact Heesch number by exhaustion.
 """
 
-from einstein.funnel.a2_heesch import (
+from einstein.polykites.coronas import (
     has_hole,
     heesch_search,
     ring,
     verify_heesch_certificate,
 )
-from einstein.substrate.kitegrid import (
+from einstein.geometry.kite_grid import (
     cell_vertices,
     cells_at_point,
     cells_in_polygon,
     canonical_form,
 )
-from einstein.enumeration.polyform import enumerate_free_polykites
-from einstein.funnel.a1_torus import find_periodic_tiling
+from einstein.polykites.enumeration import enumerate_free_polykites
+from einstein.polykites.periodic_quotients import find_periodic_tiling
 from tests.test_hat import HAT_OUTLINE
 
 

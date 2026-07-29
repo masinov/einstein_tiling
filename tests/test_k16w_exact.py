@@ -7,9 +7,9 @@ import sys
 
 import z3
 
-from einstein.theory.cvc5_models import exact_real_payload
-from einstein.theory.k16w_exact import HC34_CELLS, build_problem
-from einstein.theory.k16w_tangent import build_tangent_problem
+from einstein.solvers.algebraic_models import exact_real_payload
+from einstein.historical.thin_lens.exact import HC34_CELLS, build_problem
+from einstein.historical.thin_lens.tangent import build_tangent_problem
 
 
 ROOT = Path(__file__).resolve().parent.parent

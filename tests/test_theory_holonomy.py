@@ -1,6 +1,6 @@
 """W2.D exact primary-source Cayley-diagram controls."""
 
-from einstein.theory.holonomy import (
+from einstein.holonomy.boundary import (
     A,
     IDENTITY,
     U,
@@ -70,7 +70,7 @@ def test_s3_displacement_kernel_extremes():
 
 
 def test_finalist_s3_surjections_reduce_to_conjugacy_classes():
-    from einstein.e1_candidates import decode_compiled_key
+    from einstein.polykites.known_shapes import decode_compiled_key
 
     shape = decode_compiled_key("010001010104010502f002f1030b030c04fa04fb")
     kernel3 = s3_boundary_surjections(shape, displacement_kernel_order=3)

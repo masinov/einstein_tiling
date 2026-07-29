@@ -19,13 +19,13 @@ import json
 import time
 from pathlib import Path
 
-from einstein.e1_candidates import (
+from einstein.polykites.known_shapes import (
     PUBLISHED_APERIODIC_POLYKITE_HORIZON,
     aperiodic_discovery_status,
     known_polykite_name,
     smallest_depth3_candidates,
 )
-from einstein.funnel.a3_patch import sat_grow_patch
+from einstein.polykites.patches import sat_grow_patch
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 ASSETS = ROOT / "docs" / "notebook" / "assets"

@@ -4,9 +4,9 @@ import itertools
 
 from pysat.solvers import Cadical195
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_semidirect import c3_action, canonical_a4_semidirect
-from einstein.theory.a4_v4_sft import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.group import c3_action, canonical_a4_semidirect
+from einstein.holonomy.alternating4.local_system import (
     MAP7,
     V4_TWIST_PAIRS,
     _append_implied_xor,
@@ -14,8 +14,8 @@ from einstein.theory.a4_v4_sft import (
     build_map7_v4_coverability_cnf,
     build_v4_coverability_cnf,
 )
-from einstein.theory.a4_v4_twist_union import build_v4_coverability_union_cnf
-from einstein.theory.holonomy import polykite_boundary_relators
+from einstein.holonomy.alternating4.twist_union import build_v4_coverability_union_cnf
+from einstein.holonomy.boundary import polykite_boundary_relators
 
 
 KEY = "010001010104010502f002f1030b030c04fa04fb"

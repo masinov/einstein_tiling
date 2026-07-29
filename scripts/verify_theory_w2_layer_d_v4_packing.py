@@ -13,7 +13,7 @@ from pathlib import Path
 import subprocess
 import tempfile
 
-from einstein.e1_candidates import decode_compiled_key
+from einstein.polykites.known_shapes import decode_compiled_key
 from run_theory_w2_layer_d_proofs import _clause_hash
 from run_theory_w2_layer_d_v4_packing import _build_case
 from verify_theory_w2_layer_d_proofs import _dimacs_clauses

@@ -10,13 +10,13 @@ import json
 from pathlib import Path
 from time import perf_counter
 
-from einstein.db import code_version
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.holonomy import (
+from einstein.polykites.database import code_version
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.boundary import (
     s3_boundary_surjections,
     verify_s3_boundary_quotient,
 )
-from einstein.theory.holonomy_csp import scan_boundary_holonomy
+from einstein.holonomy.constraints import scan_boundary_holonomy
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -148,8 +148,8 @@ def main():
         })
 
     sources = (
-        ROOT / "src/einstein/theory/holonomy.py",
-        ROOT / "src/einstein/theory/holonomy_csp.py",
+        ROOT / "src/einstein/holonomy/boundary.py",
+        ROOT / "src/einstein/holonomy/constraints.py",
         Path(__file__),
     )
     payload = {

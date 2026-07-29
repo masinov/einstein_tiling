@@ -6,10 +6,10 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from einstein.theory.spectre_patch_language import analyze_physical_patch_language
-from einstein.theory.substitution_certificate import file_sha256
-from einstein.funnel.a6_hierarchy import SPECTRE_TILE_BOUNDARY
-from einstein.substrate.module12 import apply_sr, madd, to_xy
+from einstein.tilings.spectre.patches import analyze_physical_patch_language
+from einstein.tilings.spectre.certificates import file_sha256
+from einstein.tilings.substitution import SPECTRE_TILE_BOUNDARY
+from einstein.geometry.cyclotomic import apply_sr, madd, to_xy
 
 
 ROOT = Path(__file__).resolve().parents[2]

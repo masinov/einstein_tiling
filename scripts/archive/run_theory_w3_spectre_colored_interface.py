@@ -7,19 +7,19 @@ import json
 from collections import defaultdict
 from pathlib import Path
 
-from einstein.funnel.a6_hierarchy import (
+from einstein.tilings.substitution import (
     CompositionRule, contract_level, cover_with_rule, raw_hierarchy_level,
 )
-from einstein.substrate.module12 import compose_pose
-from einstein.theory.spectre_colored_interface import (
+from einstein.geometry.cyclotomic import compose_pose
+from einstein.tilings.spectre.colored_interfaces import (
     colored_edges_are_reciprocal, colored_parent_corona,
     one_sided_projection, uncolored_projection,
 )
-from einstein.theory.spectre_geometry import exact_leaves
-from einstein.theory.spectre_parent_overlap import parent_templates
-from einstein.theory.spectre_patch_language import pose_json
-from einstein.theory.spectre_patch_language import patch_edge_incidence
-from einstein.theory.substitution_certificate import file_sha256
+from einstein.tilings.spectre.geometry import exact_leaves
+from einstein.tilings.spectre.parent_overlaps import parent_templates
+from einstein.tilings.spectre.patches import pose_json
+from einstein.tilings.spectre.patches import patch_edge_incidence
+from einstein.tilings.spectre.certificates import file_sha256
 
 try:
     from scripts.probe_theory_w3_spectre_component_language import (
@@ -93,7 +93,7 @@ def generated_states(a6, templates):
 
 
 def build_transducer(a6, allowed, templates):
-    from einstein.theory.spectre_parent_overlap import centered_parent_templates
+    from einstein.tilings.spectre.parent_overlaps import centered_parent_templates
     centered = centered_parent_templates(a6)
     lookup = {}
     for _, patch in all_radius3_states(allowed):

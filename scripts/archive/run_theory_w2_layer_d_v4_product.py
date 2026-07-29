@@ -10,14 +10,14 @@ from pathlib import Path
 
 from pysat.solvers import Cadical195
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_v4_lift import BASE_HNF, unsatisfied_clauses
-from einstein.theory.a4_v4_product import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.lifts import BASE_HNF, unsatisfied_clauses
+from einstein.holonomy.alternating4.products import (
     build_v4_product_coverability_cnf,
     lift_product_witness,
     semantic_product_witness,
 )
-from einstein.theory.holonomy_csp import _cnf_sha256, quotient_boundary_data
+from einstein.holonomy.constraints import _cnf_sha256, quotient_boundary_data
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -95,9 +95,9 @@ def main():
 
     dependencies = (BASE, RESIDUAL)
     sources = (
-        ROOT / "src/einstein/theory/a4_v4_sft.py",
-        ROOT / "src/einstein/theory/a4_v4_lift.py",
-        ROOT / "src/einstein/theory/a4_v4_product.py",
+        ROOT / "src/einstein/holonomy/alternating4/local_system.py",
+        ROOT / "src/einstein/holonomy/alternating4/lifts.py",
+        ROOT / "src/einstein/holonomy/alternating4/products.py",
         Path(__file__),
     )
     payload = {

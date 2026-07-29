@@ -19,14 +19,14 @@ import subprocess
 import tempfile
 from pathlib import Path
 
-from einstein.e1_candidates import (
+from einstein.polykites.known_shapes import (
     PUBLISHED_APERIODIC_POLYKITE_HORIZON,
     SMALLEST_DEPTH3_KEYS,
     aperiodic_discovery_status,
     decode_compiled_key,
     known_polykite_name,
 )
-from einstein.funnel.a1_torus import verify_certificate
+from einstein.polykites.periodic_quotients import verify_certificate
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 SOURCE = ROOT / "tools" / "a1_torus.rs"

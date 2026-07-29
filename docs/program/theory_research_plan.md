@@ -351,7 +351,7 @@ Before any finalist verdict is trusted:
 
 ### 3.5 Deliverables
 
-- `src/einstein/theory/transfer.py` (exact frontier automaton; pure Python
+- `src/einstein/periodicity/transfer.py` (exact frontier automaton; pure Python
   reference) + compiled port if profiling demands.
 - Decided replacement for `e1-finalist-period47.json`: circumference-47
   cycle verdict, plus the T1.2 norm ladder table.
@@ -601,7 +601,7 @@ the n≤8 Myers-validated census — zero false exclusions across all 60,477+
 verified certificates is the gate; (b) Layer D reproduces Conway–Lagarias'
 published triangle-region results.
 
-Deliverables: `src/einstein/theory/invariants.py`; per-layer kill tables
+Deliverables: `src/einstein/periodicity/invariants.py`; per-layer kill tables
 for the finalist; A1 integration (invariant pre-filter before SAT);
 EXPERIMENTS.md gate rows; for Layer D, a standalone note (potentially its
 own short paper if (ii) succeeds).

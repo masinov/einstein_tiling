@@ -5,8 +5,8 @@ from pathlib import Path
 
 import pytest
 
-from einstein.theory.spectre_geometry import exact_leaves
-from einstein.theory.spectre_parent_overlap import (
+from einstein.tilings.spectre.geometry import exact_leaves
+from einstein.tilings.spectre.parent_overlaps import (
     analyze_parent_overlap_language,
     build_grouping_problem,
     centered_parent_templates,

@@ -15,22 +15,22 @@ import json
 from pathlib import Path
 from time import perf_counter
 
-from einstein.db import code_version
-from einstein.e1_candidates import decode_compiled_key
-from einstein.funnel.a1_torus import sublattices
-from einstein.theory.binary_families import (
+from einstein.polykites.database import code_version
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.polykites.periodic_quotients import sublattices
+from einstein.periodicity.binary_families import (
     quotient_period_obstruction,
     verify_quotient_period_obstruction,
 )
-from einstein.theory.holonomy import (
+from einstein.holonomy.boundary import (
     s3_boundary_quotients,
     verify_s3_boundary_quotient,
 )
-from einstein.theory.holonomy_csp import (
+from einstein.holonomy.constraints import (
     scan_boundary_holonomy,
     solve_cover_control,
 )
-from einstein.theory.invariants import (
+from einstein.periodicity.invariants import (
     gf2_cokernel_obstruction,
     verify_gf2_cokernel_obstruction,
 )
@@ -227,8 +227,8 @@ def main():
             summary["tested_layer_d"] += 1
 
     source_paths = (
-        ROOT / "src/einstein/theory/holonomy.py",
-        ROOT / "src/einstein/theory/holonomy_csp.py",
+        ROOT / "src/einstein/holonomy/boundary.py",
+        ROOT / "src/einstein/holonomy/constraints.py",
         Path(__file__),
     )
     dependencies = (

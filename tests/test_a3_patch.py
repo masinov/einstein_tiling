@@ -9,15 +9,15 @@ and certificates survive only untampered.
 
 import pytest
 
-from einstein.enumeration.polyform import enumerate_free_polykites
-from einstein.funnel.a1_torus import find_periodic_tiling
-from einstein.funnel.a3_patch import (
+from einstein.polykites.enumeration import enumerate_free_polykites
+from einstein.polykites.periodic_quotients import find_periodic_tiling
+from einstein.polykites.patches import (
     disk_region,
     grow_patch,
     sat_grow_patch,
     verify_patch_certificate,
 )
-from einstein.substrate.kitegrid import (
+from einstein.geometry.kite_grid import (
     canonical_form,
     cell_centroid4,
     cells_in_polygon,

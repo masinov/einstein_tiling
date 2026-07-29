@@ -7,13 +7,13 @@ from hashlib import sha256
 import json
 from pathlib import Path
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_v4_lift import BASE_HNF, unsatisfied_clauses
-from einstein.theory.a4_v4_product import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.lifts import BASE_HNF, unsatisfied_clauses
+from einstein.holonomy.alternating4.products import (
     build_v4_product_coverability_cnf,
     lift_product_witness,
 )
-from einstein.theory.holonomy_csp import _cnf_sha256
+from einstein.holonomy.constraints import _cnf_sha256
 
 
 ROOT = Path(__file__).resolve().parents[1]

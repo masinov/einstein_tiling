@@ -7,7 +7,7 @@ import argparse
 import json
 from pathlib import Path
 
-from einstein.theory.sturmian_source import build_unit_apex_compiler
+from einstein.tilings.sturmian import build_unit_apex_compiler
 
 
 def main() -> None:

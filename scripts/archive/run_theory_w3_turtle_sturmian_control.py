@@ -16,8 +16,8 @@ from collections import Counter
 from fractions import Fraction
 from pathlib import Path
 
-from einstein.e1_candidates import TURTLE_KEY
-from einstein.theory.turtle_sturmian import (
+from einstein.polykites.known_shapes import TURTLE_KEY
+from einstein.tilings.sturmian.turtle import (
     SOURCE_ID,
     central_word,
     golden_density_root_residual,

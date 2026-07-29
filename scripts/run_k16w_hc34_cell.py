@@ -12,8 +12,8 @@ import time
 
 import z3
 
-from einstein.db import code_version
-from einstein.theory.k16w_exact import HC34_CELLS
+from einstein.polykites.database import code_version
+from einstein.historical.thin_lens.exact import HC34_CELLS
 from run_k16w_cell import exact_value
 
 

@@ -134,7 +134,7 @@ Only after controls pass:
 
 ## Implementation layout
 
-- `src/einstein/theory/transfer.py` — pure-Python reference.
+- `src/einstein/periodicity/transfer.py` — pure-Python reference.
 - `tests/test_theory_transfer.py` — controls and certificate verification.
 - `tools/transfer.rs` — optional compiled port after the reference gates.
 - `docs/notebook/assets/theory-w1-*.json` — versioned run artifacts.
@@ -142,7 +142,7 @@ Only after controls pass:
 
 ## Phase-0 implementation status (2026-07-17)
 
-The pure-Python reference now exists at `src/einstein/theory/transfer.py`.
+The pure-Python reference now exists at `src/einstein/periodicity/transfer.py`.
 It uses exact lattice coordinates and enumerates every nonoverlapping union of
 whole-tile crossing contributions before constructing transitions. It never
 uses empty-frontier reachability as its completeness criterion. Directed cycles

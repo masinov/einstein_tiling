@@ -14,8 +14,8 @@ The n <= 6 check runs in the fast suite; n = 7, 8 are marked slow.
 
 import pytest
 
-from einstein.enumeration.polyform import enumerate_free_polykites
-from einstein.funnel.a1_torus import find_periodic_tiling
+from einstein.polykites.enumeration import enumerate_free_polykites
+from einstein.polykites.periodic_quotients import find_periodic_tiling
 
 # n -> number of polykites admitting a grid-aligned periodic tiling
 MYERS_PERIODIC = {1: 1, 2: 1, 3: 4, 4: 5, 5: 1, 6: 71, 7: 55, 8: 39}

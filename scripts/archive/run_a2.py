@@ -17,8 +17,8 @@ Resumable; skips shapes with an existing A2-heesch verdict.
 import sys
 import time
 
-from einstein.db import ShapeDB, deserialize_cells
-from einstein.funnel.a2_heesch import heesch_search, verify_heesch_certificate
+from einstein.polykites.database import ShapeDB, deserialize_cells
+from einstein.polykites.coronas import heesch_search, verify_heesch_certificate
 
 STAGE = "A2-heesch"
 

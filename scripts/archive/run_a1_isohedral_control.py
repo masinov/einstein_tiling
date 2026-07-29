@@ -8,12 +8,12 @@ import json
 import time
 from pathlib import Path
 
-from einstein.db import serialize_cells
-from einstein.e1_candidates import HAT_OUTLINE, TURTLE_OUTLINE
-from einstein.enumeration.polyform import enumerate_free_polykites
-from einstein.funnel.a1_isohedral import find_isohedral_surround
-from einstein.funnel.a1_torus import find_periodic_tiling
-from einstein.substrate.kitegrid import canonical_form, cells_in_polygon
+from einstein.polykites.database import serialize_cells
+from einstein.polykites.known_shapes import HAT_OUTLINE, TURTLE_OUTLINE
+from einstein.polykites.enumeration import enumerate_free_polykites
+from einstein.polykites.isohedral import find_isohedral_surround
+from einstein.polykites.periodic_quotients import find_periodic_tiling
+from einstein.geometry.kite_grid import canonical_form, cells_in_polygon
 
 
 ROOT = Path(__file__).resolve().parent.parent.parent

@@ -13,13 +13,13 @@ import json
 from collections import Counter
 from pathlib import Path
 
-from einstein.db import ShapeDB, deserialize_cells
-from einstein.funnel.a6_hierarchy import (
+from einstein.polykites.database import ShapeDB, deserialize_cells
+from einstein.tilings.substitution import (
     deletion_variants,
     raw_hierarchy_level,
     template_occurrences,
 )
-from einstein.funnel.a6_polykite import (
+from einstein.polykites.hierarchy import (
     contract_typed_core_cover,
     cover_core_with_rule,
     enumerate_typed_core_covers,
@@ -30,7 +30,7 @@ from einstein.funnel.a6_polykite import (
     polykite_boundary,
     typed_core_backbone,
 )
-from einstein.substrate.module12 import apply_sr, madd, to_xy
+from einstein.geometry.cyclotomic import apply_sr, madd, to_xy
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 ASSETS = ROOT / "docs" / "notebook" / "assets"

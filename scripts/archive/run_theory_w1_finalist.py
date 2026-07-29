@@ -14,17 +14,17 @@ import json
 from pathlib import Path
 from time import perf_counter
 
-from einstein.db import code_version, serialize_cells
-from einstein.e1_candidates import decode_compiled_key
-from einstein.funnel.a1_torus import verify_certificate
-from einstein.theory.transfer import (
+from einstein.polykites.database import code_version, serialize_cells
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.polykites.periodic_quotients import verify_certificate
+from einstein.periodicity.transfer import (
     CylinderTransfer,
     decide_period_vector,
     vector_norm2,
     vector_orbit,
     vector_orbit_representatives,
 )
-from einstein.theory.transfer_verify import verify_cycle_free_manifest
+from einstein.periodicity.verification import verify_cycle_free_manifest
 
 
 ROOT = Path(__file__).resolve().parents[2]

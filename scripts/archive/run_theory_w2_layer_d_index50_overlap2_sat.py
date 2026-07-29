@@ -10,9 +10,9 @@ from pathlib import Path
 
 from pysat.solvers import Cadical195
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.holonomy_overlap import build_bounded_overlap_holonomy_cnf
-from einstein.theory.holonomy_csp import _cnf_sha256
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.overlaps import build_bounded_overlap_holonomy_cnf
+from einstein.holonomy.constraints import _cnf_sha256
 
 
 ROOT = Path(__file__).resolve().parents[2]

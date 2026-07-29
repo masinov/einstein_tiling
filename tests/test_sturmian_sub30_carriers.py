@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from einstein.theory.sturmian_source import (
+from einstein.tilings.sturmian import (
     _canonical_triangle_support,
     _cell_from_triangle_vertices,
     _transform_cell_set,

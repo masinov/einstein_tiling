@@ -15,7 +15,7 @@ import random
 import numpy as np
 import pytest
 
-from einstein.funnel.a4_diffraction import (
+from einstein.analysis.diffraction import (
     class_power_sum,
     detect_peaks,
     dyadic_scale_depth,
@@ -25,18 +25,18 @@ from einstein.funnel.a4_diffraction import (
     rotational_symmetry,
     sharp_peak_mass_fraction,
 )
-from einstein.reference.limit_periodic import (
+from einstein.analysis.benchmarks.limit_periodic import (
     TRIANGULAR_RECIPROCAL_RADIUS,
     taylor_socolar_hierarchy_classes,
 )
-from einstein.reference.model_sets import (
+from einstein.analysis.benchmarks.model_sets import (
     ammann_beenker_points,
     model_set_metadata,
     penrose_points,
     random_periodic_points,
     transform_points,
 )
-from einstein.reference.square_triangle import random_square_triangle_patch
+from einstein.analysis.benchmarks.square_triangle import random_square_triangle_patch
 
 PHI = (1 + math.sqrt(5)) / 2
 
@@ -231,8 +231,8 @@ def test_hat_patch_is_rank4_sixfold_after_doubling():
     """E4's core positive: the funnel-grown hat patch fingerprints as a
     rank-4, sixfold quasicrystal candidate (Baake-Gaehler-Sadun give
     pure-point diffraction from a 4:2 cut-and-project scheme)."""
-    from einstein.db import ShapeDB
-    from einstein.render.svg import hex_to_xy
+    from einstein.polykites.database import ShapeDB
+    from einstein.visualization.kite_svg import hex_to_xy
 
     db = ShapeDB("tests/fixtures/polykites-n8.sqlite", read_only=True)
     certificates = [

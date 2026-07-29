@@ -7,9 +7,9 @@ from hashlib import sha256
 import json
 from pathlib import Path
 
-from einstein.db import code_version
-from einstein.funnel.a1_torus import sublattices
-from einstein.theory.binary_families import (
+from einstein.polykites.database import code_version
+from einstein.polykites.periodic_quotients import sublattices
+from einstein.periodicity.binary_families import (
     finalist_thin_family_orbit,
     lattice_norm2,
     quotient_period_obstruction,
@@ -100,7 +100,7 @@ def main():
         if index in (4, 5, 10, 100, 1000):
             thin_checks.append({"index": index, "certificate": certificate})
 
-    source = ROOT / "src/einstein/theory/binary_families.py"
+    source = ROOT / "src/einstein/periodicity/binary_families.py"
     payload = {
         "kind": "theory-w2-binary-period-families",
         "schema_version": 1,

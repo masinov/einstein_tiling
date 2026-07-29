@@ -1,6 +1,6 @@
 //! Exact compiled A0 census for free polykites, n <= 16.
 //!
-//! This mirrors `einstein.enumeration.polyform`: breadth-first boundary
+//! This mirrors `einstein.polykites.enumeration`: breadth-first boundary
 //! growth followed by canonicalization under translations and the full D6
 //! point group.  A canonical shape is stored in a fixed 32-byte key.
 

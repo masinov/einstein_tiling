@@ -3,8 +3,8 @@
 import json
 from pathlib import Path
 
-from einstein.substrate.kitegrid import N_OPS
-from einstein.theory.holonomy_symmetry import (
+from einstein.geometry.kite_grid import N_OPS
+from einstein.holonomy.symmetry import (
     canonical_s3_images,
     hnf_d6_image,
     inverse_d6_operation,

@@ -15,15 +15,15 @@ from time import perf_counter
 
 from pysat.solvers import Solver
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_v4_packing import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.packing import (
     canonical_collision_type,
     collision_orbit_clauses,
     collision_overlap,
     placement_lattice_cells,
 )
-from einstein.theory.a4_v4_product import build_v4_product_coverability_cnf
-from einstein.theory.holonomy_csp import quotient_boundary_data
+from einstein.holonomy.alternating4.products import build_v4_product_coverability_cnf
+from einstein.holonomy.constraints import quotient_boundary_data
 from run_theory_w2_layer_d_proofs import (
     _clause_hash,
     _gzip_deterministic,
@@ -171,9 +171,9 @@ def main():
         text=True, capture_output=True,
     ).stdout.strip()
     sources = (
-        ROOT / "src/einstein/theory/a4_v4_sft.py",
-        ROOT / "src/einstein/theory/a4_v4_product.py",
-        ROOT / "src/einstein/theory/a4_v4_packing.py",
+        ROOT / "src/einstein/holonomy/alternating4/local_system.py",
+        ROOT / "src/einstein/holonomy/alternating4/products.py",
+        ROOT / "src/einstein/holonomy/alternating4/packing.py",
         Path(__file__),
     )
     payload = {

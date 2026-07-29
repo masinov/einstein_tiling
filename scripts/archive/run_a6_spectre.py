@@ -12,7 +12,7 @@ import subprocess
 import tempfile
 from pathlib import Path
 
-from einstein.funnel.a6_hierarchy import (
+from einstein.tilings.substitution import (
     SPECTRE_TILE_BOUNDARY,
     collar_label_validation,
     collared_composition_sat_certificate,
@@ -34,7 +34,7 @@ from einstein.funnel.a6_hierarchy import (
     recover_recursive_hierarchy,
     validate_against_hidden,
 )
-from einstein.substrate.module12 import apply_sr, madd, to_xy
+from einstein.geometry.cyclotomic import apply_sr, madd, to_xy
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 CORE = ROOT / "vendor" / "spectre" / "spectre-core"

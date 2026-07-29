@@ -3,7 +3,7 @@
 import json
 from pathlib import Path
 
-from einstein.theory.spectre_parent_interface import local_overlap_witnesses
+from einstein.tilings.spectre.parent_interfaces import local_overlap_witnesses
 
 
 ROOT = Path(__file__).resolve().parents[1]

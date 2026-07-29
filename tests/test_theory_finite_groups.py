@@ -1,13 +1,13 @@
 """Small-group and generic boundary-quotient controls."""
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.finite_groups import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.combinatorics.finite_groups import (
     alternating_group,
     dihedral_group_4,
     quaternion_group,
     symmetric_group,
 )
-from einstein.theory.holonomy_quotients import boundary_quotient_census
+from einstein.holonomy.quotients import boundary_quotient_census
 
 
 def test_small_group_tables():

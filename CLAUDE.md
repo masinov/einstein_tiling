@@ -75,6 +75,7 @@ explicit review.
 - Package install: `venv/bin/pip install -e .`
 - Default tests: `venv/bin/python -m pytest`
 - Test tiers: see `tests/README.md`
-- Exact substrate core: `src/einstein/substrate/`
+- Exact coordinate cores: `src/einstein/geometry/`
+- Python architecture map: `src/einstein/README.md`
 - Consolidation validation:
   `venv/bin/python scripts/check_consolidation_catalog.py`

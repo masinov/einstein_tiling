@@ -14,9 +14,9 @@ import time
 
 import cvc5
 
-from einstein.db import code_version
-from einstein.theory.cvc5_models import exact_real_payload
-from einstein.theory.k16w_exact import HC34_CELLS
+from einstein.polykites.database import code_version
+from einstein.solvers.algebraic_models import exact_real_payload
+from einstein.historical.thin_lens.exact import HC34_CELLS
 
 
 ROOT = Path(__file__).resolve().parents[1]

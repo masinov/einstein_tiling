@@ -6,14 +6,14 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_v4_circuit_hypergraph import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.orbit_inequalities import (
     affine_pair_circuit_orbits,
     packing_circuit_orbits,
     solve_orbit_clause_dual,
 )
-from einstein.theory.a4_v4_circuits import build_v4_equation_system
-from einstein.theory.a4_v4_lift import induced_v4_twists
+from einstein.holonomy.alternating4.circuits import build_v4_equation_system
+from einstein.holonomy.alternating4.lifts import induced_v4_twists
 
 
 ROOT = Path(__file__).resolve().parents[2]

@@ -1,14 +1,14 @@
 """Exact controls for the A4 = V4 semidirect C3 factorization."""
 
-from einstein.theory.a4_semidirect import (
+from einstein.holonomy.alternating4.group import (
     A4Coordinate,
     c3_action,
     canonical_a4_semidirect,
     coordinate_inverse,
     coordinate_multiply,
 )
-from einstein.theory.holonomy import KITE_EDGE_GENERATORS
-from einstein.theory.holonomy_finite_csp import commuting_pairs
+from einstein.holonomy.boundary import KITE_EDGE_GENERATORS
+from einstein.holonomy.finite_constraints import commuting_pairs
 
 
 def test_semidirect_coordinates_reproduce_a4_tables():

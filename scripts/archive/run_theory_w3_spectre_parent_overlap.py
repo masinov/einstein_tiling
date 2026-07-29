@@ -6,10 +6,10 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from einstein.funnel.a6_hierarchy import SPECTRE_TILE_BOUNDARY
-from einstein.substrate.module12 import apply_sr, madd, to_xy
-from einstein.theory.spectre_parent_overlap import analyze_parent_overlap_language
-from einstein.theory.substitution_certificate import file_sha256
+from einstein.tilings.substitution import SPECTRE_TILE_BOUNDARY
+from einstein.geometry.cyclotomic import apply_sr, madd, to_xy
+from einstein.tilings.spectre.parent_overlaps import analyze_parent_overlap_language
+from einstein.tilings.spectre.certificates import file_sha256
 
 
 ROOT = Path(__file__).resolve().parents[2]

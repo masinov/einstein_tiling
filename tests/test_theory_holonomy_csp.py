@@ -1,10 +1,10 @@
 """Binary-coupled S3 boundary-holonomy CSP controls."""
 
-from einstein.theory.holonomy import (
+from einstein.holonomy.boundary import (
     s3_boundary_quotients,
     verify_s3_boundary_quotient,
 )
-from einstein.theory.holonomy_csp import (
+from einstein.holonomy.constraints import (
     QuotientVertexReducer,
     build_boundary_holonomy_cnf,
     build_boundary_holonomy_union_cnf,

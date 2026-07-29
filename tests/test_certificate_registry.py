@@ -64,7 +64,9 @@ def test_certificate_cli_lists_and_describes_without_running_builders():
 
 def test_archived_script_manifest_is_hash_pinned_and_parseable():
     manifest = json.loads((ROOT / "scripts/archive/MANIFEST.json").read_text())
+    assert manifest["schema_version"] == 2
     assert manifest["script_count"] == 92
+    migrated = 0
     for record in manifest["scripts"]:
         assert not (ROOT / record["old_path"]).exists()
         archived = ROOT / record["new_path"]
@@ -72,4 +74,10 @@ def test_archived_script_manifest_is_hash_pinned_and_parseable():
         assert hashlib.sha256(archived.read_bytes()).hexdigest() == record[
             "sha256_archived"
         ]
+        if "sha256_before_namespace_migration" in record:
+            migrated += 1
+            assert record["sha256_before_namespace_migration"] != record[
+                "sha256_archived"
+            ]
         compile(archived.read_text(), str(archived), "exec")
+    assert migrated == 87

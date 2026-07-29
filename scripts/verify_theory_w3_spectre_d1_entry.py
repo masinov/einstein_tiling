@@ -9,15 +9,15 @@ from pathlib import Path
 
 from pysat.solvers import Cadical195
 
-from einstein.theory.spectre_d1_entry import (
+from einstein.tilings.spectre.corona_elimination import (
     advance_frontier,
     initial_frontier,
 )
-from einstein.theory.spectre_patch_language import (
+from einstein.tilings.spectre.patches import (
     _candidate_ring_tiles,
     poses_overlap,
 )
-from einstein.theory.substitution_certificate import file_sha256
+from einstein.tilings.spectre.certificates import file_sha256
 
 
 ROOT = Path(__file__).resolve().parents[1]

@@ -7,8 +7,8 @@ from pathlib import Path
 
 import pytest
 
-from einstein.enumeration.polyform import read_compiled_polykites
-from einstein.funnel.a1_torus import verify_certificate
+from einstein.polykites.enumeration import read_compiled_polykites
+from einstein.polykites.periodic_quotients import verify_certificate
 
 ROOT = Path(__file__).parent.parent
 

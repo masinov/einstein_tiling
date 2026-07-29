@@ -7,7 +7,7 @@ import argparse
 import json
 from pathlib import Path
 
-from einstein.theory.sturmian_source import (
+from einstein.tilings.sturmian import (
     build_p17_all_m_obstruction,
     dump_atlas,
 )

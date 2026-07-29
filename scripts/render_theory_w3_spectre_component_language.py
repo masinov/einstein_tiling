@@ -7,9 +7,9 @@ import json
 from collections import deque
 from pathlib import Path
 
-from einstein.funnel.a6_hierarchy import SPECTRE_TILE_BOUNDARY
-from einstein.substrate.module12 import apply_sr, madd, to_xy
-from einstein.theory.spectre_patch_language import IDENTITY, patch_edge_incidence
+from einstein.tilings.substitution import SPECTRE_TILE_BOUNDARY
+from einstein.geometry.cyclotomic import apply_sr, madd, to_xy
+from einstein.tilings.spectre.patches import IDENTITY, patch_edge_incidence
 
 
 ROOT = Path(__file__).resolve().parents[1]

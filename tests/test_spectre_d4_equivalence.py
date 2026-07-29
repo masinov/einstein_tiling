@@ -5,9 +5,9 @@ from pathlib import Path
 
 from sympy import Matrix, symbols
 
-from einstein.substrate.module12 import apply_sr, compose_pose
-from einstein.theory.spectre_colored_interface import colored_corona_from_json
-from einstein.theory.spectre_equivalence_chain import (
+from einstein.geometry.cyclotomic import apply_sr, compose_pose
+from einstein.tilings.spectre.colored_interfaces import colored_corona_from_json
+from einstein.tilings.spectre.equivalence import (
     NORMALIZATION_INVERSE,
     NORMALIZATION_LINEAR,
     audit_component_state_roundtrips,
@@ -16,7 +16,7 @@ from einstein.theory.spectre_equivalence_chain import (
     normalize_parent_pose,
     two_level_translation_matrices,
 )
-from einstein.theory.spectre_parent_overlap import parent_templates
+from einstein.tilings.spectre.parent_overlaps import parent_templates
 
 
 ROOT = Path(__file__).resolve().parents[1]

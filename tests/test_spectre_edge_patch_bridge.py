@@ -3,7 +3,7 @@
 import json
 from pathlib import Path
 
-from einstein.theory.spectre_edge_patch_bridge import (
+from einstein.tilings.spectre.edge_contacts import (
     analyze_edge_patch_bridge,
     edge_patch_patterns,
 )

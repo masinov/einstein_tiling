@@ -8,9 +8,9 @@ from hashlib import sha256
 import json
 from pathlib import Path
 
-from einstein.theory.a4_semidirect import canonical_a4_semidirect
-from einstein.theory.holonomy import KITE_EDGE_GENERATORS
-from einstein.theory.holonomy_finite_csp import commuting_pairs
+from einstein.holonomy.alternating4.group import canonical_a4_semidirect
+from einstein.holonomy.boundary import KITE_EDGE_GENERATORS
+from einstein.holonomy.finite_constraints import commuting_pairs
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -87,7 +87,7 @@ def main():
         raise AssertionError("unexpected A4 commuting-twist factorization")
 
     sources = (
-        ROOT / "src/einstein/theory/a4_semidirect.py",
+        ROOT / "src/einstein/holonomy/alternating4/group.py",
         Path(__file__),
     )
     payload = {

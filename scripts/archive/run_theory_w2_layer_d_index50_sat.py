@@ -10,8 +10,8 @@ from pathlib import Path
 
 from pysat.solvers import Cadical195
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.holonomy_csp import build_boundary_holonomy_cnf, _cnf_sha256
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.constraints import build_boundary_holonomy_cnf, _cnf_sha256
 
 
 ROOT = Path(__file__).resolve().parents[2]

@@ -8,9 +8,9 @@ from itertools import product
 import json
 from pathlib import Path
 
-from einstein.funnel.a6_hierarchy import SPECTRE_TILE_BOUNDARY
-from einstein.substrate.module12 import madd, mneg, norm2_pair
-from einstein.theory.spectre_geometry import UNIT_DIRECTIONS
+from einstein.tilings.substitution import SPECTRE_TILE_BOUNDARY
+from einstein.geometry.cyclotomic import madd, mneg, norm2_pair
+from einstein.tilings.spectre.geometry import UNIT_DIRECTIONS
 
 
 def verify(path):

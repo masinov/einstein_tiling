@@ -8,11 +8,11 @@ import json
 from pathlib import Path
 import sqlite3
 
-from einstein.db import code_version, deserialize_cells, serialize_cells
-from einstein.enumeration.polyform import enumerate_free_polykites
-from einstein.funnel.a1_torus import find_periodic_tiling
-from einstein.theory.transfer import CylinderTransfer
-from einstein.theory.transfer_verify import verify_cycle_free_manifest
+from einstein.polykites.database import code_version, deserialize_cells, serialize_cells
+from einstein.polykites.enumeration import enumerate_free_polykites
+from einstein.polykites.periodic_quotients import find_periodic_tiling
+from einstein.periodicity.transfer import CylinderTransfer
+from einstein.periodicity.verification import verify_cycle_free_manifest
 
 
 ROOT = Path(__file__).resolve().parents[2]

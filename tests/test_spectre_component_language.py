@@ -3,11 +3,11 @@
 import json
 from pathlib import Path
 
-from einstein.theory.spectre_component_language import (
+from einstein.tilings.spectre.components import (
     extend_language_ring,
     verify_language_extension,
 )
-from einstein.theory.spectre_patch_language import IDENTITY, enumerate_first_coronas
+from einstein.tilings.spectre.patches import IDENTITY, enumerate_first_coronas
 
 
 ROOT = Path(__file__).resolve().parents[1]

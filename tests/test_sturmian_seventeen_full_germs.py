@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from einstein.theory.sturmian_source import (
+from einstein.tilings.sturmian import (
     _sab_corridor_bits,
 )
 

@@ -19,10 +19,10 @@ from pathlib import Path
 import flint
 import sympy
 
-from einstein.db import code_version
-from einstein.e1_candidates import decode_compiled_key
-from einstein.funnel.a1_torus import sublattices, verify_certificate
-from einstein.theory.invariants import (
+from einstein.polykites.database import code_version
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.polykites.periodic_quotients import sublattices, verify_certificate
+from einstein.periodicity.invariants import (
     area_allows_index,
     integer_cokernel_hnf,
     integer_cokernel_snf,

@@ -7,7 +7,7 @@ import argparse
 import json
 from pathlib import Path
 
-from einstein.theory.sturmian_source import verify_interchangeable_pair_periodicity
+from einstein.tilings.sturmian import verify_interchangeable_pair_periodicity
 
 
 def main() -> None:

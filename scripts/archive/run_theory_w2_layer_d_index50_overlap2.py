@@ -10,8 +10,8 @@ import json
 from pathlib import Path
 from time import perf_counter
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.holonomy_overlap import scan_bounded_overlap_holonomy
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.overlaps import scan_bounded_overlap_holonomy
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -93,7 +93,7 @@ def main():
             "verdict": "holonomy-obstructed" if killers else "not-obstructed",
         })
     sources = (
-        ROOT / "src/einstein/theory/holonomy_overlap.py",
+        ROOT / "src/einstein/holonomy/overlaps.py",
         Path(__file__),
     )
     payload = {

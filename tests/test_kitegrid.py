@@ -7,7 +7,7 @@ geometry, adjacency, or symmetry action is wrong.
 import itertools
 import random
 
-from einstein.substrate.kitegrid import (
+from einstein.geometry.kite_grid import (
     MDIR,
     N_OPS,
     VDIR,

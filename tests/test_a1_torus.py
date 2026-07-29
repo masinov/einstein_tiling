@@ -7,7 +7,7 @@ certificate for it, the solver is wrong.
 
 import pytest
 
-from einstein.funnel.a1_torus import (
+from einstein.polykites.periodic_quotients import (
     cell_to_lattice,
     find_periodic_tiling,
     find_periodic_tiling_sat,
@@ -16,7 +16,7 @@ from einstein.funnel.a1_torus import (
     verify_certificate,
 )
 from tests.test_hat import HAT_OUTLINE
-from einstein.substrate.kitegrid import canonical_form, cells_in_polygon
+from einstein.geometry.kite_grid import canonical_form, cells_in_polygon
 
 
 def test_lattice_coordinate_roundtrip():

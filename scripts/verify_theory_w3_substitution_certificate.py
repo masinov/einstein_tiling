@@ -7,13 +7,13 @@ import argparse
 import json
 from pathlib import Path
 
-from einstein.theory.substitution_certificate import (
+from einstein.tilings.spectre.certificates import (
     audit_obligations,
     file_sha256,
     parent_overlap_summary,
     physical_language_summary,
 )
-from einstein.theory.spectre_geometry import compare_vendored_translations
+from einstein.tilings.spectre.geometry import compare_vendored_translations
 
 
 ROOT = Path(__file__).resolve().parents[1]

@@ -8,7 +8,7 @@ import hashlib
 import json
 from pathlib import Path
 
-from einstein.stade_contacts import (
+from einstein.tilings.stade.contacts import (
     analyze_length,
     physical_contact,
     polygonal_physical_contact,

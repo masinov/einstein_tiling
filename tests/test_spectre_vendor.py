@@ -1,5 +1,5 @@
 """D-0005 cross-validation of the vendored spectre generator + our
-rank-4 module port (einstein.substrate.module12).
+rank-4 module port (einstein.geometry.cyclotomic).
 
 Three independent artifacts must agree:
   1. vendor/spectre/ref_leaves_n3_delta.json -- leaf poses from the
@@ -19,7 +19,7 @@ import csv
 import json
 from pathlib import Path
 
-from einstein.substrate.module12 import apply_sr, mirror_y, rot30, to_xy
+from einstein.geometry.cyclotomic import apply_sr, mirror_y, rot30, to_xy
 
 VENDOR = Path(__file__).parent.parent / "vendor" / "spectre"
 FIXTURE = Path(__file__).parent / "data" / "spectre-anchors-n3-delta.csv"

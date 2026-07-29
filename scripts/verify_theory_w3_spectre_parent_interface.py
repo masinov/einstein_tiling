@@ -7,7 +7,7 @@ import argparse
 import json
 from pathlib import Path
 
-from einstein.theory.substitution_certificate import file_sha256
+from einstein.tilings.spectre.certificates import file_sha256
 
 try:
     from scripts.run_theory_w3_spectre_parent_interface import analyze, ROOT

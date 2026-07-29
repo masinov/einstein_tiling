@@ -7,7 +7,7 @@ action, and canonical-form dedup all at once.
 
 import pytest
 
-from einstein.enumeration.polyform import OEIS_A057786, count_free_polykites
+from einstein.polykites.enumeration import OEIS_A057786, count_free_polykites
 
 
 def test_counts_match_oeis_through_n8():

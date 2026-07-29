@@ -7,7 +7,7 @@ import html
 import json
 from pathlib import Path
 
-from einstein.theory.holonomy_csp import commuting_s3_pairs
+from einstein.holonomy.constraints import commuting_s3_pairs
 
 
 ROOT = Path(__file__).resolve().parents[1]

@@ -7,7 +7,7 @@ import argparse
 import json
 from pathlib import Path
 
-from einstein.theory.sturmian_source import verify_atlas
+from einstein.tilings.sturmian import verify_atlas
 
 
 def main() -> None:

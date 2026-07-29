@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pytest
 
-from einstein.theory.spectre_patch_language import (
+from einstein.tilings.spectre.patches import (
     IDENTITY,
     central_parent_candidates,
     compatible_parents,
@@ -34,7 +34,7 @@ def test_bare_first_corona_language_is_complete_and_larger_than_generated():
     assert len(coronas) == 166
     assert {len(corona) for corona in coronas} == {4, 5, 6, 7}
 
-    from einstein.theory.spectre_geometry import exact_leaves
+    from einstein.tilings.spectre.geometry import exact_leaves
 
     generated = set()
     for label in ("Gamma", "Delta", "Theta", "Lambda", "Xi", "Pi", "Sigma", "Phi", "Psi"):
@@ -72,7 +72,7 @@ def test_identity_has_166_complete_first_ring_extensions():
 
 @pytest.mark.slow
 def test_complete_radius2_report_contracts_to_30_survivors():
-    from einstein.theory.spectre_patch_language import analyze_physical_patch_language
+    from einstein.tilings.spectre.patches import analyze_physical_patch_language
 
     source = json.loads((
         ROOT / "docs/notebook/assets/a6-spectre-results.json"

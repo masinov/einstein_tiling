@@ -18,17 +18,17 @@ import random
 import subprocess
 from pathlib import Path
 
-from einstein.funnel.a4_diffraction import (
+from einstein.analysis.diffraction import (
     class_power_sum,
     detect_peaks,
     fingerprint,
     save_spectrum_pgm,
 )
-from einstein.e1_candidates import (
+from einstein.polykites.known_shapes import (
     PUBLISHED_APERIODIC_POLYKITE_HORIZON,
     aperiodic_discovery_status,
 )
-from einstein.render.svg import hex_to_xy
+from einstein.visualization.kite_svg import hex_to_xy
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 ASSETS = ROOT / "docs" / "notebook" / "assets"

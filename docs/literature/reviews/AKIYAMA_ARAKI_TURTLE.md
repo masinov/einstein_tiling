@@ -112,7 +112,7 @@ the density theorem.
 
 ## What is internally reproduced
 
-`src/einstein/theory/turtle_sturmian.py` and its cold-verifiable artifact
+`src/einstein/tilings/sturmian/turtle.py` and its cold-verifiable artifact
 reproduce:
 
 - standard words and exact letter counts;

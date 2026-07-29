@@ -8,13 +8,13 @@ from collections import Counter
 from hashlib import sha256
 from pathlib import Path
 
-from einstein.theory.spectre_colored_interface import (
+from einstein.tilings.spectre.colored_interfaces import (
     colored_corona_from_json, colored_local_overlap_witnesses,
 )
-from einstein.theory.spectre_parent_csp import ParentStateKernel
-from einstein.theory.spectre_parent_overlap import parent_templates
-from einstein.theory.spectre_patch_language import IDENTITY, pose_json
-from einstein.theory.substitution_certificate import file_sha256
+from einstein.tilings.spectre.parent_constraints import ParentStateKernel
+from einstein.tilings.spectre.parent_overlaps import parent_templates
+from einstein.tilings.spectre.patches import IDENTITY, pose_json
+from einstein.tilings.spectre.certificates import file_sha256
 
 
 ROOT = Path(__file__).resolve().parents[2]

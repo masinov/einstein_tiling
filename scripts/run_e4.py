@@ -34,16 +34,16 @@ import random
 import subprocess
 import sys
 
-from einstein.db import ShapeDB
-from einstein.funnel.a1_torus import lattice_to_cell
-from einstein.funnel.a4_diffraction import (
+from einstein.polykites.database import ShapeDB
+from einstein.polykites.periodic_quotients import lattice_to_cell
+from einstein.analysis.diffraction import (
     class_power_sum,
     detect_peaks,
     fingerprint,
     save_spectrum_pgm,
 )
-from einstein.render.svg import hex_to_xy
-from einstein.substrate.module12 import to_xy as mod_to_xy
+from einstein.visualization.kite_svg import hex_to_xy
+from einstein.geometry.cyclotomic import to_xy as mod_to_xy
 
 ASSETS = "docs/notebook/assets"
 

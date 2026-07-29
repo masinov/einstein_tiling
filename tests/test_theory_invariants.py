@@ -5,15 +5,15 @@ from pathlib import Path
 
 import pytest
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.funnel.a1_torus import sublattices
-from einstein.theory.binary_families import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.polykites.periodic_quotients import sublattices
+from einstein.periodicity.binary_families import (
     finalist_thin_family_orbit,
     quotient_period_obstruction,
     verify_finalist_thin_family_orbit,
     verify_quotient_period_obstruction,
 )
-from einstein.theory.invariants import (
+from einstein.periodicity.invariants import (
     area_allows_index,
     area_obstruction,
     gf2_cokernel_obstruction,

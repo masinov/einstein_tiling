@@ -1,8 +1,8 @@
 """Generic finite-group coupled-CSP controls."""
 
-from einstein.theory.finite_groups import alternating_group, symmetric_group
-from einstein.theory.holonomy_csp import build_boundary_holonomy_cnf
-from einstein.theory.holonomy_finite_csp import (
+from einstein.combinatorics.finite_groups import alternating_group, symmetric_group
+from einstein.holonomy.constraints import build_boundary_holonomy_cnf
+from einstein.holonomy.finite_constraints import (
     build_finite_boundary_holonomy_cnf,
     build_finite_boundary_holonomy_union_cnf,
     commuting_pairs,

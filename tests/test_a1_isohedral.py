@@ -2,17 +2,17 @@
 
 import pytest
 
-from einstein.e1_candidates import TURTLE_OUTLINE
-from einstein.enumeration.polyform import enumerate_free_polykites
-from einstein.funnel.a1_isohedral import (
+from einstein.polykites.known_shapes import TURTLE_OUTLINE
+from einstein.polykites.enumeration import enumerate_free_polykites
+from einstein.polykites.isohedral import (
     apply_grid_pose,
     compose_grid_poses,
     find_isohedral_surround,
     inverse_grid_pose,
     verify_isohedral_surround,
 )
-from einstein.funnel.a1_torus import find_periodic_tiling
-from einstein.substrate.kitegrid import canonical_form, cells_in_polygon
+from einstein.polykites.periodic_quotients import find_periodic_tiling
+from einstein.geometry.kite_grid import canonical_form, cells_in_polygon
 from tests.test_hat import HAT_OUTLINE
 
 

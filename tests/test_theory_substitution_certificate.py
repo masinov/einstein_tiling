@@ -3,7 +3,7 @@
 import json
 from pathlib import Path
 
-from einstein.theory.substitution_certificate import (
+from einstein.tilings.spectre.certificates import (
     SCHEMA,
     VERSION,
     audit_obligations,
@@ -15,15 +15,15 @@ from einstein.theory.substitution_certificate import (
     verify_geometry_kernel,
     recognisability_crosswalk,
 )
-from einstein.theory.spectre_geometry import (
+from einstein.tilings.spectre.geometry import (
     binary_boundary_prefix,
     boundary_word_recurrence_evidence,
     boundary_simplicity_prefix,
     macro_word_recurrence_evidence,
     verify_stationary_recurrence,
 )
-from einstein.theory.spectre_geometry import verify_binary_geometry_quotient
-from einstein.theory.spectre_geometry import verify_all_level_macro_side_chains
+from einstein.tilings.spectre.geometry import verify_binary_geometry_quotient
+from einstein.tilings.spectre.geometry import verify_all_level_macro_side_chains
 
 
 ROOT = Path(__file__).resolve().parents[1]

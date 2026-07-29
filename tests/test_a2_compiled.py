@@ -7,8 +7,8 @@ from pathlib import Path
 
 import pytest
 
-from einstein.funnel.a2_heesch import verify_heesch_certificate
-from einstein.substrate.kitegrid import (
+from einstein.polykites.coronas import verify_heesch_certificate
+from einstein.geometry.kite_grid import (
     canonical_form,
     cells_in_polygon,
     transform_cell,

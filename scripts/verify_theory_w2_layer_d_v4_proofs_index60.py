@@ -13,8 +13,8 @@ from pathlib import Path
 import subprocess
 import tempfile
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_v4_twist_union import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.twist_union import (
     build_map7_v4_coverability_union_cnf,
 )
 from run_theory_w2_layer_d_proofs import _clause_hash

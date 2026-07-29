@@ -12,9 +12,9 @@ Writes: data/shapes.sqlite
 import sys
 import time
 
-from einstein.db import ShapeDB
-from einstein.enumeration.polyform import enumerate_free_polykites
-from einstein.funnel.a1_torus import find_periodic_tiling
+from einstein.polykites.database import ShapeDB
+from einstein.polykites.enumeration import enumerate_free_polykites
+from einstein.polykites.periodic_quotients import find_periodic_tiling
 
 STAGE = "A1-torus"
 

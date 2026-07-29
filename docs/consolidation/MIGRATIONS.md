@@ -74,9 +74,25 @@ deleted or rewritten.
   that already own their reusable algorithms.
 - Extracted exact uniform-demand matching, cold Hall witnesses and generic
   deletion-minimal obstruction reduction into
-  `src/einstein/theory/finite_obstructions.py`.
+  `src/einstein/combinatorics/finite_obstructions.py`.
 - Adopted the extracted primitives in both the V4 Hall and affine-circuit
   implementations and added architecture-independent regression controls.
 - Kept source-specific CEGAR, MIP, taper and symmetry formulations as worked
   examples or future extraction sources; no archived script or evidence was
   deleted.
+
+## 2026-07-29 — domain-oriented Python namespace
+
+- Replaced the chronological `funnel` and blanket `theory` namespaces with
+  packages named for mathematical responsibilities.
+- Grouped the former `a4_v4_*` modules under
+  `holonomy/alternating4/`, Spectre modules under `tilings/spectre/`, and AHI
+  modules under `tilings/sturmian/`.
+- Renamed `reference` to `analysis/benchmarks`, `render.svg` to the explicitly
+  scoped `visualization/kite_svg`, and substrate implementations to
+  `geometry/kite_grid` and `geometry/cyclotomic`.
+- Moved closed K16W solver code under `historical/thin_lens` so it cannot be
+  mistaken for current theory.
+- Migrated repository and archived-script imports mechanically and retained
+  both pre-migration and current hashes in the archive manifest.
+- Added `src/einstein/README.md` as the canonical package and dependency map.

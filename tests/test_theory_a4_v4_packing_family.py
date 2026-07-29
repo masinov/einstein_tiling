@@ -3,8 +3,8 @@
 import json
 from pathlib import Path
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_v4_packing_family import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.packing_families import (
     area_admissible_2lambda_hnfs,
     build_signature_packing_cnf,
 )

@@ -12,10 +12,10 @@ from pathlib import Path
 
 from pysat.solvers import Cadical195
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_v4_density import build_signature_density_bound_cnf
-from einstein.theory.a4_v4_packing_family import area_admissible_2lambda_hnfs
-from einstein.theory.holonomy_csp import _cnf_sha256
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.density import build_signature_density_bound_cnf
+from einstein.holonomy.alternating4.packing_families import area_admissible_2lambda_hnfs
+from einstein.holonomy.constraints import _cnf_sha256
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -105,9 +105,9 @@ def main():
             "candidate_key": KEY,
             "signature_source": str(SIGNATURES.relative_to(ROOT)),
             "signature_source_sha256": digest(SIGNATURES),
-            "implementation": "src/einstein/theory/a4_v4_density.py",
+            "implementation": "src/einstein/holonomy/alternating4/density.py",
             "implementation_sha256": digest(
-                ROOT / "src/einstein/theory/a4_v4_density.py"
+                ROOT / "src/einstein/holonomy/alternating4/density.py"
             ),
         },
         "elapsed_seconds": time.monotonic() - started,

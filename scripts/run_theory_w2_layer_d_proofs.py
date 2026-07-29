@@ -16,10 +16,10 @@ from time import perf_counter
 
 from pysat.solvers import Solver
 
-from einstein.db import code_version
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.holonomy import s3_boundary_surjections
-from einstein.theory.holonomy_csp import (
+from einstein.polykites.database import code_version
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.boundary import s3_boundary_surjections
+from einstein.holonomy.constraints import (
     build_boundary_holonomy_cnf,
     commuting_s3_pairs,
 )
@@ -199,8 +199,8 @@ def main():
         capture_output=True,
     ).stdout.strip()
     sources = (
-        ROOT / "src/einstein/theory/holonomy.py",
-        ROOT / "src/einstein/theory/holonomy_csp.py",
+        ROOT / "src/einstein/holonomy/boundary.py",
+        ROOT / "src/einstein/holonomy/constraints.py",
         Path(__file__),
     )
     payload = {

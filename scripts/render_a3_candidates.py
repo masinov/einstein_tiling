@@ -7,10 +7,10 @@ import json
 import math
 from pathlib import Path
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.funnel.a3_patch import certificate_cells
-from einstein.render.svg import hex_to_xy
-from einstein.substrate.kitegrid import boundary_cycle, cell_centroid4, norm2
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.polykites.patches import certificate_cells
+from einstein.visualization.kite_svg import hex_to_xy
+from einstein.geometry.kite_grid import boundary_cycle, cell_centroid4, norm2
 
 ROOT = Path(__file__).resolve().parent.parent
 ASSETS = ROOT / "docs" / "notebook" / "assets"

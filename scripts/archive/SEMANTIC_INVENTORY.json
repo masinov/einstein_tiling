@@ -16,10 +16,10 @@
     {
       "id": "uniform-demand-matching-and-minimal-obstructions",
       "status": "extracted-and-adopted",
-      "target": "src/einstein/theory/finite_obstructions.py",
+      "target": "src/einstein/combinatorics/finite_obstructions.py",
       "adopted_by": [
-        "src/einstein/theory/a4_v4_hall.py",
-        "src/einstein/theory/a4_v4_circuits.py"
+        "src/einstein/holonomy/alternating4/matching.py",
+        "src/einstein/holonomy/alternating4/circuits.py"
       ],
       "sources": [
         "scripts/archive/probe_theory_w2_layer_d_v4_density_cegar.py",
@@ -33,7 +33,7 @@
     {
       "id": "period-lattice-hnf",
       "status": "already-extracted",
-      "target": "src/einstein/theory/transfer.py:lattice_hnf",
+      "target": "src/einstein/periodicity/transfer.py:lattice_hnf",
       "sources": [
         "scripts/archive/run_e1_finalist_translation_lattices.py"
       ],
@@ -42,7 +42,7 @@
     {
       "id": "spectre-exact-kernels",
       "status": "already-extracted",
-      "target": "src/einstein/theory/spectre_*.py",
+      "target": "src/einstein/tilings/spectre/*.py",
       "sources": [
         "scripts/archive/run_theory_w3_spectre_d4_equivalence.py"
       ],
@@ -51,7 +51,7 @@
     {
       "id": "diffraction-calibration",
       "status": "retained-control-not-promoted",
-      "target": "src/einstein/funnel/a4_diffraction.py",
+      "target": "src/einstein/analysis/diffraction.py",
       "sources": [
         "scripts/archive/run_e4_wide.py"
       ],
@@ -74,7 +74,7 @@
     {
       "id": "v4-diagnostic-probes",
       "disposition": "source-specific-probe",
-      "rationale": "These scripts compare LP/MIP, conflict-graph, marking, local-density and torus-to-plane formulations for one V4 obstruction problem. Core affine, packing, marking and orbit operations already live in src/einstein/theory/a4_v4_*.py; the remaining logic is formulation-specific and is retained for future theorem-guided extraction.",
+      "rationale": "These scripts compare LP/MIP, conflict-graph, marking, local-density and torus-to-plane formulations for one V4 obstruction problem. Core affine, packing, marking and orbit operations already live in src/einstein/holonomy/alternating4/; the remaining logic is formulation-specific and is retained for future theorem-guided extraction.",
       "scripts": [
         "scripts/archive/probe_theory_w2_layer_d_v4_circuit_dual.py",
         "scripts/archive/probe_theory_w2_layer_d_v4_density_mip.py",

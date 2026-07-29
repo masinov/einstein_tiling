@@ -10,7 +10,7 @@ Let (T) be a finite grid-aligned polykite and let (v\in\Lambda\setminus
 `det(p,u)=1`.
 
 > **T1.1 (Fixed-Vector Transfer Theorem).** The complete transfer graph
-> constructed by `src/einstein/theory/transfer.py` contains a directed cycle
+> constructed by `src/einstein/periodicity/transfer.py` contains a directed cycle
 > if and only if some grid-aligned tiling by (T) has period (v).
 
 ### State completeness
@@ -59,7 +59,7 @@ A `cylinder-cycle-free-certificate` contains:
 5. a permutation of all states that topologically orders every edge;
 6. canonical counts and a graph hash.
 
-`src/einstein/theory/transfer_verify.py` does not invoke the producer's graph
+`src/einstein/periodicity/verification.py` does not invoke the producer's graph
 enumerator. It recompiles patterns from kite geometry, independently rebuilds
 the contribution/state sets and transition targets, checks every supplied edge
 witness, and verifies the topological order. Deleting a state or edge, changing

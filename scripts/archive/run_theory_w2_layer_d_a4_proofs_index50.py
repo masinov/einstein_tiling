@@ -15,9 +15,9 @@ from time import perf_counter
 
 from pysat.solvers import Solver
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.finite_groups import alternating_group
-from einstein.theory.holonomy_finite_csp import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.combinatorics.finite_groups import alternating_group
+from einstein.holonomy.finite_constraints import (
     build_finite_boundary_holonomy_cnf,
     commuting_pairs,
 )
@@ -159,8 +159,8 @@ def main():
         text=True, capture_output=True,
     ).stdout.strip()
     sources = (
-        ROOT / "src/einstein/theory/finite_groups.py",
-        ROOT / "src/einstein/theory/holonomy_finite_csp.py",
+        ROOT / "src/einstein/combinatorics/finite_groups.py",
+        ROOT / "src/einstein/holonomy/finite_constraints.py",
         Path(__file__),
     )
     payload = {

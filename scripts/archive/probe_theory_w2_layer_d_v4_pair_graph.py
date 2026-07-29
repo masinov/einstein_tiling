@@ -12,16 +12,16 @@ from pysat.card import CardEnc, EncType
 from pysat.formula import CNF
 from pysat.solvers import Cadical195
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_v4_lift import induced_v4_twists
-from einstein.theory.a4_v4_packing import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.lifts import induced_v4_twists
+from einstein.holonomy.alternating4.packing import (
     canonical_collision_type,
     collision_orbit_clauses,
     placement_lattice_cells,
 )
-from einstein.theory.a4_v4_packing_family import PACKING_COLLISION_SEED
-from einstein.theory.a4_v4_sft import build_v4_coverability_cnf
-from einstein.theory.holonomy_csp import quotient_boundary_data
+from einstein.holonomy.alternating4.packing_families import PACKING_COLLISION_SEED
+from einstein.holonomy.alternating4.local_system import build_v4_coverability_cnf
+from einstein.holonomy.constraints import quotient_boundary_data
 
 
 ROOT = Path(__file__).resolve().parents[2]

@@ -9,7 +9,7 @@ from pathlib import Path
 
 from sympy import Matrix, symbols
 
-from einstein.funnel.a6_hierarchy import (
+from einstein.tilings.substitution import (
     CompositionRule,
     SPECTRE_TILE_BOUNDARY,
     contract_level,
@@ -19,12 +19,12 @@ from einstein.funnel.a6_hierarchy import (
     physical_edge_contacts,
     raw_hierarchy_level,
 )
-from einstein.substrate.module12 import compose_pose
-from einstein.theory.spectre_colored_interface import (
+from einstein.geometry.cyclotomic import compose_pose
+from einstein.tilings.spectre.colored_interfaces import (
     colored_corona_from_json,
     colored_local_overlap_witnesses,
 )
-from einstein.theory.spectre_equivalence_chain import (
+from einstein.tilings.spectre.equivalence import (
     COMPANION_POSE,
     MARKER_STATE_IDS,
     NORMALIZATION_INVERSE,
@@ -37,10 +37,10 @@ from einstein.theory.spectre_equivalence_chain import (
     normalize_parent_pose,
     two_level_translation_matrices,
 )
-from einstein.theory.spectre_geometry import exact_leaves
-from einstein.theory.spectre_parent_csp import ParentStateKernel
-from einstein.theory.spectre_parent_overlap import parent_templates
-from einstein.theory.substitution_certificate import file_sha256
+from einstein.tilings.spectre.geometry import exact_leaves
+from einstein.tilings.spectre.parent_constraints import ParentStateKernel
+from einstein.tilings.spectre.parent_overlaps import parent_templates
+from einstein.tilings.spectre.certificates import file_sha256
 
 
 ROOT = Path(__file__).resolve().parents[1]

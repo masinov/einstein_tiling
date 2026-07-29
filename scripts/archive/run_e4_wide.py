@@ -25,7 +25,7 @@ import subprocess
 
 import numpy as np
 
-from einstein.funnel.a4_diffraction import (
+from einstein.analysis.diffraction import (
     class_power_sum,
     detect_peaks,
     dyadic_scale_depth,
@@ -36,16 +36,16 @@ from einstein.funnel.a4_diffraction import (
     save_spectrum_pgm,
     sharp_peak_mass_fraction,
 )
-from einstein.reference.limit_periodic import (
+from einstein.analysis.benchmarks.limit_periodic import (
     TRIANGULAR_RECIPROCAL_RADIUS,
     taylor_socolar_hierarchy_classes,
 )
-from einstein.reference.model_sets import (
+from einstein.analysis.benchmarks.model_sets import (
     model_set_points,
     random_periodic_points,
     transform_points,
 )
-from einstein.reference.square_triangle import random_square_triangle_patch
+from einstein.analysis.benchmarks.square_triangle import random_square_triangle_patch
 
 ASSETS = "docs/notebook/assets"
 

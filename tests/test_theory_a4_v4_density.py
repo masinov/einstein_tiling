@@ -5,8 +5,8 @@ from pathlib import Path
 
 from pysat.solvers import Cadical195
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_v4_density import build_signature_density_bound_cnf
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.density import build_signature_density_bound_cnf
 
 
 ROOT = Path(__file__).resolve().parents[1]

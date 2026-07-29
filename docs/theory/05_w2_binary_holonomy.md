@@ -293,7 +293,7 @@ for the three repeated column signatures without asserting that the displayed
 same-signature triples are themselves group orbits.
 
 Implementation and certificate:
-`src/einstein/theory/holonomy_symmetry.py` and
+`src/einstein/holonomy/symmetry.py` and
 `theory-w2-layer-d-symmetry.json`.
 
 ## D-W2-D4 — index-50 saturation of the strong S3 target
@@ -444,7 +444,7 @@ three. It does not yet prove that the three distinct V4 tail values obstruct
 an infinite HNF family; that is the next obligation.
 
 Implementation and exact table artifact:
-`src/einstein/theory/a4_semidirect.py` and
+`src/einstein/holonomy/alternating4/group.py` and
 `theory-w2-layer-d-a4-factor.json`.
 
 ## D-W2-D7 — the V4-tail signature persists at index 55

@@ -3,8 +3,8 @@
 import json
 from pathlib import Path
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.funnel.a1_torus import verify_certificate
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.polykites.periodic_quotients import verify_certificate
 
 ROOT = Path(__file__).resolve().parent.parent
 RESULTS = ROOT / "docs/notebook/assets/a1-extended-small-candidate-results.json"

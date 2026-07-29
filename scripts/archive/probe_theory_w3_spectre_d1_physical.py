@@ -20,7 +20,7 @@ import json
 import pickle
 from pathlib import Path
 
-from einstein.theory.spectre_d1_entry import (
+from einstein.tilings.spectre.corona_elimination import (
     EXTRA_CORONA_INDICES,
     advance_frontier,
     initial_frontier,

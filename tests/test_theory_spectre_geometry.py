@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-from einstein.theory.spectre_geometry import (
+from einstein.tilings.spectre.geometry import (
     ANNIHILATING_POLYNOMIAL,
     binary_boundary_prefix,
     boundary_word_recurrence_evidence,

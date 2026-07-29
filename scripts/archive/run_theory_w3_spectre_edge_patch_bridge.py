@@ -6,7 +6,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from einstein.theory.spectre_edge_patch_bridge import analyze_edge_patch_bridge
+from einstein.tilings.spectre.edge_contacts import analyze_edge_patch_bridge
 
 
 ROOT = Path(__file__).resolve().parents[2]

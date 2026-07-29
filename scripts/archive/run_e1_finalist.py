@@ -26,25 +26,25 @@ import subprocess
 import time
 from pathlib import Path
 
-from einstein.e1_candidates import (
+from einstein.polykites.known_shapes import (
     SMALLEST_DEPTH3_KEYS,
     TURTLE_KEY,
     decode_compiled_key,
 )
-from einstein.funnel.a1_torus import find_periodic_tiling_sat
-from einstein.funnel.a3_patch import (
+from einstein.polykites.periodic_quotients import find_periodic_tiling_sat
+from einstein.polykites.patches import (
     certificate_cells,
     sat_grow_patch,
     verify_patch_certificate,
 )
-from einstein.funnel.a4_diffraction import (
+from einstein.analysis.diffraction import (
     class_power_sum,
     detect_peaks,
     fingerprint,
     save_spectrum_pgm,
 )
-from einstein.render.svg import hex_to_xy
-from einstein.substrate.kitegrid import boundary_cycle
+from einstein.visualization.kite_svg import hex_to_xy
+from einstein.geometry.kite_grid import boundary_cycle
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 ASSETS = ROOT / "docs/notebook" / "assets"

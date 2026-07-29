@@ -12,8 +12,8 @@ import time
 
 import z3
 
-from einstein.db import code_version
-from einstein.theory.k16w_exact import build_problem
+from einstein.polykites.database import code_version
+from einstein.historical.thin_lens.exact import build_problem
 
 
 ROOT = Path(__file__).resolve().parents[1]

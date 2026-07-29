@@ -3,8 +3,8 @@
 import json
 from pathlib import Path
 
-from einstein.e1_candidates import TURTLE_KEY, decode_compiled_key
-from einstein.funnel.a3_patch import verify_patch_certificate
+from einstein.polykites.known_shapes import TURTLE_KEY, decode_compiled_key
+from einstein.polykites.patches import verify_patch_certificate
 
 ROOT = Path(__file__).resolve().parent.parent
 ASSETS = ROOT / "docs/notebook/assets"

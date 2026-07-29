@@ -13,10 +13,10 @@ from pathlib import Path
 import subprocess
 import tempfile
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_semidirect import canonical_a4_semidirect
-from einstein.theory.finite_groups import alternating_group
-from einstein.theory.holonomy_finite_csp import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.group import canonical_a4_semidirect
+from einstein.combinatorics.finite_groups import alternating_group
+from einstein.holonomy.finite_constraints import (
     build_finite_boundary_holonomy_cnf,
     commuting_pairs,
 )

@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from einstein.theory.sturmian_source import verify_area30_carrier_classification
+from einstein.tilings.sturmian import verify_area30_carrier_classification
 
 
 ARTIFACT = Path("data/sturmian-source/ahi-area30-carrier-classification.json")

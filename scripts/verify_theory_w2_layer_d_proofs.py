@@ -12,9 +12,9 @@ from pathlib import Path
 import subprocess
 import tempfile
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.holonomy import s3_boundary_surjections
-from einstein.theory.holonomy_csp import build_boundary_holonomy_cnf
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.boundary import s3_boundary_surjections
+from einstein.holonomy.constraints import build_boundary_holonomy_cnf
 
 
 ROOT = Path(__file__).resolve().parents[1]

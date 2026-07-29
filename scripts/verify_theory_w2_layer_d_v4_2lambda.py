@@ -9,14 +9,14 @@ from hashlib import sha256
 import json
 from pathlib import Path
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_v4_lift import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.lifts import (
     BASE_HNF,
     lift_2lambda_witness,
     unsatisfied_clauses,
 )
-from einstein.theory.a4_v4_sft import build_v4_coverability_cnf
-from einstein.theory.holonomy_csp import _cnf_sha256
+from einstein.holonomy.alternating4.local_system import build_v4_coverability_cnf
+from einstein.holonomy.constraints import _cnf_sha256
 from run_theory_w2_layer_d_v4_2lambda import (
     _aggregate,
     _even_hnfs,

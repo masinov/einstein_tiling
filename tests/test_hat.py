@@ -13,9 +13,9 @@ This test validates, end to end:
   - that the enumerated free 8-kite polykites contain the hat.
 """
 
-from einstein.enumeration.polyform import enumerate_free_polykites
-from einstein.e1_candidates import HAT_KEY, HAT_OUTLINE, decode_compiled_key
-from einstein.substrate.kitegrid import (
+from einstein.polykites.enumeration import enumerate_free_polykites
+from einstein.polykites.known_shapes import HAT_KEY, HAT_OUTLINE, decode_compiled_key
+from einstein.geometry.kite_grid import (
     boundary_cycle,
     canonical_form,
     cell_vertices,

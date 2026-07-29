@@ -3,7 +3,7 @@
 import json
 from pathlib import Path
 
-from einstein.theory.spectre_colored_interface import (
+from einstein.tilings.spectre.colored_interfaces import (
     colored_corona_from_json,
     colored_local_overlap_witnesses,
     colored_reciprocal_domains,

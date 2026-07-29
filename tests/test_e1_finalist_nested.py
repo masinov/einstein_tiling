@@ -3,12 +3,12 @@
 import json
 from pathlib import Path
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.funnel.a3_patch import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.polykites.patches import (
     certificate_cells,
     verify_patch_certificate,
 )
-from einstein.substrate.kitegrid import cell_centroid4, norm2
+from einstein.geometry.kite_grid import cell_centroid4, norm2
 
 ROOT = Path(__file__).resolve().parent.parent
 RESULTS = ROOT / "docs/notebook/assets/e1-finalist-nested.json"

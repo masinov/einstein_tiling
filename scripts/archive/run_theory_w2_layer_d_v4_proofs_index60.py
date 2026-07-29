@@ -15,9 +15,9 @@ from time import perf_counter
 
 from pysat.solvers import Solver
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_v4_sft import V4_TWIST_PAIRS
-from einstein.theory.a4_v4_twist_union import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.local_system import V4_TWIST_PAIRS
+from einstein.holonomy.alternating4.twist_union import (
     build_map7_v4_coverability_union_cnf,
 )
 from run_theory_w2_layer_d_proofs import (
@@ -153,8 +153,8 @@ def main():
     ).stdout.strip()
     dependencies = (SCAN, FACTOR, PACKING)
     sources = (
-        ROOT / "src/einstein/theory/a4_v4_sft.py",
-        ROOT / "src/einstein/theory/a4_v4_twist_union.py",
+        ROOT / "src/einstein/holonomy/alternating4/local_system.py",
+        ROOT / "src/einstein/holonomy/alternating4/twist_union.py",
         Path(__file__),
     )
     payload = {

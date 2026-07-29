@@ -17,7 +17,7 @@ try:
     import scripts.probe_theory_w3_spectre_component_language as probe
 except ModuleNotFoundError:
     import probe_theory_w3_spectre_component_language as probe
-from einstein.theory.spectre_colored_interface import (
+from einstein.tilings.spectre.colored_interfaces import (
     colored_corona_from_json,
     colored_corona_json,
     colored_parent_corona,
@@ -26,10 +26,10 @@ from einstein.theory.spectre_colored_interface import (
     strongly_connected_components,
     uncolored_projection,
 )
-from einstein.theory.spectre_component_language import extend_language_ring
-from einstein.theory.spectre_parent_overlap import parent_templates
-from einstein.theory.spectre_patch_language import patch_edge_incidence
-from einstein.theory.substitution_certificate import file_sha256
+from einstein.tilings.spectre.components import extend_language_ring
+from einstein.tilings.spectre.parent_overlaps import parent_templates
+from einstein.tilings.spectre.patches import patch_edge_incidence
+from einstein.tilings.spectre.certificates import file_sha256
 
 
 ROOT = Path(__file__).resolve().parents[2]

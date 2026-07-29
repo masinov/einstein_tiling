@@ -1,6 +1,6 @@
 import json
 
-from einstein.db import ShapeDB, deserialize_cells, serialize_cells
+from einstein.polykites.database import ShapeDB, deserialize_cells, serialize_cells
 
 
 def test_roundtrip_and_verdicts(tmp_path):

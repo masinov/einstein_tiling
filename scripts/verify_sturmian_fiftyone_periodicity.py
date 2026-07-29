@@ -7,7 +7,7 @@ import argparse
 import json
 from pathlib import Path
 
-from einstein.theory.sturmian_source import verify_fiftyone_envelope_periodicity
+from einstein.tilings.sturmian import verify_fiftyone_envelope_periodicity
 
 
 def main() -> None:

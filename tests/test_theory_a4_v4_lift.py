@@ -2,8 +2,8 @@
 
 from pysat.solvers import Cadical195
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_v4_lift import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.lifts import (
     BASE_HNF,
     induced_v4_twists,
     lies_in_2lambda,
@@ -11,7 +11,7 @@ from einstein.theory.a4_v4_lift import (
     semantic_base_witness,
     unsatisfied_clauses,
 )
-from einstein.theory.a4_v4_sft import MAP7, build_v4_coverability_cnf
+from einstein.holonomy.alternating4.local_system import MAP7, build_v4_coverability_cnf
 
 
 KEY = "010001010104010502f002f1030b030c04fa04fb"

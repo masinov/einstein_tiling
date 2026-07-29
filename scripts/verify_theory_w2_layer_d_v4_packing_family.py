@@ -8,13 +8,13 @@ from hashlib import sha256
 import json
 from pathlib import Path
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_v4_packing_family import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.packing_families import (
     area_admissible_2lambda_hnfs,
     build_signature_packing_cnf,
     coverage_summary,
 )
-from einstein.theory.holonomy_csp import _cnf_sha256
+from einstein.holonomy.constraints import _cnf_sha256
 
 
 ROOT = Path(__file__).resolve().parents[1]

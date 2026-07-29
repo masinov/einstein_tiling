@@ -4,7 +4,7 @@ import itertools
 
 import pytest
 
-from einstein.theory.finite_obstructions import (
+from einstein.combinatorics.finite_obstructions import (
     deletion_minimal_obstruction,
     uniform_demand_matching,
     verify_uniform_demand_matching,

@@ -7,7 +7,7 @@ import argparse
 import json
 from pathlib import Path
 
-from einstein.theory.sturmian_source import build_periodic_scaffold
+from einstein.tilings.sturmian import build_periodic_scaffold
 
 
 def main() -> None:

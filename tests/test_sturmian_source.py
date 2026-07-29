@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from einstein.theory.sturmian_source import (
+from einstein.tilings.sturmian import (
     boundary_vertices,
     verify_atlas,
 )

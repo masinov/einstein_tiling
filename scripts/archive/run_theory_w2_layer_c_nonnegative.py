@@ -8,10 +8,10 @@ from hashlib import sha256
 import json
 from pathlib import Path
 
-from einstein.db import code_version
-from einstein.e1_candidates import decode_compiled_key
-from einstein.funnel.a1_torus import sublattices
-from einstein.theory.invariants import (
+from einstein.polykites.database import code_version
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.polykites.periodic_quotients import sublattices
+from einstein.periodicity.invariants import (
     area_allows_index,
     nonnegative_cokernel_relaxation,
     verify_gf2_cokernel_obstruction,

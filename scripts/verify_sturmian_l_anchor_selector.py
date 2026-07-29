@@ -7,7 +7,7 @@ import argparse
 import json
 from pathlib import Path
 
-from einstein.theory.sturmian_source import verify_l_anchor_selector
+from einstein.tilings.sturmian import verify_l_anchor_selector
 
 
 def main() -> None:

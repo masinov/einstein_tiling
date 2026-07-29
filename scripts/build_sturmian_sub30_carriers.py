@@ -7,7 +7,7 @@ import argparse
 import json
 from pathlib import Path
 
-from einstein.theory.sturmian_source import build_sub30_carrier_classification
+from einstein.tilings.sturmian import build_sub30_carrier_classification
 
 
 def main() -> None:

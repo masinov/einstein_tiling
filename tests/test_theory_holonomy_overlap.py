@@ -2,9 +2,9 @@
 
 from pysat.solvers import Cadical195
 
-from einstein.theory.holonomy import s3_boundary_quotients
-from einstein.theory.holonomy_csp import commuting_s3_pairs
-from einstein.theory.holonomy_overlap import (
+from einstein.holonomy.boundary import s3_boundary_quotients
+from einstein.holonomy.constraints import commuting_s3_pairs
+from einstein.holonomy.overlaps import (
     build_bounded_overlap_holonomy_cnf,
     scan_bounded_overlap_holonomy,
 )

@@ -8,7 +8,7 @@ import hashlib
 import json
 from pathlib import Path
 
-from einstein.stade_contacts import analyze_length
+from einstein.tilings.stade.contacts import analyze_length
 
 
 ROOT = Path(__file__).resolve().parent.parent

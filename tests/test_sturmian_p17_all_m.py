@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from einstein.theory.sturmian_source import verify_p17_all_m_obstruction
+from einstein.tilings.sturmian import verify_p17_all_m_obstruction
 
 
 def test_p17_all_m_artifact_is_exhaustive_and_fail_closed():

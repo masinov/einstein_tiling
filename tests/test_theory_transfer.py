@@ -1,8 +1,8 @@
 """W1 exact cylinder-transfer reference controls."""
 
-from einstein.enumeration.polyform import enumerate_free_polykites
-from einstein.funnel.a1_torus import find_periodic_tiling, verify_certificate
-from einstein.theory.transfer import (
+from einstein.polykites.enumeration import enumerate_free_polykites
+from einstein.polykites.periodic_quotients import find_periodic_tiling, verify_certificate
+from einstein.periodicity.transfer import (
     CylinderTransfer,
     basis_coordinates,
     cylinder_basis,
@@ -12,7 +12,7 @@ from einstein.theory.transfer import (
     vector_orbit,
     vector_orbit_representatives,
 )
-from einstein.theory.transfer_verify import verify_cycle_free_manifest
+from einstein.periodicity.verification import verify_cycle_free_manifest
 
 
 def _nontiling_two_kite():

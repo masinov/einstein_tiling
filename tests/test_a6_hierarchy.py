@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pytest
 
-from einstein.funnel.a6_hierarchy import (
+from einstein.tilings.substitution import (
     SPECTRE_TILE_BOUNDARY,
     _exact_cover_solutions,
     collar_label_validation,
@@ -30,7 +30,7 @@ from einstein.funnel.a6_hierarchy import (
     template_occurrences,
     validate_against_hidden,
 )
-from einstein.substrate.module12 import (
+from einstein.geometry.cyclotomic import (
     compare_quadratic,
     compose_pose,
     inverse_pose,

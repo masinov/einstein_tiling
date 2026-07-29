@@ -7,7 +7,7 @@ import argparse
 import json
 from pathlib import Path
 
-from einstein.theory.sturmian_source import verify_seventeen_rhombus_full_germs
+from einstein.tilings.sturmian import verify_seventeen_rhombus_full_germs
 
 
 def main() -> None:

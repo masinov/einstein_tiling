@@ -6,16 +6,16 @@ from pathlib import Path
 
 from pysat.solvers import Cadical195
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_v4_circuits import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.circuits import (
     affine_compatible,
     build_v4_equation_system,
     canonical_translation_circuit,
     minimal_affine_circuit,
     translation_orbit,
 )
-from einstein.theory.a4_v4_lift import induced_v4_twists
-from einstein.theory.a4_v4_sft import build_v4_coverability_cnf
+from einstein.holonomy.alternating4.lifts import induced_v4_twists
+from einstein.holonomy.alternating4.local_system import build_v4_coverability_cnf
 
 
 ROOT = Path(__file__).resolve().parents[1]

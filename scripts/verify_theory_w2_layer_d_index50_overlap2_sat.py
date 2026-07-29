@@ -7,9 +7,9 @@ from hashlib import sha256
 import json
 from pathlib import Path
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.holonomy_csp import _cnf_sha256
-from einstein.theory.holonomy_overlap import build_bounded_overlap_holonomy_cnf
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.constraints import _cnf_sha256
+from einstein.holonomy.overlaps import build_bounded_overlap_holonomy_cnf
 from verify_theory_w2_layer_d_index50_sat import verify_clause_model
 
 

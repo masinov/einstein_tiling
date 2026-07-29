@@ -19,11 +19,11 @@ import json
 import time
 from pathlib import Path
 
-from einstein.e1_candidates import (
+from einstein.polykites.known_shapes import (
     SMALLEST_DEPTH3_KEYS,
     decode_compiled_key,
 )
-from einstein.funnel.a1_torus import (
+from einstein.polykites.periodic_quotients import (
     find_periodic_tiling_sat,
     solve_torus_sat,
 )

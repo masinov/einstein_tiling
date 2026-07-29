@@ -89,7 +89,7 @@ translation ambiguity.
 
 The machine-readable version of this table is emitted by
 `recognisability_crosswalk()` in
-`src/einstein/theory/substitution_certificate.py`.
+`src/einstein/tilings/substitution.py`.
 
 ## Repository impact
 

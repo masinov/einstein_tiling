@@ -8,9 +8,9 @@ from pathlib import Path
 from pysat.card import CardEnc, EncType
 from pysat.solvers import Cadical195
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_v4_circuits import build_v4_equation_system
-from einstein.theory.a4_v4_hall import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.circuits import build_v4_equation_system
+from einstein.holonomy.alternating4.matching import (
     hall_deficiency,
     hall_neighborhood,
     hall_witness_profile,
@@ -19,8 +19,8 @@ from einstein.theory.a4_v4_hall import (
     two_center_matching,
     verify_two_matching,
 )
-from einstein.theory.a4_v4_lift import induced_v4_twists
-from einstein.theory.a4_v4_packing import placement_lattice_cells
+from einstein.holonomy.alternating4.lifts import induced_v4_twists
+from einstein.holonomy.alternating4.packing import placement_lattice_cells
 
 
 ROOT = Path(__file__).resolve().parents[1]

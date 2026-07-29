@@ -7,8 +7,8 @@ from hashlib import sha256
 import json
 from pathlib import Path
 
-from einstein.db import code_version
-from einstein.theory.k16w_exact import HC34_CELLS, build_problem
+from einstein.polykites.database import code_version
+from einstein.historical.thin_lens.exact import HC34_CELLS, build_problem
 
 
 ROOT = Path(__file__).resolve().parents[1]

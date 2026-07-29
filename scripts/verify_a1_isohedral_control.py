@@ -6,12 +6,12 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from einstein.db import deserialize_cells
-from einstein.funnel.a1_isohedral import (
+from einstein.polykites.database import deserialize_cells
+from einstein.polykites.isohedral import (
     find_isohedral_surround,
     verify_isohedral_surround,
 )
-from einstein.funnel.a1_torus import verify_certificate
+from einstein.polykites.periodic_quotients import verify_certificate
 
 
 ROOT = Path(__file__).resolve().parent.parent

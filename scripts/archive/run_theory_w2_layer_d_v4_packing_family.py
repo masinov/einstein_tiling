@@ -12,13 +12,13 @@ from time import perf_counter
 
 from pysat.solvers import Cadical195
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_v4_packing_family import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.packing_families import (
     area_admissible_2lambda_hnfs,
     build_signature_packing_cnf,
     coverage_summary,
 )
-from einstein.theory.holonomy_csp import _cnf_sha256
+from einstein.holonomy.constraints import _cnf_sha256
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -102,10 +102,10 @@ def main():
     sat_rows = [row for row in rows if row["sat"]]
     dependencies = (BASE, PACKING60)
     sources = (
-        ROOT / "src/einstein/theory/a4_v4_lift.py",
-        ROOT / "src/einstein/theory/a4_v4_packing.py",
-        ROOT / "src/einstein/theory/a4_v4_product.py",
-        ROOT / "src/einstein/theory/a4_v4_packing_family.py",
+        ROOT / "src/einstein/holonomy/alternating4/lifts.py",
+        ROOT / "src/einstein/holonomy/alternating4/packing.py",
+        ROOT / "src/einstein/holonomy/alternating4/products.py",
+        ROOT / "src/einstein/holonomy/alternating4/packing_families.py",
         Path(__file__),
     )
     payload = {

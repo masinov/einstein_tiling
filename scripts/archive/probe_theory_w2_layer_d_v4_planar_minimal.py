@@ -16,14 +16,14 @@ from pathlib import Path
 
 import highspy
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_v4_circuits import affine_compatible, minimal_affine_circuit
-from einstein.theory.a4_v4_hall import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.circuits import affine_compatible, minimal_affine_circuit
+from einstein.holonomy.alternating4.matching import (
     hall_witness_profile,
     minimal_hall_witness,
     two_center_matching,
 )
-from einstein.theory.a4_v4_plane_hall import (
+from einstein.holonomy.alternating4.planar_matching import (
     build_planar_hall_instance,
     local_translation_orbit,
     verify_planar_no_hall_certificate,

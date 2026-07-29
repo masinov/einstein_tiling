@@ -13,17 +13,17 @@ from pysat.card import CardEnc, EncType
 from pysat.formula import CNF
 from pysat.solvers import Cadical195
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.funnel.a1_torus import lattice_to_cell
-from einstein.theory.a4_semidirect import c3_action, canonical_a4_semidirect
-from einstein.theory.a4_v4_packing import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.polykites.periodic_quotients import lattice_to_cell
+from einstein.holonomy.alternating4.group import c3_action, canonical_a4_semidirect
+from einstein.holonomy.alternating4.packing import (
     canonical_collision_type,
     placement_lattice_cells,
 )
-from einstein.theory.a4_v4_packing_family import PACKING_COLLISION_SEED
-from einstein.theory.a4_v4_sft import _signed_coordinate
-from einstein.theory.holonomy import kite_edge_letter
-from einstein.theory.holonomy_csp import _placement_boundary, _point_type
+from einstein.holonomy.alternating4.packing_families import PACKING_COLLISION_SEED
+from einstein.holonomy.alternating4.local_system import _signed_coordinate
+from einstein.holonomy.boundary import kite_edge_letter
+from einstein.holonomy.constraints import _placement_boundary, _point_type
 
 
 ROOT = Path(__file__).resolve().parents[2]

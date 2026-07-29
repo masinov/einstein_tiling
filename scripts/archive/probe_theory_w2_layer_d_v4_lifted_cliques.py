@@ -11,10 +11,10 @@ import time
 
 import networkx as nx
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_v4_circuits import build_v4_equation_system
-from einstein.theory.a4_v4_lift import induced_v4_twists
-from einstein.theory.a4_v4_marking import lifted_state_conflict_graph
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.circuits import build_v4_equation_system
+from einstein.holonomy.alternating4.lifts import induced_v4_twists
+from einstein.holonomy.alternating4.markings import lifted_state_conflict_graph
 
 
 ROOT = Path(__file__).resolve().parents[2]

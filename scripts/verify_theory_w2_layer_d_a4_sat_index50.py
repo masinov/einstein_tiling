@@ -7,10 +7,10 @@ from hashlib import sha256
 import json
 from pathlib import Path
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.finite_groups import alternating_group
-from einstein.theory.holonomy_csp import _cnf_sha256
-from einstein.theory.holonomy_finite_csp import build_finite_boundary_holonomy_cnf
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.combinatorics.finite_groups import alternating_group
+from einstein.holonomy.constraints import _cnf_sha256
+from einstein.holonomy.finite_constraints import build_finite_boundary_holonomy_cnf
 
 
 ROOT = Path(__file__).resolve().parents[1]

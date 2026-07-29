@@ -21,8 +21,8 @@ Usage: venv/bin/python scripts/archive/run_a3.py grow 635 5500
 import sys
 import time
 
-from einstein.db import ShapeDB, deserialize_cells
-from einstein.funnel.a3_patch import sat_grow_patch
+from einstein.polykites.database import ShapeDB, deserialize_cells
+from einstein.polykites.patches import sat_grow_patch
 
 STAGE = "A3-patch"
 CEILING_LADDER = [8, 20, 50, 100, 200, 400, 800, 1600]

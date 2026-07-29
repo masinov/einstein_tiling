@@ -11,11 +11,11 @@ six shapes have H_c = 2 exactly, first appearing at n = 7.
 
 import pytest
 
-from einstein.db import deserialize_cells
-from einstein.enumeration.polyform import enumerate_free_polykites
-from einstein.funnel.a1_torus import find_periodic_tiling
-from einstein.funnel.a2_heesch import heesch_search
-from einstein.substrate.kitegrid import canonical_form, cells_in_polygon
+from einstein.polykites.database import deserialize_cells
+from einstein.polykites.enumeration import enumerate_free_polykites
+from einstein.polykites.periodic_quotients import find_periodic_tiling
+from einstein.polykites.coronas import heesch_search
+from einstein.geometry.kite_grid import canonical_form, cells_in_polygon
 from tests.test_hat import HAT_OUTLINE
 
 # one of the six H_c = 2 polykites found in session 03 (shape id 502);

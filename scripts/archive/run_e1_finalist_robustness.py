@@ -21,26 +21,26 @@ import random
 import time
 from pathlib import Path
 
-from einstein.db import ShapeDB
-from einstein.e1_candidates import (
+from einstein.polykites.database import ShapeDB
+from einstein.polykites.known_shapes import (
     SMALLEST_DEPTH3_KEYS,
     decode_compiled_key,
 )
-from einstein.funnel.a1_torus import cell_to_lattice, lattice_to_cell
-from einstein.funnel.a3_patch import (
+from einstein.polykites.periodic_quotients import cell_to_lattice, lattice_to_cell
+from einstein.polykites.patches import (
     certificate_cells,
     disk_region,
     sat_grow_patch,
     verify_patch_certificate,
 )
-from einstein.funnel.a4_diffraction import (
+from einstein.analysis.diffraction import (
     class_power_sum,
     detect_peaks,
     fingerprint,
     index_peaks,
 )
-from einstein.render.svg import hex_to_xy
-from einstein.substrate.kitegrid import (
+from einstein.visualization.kite_svg import hex_to_xy
+from einstein.geometry.kite_grid import (
     boundary_cycle,
     cell_centroid4,
     norm2,

@@ -1,4 +1,4 @@
-from einstein.stade_contacts import (
+from einstein.tilings.stade.contacts import (
     DIRECTIONS,
     analyze_length,
     fixed_forbidden,

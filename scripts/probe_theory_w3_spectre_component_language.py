@@ -13,7 +13,7 @@ from concurrent.futures import ProcessPoolExecutor
 from hashlib import sha256
 from pathlib import Path
 
-from einstein.funnel.a6_hierarchy import (
+from einstein.tilings.substitution import (
     CompositionRule,
     contract_level,
     contracted_adjacency,
@@ -22,24 +22,24 @@ from einstein.funnel.a6_hierarchy import (
     raw_hierarchy_level,
     SPECTRE_TILE_BOUNDARY,
 )
-from einstein.substrate.module12 import compose_pose, relative_pose
-from einstein.theory.spectre_component_language import extend_language_ring
-from einstein.theory.spectre_colored_interface import colored_parent_corona
-from einstein.theory.spectre_geometry import exact_leaves
-from einstein.theory.spectre_parent_overlap import (
+from einstein.geometry.cyclotomic import compose_pose, relative_pose
+from einstein.tilings.spectre.components import extend_language_ring
+from einstein.tilings.spectre.colored_interfaces import colored_parent_corona
+from einstein.tilings.spectre.geometry import exact_leaves
+from einstein.tilings.spectre.parent_overlaps import (
     build_grouping_problem,
     centered_parent_templates,
     parent_occurrence_base,
     parent_templates,
     solve_core_grouping,
 )
-from einstein.theory.spectre_patch_language import (
+from einstein.tilings.spectre.patches import (
     IDENTITY,
     enumerate_first_coronas,
     patch_edge_incidence,
     pose_json,
 )
-from einstein.theory.substitution_certificate import file_sha256
+from einstein.tilings.spectre.certificates import file_sha256
 
 
 ROOT = Path(__file__).resolve().parents[1]

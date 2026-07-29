@@ -6,7 +6,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from einstein.theory.holonomy_symmetry import hnf_d6_image, orbit
+from einstein.holonomy.symmetry import hnf_d6_image, orbit
 from render_theory_w2_layer_d import (
     BG, BORDER, COMPAT, GOLD, HOL, MUTED, PANEL, TEXT, W1,
     panel, rect, text,

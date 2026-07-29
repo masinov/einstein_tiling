@@ -7,9 +7,9 @@ from hashlib import sha256
 import json
 from pathlib import Path
 
-from einstein.db import code_version
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.holonomy import (
+from einstein.polykites.database import code_version
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.boundary import (
     IDENTITY,
     line_tile_boundary_words,
     p3_value,
@@ -58,7 +58,7 @@ def main():
     if s3["surjections_with_displacement_coset_obstruction"]:
         raise AssertionError("unexpected displacement-only S3 obstruction")
 
-    source = ROOT / "src/einstein/theory/holonomy.py"
+    source = ROOT / "src/einstein/holonomy/boundary.py"
     payload = {
         "kind": "theory-w2-layer-d-phase0",
         "schema_version": 1,

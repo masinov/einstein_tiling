@@ -10,10 +10,10 @@ import json
 from pathlib import Path
 import subprocess
 
-from einstein.db import code_version
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.holonomy import s3_boundary_surjections
-from einstein.theory.holonomy_csp import commuting_s3_pairs
+from einstein.polykites.database import code_version
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.boundary import s3_boundary_surjections
+from einstein.holonomy.constraints import commuting_s3_pairs
 import run_theory_w2_layer_d_proofs as proof_tools
 
 
@@ -85,8 +85,8 @@ def main():
         capture_output=True,
     ).stdout.strip()
     sources = (
-        ROOT / "src/einstein/theory/holonomy.py",
-        ROOT / "src/einstein/theory/holonomy_csp.py",
+        ROOT / "src/einstein/holonomy/boundary.py",
+        ROOT / "src/einstein/holonomy/constraints.py",
         ROOT / "scripts/run_theory_w2_layer_d_proofs.py",
         Path(__file__),
     )

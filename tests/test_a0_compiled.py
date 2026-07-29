@@ -6,11 +6,11 @@ from pathlib import Path
 
 import pytest
 
-from einstein.enumeration.polyform import (
+from einstein.polykites.enumeration import (
     OEIS_A057786,
     read_compiled_polykites,
 )
-from einstein.substrate.kitegrid import canonical_form
+from einstein.geometry.kite_grid import canonical_form
 
 ROOT = Path(__file__).parent.parent
 

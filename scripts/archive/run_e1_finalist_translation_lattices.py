@@ -17,8 +17,8 @@ import math
 import time
 from pathlib import Path
 
-from einstein.e1_candidates import SMALLEST_DEPTH3_KEYS, decode_compiled_key
-from einstein.funnel.a1_torus import (
+from einstein.polykites.known_shapes import SMALLEST_DEPTH3_KEYS, decode_compiled_key
+from einstein.polykites.periodic_quotients import (
     _reduce,
     cell_to_lattice,
     solve_torus_sat,

@@ -3,9 +3,9 @@
 from pysat.formula import CNF
 from pysat.solvers import Cadical195
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.holonomy_csp import quotient_boundary_data
-from einstein.theory.a4_v4_packing import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.constraints import quotient_boundary_data
+from einstein.holonomy.alternating4.packing import (
     add_placement_budget,
     canonical_collision_type,
     collision_orbit_clauses,

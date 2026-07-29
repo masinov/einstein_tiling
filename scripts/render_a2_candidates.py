@@ -9,15 +9,15 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from einstein.e1_candidates import (
+from einstein.polykites.known_shapes import (
     TURTLE_KEY,
     known_polykite_name,
     novel_smallest_depth3_candidates,
     smallest_depth3_candidates,
     unregistered_smallest_depth3_candidates,
 )
-from einstein.render.svg import hex_to_xy
-from einstein.substrate.kitegrid import cell_vertices
+from einstein.visualization.kite_svg import hex_to_xy
+from einstein.geometry.kite_grid import cell_vertices
 
 ROOT = Path(__file__).resolve().parent.parent
 ASSETS = ROOT / "docs" / "notebook" / "assets"

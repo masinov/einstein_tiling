@@ -8,8 +8,8 @@ from hashlib import sha256
 import json
 from pathlib import Path
 
-from einstein.substrate.kitegrid import N_OPS
-from einstein.theory.holonomy_symmetry import (
+from einstein.geometry.kite_grid import N_OPS
+from einstein.holonomy.symmetry import (
     hnf_d6_image,
     orbit,
     pullback_s3_images,
@@ -72,7 +72,7 @@ def main():
         pair_orbits.append(current)
 
     sources = (
-        ROOT / "src/einstein/theory/holonomy_symmetry.py",
+        ROOT / "src/einstein/holonomy/symmetry.py",
         Path(__file__),
     )
     payload = {

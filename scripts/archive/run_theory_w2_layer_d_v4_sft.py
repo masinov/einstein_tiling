@@ -12,8 +12,8 @@ from time import perf_counter
 
 from pysat.solvers import Cadical195
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_v4_sft import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.local_system import (
     V4_TWIST_PAIRS,
     build_map7_v4_coverability_cnf,
 )
@@ -121,8 +121,8 @@ def main():
 
     dependencies = (BINARY, FACTOR, A4_INDEX55)
     sources = (
-        ROOT / "src/einstein/theory/a4_semidirect.py",
-        ROOT / "src/einstein/theory/a4_v4_sft.py",
+        ROOT / "src/einstein/holonomy/alternating4/group.py",
+        ROOT / "src/einstein/holonomy/alternating4/local_system.py",
         Path(__file__),
     )
     payload = {

@@ -14,24 +14,24 @@ import itertools
 import json
 from pathlib import Path
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_v4_circuits import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.circuits import (
     affine_compatible,
     build_v4_equation_system,
     minimal_affine_circuit,
 )
-from einstein.theory.a4_v4_hall import (
+from einstein.holonomy.alternating4.matching import (
     hall_deficiency,
     hall_witness_profile,
     minimal_hall_witness,
     two_center_matching,
 )
-from einstein.theory.a4_v4_lift import induced_v4_twists
-from einstein.theory.a4_v4_packing import (
+from einstein.holonomy.alternating4.lifts import induced_v4_twists
+from einstein.holonomy.alternating4.packing import (
     canonical_collision_type,
     placement_lattice_cells,
 )
-from einstein.theory.a4_v4_packing_family import PACKING_COLLISION_SEED
+from einstein.holonomy.alternating4.packing_families import PACKING_COLLISION_SEED
 
 
 ROOT = Path(__file__).resolve().parents[2]

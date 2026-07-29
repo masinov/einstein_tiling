@@ -7,8 +7,8 @@ import argparse
 import json
 from pathlib import Path
 
-from einstein.theory.spectre_d1_entry import analyze_d1_entry
-from einstein.theory.substitution_certificate import file_sha256
+from einstein.tilings.spectre.corona_elimination import analyze_d1_entry
+from einstein.tilings.spectre.certificates import file_sha256
 
 
 ROOT = Path(__file__).resolve().parents[2]

@@ -6,7 +6,7 @@ Smith--Myers--Kaplan--Goodman-Strauss, *An aperiodic monotile*
 again being promoted as a novel shape.
 """
 
-from einstein.e1_candidates import (
+from einstein.polykites.known_shapes import (
     PUBLISHED_APERIODIC_POLYKITE_HORIZON,
     TURTLE_KEY,
     TURTLE_OUTLINE,
@@ -15,7 +15,7 @@ from einstein.e1_candidates import (
     is_aperiodic_discovery_eligible,
     known_polykite_name,
 )
-from einstein.substrate.kitegrid import (
+from einstein.geometry.kite_grid import (
     canonical_form,
     cells_in_polygon,
     shoelace2,

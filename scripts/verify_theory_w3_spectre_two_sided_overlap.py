@@ -6,11 +6,11 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from einstein.theory.spectre_colored_interface import (
+from einstein.tilings.spectre.colored_interfaces import (
     colored_corona_from_json, colored_transition_graph,
     prune_colored_unsupported, strongly_connected_components,
 )
-from einstein.theory.substitution_certificate import file_sha256
+from einstein.tilings.spectre.certificates import file_sha256
 
 
 ROOT = Path(__file__).resolve().parents[1]

@@ -10,9 +10,9 @@ import sqlite3
 import subprocess
 from pathlib import Path
 
-from einstein.db import serialize_cells
-from einstein.e1_candidates import HAT_KEY, decode_compiled_key
-from einstein.substrate.kitegrid import canonical_form, is_center
+from einstein.polykites.database import serialize_cells
+from einstein.polykites.known_shapes import HAT_KEY, decode_compiled_key
+from einstein.geometry.kite_grid import canonical_form, is_center
 
 
 ROOT = Path(__file__).resolve().parent.parent

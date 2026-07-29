@@ -9,8 +9,8 @@ from pathlib import Path
 
 import highspy
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.a4_v4_marking import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.alternating4.markings import (
     enhanced_resource_incidence_conflict_graph,
 )
 

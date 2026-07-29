@@ -21,13 +21,13 @@ from pathlib import Path
 
 from pysat.solvers import Cadical195
 
-from einstein.funnel.a6_hierarchy import (
+from einstein.tilings.substitution import (
     _canonical_colored_cluster,
     canonical_cluster,
     deletion_variants,
     template_occurrences,
 )
-from einstein.funnel.a6_polykite import (
+from einstein.polykites.hierarchy import (
     _hex_nearest_groups,
     frequent_hex_nearest_templates,
     forced_typed_core_options,

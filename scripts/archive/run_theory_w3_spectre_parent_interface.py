@@ -7,13 +7,13 @@ import ast
 import json
 from pathlib import Path
 
-from einstein.theory.spectre_parent_interface import (
+from einstein.tilings.spectre.parent_interfaces import (
     local_overlap_witnesses,
     prune_locally_unsupported,
     reciprocal_domains,
 )
-from einstein.theory.spectre_patch_language import pose_json
-from einstein.theory.substitution_certificate import file_sha256
+from einstein.tilings.spectre.patches import pose_json
+from einstein.tilings.spectre.certificates import file_sha256
 
 try:
     from scripts.probe_theory_w3_spectre_component_language import (

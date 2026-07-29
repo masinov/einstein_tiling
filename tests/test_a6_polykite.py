@@ -3,11 +3,11 @@
 import json
 from pathlib import Path
 
-from einstein.funnel.a6_hierarchy import (
+from einstein.tilings.substitution import (
     canonical_cluster,
     frequent_nearest_templates,
 )
-from einstein.funnel.a6_polykite import (
+from einstein.polykites.hierarchy import (
     cover_core_with_rule,
     contract_typed_core_cover,
     enumerate_core_covers,
@@ -20,12 +20,12 @@ from einstein.funnel.a6_polykite import (
     polykite_boundary,
     typed_core_backbone,
 )
-from einstein.substrate.kitegrid import (
+from einstein.geometry.kite_grid import (
     cell_vertices,
     transform_point,
 )
-from einstein.substrate.module12 import apply_sr
-from einstein.funnel.a6_hierarchy import raw_hierarchy_level
+from einstein.geometry.cyclotomic import apply_sr
+from einstein.tilings.substitution import raw_hierarchy_level
 
 ROOT = Path(__file__).parent.parent
 

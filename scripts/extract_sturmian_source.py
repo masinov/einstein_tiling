@@ -6,7 +6,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from einstein.theory.sturmian_source import build_atlas, dump_atlas, verify_atlas
+from einstein.tilings.sturmian import build_atlas, dump_atlas, verify_atlas
 
 
 def main() -> None:

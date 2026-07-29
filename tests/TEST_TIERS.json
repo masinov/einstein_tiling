@@ -9,6 +9,8 @@
   },
   "rules": [
     {"glob": "test_consolidation_catalog.py", "tier": "tier_provenance"},
+    {"glob": "test_archive_semantic_inventory.py", "tier": "tier_provenance"},
+    {"glob": "test_package_architecture.py", "tier": "tier_provenance"},
     {"glob": "test_certificate_registry.py", "tier": "tier_provenance"},
     {"glob": "test_literature_catalog.py", "tier": "tier_provenance"},
     {"glob": "test_research_governance.py", "tier": "tier_provenance"},

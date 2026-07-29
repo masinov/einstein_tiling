@@ -3,11 +3,11 @@
 
 from pathlib import Path
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.funnel.a1_torus import lattice_to_cell
-from einstein.render.svg import hex_to_xy
-from einstein.substrate.kitegrid import boundary_cycle, cell_vertices
-from einstein.theory.a4_v4_packing import placement_lattice_cells
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.polykites.periodic_quotients import lattice_to_cell
+from einstein.visualization.kite_svg import hex_to_xy
+from einstein.geometry.kite_grid import boundary_cycle, cell_vertices
+from einstein.holonomy.alternating4.packing import placement_lattice_cells
 
 
 ROOT = Path(__file__).resolve().parents[1]

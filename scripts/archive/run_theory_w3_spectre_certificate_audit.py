@@ -6,7 +6,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from einstein.theory.substitution_certificate import (
+from einstein.tilings.spectre.certificates import (
     SCHEMA,
     VERSION,
     audit_obligations,
@@ -15,7 +15,7 @@ from einstein.theory.substitution_certificate import (
     physical_language_summary,
     substitution_from_a6,
 )
-from einstein.theory.spectre_geometry import (
+from einstein.tilings.spectre.geometry import (
     binary_boundary_prefix,
     boundary_word_recurrence_evidence,
     boundary_simplicity_prefix,

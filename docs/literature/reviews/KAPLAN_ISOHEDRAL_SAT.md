@@ -45,7 +45,7 @@ clauses as optimizations.
 
 ## Repository implementation
 
-`src/einstein/funnel/a1_isohedral.py` reuses the exact kite substrate and A2
+`src/einstein/polykites/isohedral.py` reuses the exact kite substrate and A2
 topology but implements a separate finite SAT layer:
 
 1. enumerate all marked D6+translation neighbours;

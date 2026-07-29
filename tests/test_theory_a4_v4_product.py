@@ -1,15 +1,15 @@
 """Controls for products of the two-bit A4 local invariant."""
 
-from einstein.e1_candidates import decode_compiled_key
+from einstein.polykites.known_shapes import decode_compiled_key
 from pysat.solvers import Cadical195
 
-from einstein.theory.a4_v4_lift import unsatisfied_clauses
-from einstein.theory.a4_v4_product import (
+from einstein.holonomy.alternating4.lifts import unsatisfied_clauses
+from einstein.holonomy.alternating4.products import (
     build_v4_product_coverability_cnf,
     lift_product_witness,
     semantic_product_witness,
 )
-from einstein.theory.a4_v4_sft import MAP7, build_v4_coverability_cnf
+from einstein.holonomy.alternating4.local_system import MAP7, build_v4_coverability_cnf
 
 
 KEY = "010001010104010502f002f1030b030c04fa04fb"

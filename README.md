@@ -45,9 +45,9 @@ reader-facing mathematical authority.
 
 ## Code and tests
 
-The Python package is under `src/einstein/`; its exact theory implementations
-are mapped in [src/einstein/theory/README.md](src/einstein/theory/README.md).
-Exact performance tools are under `tools/`. The package is validated against published Hat/Turtle coordinates,
+The Python package is under `src/einstein/`; its domain architecture is mapped
+in [src/einstein/README.md](src/einstein/README.md). Exact performance tools
+are under `tools/`. The package is validated against published Hat/Turtle coordinates,
 OEIS polyform counts, Myers's polykite census, Kaplan's public Heesch data and
 vendored Spectre controls.
 

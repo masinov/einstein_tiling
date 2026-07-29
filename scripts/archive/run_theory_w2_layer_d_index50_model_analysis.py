@@ -8,8 +8,8 @@ from hashlib import sha256
 import json
 from pathlib import Path
 
-from einstein.e1_candidates import decode_compiled_key
-from einstein.theory.holonomy_csp import (
+from einstein.polykites.known_shapes import decode_compiled_key
+from einstein.holonomy.constraints import (
     build_boundary_holonomy_cnf,
     quotient_boundary_data,
 )

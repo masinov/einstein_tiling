@@ -7,8 +7,8 @@ from hashlib import sha256
 import json
 from pathlib import Path
 
-from einstein.theory.finite_groups import alternating_group
-from einstein.theory.holonomy_quotients import pullback_images
+from einstein.combinatorics.finite_groups import alternating_group
+from einstein.holonomy.quotients import pullback_images
 
 
 ROOT = Path(__file__).resolve().parents[2]

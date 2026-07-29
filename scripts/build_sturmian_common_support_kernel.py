@@ -7,7 +7,7 @@ import argparse
 import json
 from pathlib import Path
 
-from einstein.theory.sturmian_source import build_common_support_kernel
+from einstein.tilings.sturmian import build_common_support_kernel
 
 
 def main() -> None:
