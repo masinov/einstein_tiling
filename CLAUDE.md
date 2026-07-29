@@ -1,63 +1,80 @@
-# Einstein tiling search — working notes for Claude
+# Einstein tiling research — repository contract
 
-Systematic search for new aperiodic monotiles. The **specification** is
-`docs/program/einstein_search_program.md` (read §0–§4 first); corrections to
-it live in `docs/program/ERRATA.md` — the spec itself is never edited.
+The current research goal is stated in
+`docs/theory/STURMIAN_REALIZATION_BOUNDARY.md`. Reusable mathematics is
+summarized in `docs/theory/GENERAL_REALIZATION_THEOREMS.md`. The original
+search specification and chronological status files are historical sources,
+not current navigation authorities.
 
-## Resume protocol (start of every session)
+## Choose the work mode first
 
-1. Read `docs/STATUS.md` — current milestone, verified state, next actions.
-2. Read `docs/literature/RESEARCH_RETURN_AUDIT.md` and
-   `docs/literature/NOVELTY_PROTOCOL.md` before proposing research work.
-3. Skim the latest `docs/notebook/` entry.
-4. Work; keep `docs/` in sync (see "end of session" below).
+### Mathematical research
 
-## End-of-session protocol
+Before proposing research work, read:
 
-- Append a new `docs/notebook/YYYY-MM-DD-session-NN.md`: done / verified
-  (with evidence) / failures / open. Honest: failures and dead ends are data.
-- Update `docs/STATUS.md` (milestone table, capacity limits, next actions).
-- New decisions → `docs/DECISIONS.md` (append-only; reversals are new entries).
-- Validation runs → table in `docs/EXPERIMENTS.md`.
+1. `docs/theory/STURMIAN_REALIZATION_BOUNDARY.md`;
+2. `docs/theory/GENERAL_REALIZATION_THEOREMS.md`;
+3. `docs/literature/RESEARCH_RETURN_AUDIT.md`; and
+4. `docs/literature/NOVELTY_PROTOCOL.md`.
 
-## Hard rules
+Research counts as progress only when it directly advances one of the stated
+construction, nonexistence or undecidability obligations. A locally correct
+lemma about an invented carrier is not progress merely because it is
+verifiable.
 
-- **Exact arithmetic only** in the search/certificate path. Floats are allowed
-  at render/output time and inside A4's numerical spectral analysis only
-  (D-0010); A4 emits prioritization signals, never exact certificates. On the
-  kite substrate all geometry is integer pairs (basis e1=(1,0),
-  e2=(1/2,√3/2); |v|² = x²+xy+y²; hexagon side 2 — matches Kaplan's hatviz
-  `hexPt`).
-- **External anchors before trust** (D-0005): validate every new component
-  against independent data (OEIS, published coordinates) before its output
-  feeds anything downstream. Gate experiments E1/E4 must pass before any
-  verdict on new shapes is claimed.
-- Negative results and budget-exhausted runs are recorded, not discarded
-  (program §2, §7.4).
-- **No run without pre-registration** (D-0065). Before writing or launching a
-  nontrivial research runner, create the current session notebook from
-  `docs/notebook/EXPERIMENT_TEMPLATE.md`, answer all admission questions, and
-  pass `venv/bin/python scripts/check_experiment_gate.py <notebook>`. Launch
-  via `scripts/run_research.py <notebook> -- <command>`. A session containing
-  an ungated research run is invalid. Unit tests and read-only diagnostics are
-  exempt; census/radius/index/SAT/search jobs are not.
-- **External wall-clock enforcement for native solvers** (D-0150). When a
-  preregistration declares a wall-clock stop, wrap native SAT/SMT/CAD/MIP
-  processes in an external supervisor. An internal library timeout alone does
-  not satisfy the stop rule; Z3 NLSAT has been observed not to return at it.
-- **Human checkpoint cadence** (D-0065): stop after at most three numbered
-  research sessions or 1 GiB of new artifacts since the checkpoint recorded
-  in `docs/HUMAN_CHECKPOINTS.json`, whichever comes first. Present a decision
-  summary and obtain explicit continuation before updating the checkpoint.
-- **User facts are gates** (D-0065): a user-supplied prior-art fact, scope
-  constraint, or contradiction halts the affected branch. Record it in
-  `docs/DECISIONS.md` or `docs/program/ERRATA.md` in the same session, verify
-  it against primary sources, and propagate its consequences before resuming.
+Use the append-only notebook, decisions, experiments and errata only when new
+research evidence actually requires provenance. Do not create a numbered
+session merely to close a work unit, document cleanup, refactor code or report
+tests. The former three-session checkpoint cadence is retired; explicit user
+scope and the current theorem obligations govern continuation.
+
+### Repository maintenance and consolidation
+
+Read `docs/consolidation/README.md` and use its claim, file and artifact
+registries. Record physical layout changes in
+`docs/consolidation/MIGRATIONS.md`. Do not update `docs/STATUS.md`,
+`docs/DECISIONS.md` or create a session notebook for maintenance-only work.
+
+Preserve append-only provenance and user data. Archive classifications are
+not deletion permissions. Large payload movement requires a hash manifest and
+explicit review.
+
+## Hard research rules
+
+- **Exact arithmetic only in the search and certificate path.** Floats are
+  allowed at render/output time and inside A4's historical numerical spectral
+  analysis only; numerical output is a prioritization signal, never a
+  certificate. On the kite substrate geometry uses integer pairs in the basis
+  `e1=(1,0)`, `e2=(1/2,sqrt(3)/2)` with
+  `|v|^2=x^2+xy+y^2`.
+- **External anchors before trust.** Validate a new component against
+  independent primary data before its output feeds a claim. User-supplied
+  prior-art facts are halt conditions until checked against primary sources
+  and propagated through the affected claim registry.
+- **No nontrivial experiment without preregistration.** Before writing or
+  launching a census, radius/index escalation, SAT/SMT/CAD search or other
+  research runner, complete `docs/notebook/EXPERIMENT_TEMPLATE.md` and pass
+  `venv/bin/python scripts/check_experiment_gate.py <notebook>`. Launch it
+  through `scripts/run_research.py <notebook> -- <command>`. Read-only
+  diagnostics, catalog builders and unit/certificate regression tests are
+  exempt.
+- **Externally supervise native solvers.** A declared wall-clock stop must be
+  enforced outside the solver process. An internal timeout alone is not a
+  valid stop.
+- **Fail closed.** Negative results and budget exhaustion remain recorded.
+  Finite evidence never becomes a theorem by accumulation, and a solver
+  resource stop is not SAT or UNSAT.
+- **Unrestricted tilings are the quantifier.** A candidate is not promoted
+  from an attractive patch. It must pass the immediate exact periodicity gate
+  and ultimately the full contact-atlas, grouping and total-decoder contract,
+  including reflections and unintended contacts.
 
 ## Environment
 
-- Python 3.12 venv at `./venv`; package installed editable
-  (`venv/bin/pip install -e .`).
-- Tests: `venv/bin/python -m pytest` (fast) / `-m slow` (OEIS n=10 check).
-- Key modules: `substrate/kitegrid.py` (grid, symmetry, canonical forms),
-  `enumeration/polyform.py` (A0), `render/svg.py`.
+- Python 3.12 virtual environment: `./venv`
+- Package install: `venv/bin/pip install -e .`
+- Default tests: `venv/bin/python -m pytest`
+- Test tiers: see `tests/README.md`
+- Exact substrate core: `src/einstein/substrate/`
+- Consolidation validation:
+  `venv/bin/python scripts/check_consolidation_catalog.py`

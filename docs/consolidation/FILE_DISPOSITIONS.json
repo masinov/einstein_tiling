@@ -8,7 +8,7 @@
     "file_count": 981,
     "tracked_file_count": 981,
     "untracked_nonignored_file_count": 0,
-    "size_bytes": 227841733,
+    "size_bytes": 227842756,
     "dynamic_generated_catalog_count": 2,
     "by_disposition": {
       "archive-history": 247,
@@ -112,13 +112,13 @@
     {
       "path": "CLAUDE.md",
       "tracked": true,
-      "size_bytes": 3522,
+      "size_bytes": 3801,
       "rule_index": 4,
       "rule_glob": "CLAUDE.md",
       "category": "governance",
       "disposition": "canonical",
       "rationale": "Current repository governance contract.",
-      "line_count": 63
+      "line_count": 80
     },
     {
       "path": "LICENSE",
@@ -496,13 +496,13 @@
     {
       "path": "docs/consolidation/MIGRATIONS.md",
       "tracked": true,
-      "size_bytes": 1562,
+      "size_bytes": 2100,
       "rule_index": 0,
       "rule_glob": "docs/consolidation/*",
       "category": "consolidation-control",
       "disposition": "canonical",
       "rationale": "Control layer for the migration itself.",
-      "line_count": 35
+      "line_count": 46
     },
     {
       "path": "docs/consolidation/README.md",
@@ -9914,13 +9914,13 @@
     {
       "path": "tests/test_research_governance.py",
       "tracked": true,
-      "size_bytes": 4091,
+      "size_bytes": 4297,
       "rule_index": 87,
       "rule_glob": "tests/*",
       "category": "test",
       "disposition": "split-required",
       "rationale": "Assertions are retained in place while executable tiering exposes unit, certificate, control and provenance suites.",
-      "line_count": 96
+      "line_count": 98
     },
     {
       "path": "tests/test_spectre_colored_interface.py",

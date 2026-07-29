@@ -33,3 +33,14 @@ non-slow test suite.
 
 No large artifact, session record, decision, erratum or proof source was
 deleted or rewritten.
+
+## 2026-07-29 — work-mode governance
+
+- Replaced the stale universal session-resume contract in `CLAUDE.md` with
+  separate mathematical-research and repository-maintenance modes.
+- Kept exact arithmetic, external anchors, experiment preregistration,
+  external solver supervision and fail-closed evidence rules.
+- Directed maintenance changes to this migration log instead of the research
+  decisions, status and session notebooks.
+- Retired the three-session cadence in favor of explicit user scope and direct
+  theorem obligations.

@@ -17,17 +17,19 @@ def load_gate_module():
     return module
 
 
-def test_agent_instructions_make_the_gate_mandatory():
+def test_agent_instructions_separate_research_from_maintenance():
     instructions = (ROOT / "CLAUDE.md").read_text()
-    assert "No run without pre-registration" in instructions
-    assert "Human checkpoint cadence" in instructions
-    assert "User facts are gates" in instructions
+    assert "No nontrivial experiment without preregistration" in instructions
+    assert "Repository maintenance and consolidation" in instructions
+    assert "Do not create a numbered" in instructions
+    assert "three-session checkpoint cadence is retired" in instructions
+    assert "User-supplied" in instructions and "halt conditions" in instructions
     assert "scripts/run_research.py" in instructions
-    assert "External wall-clock enforcement" in instructions
+    assert "Externally supervise native solvers" in instructions
     assert (ROOT / "AGENTS.md").is_file()
 
 
-def test_checkpoint_policy_is_bounded_and_current():
+def test_retired_checkpoint_record_remains_intact():
     data = json.loads((ROOT / "docs" / "HUMAN_CHECKPOINTS.json").read_text())
     assert data["schema_version"] == 1
     assert 1 <= data["policy"]["max_research_sessions"] <= 3
