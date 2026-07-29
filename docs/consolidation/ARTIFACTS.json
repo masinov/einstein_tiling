@@ -1,0 +1,3099 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-07-29",
+  "generated_by": "scripts/build_consolidation_catalog.py",
+  "semantics": "Tracked evidence is hash-pinned individually. Ignored stores are storage inventories only and are not promoted to mathematical evidence.",
+  "summary": {
+    "tracked_or_nonignored_artifact_count": 290,
+    "tracked_or_nonignored_size_bytes": 223422299,
+    "ignored_group_count": 12,
+    "ignored_file_count": 2626,
+    "ignored_size_bytes": 8369423798,
+    "by_kind": {
+      "artifact-policy": 1,
+      "certificate-or-result": 97,
+      "database-fixture": 1,
+      "literature-anchor": 1,
+      "research-artifact": 54,
+      "sat-proof-payload": 54,
+      "solver-formula": 15,
+      "source-reconstruction-certificate": 18,
+      "visualization": 49
+    },
+    "by_disposition": {
+      "archive-history": 78,
+      "canonical": 2,
+      "relocate-fixture": 1,
+      "retained-control": 190,
+      "retained-evidence": 19
+    }
+  },
+  "artifacts": [
+    {
+      "path": "data/shapes.sqlite",
+      "tracked": true,
+      "size_bytes": 1355776,
+      "sha256": "6956f7c90f6bceae1b63678e8bb86d6df0cf90ce59b2f8db072188850d7c27b9",
+      "kind": "database-fixture",
+      "disposition": "relocate-fixture",
+      "category": "database-fixture",
+      "reference_count": 51
+    },
+    {
+      "path": "data/sturmian-source/ahi-area30-carrier-classification.json",
+      "tracked": true,
+      "size_bytes": 905959,
+      "sha256": "adc403154e98a70205ed58284e54de36d795466635489e91cbb03e2a7ad1bab1",
+      "kind": "source-reconstruction-certificate",
+      "disposition": "retained-evidence",
+      "category": "ahi-certificate",
+      "reference_count": 15
+    },
+    {
+      "path": "data/sturmian-source/ahi-common-support-kernel.json",
+      "tracked": true,
+      "size_bytes": 12701,
+      "sha256": "a73757632d69ee4babd2c50b1153fbd70ef8e5ac1d21f56c380e74736b1d1a1d",
+      "kind": "source-reconstruction-certificate",
+      "disposition": "retained-evidence",
+      "category": "ahi-certificate",
+      "reference_count": 15
+    },
+    {
+      "path": "data/sturmian-source/ahi-corridor-quotient.json",
+      "tracked": true,
+      "size_bytes": 49447,
+      "sha256": "f1b6db220345c7436be7f5a12e43da52bb41b2725c240f061ba38536b472a966",
+      "kind": "source-reconstruction-certificate",
+      "disposition": "retained-evidence",
+      "category": "ahi-certificate",
+      "reference_count": 12
+    },
+    {
+      "path": "data/sturmian-source/ahi-fiftyone-envelope-periodicity.json",
+      "tracked": true,
+      "size_bytes": 633,
+      "sha256": "55c787b300e7ac8f033315e1177bc2afbeae75c7c1a474dff442ea562e00a7d6",
+      "kind": "source-reconstruction-certificate",
+      "disposition": "retained-evidence",
+      "category": "ahi-certificate",
+      "reference_count": 11
+    },
+    {
+      "path": "data/sturmian-source/ahi-interchangeable-pairs.json",
+      "tracked": true,
+      "size_bytes": 17785,
+      "sha256": "3be14d425f625a49006ca5e911a79ab6fdcd1b57ab8dd436155f54a4e422b9c7",
+      "kind": "source-reconstruction-certificate",
+      "disposition": "retained-evidence",
+      "category": "ahi-certificate",
+      "reference_count": 9
+    },
+    {
+      "path": "data/sturmian-source/ahi-interchangeable-periodicity.json",
+      "tracked": true,
+      "size_bytes": 631,
+      "sha256": "5c21cd2443f0685431144bfa5931206d07ad4ed2591701754f828c22546e6fbc",
+      "kind": "source-reconstruction-certificate",
+      "disposition": "retained-evidence",
+      "category": "ahi-certificate",
+      "reference_count": 9
+    },
+    {
+      "path": "data/sturmian-source/ahi-l-anchor-selector.json",
+      "tracked": true,
+      "size_bytes": 12085,
+      "sha256": "66a30bd87caea560b0ad2af1779a2f438685b39b9099a84ea2e1ff938b727fe7",
+      "kind": "source-reconstruction-certificate",
+      "disposition": "retained-evidence",
+      "category": "ahi-certificate",
+      "reference_count": 11
+    },
+    {
+      "path": "data/sturmian-source/ahi-p17-all-m-obstruction.json",
+      "tracked": true,
+      "size_bytes": 871,
+      "sha256": "1dd7af42c501ea36e53e8139401daf1320006065c28d2378dfeeb030a8ab995c",
+      "kind": "source-reconstruction-certificate",
+      "disposition": "retained-evidence",
+      "category": "ahi-certificate",
+      "reference_count": 17
+    },
+    {
+      "path": "data/sturmian-source/ahi-periodic-scaffold.json",
+      "tracked": true,
+      "size_bytes": 939,
+      "sha256": "b07058efb1e491e42906a5588ba00356426711d1da52f98dfa9263aa9f30ff89",
+      "kind": "source-reconstruction-certificate",
+      "disposition": "retained-evidence",
+      "category": "ahi-certificate",
+      "reference_count": 8
+    },
+    {
+      "path": "data/sturmian-source/ahi-section10-contact-kernel.json",
+      "tracked": true,
+      "size_bytes": 60822,
+      "sha256": "c869f534f32d28a746d09667009f797e2a59418dabc3f546916212936e12561b",
+      "kind": "source-reconstruction-certificate",
+      "disposition": "retained-evidence",
+      "category": "ahi-certificate",
+      "reference_count": 12
+    },
+    {
+      "path": "data/sturmian-source/ahi-section10-supports.json",
+      "tracked": true,
+      "size_bytes": 20403,
+      "sha256": "50f2d948623c7f6d1c802a7606892e463932a66560882dad65910c1816d53afd",
+      "kind": "source-reconstruction-certificate",
+      "disposition": "retained-evidence",
+      "category": "ahi-certificate",
+      "reference_count": 30
+    },
+    {
+      "path": "data/sturmian-source/ahi-seventeen-rhombus-compiler.json",
+      "tracked": true,
+      "size_bytes": 18730,
+      "sha256": "bfdaa83507e5a25b3bb989e17b1787f04b0f37c80035e8daaab20f5c6560e097",
+      "kind": "source-reconstruction-certificate",
+      "disposition": "retained-evidence",
+      "category": "ahi-certificate",
+      "reference_count": 11
+    },
+    {
+      "path": "data/sturmian-source/ahi-seventeen-rhombus-full-germs.json",
+      "tracked": true,
+      "size_bytes": 29437,
+      "sha256": "831ec3d67f415462ddebd75288013d2fff8bc6dd1fa645a5656322abeb5dfcdd",
+      "kind": "source-reconstruction-certificate",
+      "disposition": "retained-evidence",
+      "category": "ahi-certificate",
+      "reference_count": 12
+    },
+    {
+      "path": "data/sturmian-source/ahi-seventeen-rhombus-periodicity.json",
+      "tracked": true,
+      "size_bytes": 631,
+      "sha256": "adb2eebf89a0cb752079ffcc76f523d2aca59963c95eb9c65fa11fc71da7aae8",
+      "kind": "source-reconstruction-certificate",
+      "disposition": "retained-evidence",
+      "category": "ahi-certificate",
+      "reference_count": 11
+    },
+    {
+      "path": "data/sturmian-source/ahi-seventeen-rhombus-rep3.json",
+      "tracked": true,
+      "size_bytes": 2023,
+      "sha256": "4032ff41b2d12909abcaa0324d2a1f716899c050fde2f4032dc296ed15a4de15",
+      "kind": "source-reconstruction-certificate",
+      "disposition": "retained-evidence",
+      "category": "ahi-certificate",
+      "reference_count": 11
+    },
+    {
+      "path": "data/sturmian-source/ahi-sub30-carrier-classification.json",
+      "tracked": true,
+      "size_bytes": 4779407,
+      "sha256": "20ae6ff936eb0674ab0c7facf2a9e21969b0cdb71dbbd0287aaa4a6bccc6fc9c",
+      "kind": "source-reconstruction-certificate",
+      "disposition": "retained-evidence",
+      "category": "ahi-certificate",
+      "reference_count": 15
+    },
+    {
+      "path": "data/sturmian-source/ahi-unit-apex-compiler.json",
+      "tracked": true,
+      "size_bytes": 1087,
+      "sha256": "39e63baf68b37dfd31d52342ec5e4dac4c9bdf34d3137a4c1b345b3339388f32",
+      "kind": "source-reconstruction-certificate",
+      "disposition": "retained-evidence",
+      "category": "ahi-certificate",
+      "reference_count": 8
+    },
+    {
+      "path": "data/sturmian-source/stade-physical-contact-quotient.json",
+      "tracked": true,
+      "size_bytes": 920701,
+      "sha256": "06f2572dffd7c8ab316364347b8f258decb1ca042e707f2e6cb89b886c1c0859",
+      "kind": "source-reconstruction-certificate",
+      "disposition": "retained-evidence",
+      "category": "ahi-certificate",
+      "reference_count": 13
+    },
+    {
+      "path": "docs/literature/anchors/stade-stick-rules.json",
+      "tracked": true,
+      "size_bytes": 668,
+      "sha256": "2c6caebd0d5eaf8dc0fa7870521878d1752481c64d715bf3fe6842b0a94b4a33",
+      "kind": "literature-anchor",
+      "disposition": "canonical",
+      "category": "literature",
+      "reference_count": 18
+    },
+    {
+      "path": "docs/notebook/assets/PROOF_PAYLOADS.md",
+      "tracked": true,
+      "size_bytes": 1848,
+      "sha256": "0529f2ce61683a291bee8a4c52e1332b6d9fc8390b0b2158d173a339c3cd849c",
+      "kind": "artifact-policy",
+      "disposition": "canonical",
+      "category": "artifact-policy",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/a1-extended-small-candidate-results.json",
+      "tracked": true,
+      "size_bytes": 6187,
+      "sha256": "7f5210b19d5587da7b25d54c0ca909a81cabac1f429582e9db6d85f606e3c72c",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 9
+    },
+    {
+      "path": "docs/notebook/assets/a1-isohedral-control.json",
+      "tracked": true,
+      "size_bytes": 81924,
+      "sha256": "1c5e60feae421c5d12551281c0dc31c358767f40ae636cdf9edeb6ed04a2b85b",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 14
+    },
+    {
+      "path": "docs/notebook/assets/a1-isohedral-control.svg",
+      "tracked": true,
+      "size_bytes": 5204,
+      "sha256": "1d009c5864f2e53f587fee8336c2862f80d7ea112f7cbef7636f1dbd13a80724",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 11
+    },
+    {
+      "path": "docs/notebook/assets/a2-depth3-small-candidates.svg",
+      "tracked": true,
+      "size_bytes": 23710,
+      "sha256": "7d2c3365c42bf30d5b926e68f9925a9fd17e043d9d143571f75464659947b6ce",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 13
+    },
+    {
+      "path": "docs/notebook/assets/a3-small-candidate-patches.svg",
+      "tracked": true,
+      "size_bytes": 570566,
+      "sha256": "d1393ced0dd97d133942eb0991e1ff73b54ac509f355dd006a0fff80c830df1c",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 7
+    },
+    {
+      "path": "docs/notebook/assets/a3-small-candidate-results.json",
+      "tracked": true,
+      "size_bytes": 835425,
+      "sha256": "56080035c2ce6782acc823d1e1ba8f95eaa191e69b5593e2f78c6a36f16dc111",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 9
+    },
+    {
+      "path": "docs/notebook/assets/a4-candidate-n10-02-spectrum.png",
+      "tracked": true,
+      "size_bytes": 793175,
+      "sha256": "f5d4e5d8539a1d2a3ebdf59514867ca98eb2d787f239a75a4f69421756aebb02",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 7
+    },
+    {
+      "path": "docs/notebook/assets/a4-candidate-n12-01-spectrum.png",
+      "tracked": true,
+      "size_bytes": 619686,
+      "sha256": "5bd4b7de789a2da276a2da8b233c0a9fe2544d151b14475b6b3950f558d93804",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 7
+    },
+    {
+      "path": "docs/notebook/assets/a4-candidate-n12-02-spectrum.png",
+      "tracked": true,
+      "size_bytes": 630918,
+      "sha256": "9f01a81f5cab0a007cb2ff6bacb158fad62d1550459e5d92ad2f1d6c47de577c",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 7
+    },
+    {
+      "path": "docs/notebook/assets/a4-candidate-n12-03-spectrum.png",
+      "tracked": true,
+      "size_bytes": 616706,
+      "sha256": "7aacf1ad0ad8e82bdaffb737cf97d1e4cc78d722b02b87fd3e82e9d4acd3f606",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 7
+    },
+    {
+      "path": "docs/notebook/assets/a4-candidate-n12-04-spectrum.png",
+      "tracked": true,
+      "size_bytes": 456655,
+      "sha256": "6966610bf313319ad38825efc1958e685ac7804459f0924ab28cc09cdf91988c",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 7
+    },
+    {
+      "path": "docs/notebook/assets/a4-candidate-n12-05-spectrum.png",
+      "tracked": true,
+      "size_bytes": 717523,
+      "sha256": "a93d0e2a0c30d86ee2562cb6d322f5b3c4d819fcc47bfc4f8a2c3bc3da901285",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 7
+    },
+    {
+      "path": "docs/notebook/assets/a4-candidate-n12-06-spectrum.png",
+      "tracked": true,
+      "size_bytes": 511147,
+      "sha256": "947110be1a2bb8cd644a2ccfeac55014dacbc111a33f969b0fd33dd96c050f83",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 7
+    },
+    {
+      "path": "docs/notebook/assets/a4-candidate-n12-07-spectrum.png",
+      "tracked": true,
+      "size_bytes": 645183,
+      "sha256": "f7e60884eb91c31f4e3025a96a55dbdcccce11a135f2861c669445bb35e10549",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 7
+    },
+    {
+      "path": "docs/notebook/assets/a4-candidate-n12-08-spectrum.png",
+      "tracked": true,
+      "size_bytes": 644998,
+      "sha256": "d4880eaf4a9b676d002b7e2bfa450ca401009f86711a47db6579a3e1c668b641",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 7
+    },
+    {
+      "path": "docs/notebook/assets/a4-small-candidate-results.json",
+      "tracked": true,
+      "size_bytes": 42993,
+      "sha256": "f43dd0d625dec081bd13226d39ea1beb04c14053cf353b04fdd7690434f64068",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 7
+    },
+    {
+      "path": "docs/notebook/assets/a4-small-candidate-spectra.svg",
+      "tracked": true,
+      "size_bytes": 3931,
+      "sha256": "96638cf67a06aa797895b85c93ef458080e850602c10b44de4f4cb04e3e86c44",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/a6-hat-candidate-1.svg",
+      "tracked": true,
+      "size_bytes": 9651,
+      "sha256": "087e66ca3470f7c669c276b9e28b024220dc73999b5fb22d44b38a89f4646094",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/a6-hat-candidate-2.svg",
+      "tracked": true,
+      "size_bytes": 9651,
+      "sha256": "7d3f26f65a3c6b3e61e6468b1be84508d07bdf0c91ac2f7966a48ba2ba9828b1",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/a6-hat-screen-results.json",
+      "tracked": true,
+      "size_bytes": 133866,
+      "sha256": "21fce62039487e1de27ec711b229ec77d16db98c298029300e42dd72619a04a4",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 14
+    },
+    {
+      "path": "docs/notebook/assets/a6-spectre-metatiles.svg",
+      "tracked": true,
+      "size_bytes": 5209,
+      "sha256": "e5154759e24b57c85f44503e89daa89fb8a1c99c6c04bef80cd8139ea8fbc0ad",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/a6-spectre-results.json",
+      "tracked": true,
+      "size_bytes": 61357,
+      "sha256": "42b67a5a6e80b63471073aae77698bfff64dc063b47cad4108ba214ef961193b",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 65
+    },
+    {
+      "path": "docs/notebook/assets/deep-heesch-id1080-h2.svg",
+      "tracked": true,
+      "size_bytes": 1281,
+      "sha256": "1053847e6f44e5bddac99daa4e52760f31654aa87fdfeedb676262003a896fdd",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 4
+    },
+    {
+      "path": "docs/notebook/assets/deep-heesch-id238-h2.svg",
+      "tracked": true,
+      "size_bytes": 1134,
+      "sha256": "8c29afaee1b30385d7a7d3c87e3b142fd40ee0524d3ec985a75c7344a37169e2",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 4
+    },
+    {
+      "path": "docs/notebook/assets/deep-heesch-id483-h2.svg",
+      "tracked": true,
+      "size_bytes": 1297,
+      "sha256": "0eaa3d8ee2bafe260d16f40c0e47767f007b6a36a349ba755e1e6a70691becc8",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 4
+    },
+    {
+      "path": "docs/notebook/assets/deep-heesch-id502-h2.svg",
+      "tracked": true,
+      "size_bytes": 1285,
+      "sha256": "60106f5c056de7d85d90f6ff016bb26c5157ee4047795025f5bc8a148c1c7f76",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 4
+    },
+    {
+      "path": "docs/notebook/assets/deep-heesch-id580-h2.svg",
+      "tracked": true,
+      "size_bytes": 1288,
+      "sha256": "e287fd46153c8d7b88956ebc2a205f35442161225f7ece082bcdca71280c83d7",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 4
+    },
+    {
+      "path": "docs/notebook/assets/deep-heesch-id635-h4.svg",
+      "tracked": true,
+      "size_bytes": 1285,
+      "sha256": "d3111efcd2148e823646a21c5ca4b49b1d044e7e5b21ed82fe85e511c3d55792",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 5
+    },
+    {
+      "path": "docs/notebook/assets/deep-heesch-id637-h2.svg",
+      "tracked": true,
+      "size_bytes": 1287,
+      "sha256": "992ffda35d87bc8c4f569052b16bf1e4fc87d8818a10c4237d759e37d0e6411c",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 4
+    },
+    {
+      "path": "docs/notebook/assets/e1-finalist-hierarchy-screen.json",
+      "tracked": true,
+      "size_bytes": 65679,
+      "sha256": "be0f112ae2f19b8a6713c93b5be54b4db4065adc87a2a96ee8515fa93fb107b9",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "legacy-turtle-artifact",
+      "reference_count": 11
+    },
+    {
+      "path": "docs/notebook/assets/e1-finalist-independent-patches.svg",
+      "tracked": true,
+      "size_bytes": 2981167,
+      "sha256": "df3ffab7e7b745aa50858ad880fd6379fc80c7b4b9ce9b9ff912a324301cd54d",
+      "kind": "visualization",
+      "disposition": "retained-control",
+      "category": "legacy-turtle-artifact",
+      "reference_count": 7
+    },
+    {
+      "path": "docs/notebook/assets/e1-finalist-nested-cores.svg",
+      "tracked": true,
+      "size_bytes": 8670633,
+      "sha256": "95f0c5ba8ab9b9dc3f64c4b61464ec86e8eb8638e8bdd5ed88a01e273c7cc551",
+      "kind": "visualization",
+      "disposition": "retained-control",
+      "category": "legacy-turtle-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/e1-finalist-nested.json",
+      "tracked": true,
+      "size_bytes": 1251443,
+      "sha256": "34da9a692dce9f214be752e8a431c031cd55d140297bd7781c68623e2bd287f2",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "legacy-turtle-artifact",
+      "reference_count": 12
+    },
+    {
+      "path": "docs/notebook/assets/e1-finalist-patch.svg",
+      "tracked": true,
+      "size_bytes": 2880152,
+      "sha256": "ba2bb4c6f378bb20e60599048890c7487f1d0bfd13a93ebd83220905c723a1cd",
+      "kind": "visualization",
+      "disposition": "retained-control",
+      "category": "legacy-turtle-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/e1-finalist-period47.json",
+      "tracked": true,
+      "size_bytes": 4173,
+      "sha256": "37583200dab9c7236e0b73ee885f805085a9e3c0a2bb55ec2983d9cef616d3c1",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "legacy-turtle-artifact",
+      "reference_count": 9
+    },
+    {
+      "path": "docs/notebook/assets/e1-finalist-periodicity.json",
+      "tracked": true,
+      "size_bytes": 874,
+      "sha256": "5d2e1b5518fded4e4de5712fe6bc97440bb3354215670de7a4d0a4882f7b2de7",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "legacy-turtle-artifact",
+      "reference_count": 11
+    },
+    {
+      "path": "docs/notebook/assets/e1-finalist-results.json",
+      "tracked": true,
+      "size_bytes": 375590,
+      "sha256": "b586ec0fabf9fbf5d21977861acd2ddfae8f5149c55ba0a90fdd85c4b44f8bf0",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "legacy-turtle-artifact",
+      "reference_count": 18
+    },
+    {
+      "path": "docs/notebook/assets/e1-finalist-robustness.json",
+      "tracked": true,
+      "size_bytes": 448080,
+      "sha256": "07eba01e59b9afe049520b2b20ef32c0ea5de84c88de04f6b5669001534f0dce",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "legacy-turtle-artifact",
+      "reference_count": 13
+    },
+    {
+      "path": "docs/notebook/assets/e1-finalist-spectrum.png",
+      "tracked": true,
+      "size_bytes": 792741,
+      "sha256": "167d41f2783eb5852f7cf359a348330de05ce442944bb335a74220c8d1b06dde",
+      "kind": "visualization",
+      "disposition": "retained-control",
+      "category": "legacy-turtle-artifact",
+      "reference_count": 7
+    },
+    {
+      "path": "docs/notebook/assets/e1-overnight-recovered.json",
+      "tracked": true,
+      "size_bytes": 8840,
+      "sha256": "5d4b69fbf95295d374997fb4c8a08774e4d8a2e9a4dd775c3a96d81938ca2d7d",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 13
+    },
+    {
+      "path": "docs/notebook/assets/e4-results.json",
+      "tracked": true,
+      "size_bytes": 4099,
+      "sha256": "8c6b1b12722b33d6bc6dd0557644b56082ece936506450a71cb1cd090cbf9e10",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 11
+    },
+    {
+      "path": "docs/notebook/assets/e4-spectrum-ammann-beenker.png",
+      "tracked": true,
+      "size_bytes": 591091,
+      "sha256": "8a3f8c6faf7c0a4810045e99107869a74681d70928c3d5dada4e7f59d96ee138",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 4
+    },
+    {
+      "path": "docs/notebook/assets/e4-spectrum-hat.png",
+      "tracked": true,
+      "size_bytes": 894681,
+      "sha256": "b33ef7fa9c39ca17d4a5f6605d46700ba380f0f00d1ba0187aa877dc0522e18e",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 4
+    },
+    {
+      "path": "docs/notebook/assets/e4-spectrum-penrose.png",
+      "tracked": true,
+      "size_bytes": 677606,
+      "sha256": "2d11d5601b35568e0c75f50078ce2a6faa64a4c3a4f10ba426978ca5278cf647",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 4
+    },
+    {
+      "path": "docs/notebook/assets/e4-spectrum-periodic.png",
+      "tracked": true,
+      "size_bytes": 208341,
+      "sha256": "dd24cc59fcede7cabfd9ddabbe92af990c4de969619dfa60bd6891640b42415d",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 4
+    },
+    {
+      "path": "docs/notebook/assets/e4-spectrum-random.png",
+      "tracked": true,
+      "size_bytes": 652705,
+      "sha256": "2c6f946748f9365e1ef6f80e196e0d97052fbcf3a029efc07bed91731b604dff",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 4
+    },
+    {
+      "path": "docs/notebook/assets/e4-spectrum-spectre.png",
+      "tracked": true,
+      "size_bytes": 818221,
+      "sha256": "ee42fa95dfe57a441f5d0ac8f2f7f3459aaed89da921e107c68b120c0be1275b",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 4
+    },
+    {
+      "path": "docs/notebook/assets/e4-spectrum-square-triangle-random.png",
+      "tracked": true,
+      "size_bytes": 221827,
+      "sha256": "7e58e89e6b7a02e72d2f07da53c10d35e92c491d1d52786e40c5f1457a85a4a7",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 4
+    },
+    {
+      "path": "docs/notebook/assets/e4-spectrum-taylor-socolar.png",
+      "tracked": true,
+      "size_bytes": 1764,
+      "sha256": "487b78f2d31d9ed7b45c0115067cfe6a668eaf2d09bc7eaecfc6544f1042fb94",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 4
+    },
+    {
+      "path": "docs/notebook/assets/e4-wide-results.json",
+      "tracked": true,
+      "size_bytes": 18410,
+      "sha256": "1fce54735cf99827f83b82e96486240991bcc1015baa7db3d3eae983c3daf8d7",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 10
+    },
+    {
+      "path": "docs/notebook/assets/hat-patch-r2-5500-chirality.svg",
+      "tracked": true,
+      "size_bytes": 381050,
+      "sha256": "be9713b2a8584942c31a64990773f181acd5b93cc6bdac6f9dd6bddffb37c24c",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 5
+    },
+    {
+      "path": "docs/notebook/assets/hat-recovered.svg",
+      "tracked": true,
+      "size_bytes": 1297,
+      "sha256": "5552976f18fe828bb8c76c914bc91f72b0b45922715d10d30a19031a63e7782e",
+      "kind": "visualization",
+      "disposition": "archive-history",
+      "category": "legacy-experiment-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/k16w-exact-qfnra.smt2",
+      "tracked": true,
+      "size_bytes": 386654,
+      "sha256": "b3e4c2acf34e3e5fe78feb3ce5b79c6583af77649261f2ee42c805573e6ad301",
+      "kind": "solver-formula",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 10
+    },
+    {
+      "path": "docs/notebook/assets/k16w-exact-result.json",
+      "tracked": true,
+      "size_bytes": 1399,
+      "sha256": "cef249f14d4fa9694c3252d375f3dea78d90aa18e2c1115f4a04f16eff09c743",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 9
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc31-manifest.json",
+      "tracked": true,
+      "size_bytes": 768,
+      "sha256": "96ee843f257c4eecb22812e259d4adfbc657bbf6189589278e9153abfdd7f09a",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc31-minus-plus-result.json",
+      "tracked": true,
+      "size_bytes": 510,
+      "sha256": "4306f2c7830e70083b52b91829024a2823cae92bed8fa8c1f28ec1c8569b6f22",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc31-minus-plus.smt2",
+      "tracked": true,
+      "size_bytes": 391446,
+      "sha256": "1491aa2cb14b41873090e9cef12e34b6c7f906d558deec248dd64ce0d8019c60",
+      "kind": "solver-formula",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc31-plus-minus-result.json",
+      "tracked": true,
+      "size_bytes": 510,
+      "sha256": "aaf5ad5e68ec43a03498f18024c8ece6c80a6fdf497f46351e95118ec78b3cd6",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc31-plus-minus.smt2",
+      "tracked": true,
+      "size_bytes": 391446,
+      "sha256": "da7bf13cd6297ce5a3c2340a39ec7ad3c4e70b8228c78648241d5b736717afff",
+      "kind": "solver-formula",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc34-formulas.json",
+      "tracked": true,
+      "size_bytes": 2850,
+      "sha256": "a183d647f87ac8d3c5278461a8802091de51e014fb9ac9da71a8bdc47421cf8e",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 12
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc34-results.json",
+      "tracked": true,
+      "size_bytes": 2183,
+      "sha256": "1a74ffc5f2383dfc00dbe20a90a02b99cc7dbc3ac75855ad82e9dd017d12af97",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 9
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc34-s1-minus-minus-result.json",
+      "tracked": true,
+      "size_bytes": 518,
+      "sha256": "4d24bf054a2fea6c2d95cfa13882f8c5ce9e29ba9ba2fbfed206d07ed7fb8992",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc34-s1-minus-minus.smt2",
+      "tracked": true,
+      "size_bytes": 400755,
+      "sha256": "3c31a232c68e71ede715f47d8308379f2c424ce524ae63e87478268e94250bbd",
+      "kind": "solver-formula",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc34-s1-minus-plus-result.json",
+      "tracked": true,
+      "size_bytes": 510,
+      "sha256": "9491ba3a3bb31ea9c930d7bb4722bab144b392e7264df7d2c1a63cd2151849e4",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc34-s1-minus-plus.smt2",
+      "tracked": true,
+      "size_bytes": 420139,
+      "sha256": "0513ed45d58c47856375449dceb159a9f7d12b2523c3b9a2b9d4cae1e6d46309",
+      "kind": "solver-formula",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc34-s2-minus-minus-result.json",
+      "tracked": true,
+      "size_bytes": 512,
+      "sha256": "da7b6d1939d60126539101c764bcae6fe7c18afe6dfc43614c86d5838e46c555",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc34-s2-minus-minus.smt2",
+      "tracked": true,
+      "size_bytes": 401516,
+      "sha256": "b4bcb4dc4c39cf44721efe20d758ecfc2d424767d1088afc1dfe1a3e1a221359",
+      "kind": "solver-formula",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc34-s2-minus-plus-result.json",
+      "tracked": true,
+      "size_bytes": 516,
+      "sha256": "bdaa62bc1ca483a2ee8ff5efbd0a33eb8a85aa80ee100fb69a01d2e3a1eca2fe",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc34-s2-minus-plus.smt2",
+      "tracked": true,
+      "size_bytes": 420139,
+      "sha256": "2c23428703987a6adabc587a03e236b5799d83dfa1dda78d90e8428f5a6209f7",
+      "kind": "solver-formula",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc34-s3-minus-minus-result.json",
+      "tracked": true,
+      "size_bytes": 518,
+      "sha256": "58482f30542fdc5bab85ee582a0a87f9a9daee1a12f4aa6b99ed4afb77c9ab2d",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc34-s3-minus-minus.smt2",
+      "tracked": true,
+      "size_bytes": 402837,
+      "sha256": "df830a86d2ba58df182a6539260981d659caebc84c41f2b74fc4604760830036",
+      "kind": "solver-formula",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc34-s3-minus-plus-result.json",
+      "tracked": true,
+      "size_bytes": 516,
+      "sha256": "0eacf1bc9a98fbbe6103cca35d6eef850fd83135fcfbc0cb8259af99f5b050d4",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc34-s3-minus-plus.smt2",
+      "tracked": true,
+      "size_bytes": 420107,
+      "sha256": "7460c20e5245a10510f8437fc8280ac1de92dfbf814e29becccbd060c73d24e5",
+      "kind": "solver-formula",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc38-tangent-formulas.json",
+      "tracked": true,
+      "size_bytes": 4320,
+      "sha256": "5b7586dc60402f54bfc11d0b779214315b95e0201fa34f18114cf18ec4bbcc61",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 10
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc38-tangent-live.json",
+      "tracked": true,
+      "size_bytes": 2465,
+      "sha256": "6cdaa260b02536b1b8338750ce0c2d60f61b6ddc15b333f3e0b9a418ae285741",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 5
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc38-tangent-results.json",
+      "tracked": true,
+      "size_bytes": 2621,
+      "sha256": "4fe711b3a285fd1ace36a6f352b39a75558396204aece62ae789e594601dfb0a",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 9
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc38-tangent-s1-minus-minus-result.json",
+      "tracked": true,
+      "size_bytes": 557,
+      "sha256": "e76139da33bac550c0a2c403e252426d13abf76141e15fd92f26d562f6c16c8d",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc38-tangent-s1-minus-minus.smt2",
+      "tracked": true,
+      "size_bytes": 493314,
+      "sha256": "a29e6fd8772d87c7cdfdfb61d1a1204fe9706839e8cd96a707f025b32c08a359",
+      "kind": "solver-formula",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc38-tangent-s1-minus-plus-result.json",
+      "tracked": true,
+      "size_bytes": 555,
+      "sha256": "c67ff21cf7e8e366f96152874eaabd741a0eaa282b5367185e7e7e4944a7d91a",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc38-tangent-s1-minus-plus.smt2",
+      "tracked": true,
+      "size_bytes": 545731,
+      "sha256": "ce9884f58d5a155fe69e5e5f1c5d8a5901c27114d282099072880d80c3d16bf5",
+      "kind": "solver-formula",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc38-tangent-s2-minus-minus-result.json",
+      "tracked": true,
+      "size_bytes": 557,
+      "sha256": "c605e59e6175aaabd01d9013aa58f13ca14efb057f675ddd9a26bae476bd27df",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc38-tangent-s2-minus-minus.smt2",
+      "tracked": true,
+      "size_bytes": 495573,
+      "sha256": "3b38c576b88f7b4504c3053d611b341dca709aca092d2f96fb020441d38fb321",
+      "kind": "solver-formula",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc38-tangent-s2-minus-plus-result.json",
+      "tracked": true,
+      "size_bytes": 555,
+      "sha256": "92bef45b6ba7aa2746db2ad19a87aeb040e9342a32d6fc77334c125a2e676705",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc38-tangent-s2-minus-plus.smt2",
+      "tracked": true,
+      "size_bytes": 545731,
+      "sha256": "2cf5b5de3091e4c6e3aa43ed98c465848673ad86e38c2ed31e1cbed7f43af6a4",
+      "kind": "solver-formula",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc38-tangent-s3-minus-minus-result.json",
+      "tracked": true,
+      "size_bytes": 557,
+      "sha256": "cce2e899d8d6ea206e99f928141eadc92b4d782177099426e055fd7912aab07b",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc38-tangent-s3-minus-minus.smt2",
+      "tracked": true,
+      "size_bytes": 500652,
+      "sha256": "1379317de61255c7577aaa1d51c04abfbea9c9bf33428df0093f1fa4bae7f412",
+      "kind": "solver-formula",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc38-tangent-s3-minus-plus-result.json",
+      "tracked": true,
+      "size_bytes": 555,
+      "sha256": "cf7dcf78d65b86f4dbd28117503681021ebd61920976503b52d4be38407400e4",
+      "kind": "certificate-or-result",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/k16w-hc38-tangent-s3-minus-plus.smt2",
+      "tracked": true,
+      "size_bytes": 545709,
+      "sha256": "4d3bd7ca1209e8eb0ad4ae634db8bd838a0e129a39e9719e25e8c99d405386fc",
+      "kind": "solver-formula",
+      "disposition": "archive-history",
+      "category": "frozen-solver-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/kaplan-8kite-crosswalk.json",
+      "tracked": true,
+      "size_bytes": 34828,
+      "sha256": "12a092b0bfd0e67f65eb1d6f3d57f4208f594ff18223da8f469ca11a7aa6ebe6",
+      "kind": "certificate-or-result",
+      "disposition": "retained-evidence",
+      "category": "external-anchor",
+      "reference_count": 21
+    },
+    {
+      "path": "docs/notebook/assets/theory-w1-cycle-free-controls.json",
+      "tracked": true,
+      "size_bytes": 20548,
+      "sha256": "4e0a0f3bd759366d2c920174eccbcf193719428fad06ea97c66b575e3dcd69d5",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 11
+    },
+    {
+      "path": "docs/notebook/assets/theory-w1-finalist-norm25.json",
+      "tracked": true,
+      "size_bytes": 7319792,
+      "sha256": "238fa0f583be423480dc989d738b650f961edf36e8e958c16880067357661929",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 22
+    },
+    {
+      "path": "docs/notebook/assets/theory-w1-finalist-norm26-36.json",
+      "tracked": true,
+      "size_bytes": 53131716,
+      "sha256": "fc15f6fa264386743bc65c0adb9ee2cfcde542ec9895f7a1543e3a3302ac8195",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 24
+    },
+    {
+      "path": "docs/notebook/assets/theory-w1-phase0-controls.json",
+      "tracked": true,
+      "size_bytes": 36409,
+      "sha256": "4321aa79b37a0ba3744a2fada2f611a04dc2013c9829d4e29c113786a4e145cc",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 14
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-binary-families.json",
+      "tracked": true,
+      "size_bytes": 1869058,
+      "sha256": "770f24ffd2a12bed698dc19701e1e75676713849c58cb9f569c37c509f2bf8c7",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 26
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-a.json",
+      "tracked": true,
+      "size_bytes": 8132,
+      "sha256": "a2679757fcd547ef3d1dbf156ca55734c52dd96631b954c59a1c4fb3bbfa4c39",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 14
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-c-gf2.json",
+      "tracked": true,
+      "size_bytes": 114499,
+      "sha256": "f14bd4e9a656068b0738cd764e1f7e78c7458cc49f187de2fd6df83784dd70ea",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 17
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-c-nonnegative.json",
+      "tracked": true,
+      "size_bytes": 801921,
+      "sha256": "a38beabcaafca61a91b7ad9c507a583868ae51bc8e5c89b5acc8dce8ffaeee65",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 13
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-c-snf.json",
+      "tracked": true,
+      "size_bytes": 374894,
+      "sha256": "88db5fb4bd1a3cc7f0f306dff9dff4d1cbd6d83f50c342599240fe53721ffffc",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 13
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-a4-factor.json",
+      "tracked": true,
+      "size_bytes": 21084,
+      "sha256": "81c2e1720f9874536c194968a62c7437b839042b29ca258e3f705ab0e78f6b4b",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 23
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-a4-index50.json",
+      "tracked": true,
+      "size_bytes": 621091,
+      "sha256": "25509bfcc1028e7206a9fed95392c336878d66d2c829bec73ddeba806ebcb85f",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 44
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-a4-index50.svg",
+      "tracked": true,
+      "size_bytes": 81675,
+      "sha256": "03cc23ed4d3f2ae85695f0e587c539fa9011f0c2b2f67b24e08d0f0e30e513f7",
+      "kind": "visualization",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 7
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index50.json",
+      "tracked": true,
+      "size_bytes": 874327,
+      "sha256": "96eb24e8792397ab9a8f8f3d779f4a7f374fab77dc3c93b369e8bd131e4cc88f",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 15
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index55.json",
+      "tracked": true,
+      "size_bytes": 513082,
+      "sha256": "fa4a47ff64c59360aaa91be550507f315c8b71c1491e101885b989775277e5fc",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 14
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7.json",
+      "tracked": true,
+      "size_bytes": 111427,
+      "sha256": "2118c7e2c9dec2c7fc8c7d2d0863c986f71c7042ec2d0ec54aa9f354575ea05d",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 15
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-packing.json",
+      "tracked": true,
+      "size_bytes": 15163,
+      "sha256": "7dcb9adef0c7607b36929a35becf359ce2da862ed6e512c3aa79af41e56ed355",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 22
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-a4-sat-index50.json",
+      "tracked": true,
+      "size_bytes": 134853,
+      "sha256": "dd87865634fabd247174bb45c0ee2841516c0f135b27c0f5cf391f8418bbf950",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 10
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-a4-signature-index55.json",
+      "tracked": true,
+      "size_bytes": 870794,
+      "sha256": "4c988214092f7fde1a7c980afdb37baff41ca75bacb023531e81c0ac4ecaa078",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 18
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-a4-signature.json",
+      "tracked": true,
+      "size_bytes": 2175,
+      "sha256": "a9095e29f730dcba5d7bd0f117748c51257f5070b75fb458d084f61ad9ce1d57",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 26
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-coupled.json",
+      "tracked": true,
+      "size_bytes": 413417,
+      "sha256": "eede4ee7c79073994ecc640ea5283b788c7ba990458d1416f6d9d9a751c94e77",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 22
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-index40.svg",
+      "tracked": true,
+      "size_bytes": 39527,
+      "sha256": "885e31aa3a9287d8aa89fe13142b9ac332e7d737b34e42776e898dbc412bf02f",
+      "kind": "visualization",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-index45.svg",
+      "tracked": true,
+      "size_bytes": 58833,
+      "sha256": "88e9e1e27bae737160a6267182d7635bde9dabbf8392f73bc4d8f41f5fc3e0e0",
+      "kind": "visualization",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-index50.svg",
+      "tracked": true,
+      "size_bytes": 92061,
+      "sha256": "e7f1566cc9635d8c2483608c94b6fee54673eff9b77bbec99e146d3fd3767be8",
+      "kind": "visualization",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 8
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-models-index50.json",
+      "tracked": true,
+      "size_bytes": 46770,
+      "sha256": "c5c123ef786fc39de9e7c48bfab84d6b74378b4ac311bc0705660ee695aaa96d",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 13
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-overlap2-index50.json",
+      "tracked": true,
+      "size_bytes": 221471,
+      "sha256": "a1a1dc5f7d83d40913ddd41e4e4fe40da633fe7c74dbde4d2342f84250b53f72",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 12
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-overlap2-sat-index50.json",
+      "tracked": true,
+      "size_bytes": 7167994,
+      "sha256": "247d030f14f62189ad3baa1ae6f4fa3c8f1115d082b7dc4bd66e801339ec2d17",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 12
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-phase0.json",
+      "tracked": true,
+      "size_bytes": 16180,
+      "sha256": "7d8a162f45f38d8dc2a90afe1a14cf44471a6a872fac3be0f9c18ae884676741",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 19
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40.json",
+      "tracked": true,
+      "size_bytes": 90427,
+      "sha256": "88da07cb4285227b7f092ad934370dd5f31dfb89c28f7db21497c2dde7163bac",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 13
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-00.cnf.gz",
+      "tracked": true,
+      "size_bytes": 191112,
+      "sha256": "4169ec8b66cf9fcb6921a77dc6458f1c4a039b6dd91964d5315481465b027cbd",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-00.drat.gz",
+      "tracked": true,
+      "size_bytes": 2961514,
+      "sha256": "27df3b54f52deb1d2a1ac18c6292c07707e9a07c55abc94c46263ed8c359b6b4",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-01.cnf.gz",
+      "tracked": true,
+      "size_bytes": 39890,
+      "sha256": "0aaeaa3bb7f8ef9ec78931e7a1f74176d6775539523fef362d85f182af2b5b32",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-01.drat.gz",
+      "tracked": true,
+      "size_bytes": 169047,
+      "sha256": "b6445f68b6254d12148de96201524643e93189f374c43f956cf666d36cdb0e40",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-02.cnf.gz",
+      "tracked": true,
+      "size_bytes": 33313,
+      "sha256": "90c4cee73702da70d84e36a2c67c3d43cc7f8379f30d34f1f0eaf610a9828ec9",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-02.drat.gz",
+      "tracked": true,
+      "size_bytes": 122650,
+      "sha256": "8491007345961d8f724a4cf4085ffa8942e5f77bf94dcd499a6c55243f63189d",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-03.cnf.gz",
+      "tracked": true,
+      "size_bytes": 191525,
+      "sha256": "c4248acd2a4e17adcdcf74e56fca94798b65bc3173c57e19656fb1b5302e7a44",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-03.drat.gz",
+      "tracked": true,
+      "size_bytes": 2750699,
+      "sha256": "fd0d98b10fa7a21504a93921990099bcb57ef7d973e9aaf00a19708fe648a23b",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-04.cnf.gz",
+      "tracked": true,
+      "size_bytes": 191968,
+      "sha256": "336fb3660b702aff085032ab4880e60f39f2ce8c3a4a76582181f362e6abf09e",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-04.drat.gz",
+      "tracked": true,
+      "size_bytes": 3065926,
+      "sha256": "e195d1a0d1fb562c3bf94809cfa083414605c9e25ee0d79a2d4ff3adf14e78fd",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-05.cnf.gz",
+      "tracked": true,
+      "size_bytes": 34107,
+      "sha256": "e24d08cbc32a04250d932dc8fc1e672cffbcebfad4c089d973f16a95acf1f869",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-05.drat.gz",
+      "tracked": true,
+      "size_bytes": 141666,
+      "sha256": "7055dc3794b7b3d5d73e8070cf8f7052f99a0108ce09a37331c6c8703a25ce4f",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-06.cnf.gz",
+      "tracked": true,
+      "size_bytes": 33707,
+      "sha256": "93621b94dbb5263de6d6389c75ad5edc65a0f1958e1622f0316df324d7a3aaf2",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-06.drat.gz",
+      "tracked": true,
+      "size_bytes": 157142,
+      "sha256": "0879f3f7a51cf7987132b5a5b124f7d5f385f25529c8fbebafd1fb75645a155e",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-07.cnf.gz",
+      "tracked": true,
+      "size_bytes": 43407,
+      "sha256": "69337c980ac0eed02b06bac4c441e25f9a1190f65b4b4b9757146922196aadb4",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-07.drat.gz",
+      "tracked": true,
+      "size_bytes": 274719,
+      "sha256": "f976bc4337f3dd72fc319daa450887acfac602dd423aa0112f55f82f01a2d7d5",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-08.cnf.gz",
+      "tracked": true,
+      "size_bytes": 31966,
+      "sha256": "30443ec061df61034d4ad36f039a6be59b2cfd39e64614c524f78f5d0fa00057",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-08.drat.gz",
+      "tracked": true,
+      "size_bytes": 120440,
+      "sha256": "f1e338f9a0d4ba90c1d51488c12cc47e42201884feb23c2399d2fd967dd817aa",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-09.cnf.gz",
+      "tracked": true,
+      "size_bytes": 38888,
+      "sha256": "803ebf1c83c6d54dcbb60f106a4a8e1c77124301a151950d0341c5190d593cc5",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-09.drat.gz",
+      "tracked": true,
+      "size_bytes": 244002,
+      "sha256": "abe4aff27f1d30a008d0fa012391a4737e4603e8372ed0aecef2a33848ebe00b",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-10.cnf.gz",
+      "tracked": true,
+      "size_bytes": 191238,
+      "sha256": "cad0001783f76fca7fefbe2b7f7fbad323a8bf1e9d9e451cc052d5b1a0aabcc4",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-10.drat.gz",
+      "tracked": true,
+      "size_bytes": 2842450,
+      "sha256": "274d20219cb9d63b9693a99cefb6e16ea2614c19b0e1bf5c5aaaf054ef533abf",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-11.cnf.gz",
+      "tracked": true,
+      "size_bytes": 190331,
+      "sha256": "92710c52390bc7ecfce4cc00f95d63ce9e39da71ecf8c6e8c3889df9713f226a",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-11.drat.gz",
+      "tracked": true,
+      "size_bytes": 2738008,
+      "sha256": "474dae592280ad9655b0f89dc8284f4427a1f5890dd2b0ebadaa4385ad81c034",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-12.cnf.gz",
+      "tracked": true,
+      "size_bytes": 191908,
+      "sha256": "a0e73487e0faaa110f8fc997e298f74bac6913bc7eb4a055c1b39cca38b5cd92",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-12.drat.gz",
+      "tracked": true,
+      "size_bytes": 2834072,
+      "sha256": "d4ce236a156e075459966f92e1b915f89773564f1ce4ee2670a04f50fe1cd278",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-13.cnf.gz",
+      "tracked": true,
+      "size_bytes": 190074,
+      "sha256": "f5b2027dd7e35c0cc7f856e0dd2745b0d223ff0405e9c8df78bd04e5761da707",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-13.drat.gz",
+      "tracked": true,
+      "size_bytes": 2862290,
+      "sha256": "2c996ce3bf1cf298cf79a5fadb3bfcb79824a392591b060af01257edf9a3b088",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-14.cnf.gz",
+      "tracked": true,
+      "size_bytes": 192654,
+      "sha256": "e7ee1f768bccba9f34002c00cdf8111b534b72a211a24979fdc2a18e280d61aa",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-14.drat.gz",
+      "tracked": true,
+      "size_bytes": 2949589,
+      "sha256": "798ecbf3c8fc644a4f6b08622010f2af37e24923eca861847e9f5c08db61071f",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-15.cnf.gz",
+      "tracked": true,
+      "size_bytes": 191145,
+      "sha256": "445988cdc28f44728da612c64028c9a020cc46ce85e8f3a95ebb0035bb30db82",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-15.drat.gz",
+      "tracked": true,
+      "size_bytes": 2832154,
+      "sha256": "ac3c4fde98442acb533c3fb4a163c36ac2c5ac62822ad47790ad5486abb092e6",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-16.cnf.gz",
+      "tracked": true,
+      "size_bytes": 34318,
+      "sha256": "1efdf6ae1c7ee5f59c7cd5d7a707405d82e46869cdde348c3aa7a08c22a6465b",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-16.drat.gz",
+      "tracked": true,
+      "size_bytes": 151401,
+      "sha256": "06939382908e9fb60dbfcad81d396b57c6253914b2684c4c3e9a8c89bf04bd5e",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-17.cnf.gz",
+      "tracked": true,
+      "size_bytes": 35386,
+      "sha256": "977dd032d8626610792496fa2e99820cfe487539838f75e786ec1f5452b797b9",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-10-3-4-map-21-twist-17.drat.gz",
+      "tracked": true,
+      "size_bytes": 197137,
+      "sha256": "13ef58e9f868f3552421a680a5448f13050d3c7468bd11cde4dcafcfe80745ce",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-00.cnf.gz",
+      "tracked": true,
+      "size_bytes": 192229,
+      "sha256": "5bf77e6a4364a27886b738eabcb9b5b496d9894a0af156b5687c93ba95568c69",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-00.drat.gz",
+      "tracked": true,
+      "size_bytes": 3418117,
+      "sha256": "5b4feb03822fe0f796bc18fbfd3bc71d19527e2f58ce96dbd63120badc1be71d",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-01.cnf.gz",
+      "tracked": true,
+      "size_bytes": 45582,
+      "sha256": "374f8ae74f683ed6a1ba53b227ed0004bd3a05df834a988feb53df9402c6ad9e",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-01.drat.gz",
+      "tracked": true,
+      "size_bytes": 209631,
+      "sha256": "e63b3350118ba38bf4f2b0558371935aa4f681da3ab5cdd74652a982dc1ef7c9",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-02.cnf.gz",
+      "tracked": true,
+      "size_bytes": 37886,
+      "sha256": "94df33c630762058d04520ab29ef97c061c643c0587149a3152ffeb0e1397a79",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-02.drat.gz",
+      "tracked": true,
+      "size_bytes": 176623,
+      "sha256": "5c3aab7ffee207e09c0c257c6a8a080149e46008a55a6c916ea5cf08845ccd75",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-03.cnf.gz",
+      "tracked": true,
+      "size_bytes": 192350,
+      "sha256": "a059820c410ebc3c93b1fc298b08ba60dafe4b108b262047de162629e5aee3b7",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-03.drat.gz",
+      "tracked": true,
+      "size_bytes": 3145665,
+      "sha256": "51758a0d6e255c5d8d9c0905b1e9edc38fddff4cf72024bbc87deab1b5ee5ab6",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-04.cnf.gz",
+      "tracked": true,
+      "size_bytes": 192137,
+      "sha256": "d58d1a8ee5c539e5a8b8e2f49980f165cdf5515a0f89b4c87da021bb871c9816",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-04.drat.gz",
+      "tracked": true,
+      "size_bytes": 3031993,
+      "sha256": "5543a9dc22b209fd3d8bf81b32dd346b575db13de7349a7cc038263c9e2453fb",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-05.cnf.gz",
+      "tracked": true,
+      "size_bytes": 36575,
+      "sha256": "d1fbb2317ddfa5e7aa9a4054c719b3448f0ad145a61af072c28f18375a73ec7a",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-05.drat.gz",
+      "tracked": true,
+      "size_bytes": 178840,
+      "sha256": "203cf4f48e55a1a6559784dccd444e961fa8672e306e73deaccec94e0cf9247d",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-06.cnf.gz",
+      "tracked": true,
+      "size_bytes": 30906,
+      "sha256": "8527c99d79cef76d226be470a1ede718fba8d3b4e81879b035718a4542f5a7cf",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-06.drat.gz",
+      "tracked": true,
+      "size_bytes": 129663,
+      "sha256": "ba710e0bf70aef3ecdc6f2a843fd27a21e76b64d3c19c6caf32f476cb93044ec",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-07.cnf.gz",
+      "tracked": true,
+      "size_bytes": 35980,
+      "sha256": "6becede008645b7044511d7b97bb1d3a2055a48e941ef74f64e556062ffb4bb3",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-07.drat.gz",
+      "tracked": true,
+      "size_bytes": 179551,
+      "sha256": "8e2a8f927de52c513e09d71279780ebaeefb1e9f74daff926db1261bb1734962",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-08.cnf.gz",
+      "tracked": true,
+      "size_bytes": 31832,
+      "sha256": "3b68179084300b3e2621745fc73b21dca6cbf028a07642f8749d9364e943e856",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-08.drat.gz",
+      "tracked": true,
+      "size_bytes": 131296,
+      "sha256": "5ea7d9bec726883acbb6f7221cfd86755bd928ca1b0027f4a815574488ea83a5",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-09.cnf.gz",
+      "tracked": true,
+      "size_bytes": 34808,
+      "sha256": "80f8271d6be4900f9f3eb6171097ff03bc5949a96c9141b75620af7e35a37bcf",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-09.drat.gz",
+      "tracked": true,
+      "size_bytes": 160250,
+      "sha256": "c44201b6cfdf8e6a70ba5a0a8a9b099e09f118d847e2eeca32f4669f35567c2e",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-10.cnf.gz",
+      "tracked": true,
+      "size_bytes": 192812,
+      "sha256": "3885f66fc65727a9f76f6db63594f83b792440dbb2589ba0f9f0447ec60289c0",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-10.drat.gz",
+      "tracked": true,
+      "size_bytes": 3315872,
+      "sha256": "2a7ec28816c12c60b0f3aba3e2994d452bc63967d2770d156828a5f0e8b08e43",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-11.cnf.gz",
+      "tracked": true,
+      "size_bytes": 191762,
+      "sha256": "46decf411151b12b937c5d4bc7c3c847cbd5fcaab7ed39e1b270713b33231c61",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-11.drat.gz",
+      "tracked": true,
+      "size_bytes": 2882907,
+      "sha256": "01347c1528778bc6a682811630c6e0caf60a13e71cf81d4231b6722efaa84359",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-12.cnf.gz",
+      "tracked": true,
+      "size_bytes": 192195,
+      "sha256": "afe6b8c4822177813713d5fc135be1c4c03dee8f021559a7b117063a547a032e",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-12.drat.gz",
+      "tracked": true,
+      "size_bytes": 3258866,
+      "sha256": "99e9b957b476b920a485903634bcea44e67eaba9478d229014a16e699bb50951",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-13.cnf.gz",
+      "tracked": true,
+      "size_bytes": 191679,
+      "sha256": "b5300ae890e620a1aed0046bd87b39aca22f2c83d5b0e82491d5628e52a351e5",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-13.drat.gz",
+      "tracked": true,
+      "size_bytes": 3302735,
+      "sha256": "ea050ba5af15a4e4c06236f51b831a9ddd13fe40b93f55c7913f89d279b2e79c",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-14.cnf.gz",
+      "tracked": true,
+      "size_bytes": 192063,
+      "sha256": "18c01b5d75539208f1f74f74fefc259f6a7761e748fa4c3dc6b3464c3ad93f57",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-14.drat.gz",
+      "tracked": true,
+      "size_bytes": 2903037,
+      "sha256": "018fc9f795e83683248a3b09762bf28c638ba73c930347985bec2866cf2580b5",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-15.cnf.gz",
+      "tracked": true,
+      "size_bytes": 191331,
+      "sha256": "7f78bec8d78115466ef477d71e224a60044ad97dcc928421e5ed5abd709ddd41",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-15.drat.gz",
+      "tracked": true,
+      "size_bytes": 2866119,
+      "sha256": "6ccb4a04579c9396d332df5ab5d1d4216d992ea8494f2982990fc537fe064529",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-16.cnf.gz",
+      "tracked": true,
+      "size_bytes": 31891,
+      "sha256": "438dda43706caa9b800ed3e544da177725f2244ce3e96553811ce28de1ff1ae0",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-16.drat.gz",
+      "tracked": true,
+      "size_bytes": 135645,
+      "sha256": "40de38026d12f5b3ac3e35ee489eac2fa2d28a53c88844657631d430beaf0481",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-17.cnf.gz",
+      "tracked": true,
+      "size_bytes": 37732,
+      "sha256": "83275d424c035b29d6f9a6865d976ab49a6b9e0b8ab72caa1cf10a519b29615d",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-11-1-map-9-twist-17.drat.gz",
+      "tracked": true,
+      "size_bytes": 209492,
+      "sha256": "2a3e9ed9c7643e2ef7a7891b3df7930c52b7fbe216926c487cd0c2574c17f89f",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-00.cnf.gz",
+      "tracked": true,
+      "size_bytes": 194131,
+      "sha256": "63bd3fec718f52d3d9def0d8110db6b74d3637b8c31cbf1ad97af59851f28348",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-00.drat.gz",
+      "tracked": true,
+      "size_bytes": 3299110,
+      "sha256": "5ee782247cbc8849fb1d951e4da9c20b0fb432e48d6c05cfe46fcb4fa8b014f1",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-01.cnf.gz",
+      "tracked": true,
+      "size_bytes": 35177,
+      "sha256": "853f28b92b430fa3dbe3131690a109626d29d37ae5deadb69f8b952db1e342f5",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-01.drat.gz",
+      "tracked": true,
+      "size_bytes": 157974,
+      "sha256": "f8cfe34f0792cffefbb37593597f7c1631c79e12663ffa204d0c2e013e424ba2",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-02.cnf.gz",
+      "tracked": true,
+      "size_bytes": 34546,
+      "sha256": "1c8e70161acbce99a5d2936284058b48d9bf6cd050d394d24e88dfc2b681f3a5",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-02.drat.gz",
+      "tracked": true,
+      "size_bytes": 151856,
+      "sha256": "765d1cb98ec6ac08ab25f0dbc7ad949611b23a40a42e5a9d6d722695d6db6436",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-03.cnf.gz",
+      "tracked": true,
+      "size_bytes": 193257,
+      "sha256": "92a0bf584a735b4bb7d2f8b3a34f30be9a7d43709fc6b0cb5501b1f03d3d4447",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-03.drat.gz",
+      "tracked": true,
+      "size_bytes": 2744235,
+      "sha256": "5c874eba41d877db6aba7b0cf0adb2e40395ab63e80e6d42b75014285a51b83b",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-04.cnf.gz",
+      "tracked": true,
+      "size_bytes": 192563,
+      "sha256": "0d290be246b70324b6aa16f430831e76c576c27396282894e5e40ebf81704061",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-04.drat.gz",
+      "tracked": true,
+      "size_bytes": 3036958,
+      "sha256": "a3a1d2fcd25995bb0a4675c9cac4b95ca678100fa86265d3cbc11fee17721a14",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-05.cnf.gz",
+      "tracked": true,
+      "size_bytes": 35812,
+      "sha256": "d5c23288586c80b08b19326992268a84e04ff6442eb8a14da4c70a21e1ea9535",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-05.drat.gz",
+      "tracked": true,
+      "size_bytes": 197405,
+      "sha256": "45a48c7151d8411e5848bcd98ebd94b14ab201c73295e0e769fd73ab23abb473",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-06.cnf.gz",
+      "tracked": true,
+      "size_bytes": 33811,
+      "sha256": "87409a94ff8e6b389b6b106d5c86948be548e0d8d3b0803c6c1b7d02b4756f6f",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-06.drat.gz",
+      "tracked": true,
+      "size_bytes": 139416,
+      "sha256": "02751fc1de7560d76edfdc2db482c75f5f1d0ba6b1008ca7f44fa4ee15e108fb",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-07.cnf.gz",
+      "tracked": true,
+      "size_bytes": 38845,
+      "sha256": "e68786fa9afe62c2a4e49450d07aa6eab4b449877bbd7f012bf234ad84c29e70",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-07.drat.gz",
+      "tracked": true,
+      "size_bytes": 229544,
+      "sha256": "9f1870d3af222394ae89ceff0af4b19eb0e97b8cc71381d989f0c3eafc146101",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-08.cnf.gz",
+      "tracked": true,
+      "size_bytes": 35486,
+      "sha256": "7e3ce30d658bdf30e577c1bf408f791cf0a608747bf4a34a9dda8c3bf59643e8",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-08.drat.gz",
+      "tracked": true,
+      "size_bytes": 156196,
+      "sha256": "bc703b8dc6fd8fe498de45ea4ddf1e7736540343de9e13e2741438f7a241fc8e",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-09.cnf.gz",
+      "tracked": true,
+      "size_bytes": 37444,
+      "sha256": "e545b11c8982aa2a9e99e497f2c1389dbfbdd5945396bd2a6ff153f5437eec6c",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-09.drat.gz",
+      "tracked": true,
+      "size_bytes": 215551,
+      "sha256": "4814ff8c4bbb853cd0a437cd1620d8042f2f45a9daf4a876b2480be11c73fab6",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-10.cnf.gz",
+      "tracked": true,
+      "size_bytes": 192301,
+      "sha256": "9e30acf2a32bed52afe5dc46e67d126515c3de382bc4bcb9b728fb9d6987c0e7",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-10.drat.gz",
+      "tracked": true,
+      "size_bytes": 2827387,
+      "sha256": "1fa305764ddea75099382ae0f197ac524530383e7110baf02476984f919e848f",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-11.cnf.gz",
+      "tracked": true,
+      "size_bytes": 193844,
+      "sha256": "d27c7e3c50a96fe2f89b52521c9be9dc58e12db60f47e3afc8eccb64fbdbd79a",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-11.drat.gz",
+      "tracked": true,
+      "size_bytes": 3125370,
+      "sha256": "11e2a36d8cd5898bcf64d5b5519e9c03fb437cd07061bacf1a09ef3013f61b27",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-12.cnf.gz",
+      "tracked": true,
+      "size_bytes": 192141,
+      "sha256": "d6c16852fda36f3a5e10bcd92fa46e82d3d07689582e47dcc969773a660831d2",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-12.drat.gz",
+      "tracked": true,
+      "size_bytes": 2720302,
+      "sha256": "143622839a07f1dcfc453ccc5d1323efadc80b2b9133f9e59c89424372347028",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-13.cnf.gz",
+      "tracked": true,
+      "size_bytes": 192806,
+      "sha256": "a3e4aa64201e1b484b997456f4a91e11c896e881b93a9365c77b1217e944cfc7",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-13.drat.gz",
+      "tracked": true,
+      "size_bytes": 2935081,
+      "sha256": "153dfe323d488ee612f1e857cc5614379f32a2fa3570bbc0a0e73c4cd23c16ba",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-14.cnf.gz",
+      "tracked": true,
+      "size_bytes": 191854,
+      "sha256": "38dc9e333216ac9f0bda20aad5f6d4d78b6a5770dca22943ebcda310acb62bb2",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-14.drat.gz",
+      "tracked": true,
+      "size_bytes": 2758142,
+      "sha256": "46581b5f2b58274024e1cdb8d16b76fb62c0ef06e552dc90414abb3544f778de",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-15.cnf.gz",
+      "tracked": true,
+      "size_bytes": 193692,
+      "sha256": "d469486101a216e42d02b27f81336b6e625a7909c4059bc6790c1d30697f4588",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-15.drat.gz",
+      "tracked": true,
+      "size_bytes": 2875393,
+      "sha256": "ebfcbab19c3c36bb6b5fa92af421c5e2f88376f283684afc8f0e359d1a8ecf8b",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-16.cnf.gz",
+      "tracked": true,
+      "size_bytes": 36636,
+      "sha256": "1c4f06590d7eb5875d4ca531374a41940694e36e76297a660897b2d8604f4598",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-16.drat.gz",
+      "tracked": true,
+      "size_bytes": 164834,
+      "sha256": "d70ccb7d40b719be8f98dba04a41b8ea2871157ea4fce7d6504db4baecfdf622",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-17.cnf.gz",
+      "tracked": true,
+      "size_bytes": 36300,
+      "sha256": "ee30eba507cdc44294aa29655337bd77b214e5d817c9196a1c403013880cff99",
+      "kind": "research-artifact",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index40/hnf-40-28-1-map-9-twist-17.drat.gz",
+      "tracked": true,
+      "size_bytes": 198183,
+      "sha256": "20c4004321ba7a0b0f1b2267b7c784a938637771a078679e17a6bef73f5eac75",
+      "kind": "sat-proof-payload",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index45.json",
+      "tracked": true,
+      "size_bytes": 269159,
+      "sha256": "196a9e20efcc937e03ab47d7fa7ff3e6b3e40ec18ce4c723a88ff7deafc08f04",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 15
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-proof-index50.json",
+      "tracked": true,
+      "size_bytes": 180388,
+      "sha256": "8f8e89ccb1f66473890792edf1106bc82b6c22bf37990b3e3716985dc9a5bb82",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 11
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-s3-classes.json",
+      "tracked": true,
+      "size_bytes": 379514,
+      "sha256": "b088fe9ec4b9b36a80ef2afabc9cb29dbe0b90d7bcca5d7d60146ef63dc2b302",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 21
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-s3-index45.json",
+      "tracked": true,
+      "size_bytes": 1262369,
+      "sha256": "b7dcd50afb6d5551b84e1d6adc124887055f580d34de5b1d0ea27cd0ea59ccfa",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 22
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-s3-index50.json",
+      "tracked": true,
+      "size_bytes": 301808,
+      "sha256": "59488a1ef7ee4ea3ad84efc787285db9988b75a2fe16cb5f1e43cde9c95d98ac",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 34
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-sat-index50.json",
+      "tracked": true,
+      "size_bytes": 342356,
+      "sha256": "55493aac9f83f141199479b1442b50efb8615657d49fbb4a74918d38dff70577",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 16
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-small-groups.json",
+      "tracked": true,
+      "size_bytes": 2359347,
+      "sha256": "26711882139a71464a2db32fed2237a3e43610da59a2b5227deaa32fb5a2f9a4",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 12
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-symmetry.json",
+      "tracked": true,
+      "size_bytes": 3363,
+      "sha256": "fa4d17ea89ff3c7cab2a178c29f4cf39d14f2ac7c2aa0e244f0baac4bcad6768",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 16
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-v4-2lambda.json",
+      "tracked": true,
+      "size_bytes": 65232,
+      "sha256": "21f021f8d3f20a38d1c885ebc70ac260b068b7b692e73de569e3688b9768f556",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 66
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-v4-density-cegar-4x4.json",
+      "tracked": true,
+      "size_bytes": 39801,
+      "sha256": "0ef15b8e513168cdeeeb04d7da3ba03d7284cb0546ef1386662ef5f35a8fdcd6",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 5
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-v4-packing-family-index120.json",
+      "tracked": true,
+      "size_bytes": 780620,
+      "sha256": "c3e0a716c0115491a3fa91d2b87c8793e7cec0e83e72047d6183a7142a672300",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 13
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-v4-packing-overlap6.svg",
+      "tracked": true,
+      "size_bytes": 3043,
+      "sha256": "4435a43c9b3e34cc3b0e4b4ae7c09c202cf9c5c007fa8da7326c5ad707572f0c",
+      "kind": "visualization",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 9
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-v4-packing-signature-index120.json",
+      "tracked": true,
+      "size_bytes": 3016439,
+      "sha256": "a97a1f3cad23a2978dcca61addc18a0cbc140f207fa27dac3ab0fb8bd45f130b",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 9
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-v4-periodic-hall-catalog-full-packing.json",
+      "tracked": true,
+      "size_bytes": 7156,
+      "sha256": "1f5d1ead00ec7040678aadc944ed8aaba76c15bb6ffae5dcb3998554f0c76f0f",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 9
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-v4-periodic-hall-catalog.json",
+      "tracked": true,
+      "size_bytes": 18570,
+      "sha256": "5f6f46fac5a71bec96c26b1a8c2cbea7e869c3ca9b3badd369d73b342a2dbf41",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 5
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-v4-periodic-hall-lift.json",
+      "tracked": true,
+      "size_bytes": 7145,
+      "sha256": "e06a6176e4208af88e5ffa8a0a397711327065522679c75530f8d7cdb96e35e1",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 5
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-v4-product.json",
+      "tracked": true,
+      "size_bytes": 51428,
+      "sha256": "62aae01fe772401bb0e9a9af4305e181ddb53e151c423413583f156e59e0e278",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 16
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-v4-sft-index60.json",
+      "tracked": true,
+      "size_bytes": 947293,
+      "sha256": "fccd728e580d6d77b831334342b7b3cdd3b0541298f65de15a6d136393b48292",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 18
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-v4-signature-index60.json",
+      "tracked": true,
+      "size_bytes": 640762,
+      "sha256": "af987ca05eed0c76e87ac42ff21a44ed53dc5338f2942d68e1c84ad145b24d61",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 18
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-v4-taper-radius1.json",
+      "tracked": true,
+      "size_bytes": 13975,
+      "sha256": "0b039bcb2fa52efa5181e0283af9114591cf4574bfaa02c19fc118f288629f34",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 6
+    },
+    {
+      "path": "docs/notebook/assets/theory-w2-layer-d-v4-taper-radius2.json",
+      "tracked": true,
+      "size_bytes": 315926,
+      "sha256": "8f27102170d4df4e37bd442802af5157c368de80af7eeb6254ee9709f6d40577",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "turtle-control-artifact",
+      "reference_count": 5
+    },
+    {
+      "path": "docs/notebook/assets/theory-w3-spectre-certificate-v0.json",
+      "tracked": true,
+      "size_bytes": 75506,
+      "sha256": "d47bb53759f8bd31b0f607bdd44fd086a04f9f9fb472f01fa61f25b508554b32",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "spectre-control-artifact",
+      "reference_count": 19
+    },
+    {
+      "path": "docs/notebook/assets/theory-w3-spectre-colored-frontier.json",
+      "tracked": true,
+      "size_bytes": 19956,
+      "sha256": "f14363b913471356c39cc82a86b535377ea581aa2b45e5bb0295968f2e979767",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "spectre-control-artifact",
+      "reference_count": 14
+    },
+    {
+      "path": "docs/notebook/assets/theory-w3-spectre-colored-interface.json",
+      "tracked": true,
+      "size_bytes": 127467,
+      "sha256": "81b131ed80796791444cb230d3a32ef0e0514a19c96f58177a315a24d2e90126",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "spectre-control-artifact",
+      "reference_count": 36
+    },
+    {
+      "path": "docs/notebook/assets/theory-w3-spectre-colored-overlap.json",
+      "tracked": true,
+      "size_bytes": 4963,
+      "sha256": "0b51eb21f3be609e489b51be35d16456da6b1fe5c92a44b49b1dea4ccdea9914",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "spectre-control-artifact",
+      "reference_count": 15
+    },
+    {
+      "path": "docs/notebook/assets/theory-w3-spectre-component-language.json",
+      "tracked": true,
+      "size_bytes": 26896,
+      "sha256": "82f693dc70f6580d861078075d618ab8e8c9cd0bfd2f32c77768de8aac02442a",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "spectre-control-artifact",
+      "reference_count": 34
+    },
+    {
+      "path": "docs/notebook/assets/theory-w3-spectre-component-language.svg",
+      "tracked": true,
+      "size_bytes": 86918,
+      "sha256": "154268a5f043deb401644e6cc43fdd1ac57c613efe5e1c606e286a16203336da",
+      "kind": "visualization",
+      "disposition": "retained-control",
+      "category": "spectre-control-artifact",
+      "reference_count": 9
+    },
+    {
+      "path": "docs/notebook/assets/theory-w3-spectre-d1-entry.json",
+      "tracked": true,
+      "size_bytes": 5852,
+      "sha256": "60d2e4cd78a301ebba2f75c0e671afeabe745dd3dd84245c7b368f44aeef49d1",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "spectre-control-artifact",
+      "reference_count": 17
+    },
+    {
+      "path": "docs/notebook/assets/theory-w3-spectre-d1-entry.svg",
+      "tracked": true,
+      "size_bytes": 2245,
+      "sha256": "0d0ce01ddc8c0ad691391359dedc0502f86a444574ccddf17afd90679cf048b0",
+      "kind": "visualization",
+      "disposition": "retained-control",
+      "category": "spectre-control-artifact",
+      "reference_count": 11
+    },
+    {
+      "path": "docs/notebook/assets/theory-w3-spectre-d4-equivalence.json",
+      "tracked": true,
+      "size_bytes": 13429,
+      "sha256": "13d404e459675db41bd21c001fc6650e987fa0aabe63f019e06d2c4c48a90b83",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "spectre-control-artifact",
+      "reference_count": 18
+    },
+    {
+      "path": "docs/notebook/assets/theory-w3-spectre-defect-propagation.json",
+      "tracked": true,
+      "size_bytes": 2952,
+      "sha256": "1bf816dc9da1dbb773f9641b98c149c0d14e56ef6439a1af6fd39c6d4f414c7c",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "spectre-control-artifact",
+      "reference_count": 14
+    },
+    {
+      "path": "docs/notebook/assets/theory-w3-spectre-edge-patch-bridge.json",
+      "tracked": true,
+      "size_bytes": 10331,
+      "sha256": "bc656205e22a7c4c04c4a23ac84b25b91a2495f92c0b10c8c239eeeb8649ada6",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "spectre-control-artifact",
+      "reference_count": 17
+    },
+    {
+      "path": "docs/notebook/assets/theory-w3-spectre-grouping-witness.svg",
+      "tracked": true,
+      "size_bytes": 19005,
+      "sha256": "29b02c357efe6615480cafcbe172001b1c342d5074e0cab37439684090ea58a8",
+      "kind": "visualization",
+      "disposition": "retained-control",
+      "category": "spectre-control-artifact",
+      "reference_count": 10
+    },
+    {
+      "path": "docs/notebook/assets/theory-w3-spectre-parent-interface.json",
+      "tracked": true,
+      "size_bytes": 24157,
+      "sha256": "f49b07f593219b8c2b9c74af06a93390cfce35bbb2c068b96354fcceaacd6232",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "spectre-control-artifact",
+      "reference_count": 15
+    },
+    {
+      "path": "docs/notebook/assets/theory-w3-spectre-parent-overlap.json",
+      "tracked": true,
+      "size_bytes": 118338,
+      "sha256": "65a6bfe8302f724ef6c4e1802f41307b99fb5e59af368a3fb3371b6123960483",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "spectre-control-artifact",
+      "reference_count": 18
+    },
+    {
+      "path": "docs/notebook/assets/theory-w3-spectre-parent-overlap.svg",
+      "tracked": true,
+      "size_bytes": 4010,
+      "sha256": "502aed1c0c13e6fd0ce2d009910a6b8c79b04ed2a1721cd223cc9f973beb366d",
+      "kind": "visualization",
+      "disposition": "retained-control",
+      "category": "spectre-control-artifact",
+      "reference_count": 10
+    },
+    {
+      "path": "docs/notebook/assets/theory-w3-spectre-physical-language.json",
+      "tracked": true,
+      "size_bytes": 264660,
+      "sha256": "28a28010dc85d944d100be80f9c4de9b50a3c8b781bad4e0f5bd61bed70227ff",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "spectre-control-artifact",
+      "reference_count": 37
+    },
+    {
+      "path": "docs/notebook/assets/theory-w3-spectre-physical-language.svg",
+      "tracked": true,
+      "size_bytes": 2012,
+      "sha256": "60000ebeccc5805475082ceac6e43b71a0693796739936529f8d787da4321f08",
+      "kind": "visualization",
+      "disposition": "retained-control",
+      "category": "spectre-control-artifact",
+      "reference_count": 9
+    },
+    {
+      "path": "docs/notebook/assets/theory-w3-spectre-radius2-defect.json",
+      "tracked": true,
+      "size_bytes": 49025,
+      "sha256": "aea3b451072032b22c34bd1bab45a3e3f11b50b76e669a7b010ed2297bf5414a",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "spectre-control-artifact",
+      "reference_count": 19
+    },
+    {
+      "path": "docs/notebook/assets/theory-w3-spectre-radius3-defect.json",
+      "tracked": true,
+      "size_bytes": 882224,
+      "sha256": "5484790d73940f06ce2ee533753742cf40da543da5024bf0ecda9c4095dee482",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "spectre-control-artifact",
+      "reference_count": 19
+    },
+    {
+      "path": "docs/notebook/assets/theory-w3-spectre-radius3-extra-survivors.svg",
+      "tracked": true,
+      "size_bytes": 34648,
+      "sha256": "2a354138f3d7a23fb1db7d01ddc9f567c1c75356dbcc35560ff7543239725e4e",
+      "kind": "visualization",
+      "disposition": "retained-control",
+      "category": "spectre-control-artifact",
+      "reference_count": 10
+    },
+    {
+      "path": "docs/notebook/assets/theory-w3-spectre-two-sided-overlap.json",
+      "tracked": true,
+      "size_bytes": 15236,
+      "sha256": "732207682463772cc52650d0b69055db4a7e11225b5b1f8c092878ca0800e973",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "spectre-control-artifact",
+      "reference_count": 26
+    },
+    {
+      "path": "docs/notebook/assets/theory-w3-turtle-golden-sturmian.json",
+      "tracked": true,
+      "size_bytes": 9973,
+      "sha256": "1c9eb21e93f1e8da37e63a50a6e583f4d28f3c72b8b15a50569265052bc0e4db",
+      "kind": "certificate-or-result",
+      "disposition": "retained-control",
+      "category": "spectre-control-artifact",
+      "reference_count": 14
+    },
+    {
+      "path": "docs/notebook/assets/theory-w3-turtle-golden-sturmian.svg",
+      "tracked": true,
+      "size_bytes": 5805,
+      "sha256": "a48b2d9433248ba48c7c5690b5c93ce9c135ed7a1ad84cdd4fd875eefd485cd4",
+      "kind": "visualization",
+      "disposition": "retained-control",
+      "category": "spectre-control-artifact",
+      "reference_count": 11
+    }
+  ],
+  "ignored_research_stores": [
+    {
+      "group": "data/a0-compiled",
+      "tracked": false,
+      "disposition": "generated-cache",
+      "file_count": 16,
+      "size_bytes": 826156270,
+      "examples": [
+        "data/a0-compiled/polykites-01.bin",
+        "data/a0-compiled/polykites-02.bin",
+        "data/a0-compiled/polykites-03.bin",
+        "data/a0-compiled/polykites-04.bin",
+        "data/a0-compiled/polykites-05.bin"
+      ]
+    },
+    {
+      "group": "data/a1-compiled",
+      "tracked": false,
+      "disposition": "generated-cache",
+      "file_count": 16,
+      "size_bytes": 831764935,
+      "examples": [
+        "data/a1-compiled/periodic-09.jsonl",
+        "data/a1-compiled/periodic-10.jsonl",
+        "data/a1-compiled/periodic-11.jsonl",
+        "data/a1-compiled/periodic-12.jsonl",
+        "data/a1-compiled/periodic-13.jsonl"
+      ]
+    },
+    {
+      "group": "data/a2-compiled",
+      "tracked": false,
+      "disposition": "generated-cache",
+      "file_count": 61,
+      "size_bytes": 17006479,
+      "examples": [
+        "data/a2-compiled/depth2-exhausted-09.bin",
+        "data/a2-compiled/depth2-exhausted-10.bin",
+        "data/a2-compiled/depth2-exhausted-11.bin",
+        "data/a2-compiled/depth2-exhausted-12.bin",
+        "data/a2-compiled/depth2-exhausted-13.bin"
+      ]
+    },
+    {
+      "group": "data/literature",
+      "tracked": false,
+      "disposition": "source-cache",
+      "file_count": 73,
+      "size_bytes": 133084404,
+      "examples": [
+        "data/literature/library-lock.json",
+        "data/literature/papers/1003.4279-aperiodic-hexagonal-tile.pdf",
+        "data/literature/papers/1003.4909-atlas-matching-rules.pdf",
+        "data/literature/papers/1212.4756-one-tile-to-rule-them-all.pdf",
+        "data/literature/papers/1506.06492-eleven-wang-tiles.pdf"
+      ]
+    },
+    {
+      "group": "data/w3-frontiers",
+      "tracked": false,
+      "disposition": "generated-cache",
+      "file_count": 5,
+      "size_bytes": 1163201,
+      "examples": [
+        "data/w3-frontiers/spectre-l18-radius4.pkl.gz",
+        "data/w3-frontiers/spectre-l18-radius5.pkl.gz",
+        "data/w3-frontiers/spectre-l18-radius6.pkl.gz",
+        "data/w3-frontiers/spectre-l18-radius7.pkl.gz",
+        "data/w3-frontiers/spectre-l18-radius8.pkl.gz"
+      ]
+    },
+    {
+      "group": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index50",
+      "tracked": false,
+      "disposition": "externalize-after-manifest",
+      "file_count": 1152,
+      "size_bytes": 2166298658,
+      "examples": [
+        "docs/notebook/assets/theory-w2-layer-d-a4-proof-index50/hnf-10-2-5-map-7-twist-00.cnf.gz",
+        "docs/notebook/assets/theory-w2-layer-d-a4-proof-index50/hnf-10-2-5-map-7-twist-00.drat.gz",
+        "docs/notebook/assets/theory-w2-layer-d-a4-proof-index50/hnf-10-2-5-map-7-twist-01.cnf.gz",
+        "docs/notebook/assets/theory-w2-layer-d-a4-proof-index50/hnf-10-2-5-map-7-twist-01.drat.gz",
+        "docs/notebook/assets/theory-w2-layer-d-a4-proof-index50/hnf-10-2-5-map-7-twist-02.cnf.gz"
+      ]
+    },
+    {
+      "group": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index55",
+      "tracked": false,
+      "disposition": "externalize-after-manifest",
+      "file_count": 672,
+      "size_bytes": 3021269794,
+      "examples": [
+        "docs/notebook/assets/theory-w2-layer-d-a4-proof-index55/hnf-11-2-5-map-7-twist-00.cnf.gz",
+        "docs/notebook/assets/theory-w2-layer-d-a4-proof-index55/hnf-11-2-5-map-7-twist-00.drat.gz",
+        "docs/notebook/assets/theory-w2-layer-d-a4-proof-index55/hnf-11-2-5-map-7-twist-03.cnf.gz",
+        "docs/notebook/assets/theory-w2-layer-d-a4-proof-index55/hnf-11-2-5-map-7-twist-03.drat.gz",
+        "docs/notebook/assets/theory-w2-layer-d-a4-proof-index55/hnf-11-2-5-map-7-twist-08.cnf.gz"
+      ]
+    },
+    {
+      "group": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7",
+      "tracked": false,
+      "disposition": "externalize-after-manifest",
+      "file_count": 84,
+      "size_bytes": 694971396,
+      "examples": [
+        "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-10-1-6-map7-v4-twist-union.cnf.gz",
+        "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-10-1-6-map7-v4-twist-union.drat.gz",
+        "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-10-3-6-map7-v4-twist-union.cnf.gz",
+        "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-10-3-6-map7-v4-twist-union.drat.gz",
+        "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7/hnf-12-2-5-map7-v4-twist-union.cnf.gz"
+      ]
+    },
+    {
+      "group": "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-packing",
+      "tracked": false,
+      "disposition": "externalize-after-manifest",
+      "file_count": 6,
+      "size_bytes": 4337057,
+      "examples": [
+        "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-packing/hnf-10-2-6-full16-overlap6-orbit.cnf.gz",
+        "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-packing/hnf-10-2-6-full16-overlap6-orbit.drat.gz",
+        "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-packing/hnf-30-22-2-full16-overlap6-orbit.cnf.gz",
+        "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-packing/hnf-30-22-2-full16-overlap6-orbit.drat.gz",
+        "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-packing/hnf-30-6-2-full16-overlap6-orbit.cnf.gz"
+      ]
+    },
+    {
+      "group": "docs/notebook/assets/theory-w2-layer-d-proof-index45",
+      "tracked": false,
+      "disposition": "externalize-after-manifest",
+      "file_count": 324,
+      "size_bytes": 377474096,
+      "examples": [
+        "docs/notebook/assets/theory-w2-layer-d-proof-index45/hnf-15-4-3-map-9-twist-00.cnf.gz",
+        "docs/notebook/assets/theory-w2-layer-d-proof-index45/hnf-15-4-3-map-9-twist-00.drat.gz",
+        "docs/notebook/assets/theory-w2-layer-d-proof-index45/hnf-15-4-3-map-9-twist-01.cnf.gz",
+        "docs/notebook/assets/theory-w2-layer-d-proof-index45/hnf-15-4-3-map-9-twist-01.drat.gz",
+        "docs/notebook/assets/theory-w2-layer-d-proof-index45/hnf-15-4-3-map-9-twist-02.cnf.gz"
+      ]
+    },
+    {
+      "group": "docs/notebook/assets/theory-w2-layer-d-proof-index50",
+      "tracked": false,
+      "disposition": "externalize-after-manifest",
+      "file_count": 216,
+      "size_bytes": 283140121,
+      "examples": [
+        "docs/notebook/assets/theory-w2-layer-d-proof-index50/hnf-25-14-2-map-9-twist-00.cnf.gz",
+        "docs/notebook/assets/theory-w2-layer-d-proof-index50/hnf-25-14-2-map-9-twist-00.drat.gz",
+        "docs/notebook/assets/theory-w2-layer-d-proof-index50/hnf-25-14-2-map-9-twist-01.cnf.gz",
+        "docs/notebook/assets/theory-w2-layer-d-proof-index50/hnf-25-14-2-map-9-twist-01.drat.gz",
+        "docs/notebook/assets/theory-w2-layer-d-proof-index50/hnf-25-14-2-map-9-twist-02.cnf.gz"
+      ]
+    },
+    {
+      "group": "spectre.tar.gz",
+      "tracked": false,
+      "disposition": "source-cache",
+      "file_count": 1,
+      "size_bytes": 12757387,
+      "examples": [
+        "spectre.tar.gz"
+      ]
+    }
+  ]
+}

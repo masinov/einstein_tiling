@@ -1,0 +1,358 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-07-29",
+  "purpose": "Goal-level registry of durable results and open obligations. Row-level proof details remain authoritative in docs/theory/PROOF_LEDGER.md.",
+  "status_vocabulary": [
+    "open",
+    "conditional",
+    "proof-draft",
+    "machine-verified",
+    "external",
+    "closed-scoped",
+    "historical"
+  ],
+  "disposition_vocabulary": [
+    "canonical",
+    "canonical-conditional",
+    "retained-control",
+    "retained-benchmark",
+    "extract-then-archive",
+    "archive-history"
+  ],
+  "goal_relation_vocabulary": [
+    "defines-goal",
+    "direct-sufficient-condition",
+    "general-obstruction",
+    "local-expressivity-boundary",
+    "source-benchmark",
+    "method-control",
+    "historical-only"
+  ],
+  "claims": [
+    {
+      "id": "GOAL.STURMIAN.UNMARKED_FACTOR",
+      "title": "Connected unmarked Sturmian factor problem",
+      "statement": "For a computably presented nonempty aperiodic planar FLC tiling system S, determine whether a connected unmarked polygonal disk P exists with a total finite-radius translation-equivariant map from X(P) to X(S); alternatively prove nonexistence or undecidability for a clearly defined realization family.",
+      "scope": "Full Euclidean tilings by one connected unmarked polygon; totality is required on every admitted tiling, not only an intended image.",
+      "status": "open",
+      "disposition": "canonical",
+      "goal_relation": "defines-goal",
+      "novelty_status": "open research question; no repository solution claimed",
+      "ledger_ids": [],
+      "dependencies": [],
+      "source_documents": [
+        "docs/theory/STURMIAN_REALIZATION_BOUNDARY.md",
+        "docs/theory/83_ahi_branch_closure.md",
+        "docs/literature/reviews/STURMIAN_MONOTILE_ENCODING.md"
+      ],
+      "artifact_paths": [],
+      "literature_source_ids": ["akiyama-hamada-ito-sturmian-2026"]
+    },
+    {
+      "id": "GEN.TOTAL_DECODER_PERIOD_DESCENT",
+      "title": "Total local decoding and period descent",
+      "statement": "A nonempty finite local-rule tiling system with a total translation-equivariant finite-radius map to an aperiodic target is itself aperiodic; checking the decoder only on the intended encoded image is insufficient.",
+      "scope": "Full local closure of the source tiling system.",
+      "status": "proof-draft",
+      "disposition": "canonical",
+      "goal_relation": "direct-sufficient-condition",
+      "novelty_status": "standard compact symbolic-dynamics principle; no novelty claim",
+      "ledger_ids": ["ST-M1.Q0", "ST-M1.K1T"],
+      "dependencies": [],
+      "source_documents": [
+        "docs/theory/GENERAL_REALIZATION_THEOREMS.md",
+        "docs/theory/09_stm1_symbolic_quotient.md",
+        "docs/theory/11_stm1_contact_kernel.md",
+        "docs/theory/83_ahi_branch_closure.md"
+      ],
+      "artifact_paths": [],
+      "literature_source_ids": []
+    },
+    {
+      "id": "GEN.ROOT_DETERMINISTIC_PERIODIC",
+      "title": "Root-deterministic finite carriers are periodic",
+      "statement": "Every nonempty finite root-deterministic Z^2 carrier has a finite translation orbit and is periodic, so it cannot factor equivariantly to an aperiodic target.",
+      "scope": "Finite symbolic carriers in which one rooted state determines the entire configuration.",
+      "status": "proof-draft",
+      "disposition": "canonical",
+      "goal_relation": "general-obstruction",
+      "novelty_status": "standard finite-orbit argument; no novelty claim",
+      "ledger_ids": ["ST-M1.N55"],
+      "dependencies": [],
+      "source_documents": [
+        "docs/theory/GENERAL_REALIZATION_THEOREMS.md",
+        "docs/theory/60_compiler_determinism_and_undecidability.md",
+        "docs/theory/83_ahi_branch_closure.md"
+      ],
+      "artifact_paths": [],
+      "literature_source_ids": []
+    },
+    {
+      "id": "GEN.MARKED_REALIZATION_UNDECIDABLE",
+      "title": "Marked connected-polygon Sturmian realization is undecidable",
+      "statement": "Tileability together with a specified total local factor to the fixed AHI source is undecidable for a computable family consisting of one connected polygon plus finite edge-to-edge matching rules.",
+      "scope": "Marked stick/polyhex support with a finite edge relation; this does not cover one unmarked polygon.",
+      "status": "conditional",
+      "disposition": "canonical-conditional",
+      "goal_relation": "general-obstruction",
+      "novelty_status": "standard product reduction; no novelty claim",
+      "condition": "Depends on the all-tilings weave converse in the unrefereed preprint stade-two-tiling-2025.",
+      "ledger_ids": ["ST-M1.U2", "ST-M1.D3"],
+      "dependencies": ["GEN.TOTAL_DECODER_PERIOD_DESCENT"],
+      "source_documents": [
+        "docs/theory/GENERAL_REALIZATION_THEOREMS.md",
+        "docs/theory/STURMIAN_REALIZATION_BOUNDARY.md",
+        "docs/theory/67_marked_sturmian_realization_boundary.md",
+        "docs/literature/reviews/MARKED_STURMIAN_UNDECIDABILITY.md",
+        "docs/theory/83_ahi_branch_closure.md"
+      ],
+      "artifact_paths": ["docs/literature/anchors/stade-stick-rules.json"],
+      "literature_source_ids": ["stade-two-tiling-2025"]
+    },
+    {
+      "id": "GEN.TWO_BODY_BICLIQUE_CLASSIFICATION",
+      "title": "Independent two-participant erasure classification",
+      "statement": "A finite directed relation admits a complete independent two-participant polygonal collar erasure exactly when its bipartite compatibility graph is a disjoint union of bicliques.",
+      "scope": "Relation-exact, uniquely rooted complete ports, disjoint collars, and exactly two participants.",
+      "status": "proof-draft",
+      "disposition": "canonical",
+      "goal_relation": "local-expressivity-boundary",
+      "novelty_status": "familiar jigsaw-color principle stated as a classification; no novelty claim",
+      "ledger_ids": ["ST-M1.K61R"],
+      "dependencies": [],
+      "source_documents": [
+        "docs/theory/GENERAL_REALIZATION_THEOREMS.md",
+        "docs/theory/68_separable_color_erasure_classification.md",
+        "docs/theory/83_ahi_branch_closure.md"
+      ],
+      "artifact_paths": [],
+      "literature_source_ids": []
+    },
+    {
+      "id": "GEN.ADDITIVE_PARITY_OBSTRUCTION",
+      "title": "Ordinary and torsion-free additive parity no-go",
+      "statement": "Neither an ordinary participant-separable sector star nor any finite family of participant-wise additive tests in a two-torsion-free abelian group can distinguish ternary even parity from the full binary cube.",
+      "scope": "Fixed topology and multiplicity, full unary/binary projections, no independently visible hidden star state or non-ordinary contact hyperedge.",
+      "status": "proof-draft",
+      "disposition": "canonical",
+      "goal_relation": "local-expressivity-boundary",
+      "novelty_status": "elementary algebraic obstruction; novelty not established",
+      "ledger_ids": ["ST-M1.K69A", "ST-M1.K70A", "ST-M1.N70T"],
+      "dependencies": [],
+      "source_documents": [
+        "docs/theory/GENERAL_REALIZATION_THEOREMS.md",
+        "docs/theory/77_ordinary_vertex_parity_no_go.md",
+        "docs/theory/78_torsion_free_no_go_and_exact_parity_zipper.md",
+        "docs/theory/83_ahi_branch_closure.md"
+      ],
+      "artifact_paths": [],
+      "literature_source_ids": []
+    },
+    {
+      "id": "GEN.TJUNCTION_FINITE_RELATION_COMPILER",
+      "title": "Rooted hidden-state T-junctions realize finite relations",
+      "statement": "Every finite automaton and every finite fixed-arity relation has a rooted three-participant T-junction contact complex whose legal covers are exactly its accepted words or tuples.",
+      "scope": "Colored or role-labelled unit sides with prescribed rooted host, order, alignment, participant count and hidden finite state; not a one-unmarked-polygon theorem.",
+      "status": "proof-draft",
+      "disposition": "canonical",
+      "goal_relation": "local-expressivity-boundary",
+      "novelty_status": "standard finite-state construction; no novelty claim",
+      "ledger_ids": ["GEN.K74A", "GEN.K74R", "GEN.K74G"],
+      "dependencies": [],
+      "source_documents": [
+        "docs/theory/GENERAL_REALIZATION_THEOREMS.md",
+        "docs/theory/82_finite_automaton_contact_compiler.md",
+        "docs/literature/reviews/FINITE_AUTOMATON_CONTACT_COMPILER.md",
+        "docs/theory/83_ahi_branch_closure.md"
+      ],
+      "artifact_paths": [],
+      "literature_source_ids": []
+    },
+    {
+      "id": "CTRL.POLYKITE_CLASSIFIED_RANGE",
+      "title": "Polykite funnel inside the published classified range",
+      "statement": "The repository's n<=16 polykite funnel is a reproduction/control inside the published n<=24 exhaustive horizon and cannot support a discovery claim.",
+      "scope": "Kite-grid polykites; exact repository enumeration and bounded filters.",
+      "status": "external",
+      "disposition": "retained-control",
+      "goal_relation": "method-control",
+      "novelty_status": "prior-art reproduction and governance postmortem",
+      "ledger_ids": [],
+      "dependencies": [],
+      "source_documents": [
+        "docs/literature/POLYKITE_BASELINE.md",
+        "docs/literature/RESEARCH_RETURN_AUDIT.md",
+        "docs/benchmarks/E1_CLASSIFIED_CORPUS_ASSESSMENT.md"
+      ],
+      "artifact_paths": [
+        "data/shapes.sqlite",
+        "docs/notebook/assets/kaplan-8kite-crosswalk.json"
+      ],
+      "literature_source_ids": ["smkgs-hat-2024", "kaplan-path-review-2025"]
+    },
+    {
+      "id": "CTRL.TURTLE_EXACT_PIPELINE",
+      "title": "Turtle exact-computation control",
+      "statement": "The legacy finalist is exactly the published Turtle; the finite period, patch, diffraction and holonomy results are retained as exact controls and not as a new tile or independent aperiodicity proof.",
+      "scope": "Repository Turtle geometry and the stated finite budgets only.",
+      "status": "machine-verified",
+      "disposition": "retained-control",
+      "goal_relation": "method-control",
+      "novelty_status": "known tile; control and reproduction only",
+      "ledger_ids": ["T1.2-36", "T2.D2-60"],
+      "dependencies": [],
+      "source_documents": [
+        "docs/theory/02_transfer_certificates.md",
+        "docs/theory/03_w2_invariants.md",
+        "docs/theory/04_w2_cokernel.md",
+        "docs/theory/05_w2_binary_holonomy.md",
+        "docs/literature/reviews/W2_ABELIAN_INVARIANTS.md"
+      ],
+      "artifact_paths": [
+        "docs/notebook/assets/theory-w1-finalist-norm26-36.json",
+        "docs/notebook/assets/theory-w2-layer-d-a4-proof-index60-map7.json"
+      ],
+      "literature_source_ids": ["smkgs-hat-2024", "akiyama-araki-turtle-2025"]
+    },
+    {
+      "id": "CTRL.SPECTRE_RECONSTRUCTION",
+      "title": "Spectre finite-language reconstruction control",
+      "statement": "The W3 artifacts reconstruct finite local Spectre languages, interfaces and conditional parent closure exactly, but reproduce published hierarchy methods and do not establish a new general certificate method.",
+      "scope": "Fixed-chirality edge-to-edge straight-Spectre model and the finite/conditional domains stated in the ledger.",
+      "status": "machine-verified",
+      "disposition": "retained-control",
+      "goal_relation": "method-control",
+      "novelty_status": "reconstruction/control; novelty branch closed",
+      "ledger_ids": ["T3.0", "T3.0P", "T3.0M"],
+      "dependencies": [],
+      "source_documents": [
+        "docs/theory/06_w3_substitution_certificates.md",
+        "docs/literature/reviews/W3_CERTIFICATE_METHOD.md"
+      ],
+      "artifact_paths": [
+        "docs/notebook/assets/theory-w3-spectre-certificate-v0.json",
+        "docs/notebook/assets/theory-w3-spectre-component-language.json"
+      ],
+      "literature_source_ids": ["smkgs-chiral-2024", "cheritat-spectre-clusters-2024"]
+    },
+    {
+      "id": "BENCH.AHI_EXACT_SOURCE",
+      "title": "Exact AHI Section 10.1 source presentation",
+      "statement": "The pinned AHI Section 10.1 source is reconstructed as exact 30,30,2 primitive-triangle supports, 15,15,1 rhombus components, 31 addressed roles and a twelve-state corridor quotient.",
+      "scope": "The chosen beta=sqrt(2)-1 Section 10.1 construction only.",
+      "status": "machine-verified",
+      "disposition": "retained-benchmark",
+      "goal_relation": "source-benchmark",
+      "novelty_status": "exact source reconstruction; not a general Sturmian theory or monotile",
+      "ledger_ids": ["ST-M1.K50C", "ST-M1.K52Q", "ST-M1.K53H", "ST-M1.K53B"],
+      "dependencies": [],
+      "source_documents": [
+        "docs/theory/STURMIAN_REALIZATION_BOUNDARY.md",
+        "docs/theory/58_exact_sturmian_source_atlas.md",
+        "docs/theory/59_exact_contact_kernel_and_pose_nogos.md",
+        "docs/theory/61_twelve_state_corridor_compiler.md",
+        "docs/theory/62_binary_l_anchor_exact_cover.md",
+        "docs/theory/83_ahi_branch_closure.md"
+      ],
+      "artifact_paths": [
+        "data/sturmian-source/ahi-section10-supports.json",
+        "data/sturmian-source/ahi-section10-contact-kernel.json",
+        "data/sturmian-source/ahi-corridor-quotient.json",
+        "data/sturmian-source/ahi-l-anchor-selector.json"
+      ],
+      "literature_source_ids": ["akiyama-hamada-ito-sturmian-2026"]
+    },
+    {
+      "id": "CLOSED.AHI_CARRIER_LOCAL",
+      "title": "AHI carrier-local realization exclusions",
+      "statement": "For the fixed AHI source, carrier-local P17 decoding, carrier-local decoding below and at area 30, and boundary-neutral count-changing carrier states are excluded under their recorded hypotheses.",
+      "scope": "Exact AHI source; source macrotiles contained within finite equal-area carriers and the additional hypotheses of N60P, N64S, N65S and N68H.",
+      "status": "closed-scoped",
+      "disposition": "retained-benchmark",
+      "goal_relation": "source-benchmark",
+      "novelty_status": "scoped architecture exclusions; external novelty not established",
+      "ledger_ids": ["ST-M1.N60P", "ST-M1.N64S", "ST-M1.N65S", "ST-M1.N68H"],
+      "dependencies": ["BENCH.AHI_EXACT_SOURCE"],
+      "source_documents": [
+        "docs/theory/STURMIAN_REALIZATION_BOUNDARY.md",
+        "docs/theory/66_seventeen_rhombus_sturmian_carrier.md",
+        "docs/theory/72_sub30_carrier_local_no_go.md",
+        "docs/theory/73_area30_carrier_normal_form.md",
+        "docs/theory/76_coupled_vertex_and_boundary_active_reduction.md",
+        "docs/theory/83_ahi_branch_closure.md"
+      ],
+      "artifact_paths": [
+        "data/sturmian-source/ahi-p17-all-m-obstruction.json",
+        "data/sturmian-source/ahi-sub30-carrier-classification.json",
+        "data/sturmian-source/ahi-area30-carrier-classification.json"
+      ],
+      "literature_source_ids": ["akiyama-hamada-ito-sturmian-2026"]
+    },
+    {
+      "id": "CLOSED.AHI_SEPARABLE_ERASURE",
+      "title": "AHI and Stade separable-erasure exclusions",
+      "statement": "Independent two-body profiles, ordinary sector stars and participant-separable torsion-free additive tests cannot realize the audited relations under their complete-contact hypotheses; the fixed Stade two-body completion also admits a periodic tiling.",
+      "scope": "The exact relation and contact-completeness assumptions of K61R, N61S, N62S, K69A and K70A.",
+      "status": "closed-scoped",
+      "disposition": "retained-benchmark",
+      "goal_relation": "general-obstruction",
+      "novelty_status": "combines general classifications with source-specific applications; no universal unmarked-polygon no-go",
+      "condition": "N61S depends on the fixed rule table from stade-two-tiling-2025; N62S itself is source-rule-only.",
+      "ledger_ids": ["ST-M1.N61S", "ST-M1.K62P", "ST-M1.N62S", "ST-M1.K69A", "ST-M1.K70A"],
+      "dependencies": ["GEN.TWO_BODY_BICLIQUE_CLASSIFICATION", "GEN.ADDITIVE_PARITY_OBSTRUCTION"],
+      "source_documents": [
+        "docs/theory/GENERAL_REALIZATION_THEOREMS.md",
+        "docs/theory/STURMIAN_REALIZATION_BOUNDARY.md",
+        "docs/theory/68_separable_color_erasure_classification.md",
+        "docs/theory/69_physical_contact_periodicity_obstruction.md",
+        "docs/theory/77_ordinary_vertex_parity_no_go.md",
+        "docs/theory/78_torsion_free_no_go_and_exact_parity_zipper.md"
+      ],
+      "artifact_paths": [
+        "data/sturmian-source/stade-physical-contact-quotient.json",
+        "docs/literature/anchors/stade-stick-rules.json"
+      ],
+      "literature_source_ids": ["stade-two-tiling-2025"]
+    },
+    {
+      "id": "HIST.AHI_ZIPPER_DERIVATION",
+      "title": "AHI parity zipper and carrier geometry ladder",
+      "statement": "The parity zipper, terminal erasure, bent host, outward fan and reset bounds are exact worked local geometry, but K74A/K74R show that their finite-state symbolic content is generic and they do not advance the one-support total-decoder problem.",
+      "scope": "K70Z through K73R and the earlier K10B/K16W/hinge carrier ladders.",
+      "status": "historical",
+      "disposition": "archive-history",
+      "goal_relation": "historical-only",
+      "novelty_status": "worked derivations; frozen and not a research direction",
+      "ledger_ids": ["ST-M1.K70Z", "ST-M1.K71T", "ST-M1.K72F", "ST-M1.K73F", "ST-M1.K73R"],
+      "dependencies": ["GEN.TJUNCTION_FINITE_RELATION_COMPILER"],
+      "source_documents": [
+        "docs/theory/STURMIAN_REALIZATION_BOUNDARY.md",
+        "docs/theory/78_torsion_free_no_go_and_exact_parity_zipper.md",
+        "docs/theory/79_geometric_terminal_erasure.md",
+        "docs/theory/80_bent_parity_zipper_packing_cone.md",
+        "docs/theory/81_outward_zipper_and_port_curvature.md",
+        "docs/theory/83_ahi_branch_closure.md"
+      ],
+      "artifact_paths": [],
+      "literature_source_ids": []
+    },
+    {
+      "id": "INFRA.EXACT_CERTIFICATE_LAB",
+      "title": "Exact certificate and cold-verifier infrastructure",
+      "statement": "The repository contains reusable exact geometry, canonicalization, three-valued verdict, certificate serialization, independent cold verification and external-anchor machinery.",
+      "scope": "Engineering infrastructure; individual mathematical claims retain their own scopes.",
+      "status": "machine-verified",
+      "disposition": "retained-control",
+      "goal_relation": "method-control",
+      "novelty_status": "engineering asset; method novelty requires separate comparison",
+      "ledger_ids": [],
+      "dependencies": [],
+      "source_documents": [
+        "docs/literature/RESEARCH_RETURN_AUDIT.md",
+        "docs/literature/METHODS_MATRIX.md"
+      ],
+      "artifact_paths": [],
+      "literature_source_ids": []
+    }
+  ]
+}
