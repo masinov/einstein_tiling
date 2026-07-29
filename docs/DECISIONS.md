@@ -4508,3 +4508,26 @@ remaining all-area question is whether the **coupled three-rail AHI vertex
 language** permits the synchronized transition-pair defect required by an
 even count-changing trade. A proof either way must consume the full vertex
 rule; another area census is not authorized by this decision.
+
+## D-0221 (2026-07-29) — Close boundary-neutral carriers and isolate phase transport
+
+At an indexed AHI vertex the three mixedness bits are the pairwise XORs of
+three rail bits, so their exact local language is
+`{000,110,101,011}`.  The three nonzero vectors generate every integer triple
+with even coordinate sum; in particular the synchronized `(6,6,6)` defect
+required by a two-large-macro trade is not excluded by any additive charge at
+this local layer.  No further local vertex-charge escalation is justified.
+
+Global rail continuation nevertheless closes the boundary-neutral case at
+every area.  Two complete source patches with the same support and identical
+marked interface can be substituted in one common exterior.  Any changed
+corridor bit would then propagate along an unbounded strip and change that
+exterior.  Hence their complete corridor fields agree, and K67D forces their
+large-macro counts to agree.  The known Figure 45 entropy flips are
+consistent: they preserve the corridor field and macro composition.
+
+Together with K66T, N63R and K63F, every surviving carrier-local realization
+must therefore be boundary-active, joint multi-rail and contextual.  The next
+object is its finite phase-transport relation, not another carrier area,
+polygon, or additive local charge.  N66R remains open for that precisely
+named residual class.

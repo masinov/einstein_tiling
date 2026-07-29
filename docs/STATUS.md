@@ -6,7 +6,7 @@
 > Session-by-session detail lives in [docs/notebook/](notebook/); decisions in
 > [DECISIONS.md](DECISIONS.md); experiment gates in [EXPERIMENTS.md](EXPERIMENTS.md).
 
-**Last updated:** 2026-07-28 (session 193 directional corridor-charge theorem)
+**Last updated:** 2026-07-29 (session 194 coupled-vertex and boundary-active reduction)
 
 > **Identity correction (ERR-003/D-0048):** every current use of “the
 > finalist” and every legacy `e1-finalist-*` artifact refers to the published
@@ -33,7 +33,7 @@
 | T0/W1/W2 — exact theory foundations | theory program v0.2 | ⏸ frozen control branch; Turtle-control T1.2-36 and the finite S3/A4 holonomy prefix remain exact, but abelian methods are classical and all Turtle conclusions are subordinate to published aperiodicity (D-0067) |
 | W3 — substitution certificates | theory program v0.2 | ✅ closed as a novelty branch; exact Spectre results retained as a machine-readable reconstruction/control, with no further radius or D4-context work authorized (D-0070) |
 | **Gate G1 — E1 Hat/Turtle validation** | §8 E1 | ✅ closed as validation/postmortem; historical runs are not an unbiased global benchmark (D-0068) |
-| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active at one coupled three-rail trade question plus the cross-carrier/nonseparable boundary. Minimality eliminates proper lattice-factor pruning; rail-separable schemes are periodic. Complete exact classifications close every carrier-local compiler through area 30. K66A/K66T require a same-support count-changing trade at every area; K67D/K67G show that odd trades carry boundary flux in all three directions and that even trades are exactly the hidden transition-pair escape invisible to corridor parity. The marked family is undecidable and contact-complete separable Stade erasures are periodic (ERR-017/D-0208--D-0220). |
+| ST-M1 — Sturmian monotile encoding | outside-horizon theorem branch | ▶ active at the boundary-active joint phase-transport class plus the cross-carrier/nonseparable boundary. Minimality eliminates proper lattice-factor pruning; rail-separable schemes are periodic. Complete exact classifications close every carrier-local compiler through area 30. K68V proves the coupled local vertex algebra has no charge beyond parity, while N68H closes every boundary-neutral count-changing carrier at all areas. Hence any survivor must export joint multi-rail state through its boundary. The marked family is undecidable and contact-complete separable Stade erasures are periodic (ERR-017/D-0208--D-0221). |
 | Pipelines B, C; substrates n=5,8; scaling | §5, §6, §3.3 | ⬜ not started |
 
 **No verdicts on new shapes are trusted before Gate G1 passes** (program §8).
@@ -311,6 +311,15 @@
   contains a count-changing same-support AHI trade.  The infinite carrier
   problem is now one cut-admissible exact-cover/height-charge question, not an
   area census (K65A/K65C/N65S/K66A/K66T/K66C, D-0218--D-0219).
+- **Coupled-vertex and boundary-neutral closure:** an indexed source vertex
+  carries the exact pairwise-XOR code `{000,110,101,011}`.  Its incidence
+  lattice admits the synchronized even defect, so no stronger additive local
+  charge exists.  Globally, a changed corridor bit propagates along an
+  unbounded strip; two same-support states with identical complete marked
+  boundary therefore have the same corridor field and, by K67D, the same
+  large-macro count.  All boundary-neutral carrier trades are closed at every
+  area.  The sole carrier-local residue is boundary-active, joint multi-rail
+  phase transport (K68V/N68H/K68R, D-0221).
 - **ST-M1 consolidated dossier:** theory note 14 now gives the complete
   P0/S0/Q0/K1T/K1P/N5--N9/K2C/K2V chain and conditional K2J-to-monotile
   argument in one self-contained proof draft. It makes no novelty or monotile
@@ -909,15 +918,14 @@ Research is under the 2026-07-21 reset recorded in
 
 The controlling 2026-07-28 target supersedes the chronological archive below:
 
-1. Treat N64S/N65S as completed base cases: no carrier-local synthesis through
-   area 30 and no return to P17 or an integer-by-integer carrier census.
-2. Attack N66R only at the coupled three-rail vertex layer. K67O/K67D fix the
-   directional composition law and K67G proves that endpoint charges see only
-   parity: odd trades carry flux in all three axes, while an even trade creates
-   synchronized hidden transition pairs. Determine whether the complete AHI
-   six-cell vertex/SAB language forbids that synchronized defect or build one
-   exact legal trade. Per-axis parity escalation and sequential carrier areas
-   are retired.
+1. Treat N64S/N65S/N68H as completed carrier-local base cases: no synthesis
+   through area 30, no boundary-neutral count-changing state at any area, and
+   no return to P17 or an integer-by-integer carrier census.
+2. Classify the remaining boundary-active joint phase-transport relation.
+   State its finite carrier-interface variables and decide whether all such
+   relations in a clearly defined contact family force a periodic factor,
+   admit one total AHI relation, or have an undecidable nonemptiness problem.
+   Local additive charges are exhausted by K68V and are not to be escalated.
 3. In parallel, formalize the cross-carrier alternative: bound how a fixed
    source macro can intersect neighboring carriers and state the finite local
    data required for a total decoder.  This is the only way to escape the
