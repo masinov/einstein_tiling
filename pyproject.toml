@@ -24,5 +24,11 @@ where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-markers = ["slow: long-running validation tests (run explicitly with -m slow)"]
+markers = [
+    "slow: long-running validation tests (run explicitly with -m slow)",
+    "tier_unit: fast tests for reusable exact primitives",
+    "tier_certificate: cold verification of retained certificates and source reconstructions",
+    "tier_control: known-system and historical-pipeline controls",
+    "tier_provenance: governance, literature, catalog and external-anchor integrity",
+]
 addopts = "-m 'not slow'"

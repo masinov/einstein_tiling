@@ -155,7 +155,10 @@ def _render_candidate(
 
 
 def main() -> int:
-    db = ShapeDB(ROOT / "data" / "shapes.sqlite")
+    db = ShapeDB(
+        ROOT / "tests" / "fixtures" / "polykites-n8.sqlite",
+        read_only=True,
+    )
     key = db.conn.execute(
         "SELECT key FROM shapes WHERE id = 635"
     ).fetchone()[0]

@@ -29,7 +29,7 @@ ARTIFACT_ROOTS = (
     "data/sturmian-source/",
     "docs/literature/anchors/",
 )
-ARTIFACT_FILES = {"data/shapes.sqlite"}
+ARTIFACT_FILES = {"tests/fixtures/polykites-n8.sqlite"}
 REFERENCE_ROOTS = ("docs/", "scripts/", "src/", "tests/")
 IGNORED_RESEARCH_ROOTS = (
     "data/a0-compiled",
@@ -163,7 +163,7 @@ def reference_text(files: list[str]) -> str:
 def artifact_kind(relative: str) -> str:
     name = Path(relative).name
     suffix = Path(relative).suffix.lower()
-    if relative == "data/shapes.sqlite":
+    if relative == "tests/fixtures/polykites-n8.sqlite":
         return "database-fixture"
     if relative.startswith("data/sturmian-source/"):
         return "source-reconstruction-certificate"

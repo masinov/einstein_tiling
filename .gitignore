@@ -225,6 +225,13 @@ data/a0-compiled/
 data/a1-compiled/
 data/a2-compiled/
 
+# Mutable funnel workspace.  The immutable n<=8 control snapshot lives at
+# tests/fixtures/polykites-n8.sqlite.
+data/shapes.sqlite
+data/shapes.sqlite-journal
+data/shapes.sqlite-wal
+data/shapes.sqlite-shm
+
 # Reproducible W3 finite-language frontiers (large local resume checkpoints).
 data/w3-frontiers/
 data/w3-d1-physical/

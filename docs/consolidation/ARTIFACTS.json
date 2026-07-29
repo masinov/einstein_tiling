@@ -23,22 +23,11 @@
     "by_disposition": {
       "archive-history": 78,
       "canonical": 2,
-      "relocate-fixture": 1,
-      "retained-control": 190,
+      "retained-control": 191,
       "retained-evidence": 19
     }
   },
   "artifacts": [
-    {
-      "path": "data/shapes.sqlite",
-      "tracked": true,
-      "size_bytes": 1355776,
-      "sha256": "6956f7c90f6bceae1b63678e8bb86d6df0cf90ce59b2f8db072188850d7c27b9",
-      "kind": "database-fixture",
-      "disposition": "relocate-fixture",
-      "category": "database-fixture",
-      "reference_count": 51
-    },
     {
       "path": "data/sturmian-source/ahi-area30-carrier-classification.json",
       "tracked": true,
@@ -2928,6 +2917,16 @@
       "disposition": "retained-control",
       "category": "spectre-control-artifact",
       "reference_count": 11
+    },
+    {
+      "path": "tests/fixtures/polykites-n8.sqlite",
+      "tracked": true,
+      "size_bytes": 1355776,
+      "sha256": "6956f7c90f6bceae1b63678e8bb86d6df0cf90ce59b2f8db072188850d7c27b9",
+      "kind": "database-fixture",
+      "disposition": "retained-control",
+      "category": "database-fixture",
+      "reference_count": 30
     }
   ],
   "ignored_research_stores": [

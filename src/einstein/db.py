@@ -1,11 +1,12 @@
-"""The shape database (program section 7.4, minimal v0).
+"""Mutable shape stores and read-only access to immutable database fixtures.
 
 Content-addressed by canonical form. Every funnel verdict is stored with its
 certificate, budget, and code version, so any claim resolves to a database
 row plus a rerunnable job. Negative results are first-class data.
 
-SQLite is deliberate for v0: single file under data/, zero services,
-inspectable with standard tools. Revisit when scale demands it.
+SQLite is deliberate for v0: zero services and inspectable with standard
+tools. Mutable runs use a workspace path under data/. Versioned snapshots must
+be opened with ``read_only=True`` from the fixture namespace.
 """
 
 from __future__ import annotations
@@ -60,9 +61,15 @@ def code_version() -> str:
 
 
 class ShapeDB:
-    def __init__(self, path: str | Path):
-        self.conn = sqlite3.connect(str(path))
-        self.conn.executescript(_SCHEMA)
+    def __init__(self, path: str | Path, *, read_only: bool = False):
+        self.path = Path(path)
+        self.read_only = read_only
+        if read_only:
+            uri = f"{self.path.resolve().as_uri()}?mode=ro"
+            self.conn = sqlite3.connect(uri, uri=True)
+        else:
+            self.conn = sqlite3.connect(str(self.path))
+            self.conn.executescript(_SCHEMA)
         self._version = code_version()
 
     def close(self):
@@ -70,6 +77,8 @@ class ShapeDB:
 
     def add_shape(self, canonical_cells, substrate: str = "kite") -> int:
         """Insert (or find) a shape by its canonical form; returns shape id."""
+        if self.read_only:
+            raise RuntimeError(f"database fixture is read-only: {self.path}")
         key = serialize_cells(canonical_cells)
         cur = self.conn.execute(
             "INSERT INTO shapes(key, n, substrate) VALUES (?, ?, ?) "
@@ -86,6 +95,8 @@ class ShapeDB:
 
     def record_verdict(self, shape_id: int, stage: str, verdict: str,
                        certificate=None, budget=None) -> None:
+        if self.read_only:
+            raise RuntimeError(f"database fixture is read-only: {self.path}")
         self.conn.execute(
             "INSERT INTO verdicts(shape_id, stage, verdict, certificate, "
             "budget, code_version, created_at) VALUES (?,?,?,?,?,?,?)",
@@ -98,6 +109,8 @@ class ShapeDB:
         )
 
     def commit(self):
+        if self.read_only:
+            raise RuntimeError(f"database fixture is read-only: {self.path}")
         self.conn.commit()
 
     def latest_verdict(self, shape_id: int, stage: str):

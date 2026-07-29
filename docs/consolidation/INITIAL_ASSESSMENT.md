@@ -3,10 +3,10 @@
 **Snapshot:** 2026-07-29
 **Scope:** non-destructive classification before any move, rewrite or deletion
 
-The generated catalogs currently cover 971 repository files, including all
-960 files tracked at the start of the consolidation branch and the eleven new
-control-layer files.  No file remains in the catch-all `review-required`
-state.
+The generated catalogs currently cover 981 repository files, including all
+files tracked at the start of the consolidation branch and the new canonical,
+navigation and control-layer files.  No file remains in the catch-all
+`review-required` state.
 
 ## Claim-level result
 
@@ -36,15 +36,14 @@ The first generated inventory assigns:
 
 | Disposition | Files | Meaning |
 |---|---:|---|
-| `canonical` | 41 | Governance, literature and the new theory synthesis |
-| `retained-toolbox` | 72 | Reusable exact core, verifiers and source tooling |
-| `retained-control` | 262 | Known-system controls and bounded exact results |
+| `canonical` | 48 | Governance, literature, theory synthesis and navigation |
+| `retained-toolbox` | 74 | Reusable exact core, verifiers, source and test tooling |
+| `retained-control` | 264 | Known-system reproduction, bounded controls and fixtures |
 | `retained-evidence` | 32 | Exact AHI/source and external-anchor evidence |
 | `archive-provenance` | 207 | Session, decision, errata and experiment history |
 | `archive-history` | 247 | Frozen runners, probes, proof sources, carrier derivations and result records |
 | `split-required` | 107 | Mixed-responsibility code/tests/configuration |
 | `rewrite-entrypoint` | 2 | STATUS and the stale monograph outline |
-| `relocate-fixture` | 1 | `data/shapes.sqlite` |
 
 These counts are planning categories, not deletion permissions.
 
@@ -75,17 +74,22 @@ The semantic part of the first tranche is complete:
   benchmark; and
 - the root and theory READMEs now enter through those documents.
 
+The first physical separation is also complete:
+
+- the checked-in `data/shapes.sqlite` snapshot moved to the immutable
+  `tests/fixtures/polykites-n8.sqlite` path with its hash unchanged;
+- the old path is now an ignored mutable workspace database for historical
+  runners;
+- tests have executable unit, certificate, control and provenance tiers; and
+- archive, notebook, script and data navigation layers explain the lifecycle
+  boundaries without moving append-only history.
+
 The following structural work can proceed without changing mathematical
 claims:
 
-1. move the 202 session notebooks into an explicitly historical navigation
-   layer while preserving their paths or redirects;
-2. separate the immutable `shapes.sqlite` fixture from future mutable run
-   databases;
-3. tier tests without changing assertions;
-4. move legacy runners/probes behind an archive namespace after import and
+1. move legacy runners/probes behind an archive namespace after import and
    documentation references are checked; and
-5. split `sturmian_source.py` along extraction, geometry, contact-language,
+2. split `sturmian_source.py` along extraction, geometry, contact-language,
    classification and certificate boundaries with behavior-preserving tests.
 
 Large artifact movement, proof-note deletion, dependency removal and Git

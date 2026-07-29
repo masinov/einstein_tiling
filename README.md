@@ -23,6 +23,8 @@ polykite computations are retained as exact controls and reproductions.
   and novelty permissions.
 - [Consolidation map](docs/consolidation/README.md) — claim registry, file
   dispositions and artifact inventory.
+- [Historical archive guide](docs/archive/README.md) — provenance and frozen
+  research without treating it as the live program.
 
 The chronological [status](docs/STATUS.md),
 [decisions](docs/DECISIONS.md), [experiments](docs/EXPERIMENTS.md) and
@@ -52,4 +54,9 @@ vendored Spectre controls.
 venv/bin/pip install -e .
 venv/bin/python -m pytest          # default exact/certificate suite
 venv/bin/python -m pytest -m slow  # optional slower controls
+venv/bin/python -m pytest -m tier_unit
+venv/bin/python -m pytest -m tier_certificate
 ```
+
+See [the test tiers](tests/README.md), [data boundary](data/README.md), and
+[script boundary](scripts/README.md) before adding new material.

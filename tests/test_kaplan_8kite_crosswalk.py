@@ -47,7 +47,8 @@ def test_crosswalk_is_a_database_bijection_with_expected_roles():
         (50, 635, "hat"),
     ]
 
-    conn = sqlite3.connect(ROOT / "data/shapes.sqlite")
+    fixture = ROOT / "tests/fixtures/polykites-n8.sqlite"
+    conn = sqlite3.connect(f"{fixture.resolve().as_uri()}?mode=ro", uri=True)
     for record in records:
         row = conn.execute(
             "SELECT key, n FROM shapes WHERE id=?", (record["shape_id"],)

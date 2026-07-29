@@ -332,7 +332,10 @@ def main():
     original_certificate = json.loads(
         (ASSETS / "e1-finalist-results.json").read_text()
     )["a3"]["certificate"]
-    db = ShapeDB(ROOT / "data/shapes.sqlite")
+    db = ShapeDB(
+        ROOT / "tests/fixtures/polykites-n8.sqlite",
+        read_only=True,
+    )
     raw_hat = db.conn.execute(
         """
         SELECT certificate

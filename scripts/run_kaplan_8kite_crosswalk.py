@@ -17,7 +17,7 @@ from einstein.substrate.kitegrid import canonical_form, is_center
 
 ROOT = Path(__file__).resolve().parent.parent
 PDF = ROOT / "data/literature/papers/8kites.pdf"
-DB = ROOT / "data/shapes.sqlite"
+DB = ROOT / "tests/fixtures/polykites-n8.sqlite"
 OUTPUT = ROOT / "docs/notebook/assets/kaplan-8kite-crosswalk.json"
 EXPECTED_SHA256 = "8e710b8d9418ca5ab6d4510fb6dba36080eac980166e1b355ed491e6304e8f12"
 ORIGINS = ((1, 0), (0, 1), (-1, 1), (-1, 0), (0, -1), (1, -1))
@@ -96,7 +96,7 @@ def main() -> None:
     if len({record["key"] for record in records}) != 116:
         raise ValueError("Kaplan PDF contains duplicate canonical shapes")
 
-    conn = sqlite3.connect(DB)
+    conn = sqlite3.connect(f"{DB.resolve().as_uri()}?mode=ro", uri=True)
     counts = {"hc1": 0, "hc2": 0, "periodic_anisohedral": 0, "hat": 0}
     for record in records:
         row = conn.execute(

@@ -32,7 +32,8 @@ def nontiling_two_kite():
 
 
 def hat_shape():
-    conn = sqlite3.connect(ROOT / "data" / "shapes.sqlite")
+    fixture = ROOT / "tests" / "fixtures" / "polykites-n8.sqlite"
+    conn = sqlite3.connect(f"{fixture.resolve().as_uri()}?mode=ro", uri=True)
     row = conn.execute("SELECT key FROM shapes WHERE id=635").fetchone()
     conn.close()
     if row is None:

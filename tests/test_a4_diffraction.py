@@ -234,7 +234,7 @@ def test_hat_patch_is_rank4_sixfold_after_doubling():
     from einstein.db import ShapeDB
     from einstein.render.svg import hex_to_xy
 
-    db = ShapeDB("data/shapes.sqlite")
+    db = ShapeDB("tests/fixtures/polykites-n8.sqlite", read_only=True)
     certificates = [
         json.loads(row[0])
         for row in db.conn.execute(

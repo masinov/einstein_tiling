@@ -16,6 +16,8 @@ The files have distinct roles:
 - `ARTIFACTS.json` is the generated artifact inventory.  Tracked evidence is
   hash-pinned individually; large ignored research stores are summarized by
   group without silently promoting them to evidence.
+- `MIGRATIONS.md` records layout changes independently of the historical
+  research decisions and notebooks.
 
 Regenerate the two inventories with:
 
@@ -58,9 +60,10 @@ The generated catalogs support the following later phases:
    redirects/manifests at old paths;
 3. externalize multi-gigabyte payloads only after independent checksum and
    reference verification;
-4. split immutable fixtures, fetched sources and reproducible caches;
+4. keep immutable fixtures, fetched sources and reproducible caches physically
+   separate;
 5. refactor only code that supports canonical claims or retained controls;
-6. tier tests by unit, certificate, provenance, integration and historical
-   golden-result roles;
+6. maintain executable test tiers for unit, certificate, provenance and
+   historical-control roles;
 7. keep the public entry points synchronized with the canonical claims; and
 8. consider Git packing or history repair as a separate operation.

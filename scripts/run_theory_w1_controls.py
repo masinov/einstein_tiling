@@ -32,7 +32,8 @@ TORSION_SHAPE = ((0, 0, 0), (0, 0, 1), (0, 0, 2), (2, 2, 3))
 
 
 def hat_shape() -> tuple:
-    conn = sqlite3.connect(ROOT / "data" / "shapes.sqlite")
+    fixture = ROOT / "tests" / "fixtures" / "polykites-n8.sqlite"
+    conn = sqlite3.connect(f"{fixture.resolve().as_uri()}?mode=ro", uri=True)
     row = conn.execute("SELECT key FROM shapes WHERE id=635").fetchone()
     conn.close()
     if row is None:
@@ -114,7 +115,7 @@ def main() -> None:
             "code_version": code_version(),
             "transfer_source": str(source.relative_to(ROOT)),
             "transfer_source_sha256": sha256(source.read_bytes()).hexdigest(),
-            "hat_source": "data/shapes.sqlite shape id 635",
+            "hat_source": "tests/fixtures/polykites-n8.sqlite shape id 635",
         },
         "small_census": census,
         "torsion_control": {

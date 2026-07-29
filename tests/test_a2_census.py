@@ -1,6 +1,7 @@
 """Regression pins for the session-03 A2 findings.
 
-Full evidence lives in data/shapes.sqlite (stage 'A2-heesch'); these tests
+Full evidence lives in tests/fixtures/polykites-n8.sqlite (stage
+'A2-heesch'); these tests
 re-derive fast slices of it from scratch so code regressions surface.
 
 Headline result being protected: among all 1,264 free polykites n <= 8, the

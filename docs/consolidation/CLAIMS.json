@@ -185,7 +185,7 @@
         "docs/benchmarks/E1_CLASSIFIED_CORPUS_ASSESSMENT.md"
       ],
       "artifact_paths": [
-        "data/shapes.sqlite",
+        "tests/fixtures/polykites-n8.sqlite",
         "docs/notebook/assets/kaplan-8kite-crosswalk.json"
       ],
       "literature_source_ids": ["smkgs-hat-2024", "kaplan-path-review-2025"]
