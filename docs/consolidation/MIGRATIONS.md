@@ -44,3 +44,14 @@ deleted or rewritten.
   decisions, status and session notebooks.
 - Retired the three-session cadence in favor of explicit user scope and direct
   theorem obligations.
+
+## 2026-07-29 — AHI implementation decomposition
+
+- Replaced the 4,438-line `sturmian_source.py` implementation with a stable
+  compatibility facade.
+- Moved unchanged function bodies into dependency-ordered source, contact,
+  geometry, compiler and classification modules.
+- Added regression checks for facade completeness, dependency acyclicity and
+  module-size boundaries.
+- Preserved every repository import through the compatibility facade and kept
+  all exact certificate artifacts unchanged.
