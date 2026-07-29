@@ -4550,3 +4550,27 @@ side subdivision, multi-arc fusion), or a proved larger-radius exclusion on
 all tilings.  Pure pose and unanchored lattice phase remain unavailable by
 N7--N9.  No new carrier geometry is justified before one of these mechanisms
 is specified exactly.
+
+## D-0223 (2026-07-29) — Move the joint state from Euclidean budgets to a parity zipper
+
+The K69A angle argument is an instance of a general theorem.  In any abelian
+group without two-torsion, four even-parity additive equations force every
+participant's state difference to vanish.  Therefore no fixed-topology host
+interface can enforce the AHI ternary relation using any finite collection of
+participant-wise real lengths, angles, areas, displacements, or vector
+closure equations.  N70T retires this whole additive T-junction family.
+
+The exact escape is discrete.  K70Z introduces four directed equal-length
+side roles `E_pq`, with visible bit `p xor q`.  Endpoint angles
+`L_0=pi/3,L_1=pi/4,R_0=2pi/3,R_1=3pi/4` make an internal T-junction fill
+exactly when consecutive phases match.  A three-side word rooted at phase
+zero at both ends projects bijectively to the four even-parity words.  This is
+the first exact positive non-ordinary contact kernel in the boundary-active
+route, but its terminals are still rooted data and no polygon is claimed.
+
+Constructive work is now governed by K70P's six clauses: one support must
+realize the host and four code roles, exact subdivision, geometric terminals,
+all four disjoint patches, the full unintended-contact atlas, and a total AHI
+lift with periodicity rejection.  Coordinate work is relevant only when it
+addresses this fixed contract; a local zipper drawing alone is not progress
+on the monotile theorem.
