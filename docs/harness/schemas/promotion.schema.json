@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://einstein.local/schemas/promotion-v2.json",
+  "title": "Candidate, theorem, method, or novelty promotion",
+  "allOf": [
+    {"$ref": "research_proposal.schema.json"},
+    {"properties": {"kind": {"const": "promotion"}}, "required": ["kind", "promotion"]}
+  ]
+}

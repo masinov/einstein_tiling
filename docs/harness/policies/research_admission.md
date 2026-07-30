@@ -23,9 +23,19 @@ The proposal gate checks whether a commitment has an explicit program, scope,
 prior-art boundary, distinct outcomes, and stopping logic. It does not score
 the creativity or truth of the mathematical thesis.
 
-Experiment proposals additionally freeze the exact command, artifact roots,
-wall-clock budget, evidence path, and promotion boundary. Resource exhaustion
-and runner termination remain no-result outcomes.
+A proposal author may mark a proposal `ready` but cannot admit it. Admission is
+a separate human-authorization record that pins the proposal path and SHA-256;
+editing either invalidates authorization.
+
+Experiment proposals additionally pin the supervisor and research code paths
+to a Git revision, exact inputs, environment files, executable bytes and
+version output, verifier bytes, command,
+artifact roots, wall-clock and memory budgets, run-record paths, and promotion
+boundary. Resource exhaustion and runner termination remain no-result
+outcomes. The runner produces its own hash-bearing execution manifest.
+
+Candidate, theorem, method and novelty promotion uses a separate promotion
+contract. An experiment result never promotes itself.
 
 The legacy human-checkpoint cadence and numbered-session distance are not part
 of this policy.

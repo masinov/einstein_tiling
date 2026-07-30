@@ -41,9 +41,7 @@ def test_portfolio_is_machine_readable_and_program_level():
     assert len({program["id"] for program in programs}) == len(programs)
     assert all(program["terminal_outcomes"] for program in programs)
     assert all(program["scope_level"] for program in programs)
-    assert portfolio["selection"]["research_commitment"] == (
-        "none-during-authority-cutover"
-    )
+    assert portfolio["selection"]["research_commitment"] == "none-admitted"
 
 
 def test_creativity_is_not_forced_through_evidence_admission():
@@ -78,7 +76,7 @@ def test_experiment_gate_uses_current_proposals_not_checkpoint_sessions():
     )["rules"]
     by_glob = {rule["glob"]: rule for rule in rules}
 
-    assert "No nontrivial experiment without an admitted proposal" in instructions
+    assert "No nontrivial experiment without external admission" in instructions
     assert by_glob["scripts/run_research.py"]["disposition"] == "retained-toolbox"
     assert by_glob["docs/notebook/EXPERIMENT_TEMPLATE.md"]["disposition"] == (
         "archive-provenance"

@@ -6,15 +6,15 @@ repository.
 
 ## Reading order
 
-1. [Sturmian realization problem](research/sturmian_realization.md) states the
-   open construction, nonexistence and undecidability targets and the exact
-   all-tilings proof contract.
-2. [Periodic completion](foundations/periodic_completion.md) gives the basic
-   finite-type and period-completion theorem.
-3. [General realization theory](realization/general_theory.md) integrates the
+1. [General realization theory](realization/general_theory.md) integrates the
    source-independent results on total local factors, symbolic quotients,
    undecidability, two-body erasure, additive obstructions, contact topology
    and finite-state T-junction compilation.
+2. [Periodic completion](foundations/periodic_completion.md) gives the basic
+   finite-type and period-completion theorem.
+3. [Sturmian realization problem](research/sturmian_realization.md) states one
+   recognized-family construction, nonexistence and undecidability program and
+   its exact all-tilings proof contract.
 4. [AHI source and carrier theory](sturmian/ahi_source_and_carriers.md) records
    the exact Section 10.1 benchmark and the complete carrier-local reduction.
 5. [AHI realization case study](case_studies/ahi_realization.md) explains what

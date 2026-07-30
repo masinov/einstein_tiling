@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate a proposal and its separate hash-pinned admission record."""
+"""Validate a candidate, theorem, method, or novelty promotion dossier."""
 
 from __future__ import annotations
 
@@ -15,7 +15,7 @@ ROOT = repository_root(Path(__file__))
 
 def main(argv: list[str]) -> int:
     if len(argv) != 2:
-        print("usage: check_research_proposal.py <proposal.json>", file=sys.stderr)
+        print("usage: check_promotion.py <promotion-proposal.json>", file=sys.stderr)
         return 2
     path = Path(argv[1])
     if not path.is_absolute():
@@ -27,12 +27,13 @@ def main(argv: list[str]) -> int:
         path,
         root=ROOT,
         require_admitted=True,
+        require_promotion=True,
     )
     if errors:
         for error in errors:
             print(f"gate: {error}", file=sys.stderr)
         return 1
-    print(f"research admission: PASS [{path.relative_to(ROOT)}]")
+    print(f"promotion gate: PASS [{path.relative_to(ROOT)}]")
     return 0
 
 

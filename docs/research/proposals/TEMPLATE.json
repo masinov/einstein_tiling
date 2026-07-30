@@ -1,7 +1,7 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "RP-2026-07-30-EXAMPLE-ONLY",
-  "title": "[REPLACE with the sustained research or experiment title]",
+  "title": "[REPLACE with the experiment title]",
   "kind": "experiment",
   "status": "draft",
   "program_id": "REALIZATION-GENERAL",
@@ -12,9 +12,7 @@
   "failure_or_pivot": "[REPLACE with the finding that would end or materially redirect this campaign.]",
   "prior_art": {
     "snapshot_date": "2026-07-30",
-    "primary_sources": [
-      "[REPLACE with primary source catalog IDs or stable primary URLs]"
-    ],
+    "primary_sources": ["[REPLACE with IDs already present in docs/literature/SOURCES.json]"],
     "non_redundancy": "[REPLACE with the precise comparison showing that the proposed result is not already known.]",
     "user_facts_resolved": []
   },
@@ -34,21 +32,47 @@
   },
   "experiment": {
     "proposition": "[REPLACE with the exact proposition this computation can decide or measure.]",
-    "command": [
-      "venv/bin/python",
-      "scripts/example.py"
-    ],
+    "command": ["venv/bin/python", "scripts/example.py"],
     "budget": {
       "wall_time_seconds": 3600,
+      "memory_bytes": 17179869184,
       "max_new_artifact_bytes": 104857600,
-      "artifact_roots": [
-        "data/example-results"
-      ],
+      "artifact_roots": ["data/example-results"],
       "external_supervision": true
+    },
+    "reproducibility": {
+      "code_revision": "[REPLACE with a 40-hex commit containing the runner code]",
+      "require_clean_tree": true,
+      "code_paths": [
+        "scripts/example.py",
+        "src/einstein",
+        "scripts/run_research.py",
+        "src/einstein/repository/research.py"
+      ],
+      "inputs": [],
+      "no_external_inputs_reason": "[REPLACE when the computation has no external input files.]",
+      "environment_files": [
+        {"path": "pyproject.toml", "sha256": "[REPLACE with SHA-256]"}
+      ],
+      "executables": [
+        {
+          "path": "venv/bin/python",
+          "sha256": "[REPLACE with SHA-256 of executable bytes]",
+          "version_command": ["venv/bin/python", "--version"],
+          "version_output_sha256": "[REPLACE with SHA-256 of stdout followed by stderr]"
+        }
+      ]
     },
     "evidence": {
       "certificate_or_verifier": "[REPLACE with the exact certificate, cold verifier, or explicitly non-promotional measurement contract.]",
-      "promotion_boundary": "[REPLACE with what this result cannot establish without additional proof.]"
+      "promotion_boundary": "[REPLACE with what this result cannot establish without additional proof.]",
+      "verifier": null,
+      "no_verifier_reason": "[REPLACE only for explicitly non-promotional measurements.]"
+    },
+    "run_record": {
+      "manifest_path": "data/example-results/run-manifest.json",
+      "stdout_path": "data/example-results/stdout.log",
+      "stderr_path": "data/example-results/stderr.log"
     }
   }
 }

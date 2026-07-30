@@ -5,6 +5,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 REGISTRY = ROOT / "docs" / "harness" / "mechanisms" / "registry.json"
 CASES = ROOT / "docs" / "harness" / "evaluation" / "drift_cases.json"
+REPLAY = ROOT / "docs" / "harness" / "evaluation" / "replays" / "current.json"
 
 
 def _load(path: Path) -> dict:
@@ -31,10 +32,13 @@ def test_every_drift_case_has_a_current_mechanism_and_decision_boundary() -> Non
 
     for case in cases:
         assert case["historical_sources"]
+        assert all((ROOT / source).is_file() for source in case["historical_sources"])
         assert len(case["failure_mode"]) >= 30
         assert len(case["input_condition"]) >= 30
         assert len(case["required_decision"]) >= 30
         assert case["forbidden_decisions"]
+        assert case["forbidden_actions"]
+        assert case["required_action"] not in case["forbidden_actions"]
         assert case["mechanism_tags"]
         for tag in case["mechanism_tags"]:
             assert tag in mechanisms
@@ -54,3 +58,27 @@ def test_active_mechanisms_are_exercised_and_preserve_exploration() -> None:
         assert mechanism["evaluation_cases"]
         assert len(mechanism["creative_boundary"]) >= 30
         assert set(mechanism["evaluation_cases"]).issubset(case_ids)
+
+
+def test_current_replay_matches_every_required_decision_and_creativity_control() -> None:
+    corpus = _load(CASES)
+    replay = _load(REPLAY)
+    mechanisms = {
+        item["id"] for item in _load(REGISTRY)["mechanisms"] if item["status"] == "active"
+    }
+    results = {item["case_id"]: item for item in replay["results"]}
+    assert set(results) == {case["id"] for case in corpus["cases"]}
+
+    for case in corpus["cases"]:
+        result = results[case["id"]]
+        assert result["action"] == case["required_action"]
+        assert result["action"] not in case["forbidden_actions"]
+        assert result["mechanisms"]
+        assert set(result["mechanisms"]).issubset(mechanisms)
+        assert len(result["rationale"]) >= 30
+
+    controls = {item["control_id"]: item for item in replay["creativity_controls"]}
+    for control in corpus["creativity_controls"]:
+        result = controls[control["id"]]
+        assert result["action"] == control["required_action"]
+        assert result["action"] not in control["forbidden_actions"]

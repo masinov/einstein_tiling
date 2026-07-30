@@ -4,12 +4,17 @@ The harness gates commitment and evidence, not mathematical creativity.
 
 - [`policies/research_admission.md`](policies/research_admission.md) explains
   when a proposal is required.
-- [`schemas/research_proposal.schema.json`](schemas/research_proposal.schema.json)
-  documents the proposal data contract.
-- `scripts/check_research_proposal.py` validates admitted sustained work.
+- [`schemas/`](schemas/) separates program, experiment, promotion, admission,
+  and run-result contracts.
+- `scripts/check_research_proposal.py` validates ready work against a separate
+  hash-pinned human admission.
 - `scripts/check_experiment_gate.py` applies the stricter experiment boundary.
-- `scripts/run_research.py` executes only the frozen command under external
-  wall-clock and artifact supervision.
+- `scripts/check_promotion.py` validates promotion dossiers.
+- `scripts/check_run_manifest.py` cold-verifies execution manifests, admitted
+  limits, and pinned logs.
+- `scripts/run_research.py` verifies reproducibility pins and executes only the
+  frozen command under external wall-clock, pre-exec memory, and artifact
+  supervision.
 
 The meta-research layer is deliberately small:
 

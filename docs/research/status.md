@@ -11,9 +11,10 @@ substantial exact-computation laboratory, consolidated general realization
 theory, one reconstructed Sturmian source benchmark, and a collection of
 scoped mechanism classifications and negative case studies.
 
-The active work is repository control-plane consolidation. No historical
-carrier residue, numbered session, or old program plan is currently authorized
-as the next mathematical direction.
+The repository control-plane consolidation is complete. No historical carrier
+residue, numbered session, or old program plan is authorized as the next
+mathematical direction. No sustained mathematical proposal is currently
+admitted.
 
 ## Canonical mathematical boundary
 
@@ -41,15 +42,8 @@ The portfolio keeps four live mathematical questions visible:
 Certified discovery methods remain paused until a genuinely unclassified
 domain and an exact, meaningful evaluator are specified.
 
-## Immediate repository work
+## Next strategic action
 
-1. establish one documentation authority chain;
-2. separate free exploration from sustained programs and evidence promotion;
-3. validate the new proposal- and budget-based admission system for nontrivial
-   experiments;
-4. build a conservative bilevel mechanism registry evaluated against historical
-   drift cases; and
-5. separate knowledge, governance, evaluation, evidence, and historical logs.
-
-The next mathematical program will be selected from the whole portfolio after
-this cutover. It will not be inferred from the last chronological session.
+Compare the live programs as a whole and either admit a field-relevant thesis
+or continue ungated exploration until one is mature enough to admit. The next
+mathematical program will not be inferred from the last chronological session.

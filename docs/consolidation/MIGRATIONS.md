@@ -174,3 +174,28 @@ deleted or rewritten.
   programs and archive.
 - Preserved the chronological files at their existing paths so old citations
   and provenance remain valid.
+
+## 2026-07-30 — research-control dry run and hardening
+
+- Replayed the repository instructions as a first-time agent without producing
+  research evidence and corrected seven control-plane defects exposed by that
+  dry run.
+- Synchronized the charter, portfolio, current status, novelty protocol and
+  agent instructions around portfolio selection with no currently admitted
+  program.
+- Replaced proposal self-attestation with a separate human admission record
+  that pins exact proposal bytes.
+- Added reproducibility pins for supervisor and research code, inputs,
+  environment, executable bytes and version output, and evidence verifiers.
+- Rebuilt the research launcher around pre-exec memory, wall-clock and artifact
+  supervision, immutable logs, and a non-overwritable null-verdict manifest;
+  added a cold manifest verifier.
+- Separated experiment admission from candidate, theorem, method and novelty
+  promotion, including an all-tilings candidate dossier.
+- Turned the historical drift corpus into an action/forbidden-action replay
+  contract with a control proving free mathematical exploration remains open.
+- Versioned the executable proposal, admission, promotion and run-result
+  schemas and added parity/regression tests against the manual validators.
+
+No historical research decision, erratum, proof source, or numbered session
+was rewritten by this maintenance migration.

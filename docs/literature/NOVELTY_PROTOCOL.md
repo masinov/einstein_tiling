@@ -1,6 +1,6 @@
 # Candidate and novelty protocol
 
-**Version:** 1.1, 2026-07-21
+**Version:** 1.2, 2026-07-30
 **Policy:** fail closed.
 
 This protocol prevents four distinct claims from being conflated:
@@ -14,8 +14,9 @@ This protocol prevents four distinct claims from being conflated:
 
 ## 0. Experiment-admission gate
 
-No nontrivial computation begins until its notebook pre-registration answers
-all four questions below.
+No nontrivial computation begins until its admitted research proposal answers
+all four questions below, passes `scripts/check_experiment_gate.py`, and is
+launched through `scripts/run_research.py`.
 
 1. **Claim:** Which exact mathematical or methodological proposition can the
    run prove, refute, or measure?
@@ -36,6 +37,11 @@ No existing benchmark is escalated just because unused compute is available.
 Every promoted survivor must eventually serialize the following fields. A
 missing field is represented as `unknown` or `not-tested`, never inferred from
 another field.
+
+Promotion is authorized separately from experiment execution. The exact
+candidate dossier is represented by a `kind=promotion` proposal, hash-pinned
+under `docs/research/admissions/`, and checked by
+`scripts/check_promotion.py` before any public label is integrated.
 
 ```json
 {

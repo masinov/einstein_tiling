@@ -37,7 +37,7 @@ venv/bin/python scripts/maintenance/check_catalog.py
 
 Both commands are read-only with respect to research data.  The builder only
 rewrites the two generated JSON catalogs.  It is repository maintenance, not
-a research experiment under D-0065.
+a nontrivial experiment under the current proposal-admission policy.
 
 ## Interpretation rules
 

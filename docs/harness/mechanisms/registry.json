@@ -52,7 +52,7 @@
       "status": "active",
       "boundary": "nontrivial computation and sustained evidence campaigns",
       "guards_against": "Adaptive escalation whose next run is justified only by the preceding finite result.",
-      "rule": "Freeze the proposition, prior art, outcome meanings, command, wall time, artifact growth, and stop rule before launch.",
+      "rule": "Freeze the proposition, prior art, outcome meanings, reproducibility pins, command, wall time, memory, artifact growth, and stop rule; require a separate human admission hash before launch.",
       "creative_boundary": "On-paper exploration and disposable scratch do not require proposals.",
       "evaluation_cases": ["DRIFT-RADIUS-ESCALATION", "DRIFT-RESOURCE-STOP"]
     },
@@ -79,7 +79,7 @@
       "status": "active",
       "boundary": "candidate construction and promotion",
       "guards_against": "Confusing an intended assembly or decoder with the language of every tiling of the support.",
-      "rule": "Run the exact periodicity gate immediately and require complete contact, grouping, reflection, and total-decoder obligations before Einstein promotion.",
+      "rule": "Run and hash-pin the exact periodicity gate immediately; require separately pinned identity, tilability, contact, grouping, reflection, and all-tilings proof evidence before Einstein promotion.",
       "creative_boundary": "Attractive patches remain useful examples but carry no promotion status.",
       "evaluation_cases": ["DRIFT-UNINTENDED-PERIODIC-ASSEMBLY"]
     }

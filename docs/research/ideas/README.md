@@ -16,5 +16,5 @@ Obvious risks or counterexamples:
 Files here do not establish claims, authorize nontrivial computation, promote
 candidates, or determine the next research direction. When an idea matures
 into sustained work, its thesis and mission-level connection are recorded in
-the research portfolio or an admitted proposal. Disposable scratch work need
-not be committed at all.
+the research portfolio or a separately authorized proposal. Disposable
+scratch work need not be committed at all.

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://einstein.local/schemas/experiment-v2.json",
+  "title": "Reproducibly pinned research experiment",
+  "allOf": [
+    {"$ref": "research_proposal.schema.json"},
+    {"properties": {"kind": {"const": "experiment"}}, "required": ["kind", "experiment"]}
+  ]
+}

@@ -4,6 +4,13 @@ The drift corpus is a decision-regression suite for the research harness. Each
 case records a real repository failure, the decision a sound harness should
 have produced at the time, and decisions it must not produce.
 
+[`replays/current.json`](replays/current.json) records the currently reviewed
+action for every frozen case and for a non-drift creativity control. Tests
+check exact action agreement, forbidden-action avoidance, mechanism coverage,
+and existence of every cited historical source. This is an executable audit of
+the declared decision contract, not an automated judge of arbitrary prose or
+mathematical quality.
+
 The corpus is not a benchmark of mathematical creativity. It tests only
 commitment-boundary behavior: admission, promotion, evidence interpretation,
 and agenda selection.

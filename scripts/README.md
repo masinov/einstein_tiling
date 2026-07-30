@@ -4,17 +4,22 @@
 implementation. Shared algorithms, parsers, repository discovery and
 certificate construction live in `src/einstein/` and are tested there.
 
-The six root commands are the stable public surface:
+The seven root Python commands are the stable public surface:
 
 - `certificates.py` discovers, builds and cold-verifies retained exact
   certificate families;
 - `check_research_proposal.py` validates admitted sustained-program and
   experiment proposals;
+- `check_promotion.py` validates candidate, theorem, method, and novelty
+  promotion dossiers;
+- `check_run_manifest.py` cold-verifies supervisor-owned execution records and
+  their proposal, admission, and log hashes;
 - `check_experiment_gate.py` applies the stricter compatibility-named
   experiment boundary;
-- `run_research.py` launches admitted research commands;
-- `fetch_literature.py` maintains the pinned primary-source cache; and
-- this `README.md` documents the boundary.
+- `run_research.py` launches reproducibly pinned admitted research commands,
+  applies a pre-exec memory cap, and creates non-overwritable null-verdict
+  execution manifests;
+- `fetch_literature.py` maintains the pinned primary-source cache.
 
 Commands below the root are grouped by responsibility:
 

@@ -69,6 +69,8 @@
     {"glob": "data/sturmian-source/*", "category": "ahi-certificate", "disposition": "retained-evidence", "rationale": "Exact reconstructed source fixtures and cold-verifiable benchmark artifacts."},
     {"glob": "data/literature/README.md", "category": "source-cache-policy", "disposition": "canonical", "rationale": "Documents the ignored literature cache."},
     {"glob": "scripts/check_research_proposal.py", "category": "governance-command", "disposition": "retained-toolbox", "rationale": "Validates current sustained-program and experiment proposals against the portfolio contract."},
+    {"glob": "scripts/check_promotion.py", "category": "governance-command", "disposition": "retained-toolbox", "rationale": "Validates candidate, theorem, method and novelty promotion dossiers."},
+    {"glob": "scripts/check_run_manifest.py", "category": "governance-command", "disposition": "retained-toolbox", "rationale": "Cold-verifies externally supervised execution records and their pinned proposal, admission and logs."},
     {"glob": "scripts/check_experiment_gate.py", "category": "governance-command", "disposition": "retained-toolbox", "rationale": "Compatibility-named strict experiment proposal gate."},
     {"glob": "scripts/archive/README.md", "category": "archive-navigation", "disposition": "canonical", "rationale": "Reader-facing boundary for frozen executable provenance."},
     {"glob": "scripts/archive/MANIFEST.json", "category": "archive-manifest", "disposition": "canonical", "rationale": "Hash-pinned old/new paths for relocated historical scripts."},

@@ -182,5 +182,5 @@ families:
    hull; and
 6. a source-independent shape-only self-stapling theorem.
 
-The exact research contract is
+The exact Sturmian-program contract is
 [`../research/sturmian_realization.md`](../research/sturmian_realization.md).

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://einstein.local/schemas/admission-v1.json",
+  "title": "Human authorization of exact proposal bytes",
+  "type": "object",
+  "required": ["schema_version", "proposal_id", "proposal_path", "proposal_sha256", "status", "admitted_by", "authorization_ref", "authorized_scope", "admitted_at"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "proposal_id": {"type": "string", "pattern": "^RP-[0-9]{4}-[0-9]{2}-[0-9]{2}-[A-Z0-9-]+$"},
+    "proposal_path": {"type": "string", "minLength": 1},
+    "proposal_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "status": {"enum": ["active", "revoked"]},
+    "admitted_by": {"type": "string", "pattern": "^human:.+"},
+    "authorization_ref": {"type": "string", "minLength": 30},
+    "authorized_scope": {"type": "string", "minLength": 30},
+    "admitted_at": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$"}
+  }
+}

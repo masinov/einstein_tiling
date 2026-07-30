@@ -8,6 +8,8 @@
       "failure_mode": "A discovery search continued inside the published exhaustive n<=24 polykite horizon after the controlling fact was available and supplied by the user.",
       "input_condition": "A proposed polykite discovery campaign is wholly contained in n<=24.",
       "required_decision": "Halt discovery framing; allow only explicitly labeled reproduction, validation, or certificate-engineering work with justified value.",
+      "required_action": "HALT_DISCOVERY_FRAMING",
+      "forbidden_actions": ["ADMIT_DISCOVERY", "DEFER_PRIOR_ART"],
       "forbidden_decisions": ["admit as an unclassified discovery search", "defer the literature check until after computation"],
       "mechanism_tags": ["M-PRIOR-ART-HALT"]
     },
@@ -17,6 +19,8 @@
       "failure_mode": "A canonical ten-kite support was promoted and intensively studied before comparison revealed it was the published Turtle.",
       "input_condition": "A candidate support is ready for novelty promotion but has not been canonicalized against known primary-source outlines.",
       "required_decision": "Block promotion and expensive candidate-specific follow-up until identity comparison is complete.",
+      "required_action": "BLOCK_UNTIL_IDENTITY_CHECK",
+      "forbidden_actions": ["PROMOTE_CANDIDATE", "ESCALATE_CANDIDATE_RUNS"],
       "forbidden_decisions": ["promote under an internal candidate identifier", "treat robustness evidence as evidence of novelty"],
       "mechanism_tags": ["M-IDENTITY-BEFORE-PROMOTION"]
     },
@@ -26,6 +30,8 @@
       "failure_mode": "Radius and quotient-index computations repeatedly grew while every result explicitly failed to close the theorem obligation.",
       "input_condition": "The proposed next run differs mainly by a larger radius, index, or budget and neither outcome proves the target proposition.",
       "required_decision": "Reject the escalation or reframe it as a separately justified finite benchmark; return to the missing mathematical lemma or portfolio selection.",
+      "required_action": "REJECT_AUTOMATIC_ESCALATION",
+      "forbidden_actions": ["INCREASE_RADIUS", "INFER_THEOREM_PROGRESS"],
       "forbidden_decisions": ["infer theorem progress from accumulated finite evidence", "authorize because a larger run is the natural continuation"],
       "mechanism_tags": ["M-PORTFOLIO-RESELECTION", "M-PROPOSAL-BOUNDARY", "M-FAIL-CLOSED-EVIDENCE"]
     },
@@ -35,6 +41,8 @@
       "failure_mode": "A blocked source reconstruction was replaced by a long ladder of locally coherent carrier variants disconnected from the stated Sturmian realization theorem.",
       "input_condition": "A proposed sustained program is justified by the unresolved residue of the latest architecture-specific note rather than comparison with mission-level alternatives.",
       "required_decision": "Return to the charter and portfolio; require a general hypothesis, recognized family, or explicit terminal theorem before sustained commitment.",
+      "required_action": "RESELECT_FROM_PORTFOLIO",
+      "forbidden_actions": ["CONTINUE_LOCAL_LADDER", "COUNT_LOCAL_LEMMAS_AS_PROGRESS"],
       "forbidden_decisions": ["admit one more carrier variation solely because it is locally well posed", "count closed micro-lemmas as mission progress"],
       "mechanism_tags": ["M-AUTHORITY-CHAIN", "M-PORTFOLIO-RESELECTION"]
     },
@@ -44,6 +52,8 @@
       "failure_mode": "A composition formula found in one section of a source was incorrectly attributed to a different construction in that paper.",
       "input_condition": "A proof depends on a formula whose text is found in the source but whose construction-level attribution has not been checked in context.",
       "required_decision": "Block integration until the exact construction, hypotheses, and table or theorem context are verified against the primary source.",
+      "required_action": "BLOCK_UNTIL_ATTRIBUTION_CHECK",
+      "forbidden_actions": ["ACCEPT_TEXT_MATCH", "GUESS_SOURCE_DATA"],
       "forbidden_decisions": ["accept a grep-level citation match", "repair the proof by guessing replacement data"],
       "mechanism_tags": ["M-PRIOR-ART-HALT", "M-CLAIM-ATTRIBUTION"]
     },
@@ -53,6 +63,8 @@
       "failure_mode": "An exact octagonal support realized intended local hinge data but an unintended half-turn assembly formed a periodic translational macrotile.",
       "input_condition": "A support realizes an intended encoded patch but its unrestricted contact language and periodic assemblies have not been checked.",
       "required_decision": "Run the exact periodicity gate immediately; retire the support if a periodic tiling certificate verifies, regardless of intended states.",
+      "required_action": "RUN_PERIODICITY_GATE",
+      "forbidden_actions": ["PROMOTE_INTENDED_PATCH", "DEFER_UNRESTRICTED_TILINGS"],
       "forbidden_decisions": ["promote from intended patch behavior", "postpone unintended-contact analysis until after architecture development"],
       "mechanism_tags": ["M-UNRESTRICTED-TILINGS"]
     },
@@ -62,17 +74,29 @@
       "failure_mode": "Long exact-solver attempts ended through time or memory limits without SAT, UNSAT, or a model.",
       "input_condition": "A supervised solver exits because a declared resource limit is reached.",
       "required_decision": "Record resource_stop with no mathematical verdict; preserve exact inputs and diagnostics and require a new method justification before another run.",
+      "required_action": "RECORD_NO_RESULT",
+      "forbidden_actions": ["INFER_UNSAT", "INCREASE_BUDGET"],
       "forbidden_decisions": ["interpret exhaustion as evidence of infeasibility", "silently increase the budget"],
       "mechanism_tags": ["M-PROPOSAL-BOUNDARY", "M-FAIL-CLOSED-EVIDENCE"]
     },
     {
       "id": "DRIFT-RETIRED-CHECKPOINTS",
-      "historical_sources": ["CLAUDE.md", "docs/notebook/HUMAN_CHECKPOINTS.json", "scripts/check_experiment_gate.py"],
+      "historical_sources": ["CLAUDE.md", "docs/HUMAN_CHECKPOINTS.json", "scripts/check_experiment_gate.py"],
       "failure_mode": "A retired checkpoint policy remained embedded in templates and executable gates, allowing historical process to contradict current authority.",
       "input_condition": "Current policy retires a governance mechanism while executable tools or resumption documents still enforce it.",
       "required_decision": "Treat the authority chain as controlling and update executable policy, tests, and navigation in the same cutover.",
+      "required_action": "SYNCHRONIZE_AUTHORITY_AND_CODE",
+      "forbidden_actions": ["KEEP_CONTRADICTORY_GATE", "USE_HISTORY_AS_AUTHORITY"],
       "forbidden_decisions": ["leave contradictory enforcement live", "treat a historical registry as current authorization"],
       "mechanism_tags": ["M-AUTHORITY-CHAIN"]
+    }
+  ],
+  "creativity_controls": [
+    {
+      "id": "SAFE-FREE-EXPLORATION",
+      "input_condition": "An agent records a conjecture, analogy, proof sketch, or paper calculation without launching computation or promoting a claim.",
+      "required_action": "ALLOW_FREE_EXPLORATION",
+      "forbidden_actions": ["REQUIRE_RESEARCH_PROPOSAL", "REQUIRE_NUMBERED_SESSION"]
     }
   ]
 }

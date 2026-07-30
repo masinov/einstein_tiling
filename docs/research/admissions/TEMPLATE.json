@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "proposal_id": "RP-2026-07-30-EXAMPLE-ONLY",
+  "proposal_path": "docs/research/proposals/RP-2026-07-30-EXAMPLE-ONLY.json",
+  "proposal_sha256": "[REPLACE with the SHA-256 of the exact ready proposal]",
+  "status": "active",
+  "admitted_by": "human:[REPLACE with the authorizing person]",
+  "authorization_ref": "[REPLACE with the durable reference to explicit human authorization]",
+  "authorized_scope": "[REPLACE with what work and boundary the authorization actually covers]",
+  "admitted_at": "2026-07-30T00:00:00Z"
+}

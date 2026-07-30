@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "id": "RP-2026-07-30-EXAMPLE-PROGRAM",
+  "title": "[REPLACE with the sustained research program title]",
+  "kind": "research-program",
+  "status": "draft",
+  "program_id": "REALIZATION-GENERAL",
+  "scope_level": "architecture-independent-class",
+  "thesis": "[REPLACE with the coherent mathematical thesis pursued by the program.]",
+  "mission_connection": "[REPLACE with the exact mission-level terminal outcome this program can change.]",
+  "alternatives_considered": "[REPLACE with the whole-portfolio comparison supporting this commitment.]",
+  "failure_or_pivot": "[REPLACE with the mathematical finding that ends or redirects this program.]",
+  "prior_art": {
+    "snapshot_date": "2026-07-30",
+    "primary_sources": ["[REPLACE with catalog IDs]"],
+    "non_redundancy": "[REPLACE with the precise prior-art boundary.]",
+    "user_facts_resolved": []
+  },
+  "outcomes": [
+    {"result": "[REPLACE with one terminal result.]", "action": "[REPLACE with its program consequence.]"},
+    {"result": "[REPLACE with a distinct terminal result.]", "action": "[REPLACE with its distinct consequence.]"}
+  ],
+  "stop_rule": {
+    "condition": "[REPLACE with the theorem-level or structural redirection condition.]",
+    "no_automatic_escalation": true
+  }
+}

@@ -14,6 +14,8 @@ and should remain readable without consulting chronological session logs.
   documents rather than numbered session reports.
 - [`proposals/`](proposals/README.md) is reserved for sustained commitments and
   nontrivial experiments, not ordinary proof steps.
+- [`admissions/`](admissions/README.md) contains separate human authorization
+  records that pin exact ready-proposal bytes.
 
 Canonical results belong under [`../theory/`](../theory/README.md). Historical
 strategy and provenance belong under the archive and chronological logs. The

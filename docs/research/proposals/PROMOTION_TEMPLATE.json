@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "id": "RP-2026-07-30-EXAMPLE-PROMOTION",
+  "title": "[REPLACE with the claim being promoted]",
+  "kind": "promotion",
+  "status": "draft",
+  "program_id": "CONSTRUCTIVE-DISCOVERY",
+  "scope_level": "single-instance",
+  "thesis": "[REPLACE with the exact candidate, theorem, method, or novelty claim.]",
+  "mission_connection": "[REPLACE with the mission-level value of accepting this claim.]",
+  "alternatives_considered": "[REPLACE with weaker accurate labels and competing interpretations considered.]",
+  "failure_or_pivot": "[REPLACE with the missing or refuting evidence that blocks this promotion.]",
+  "prior_art": {
+    "snapshot_date": "2026-07-30",
+    "primary_sources": ["[REPLACE with catalog IDs]"],
+    "non_redundancy": "[REPLACE with the dated identity and novelty comparison.]",
+    "user_facts_resolved": []
+  },
+  "outcomes": [
+    {"result": "[REPLACE with the promotion conditions all passing.]", "action": "[REPLACE with the exact label and integration action permitted.]"},
+    {"result": "[REPLACE with at least one condition failing.]", "action": "[REPLACE with the weaker label, retraction, or block required.]"}
+  ],
+  "stop_rule": {
+    "condition": "[REPLACE with the finite review boundary for this exact claim.]",
+    "no_automatic_escalation": true
+  },
+  "promotion": {
+    "claim_kind": "candidate",
+    "claim_id": "[REPLACE with stable claim ID]",
+    "requested_label": "aperiodic-monotile",
+    "source_document": {"path": "docs/research/workspaces/example.md", "sha256": "[REPLACE with SHA-256]"},
+    "evidence": [{"path": "data/example/certificate.json", "sha256": "[REPLACE with SHA-256]"}],
+    "literature_sources": ["[REPLACE with catalog IDs]"],
+    "candidate_dossier": {
+      "geometry": {"path": "data/example/geometry.json", "sha256": "[REPLACE with SHA-256]"},
+      "allowed_isometries": "full-E2",
+      "identity_status": "unclassified",
+      "identity_evidence": [{"path": "data/example/identity-audit.json", "sha256": "[REPLACE with SHA-256]"}],
+      "periodicity_status": "no-periodic-certificate",
+      "periodicity_evidence": {"path": "data/example/periodicity-gate.json", "sha256": "[REPLACE with SHA-256]"},
+      "whole_plane_tilability": "not-proved",
+      "tilability_evidence": {"path": "data/example/tilability-proof.json", "sha256": "[REPLACE with SHA-256]"},
+      "contact_language": "partial",
+      "contact_evidence": {"path": "data/example/contact-atlas.json", "sha256": "[REPLACE with SHA-256]"},
+      "all_tilings_aperiodicity": "not-proved",
+      "aperiodicity_evidence": {"path": "data/example/aperiodicity-proof.json", "sha256": "[REPLACE with SHA-256]"},
+      "total_decoder": "not-proved",
+      "decoder_evidence": {"path": "data/example/decoder-proof.json", "sha256": "[REPLACE with SHA-256]"}
+    }
+  }
+}

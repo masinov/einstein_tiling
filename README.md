@@ -1,12 +1,14 @@
 # Einstein tiling research
 
-This repository studies when finite symbolic aperiodic tiling systems can be
-realized by one connected unmarked Euclidean polygon. Its current central
-question is the Sturmian realization problem:
+This repository studies connected unmarked planar tiles that tile the plane
+but admit no periodic tiling.  Its current portfolio includes general
+one-support realization, structural characterization, construction of a
+genuinely different Einstein family, and Sturmian systems as one important
+test family.
 
-> Construct a connected unmarked polygon whose every tiling admits a total
-> finite-radius map to an aperiodic Sturmian tiling system; or prove
-> nonexistence/undecidability for a clearly defined realization family.
+The field-level mission and the currently available program choices are
+controlled by `docs/research/charter.md` and
+`docs/research/portfolio.json`; this README does not select one of them.
 
 No new monotile has been found here. The historical Hat/Turtle, Spectre and
 polykite computations are retained as exact controls and reproductions.
@@ -48,7 +50,7 @@ reader-facing mathematical authority.
 - general results on total decoding, periodic carriers, marked compiler
   undecidability, two-body erasure and multi-participant contact languages;
 - a large historical collection of frozen experiments and scoped geometric
-  derivations, currently being consolidated.
+  derivations, separated from the current research control plane.
 
 ## Code and tests
 

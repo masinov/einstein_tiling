@@ -13,12 +13,18 @@ from einstein.repository.research import validate_research_proposal
 ROOT = repository_root(Path(__file__))
 
 
-def validate(path: Path) -> list[str]:
+def validate(
+    path: Path,
+    *,
+    root: Path = ROOT,
+    admission_path: Path | None = None,
+) -> list[str]:
     return validate_research_proposal(
         path,
-        root=ROOT,
+        root=root,
         require_admitted=True,
         require_experiment=True,
+        admission_path=admission_path,
     )
 
 

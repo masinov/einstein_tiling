@@ -64,18 +64,21 @@ explicit review.
   independent primary data before its output feeds a claim. User-supplied
   prior-art facts are halt conditions until checked against primary sources
   and propagated through the affected claim registry.
-- **No nontrivial experiment without an admitted proposal.** Before writing or
+- **No nontrivial experiment without external admission.** Before writing or
   launching a census, radius/index escalation, SAT/SMT/CAD search or other
   research runner, start from
-  `docs/research/proposals/TEMPLATE.json`, admit the completed proposal, and
-  pass `venv/bin/python scripts/check_experiment_gate.py <proposal>`. Launch
-  the exact frozen command through
+  `docs/research/proposals/TEMPLATE.json`. A ready proposal is not authorized
+  until a human-approved record under `docs/research/admissions/` pins its
+  exact SHA-256. Then pass
+  `venv/bin/python scripts/check_experiment_gate.py <proposal>` and launch the
+  exact reproducibly pinned command through
   `scripts/run_research.py <proposal> -- <command>`. Free on-paper
   exploration, read-only diagnostics, catalog builders and unit/certificate
   regression tests are exempt.
-- **Externally supervise native solvers.** A declared wall-clock stop must be
-  enforced outside the solver process. An internal timeout alone is not a
-  valid stop.
+- **Externally supervise native solvers.** Declared wall-clock and memory stops
+  must be enforced outside the solver process. An internal timeout alone is
+  not a valid stop. Every run writes a non-overwritable execution manifest;
+  execution completion is not itself a research verdict.
 - **Fail closed.** Negative results and budget exhaustion remain recorded.
   Finite evidence never becomes a theorem by accumulation, and a solver
   resource stop is not SAT or UNSAT.
@@ -83,6 +86,11 @@ explicit review.
   from an attractive patch. It must pass the immediate exact periodicity gate
   and ultimately the full contact-atlas, grouping and total-decoder contract,
   including reflections and unintended contacts.
+- **Promotion is a separate boundary.** Candidate, theorem, method and novelty
+  claims require a hash-pinned promotion proposal and admission record.
+  Candidate promotion runs `scripts/check_promotion.py`; the label
+  `aperiodic-monotile` additionally requires proved whole-plane tilability,
+  complete contact language and an all-tilings aperiodicity proof.
 
 ## Environment
 

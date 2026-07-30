@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://einstein.local/schemas/research-program-v2.json",
+  "title": "Sustained research-program proposal",
+  "allOf": [
+    {"$ref": "research_proposal.schema.json"},
+    {"properties": {"kind": {"const": "research-program"}}, "required": ["kind"]}
+  ]
+}

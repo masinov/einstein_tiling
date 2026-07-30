@@ -28,8 +28,12 @@ supersede that old description.
   non-authoritative space for conjectures, analogies, sketches, and questions.
 - [`research/workspaces/`](research/workspaces/README.md) holds problem-centered
   working notes and proof drafts. A workspace is not a claim registry.
-- [`research/proposals/`](research/proposals/README.md) contains admitted
-  sustained commitments and nontrivial experiment specifications.
+- [`research/proposals/`](research/proposals/README.md) contains ready or
+  closed sustained commitments, experiment specifications, and promotion
+  dossiers.
+- [`research/admissions/`](research/admissions/README.md) records separate
+  human authorization of exact proposal bytes; proposal authors cannot admit
+  themselves.
 - [`theory/`](theory/README.md) contains integrated mathematical statements and
   their dependency-oriented exposition.
 - [`literature/`](literature/README.md) contains the source catalog, reviews,
