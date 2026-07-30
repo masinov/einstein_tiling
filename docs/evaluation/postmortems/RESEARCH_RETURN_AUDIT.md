@@ -57,7 +57,7 @@ survivors rather than one globally ranked corpus. The defensible package is a
 reproduction plus research-governance postmortem. A clean replay would have
 only two positives and is not authorized because its expected research return
 does not justify the computation. See
-`docs/benchmarks/E1_CLASSIFIED_CORPUS_ASSESSMENT.md`.
+`docs/evaluation/postmortems/E1_CLASSIFIED_CORPUS_ASSESSMENT.md`.
 
 ### 3. T2.C1/T2.C5: audit closed as a worked control
 

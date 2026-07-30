@@ -181,8 +181,8 @@
       "dependencies": [],
       "source_documents": [
         "docs/literature/POLYKITE_BASELINE.md",
-        "docs/literature/RESEARCH_RETURN_AUDIT.md",
-        "docs/benchmarks/E1_CLASSIFIED_CORPUS_ASSESSMENT.md"
+        "docs/evaluation/postmortems/RESEARCH_RETURN_AUDIT.md",
+        "docs/evaluation/postmortems/E1_CLASSIFIED_CORPUS_ASSESSMENT.md"
       ],
       "artifact_paths": [
         "tests/fixtures/polykites-n8.sqlite",
@@ -351,7 +351,7 @@
       "ledger_ids": [],
       "dependencies": [],
       "source_documents": [
-        "docs/literature/RESEARCH_RETURN_AUDIT.md",
+        "docs/evaluation/postmortems/RESEARCH_RETURN_AUDIT.md",
         "docs/literature/METHODS_MATRIX.md"
       ],
       "artifact_paths": [],

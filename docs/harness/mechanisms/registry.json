@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "activation_policy": {
+    "automatic_runtime_mutation": false,
+    "required_steps": [
+      "state the observed process failure",
+      "define the commitment boundary affected",
+      "replay the proposed mechanism against frozen drift cases",
+      "review creativity costs and false-positive risks",
+      "activate by an explicit version-controlled human decision"
+    ]
+  },
+  "mechanisms": [
+    {
+      "id": "M-AUTHORITY-CHAIN",
+      "status": "active",
+      "boundary": "research orientation and resumption",
+      "guards_against": "Chronological logs or retired policies silently becoming the current agenda.",
+      "rule": "Read the charter, portfolio, current status, and canonical theory before selecting sustained work; historical logs are evidence, not authority.",
+      "creative_boundary": "Free exploration may begin anywhere, but it cannot become the agenda merely because it was the last note written.",
+      "evaluation_cases": ["DRIFT-LOCAL-LADDER", "DRIFT-RETIRED-CHECKPOINTS"]
+    },
+    {
+      "id": "M-PORTFOLIO-RESELECTION",
+      "status": "active",
+      "boundary": "admission of a sustained research program",
+      "guards_against": "Local hill-climbing through indefinitely extensible instances and carrier variants.",
+      "rule": "Compare the proposal with the whole live portfolio and name its mission-level terminal outcome, scope, and redirection condition.",
+      "creative_boundary": "Examples and narrow lemmas remain welcome in workspaces; only sustained resource commitment is compared globally.",
+      "evaluation_cases": ["DRIFT-LOCAL-LADDER", "DRIFT-RADIUS-ESCALATION"]
+    },
+    {
+      "id": "M-PRIOR-ART-HALT",
+      "status": "active",
+      "boundary": "research admission and novelty claims",
+      "guards_against": "Spending research effort inside a published classified region or repeating known work as discovery.",
+      "rule": "User-supplied prior-art facts and discovered controlling sources halt promotion until checked against primary sources and propagated to affected claims.",
+      "creative_boundary": "Reading, reproduction, and benchmark work remain possible when labeled as such.",
+      "evaluation_cases": ["DRIFT-POLYKITE-HORIZON", "DRIFT-SOURCE-MISATTRIBUTION"]
+    },
+    {
+      "id": "M-IDENTITY-BEFORE-PROMOTION",
+      "status": "active",
+      "boundary": "candidate promotion",
+      "guards_against": "Promoting a known support under a new coordinate representation or internal identifier.",
+      "rule": "Canonicalize and compare every proposed support with the primary known-shape registry before novelty language or expensive follow-up.",
+      "creative_boundary": "Blind rediscovery may still be retained as method validation after reclassification.",
+      "evaluation_cases": ["DRIFT-TURTLE-IDENTITY"]
+    },
+    {
+      "id": "M-PROPOSAL-BOUNDARY",
+      "status": "active",
+      "boundary": "nontrivial computation and sustained evidence campaigns",
+      "guards_against": "Adaptive escalation whose next run is justified only by the preceding finite result.",
+      "rule": "Freeze the proposition, prior art, outcome meanings, command, wall time, artifact growth, and stop rule before launch.",
+      "creative_boundary": "On-paper exploration and disposable scratch do not require proposals.",
+      "evaluation_cases": ["DRIFT-RADIUS-ESCALATION", "DRIFT-RESOURCE-STOP"]
+    },
+    {
+      "id": "M-FAIL-CLOSED-EVIDENCE",
+      "status": "active",
+      "boundary": "interpretation and integration of evidence",
+      "guards_against": "Treating finite failure, solver exhaustion, or accumulated negative instances as a theorem.",
+      "rule": "Resource stops and bounded evidence retain their exact three-valued status and cannot be promoted without a proof or independently checkable certificate.",
+      "creative_boundary": "Signals may guide conjecture formation when quarantined from the certificate path.",
+      "evaluation_cases": ["DRIFT-RADIUS-ESCALATION", "DRIFT-RESOURCE-STOP"]
+    },
+    {
+      "id": "M-CLAIM-ATTRIBUTION",
+      "status": "active",
+      "boundary": "use of external results in a proof or proposal",
+      "guards_against": "Finding a formula somewhere in a source and attaching it to the wrong construction.",
+      "rule": "Verify that the cited statement applies to the exact construction and hypotheses being used, not merely that matching text occurs in the paper.",
+      "creative_boundary": "Unverified analogies may remain explicit conjectural prompts.",
+      "evaluation_cases": ["DRIFT-SOURCE-MISATTRIBUTION"]
+    },
+    {
+      "id": "M-UNRESTRICTED-TILINGS",
+      "status": "active",
+      "boundary": "candidate construction and promotion",
+      "guards_against": "Confusing an intended assembly or decoder with the language of every tiling of the support.",
+      "rule": "Run the exact periodicity gate immediately and require complete contact, grouping, reflection, and total-decoder obligations before Einstein promotion.",
+      "creative_boundary": "Attractive patches remain useful examples but carry no promotion status.",
+      "evaluation_cases": ["DRIFT-UNINTENDED-PERIODIC-ASSEMBLY"]
+    }
+  ]
+}

@@ -6,8 +6,11 @@ not be read in numerical order to determine project status.
 
 Use these entry points instead:
 
-- `../theory/STURMIAN_REALIZATION_BOUNDARY.md` for the live problem;
-- `../theory/GENERAL_REALIZATION_THEOREMS.md` for reusable results;
+- `../research/charter.md` for the field-level mission;
+- `../research/portfolio.json` for the current program option set;
+- `../research/status.md` for current status;
+- `../theory/research/sturmian_realization.md` for the Sturmian program;
+- `../theory/realization/general_theory.md` for reusable results;
 - `../consolidation/CLAIMS.json` for claim-level disposition; and
 - `../consolidation/FILE_DISPOSITIONS.json` for the lifecycle of a particular
   session, script or artifact.

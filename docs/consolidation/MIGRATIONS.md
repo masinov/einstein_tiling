@@ -4,6 +4,25 @@ This log records repository-layout changes separately from the append-only
 research decision and session histories. A migration changes navigation or
 storage responsibility; it does not create a mathematical claim.
 
+## 2026-07-30 — current research authority layer
+
+- Added `docs/README.md` as the documentation lifecycle and authority map.
+- Added `docs/research/charter.md`, `portfolio.json`, and `status.md` as the
+  single current research control plane.
+- Added explicitly non-authoritative `docs/research/ideas/` and
+  `docs/research/workspaces/` lanes so creativity is not forced through the
+  evidence gate.
+- Updated root instructions and navigation to use the new authority chain and
+  repaired the notebook guide's stale theory links.
+- Left chronological status, decisions, experiments, sessions, errata, and all
+  evidence payloads physically untouched. Their later archival migration
+  remains separately reviewable.
+- Replaced checkpoint/session experiment admission with JSON proposals tied to
+  the current program portfolio, exact frozen commands, and externally
+  supervised wall-clock and artifact-growth budgets.
+- Retained `scripts/check_experiment_gate.py` as a compatibility command name,
+  but changed its input and semantics to the current proposal contract.
+
 ## 2026-07-29 — theory and documentation architecture
 
 - Replaced the flat chronological `docs/theory/01...83` surface with
@@ -130,3 +149,28 @@ deleted or rewritten.
   `provenance`) and then by mathematical domain, with location-independent
   repository paths and executable tier coverage.
 - Preserved the hash-pinned script archive and research provenance unchanged.
+
+## 2026-07-30 — research authority and harness cutover
+
+- Established `docs/research/` as the current charter, portfolio, status,
+  proposal and free-workspace layer; chronological logs remain provenance.
+- Replaced the retired notebook/checkpoint experiment admission path with a
+  proposal that freezes the exact command, meanings of outcomes, wall time,
+  artifact growth and evidence boundary.
+- Added external process-group supervision for admitted research commands.
+- Added a deliberately small research-mechanism registry and eight frozen
+  historical drift cases under `docs/harness/`.
+- Kept free mathematical exploration outside the proposal and mechanism
+  gates; the gates act only at commitment, computation, evidence and promotion
+  boundaries.
+
+## 2026-07-30 — evaluation and history boundaries
+
+- Removed the misleading one-document `docs/benchmarks/` category.
+- Moved the E1 assessment and research-return audit under
+  `docs/evaluation/postmortems/`.
+- Added `docs/history/README.md` as one navigation layer for the stable
+  append-only status, decisions, experiments, checkpoints, sessions, old
+  programs and archive.
+- Preserved the chronological files at their existing paths so old citations
+  and provenance remain valid.

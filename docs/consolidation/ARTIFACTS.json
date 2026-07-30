@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "snapshot_date": "2026-07-29",
+  "snapshot_date": "2026-07-30",
   "generated_by": "scripts/maintenance/build_catalog.py",
   "semantics": "Tracked evidence is hash-pinned individually. Ignored stores are storage inventories only and are not promoted to mathematical evidence.",
   "summary": {

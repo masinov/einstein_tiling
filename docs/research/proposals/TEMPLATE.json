@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "id": "RP-2026-07-30-EXAMPLE-ONLY",
+  "title": "[REPLACE with the sustained research or experiment title]",
+  "kind": "experiment",
+  "status": "draft",
+  "program_id": "REALIZATION-GENERAL",
+  "scope_level": "architecture-independent-class",
+  "thesis": "[REPLACE with the coherent mathematical thesis being tested.]",
+  "mission_connection": "[REPLACE with why this can change a mission-level construction, classification, or undecidability question.]",
+  "alternatives_considered": "[REPLACE with the higher-level strategies considered and why this commitment is preferable now.]",
+  "failure_or_pivot": "[REPLACE with the finding that would end or materially redirect this campaign.]",
+  "prior_art": {
+    "snapshot_date": "2026-07-30",
+    "primary_sources": [
+      "[REPLACE with primary source catalog IDs or stable primary URLs]"
+    ],
+    "non_redundancy": "[REPLACE with the precise comparison showing that the proposed result is not already known.]",
+    "user_facts_resolved": []
+  },
+  "outcomes": [
+    {
+      "result": "[REPLACE with one possible result class.]",
+      "action": "[REPLACE with the distinct program decision this result would support.]"
+    },
+    {
+      "result": "[REPLACE with a genuinely different possible result class.]",
+      "action": "[REPLACE with a genuinely different program decision.]"
+    }
+  ],
+  "stop_rule": {
+    "condition": "[REPLACE with the finite logical or resource condition that ends the work.]",
+    "no_automatic_escalation": true
+  },
+  "experiment": {
+    "proposition": "[REPLACE with the exact proposition this computation can decide or measure.]",
+    "command": [
+      "venv/bin/python",
+      "scripts/example.py"
+    ],
+    "budget": {
+      "wall_time_seconds": 3600,
+      "max_new_artifact_bytes": 104857600,
+      "artifact_roots": [
+        "data/example-results"
+      ],
+      "external_supervision": true
+    },
+    "evidence": {
+      "certificate_or_verifier": "[REPLACE with the exact certificate, cold verifier, or explicitly non-promotional measurement contract.]",
+      "promotion_boundary": "[REPLACE with what this result cannot establish without additional proof.]"
+    }
+  }
+}

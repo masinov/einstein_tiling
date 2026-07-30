@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://einstein.local/schemas/research-proposal-v1.json",
+  "title": "Einstein tiling research proposal",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "title",
+    "kind",
+    "status",
+    "program_id",
+    "scope_level",
+    "thesis",
+    "mission_connection",
+    "alternatives_considered",
+    "failure_or_pivot",
+    "prior_art",
+    "outcomes",
+    "stop_rule"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "id": {"type": "string", "pattern": "^RP-[0-9]{4}-[0-9]{2}-[0-9]{2}-[A-Z0-9-]+$"},
+    "title": {"type": "string", "minLength": 8},
+    "kind": {"enum": ["research-program", "experiment"]},
+    "status": {"enum": ["draft", "admitted", "closed"]},
+    "program_id": {"type": "string"},
+    "scope_level": {
+      "enum": [
+        "field-level-problem",
+        "architecture-independent-class",
+        "recognized-mathematical-family",
+        "specific-construction",
+        "single-instance"
+      ]
+    },
+    "thesis": {"type": "string", "minLength": 30},
+    "mission_connection": {"type": "string", "minLength": 30},
+    "alternatives_considered": {"type": "string", "minLength": 30},
+    "failure_or_pivot": {"type": "string", "minLength": 30},
+    "prior_art": {
+      "type": "object",
+      "required": ["snapshot_date", "primary_sources", "non_redundancy", "user_facts_resolved"],
+      "properties": {
+        "snapshot_date": {"type": "string", "format": "date"},
+        "primary_sources": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "non_redundancy": {"type": "string", "minLength": 30},
+        "user_facts_resolved": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "outcomes": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["result", "action"],
+        "properties": {
+          "result": {"type": "string", "minLength": 30},
+          "action": {"type": "string", "minLength": 30}
+        }
+      }
+    },
+    "stop_rule": {
+      "type": "object",
+      "required": ["condition", "no_automatic_escalation"],
+      "properties": {
+        "condition": {"type": "string", "minLength": 30},
+        "no_automatic_escalation": {"const": true}
+      }
+    },
+    "experiment": {
+      "type": "object",
+      "required": ["proposition", "command", "budget", "evidence"]
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"kind": {"const": "experiment"}}},
+      "then": {"required": ["experiment"]}
+    }
+  ]
+}

@@ -13,6 +13,13 @@ polykite computations are retained as exact controls and reproductions.
 
 ## Start here
 
+- [Documentation and authority map](docs/README.md) — current research,
+  canonical theory, evidence and historical provenance.
+- [Research charter](docs/research/charter.md) — field-level mission, creative
+  exploration, sustained programs and strict promotion boundaries.
+- [Research portfolio](docs/research/portfolio.json) and
+  [current status](docs/research/status.md) — the program-level option set and
+  concise present state.
 - [General realization theory](docs/theory/realization/general_theory.md)
   — the reusable mathematics independent of one source construction.
 - [Sturmian realization boundary](docs/theory/research/sturmian_realization.md)
@@ -21,8 +28,8 @@ polykite computations are retained as exact controls and reproductions.
 - [Theory guide](docs/theory/README.md) — evidence levels and provenance.
 - [Literature](docs/literature/README.md) — primary-source catalog, reviews
   and novelty permissions.
-- [Consolidation map](docs/consolidation/README.md) — claim registry, file
-  dispositions and artifact inventory.
+- [Consolidation map](docs/consolidation/README.md) — temporary claim, file and
+  artifact migration control.
 - [Historical archive guide](docs/archive/README.md) — provenance and frozen
   research without treating it as the live program.
 

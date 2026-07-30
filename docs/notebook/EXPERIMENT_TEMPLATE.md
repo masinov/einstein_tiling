@@ -1,3 +1,11 @@
+# Retired checkpoint-era experiment template
+
+This file is historical. New experiments use
+`docs/research/proposals/TEMPLATE.json`, pass
+`scripts/check_experiment_gate.py`, and launch through
+`scripts/run_research.py`. The preserved text below documents the former
+session/checkpoint schema; it is not current authorization.
+
 # Session NN — YYYY-MM-DD — experiment title
 
 ## Experiment pre-registration

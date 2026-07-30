@@ -1,4 +1,4 @@
-"""Mechanical checks for the post-ERR-005 experiment admission gate."""
+"""Mechanical checks for research proposal and historical correction policy."""
 
 import importlib.util
 import json
@@ -21,7 +21,7 @@ def load_gate_module():
 
 def test_agent_instructions_separate_research_from_maintenance():
     instructions = (ROOT / "CLAUDE.md").read_text()
-    assert "No nontrivial experiment without preregistration" in instructions
+    assert "No nontrivial experiment without an admitted proposal" in instructions
     assert "Repository maintenance and consolidation" in instructions
     assert "Do not create a numbered" in instructions
     assert "three-session checkpoint cadence is retired" in instructions
@@ -83,20 +83,101 @@ def test_stm1_source_correction_is_fail_closed():
     assert "ST-M1.SYN0" in ledger
 
 
-def test_gate_rejects_template_and_accepts_completed_record(tmp_path):
+def test_gate_rejects_template_and_accepts_admitted_experiment(tmp_path):
     gate = load_gate_module()
-    template = ROOT / "docs" / "notebook" / "EXPERIMENT_TEMPLATE.md"
+    template = ROOT / "docs" / "research" / "proposals" / "TEMPLATE.json"
     assert gate.validate(template)
 
-    note = tmp_path / "2026-07-21-session-58.md"
-    note.write_text(
-        "# Session 58\n\n## Experiment pre-registration\n\n"
-        "### Proposition\n\nDetermine whether a fixed corpus admits an exact coordinate bijection.\n\n"
-        "### Prior art and non-redundancy\n\nThe aggregate source artifact was audited; no coordinate-level crosswalk was located.\n\n"
-        "### Outcome decisions\n\n- A bijection packages the corpus as a benchmark and closes the comparison.\n"
-        "- A mismatch identifies a semantic difference and blocks equivalence claims.\n\n"
-        "### Stop rule and finite justification\n\nThe fixed 116-page corpus is finite; stop after every listed shape is processed once.\n\n"
-        "### Human checkpoint\n\nUse HC-2026-07-21-01 at session distance one with zero planned large artifacts.\n\n"
-        "## Results\n\nNot run.\n"
+    proposal = tmp_path / "RP-2026-07-30-CROSSWALK.json"
+    proposal.write_text(
+        json.dumps(
+            {
+                "schema_version": 1,
+                "id": "RP-2026-07-30-CROSSWALK",
+                "title": "Exact coordinate crosswalk control",
+                "kind": "experiment",
+                "status": "admitted",
+                "program_id": "CERTIFIED-DISCOVERY-METHODS",
+                "scope_level": "recognized-mathematical-family",
+                "thesis": (
+                    "A fixed source corpus and repository corpus may admit an "
+                    "exact canonical coordinate bijection."
+                ),
+                "mission_connection": (
+                    "The result tests whether retained exact identity machinery "
+                    "is trustworthy before future discovery use."
+                ),
+                "alternatives_considered": (
+                    "Aggregate equality was considered but cannot identify "
+                    "shape-level semantic mismatches."
+                ),
+                "failure_or_pivot": (
+                    "Any unmatched shape blocks equivalence and redirects the "
+                    "work to coordinate-semantics diagnosis."
+                ),
+                "prior_art": {
+                    "snapshot_date": "2026-07-30",
+                    "primary_sources": ["kaplan-8kites-2023"],
+                    "non_redundancy": (
+                        "The source publishes aggregate records but the admitted "
+                        "test concerns a coordinate-level bijection."
+                    ),
+                    "user_facts_resolved": [],
+                },
+                "outcomes": [
+                    {
+                        "result": (
+                            "Every source shape has one exact canonical repository "
+                            "mate with matching classification."
+                        ),
+                        "action": (
+                            "Retain the crosswalk as a finite external control and "
+                            "close this comparison without extension."
+                        ),
+                    },
+                    {
+                        "result": (
+                            "At least one source shape is absent, duplicated, or "
+                            "classified differently by exact identity."
+                        ),
+                        "action": (
+                            "Block equivalence claims and diagnose the coordinate "
+                            "or classification semantics before reuse."
+                        ),
+                    },
+                ],
+                "stop_rule": {
+                    "condition": (
+                        "Process each member of the fixed finite corpus exactly "
+                        "once and stop after the final record."
+                    ),
+                    "no_automatic_escalation": True,
+                },
+                "experiment": {
+                    "proposition": (
+                        "Decide whether the two fixed finite corpora are related "
+                        "by an exact canonical coordinate bijection."
+                    ),
+                    "command": ["venv/bin/python", "scripts/example.py"],
+                    "budget": {
+                        "wall_time_seconds": 60,
+                        "max_new_artifact_bytes": 1024,
+                        "artifact_roots": ["data/example-results"],
+                        "external_supervision": True,
+                    },
+                    "evidence": {
+                        "certificate_or_verifier": (
+                            "A deterministic per-shape mapping table is checked "
+                            "by an independent exact identity verifier."
+                        ),
+                        "promotion_boundary": (
+                            "A passing crosswalk validates identity machinery but "
+                            "does not establish tile or method novelty."
+                        ),
+                    },
+                },
+            },
+            indent=2,
+        )
     )
-    assert gate.validate(note) == []
+    assert gate.validate(proposal) == []

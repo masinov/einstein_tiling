@@ -98,6 +98,7 @@ def test_script_root_is_a_small_stable_command_surface():
     assert root_commands == {
         "certificates.py",
         "check_experiment_gate.py",
+        "check_research_proposal.py",
         "fetch_literature.py",
         "run_research.py",
     }

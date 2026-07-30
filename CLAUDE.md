@@ -1,10 +1,16 @@
 # Einstein tiling research — repository contract
 
-The current research goal is stated in
-`docs/theory/research/sturmian_realization.md`. Reusable mathematics is
-integrated in `docs/theory/realization/general_theory.md`. The original
-search specification and chronological status files are historical sources,
-not current navigation authorities.
+Current research authority is, in order:
+
+1. `docs/research/charter.md` for the field-level mission and research modes;
+2. `docs/research/portfolio.json` for the current program-level option set;
+3. `docs/research/status.md` for the concise present state; and
+4. `docs/theory/README.md` for canonical mathematics.
+
+The documentation lifecycle is mapped in `docs/README.md`. The original
+search specifications, chronological status, decisions, experiments,
+checkpoints, and session files are historical sources, not current navigation
+or authorization authorities.
 
 ## Choose the work mode first
 
@@ -12,15 +18,22 @@ not current navigation authorities.
 
 Before proposing research work, read:
 
-1. `docs/theory/research/sturmian_realization.md`;
-2. `docs/theory/realization/general_theory.md`;
-3. `docs/literature/RESEARCH_RETURN_AUDIT.md`; and
-4. `docs/literature/NOVELTY_PROTOCOL.md`.
+1. `docs/research/charter.md`;
+2. `docs/research/portfolio.json`;
+3. `docs/research/status.md`;
+4. the relevant canonical theory; and
+5. the relevant primary-source reviews in `docs/literature/`.
 
 Research counts as progress only when it directly advances one of the stated
 construction, nonexistence or undecidability obligations. A locally correct
 lemma about an invented carrier is not progress merely because it is
 verifiable.
+
+Free on-paper exploration does not need a formal proposal. It may live in
+`docs/research/ideas/`, a problem-centered workspace, or disposable scratch.
+It is non-authoritative and cannot silently become a sustained program,
+promote a candidate, or authorize nontrivial computation. Gate commitment and
+promotion, not mathematical creativity.
 
 Use the append-only notebook, decisions, experiments and errata only when new
 research evidence actually requires provenance. Do not create a numbered
@@ -51,13 +64,15 @@ explicit review.
   independent primary data before its output feeds a claim. User-supplied
   prior-art facts are halt conditions until checked against primary sources
   and propagated through the affected claim registry.
-- **No nontrivial experiment without preregistration.** Before writing or
+- **No nontrivial experiment without an admitted proposal.** Before writing or
   launching a census, radius/index escalation, SAT/SMT/CAD search or other
-  research runner, complete `docs/notebook/EXPERIMENT_TEMPLATE.md` and pass
-  `venv/bin/python scripts/check_experiment_gate.py <notebook>`. Launch it
-  through `scripts/run_research.py <notebook> -- <command>`. Read-only
-  diagnostics, catalog builders and unit/certificate regression tests are
-  exempt.
+  research runner, start from
+  `docs/research/proposals/TEMPLATE.json`, admit the completed proposal, and
+  pass `venv/bin/python scripts/check_experiment_gate.py <proposal>`. Launch
+  the exact frozen command through
+  `scripts/run_research.py <proposal> -- <command>`. Free on-paper
+  exploration, read-only diagnostics, catalog builders and unit/certificate
+  regression tests are exempt.
 - **Externally supervise native solvers.** A declared wall-clock stop must be
   enforced outside the solver process. An internal timeout alone is not a
   valid stop.

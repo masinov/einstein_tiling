@@ -1,71 +1,113 @@
 #!/usr/bin/env python3
-"""Launch a pre-registered research command within checkpoint budgets."""
+"""Launch the exact command frozen in an admitted experiment proposal."""
 
 from __future__ import annotations
 
-import json
-import re
+import os
+import signal
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 from einstein.repository import repository_root
-from einstein.repository.research import tree_bytes, validate_preregistration
+from einstein.repository.research import load_admitted_experiment, tree_bytes
 
 
 ROOT = repository_root(Path(__file__))
-CHECKPOINTS = ROOT / "docs" / "HUMAN_CHECKPOINTS.json"
+POLL_SECONDS = 1.0
+TIMEOUT_RETURN_CODE = 124
+ARTIFACT_RETURN_CODE = 125
+
+
+def terminate_group(process: subprocess.Popen[bytes]) -> None:
+    """Terminate the complete externally supervised process group."""
+
+    if process.poll() is not None:
+        return
+    try:
+        os.killpg(process.pid, signal.SIGTERM)
+        process.wait(timeout=5)
+    except (ProcessLookupError, subprocess.TimeoutExpired):
+        if process.poll() is None:
+            try:
+                os.killpg(process.pid, signal.SIGKILL)
+            except ProcessLookupError:
+                pass
+            process.wait()
 
 
 def main(argv: list[str]) -> int:
     if len(argv) < 4 or argv[2] != "--":
-        print("usage: run_research.py <session-notebook.md> -- <command> ...", file=sys.stderr)
+        print(
+            "usage: run_research.py <proposal.json> -- <exact command> ...",
+            file=sys.stderr,
+        )
         return 2
 
-    notebook = Path(argv[1])
-    if not notebook.is_absolute():
-        notebook = ROOT / notebook
-    errors = validate_preregistration(notebook)
-    if errors:
-        for error in errors:
+    proposal_path = Path(argv[1])
+    if not proposal_path.is_absolute():
+        proposal_path = ROOT / proposal_path
+    if not proposal_path.is_file():
+        print(f"gate: missing proposal: {proposal_path}", file=sys.stderr)
+        return 2
+
+    try:
+        proposal = load_admitted_experiment(proposal_path, ROOT)
+    except ValueError as exc:
+        for error in str(exc).splitlines():
             print(f"gate: {error}", file=sys.stderr)
         return 1
 
-    match = re.search(r"session-(\d+)\.md$", notebook.name)
-    if not match:
-        print("gate: notebook filename must contain session-NN.md", file=sys.stderr)
-        return 1
-    session = int(match.group(1))
-
-    checkpoint = json.loads(CHECKPOINTS.read_text())
-    policy = checkpoint["policy"]
-    latest = checkpoint["latest"]
-    distance = session - latest["through_session"]
-    if distance < 1 or distance > policy["max_research_sessions"]:
-        print(
-            f"gate: session {session} is outside checkpoint {latest['id']} "
-            f"allowance 1..{policy['max_research_sessions']}",
-            file=sys.stderr,
-        )
+    command = argv[3:]
+    frozen_command = proposal["experiment"]["command"]
+    if command != frozen_command:
+        print("gate: command does not match proposal experiment.command", file=sys.stderr)
         return 1
 
-    current = sum(tree_bytes(ROOT / root) for root in policy["artifact_roots"])
-    baseline = sum(latest["artifact_bytes"].values())
-    growth = max(0, current - baseline)
-    if growth >= policy["max_new_artifact_bytes"]:
-        print(
-            f"gate: artifact growth {growth} reached checkpoint limit "
-            f"{policy['max_new_artifact_bytes']}",
-            file=sys.stderr,
-        )
-        return 1
+    budget = proposal["experiment"]["budget"]
+    roots = [ROOT / item for item in budget["artifact_roots"]]
+    baseline = sum(tree_bytes(path) for path in roots)
+    max_growth = budget["max_new_artifact_bytes"]
+    wall_seconds = budget["wall_time_seconds"]
 
     print(
-        f"research gate: PASS [{latest['id']}; session +{distance}; "
-        f"artifact growth {growth} bytes]",
+        f"research gate: PASS [{proposal['id']}; wall={wall_seconds}s; "
+        f"artifact budget={max_growth} bytes]",
         flush=True,
     )
-    return subprocess.run(argv[3:], cwd=ROOT, check=False).returncode
+
+    process = subprocess.Popen(
+        command,
+        cwd=ROOT,
+        start_new_session=True,
+    )
+    started = time.monotonic()
+    try:
+        while process.poll() is None:
+            elapsed = time.monotonic() - started
+            if elapsed >= wall_seconds:
+                terminate_group(process)
+                print(
+                    f"research stop: external wall limit reached after {elapsed:.1f}s",
+                    file=sys.stderr,
+                )
+                return TIMEOUT_RETURN_CODE
+
+            growth = max(0, sum(tree_bytes(path) for path in roots) - baseline)
+            if growth > max_growth:
+                terminate_group(process)
+                print(
+                    f"research stop: artifact growth {growth} exceeds {max_growth}",
+                    file=sys.stderr,
+                )
+                return ARTIFACT_RETURN_CODE
+            time.sleep(POLL_SECONDS)
+    except KeyboardInterrupt:
+        terminate_group(process)
+        raise
+
+    return process.returncode
 
 
 if __name__ == "__main__":

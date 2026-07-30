@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-07-30",
+  "authority": "docs/research/charter.md",
+  "status_vocabulary": [
+    "active",
+    "open",
+    "paused",
+    "closed"
+  ],
+  "mission": {
+    "id": "EINSTEIN-PLANE",
+    "statement": "Characterize and construct connected unmarked planar Einstein tiles through new families, architecture-independent structural theorems, classification or nonexistence results, decidability boundaries, and certified methods that materially advance those goals."
+  },
+  "programs": [
+    {
+      "id": "REALIZATION-GENERAL",
+      "title": "One-support realization and classification",
+      "status": "active",
+      "scope_level": "architecture-independent-class",
+      "question": "Which finite aperiodic local systems can be realized by one connected unmarked polygon with a total decoder on every tiling, and where are the construction, nonexistence, decidability, and undecidability boundaries?",
+      "terminal_outcomes": [
+        "source-independent one-support realization theorem",
+        "architecture-independent nonexistence or classification theorem",
+        "scoped undecidability theorem with meaningful decidable islands"
+      ],
+      "current_assets": [
+        "docs/theory/realization/general_theory.md",
+        "docs/theory/research/sturmian_realization.md"
+      ],
+      "current_obstruction": "Local finite-relation expressivity is available, but no general theorem forces the roles, contact topology, grouping, and total decoder using one unrestricted unmarked support.",
+      "prohibited_default": "Do not resume a source-specific carrier ladder without first stating the general hypothesis it tests or the theorem to which it can lift."
+    },
+    {
+      "id": "STURMIAN-REALIZATION",
+      "title": "Sturmian systems as realization sources and dynamical test cases",
+      "status": "open",
+      "scope_level": "recognized-mathematical-family",
+      "question": "Can a Sturmian aperiodic tiling system be realized by one connected unmarked polygon with a total all-tilings decoder, or can a meaningful realization class be classified or shown undecidable?",
+      "terminal_outcomes": [
+        "connected unmarked Sturmian-derived Einstein with a complete proof",
+        "broad nonexistence or classification result for a stated realization class",
+        "unmarked undecidability boundary with decidable subfamilies"
+      ],
+      "current_assets": [
+        "docs/theory/research/sturmian_realization.md",
+        "docs/theory/sturmian/ahi_source_and_carriers.md",
+        "docs/theory/case_studies/ahi_realization.md"
+      ],
+      "current_obstruction": "The AHI-specific carrier branch is closed. A new direction must change the general one-support realization problem rather than invent another encoding of the same finite source presentation.",
+      "relationship_to_mission": "This is a high-value test family for REALIZATION-GENERAL, not the sole definition of the repository."
+    },
+    {
+      "id": "STRUCTURAL-EINSTEIN",
+      "title": "Structural characterization of connected unmarked Einsteins",
+      "status": "open",
+      "scope_level": "field-level-problem",
+      "question": "What architecture-independent invariants, dynamical mechanisms, contact structures, or deformation properties distinguish supports that can force aperiodicity from supports admitting periodic assemblies?",
+      "terminal_outcomes": [
+        "necessary or sufficient theorem spanning recognized tile classes",
+        "classification theorem for a broad geometric or dynamical family",
+        "invariant or obstruction that changes constructive or discovery practice"
+      ],
+      "current_assets": [
+        "docs/theory/realization/general_theory.md",
+        "docs/theory/foundations/periodic_completion.md",
+        "docs/theory/case_studies/geometric_carriers.md"
+      ],
+      "current_obstruction": "Existing source-independent results classify several local enforcement mechanisms, but they have not yet been synthesized into a broad characterization of unmarked Einstein supports."
+    },
+    {
+      "id": "CONSTRUCTIVE-DISCOVERY",
+      "title": "Construction of a genuinely different Einstein family",
+      "status": "open",
+      "scope_level": "field-level-problem",
+      "question": "Can a support outside the currently known Hat--Turtle--Spectre mechanism be designed or discovered together with its complete all-tilings proof?",
+      "terminal_outcomes": [
+        "exact new support or family with tilability and aperiodicity proof",
+        "general constructive recipe with a total-decoder theorem",
+        "architecture-level obstruction that redirects construction globally"
+      ],
+      "current_assets": [
+        "src/einstein/geometry/",
+        "src/einstein/tilings/",
+        "docs/theory/realization/general_theory.md"
+      ],
+      "current_obstruction": "No current candidate or admitted construction family exists. Candidate generation must be coupled from inception to periodicity and unrestricted contact-language gates."
+    },
+    {
+      "id": "CERTIFIED-DISCOVERY-METHODS",
+      "title": "Certified discovery and verification methods",
+      "status": "paused",
+      "scope_level": "architecture-independent-class",
+      "question": "Can exact search, certificate, or program-generation methods reduce a genuinely unclassified search space or verify a broad aperiodicity obligation more effectively than existing approaches?",
+      "terminal_outcomes": [
+        "validated method on a sealed and externally meaningful problem",
+        "exact verifier or generator that materially advances another program",
+        "no-go showing that a proposed evaluation signal cannot support discovery"
+      ],
+      "current_assets": [
+        "src/einstein/polykites/",
+        "src/einstein/periodicity/",
+        "src/einstein/certificates/"
+      ],
+      "current_obstruction": "The historical polykite funnel lies inside a published classified horizon. No new computation is justified until an unclassified domain and an exact, research-relevant evaluator are identified."
+    }
+  ],
+  "selection": {
+    "current_activity": "repository-control-plane-consolidation",
+    "research_commitment": "none-during-authority-cutover",
+    "next_strategic_decision": "After the documentation and harness authority cutover, compare the active programs as a whole and admit a field-relevant research thesis rather than resuming the final local residue of a historical branch."
+  }
+}
